@@ -1,5 +1,5 @@
 <template>
-  <div class="pinContainer">
+  <!-- <div class="pinContainer">
     <section class="panel" :class="`panel-0`">
       <transition name="fade">
         <div class="page-loader">
@@ -27,12 +27,77 @@
         </div>
       </transition>
     </section>
-    <section class="panel" :class="`panel-1`">
-      <Hero />
-    </section>
+  </div> -->
+  <div>
+    <div v-if="isMobile()" style="height:100vh;width:100vw;overflow:hidden">
+      <div class="sub-right">
+        <div class="center_r">
+          <p>
+            <v-card flat color="transparent" class="d-flex flex-row">
+              <v-img
+                contain
+                height="30%"
+                width="20vw"
+                src="../assets/main.png"
+              ></v-img>
+            </v-card>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div v-else style="height:100vh;">
+      <div class="outer-wrapper">
+        <div class="wrapper">
+          <div class="sub-right">
+            <div class="center_r">
+              <p>
+                <v-card flat color="transparent" class="d-flex flex-row">
+                  <v-img
+                    contain
+                    height="30%"
+                    width="20vw"
+                    src="../assets/main.png"
+                  ></v-img>
+                </v-card>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>
+.slide {
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100.1vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: #292929;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
 }
@@ -41,6 +106,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .panel {
   height: 100%;
@@ -81,6 +147,8 @@ body {
   background-image: linear-gradient(to left, white, black);
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 3000ms;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .center {
@@ -116,6 +184,7 @@ body {
   width: 100vw;
   background-size: 100% 100%;
   height: 100vh;
+
   /* background-image: url("../assets/new_main.jpg"); */
 }
 /* asdasd */
@@ -138,82 +207,33 @@ body {
 }
 </style>
 <script>
-import Hero from "./Hero";
 export default {
-  components: { Hero },
-  mounted() {
-    this.$nextTick(this.pinContainerScene);
-  },
-  data() {
-    return {
-      panels: [
-        {
-          title: "panel 1",
-          bgColor: "#29b6f6",
-        },
-        {
-          title: "panel 2",
-          bgColor: "#ef5350",
-        },
-        {
-          title: "panel 3",
-          bgColor: "#ec407a",
-        },
-        {
-          title: "panel 4",
-          bgColor: "#66bb6a",
-        },
-      ],
-    };
+  data: () => ({
+    hell: false,
+  }),
+  created() {
+    // this.handleScroll2();
+    // window.addEventListener("scroll", this.handleScroll);
   },
   methods: {
-    pinContainerScene() {
-      const Length = 2;
-
-      // Create a new Timeline (equivalent to new TimelineMax())
-      const tl = new this.$gsap.TimelineMax();
-
-      for (var i = 0; i < Length; i++) {
-        // For each panel in this.panels array:
-        let animFrom;
-        switch (
-          i // Set animFrom value, depending on the index i of the item
-        ) {
-          case 0:
-            break; // First panel is already visible on page load, so no animation
-          case 1:
-            animFrom = { x: "-100%" }; // Second panel comes from the left
-            break;
-        }
-        if (i !== 0) {
-          // For each panel except the one whom index is 0, create the tween and add it to the tl timeline.
-          // (To use GSAP easings, just prefix their name with this.$gsap)
-          tl.fromTo(`section.panel-${i}`, 1.5, animFrom, {
-            x: "0%",
-            y: "0%",
-            ease: this.$gsap.Linear.easeNone,
-          });
-        }
-      }
-
-      // create scene and set its params
-      const scene = new this.$scrollmagic.Scene({
-        triggerElement: ".pinContainer",
-        triggerHook: "onLeave",
-        duration: `${Length * 100}%`,
-      })
-        .setPin(".pinContainer")
-        .setTween(tl);
-
-      // Add scene to ScrollMagic controller by emiting an 'addScene' event on vm.$ksvuescr (which is our global event bus)
-      this.$ksvuescr.$emit("addScene", "pinContainerScene", scene);
-
-      // TAAAAAAADAAAAAAAAAAAA
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
     },
-  },
-  destroyed() {
-    // Destroy ScrollMagic when our component is removed from DOM
-    this.$ksvuescr.$emit("destroy");
+    handleScroll2() {
+      // window.addEventListener("scroll", this.handleScroll);
+      console.log("hello start");
+    },
+    handleScroll() {
+      console.log("1");
+      this.hell = true;
+      localStorage.setItem("isloaded", false);
+      // document.documentElement.style.overflow = "hidden";
+
+      // document.documentElement.style.overflow = "hidden";
+    },
+    hello() {
+      this.$router.push({ path: "/screen2/" });
+    },
   },
 };
 </script>

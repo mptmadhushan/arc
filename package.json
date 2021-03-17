@@ -13,6 +13,7 @@
     "ks-vue-scrollmagic": "^1.0.2",
     "swiper": "^6.4.15",
     "vue": "^2.6.11",
+    "vue-animejs": "^2.1.1",
     "vue-aos": "^1.1.0",
     "vue-awesome-swiper": "^4.1.1",
     "vue-carousel-3d": "^1.0.1",

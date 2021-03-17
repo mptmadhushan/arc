@@ -1,11 +1,18 @@
 <template>
-  <!-- <div :class="scrollPosition > 50 ? 'bg' : 'bg2'"> -->
   <div class="bg">
-    <div v-if="loaded" class="new_div">
-      <transition name="fade">
-        <PreLoader v-if="isloaded"></PreLoader>
-        <!-- <PreLoader v-if="scrollPosition < 50"></PreLoader> -->
-      </transition>
+    <div v-if="isMobile()" @click="this.handleScroll">
+      <div v-if="loaded" onscroll="hey()">
+        <transition name="fade" id="content">
+          <PreLoader v-if="isloaded" id="pre"></PreLoader>
+        </transition>
+      </div>
+    </div>
+    <div v-else>
+      <div v-if="loaded" onscroll="hey()">
+        <transition name="fade" id="content">
+          <PreLoader v-if="isloaded" id="pre"></PreLoader>
+        </transition>
+      </div>
     </div>
 
     <div class="container_l">
@@ -19,18 +26,17 @@
         </div>
       </div>
     </div>
+
     <div class="container_l">
       <div class="sub-right">
-        <div class="center_r" style="margin-right:40px">
+        <div class="center_r">
           <p>
-            <!-- <v-btn depressed x-large text to="/screen2">
-              CDA
-            </v-btn> -->
             <v-card flat color="transparent" class="d-flex flex-row">
               <v-img
                 @click="hello()"
                 height="5vh"
-                width="20vh"
+                style="margin-left: 16vw;"
+                width="15vw"
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
@@ -57,39 +63,130 @@ export default {
       localStorage.name = newName;
       console.log("hello", name);
     },
+    isIntersectingElement: function(value) {
+      this.$emit("on-intersection-element", value);
+    },
   },
   data: () => ({
     dialog: false,
     isloaded: true,
+    isloaded2: false,
     loaded: true,
     scrollPosition: null,
+    isIntersectingElement: false,
+    data: "hekko",
+    heh: false,
   }),
   created() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    //  console.log(jjjc)
+    //   window.addEventListener("wheel", function(event,jjjc){
+    //  console.log('hello',jjjc)
+
+    //     console.log(event.deltaY);
+    //     if (event.deltaY < 0) {
+    //       console.log('if')
+    //     } else {
+    //       // this.handleScroll()
+    //      console.log(jjjc)
+
+    //      }})
+    document.addEventListener("wheel", this.helb);
+
+    //  document.addEventListener("wheel", function(event) {
+    // this.handleScroll;
+    // console.log(event.deltaY);
+    // if (event.deltaY < 0) {
+    //   console.log('if')
+    // } else {
+    //  console.log(this.heh)
+    // this.heh = true;
+
+    //  }})
   },
   mounted() {
+    // document.addEventListener("wheel", function(event) {
+    // this.handleScroll;
+    // console.log(event.deltaY);
+    // if (event.deltaY < 0) {
+    //   console.log('if')
+    // } else {
+    //  console.log(this.heh)
+    // this.heh = true;
+
+    //  }})
+    //     document.addEventListener("wheel", function(event) {
+    //   console.log(event.deltaY);
+    //   if (event.deltaY < 0) {
+    //     this.handleScroll;
+    //   } else {
+    //     console.log("up");
+    //     this.methodNnew;
+    //     //
+    //     console.log("🐼🐼🐼🐼🐼🐼🐼", this.isloaded);
+    //     this.isloaded = false;
+    //     localStorage.setItem("isloaded", false);
+    //     if (this.isloaded == true) {
+    //       console.log("hello bitch");
+    //     }
+    //   }
+    // });
+    document.documentElement.style.overflow = "hidden";
+    // window.setTimeout(
+    //   (document.documentElement.style.overflow = "hidden"),
+    //   2000
+    // );
+    // window.addEventListener("scroll", this.updateScroll);
     this.hey = localStorage.getItem("isloaded");
     console.log("hello", this.hey);
     if (this.hey == "false") {
       this.loaded = false;
       console.log("false", this.loaded);
     }
-    // setTimeout(this.handleScroll, 2500);
-    // document.documentElement.style.overflow = "hidden";
-    console.log("globalVar", this.globalVar);
   },
+
   methods: {
-    updateScroll() {
-      this.scrollPosition = window.scrollY;
+    helb() {
+      console.log("scrolled", event);
+      if (event.deltaY < 0) {
+        console.log("if");
+      } else {
+        console.log("this.heh");
+        this.handleScroll();
+      }
+    },
+    myFunction() {
+      console.log("scrolled");
+      var elmnt = document.getElementById("myDIV");
+      var x = elmnt.scrollLeft;
+      var y = elmnt.scrollTop;
+      document.getElementById("demo").innerHTML =
+        "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+    },
+    scrollToTop() {
+      console.log("doneè");
+      document.documentElement.style.overflow = "hidden";
+      window.scrollTo(0, 0);
     },
     handleScroll() {
+      this.methodNnew;
+      document.documentElement.style.overflow = "auto";
+
+      console.log("🐼🐼🐼🐼🐼🐼🐼");
       this.isloaded = false;
       localStorage.setItem("isloaded", false);
-      document.documentElement.style.overflow = "auto";
+      if (this.isloaded == true) {
+        console.log("hello bitch");
+      }
     },
+    methodNnew() {
+      const body = document.body;
+      const scrollY = body.style.top;
+      body.style.position = "";
+      body.style.top = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+      document.getElementById("dialog").classList.remove("show");
+    },
+
     hello() {
       this.$router.push({ path: "/screen2/" });
     },
@@ -98,12 +195,50 @@ export default {
 </script>
 
 <style scoped>
-.new_div {
-  overflow-x: scroll;
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.slide {
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  /* width: 100.01vw; */
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: #292929;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#new_div {
+  /* display: none; */
+  /* position: fixed; */
+  /* z-index: 1; */
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 3s;
+  transition: opacity 5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
@@ -219,8 +354,10 @@ export default {
   /* justify-content: center; */
   /* align-items: center; */
   width: 100vw;
-  background-size: 100% 110%;
+  /* background-size: 100% 110%; */
   height: 100vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   /* color: "red"; */
   background-image: url("../assets/new_main.jpg");
   animation: fadeIn ease 20s;
@@ -228,6 +365,9 @@ export default {
   -moz-animation: fadeIn ease 20s;
   -o-animation: fadeIn ease 20s;
   -ms-animation: fadeIn ease 20s;
+}
+.bg::-webkit-scrollbar {
+  display: none;
 }
 .change_color {
   background-image: linear-gradient(to left, white, black);
@@ -249,6 +389,8 @@ export default {
   -moz-animation: fadeIn ease 20s;
   -o-animation: fadeIn ease 20s;
   -ms-animation: fadeIn ease 20s;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .hello {
   /* background-color: red; */

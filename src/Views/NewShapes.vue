@@ -4,8 +4,8 @@
       flat
       style="margin-top:20vh;margin-bottom:20vh;margin-left:8vh;margin-right:8vh"
     >
-      <v-layout row wrap justify-center >
-        <v-flex md2 xs12 sm12 >
+      <v-layout row wrap justify-center>
+        <v-flex md2 xs12 sm12>
           <router-link to="/ChitraLane" tag="div">
             <v-row align="center" justify="center">
               <v-col>
@@ -62,17 +62,16 @@
           </router-link>
         </v-flex>
         <v-flex md2 xs12 sm12>
-          <router-link to="/maniumpathy" tag="div">
-            <v-card flat>
-              <div class="sq"></div>
-            </v-card>
-          </router-link>
-        </v-flex>
-
-        <v-flex md2 xs12 sm12>
           <router-link to="/Hanthana" tag="div">
             <v-card flat>
               <div class="cir"></div>
+            </v-card>
+          </router-link>
+        </v-flex>
+        <v-flex md2 xs12 sm12>
+          <router-link to="/maniumpathy" tag="div">
+            <v-card flat>
+              <div class="sq"></div>
             </v-card>
           </router-link>
         </v-flex>

@@ -22,14 +22,25 @@
         src="../assets/Maniumpathy/SDS2436.png"
       ></v-img>
     </div>
-    <div>
+    <div v-if="isMobile()">
+      <v-img contain src="../assets/Maniumpathy/_SDS2725.JPG.jpeg"></v-img>
+    </div>
+    <div v-else>
       <v-img
         contain
         height="80vh"
         src="../assets/Maniumpathy/_SDS2725.JPG.jpeg"
       ></v-img>
     </div>
-    <div class="text-center">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
+      <p class="text002">
+        A strong tonality within the room are balanced by distinctive antiques,
+        including chandeliers. mirrors and carefully considered details create a
+        vibrant and welcoming atmosphere
+      </p>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-space-around style="height: 100vh">
         <v-flex md7 align-self-center>
           <v-img
@@ -47,7 +58,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="height: 100vh">
+    <div v-if="isMobile()" style="margin-top: 10vh;height:50vh">
       <vue-flux :options="options" :images="images" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -59,7 +70,25 @@
         service
       </p>
     </div>
-    <div>
+    <div v-else style="height: 100vh">
+      <vue-flux :options="options" :images="images" :transitions="transitions">
+        <template v-slot:preloader>
+          <flux-preloader height="40vh" />
+        </template>
+      </vue-flux>
+      <p class="text001">
+        Extending the physical structure to shed a spotlight on the large dining
+        space, styled with beautiful Rajastani chandeliers and exquisite table
+        service
+      </p>
+    </div>
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/Maniumpathy/_SDS2554.JPG.jpeg"></v-img>
+      <p class="text002">
+        Subtle Interiors of Charm and Softness
+      </p>
+    </div>
+    <div v-else style="margin-top: 10vh">
       <v-layout row wrap justify-space-around pt-md-12 style="height: 100vh">
         <v-flex md3 align-self-center>
           <p class="text002">
@@ -75,9 +104,9 @@
         </v-flex>
       </v-layout>
     </div>
-    <div class="container">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
       <div class="box">
-        <div style="margin-top:10vh;text-align: center;padding:20px;">
+        <div>
           <carousel-3d
             :width="900"
             :height="600"
@@ -86,6 +115,7 @@
             :autoplay="true"
             :autoplay-timeout="3000"
             :display="3"
+            :perspective="0"
           >
             <slide :index="0">
               <figure>
@@ -126,12 +156,19 @@
     <div style="margin-top: 10vh">
       <v-img
         height="80vh"
+        contain
         src="../assets/Maniumpathy/_SDS2497-2.JPG.jpeg"
       ></v-img>
     </div>
-    <div class="text-center">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/Maniumpathy/_SDS2557.png"></v-img>
+      <div style="margin-top: 10vh">
+        <v-img contain src="../assets/Maniumpathy/_SDS2545.jpeg"></v-img>
+      </div>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-space-between pt-md-12 style="height:100vh">
-        <v-flex md6 xs12 sm12 align-self-center>
+        <v-flex md6 xs10 sm10 align-self-center>
           <v-img
             height="80vh"
             contain
@@ -149,6 +186,17 @@
     </div>
 
     <div style="margin-top: 10vh">
+      <div style="margin-top:20vh;padding:10vw">
+        <vue-flux
+          :options="options"
+          :images="images3"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader height="40vh" />
+          </template>
+        </vue-flux>
+      </div>
       <v-img
         height="80vh"
         style="margin-left: 5vw;margin-right: 5vw"
@@ -167,8 +215,14 @@
         src="../assets/Maniumpathy/_SDS2607.png"
       ></v-img>
     </div>
-
-    <div class="text-center" style="height: 100vh">
+    <div v-if="isMobile()">
+      <v-img contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
+      <p class="text002">
+        Outdoor soft seating with a mix of natural textures in washed wood and
+        delicate marble.
+      </p>
+    </div>
+    <div v-else class="text-center" style="height: 100vh">
       <v-layout row wrap justify-space-around pt-md-12>
         <v-flex md4 align-self-end>
           <p class="text002">
@@ -181,7 +235,14 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="height: 100vh">
+    <div v-if="isMobile()">
+      <v-img contain src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"></v-img>
+      <p class="text002">
+        Former sewing tables that were given new life within this contemporary
+        outdoor dining experience
+      </p>
+    </div>
+    <div v-else style="height: 100vh">
       <v-img
         height="80vh"
         contain
@@ -192,7 +253,18 @@
         outdoor dining experience
       </p>
     </div>
-    <div style="height: 100vh">
+    <div v-if="isMobile()">
+      <vue-flux :options="options" :images="images2" :transitions="transitions">
+        <template v-slot:preloader>
+          <flux-preloader height="40vh" />
+        </template>
+      </vue-flux>
+      <p class="text001">
+        Proportionate Doric pillars to supplement and frame this restful and
+        serene outdoor pavilion
+      </p>
+    </div>
+    <div v-else style="height: 100vh">
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -221,8 +293,15 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="padding: 10vh">
-      <v-img height="80vh" src="../assets/Maniumpathy/_SDS2457-2.png"></v-img>
+    <div v-if="isMobile()">
+      <v-img contain src="../assets/Maniumpathy/_SDS2457-2.png"></v-img>
+    </div>
+    <div v-else style="padding: 10vh">
+      <v-img
+        height="80vh"
+        contain
+        src="../assets/Maniumpathy/_SDS2457-2.png"
+      ></v-img>
     </div>
   </v-container>
 </template>
@@ -254,6 +333,10 @@ export default {
     ],
     images2: [
       require("../assets/Maniumpathy/_SDS2704.JPG.jpeg"),
+      require("../assets/Maniumpathy/fade2.jpeg"),
+    ],
+    images3: [
+      require("../assets/Maniumpathy/_SDS2529.JPG 13-06-02-327.png"),
       require("../assets/Maniumpathy/fade2.jpeg"),
     ],
     transitions: ["fade"],

@@ -11,7 +11,25 @@ import KsVueScrollmagic from "ks-vue-scrollmagic";
 Vue.use(KsVueScrollmagic);
 import SequentialEntrance from "vue-sequential-entrance";
 import "vue-sequential-entrance/vue-sequential-entrance.css";
+import VueAnime from "vue-animejs";
+
+Vue.use(VueAnime);
 import InfiniteSlideBar from "vue-infinite-slide-bar";
+Vue.mixin({
+  methods: {
+    isMobile() {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+});
 
 Vue.component("InfiniteSlideBar", InfiniteSlideBar);
 Vue.use(SequentialEntrance);

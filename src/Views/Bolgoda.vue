@@ -19,7 +19,17 @@
       </p>
     </div>
 
-    <div class="text-center">
+    <div v-if="isMobile()" class="text-center">
+      <v-layout row wrap justify-center pt-md-12 style="height:70vh">
+        <v-flex md7 xs12 sm12 align-self-center>
+          <v-img src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
+          <p class="text002">
+            A play on traditional sri lankan art to enhance the sense of arival.
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
         <v-flex md5 align-self-center>
           <p class="text002">
@@ -59,21 +69,26 @@
         compo- sition of Inside-OutSlde.
       </p>
     </div>
-    <div style="margin-top: 10vh">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img height="80vh" src="../assets/Bolgoda/_SDS1452.JPG.jpeg"></v-img>
+    </div>
+    <div v-else style="margin-top: 10vh">
       <v-img
         style="margin-left: 20%;margin-right: 20%"
         height="80vh"
+        contain
         src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
       ></v-img>
     </div>
-    <div class="container">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
       <div class="box">
-        <div style="margin-top:10vh;text-align: center;padding:20px;">
+        <div style="margin:30px">
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
+            :perspective="0"
             :autoplay="true"
             :autoplay-timeout="2000"
             :display="3"
@@ -91,15 +106,7 @@
                 <v-img src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
               </figure>
             </slide>
-            <slide :index="3">
-              <figure>
-                <v-img src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg" />
-              </figure> </slide
-            ><slide :index="4">
-              <figure>
-                <v-img src="../assets/Bolgoda/_SDS1502.JPG.jpeg" />
-              </figure> </slide
-            ><slide :index="5">
+           <slide :index="3">
               <figure>
                 <v-img src="../assets/Bolgoda/_SDS1185.JPG.jpeg" />
               </figure>
@@ -132,10 +139,34 @@
         A contempoary twist to a timeless view
       </p>
     </div>
-    <div class="text-center" style="margin-left: 5vw;margin-right: 5vw">
-      <v-layout row wrap justify-space-around pt-md-12 style="height: 100vh">
+    <div
+      v-if="isMobile()"
+      class="text-center"
+      style="margin-left: 5vw;margin-right: 5vw"
+    >
+      <v-layout row wrap justify-space-around>
+        <v-flex md7 xs12 sm12 align-self-center>
+          <v-img
+            height="100%"
+            contain
+            src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
+          ></v-img>
+          <p class="text002 text-center">
+            Old woo to accentuate the seamless interaction of indoors and
+            outdoors. A space that can function independently from the pool and
+            lake beyond
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-else class="text-center" style="margin-left: 5vw;margin-right: 5vw">
+      <v-layout row wrap justify-space-around pt-md-12>
         <v-flex md7 align-self-center>
-          <v-img height="80vh" contain src="../assets/Bolgoda/_SDS1360.JPG.jpeg"></v-img>
+          <v-img
+            height="80vh"
+            contain
+            src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
+          ></v-img>
         </v-flex>
         <v-flex md4 align-self-center>
           <p class="text002">
@@ -146,7 +177,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="padding: 10vh">
+    <div style="padding: 10vw">
       <v-img
         height="80vh"
         style="margin-left: 5vw;margin-right: 5vw"

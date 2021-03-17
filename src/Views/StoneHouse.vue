@@ -2,7 +2,7 @@
   <v-container fluid>
     <div class="text-center">
       <v-layout row wrap justify-center pa-3 style="height: 100vh">
-        <v-flex md10 xs10 sm10 align-self-center>
+        <v-flex md10 xs12 sm12 align-self-center>
           <v-img
             contain
             height="80vh"
@@ -11,10 +11,17 @@
         </v-flex>
       </v-layout>
     </div>
-    <div>
+    <div v-if="isMobile()">
+      <v-img contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
+      <p class="text001">
+        Revitalising a Kandyan Icon into a boutique hotel maintaining its
+        heritage
+      </p>
+    </div>
+    <div v-else>
       <v-img
-        height="80vh"
-        contain
+        height="90vh"
+        object-fit
         src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"
       ></v-img>
       <p class="text001">
@@ -22,9 +29,19 @@
         heritage
       </p>
     </div>
-    <div class="text-center">
+    <div v-if="isMobile()">
+      <v-img
+        contain
+        src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
+      ></v-img>
+      <p class="text001">
+        The carefully structured arches help display the surrounding greenery.
+        which makes for a serene sight
+      </p>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-space-around style="height:100vh">
-        <v-flex md7 xs10 sm10 align-self-center>
+        <v-flex md7 xs12 sm12 align-self-center>
           <v-img
             height="80vh"
             contain
@@ -50,7 +67,17 @@
         industry and Its many permutations throughout the home.
       </p>
     </div>
-    <div class="text-center">
+    <div v-if="isMobile()">
+      <v-img
+        contain
+        src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
+      ></v-img>
+      <p class="text001">
+        Rustic, contemporary furniture to tie together the ethos of the house
+        and its strong tonality.
+      </p>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
         <v-flex md4 xs10 sm10 align-self-center>
           <p class="text002">
@@ -67,38 +94,33 @@
         </v-flex>
       </v-layout>
     </div>
-    <div class="container">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
       <div class="box">
-        <div style="text-align: center;">
+        <div>
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
+            :perspective="0"
             :autoplay="true"
             :autoplay-timeout="3000"
             :display="3"
           >
-            <slide :index="0">
-              <figure>
-                <v-img
-                  src="../assets/Stone_House/Stone House_DSC5405.JPG.jpg"
-                />
-              </figure> </slide
-            ><slide :index="1">
+           <slide :index="0">
               <figure>
                 <v-img
                   src="../assets/Stone_House/Stone House_DSC5402.JPG.jpg"
                 />
               </figure> </slide
-            ><slide :index="2">
+            ><slide :index="1">
               <figure>
                 <v-img
                   src="../assets/Stone_House/Stone House_DSC5086.JPG.jpg"
                 />
               </figure>
             </slide>
-            <slide :index="3">
+            <slide :index="2">
               <figure>
                 <v-img
                   src="../assets/Stone_House/Stone House_DSC5224.JPG.jpg"
@@ -125,8 +147,16 @@
         </div>
       </div>
     </div>
-
-    <div class="text-center" style="height: 100vh;">
+    <div v-if="isMobile()">
+      <v-img
+        contain
+        src="../assets/Stone_House/Stone House_DSC5405.JPG.jpg"
+      ></v-img>
+      <p class="text001">
+        Harmonious interiors to reassure and uplift
+      </p>
+    </div>
+    <div v-else class="text-center" style="height: 100vh;">
       <v-layout row wrap justify-center pt-md-12>
         <v-flex md4 xs10 sm10 align-self-baseline>
           <p class="text002">
@@ -141,18 +171,30 @@
         </v-flex>
       </v-layout>
     </div>
-    <div>
+    <div v-if="isMobile()">
+      <v-img
+        contain
+        src="../assets/Stone_House/Stone House_DSC5196.JPG.jpg"
+      ></v-img>
+    </div>
+    <div v-else>
       <v-img
         height="80vh"
         contain
         src="../assets/Stone_House/Stone House_DSC5196.JPG.jpg"
       ></v-img>
     </div>
-
-    <div style="padding: 10vh">
+    <div v-if="isMobile()">
       <v-img
         contain
-        height="80vh"
+        style="padding: 10vh"
+        src="../assets/Stone_House/Stone House_DSC5074.JPG.jpg"
+      ></v-img>
+    </div>
+    <div v-else style="padding-top: 10vh">
+      <v-img
+        contain
+        height="100vh"
         src="../assets/Stone_House/Stone House_DSC5074.JPG.jpg"
       ></v-img>
     </div>

@@ -28,32 +28,25 @@
         created through the precise placemnent of art and furniture.
       </p>
     </div>
-    <div class="container">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
       <div class="box">
-        <div style="margin-top:10vh;text-align: center;padding:20px;">
+        <div>
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
+            
             :autoplay="true"
             :autoplay-timeout="3000"
             :display="3"
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/Dinali_House/_SDS2888.JPG.jpg" />
-              </figure> </slide
-            ><slide :index="1">
-              <figure>
-                <v-img src="../assets/Dinali_House/_SDS2899.JPG.jpg" />
-              </figure> </slide
-            ><slide :index="2">
-              <figure>
                 <v-img src="../assets/Dinali_House/_SDS2911.JPG.jpg" />
               </figure>
             </slide>
-            <slide :index="3">
+            <slide :index="1">
               <figure>
                 <v-img src="../assets/Dinali_House/_SDS2865.JPG.jpg" />
               </figure>
@@ -76,7 +69,19 @@
         </div>
       </div>
     </div>
-    <div class="text-center">
+    <div v-if="isMobile()" style="margin-top:10vh" class="text-center">
+      <v-layout row wrap justify-center style="height: 80vh;">
+        <v-flex md4 align-self-center> </v-flex>
+        <v-flex md7 align-self-center>
+          <v-img src="../assets/Dinali_House/_SDS2888.JPG.jpg"></v-img>
+          <p class="text002">
+            The painting and sculptures chosen to be showcased portray a story
+            told through the eyes of some of the island's best artists
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-center style="height: 100vh;">
         <v-flex md4 align-self-center>
           <p class="text002">
@@ -85,7 +90,11 @@
           </p>
         </v-flex>
         <v-flex md7 align-self-center>
-          <v-img contain height="80vh" src="../assets/Dinali_House/_SDS2888.JPG.jpg"></v-img>
+          <v-img
+            contain
+            height="80vh"
+            src="../assets/Dinali_House/_SDS2888.JPG.jpg"
+          ></v-img>
         </v-flex>
       </v-layout>
     </div>

@@ -17,18 +17,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <v-layout row wrap style="height: 100vh">
-      <v-flex md12 align-self-center>
-        <div>
-          <v-img
-            height="80vh"
-            contain
-            style="margin-left: 5vw;margin-right: 5vw"
-            src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
-          ></v-img>
-        </div>
-      </v-flex>
-    </v-layout>
+
     <div class="text-center" style="margin-top:10vh;height: 100vh">
       <v-layout row wrap justify-center pt-md-12>
         <v-flex md4 align-self-end>
@@ -45,7 +34,30 @@
         </v-flex>
       </v-layout>
     </div>
-
+    <v-layout v-if="!isMobile()" wrap style="height: 100vh">
+      <v-flex md12 align-self-center>
+        <div>
+          <v-img
+            height="80vh"
+            contain
+            style="margin-left: 5vw;margin-right: 5vw"
+            src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
+          ></v-img>
+        </div>
+      </v-flex>
+    </v-layout>
+    <v-layout v-else row wrap>
+      <v-flex md12 align-self-center>
+        <div>
+          <v-img
+            height="100%"
+            contain
+            style="margin-left: 5vw;margin-right: 5vw"
+            src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
+          ></v-img>
+        </div>
+      </v-flex>
+    </v-layout>
     <div class="text-center">
       <v-layout row wrap justify-center pt-md-12>
         <v-flex md4 align-self-center>
@@ -62,14 +74,15 @@
         </v-flex>
       </v-layout>
     </div>
-    <div class="container">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
       <div class="box">
-        <div style="margin-top: 20vh;">
+        <div>
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
+            :perspective="0"
             :autoplay="true"
             :autoplay-timeout="3000"
             :display="3"
@@ -110,9 +123,10 @@
       </div>
     </div>
 
-    <div style="margin-top:10vh">
+    <div style="margin-top:1vh">
       <v-img
         height="82vh"
+        contain
         src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
       ></v-img>
       <p class="text001" pt-5>
@@ -120,7 +134,7 @@
       </p>
     </div>
 
-    <div style="padding: 10vh">
+    <div style="padding: 5vw">
       <v-img
         contain
         height="80vh"

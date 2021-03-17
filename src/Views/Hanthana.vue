@@ -11,8 +11,13 @@
         </v-flex>
       </v-layout>
     </div>
-
-    <div class="text-center">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/hanthana/2.jpeg"></v-img>
+      <p class="text002">
+        Wilderness framed to prelude the view and experiences beyond it.
+      </p>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-space-around pt-md-12 style="height:100vh">
         <v-flex md4 align-self-center>
           <p class="text002">
@@ -24,18 +29,32 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="height: 100vh">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/hanthana/3.jpeg"></v-img>
+      <p class="text002">
+        Working the landscape to pay homage to the surrounding natural beauty.
+      </p>
+    </div>
+    <div v-else style="height: 100vh">
       <v-img height="80vh" contain src="../assets/hanthana/3.jpeg"></v-img>
       <p class="text001">
         Working the landscape to pay homage to the surrounding natural beauty.
       </p>
     </div>
-
-    <div>
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/hanthana/4.jpeg"></v-img>
+    </div>
+    <div v-else>
       <v-img height="80vh" contain src="../assets/hanthana/4.jpeg"></v-img>
     </div>
-
-    <div class="text-center">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/hanthana/5.png"></v-img>
+      <p class="text002">
+        Clean lines and simplicity in form define the view and allow for an
+        uninterrupted visual experience.
+      </p>
+    </div>
+    <div v-else class="text-center">
       <v-layout row wrap justify-space-around style="height:100vh">
         <v-flex md4 align-self-center>
           <p class="text002">
@@ -55,7 +74,10 @@
         </template>
       </vue-flux>
     </div>
-    <div style="height: 100vh">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/hanthana/6.jpeg"></v-img>
+    </div>
+    <div v-else style="height: 100vh">
       <v-img
         height="80vh"
         width="100vw"
@@ -64,22 +86,30 @@
         src="../assets/hanthana/6.jpeg"
       ></v-img>
     </div>
-    <div style="height: 100vh">
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img contain src="../assets/hanthana/7.jpeg"></v-img>
+      <p class="text002">
+        A warm and inviting entrance hall, inviting you into a curated
+        experience of art and artefact.
+      </p>
+    </div>
+    <div v-else style="height: 100vh">
       <v-img height="80vh" contain src="../assets/hanthana/7.jpeg"></v-img>
       <p class="text001">
         A warm and inviting entrance hall, inviting you into a curated
         experience of art and artefact.
       </p>
     </div>
-    <div class="container">
-      <div class="box">
-        <div style="text-align: center;padding:20px;">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
+      <div class="box" style="margin: 1px">
+        <div style="margin-top: 1vh;padding:20px;">
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
             :autoplay="true"
+            :perspective="0"
             :autoplay-timeout="3000"
             :display="3"
           >
@@ -89,13 +119,9 @@
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/hanthana/slide2.jpeg" />
+                <v-img src="../assets/hanthana/7.jpeg" />
               </figure> </slide
-            ><slide :index="2">
-              <figure>
-                <v-img src="../assets/hanthana/slide3.jpeg" />
-              </figure>
-            </slide>
+            >
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
@@ -123,7 +149,7 @@
       </p>
     </div>
     <div style="height: 100vh">
-      <v-img height="80vh" src="../assets/hanthana/8.jpeg"></v-img>
+      <v-img height="80vh" contain src="../assets/hanthana/8.jpeg"></v-img>
     </div>
 
     <div class="text-center">
@@ -141,29 +167,30 @@
         </v-flex>
       </v-layout>
     </div>
-    <div class="container">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
       <div class="box">
-        <div style="margin-top: 10vh;text-align: center;padding:20px;">
+        <div style="margin-top: 1vh;text-align: center;padding:20px;">
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
+            :perspective="0"
             :autoplay="true"
             :autoplay-timeout="3000"
             :display="3"
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/hanthana/slide5.jpg" />
+                <v-img src="../assets/hanthana/slide3.jpeg" />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/hanthana/slide6.jpg" />
+                <v-img src="../assets/hanthana/sln.jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/hanthana/slide7.jpg" />
+                <v-img src="../assets/hanthana/sln2.jpeg" />
               </figure>
             </slide>
           </carousel-3d>
@@ -188,11 +215,12 @@
     <div style="margin-top: 10vh">
       <v-img
         height="80vh"
+        contain
         style="margin-left: 5vw;margin-right: 5vw"
-        src="../assets/hanthana/9.jpeg"
+        src="../assets/hanthana/_SDS2136.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="margin-top:20vh;">
+    <div style="margin-top:20vh;padding:10vw">
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />

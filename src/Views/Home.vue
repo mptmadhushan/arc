@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="aaa">
     <!-- <hnew /> -->
     <hero />
     <page1 />
@@ -27,14 +27,30 @@ export default {
   },
   mounted() {
     this.hello();
+    window.scrollTo(0, 0);
   },
   methods: {
-    hello() {},
+    hello() {
+      window.scrollTo(0, 0);
+    },
   },
 };
 </script>
 
 <style scoped>
+.aaa {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.a::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.a {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 .bounce-enter-active {
   animation: bounce-in 0.5s;
 }

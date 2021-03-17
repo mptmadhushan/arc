@@ -6,15 +6,27 @@
           <v-img
             contain
             height="80vh"
-            src="../assets/chamika_house/_SDS3575.jpg"
+            src="../assets/chamika_house/_SDS3079-HDR_1.jpg"
           ></v-img>
         </v-flex>
         <v-flex md10 justify-center>
           <p class="text001">
-            Lush hand carved planis and cemented files elevate The poolside
-            experience.
+            White furniture in display to contrast with the high walls draped in
+            greenery.
           </p>
         </v-flex>
+      </v-layout>
+    </div>
+    <div class="text-center">
+      <v-layout row wrap justify-center pa-3 style="height: 100vh">
+        <v-flex md10 align-self-center>
+          <v-img
+            contain
+            height="80vh"
+            src="../assets/chamika_house/_SDS3575.jpg"
+          ></v-img>
+        </v-flex>
+        <v-flex md10 justify-center> </v-flex>
       </v-layout>
     </div>
     <div style="margin-top: 10vh">
@@ -40,7 +52,14 @@
       </p>
     </div>
 
-    <div style="padding: 10vh">
+    <div v-if="isMobile()">
+      <v-img contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
+      <p class="text001">
+        Specially selected arfwork from arfisfs across The island are showcased
+        on high walls.
+      </p>
+    </div>
+    <div v-else style="padding: 10vh">
       <v-img
         contain
         height="80vh"
@@ -51,7 +70,14 @@
         on high walls.
       </p>
     </div>
-    <div style="padding: 10vh">
+    <div v-if="isMobile()">
+      <v-img contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
+      <p class="text001">
+        Adding to the mystery, The staircase leading fo the property is encased
+        within an abundance of greenery to complete a natural rustic look.
+      </p>
+    </div>
+    <div v-else style="padding: 10vh">
       <v-img
         contain
         height="80vh"

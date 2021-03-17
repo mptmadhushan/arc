@@ -18,81 +18,80 @@
         beyond, now housing, one of Colombo's premier fashion brands.
       </p>
     </div>
-    <div class="container">
+    <div :class="!isMobile() ? 'container' : 'container_mob'">
       <div class="box">
-        <div style="margin-top:10vh;text-align: center;padding:20px;">
+        <div>
           <carousel-3d
-            :width="1100"
-            :height="780"
+            :width="900"
+            :height="600"
             :inverse-scaling="200"
-            :space="1500"
+            :space="1300"
             :autoplay="true"
             :autoplay-timeout="3000"
             :display="3"
+            :perspective="0"
           >
             <slide :index="0">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7808.jpeg" />
-                <div
+                <!-- <div
                   style="background-color: white;text-align: center;padding:20px;"
                 >
                   Re-purposing and re-scaling of antique and contemporary
                   fittings to elevate the shopping experience
-                </div>
+                </div> -->
               </figure> </slide
             ><slide :index="1">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7783.jpeg" />
-                <div
+                <!-- <div
                   style="background-color: white;text-align: center;padding:20px;"
                 >
                   Re-purposing and re-scaling of antique and contemporary
                   fittings to elevate the shopping experience
-                </div>
+                </div> -->
               </figure> </slide
             ><slide :index="2">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7782.jpeg" />
-                <div
+                <!-- <div
                   style="background-color: white;text-align: center;padding:20px;"
                 >
                   Re-purposing and re-scaling of antique and contemporary
                   fittings to elevate the shopping experience
-                </div>
+                </div> -->
               </figure>
             </slide>
             <slide :index="3">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7808.jpeg" />
-                <div
+                <!-- <div
                   style="background-color: white;text-align: center;padding:20px;"
                 >
                   Re-purposing and re-scaling of antique and contemporary
                   fittings to elevate the shopping experience
-                </div>
+                </div> -->
               </figure> </slide
             ><slide :index="4">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7783.jpeg" />
-                <div
+                <!-- <div
                   style="background-color: white;text-align: center;padding:20px;"
                 >
                   Re-purposing and re-scaling of antique and contemporary
                   fittings to elevate the shopping experience
-                </div>
+                </div> -->
               </figure> </slide
             ><slide :index="5">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7782.jpeg" />
-                <div
-                  style="background-color: white;text-align: center;padding:20px;"
-                >
-                  Re-purposing and re-scaling of antique and contemporary
-                  fittings to elevate the shopping experience
-                </div>
               </figure>
             </slide>
           </carousel-3d>
+          <div style="background-color: white;text-align: center;padding:20px;">
+            Re-purposing and re-scaling of antique and contemporary fittings to
+            elevate the shopping experience
+          </div>
         </div>
       </div>
       <div class="box stack-top d-none d-lg-block">
@@ -120,6 +119,11 @@
 
 <script>
 export default {
+  computed: {},
+  mounted() {
+    console.log(this.is_mobile());
+  },
+  methods: {},
   data: () => ({
     settings: {
       arrows: false,
@@ -153,13 +157,20 @@ export default {
 <style>
 .container {
   width: 100vw;
-  height: 900px;
+  height: 1000px;
+  position: relative;
+  margin: 0;
+}
+.container_mob {
+  /* width: 100vw; */
+  height: 100vw;
   position: relative;
   margin: 0;
 }
 .box {
+  margin-top: 100px;
   width: 100vw;
-  height: 900px;
+  /* height: 900px; */
   position: absolute;
   top: 0;
   left: 0;
