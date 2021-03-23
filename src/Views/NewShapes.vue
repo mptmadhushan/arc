@@ -87,6 +87,9 @@
 
 <script>
 export default {
+  mounted() {
+    localStorage.setItem("isloaded", false);
+  },
   data: () => ({
     myImage:
       "https://s-media-cache-ak0.pinimg.com/originals/bd/5d/84/bd5d845c980508d41b0329dc21d08d2b.jpg",

@@ -242,11 +242,11 @@
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/hanthana/7.jpeg" />
+                <v-img src="../assets/hanthana/_SDS1957.JPG (1).jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/hanthana/piano.jpg" />
+                <v-img src="../assets/hanthana/_SDS1947.JPG.jpeg" />
               </figure>
             </slide>
           </carousel-3d>

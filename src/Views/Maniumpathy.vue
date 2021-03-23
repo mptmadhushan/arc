@@ -317,7 +317,7 @@
         </vue-flux>
       </div>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
     <div v-if="isMobile()">
       <vue-flux :options="options" :images="images4" :transitions="transitions">
         <template v-slot:preloader>
@@ -329,7 +329,7 @@
         and frame the context of the play on Indoor-Outdoors--
       </p>
     </div>
-    <div v-else style="margin:13vh">
+    <div v-else style="margin:14vh">
       <vue-flux :options="options" :images="images4" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -354,7 +354,7 @@
         and frame the context of the play on Indoor-Outdoors
       </p>
     </div> -->
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:22vh;padding:10px"></div>
 
     <div data-aos="fade-down" data-aos-delay="10" data-aos-duration="1500">
       <v-img

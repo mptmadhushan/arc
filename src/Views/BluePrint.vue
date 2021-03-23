@@ -82,7 +82,7 @@
         v-on:scroll.once="scrollToElement1"
       >
         <v-layout row wrap justify-center style="margin-top:5vh">
-          <v-flex md6 align-self-start style="height:60vh">
+          <v-flex md6 align-self-start style="height:70vh">
             <div class="b1con" data-aos="zoom-in-left" data-aos-duration="1500">
               <div class="b1"></div>
             </div>
@@ -429,26 +429,25 @@
     </div>
 
     <div v-else style="height: 100vh;margin-top: 10vh">
-      <v-layout row wrap justify-end>
+      <v-layout
+        row
+        wrap
+        justify-end
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
         <v-flex md8 xs11 sm11 align-self-center>
           <v-img
             style="margin-left:40px"
             contain
-            height="70vh"
-            data-aos="fade-left"
-            data-aos-duration="3000"
+            height="80vh"
             src="../assets/blueprint/6.png"
           ></v-img>
         </v-flex>
         <v-flex md5 align-self-center>
-          <p
-            class="text002"
-            style="margin-left:5vw"
-            data-aos="fade-left"
-            data-aos-duration="3000"
-          >
+          <p class="text002" style="margin-left:5vw">
             Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
-            pariatur dolore et.
+            pariatur dolore et.as
           </p>
         </v-flex>
       </v-layout>
@@ -489,10 +488,9 @@
     >
       <p class="text001" data-aos="fade-right" data-aos-duration="3000"></p>
       <v-layout row wrap justify-space-around>
-        <v-flex md8 align-self-start>
+        <v-flex md9 align-self-start>
           <div class="align-start" style="text-align:start;height: 100.01vh;">
             <v-img
-              align-content-end
               contain
               height="100%"
               style="margin-right:1vw"

@@ -145,7 +145,7 @@
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/Bolgoda/bath3.jpeg" />
+                <!-- <v-img src="../assets/Bolgoda/bath3.jpeg" /> -->
               </figure>
             </slide>
           </carousel-3d>
