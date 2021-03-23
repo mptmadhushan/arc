@@ -1,103 +1,116 @@
 <template>
-  <div>
+  <div class="scroll-container">
+    <router-link to="/">
+      <img
+        style=" opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
     <audio
       allow="autoplay;fullscreen"
       id="my_audio"
       src="../assets/music.mp3"
     ></audio>
 
-    <div class="d-flex flex-row mb-6">
-      <div
-        data-aos="fade-up"
-        data-aos-delay="100"
-        data-aos-duration="2000"
-        data-aos-easing="ease-in-out"
-      >
-        <p style="font-size:10vw;color:grey;">
-          D
-        </p>
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="300"
-        data-aos-easing="ease-in-out"
-      >
-        <p style="font-size:10vw;color:grey;">
-          E
-        </p>
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="500"
-        data-aos-easing="ease-in-out"
-      >
-        <p style="font-size:10vw;color:grey;">
-          S
-        </p>
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="700"
-        data-aos-easing="ease-in-out"
-      >
-        <p style="font-size:10vw;color:grey;">
-          I
-        </p>
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="900"
-        data-aos-easing="ease-in-out"
-      >
-        <p style="font-size:10vw;color:grey;">
-          G
-        </p>
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="1100"
-        data-aos-easing="ease-in-out"
-      >
-        <p style="font-size:10vw;color:grey;">
-          N
-        </p>
-      </div>
-    </div>
-    <div style="height:100vh;">
-      <v-layout row wrap justify-center style="margin-top:10vh">
-        <v-flex md6 align-self-start>
-          <div style=""></div>
-          <v-img
-            data-aos="zoom-in-up"
-            data-aos-delay="100"
-            data-aos-duration="2000"
-            style="text-align: left"
-            contain
-            src="../assets/blueprint/_SDS3203b.png"
-          ></v-img>
-        </v-flex>
-        <v-flex md5 align-self-start>
-          <p
-            class="text001"
-            data-aos="zoom-in-up"
-            data-aos-delay="100"
-            data-aos-duration="2000"
-          >
-            Enim incididunt id tempor minim incididunt consectetur ut ad laboris
-            velit Enim incididunt id tempor minim incididunt consectetur ut ad
-            laboris velit
+    <div>
+      <div class="d-flex flex-row mb-6">
+        <div
+          data-aos="zoom-up"
+          data-aos-delay="600"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <p style="font-size:10vw;color:grey;">
+            D
           </p>
-        </v-flex>
-      </v-layout>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="700"
+          data-aos-easing="ease-in-out"
+        >
+          <p style="font-size:10vw;color:grey;">
+            E
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="800"
+          data-aos-easing="ease-in-out"
+        >
+          <p style="font-size:10vw;color:grey;">
+            S
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="900"
+          data-aos-easing="ease-in-out"
+        >
+          <p style="font-size:10vw;color:grey;">
+            I
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="1100"
+          data-aos-easing="ease-in-out"
+        >
+          <p style="font-size:10vw;color:grey;">
+            G
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="1200"
+          data-aos-easing="ease-in-out"
+        >
+          <p style="font-size:10vw;color:grey;">
+            N
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="height:100vh; overflow-x: scroll;"
+        v-on:scroll.once="scrollToElement1"
+      >
+        <v-layout row wrap justify-center style="margin-top:5vh">
+          <v-flex md6 align-self-start style="height:60vh">
+            <div class="b1con" data-aos="zoom-in-left" data-aos-duration="1500">
+              <div class="b1"></div>
+            </div>
+          </v-flex>
+          <v-flex md5 align-self-start>
+            <p
+              class="text001"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              style="height:96vh;"
+            >
+              Enim incididunt id tempor minim incididunt consectetur ut ad
+              laboris velit Enim incididunt id tempor minim incididunt
+              consectetur ut ad laboris velit
+            </p>
+          </v-flex>
+        </v-layout>
+      </div>
     </div>
 
-    <div style="height:100vh">
-      <p class="text001">
+    <div
+      ref="page1"
+      class="1stPage"
+      style="height:100vh;overflow-x: scroll;"
+      v-on:scroll.once="scrollToElement3"
+    >
+      <p class="text001" data-aos="fade-left" data-aos-duration="3000">
         Cupidatat laborum magna Lorem eiusmod aute nisi qui laborum.
       </p>
       <v-layout row wrap justify-center>
@@ -105,8 +118,8 @@
           <div class="align-end" style="text-align:end;height: 100vh;">
             <img
               align-content-end
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="3000"
               contain
               style="margin-top:20vh;margin-right:1vw"
               height="60%"
@@ -122,8 +135,8 @@
         <v-flex md6 xs12 sm12 align-self-end>
           <div class="align-end" style="text-align:start;height: 100vh;">
             <img
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="3000"
               align-content-start
               contain
               style="margin-left:1vw"
@@ -139,6 +152,7 @@
         </v-flex>
       </v-layout>
     </div>
+    <section id="sec-3"></section>
 
     <div v-if="isMobile()" style="margin-top: 60vh;padding:2vh">
       <v-img contain src="../assets/blueprint/1.png"></v-img>
@@ -147,23 +161,40 @@
         adipisicing culpa magna culpa.
       </p>
     </div>
-    <div v-else>
-      <p class="text001">
+
+    <div
+      v-else
+      ref="page2"
+      style="height:100vh;overflow-x: scroll;"
+      v-on:scroll.once="scrollToElement"
+      class="beb"
+    >
+      <p class="text001" data-aos="fade-right" data-aos-duration="3000">
         Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
         adipisicing culpa magna culpa.
       </p>
       <v-layout row wrap justify-space-around>
         <v-flex md8 align-self-start>
-          <div class="align-start" style="text-align:start;height: 100vh;">
-            <img
+          <div class="align-start" style="text-align:start;height: 90.01vh;">
+            <div
+              class="b2con"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-duration="2500"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="newBox"></div>
+            </div>
+
+            <!-- <v-img
               align-content-end
               contain
-              style="margin-top:20vh;margin-right:1vw"
-              height="90%"
+              height="100%"
+              style="margin-right:1vw"
               data-aos="fade-right"
               data-aos-duration="3000"
               src="../assets/blueprint/1.png"
-            />
+            /> -->
           </div>
           <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
         </v-flex>
@@ -172,35 +203,78 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="height:100vh;margin-top:10vh">
+    <div style="height:100vh;margin-top:10vh" class="first-slide" ref="slider1">
       <div class="outer-wrapper">
         <div class="wrapper">
           <div class="slide one">
             <div style="height:100vh">
-              <img
-                data-aos="fade-left"
-                data-aos-duration="3000"
-                data-aos-delay="1000"
+              <v-row no-gutters>
+                <v-col>
+                  <div style="height:100vh">
+                    <div
+                      class="b1sli"
+                      data-aos="zoom-in-left"
+                      data-aos-duration="1500"
+                    >
+                      <div class="newBox2"></div>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col
+                  data-aos="zoom-in-left"
+                  data-aos-delay="400"
+                  data-aos-duration="2500"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div style="height:100vh;">
+                    <div
+                      class="b2sli"
+                      data-aos="zoom-in-left"
+                      data-aos-duration="1500"
+                    >
+                      <div class="b1"></div>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col>
+                  <div style="height:100vh;">
+                    <div
+                      class="b3sli"
+                      data-aos="zoom-in-left"
+                      data-aos-duration="1500"
+                    >
+                      <div class="b1"></div>
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+              <!-- <img
+                data-aos="zoom-in-left"
+                data-aos-delay="400"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out"
                 height="100%"
-                style="padding:5vh"
                 src="../assets/blueprint/2.png"
-              />
+              /> -->
+              <!-- <div
+                class="b1sli"
+                data-aos="fade-right"
+                data-aos-delay="400"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="newBox"></div>
+              </div>
               <img
                 height="100%"
-                data-aos="fade-left"
-                data-aos-duration="3000"
-                data-aos-delay="1500"
                 style="padding:5vh"
                 src="../assets/blueprint/3.png"
               />
               <img
                 height="100%"
-                data-aos="fade-left"
-                data-aos-duration="3000"
-                data-aos-delay="2000"
                 style="padding:5vh"
                 src="../assets/blueprint/4.png"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -210,7 +284,7 @@
       <div
         data-aos="fade-up"
         data-aos-delay="100"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         data-aos-easing="ease-in-out"
       >
         <p style="font-size:10vw;color:grey;">
@@ -219,7 +293,7 @@
       </div>
       <div
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         data-aos-delay="300"
         data-aos-easing="ease-in-out"
       >
@@ -229,7 +303,7 @@
       </div>
       <div
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         data-aos-delay="500"
         data-aos-easing="ease-in-out"
       >
@@ -239,7 +313,7 @@
       </div>
       <div
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         data-aos-delay="700"
         data-aos-easing="ease-in-out"
       >
@@ -249,7 +323,7 @@
       </div>
       <div
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         data-aos-delay="900"
         data-aos-easing="ease-in-out"
       >
@@ -259,7 +333,7 @@
       </div>
       <div
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         data-aos-delay="1100"
         data-aos-easing="ease-in-out"
       >
@@ -272,10 +346,11 @@
     <div>
       <v-layout row wrap justify-space-around>
         <v-flex md8 align-self-start>
-          <div class="align-start" style="text-align:start;height: 90vh;">
+          <div class="align-start" style="text-align:start;height: 90vh">
             <img
               data-aos="fade-up"
               data-aos-duration="3000"
+              data-aos-delay="1000"
               align-content-end
               contain
               style="margin-right:1vw"
@@ -291,7 +366,7 @@
     <div>
       <p class="text003" style="width:20vw">
         Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
-        pariatur dolore et.
+        pariatur dolore et.z
       </p>
     </div>
 
@@ -353,7 +428,7 @@
       </p>
     </div>
 
-    <div v-else style="height: 100vh;margin-top: 1vh">
+    <div v-else style="height: 100vh;margin-top: 10vh">
       <v-layout row wrap justify-end>
         <v-flex md8 xs11 sm11 align-self-center>
           <v-img
@@ -366,14 +441,19 @@
           ></v-img>
         </v-flex>
         <v-flex md5 align-self-center>
-          <p class="text002" style="margin-left:5vw">
+          <p
+            class="text002"
+            style="margin-left:5vw"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
             Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
             pariatur dolore et.
           </p>
         </v-flex>
       </v-layout>
     </div>
-    <div v-if="!isMobile()">
+    <div v-if="isMobile()">
       <v-layout row wrap justify-space-around>
         <v-flex md8 align-self-start>
           <div class="align-start" style="text-align:start;height: 100vh;">
@@ -403,41 +483,60 @@
       </v-layout>
     </div> -->
 
-    <div v-else style="height: 100vh;margin-top: 1vh">
-      <v-layout row wrap justify-start>
-        <v-flex md12 xs11 sm11 align-self-center>
-          <v-img contain height="90vh" src="../assets/blueprint/7.png"></v-img>
+    <div
+      style="height:100vh;width:100vw;overflow-x: scroll;"
+      v-on:scroll.once="scrollToElement4"
+    >
+      <p class="text001" data-aos="fade-right" data-aos-duration="3000"></p>
+      <v-layout row wrap justify-space-around>
+        <v-flex md8 align-self-start>
+          <div class="align-start" style="text-align:start;height: 100.01vh;">
+            <v-img
+              align-content-end
+              contain
+              height="100%"
+              style="margin-right:1vw"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              src="../assets/blueprint/7.png"
+            />
+          </div>
+          <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
+        </v-flex>
+        <v-flex md3 align-self-start>
+          <p class="text001"></p>
         </v-flex>
       </v-layout>
     </div>
-    <div style="height:100vh;margin-top: 10vh" mt-12>
+    <div
+      style="height:100vh;margin-top:10vh"
+      class="second-slide"
+      ref="slider2"
+    >
       <div class="outer-wrapper">
         <div class="wrapper">
           <div class="slide one">
             <div style="height:100vh">
               <img
+                data-aos="zoom-in-left"
+                data-aos-delay="400"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out"
                 height="100%"
-                data-aos="fade-left"
-                data-aos-duration="3000"
-                data-aos-delay="1000"
-                style="padding:5vh;margin-left:2vw"
+                style="padding:5vh;margin-right:15vw"
                 src="../assets/blueprint/_SDS3184.png"
               />
-
               <img
-                data-aos="fade-left"
-                data-aos-duration="3000"
-                data-aos-delay="1500"
+                data-aos="zoom-in-left"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out"
                 height="100%"
-                style="padding:5vh;margin-left:20vw"
+                style="padding:5vh;margin-right:15vw"
                 src="../assets/blueprint/slide.png"
               />
               <img
-                data-aos="fade-left"
-                data-aos-duration="3000"
-                data-aos-delay="2000"
                 height="100%"
-                style="padding:5vh;margin-left:20vw"
+                style="padding:5vh"
                 src="../assets/_SDS3169.png"
               />
             </div>
@@ -456,28 +555,236 @@ export default {
   components: {
     // HorizontalScroll,
   },
+  data: () => ({
+    offsetTop: 0,
+    bgColor: "",
+  }),
+  updated: function() {
+    this.$nextTick(function() {
+      console.log("hello");
+      // Code that will run only after the
+      // entire view has been re-rendered
+    });
+  },
+  methods: {
+    test() {
+      alert("test");
+    },
+    myFunction() {
+      alert("test");
+    },
+    scrollToElement() {
+      this.$smoothScroll({
+        scrollTo: this.$refs.slider1,
+        duration: 2000,
+        // offset: -50,
+      });
+      console.log("scroll to element");
+    },
+    scrollToElement4() {
+      this.$smoothScroll({
+        scrollTo: this.$refs.slider2,
+        duration: 2000,
+        // offset: -50,
+      });
+      console.log("scroll to element");
+    },
+    scrollToElement1() {
+      console.log("scroll to element");
+      const el = this.$el.getElementsByClassName("1stPage")[0];
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        // el.scrollIntoView({ behavior: "smooth" });
+        this.$smoothScroll({
+          scrollTo: this.$refs.page1,
+          duration: 2000,
+          // offset: -50,
+        });
+      }
+    },
+    scrollToElement3() {
+      console.log("scroll to element");
+      const el = this.$el.getElementsByClassName("1stPage")[0];
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        // el.scrollIntoView({ behavior: "smooth" });
+        this.$smoothScroll({
+          scrollTo: this.$refs.page2,
+          duration: 2000,
+          // offset: -50,
+        });
+      }
+    },
+    scrollToElement2() {
+      console.log("scroll to element");
+      const el = this.$el.getElementsByClassName("second-slide")[0];
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    handleScroll2() {
+      document.addEventListener("scroll", (e) =>
+        console.log("birch 😉😉😉😉", e)
+      );
+
+      document.getElementById("demo");
+      // console.log(this.$refs.section3);
+      if (window.scrollY.$refs == this.$refs.page1.offsetHeight) {
+        // this.bgColor = "hey1";
+        console.log("this.$refs.page1");
+      }
+      if (window.scrollY == this.$refs.page2.offsetHeight) {
+        // this.bgColor = "hey1";
+        console.log("page2");
+      }
+    },
+    onScroll(e) {
+      this.offsetTop = e.target.scrollTop;
+    },
+  },
   mounted() {
-    // document.getElementById("my_audio").play();
+    console.log(this.$refs);
+    this.$nextTick(function() {
+      console.log(".tom-chapters"); //empty!!!!
+    });
+
     document.getElementById("my_audio").muted = false;
     document.getElementById("my_audio").play();
-    // console.log("Will it play here?? lol");
-    // console.log("Play outside of");
-    // const audio = require("@/assets/music.mp3");
-    // // var audio = new Audio("../assets/music.mp3");
-    // var playPromise = audio.play();
-    // playPromise;
   },
 };
 </script>
 
 <style scoped>
-.container {
-  width: 400px;
-  background-color: red;
-  height: 220px;
-  position: relative;
-}
+.newBox {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  transition: 4s ease;
 
+  -webkit-animation-fill-mode: backwards;
+}
+.newBox2 {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  transition: 4s ease;
+
+  -webkit-animation-fill-mode: backwards;
+}
+.beb:hover .newBox {
+  width: 0%;
+  background: rgb(255, 255, 255);
+}
+@-webkit-keyframes animateThis {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: -100%;
+  }
+}
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/blueprint/_SDS3203b.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.b2con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/blueprint/1.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.outer-wrapper:hover .newBox2 {
+  width: 0%;
+  background: #282729;
+}
+.b1sli {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/blueprint/3.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.b2sli {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/blueprint/2.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.b3sli {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/blueprint/4.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.b1 {
+  background-color: rgb(255, 255, 255);
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 0.8s;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.hey1 {
+  background-color: red;
+  height: 60vh;
+  width: 60vh;
+}
+.hey3 {
+  background-color: black;
+  height: 60vh;
+  width: 60vh;
+}
+.hey2 {
+  background-color: green;
+  height: 60vh;
+  width: 60vh;
+}
 h1,
 h2 {
   font-size: 75px;
@@ -639,10 +946,17 @@ p {
   transform-origin: top left;
 }
 .one {
-  background: #292929;
+  background: #ffffff;
   height: 100vh;
+  padding-left: 50vw;
+  transition: 4s ease;
 }
-
+.outer-wrapper:hover .one {
+  background-color: #282729;
+  opacity: 1;
+  /* width: 100%; */
+  padding-left: 10px;
+}
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
@@ -650,6 +964,7 @@ p {
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;

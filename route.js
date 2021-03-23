@@ -13,10 +13,21 @@ import Maniumpathy from "./src/Views/Maniumpathy.vue";
 import PreLoader from "./src/components/PreLoader.vue";
 import Hanthana from "./src/Views/Hanthana.vue";
 import BluePrint from "./src/Views/BluePrint.vue";
+import SliderNew from "./src/Views/BluePrintNew.vue";
+import BluePrint2 from "./src/Views/BluePrint2.vue";
+
 export default [
   {
     path: "/pre",
     component: PreLoader,
+  },
+  {
+    path: "/BluePrint2",
+    component: BluePrint2,
+  },
+  {
+    path: "/SliderNew",
+    component: SliderNew,
   },
   {
     path: "/BluePrint",
@@ -27,7 +38,7 @@ export default [
     component: Home,
   },
   {
-    path: "/screen2",
+    path: "/projects",
     component: Shapes,
   },
   {

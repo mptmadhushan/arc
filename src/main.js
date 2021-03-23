@@ -12,8 +12,13 @@ Vue.use(KsVueScrollmagic);
 import SequentialEntrance from "vue-sequential-entrance";
 import "vue-sequential-entrance/vue-sequential-entrance.css";
 import VueAnime from "vue-animejs";
-
+import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
+// import "./fullpage.scrollHorizontally.min"; // Optional. When using fullpage extensions
+import VueFullPage from "vue-fullpage.js";
 Vue.use(VueAnime);
+Vue.use(VueFullPage);
+import VueSmoothScroll from "vue2-smooth-scroll";
+Vue.use(VueSmoothScroll);
 import InfiniteSlideBar from "vue-infinite-slide-bar";
 Vue.mixin({
   methods: {
@@ -47,6 +52,17 @@ const router = new VueRouter({
 });
 new Vue({
   created() {
+    document.addEventListener("scroll", () => {
+      //
+    });
+    document.addEventListener("aos:in", ({ detail }) => {
+      console.log("animated in", detail);
+    });
+
+    document.addEventListener("aos:out", ({ detail }) => {
+      console.log("animated out", detail);
+    });
+
     AOS.init();
   },
   vuetify,

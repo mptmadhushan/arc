@@ -1,53 +1,116 @@
 <template>
   <v-container fluid>
+    <router-link to="/projects">
+      <img
+        style=" opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
     <div class="text-center">
-      <v-layout row wrap justify-center pa-3 style="height:100vh">
-        <v-flex md12 align-self-center>
-          <v-img
-            contain
-            height="80vh"
-            src="../assets/hanthana/1st.jpeg"
-          ></v-img>
+      <v-layout row wrap justify-center pa-3>
+        <v-flex
+          md12
+          align-self-center
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <div class="b1con" data-aos="zoom-out" data-aos-duration="2000">
+            <div class="b1"></div>
+          </div>
         </v-flex>
       </v-layout>
     </div>
-    <div v-if="isMobile()" style="margin-top: 10vh">
+    <div
+      v-if="isMobile()"
+      style="margin-top: 10vh"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img contain src="../assets/hanthana/2.jpeg"></v-img>
       <p class="text002">
         Wilderness framed to prelude the view and experiences beyond it.
       </p>
     </div>
     <div v-else class="text-center">
-      <v-layout row wrap justify-space-around pt-md-12 style="height:100vh">
-        <v-flex md4 align-self-center>
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <v-layout row wrap justify-space-around style="height:100vh">
+        <v-flex
+          md4
+          align-self-center
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-duration="1500"
+        >
           <p class="text002">
             Wilderness framed to prelude the view and experiences beyond it.
           </p>
         </v-flex>
-        <v-flex md7 justify-center>
-          <v-img contain height="80vh" src="../assets/hanthana/2.jpeg"></v-img>
+        <v-flex
+          md7
+          justify-center
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="1500"
+        >
+          <v-img contain height="85vh" src="../assets/hanthana/2.jpeg"></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div v-if="isMobile()" style="margin-top: 10vh">
+    <div
+      v-if="isMobile()"
+      style="margin-top: 10vh"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img contain src="../assets/hanthana/3.jpeg"></v-img>
       <p class="text002">
         Working the landscape to pay homage to the surrounding natural beauty.
       </p>
     </div>
-    <div v-else style="height: 100vh">
-      <v-img height="80vh" contain src="../assets/hanthana/3.jpeg"></v-img>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
+      <div style="width:99vw;height:10vh;padding:10px"></div>
+
+      <v-img height="85vh" contain src="../assets/hanthana/3.jpeg"></v-img>
       <p class="text001">
         Working the landscape to pay homage to the surrounding natural beauty.
       </p>
     </div>
-    <div v-if="isMobile()" style="margin-top: 10vh">
+    <div
+      v-if="isMobile()"
+      style="margin-top: 10vh"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img contain src="../assets/hanthana/4.jpeg"></v-img>
     </div>
-    <div v-else>
-      <v-img height="80vh" contain src="../assets/hanthana/4.jpeg"></v-img>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+
+      <v-img height="90vh" contain src="../assets/hanthana/4.jpeg"></v-img>
     </div>
-    <div v-if="isMobile()" style="margin-top: 10vh">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      v-if="isMobile()"
+      style="margin-top: 10vh"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img contain src="../assets/hanthana/5.png"></v-img>
       <p class="text002">
         Clean lines and simplicity in form define the view and allow for an
@@ -56,59 +119,104 @@
     </div>
     <div v-else class="text-center">
       <v-layout row wrap justify-space-around style="height:100vh">
-        <v-flex md4 align-self-center>
+        <v-flex
+          md3
+          pa-4
+          align-self-center
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="1500"
+        >
           <p class="text002">
             Clean lines and simplicity in form define the view and allow for an
             uninterrupted visual experience.
           </p>
         </v-flex>
-        <v-flex md7 align-self-center>
-          <v-img height="80vh" contain src="../assets/hanthana/5.png"></v-img>
+        <v-flex
+          md8
+          pa-4
+          align-self-center
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-duration="1500"
+        >
+          <v-img contain src="../assets/hanthana/5.png"></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div>
+    <div
+      data-aos="fade-down"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+      style="padding:10vh"
+    >
+      <div style="width:99vw;height:20vh;padding:10px"></div>
       <vue-flux :options="options" :images="images" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
     </div>
-    <div v-if="isMobile()" style="margin-top: 10vh">
+    <div
+      v-if="isMobile()"
+      style="margin-top: 10vh"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img contain src="../assets/hanthana/6.jpeg"></v-img>
     </div>
-    <div v-else style="height: 100vh">
+    <div v-else>
+      <div style="width:99vw;height:20vh;padding:10px"></div>
       <v-img
-        height="80vh"
-        width="100vw"
-        style="margin-top: 10vh"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1500"
+        style="margin-top: 20vh"
         contain
+        height="90vh"
         src="../assets/hanthana/6.jpeg"
       ></v-img>
     </div>
-    <div v-if="isMobile()" style="margin-top: 10vh">
+
+    <div
+      v-if="isMobile()"
+      style="margin-top: 10vh"
+      data-aos="fade-down"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img contain src="../assets/hanthana/7.jpeg"></v-img>
       <p class="text002">
         A warm and inviting entrance hall, inviting you into a curated
         experience of art and artefact.
       </p>
     </div>
-    <div v-else style="height: 100vh">
-      <v-img height="80vh" contain src="../assets/hanthana/7.jpeg"></v-img>
+    <div
+      v-else
+      data-aos="fade-down"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+
+      <v-img height="85vh" contain src="../assets/hanthana/7.jpeg"></v-img>
       <p class="text001">
         A warm and inviting entrance hall, inviting you into a curated
         experience of art and artefact.
       </p>
     </div>
-    <div :class="!isMobile() ? 'container' : 'container_mob'">
-      <div class="box" style="margin: 1px">
-        <div style="margin-top: 1vh;padding:20px;">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+      <div style="margin: 1px">
+        <div>
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
-            :autoplay="true"
+            :autoplay="false"
             :perspective="0"
             :autoplay-timeout="3000"
             :display="3"
@@ -121,44 +229,56 @@
               <figure>
                 <v-img src="../assets/hanthana/7.jpeg" />
               </figure> </slide
-            >
+            ><slide :index="2">
+              <figure>
+                <v-img src="../assets/hanthana/piano.jpg" />
+              </figure>
+            </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Raw natural matenals cccnpærnent the warm tones. elevating a cosy
+              Raw natural materials compliment the warm tones. elevating a cosy
               hill-country atmosphere
             </p>
           </div>
         </div>
       </div>
-      <div class="box stack-top d-none d-lg-block">
-        <div class="container_l">
-          <div class="sub-left"></div>
-        </div>
-        <div class="container_l">
-          <div class="sub-right"></div>
-        </div>
-      </div>
     </div>
-    <div style="height: 100vh">
-      <v-img height="80vh" src="../assets/hanthana/slide2.jpeg"></v-img>
-      <p class="text001">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+      <v-img contain height="85vh" src="../assets/hanthana/slide2.jpeg"></v-img>
+      <p class="text001" style="padding-inline:15vw">
         Bandu Manamperi's take on the surrounding vista of mountains from
-        Hanthana itself, Creating a contemporary stage for his work within the
-        context ot a dramatic lounge to wind down after a journey
+        Hanthana itself, creating a contemporary stage for his work within the
+        context of a dramatic lounge to wind down after a journey
       </p>
     </div>
-    <div style="height: 100vh">
-      <v-img height="80vh" contain src="../assets/hanthana/8.jpeg"></v-img>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+      <v-img height="85vh" contain src="../assets/hanthana/8.jpeg"></v-img>
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <div class="text-center">
-      <v-layout row wrap justify-space-between pt-md-12 style="height:90vh">
-        <v-flex md7 align-self-center>
-          <v-img height="80vh" contain src="../assets/hanthana/9.jpeg"></v-img>
+      <v-layout row wrap justify-center>
+        <v-flex
+          md5
+          align-self-center
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-duration="1500"
+        >
+          <v-img height="85vh" contain src="../assets/hanthana/9.jpeg"></v-img>
         </v-flex>
         <v-flex md4 align-self-center>
-          <p class="text001">
+          <p
+            class="text001"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="1500"
+          >
             Spare, Sumptuous and Seductive<br /><br />
             Creating a timeless and functional space by elevating a lifestyle,
             Spaces that are thoughtful yet provoke a deeper sense of purpose
@@ -167,16 +287,18 @@
         </v-flex>
       </v-layout>
     </div>
-    <div :class="!isMobile() ? 'container' : 'container_mob'">
-      <div class="box">
-        <div style="margin-top: 1vh;text-align: center;padding:20px;">
+    <div style="width:99vw;height:22vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+      <div>
+        <div>
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
             :perspective="0"
-            :autoplay="true"
+            :autoplay="false"
             :autoplay-timeout="3000"
             :display="3"
           >
@@ -202,34 +324,40 @@
           </div>
         </div>
       </div>
-      <div class="box stack-top d-none d-lg-block">
-        <div class="container_l">
-          <div class="sub-left"></div>
-        </div>
-        <div class="container_l">
-          <div class="sub-right"></div>
-        </div>
-      </div>
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div style="margin-top: 10vh">
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
       <v-img
-        height="80vh"
+        height="90vh"
         contain
         style="margin-left: 5vw;margin-right: 5vw"
         src="../assets/hanthana/_SDS2136.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="margin-top:20vh;padding:10vw">
+
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+      style="padding:10vh"
+    >
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
     </div>
-    <div style="margin-top: 10vh;height: 100vh">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div style="padding-bottom:4vh">
       <v-img
-        height="90vh"
+        data-aos="fade-down"
+        data-aos-delay="500"
+        data-aos-duration="3000"
+        height="92vh"
         contain
         src="../assets/hanthana/_SDS2253.png"
       ></v-img>
@@ -286,6 +414,26 @@ export default {
 </script>
 
 <style scoped>
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/hanthana/1st.jpeg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 92vh;
+}
+.b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
 .text001 {
   text-align: center;
   padding: 10px;

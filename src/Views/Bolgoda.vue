@@ -1,23 +1,32 @@
 <template>
   <v-container fluid>
-    <div style="margin-top: 10vh">
-      <v-img
-        contain
-        height="80vh"
-        src="../assets/Bolgoda/_SDS1498.JPG.jpeg"
-      ></v-img>
+    <router-link to="/projects">
+      <img
+        style="opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+      <div class="b1con" data-aos="zoom-out" data-aos-duration="1500">
+        <div class="b1"></div>
+      </div>
     </div>
-    <div style="margin-top: 10vh">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div>
       <v-img
-        height="82vh"
-        width="100vw"
+        height="85vh"
+        contain
+        data-aos="fade-up"
+        data-aos-duration="1500"
         src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
       ></v-img>
       <p class="text001">
-        To Create a harmonious interior within the context of a home on the
+        To create a harmonious interior within the context of a home on the
         lake.
       </p>
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <div v-if="isMobile()" class="text-center">
       <v-layout row wrap justify-center pt-md-12 style="height:70vh">
@@ -29,86 +38,104 @@
         </v-flex>
       </v-layout>
     </div>
+
     <div v-else class="text-center">
-      <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
-        <v-flex md5 align-self-center>
+      <v-layout row wrap justify-center pt-md-12>
+        <v-flex
+          md4
+          pa-4
+          align-self-center
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <p class="text002">
-            A play on traditional sri lankan art to enhance the sense of arival.
+            A play on traditional Sri Lankan art to enhance the sense of
+            arrival.
           </p>
         </v-flex>
-        <v-flex md7 align-self-center>
-          <v-img src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
+        <v-flex
+          md8
+          pa-4
+          align-self-center
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <v-img contain src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
         </v-flex>
       </v-layout>
     </div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1500">
       <v-img
-        height="80vh"
-        style="margin-left: 5vw;margin-right: 5vw"
+        contain
+        height="85vh"
         src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
       ></v-img>
       <p class="text001">
-        The interplay of sri lankan pop art and indi-Portuguese furniture.A
+        The interplay of Sri Lankan pop art and indo-Portuguese furniture. A
         prelude to the indoor-outdoor theme carried throughout.
       </p>
     </div>
-    <div style="margin-top: 10vh">
-      <v-img height="80vh" src="../assets/Bolgoda/_SDS1292.JPG.jpeg"></v-img>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-duration="1500">
+      <v-img
+        contain
+        height="90vh"
+        src="../assets/Bolgoda/_SDS1292.JPG.jpeg"
+      ></v-img>
     </div>
-    <div style="margin-top:20vh;">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-duration="1500" style="padding:8vw">
       <vue-flux :options="options" :images="images" :transitions="transitions">
-        <template v-slot:preloader>
-          <flux-preloader height="40vh" />
-        </template>
       </vue-flux>
       <p class="text001">
-        "We wanted the art to speak for the house. to create an environment
+        "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
         <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
-        compo- sition of Inside-OutSlde.
+        compation of Tha inside and out.
       </p>
     </div>
+    <div style="width:99vw;height:18vh;padding:10px"></div>
+
     <div v-if="isMobile()" style="margin-top: 10vh">
       <v-img height="80vh" src="../assets/Bolgoda/_SDS1452.JPG.jpeg"></v-img>
     </div>
-    <div v-else style="margin-top: 10vh">
+    <div v-else data-aos="fade-up" data-aos-duration="1500">
       <v-img
-        style="margin-left: 20%;margin-right: 20%"
-        height="80vh"
+        height="90vh"
         contain
         src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
       ></v-img>
     </div>
-    <div :class="!isMobile() ? 'container' : 'container_mob'">
-      <div class="box">
-        <div style="margin:30px">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-duration="1500">
+      <div>
+        <div>
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
             :perspective="0"
-            :autoplay="true"
-            :autoplay-timeout="2000"
+            :autoplay="false"
+            :autoplay-timeout="1500"
             :display="3"
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/Bolgoda/_SDS1239-HDR.JPG.jpeg" />
+                <v-img contain src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg" />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg" />
+                <v-img contain src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
-              </figure>
-            </slide>
-           <slide :index="3">
-              <figure>
-                <v-img src="../assets/Bolgoda/_SDS1185.JPG.jpeg" />
+                <v-img src="../assets/Bolgoda/bath3.jpeg" />
               </figure>
             </slide>
           </carousel-3d>
@@ -116,29 +143,33 @@
           <p class="text001">
             The combination of the almost monastic serenity and pale colours and
             soft textures show off the strength and beauty of the rooms.
-            sometimes refined and sometimes playfull.
+            Sometimes refined and sometimes playfull.
           </p>
         </div>
       </div>
-      <div class="box stack-top d-none d-lg-block">
+      <!-- <div class="box stack-top d-none d-lg-block">
         <div class="container_l">
           <div class="sub-left"></div>
         </div>
         <div class="container_l">
           <div class="sub-right"></div>
         </div>
-      </div>
+      </div> -->
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div style="margin-top: 10vh">
+    <div data-aos="fade-up" data-aos-duration="1500">
       <v-img
-        height="90vh"
+        height="85vh"
+        contain
         src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
       ></v-img>
       <p class="text001">
-        A contempoary twist to a timeless view
+        A contempoary twist to a timeless view.
       </p>
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
     <div
       v-if="isMobile()"
       class="text-center"
@@ -159,16 +190,24 @@
         </v-flex>
       </v-layout>
     </div>
-    <div v-else class="text-center" style="margin-left: 5vw;margin-right: 5vw">
-      <v-layout row wrap justify-space-around pt-md-12>
-        <v-flex md7 align-self-center>
-          <v-img
-            height="80vh"
-            contain
-            src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
-          ></v-img>
+    <div v-else class="text-center">
+      <v-layout row wrap justify-center>
+        <v-flex
+          md8
+          pa-4
+          align-self-center
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <v-img contain src="../assets/Bolgoda/_SDS1360.JPG.jpeg"></v-img>
         </v-flex>
-        <v-flex md4 align-self-center>
+        <v-flex
+          md4
+          pa-4
+          align-self-center
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <p class="text002">
             Old wood to accentuate the seamless interaction of indoors and
             outdoors. A space that can function independently from the pool and
@@ -177,9 +216,12 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="padding: 10vw">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div style="padding-block:5vh" data-aos="fade-up" data-aos-duration="1500">
       <v-img
-        height="80vh"
+        height="90vh"
+        contain
         style="margin-left: 5vw;margin-right: 5vw"
         src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
       ></v-img>
@@ -188,12 +230,11 @@
 </template>
 
 <script>
-import { VueFlux, FluxPreloader } from "vue-flux";
+import { VueFlux } from "vue-flux";
 
 export default {
   components: {
     VueFlux,
-    FluxPreloader,
   },
   data: () => ({
     slides: [
@@ -232,6 +273,34 @@ export default {
 </script>
 
 <style scoped>
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/Bolgoda/_SDS1498.JPG.jpeg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 92vh;
+}
+.b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .text001 {
   text-align: center;
   padding: 10px;

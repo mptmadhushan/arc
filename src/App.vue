@@ -41,6 +41,14 @@ export default {
 };
 </script>
 <style>
+* {
+  margin: 0;
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 700ms ease;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
@@ -62,6 +70,13 @@ export default {
   text-align: justify;
   padding: 10px;
   font-size: 1.5vh;
+  color: #11111193;
+}
+.text003 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: justify;
+  padding: 10px;
+  font-size: 2vh;
   color: #11111193;
 }
 .carousel-3d-slide {

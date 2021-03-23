@@ -31,11 +31,11 @@
       <div class="sub-right">
         <div class="center_r">
           <p>
-            <v-card flat color="transparent" class="d-flex flex-row">
+            <v-card flat color="transparent">
               <v-img
                 @click="hello()"
                 height="5vh"
-                style="margin-left: 16vw;"
+                style="margin-right:-5vw"
                 width="15vw"
                 contain
                 src="../assets/logoTitle.png"
@@ -188,7 +188,7 @@ export default {
     },
 
     hello() {
-      this.$router.push({ path: "/screen2/" });
+      this.$router.push({ path: "/projects" });
     },
   },
 };

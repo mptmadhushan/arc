@@ -1,92 +1,119 @@
 <template>
   <v-container fluid>
+    <router-link to="/projects">
+      <img
+        style=" opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
     <div class="text-center">
-      <v-layout row wrap justify-center pa-3 style="height: 100vh">
-        <v-flex md10 align-self-center>
-          <v-img
-            contain
-            height="80vh"
-            src="../assets/chamika_house/_SDS3079-HDR_1.jpg"
-          ></v-img>
-        </v-flex>
-        <v-flex md10 justify-center>
-          <p class="text001">
-            White furniture in display to contrast with the high walls draped in
-            greenery.
-          </p>
+      <v-layout row wrap justify-center>
+        <v-flex
+          md12
+          align-self-center
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <div class="b1con" data-aos="zoom-out" data-aos-duration="2000">
+            <div class="b1"></div>
+          </div>
         </v-flex>
       </v-layout>
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
     <div class="text-center">
-      <v-layout row wrap justify-center pa-3 style="height: 100vh">
-        <v-flex md10 align-self-center>
+      <v-layout row wrap justify-center>
+        <v-flex
+          md12
+          align-self-center
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <v-img
             contain
-            height="80vh"
+            height="95vh"
             src="../assets/chamika_house/_SDS3575.jpg"
           ></v-img>
         </v-flex>
-        <v-flex md10 justify-center> </v-flex>
       </v-layout>
     </div>
-    <div style="margin-top: 10vh">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div>
       <v-img
-        height="80vh"
+        contain
         style="margin-left: 5vw;margin-right: 5vw"
         src="../assets/chamika_house/_SDS3429.jpg"
+        data-aos="fade-up"
+        data-aos-duration="1500"
       ></v-img>
-      <p class="text001">
-        White furniture in display fo confrasf wifh {he high walls draped in
+      <!-- <p
+        class="text001"
+        data-aos="fade-up"
+        
+        data-aos-duration="1500"
+      >
+        White furniture in display to contrast with the high walls draped in
         greenery.
-      </p>
+      </p> -->
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div style="margin-top: 10vh">
+    <div data-aos="fade-up" data-aos-duration="1500">
       <v-img
-        height="80vh"
+        height="90vh"
+        contain
         src="../assets/chamika_house/_SDS3650-HDR.jpg"
       ></v-img>
-      <p class="text001">
-        A room showered with nafural light highlighting Venetian mirrors and
-        sculpfures.
-      </p>
+      <!-- <p class="text001">
+        A room showered with natural light highlighting Venetian mirrors and
+        sculptures.
+      </p> -->
     </div>
 
     <div v-if="isMobile()">
       <v-img contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
-      <p class="text001">
-        Specially selected arfwork from arfisfs across The island are showcased
+      <!-- <p class="text001">
+        Specially selected artwork from artists across the island are showcased
         on high walls.
-      </p>
+      </p> -->
     </div>
-    <div v-else style="padding: 10vh">
+    <div v-else data-aos="fade-up" data-aos-duration="1500">
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+
       <v-img
         contain
-        height="80vh"
+        height="90vh"
         src="../assets/chamika_house/_SDS3393b.jpg"
       ></v-img>
-      <p class="text001">
-        Specially selected arfwork from arfisfs across The island are showcased
+      <!-- <p class="text001">
+        Specially selected artwork from arfisfs across The island are showcased
         on high walls.
-      </p>
+      </p> -->
     </div>
     <div v-if="isMobile()">
       <v-img contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
-      <p class="text001">
-        Adding to the mystery, The staircase leading fo the property is encased
+      <!-- <p class="text001">
+        Adding to the mystery, the staircase leading fo the property is encased
         within an abundance of greenery to complete a natural rustic look.
-      </p>
+      </p> -->
     </div>
-    <div v-else style="padding: 10vh">
+    <div v-else data-aos="fade-down" data-aos-duration="1500" style="padding:5vh">
+      <div style="width:99vw;height:10vh;margin:10vh"></div>
+
       <v-img
         contain
-        height="80vh"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        height="90vh"
         src="../assets/chamika_house/_SDS2989.jpg"
       ></v-img>
-      <p class="text001">
+      <!-- <p class="text001">
         Adding to the mystery, The staircase leading fo the property is encased
         within an abundance of greenery to complete a natural rustic look.
-      </p>
+      </p> -->
     </div>
   </v-container>
 </template>
@@ -113,6 +140,26 @@ export default {
 </script>
 
 <style scoped>
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/chamika_house/_SDS3079-HDR_1.jpg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+.b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
 .text001 {
   text-align: center;
   padding: 10px;

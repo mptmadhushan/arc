@@ -1,25 +1,54 @@
 <template>
   <v-container fluid>
+    <router-link to="/projects">
+      <img
+        style=" opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
     <div class="text-center">
-      <v-layout row wrap justify-center pa-3 style="height: 100vh">
-        <v-flex md10 xs12 sm12 align-self-center>
-          <v-img
-            contain
-            height="80vh"
-            src="../assets/Stone_House/Stone House_DSC5533.JPG.jpg"
-          ></v-img>
+      <v-layout row wrap justify-center pa-3>
+        <v-flex
+          md12
+          xs12
+          sm12
+          align-self-center
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div
+            class="b1con"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+            data-aos-duration="2000"
+          >
+            <div class="b1"></div>
+          </div>
         </v-flex>
       </v-layout>
     </div>
-    <div v-if="isMobile()">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+    >
       <v-img contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
       <p class="text001">
         Revitalising a Kandyan Icon into a boutique hotel maintaining its
         heritage
       </p>
     </div>
-    <div v-else>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+    >
+      <div style="width:99vw;height:20vh;padding:10px"></div>
       <v-img
+        contain
         height="90vh"
         object-fit
         src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"
@@ -39,16 +68,29 @@
         which makes for a serene sight
       </p>
     </div>
-    <div v-else class="text-center">
-      <v-layout row wrap justify-space-around style="height:100vh">
-        <v-flex md7 xs12 sm12 align-self-center>
+    <div v-else class="text-center" style="padding:2vh">
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+
+      <v-layout row wrap justify-space-around>
+        <v-flex md9 pa-4 xs12 sm12 align-self-center>
           <v-img
-            height="80vh"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="2500"
             contain
             src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
           ></v-img>
         </v-flex>
-        <v-flex md4 xs10 sm10 align-self-center>
+        <v-flex
+          md3
+          xs10
+          pa-4
+          sm10
+          align-self-center
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="2500"
+        >
           <p class="text002">
             The carefully structured arches help display the surrounding
             greenery. which makes for a serene sight
@@ -56,18 +98,31 @@
         </v-flex>
       </v-layout>
     </div>
-    <div>
-      <v-img
-        height="80vh"
-        style="margin-left: 5vw;margin-right: 5vw"
-        src="../assets/Stone_House/Stone House_DSC5296.JPG.jpg"
-      ></v-img>
-      <p class="text001">
-        Art and Sculpture. a study of the proprietor's history in the rice
-        industry and Its many permutations throughout the home.
-      </p>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-duration="2500">
+      <div style="padding:10vh">
+        <vue-flux
+          :options="options"
+          :images="images"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader height="40vh" />
+          </template>
+        </vue-flux>
+        <p class="text001">
+          Art and Sculpture. a study of the proprietor's history in the rice
+          industry and Its many permutations throughout the home.
+        </p>
+      </div>
     </div>
-    <div v-if="isMobile()">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+    >
       <v-img
         contain
         src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
@@ -78,36 +133,51 @@
       </p>
     </div>
     <div v-else class="text-center">
-      <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
-        <v-flex md4 xs10 sm10 align-self-center>
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+
+      <v-layout row wrap justify-center pt-md-12>
+        <v-flex
+          md3
+          pa-4
+          xs10
+          sm10
+          align-self-center
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="2500"
+        >
           <p class="text002">
             Rustic, contemporary furniture to tie together the ethos of the
             house and its strong tonality.
           </p>
         </v-flex>
-        <v-flex md7 xs10 sm10 align-self-center>
+        <v-flex md9 pa-4 xs10 sm10 align-self-center>
           <v-img
-            height="80vh"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="2500"
             contain
             src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
           ></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div :class="!isMobile() ? 'container' : 'container_mob'">
-      <div class="box">
-        <div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div>
+      <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
             :perspective="0"
-            :autoplay="true"
+            :autoplay="false"
             :autoplay-timeout="3000"
             :display="3"
           >
-           <slide :index="0">
+            <slide :index="0">
               <figure>
                 <v-img
                   src="../assets/Stone_House/Stone House_DSC5402.JPG.jpg"
@@ -138,16 +208,23 @@
           </div>
         </div>
       </div>
-      <div class="box stack-top d-none d-lg-block">
+      <!-- <div class="box stack-top d-none d-lg-block">
         <div class="container_l">
           <div class="sub-left"></div>
         </div>
         <div class="container_l">
           <div class="sub-right"></div>
         </div>
-      </div>
+      </div> -->
     </div>
-    <div v-if="isMobile()">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+    >
       <v-img
         contain
         src="../assets/Stone_House/Stone House_DSC5405.JPG.jpg"
@@ -158,43 +235,72 @@
     </div>
     <div v-else class="text-center" style="height: 100vh;">
       <v-layout row wrap justify-center pt-md-12>
-        <v-flex md4 xs10 sm10 align-self-baseline>
+        <v-flex
+          md3
+          xs10
+          pa-4
+          sm10
+          align-self-center
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="2500"
+        >
           <p class="text002">
             Harmonious interiors to reassure and uplift
           </p>
         </v-flex>
-        <v-flex md7 xs10 sm10 justify-center>
+        <v-flex md8 pa-4 xs10 sm10 justify-center>
           <v-img
-            height="80vh"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="2500"
+            contain
             src="../assets/Stone_House/Stone House_DSC5405.JPG.jpg"
           ></v-img>
         </v-flex>
       </v-layout>
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
     <div v-if="isMobile()">
       <v-img
         contain
         src="../assets/Stone_House/Stone House_DSC5196.JPG.jpg"
       ></v-img>
     </div>
-    <div v-else>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="2000"
+    >
       <v-img
-        height="80vh"
+        height="90vh"
         contain
         src="../assets/Stone_House/Stone House_DSC5196.JPG.jpg"
       ></v-img>
     </div>
-    <div v-if="isMobile()">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-left"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+    >
       <v-img
         contain
         style="padding: 10vh"
         src="../assets/Stone_House/Stone House_DSC5074.JPG.jpg"
       ></v-img>
     </div>
-    <div v-else style="padding-top: 10vh">
+    <div v-else style="padding:5vh;">
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+
       <v-img
         contain
-        height="100vh"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="2500"
+        height="90vh"
         src="../assets/Stone_House/Stone House_DSC5074.JPG.jpg"
       ></v-img>
     </div>
@@ -202,8 +308,32 @@
 </template>
 
 <script>
+import { VueFlux, FluxPreloader } from "vue-flux";
+
 export default {
+  components: {
+    VueFlux,
+    FluxPreloader,
+  },
   data: () => ({
+    options: {
+      allowFullscreen: false,
+      allowToSkipTransition: true,
+      autohideTime: 10000,
+      autoplay: true,
+      bindKeys: false,
+      delay: 3000,
+      enableGestures: false,
+      infinite: true,
+      lazyLoad: true,
+      height: "10vh",
+      lazyLoadAfter: 3,
+    },
+    images: [
+      require("../assets/Stone_House/sldie2.jpg"),
+      require("../assets/Stone_House/slide1.jpg"),
+    ],
+    transitions: ["fade"],
     slides: [
       {
         name: "Slide name 1",
@@ -223,6 +353,34 @@ export default {
 </script>
 
 <style scoped>
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/Stone_House/Stone House_DSC5533.JPG.jpg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 93vh;
+}
+.b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .text001 {
   text-align: center;
   padding: 10px;

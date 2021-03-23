@@ -9,11 +9,15 @@
             justify-center
             style="margin-top:10%;margin-bottom:5%;"
           >
-            <v-flex md1 sm5 xs5 align-self-center>
-              <p class="about_us">ABOUT US</p>
-              <!-- <v-img src="../assets/titleIMG.png"></v-img> -->
-            </v-flex>
-            <v-flex md2 sm12 xs12 align-self-end>
+            <v-flex md1 sm5 xs5 align-self-start>
+              <p
+                class="about_us"
+                style="margin-top:20vh;margin-right:-2vw;text-align:right"
+              >
+                ABOUT US
+              </p></v-flex
+            >
+            <v-flex md2 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
               <v-img height="40vh" src="../assets/1.png"></v-img>
             </v-flex>
             <v-flex md3 xs12 pa-1>
@@ -63,28 +67,30 @@
           </p>
         </div>
         <div v-else data-aos="fade-up" data-aos-duration="3000">
-          <v-layout row wrap justify-space-around pt-md-12>
+          <v-layout row wrap justify-space-around pt-md-12 style="height:100vh">
             <v-flex md4 sm12 xs12 align-self-center pa-md-12>
               <v-img height="70vh" src="../assets/12.png"></v-img>
             </v-flex>
             <v-flex md6 align-self-center>
               <p class="pa-2 new">
-                Chamika De Alwis began his architectural career in 2003 with
-                MICD Associates while pursuing a Diploma in Architecture at the
-                City School of Architecture, Colombo. Following his education
-                and becoming a Chartered Architect at the Sri Lanka Institute of
-                Architects, he continued working with MICD Associates as a
-                Senior Associate and Principal assistant to Architect Channa
-                Daswatte where he contributed to many prominent locations
-                throughout the island. In addition to this, he is on the board
-                of Trustees of the Geoffrey Bawa Trust and the Lunuganga Trust,
-                respectively. In 2014 he established his own practice, C atelier
-                design studio, which specialized in hotels, boutique properties
-                and residential developments in reference to both interior
-                design and architecture. After nearly two decades of experience
-                in the industry, in 2020, CDA was formed. It continues to excel
-                in it’s creative endeavors and deliver intricately inventive and
-                exquisite designs to their clientele.
+                Chamika De Alwis began his career in 2003 with MICD Associates
+                while pursuing a Diploma in Architecture at the City School of
+                Architecture, Colombo. Following his education, he continued
+                working with MICD Associates as a Senior Associate and Principal
+                assistant. In 2016 he embarked on his own practice as the
+                Principal Architect of C Atelier Consultants and CDA Associates.
+                Since then, he’s been involved in several curatorial projects in
+                Sri Lanka including the exhibition Second Skin in March 2017 and
+                Revive; Ethical Use of Material in June 2017 in collaboration
+                with the Colombo Fashion Week. In 2019, he curated One Won in
+                collaboration with the University of the Visual and Performing
+                Arts, Colombo in the aftermath of the Easter Attacks in Sri
+                Lanka. He was the recipient of the Conde Nast Johansens award
+                for excellence in 2020 – 21 for his work in the architecture
+                field and is on the board of Trustees of the Geoffrey Bawa Trust
+                and the Lunuganga Trust, respectively. With CDA he continues to
+                excel in his creative endeavours and deliver intricately
+                inventive and exquisite designs to his clientele.
               </p>
             </v-flex>
           </v-layout>
@@ -98,9 +104,14 @@
             justify-center
             style="margin-top:10%;margin-bottom:5%;"
           >
-            <v-flex md1 sm5 xs5 align-self-center>
-              <p class="about_us">ABOUT US</p>
-            </v-flex>
+            <v-flex md1 sm5 xs5 align-self-start>
+              <p
+                class="about_us"
+                style="margin-top:20vh;margin-right:-2vw;text-align:right"
+              >
+                ABOUT US
+              </p></v-flex
+            >
             <v-flex md2 sm12 xs12 align-self-end pa-1>
               <v-img height="40vh" src="../assets/1.png"></v-img>
             </v-flex>
@@ -137,22 +148,24 @@
             </v-flex>
             <v-flex md6 align-self-center>
               <p class="pa-2 new">
-                Chamika De Alwis began his architectural career in 2003 with
-                MICD Associates while pursuing a Diploma in Architecture at the
-                City School of Architecture, Colombo. Following his education
-                and becoming a Chartered Architect at the Sri Lanka Institute of
-                Architects, he continued working with MICD Associates as a
-                Senior Associate and Principal assistant to Architect Channa
-                Daswatte where he contributed to many prominent locations
-                throughout the island. In addition to this, he is on the board
-                of Trustees of the Geoffrey Bawa Trust and the Lunuganga Trust,
-                respectively. In 2014 he established his own practice, C atelier
-                design studio, which specialized in hotels, boutique properties
-                and residential developments in reference to both interior
-                design and architecture. After nearly two decades of experience
-                in the industry, in 2020, CDA was formed. It continues to excel
-                in it’s creative endeavors and deliver intricately inventive and
-                exquisite designs to their clientele.
+                Chamika De Alwis began his career in 2003 with MICD Associates
+                while pursuing a Diploma in Architecture at the City School of
+                Architecture, Colombo. Following his education, he continued
+                working with MICD Associates as a Senior Associate and Principal
+                assistant. In 2016 he embarked on his own practice as the
+                Principal Architect of C Atelier Consultants and CDA Associates.
+                Since then, he’s been involved in several curatorial projects in
+                Sri Lanka including the exhibition Second Skin in March 2017 and
+                Revive; Ethical Use of Material in June 2017 in collaboration
+                with the Colombo Fashion Week. In 2019, he curated One Won in
+                collaboration with the University of the Visual and Performing
+                Arts, Colombo in the aftermath of the Easter Attacks in Sri
+                Lanka. He was the recipient of the Conde Nast Johansens award
+                for excellence in 2020 – 21 for his work in the architecture
+                field and is on the board of Trustees of the Geoffrey Bawa Trust
+                and the Lunuganga Trust, respectively. With CDA he continues to
+                excel in his creative endeavours and deliver intricately
+                inventive and exquisite designs to his clientele.
               </p>
             </v-flex>
           </v-layout>

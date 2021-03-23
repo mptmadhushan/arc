@@ -1,79 +1,84 @@
 <template>
-  <v-container fluid>
-    <v-card
-      flat
-      style="margin-top:20vh;margin-bottom:20vh;margin-left:8vh;margin-right:8vh"
-    >
-      <v-layout row wrap justify-center>
+  <v-container fluid style="overflow: hidden">
+    <router-link to="/">
+      <img
+        style=" opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
+    <v-card flat style="margin-top: 15vh;margin-left:8vh;margin-right:8vh">
+      <v-layout row wrap justify-center style="margin-inline:10vw">
         <v-flex md2 xs12 sm12>
-          <router-link to="/ChitraLane" tag="div">
+          <a href="/ChitraLane" class="nav-link">
+            <!-- <a to="/ChitraLane" :key="$route.fullPath" tag="div"> -->
             <v-row align="center" justify="center">
               <v-col>
                 <div class="sq"></div>
               </v-col>
             </v-row>
-          </router-link>
+          </a>
         </v-flex>
         <v-flex md2 xs12 sm12>
-          <router-link to="/Arienti" tag="div">
+          <a href="/Arienti" tag="div">
             <v-card flat>
               <div class="tri"></div>
               <!-- <v-img height="20vh" width="20vh" src="../assets/tri.png"></v-img> -->
             </v-card>
-          </router-link>
+          </a>
         </v-flex>
         <v-flex md2 xs12 sm12>
-          <router-link to="/Bolgoda" tag="div">
+          <a href="/Bolgoda" tag="div">
             <v-card flat>
               <div class="cir"></div>
             </v-card>
-          </router-link>
+          </a>
         </v-flex>
       </v-layout>
-      <v-layout row wrap justify-center>
+      <v-layout row wrap justify-center style="margin-inline:10vw">
         <v-flex md2 xs12 sm12>
-          <router-link to="/DamindraHouse" tag="div">
+          <a href="/DamindraHouse" tag="div">
             <v-card flat>
               <div class="cir"></div>
             </v-card>
-          </router-link>
+          </a>
         </v-flex>
         <v-flex md2 xs12 sm12>
-          <router-link to="/DinaliHouse" tag="div">
+          <a href="/DinaliHouse" tag="div">
             <v-card flat>
               <div class="sq"></div>
             </v-card>
-          </router-link>
+          </a>
         </v-flex>
 
         <v-flex md2 xs12 sm12>
-          <router-link to="/ChamikaHouse" tag="div">
+          <a href="/ChamikaHouse" tag="div">
             <v-card flat>
               <div class="tri"></div>
             </v-card>
-          </router-link>
+          </a>
         </v-flex> </v-layout
-      ><v-layout row wrap justify-center>
+      ><v-layout row wrap justify-center style="margin-inline:10vw">
         <v-flex md2 xs12 sm12>
-          <router-link to="/StoneHouse" tag="div">
+          <a href="/StoneHouse" tag="div">
             <v-card flat>
               <div class="tri"></div>
             </v-card>
-          </router-link>
+          </a>
         </v-flex>
         <v-flex md2 xs12 sm12>
-          <router-link to="/Hanthana" tag="div">
+          <a href="/Hanthana" tag="div">
             <v-card flat>
               <div class="cir"></div>
             </v-card>
-          </router-link>
+          </a>
         </v-flex>
         <v-flex md2 xs12 sm12>
-          <router-link to="/maniumpathy" tag="div">
+          <a href="/maniumpathy" tag="div">
             <v-card flat>
               <div class="sq"></div>
             </v-card>
-          </router-link>
+          </a>
         </v-flex>
       </v-layout>
     </v-card>
@@ -103,6 +108,8 @@ export default {
 .cir {
   height: 20vh;
   width: 20vh;
+  opacity: 0.4;
+
   margin-left: 20%;
   background-size: 100% 100%;
   background-image: url("../assets/cir.png");
@@ -110,6 +117,7 @@ export default {
 .cir:hover {
   height: 20vh;
   width: 20vh;
+  opacity: 1;
   background-size: 100% 100%;
   background-image: url("../assets/cirHover.png");
 }
@@ -118,11 +126,15 @@ export default {
   width: 20vh;
   background-size: 100% 100%;
   margin-left: 20%;
+  opacity: 0.4;
+
   background-image: url("../assets/sqHover.png");
 }
 .sq:hover {
   height: 20vh;
   width: 20vh;
+  opacity: 1;
+
   margin-left: 20%;
   background-size: 100% 100%;
   background-image: url("../assets/sq.png");
@@ -130,6 +142,7 @@ export default {
 .tri {
   height: 20vh;
   width: 20vh;
+  opacity: 0.4;
   margin-left: 20%;
   background-size: 100% 100%;
   background-image: url("../assets/triHover.png");
@@ -137,6 +150,7 @@ export default {
 .tri:hover {
   height: 20vh;
   width: 20vh;
+  opacity: 1;
   background-size: 100% 100%;
   background-image: url("../assets/tri.png");
 }

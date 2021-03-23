@@ -1,27 +1,54 @@
 <template>
   <v-container fluid>
+    <router-link to="/projects">
+      <img
+        style=" opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
     <div class="text-center">
-      <v-layout row wrap justify-center pa-md-2 style="height: 100vh">
-        <v-flex md10 align-self-center>
-          <v-img
-            contain
-            height="80vh"
-            src="../assets/Damindra_House/_SDS7569.JPG.jpg"
-          ></v-img>
+      <v-layout row wrap justify-center>
+        <v-flex
+          md10
+          align-self-center
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="2500"
+        >
+          <div
+            class="b1con"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+            data-aos-duration="2000"
+          >
+            <div class="b1"></div>
+          </div>
         </v-flex>
       </v-layout>
     </div>
-    <div style="margin-top: 10vh;margin-inline:3vw">
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
-        height="80vh"
+        contain
+        height="85vh"
         src="../assets/Damindra_House/_SDS7604.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Working with rustic wooden bences, and lavish modern furniture to
-        combine two worlds info one cohesive unit.
+        Working with rustic wooden benches, and lavish modern furniture to
+        combine two worlds into one cohesive unit.
       </p>
     </div>
-    <div v-if="isMobile()" class="text-center">
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
+    <div
+      v-if="isMobile()"
+      class="text-center"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="2500"
+    >
       <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
         <v-flex md7 xs12 sm12 align-self-center>
           <v-img
@@ -36,25 +63,40 @@
       </v-layout>
     </div>
     <div v-else class="text-center">
-      <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
-        <v-flex md4 align-self-center>
+      <v-layout row wrap justify-center style="height: 100vh">
+        <v-flex
+          md4
+          align-self-center
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="2500"
+        >
           <p class="text002">
             Open air area inside a home, which not only adds to it's beauty but
             also creates a cooling effect through efficient ventilation.
           </p>
         </v-flex>
-        <v-flex md7 align-self-center>
+        <v-flex
+          md7
+          align-self-center
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-duration="2500"
+        >
           <v-img
             contain
-            height="80vh"
+            height="85vh"
             src="../assets/Damindra_House/_SDS7634.JPG.jpg"
           ></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div style="margin-top: 10vh">
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
-        height="80vh"
+        contain
+        height="85vh"
         src="../assets/Damindra_House/_SDS7591.JPG.jpg"
       ></v-img>
       <p class="text001">
@@ -62,6 +104,8 @@
         unobstructed view, highlighted further wifh neutral toned furniture.
       </p>
     </div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
     <div v-if="isMobile()" class="text-center">
       <v-layout row wrap justify-space-around>
         <v-flex md7 xs12 sm12 align-self-center mt-12>
@@ -71,61 +115,97 @@
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
           ></v-img>
           <p class="text002 ">
-            The frees and gravel exterior adds a quief charm and homely feel,
-            which is elevated through the framed arfwork.
+            The trees and gravel exterior adds a quiet charm and homely feel,
+            which is elevated through the framed artwork.
           </p>
         </v-flex>
       </v-layout>
     </div>
-    <div v-else class="text-center">
-      <v-layout row wrap justify-space-around style="height: 100vh">
-        <v-flex md4 align-self-center>
+
+    <div v-else class="text-center" style="padding:5vh">
+      <v-layout row wrap justify-space-around>
+        <v-flex
+          md3
+          align-self-center
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="2500"
+        >
           <p class="text002">
-            The frees and gravel exterior adds a quief charm and homely feel,
-            which is elevated through the framed arfwork.
+            The trees and gravel exterior adds a quiet charm and homely feel,
+            which is elevated through the framed artwork.
           </p>
         </v-flex>
-        <v-flex md7 align-self-center>
+        <v-flex
+          md9
+          pa-4
+          align-self-center
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="2500"
+        >
           <v-img
             contain
-            height="80vh"
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
           ></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <!-- <div style="margin-top:20vh;padding:10vw;object-fit: contain;">
-      <vue-flux
-        contain
-        :options="options"
-        :images="images"
-        :transitions="transitions"
-        style="height: 80vh;object-fit: contain;"
-      >
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
+    <!-- <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+      <transition-group name="fade" tag="div">
+        <div v-for="i in [currentIndex]" :key="i">
+          <v-img
+            style="object-fit:contain;height:100vh;padding-left:30vw;padding-right:30vw"
+            pa-12
+            height="90vh"
+            contain
+            :src="currentImg"
+          />
+        </div>
+      </transition-group>
+    </div> -->
+    <div style="padding:7vh">
+      <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-    </div> -->
-    <div>
-      <v-img
-        contain
-        height="90vh"
-        style="margin-left: 5vw;margin-right: 5vw"
-        src="../assets/Damindra_House/_SDS7622.JPG.jpg"
-      ></v-img>
     </div>
   </v-container>
 </template>
 
 <script>
-// import { VueFlux, FluxPreloader } from "vue-flux";
+import { VueFlux, FluxPreloader } from "vue-flux";
 
 export default {
-  // components: {
-  //   VueFlux,
-  //   FluxPreloader,
-  // },
+  components: {
+    VueFlux,
+    FluxPreloader,
+  },
+  mounted: function() {
+    this.startSlide();
+  },
+
+  methods: {
+    startSlide: function() {
+      this.timer = setInterval(this.next, 4000);
+    },
+
+    next: function() {
+      this.currentIndex += 1;
+    },
+    prev: function() {
+      this.currentIndex -= 1;
+    },
+  },
+
+  computed: {
+    currentImg: function() {
+      return this.images2[Math.abs(this.currentIndex) % this.images.length];
+    },
+  },
   data: () => ({
     options: {
       allowFullscreen: false,
@@ -137,14 +217,20 @@ export default {
       enableGestures: false,
       infinite: true,
       lazyLoad: true,
+      height: "10vh",
       lazyLoadAfter: 3,
     },
     images: [
       require("../assets/Damindra_House/_SDS7622.JPG.jpg"),
       require("../assets/Damindra_House/_SDS7572.JPG.jpg"),
     ],
+    images2: [
+      require("../assets/Damindra_House/slider1.png"),
+      require("../assets/Damindra_House/slider2.png"),
+    ],
     transitions: ["fade"],
-
+    timer: null,
+    currentIndex: 0,
     slides: [
       {
         name: "Slide name 1",
@@ -164,6 +250,80 @@ export default {
 </script>
 
 <style scoped>
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/Damindra_House/_SDS7569.JPG.jpg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+.b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 4s linear;
+  visibility: visible 2s ease-in;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+}
+
+.fade-leave-to {
+  visibility: hidden 1s ease-in-out;
+  width: 100%;
+  opacity: 0.5;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0.5;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.7s ease;
+  border-radius: 0 4px 4px 0;
+  text-decoration: none;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 .text001 {
   text-align: center;
   padding: 10px;

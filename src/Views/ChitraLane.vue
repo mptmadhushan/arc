@@ -1,13 +1,26 @@
 <template>
   <v-container fluid>
-    <div class="text-center" style="margin-top:5vh">
-      <v-layout row wrap justify-center pa-3>
-        <v-flex md10 justify-center>
-          <v-img
-            contain
-            height="85vh"
-            src="../assets/Chitra_Lane/_SDS3756.JPG.jpg"
-          ></v-img>
+    <router-link to="/projects">
+      <img
+        style=" opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
+    <div class="text-center b1Main" style="margin-top:5vh" @focus="this.hey">
+      <v-layout
+        row
+        wrap
+        justify-center
+        pa-3
+        data-aos="zoom-out"
+        data-aos-delay="100"
+        data-aos-duration="2000"
+      >
+        <v-flex md4 justify-center>
+          <div class="b1con">
+            <div class="b1"></div>
+          </div>
         </v-flex>
         <v-flex md10 justify-center>
           <p class="text001">
@@ -17,16 +30,27 @@
         </v-flex>
       </v-layout>
     </div>
-
-    <div class="text-center" style="margin-top:10vh;height: 100vh">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div class="text-center" style="height: 100vh">
       <v-layout row wrap justify-center pt-md-12>
-        <v-flex md4 align-self-end>
+        <v-flex
+          md4
+          align-self-end
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <p class="text002">
             Tall windows to create efficient ventilation and keep fhe rooms cool
-            under scorching island Van.
+            under scorching island sun.
           </p>
         </v-flex>
-        <v-flex md7 justify-center>
+        <v-flex
+          md7
+          justify-center
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="1500"
+        >
           <v-img
             height="80vh"
             src="../assets/Chitra_Lane/_SDS3762-HDR.JPG.jpg"
@@ -34,48 +58,87 @@
         </v-flex>
       </v-layout>
     </div>
-    <v-layout v-if="!isMobile()" wrap style="height: 100vh">
-      <v-flex md12 align-self-center>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <v-layout row justify-center v-if="!isMobile()" wrap>
+      <v-flex
+        md12
+        align-self-center
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+      >
         <div>
           <v-img
-            height="80vh"
+            height="90vh"
             contain
-            style="margin-left: 5vw;margin-right: 5vw"
             src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
           ></v-img>
         </div>
       </v-flex>
     </v-layout>
+
     <v-layout v-else row wrap>
-      <v-flex md12 align-self-center>
+      <v-flex
+        md12
+        align-self-center
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
         <div>
           <v-img
             height="100%"
             contain
-            style="margin-left: 5vw;margin-right: 5vw"
             src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
           ></v-img>
         </div>
       </v-flex>
     </v-layout>
+
+    <div style="width:99vw;height:30vh;padding:10px"></div>
+
     <div class="text-center">
-      <v-layout row wrap justify-center pt-md-12>
-        <v-flex md4 align-self-center>
+      <v-layout row wrap justify-center>
+        <v-flex
+          md4
+          align-self-center
+          data-aos="fade-right"
+          data-aos-delay="10"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
           <p class="text003">
-            Narrow. Sleek Siairways focused on minimalistic aesthetics
+            Narrow, Sleek stairways focused on minimalistic aesthetics
           </p>
         </v-flex>
-        <v-flex md7 justify-center>
+        <v-flex
+          md7
+          justify-center
+          data-aos="fade-left"
+          data-aos-delay="10"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
           <v-img
             contain
-            height="85vh"
+            height="90vh"
             src="../assets/Chitra_Lane/_SDS3689.JPG.jpg"
           ></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div :class="!isMobile() ? 'container' : 'container_mob'">
-      <div class="box">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      style="padding-top:10vh"
+      data-aos="fade-up"
+      data-aos-delay="10"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+    >
+      <div>
         <div>
           <carousel-3d
             :width="900"
@@ -83,7 +146,7 @@
             :inverse-scaling="200"
             :space="1300"
             :perspective="0"
-            :autoplay="true"
+            :autoplay="false"
             :autoplay-timeout="3000"
             :display="3"
           >
@@ -100,44 +163,52 @@
                 <v-img src="../assets/Chitra_Lane/_SDS3741-HDR.JPG.jpg" />
               </figure>
             </slide>
-            <slide :index="3">
-              <figure>
-                <v-img src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg" />
-              </figure>
-            </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Neutral tones, and longer artworks convey spaciousness.
+              Neutral tones, and tall artworks convey spaciousness.
             </p>
           </div>
         </div>
       </div>
-      <div class="box stack-top d-none d-lg-block">
+      <!-- <div class="box stack-top d-none d-lg-block">
         <div class="container_l">
           <div class="sub-left"></div>
         </div>
         <div class="container_l">
           <div class="sub-right"></div>
         </div>
-      </div>
+      </div> -->
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div style="margin-top:1vh">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="500"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+    >
       <v-img
-        height="82vh"
+        height="85vh"
         contain
         src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
       ></v-img>
       <p class="text001" pt-5>
-        Wooden inferiors add to a completed rustic yet modern look.
+        Wooden interiors add to a completed rustic yet modern look.
       </p>
     </div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
 
-    <div style="padding: 5vw">
+    <div
+      style="padding:5vh"
+      data-aos="fade-up"
+      data-aos-delay="500"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+    >
       <v-img
         contain
-        height="80vh"
+        height="90vh"
         src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
       ></v-img>
     </div>
@@ -146,6 +217,7 @@
 
 <script>
 export default {
+  mounted() {},
   data: () => ({
     slides: [
       {
@@ -166,6 +238,94 @@ export default {
 </script>
 
 <style scoped>
+ul {
+  background-color: #eee;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+p:hover ~ ul {
+  transform: scaleY(1);
+}
+
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/Chitra_Lane/_SDS3756.JPG.jpg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.b1Main:hover .b1 {
+  /* transform: scaleY(0); */
+}
+.container {
+  width: 100vw;
+  height: 1000px;
+  position: relative;
+  margin: 0;
+}
+.container_mob {
+  /* width: 100vw; */
+  height: 100vw;
+  position: relative;
+  margin: 0;
+}
+.box2 {
+  margin-top: 100px;
+  width: 100vw;
+
+  /* height: 900px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0.8; for demo purpose  */
+}
+.stack-top {
+  z-index: 9;
+  margin: 0; /* for demo purpose  */
+}
+.sub-left {
+  float: left;
+  height: 100vh;
+  width: 29%;
+  align-items: center;
+  opacity: 1;
+  transition: 0.6s ease;
+  background-image: linear-gradient(to right, red);
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1300ms;
+}
+.sub-right {
+  float: right;
+  height: 100vh;
+  width: 29%;
+  opacity: 1;
+  transition: 0.6s ease;
+  background-image: linear-gradient(to left, red);
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 3000ms;
+}
 .text001 {
   text-align: center;
   padding: 10px;

@@ -1,32 +1,51 @@
 <template>
-  <div>
-    <div style="margin-top: 10vh">
-      <v-img
-        contain
-        height="80vh"
-        src="../assets/Arienti/_SDS7737.jpeg"
-      ></v-img>
+  <v-container fluid>
+    <router-link to="/projects">
+      <img
+        style="opacity: 0.5;margin-inline:20px"
+        height="20vh"
+        src="../assets/backArrow.png"
+      />
+    </router-link>
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+      <div
+        class="b1con"
+        data-aos="zoom-out"
+        data-aos-delay="100"
+        data-aos-duration="2000"
+      >
+        <div class="b1"></div>
+      </div>
+
       <p class="text001">
         Formerly in disrepair, unearthing hidden potential in what would be a
         City landmark
       </p>
     </div>
-    <div style="margin-top: 10vh">
-      <v-img height="82vh" src="../assets/Arienti/_SDS7732.jpeg"></v-img>
+    <div style="width:99vw;height:18vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+      <v-img
+        contain
+        height="85vh"
+        src="../assets/Arienti/_SDS7732.jpeg"
+      ></v-img>
       <p class="text001">
         Eliminating high boundary walls to expose the exceptional facades
-        beyond, now housing, one of Colombo's premier fashion brands.
+        beyond, now housing one of Colombo's premier fashion brands.
       </p>
     </div>
-    <div :class="!isMobile() ? 'container' : 'container_mob'">
-      <div class="box">
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
+      <div>
         <div>
           <carousel-3d
             :width="900"
             :height="600"
             :inverse-scaling="200"
             :space="1300"
-            :autoplay="true"
+            :autoplay="false"
             :autoplay-timeout="3000"
             :display="3"
             :perspective="0"
@@ -44,43 +63,19 @@
             ><slide :index="1">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7783.jpeg" />
-                <!-- <div
-                  style="background-color: white;text-align: center;padding:20px;"
-                >
-                  Re-purposing and re-scaling of antique and contemporary
-                  fittings to elevate the shopping experience
-                </div> -->
               </figure> </slide
             ><slide :index="2">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7782.jpeg" />
-                <!-- <div
-                  style="background-color: white;text-align: center;padding:20px;"
-                >
-                  Re-purposing and re-scaling of antique and contemporary
-                  fittings to elevate the shopping experience
-                </div> -->
               </figure>
             </slide>
             <slide :index="3">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7808.jpeg" />
-                <!-- <div
-                  style="background-color: white;text-align: center;padding:20px;"
-                >
-                  Re-purposing and re-scaling of antique and contemporary
-                  fittings to elevate the shopping experience
-                </div> -->
               </figure> </slide
             ><slide :index="4">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7783.jpeg" />
-                <!-- <div
-                  style="background-color: white;text-align: center;padding:20px;"
-                >
-                  Re-purposing and re-scaling of antique and contemporary
-                  fittings to elevate the shopping experience
-                </div> -->
               </figure> </slide
             ><slide :index="5">
               <figure>
@@ -88,33 +83,29 @@
               </figure>
             </slide>
           </carousel-3d>
-          <div style="background-color: white;text-align: center;padding:20px;">
+          <div
+            class="text001"
+            style="background-color: white;text-align: center;padding:20px;"
+          >
             Re-purposing and re-scaling of antique and contemporary fittings to
             elevate the shopping experience
           </div>
         </div>
       </div>
-      <div class="box stack-top d-none d-lg-block">
-        <div class="container_l">
-          <div class="sub-left"></div>
-        </div>
-        <div class="container_l">
-          <div class="sub-right"></div>
-        </div>
-      </div>
     </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div style="margin-top: 10%">
+    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
       <v-img
-        style="margin-left: 10vw;margin-right: 10vw"
-        height="82vh"
+        height="85vh"
+        contain
         src="../assets/Arienti/_SDS7793.jpeg"
       ></v-img>
       <p class="text001">
         Balancing reflections and artificial light.
       </p>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -155,6 +146,34 @@ export default {
 </script>
 
 <style>
+.b1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/Arienti/_SDS7737.jpeg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+.b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .container {
   width: 100vw;
   height: 1000px;
