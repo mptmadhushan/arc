@@ -44,7 +44,6 @@
     <div>
       <v-img
         contain
-        style="margin-left: 5vw;margin-right: 5vw"
         src="../assets/chamika_house/_SDS3429.jpg"
         data-aos="fade-up"
         data-aos-duration="1500"
@@ -93,14 +92,21 @@
         on high walls.
       </p> -->
     </div>
-    <div v-if="isMobile()">
+    <div v-if="isMobile()" style="height: 100vh;">
+      <div style="width:99vw;height:20vh;margin:10vh"></div>
+
       <v-img contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
       <!-- <p class="text001">
         Adding to the mystery, the staircase leading fo the property is encased
         within an abundance of greenery to complete a natural rustic look.
       </p> -->
     </div>
-    <div v-else data-aos="fade-down" data-aos-duration="1500" style="padding:5vh">
+    <div
+      v-else
+      data-aos="fade-down"
+      data-aos-duration="1500"
+      style="padding:5vh"
+    >
       <div style="width:99vw;height:10vh;margin:10vh"></div>
 
       <v-img

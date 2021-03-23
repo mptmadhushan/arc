@@ -144,7 +144,22 @@
         </v-flex>
       </v-layout>
     </div>
+
     <div
+      v-if="isMobile()"
+      data-aos="fade-down"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <vue-flux :options="options" :images="images" :transitions="transitions">
+        <template v-slot:preloader>
+          <flux-preloader height="40vh" />
+        </template>
+      </vue-flux>
+    </div>
+    <div
+      v-else
       data-aos="fade-down"
       data-aos-delay="300"
       data-aos-duration="1500"
@@ -343,7 +358,24 @@
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
+      <v-img
+        height="90vh"
+        contain
+        src="../assets/hanthana/_SDS2136.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img
         height="90vh"
         contain
@@ -355,6 +387,19 @@
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <div
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+      v-if="isMobile()"
+    >
+      <vue-flux :options="options" :images="images2" :transitions="transitions">
+        <template v-slot:preloader>
+          <flux-preloader height="40vh" />
+        </template>
+      </vue-flux>
+    </div>
+    <div
+      v-else
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"

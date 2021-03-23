@@ -25,11 +25,17 @@
     <div style="width:99vw;height:18vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
-      <v-img
-        contain
-        height="85vh"
-        src="../assets/Arienti/_SDS7732.jpeg"
-      ></v-img>
+      <div v-if="isMobile()">
+        <v-img contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
+      </div>
+      <div v-else>
+        <v-img
+          contain
+          height="85vh"
+          src="../assets/Arienti/_SDS7732.jpeg"
+        ></v-img>
+      </div>
+
       <p class="text001">
         Eliminating high boundary walls to expose the exceptional facades
         beyond, now housing one of Colombo's premier fashion brands.
@@ -96,11 +102,17 @@
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
-      <v-img
-        height="85vh"
-        contain
-        src="../assets/Arienti/_SDS7793.jpeg"
-      ></v-img>
+      <div v-if="isMobile()">
+        <v-img contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
+      </div>
+      <div v-else>
+        <v-img
+          height="85vh"
+          contain
+          src="../assets/Arienti/_SDS7793.jpeg"
+        ></v-img>
+      </div>
+
       <p class="text001">
         Balancing reflections and artificial light.
       </p>

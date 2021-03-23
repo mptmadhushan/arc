@@ -17,7 +17,7 @@
         data-aos-delay="100"
         data-aos-duration="1500"
       >
-        <v-flex md10 align-self-center>
+        <v-flex md10 xs12 sm12 align-self-center>
           <div
             class="b1con"
             data-aos="zoom-out"
@@ -27,7 +27,7 @@
             <div class="b1"></div>
           </div>
         </v-flex>
-        <v-flex md10 justify-center>
+        <v-flex md10 xs12 sm12 justify-center>
           <p class="text001">
             A classic modern structure melding with carefully paired plants
             makes for an, elegant outlook.
@@ -165,7 +165,22 @@
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
-      <div style="padding:9vh">
+      <div v-if="isMobile()">
+        <vue-flux
+          :options="options"
+          :images="images"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader />
+          </template>
+        </vue-flux>
+        <p class="text001">
+          A thought provoking design. This painting was intentionally placed
+          here to capture the attention of the onlooking patrons.
+        </p>
+      </div>
+      <div v-else style="padding:9vh">
         <vue-flux
           :options="options"
           :images="images"

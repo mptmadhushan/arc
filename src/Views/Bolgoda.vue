@@ -88,7 +88,17 @@
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-duration="1500" style="padding:8vw">
+    <div v-if="isMobile()" data-aos="fade-up" data-aos-duration="1500">
+      <vue-flux :options="options" :images="images" :transitions="transitions">
+      </vue-flux>
+      <p class="text001">
+        "We wanted the art to speak for the house. To create an environment
+        where that harmony could be understood throughout the home."
+        <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
+        compation of Tha inside and out.
+      </p>
+    </div>
+    <div v-else data-aos="fade-up" data-aos-duration="1500" style="padding:8vw">
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
       <p class="text001">
@@ -194,6 +204,7 @@
       <v-layout row wrap justify-center>
         <v-flex
           md8
+          xs12
           pa-4
           align-self-center
           data-aos="fade-right"
@@ -218,7 +229,19 @@
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div style="padding-block:5vh" data-aos="fade-up" data-aos-duration="1500">
+    <div v-if="isMobile()" data-aos="fade-up" data-aos-duration="1500">
+      <v-img
+        height="100vh"
+        contain
+        src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      style="padding-block:5vh"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <v-img
         height="90vh"
         contain

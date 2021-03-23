@@ -166,7 +166,14 @@
         </div>
       </transition-group>
     </div> -->
-    <div style="padding:7vh">
+    <div v-if="isMobile()" style="margin-top:20vh;height:60vh">
+      <vue-flux :options="options" :images="images2" :transitions="transitions">
+        <template v-slot:preloader>
+          <flux-preloader height="40vh" />
+        </template>
+      </vue-flux>
+    </div>
+    <div v-else style="padding:7vh">
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />

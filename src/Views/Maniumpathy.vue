@@ -104,7 +104,6 @@
     </div>
     <div
       v-if="isMobile()"
-      style="margin-top: 10vh;height:50vh"
       data-aos="fade-up"
       data-aos-delay="10"
       data-aos-duration="1500"
@@ -121,6 +120,7 @@
       </p>
     </div>
     <div
+      v-else
       data-aos="fade-in"
       data-aos-delay="10"
       data-aos-duration="2000"
@@ -294,7 +294,18 @@
     <div style="width:99vw;height:17vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
-      <div style="margin:11vh">
+      <div v-if="isMobile()">
+        <vue-flux
+          :options="options"
+          :images="images3"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader height="40vh" />
+          </template>
+        </vue-flux>
+      </div>
+      <div v-else style="margin:11vh">
         <vue-flux
           :options="options"
           :images="images3"
@@ -307,7 +318,18 @@
       </div>
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
-    <div style="margin:13vh">
+    <div v-if="isMobile()">
+      <vue-flux :options="options" :images="images4" :transitions="transitions">
+        <template v-slot:preloader>
+          <flux-preloader height="40vh" />
+        </template>
+      </vue-flux>
+      <p class="text001">
+        Re-purposing Indo-Portugese fittings to provide strength to the space
+        and frame the context of the play on Indoor-Outdoors--
+      </p>
+    </div>
+    <div v-else style="margin:13vh">
       <vue-flux :options="options" :images="images4" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
