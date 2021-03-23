@@ -121,13 +121,13 @@
       </p>
     </div>
     <div
-      data-aos="fade-up"
+      data-aos="fade-in"
       data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-duration="2000"
       style="padding:8vh"
     >
       <div style="width:99vw;height:20vh;padding:10px"></div>
-      <div style="padding:8vh">
+      <div style="margin:11vh">
         <vue-flux
           :options="options"
           :images="images"
@@ -307,7 +307,7 @@
       </div>
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
-    <div style="padding:13vh">
+    <div style="margin:13vh">
       <vue-flux :options="options" :images="images4" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />

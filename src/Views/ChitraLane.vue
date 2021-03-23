@@ -7,50 +7,37 @@
         src="../assets/backArrow.png"
       />
     </router-link>
-    <div class="text-center b1Main" style="margin-top:5vh" @focus="this.hey">
-      <v-layout
-        row
-        wrap
-        justify-center
-        pa-3
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+      <div
+        class="b1con"
         data-aos="zoom-out"
         data-aos-delay="100"
         data-aos-duration="2000"
       >
-        <v-flex md4 justify-center>
-          <div class="b1con">
-            <div class="b1"></div>
-          </div>
-        </v-flex>
-        <v-flex md10 justify-center>
-          <p class="text001">
-            Use of the trellice to provide privacy and controlled lighting to
-            the property
-          </p>
-        </v-flex>
-      </v-layout>
+        <div class="b1"></div>
+      </div>
+
+      <p class="text001">
+        Use of the trellice to provide privacy and controlled lighting to the
+        property
+      </p>
     </div>
+
     <div style="width:99vw;height:20vh;padding:10px"></div>
-    <div class="text-center" style="height: 100vh">
+    <div
+      class="text-center"
+      style="height: 100vh"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <v-layout row wrap justify-center pt-md-12>
-        <v-flex
-          md4
-          align-self-end
-          data-aos="fade-right"
-          data-aos-duration="1500"
-        >
+        <v-flex md4 align-self-end>
           <p class="text002">
             Tall windows to create efficient ventilation and keep fhe rooms cool
             under scorching island sun.
           </p>
         </v-flex>
-        <v-flex
-          md7
-          justify-center
-          data-aos="fade-left"
-          data-aos-delay="500"
-          data-aos-duration="1500"
-        >
+        <v-flex md7 justify-center>
           <v-img
             height="80vh"
             src="../assets/Chitra_Lane/_SDS3762-HDR.JPG.jpg"
@@ -100,27 +87,21 @@
     <div style="width:99vw;height:30vh;padding:10px"></div>
 
     <div class="text-center">
-      <v-layout row wrap justify-center>
-        <v-flex
-          md4
-          align-self-center
-          data-aos="fade-right"
-          data-aos-delay="10"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
+      <v-layout
+        row
+        wrap
+        justify-center
+        data-aos="fade-up"
+        data-aos-delay="10"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
+        <v-flex md4 xs12 sm12 align-self-center>
           <p class="text003">
             Narrow, Sleek stairways focused on minimalistic aesthetics
           </p>
         </v-flex>
-        <v-flex
-          md7
-          justify-center
-          data-aos="fade-left"
-          data-aos-delay="10"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-        >
+        <v-flex md7 xs12 sm12 justify-center>
           <v-img
             contain
             height="90vh"
@@ -188,11 +169,16 @@
       data-aos-duration="1500"
       data-aos-easing="ease-in-out"
     >
-      <v-img
-        height="85vh"
-        contain
-        src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
-      ></v-img>
+      <div v-if="isMobile()">
+        <v-img contain src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"></v-img>
+      </div>
+      <div v-else>
+        <v-img
+          contain
+          height="90vh"
+          src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
+        ></v-img>
+      </div>
       <p class="text001" pt-5>
         Wooden interiors add to a completed rustic yet modern look.
       </p>
@@ -200,6 +186,7 @@
     <div style="width:99vw;height:15vh;padding:10px"></div>
 
     <div
+      v-if="!isMobile()"
       style="padding:5vh"
       data-aos="fade-up"
       data-aos-delay="500"
@@ -209,6 +196,20 @@
       <v-img
         contain
         height="90vh"
+        src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      style="padding:1vh"
+      data-aos="fade-up"
+      data-aos-delay="500"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+    >
+      <v-img
+        contain
+        height="95vh"
         src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
       ></v-img>
     </div>
@@ -238,6 +239,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  margin: 5px;
+}
 ul {
   background-color: #eee;
   transform: scaleY(0);
@@ -254,7 +258,7 @@ p:hover ~ ul {
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 85vh;
 }

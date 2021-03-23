@@ -313,6 +313,10 @@
             ><slide :index="2">
               <figure>
                 <v-img src="../assets/hanthana/sln2.jpeg" />
+              </figure> </slide
+            ><slide :index="3">
+              <figure>
+                <v-img src="../assets/hanthana/slide7.jpg" />
               </figure>
             </slide>
           </carousel-3d>
@@ -324,6 +328,18 @@
           </div>
         </div>
       </div>
+    </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+      <v-img
+        height="90vh"
+        contain
+        src="../assets/hanthana/_SDS1888.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+      <v-img height="90vh" contain src="../assets/hanthana/slide6.jpg"></v-img>
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
 

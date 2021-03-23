@@ -110,7 +110,7 @@
         src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-duration="1500">
       <div>
@@ -156,7 +156,7 @@
         </div>
       </div> -->
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-duration="1500">
       <v-img
