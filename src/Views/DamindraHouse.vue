@@ -1,12 +1,15 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style=" opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
+    <div class="d-flex justify-space-between" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
     <div class="text-center">
       <v-layout row wrap justify-center>
         <v-flex
@@ -27,11 +30,12 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
+    <div style="width:99vw;height:26vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
         contain
+        style="margin-top:10vh"
         height="85vh"
         src="../assets/Damindra_House/_SDS7604.JPG.jpg"
       ></v-img>
@@ -91,7 +95,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
+    <div style="width:99vw;height:28vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
@@ -153,32 +157,28 @@
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
 
-    <!-- <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
-      <transition-group name="fade" tag="div">
-        <div v-for="i in [currentIndex]" :key="i">
-          <v-img
-            style="object-fit:contain;height:100vh;padding-left:30vw;padding-right:30vw"
-            pa-12
-            height="90vh"
-            contain
-            :src="currentImg"
-          />
-        </div>
-      </transition-group>
-    </div> -->
-    <div v-if="isMobile()" style="margin-top:20vh;height:60vh">
+    <div v-if="isMobile()" style="margin-top:10vh;height:60vh">
       <vue-flux :options="options" :images="images2" :transitions="transitions">
-        <template v-slot:preloader>
-          <flux-preloader height="40vh" />
-        </template>
       </vue-flux>
     </div>
-    <div v-else style="padding:7vh">
-      <vue-flux :options="options" :images="images2" :transitions="transitions">
-        <template v-slot:preloader>
-          <flux-preloader height="40vh" />
-        </template>
-      </vue-flux>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
+    >
+      <div style="padding:5vw">
+        <vue-flux
+          :options="options"
+          :images="images2"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader height="40vh" />
+          </template>
+        </vue-flux>
+      </div>
     </div>
   </v-container>
 </template>
@@ -265,7 +265,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 95vh;
+  height: 92vh;
 }
 .b1 {
   background-color: #fff;

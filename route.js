@@ -1,7 +1,6 @@
 import Home from "./src/Views/Home.vue";
 import Shapes from "./src/Views/NewShapes.vue";
 import Page2 from "./src/Views/page2.vue";
-import Slider from "./src/Views/Slider.vue";
 import Arienti from "./src/Views/Arienti.vue";
 import Bolgoda from "./src/Views/Bolgoda.vue";
 import StoneHouse from "./src/Views/StoneHouse.vue";
@@ -13,22 +12,13 @@ import Maniumpathy from "./src/Views/Maniumpathy.vue";
 import PreLoader from "./src/components/PreLoader.vue";
 import Hanthana from "./src/Views/Hanthana.vue";
 import BluePrint from "./src/Views/BluePrint.vue";
-import SliderNew from "./src/Views/BluePrintNew.vue";
-import BluePrint2 from "./src/Views/BluePrint2.vue";
 
 export default [
   {
     path: "/pre",
     component: PreLoader,
   },
-  {
-    path: "/BluePrint2",
-    component: BluePrint2,
-  },
-  {
-    path: "/SliderNew",
-    component: SliderNew,
-  },
+
   {
     path: "/BluePrint",
     component: BluePrint,
@@ -44,10 +34,6 @@ export default [
   {
     path: "/page2",
     component: Page2,
-  },
-  {
-    path: "/slider",
-    component: Slider,
   },
   {
     path: "/Arienti",

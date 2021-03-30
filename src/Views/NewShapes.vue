@@ -2,86 +2,165 @@
   <v-container fluid style="overflow: hidden">
     <router-link to="/">
       <img
-        style=" opacity: 0.5;margin-inline:20px"
+        style=" opacity: 0.5;margin-inline:20px;margin-top:2vh"
         height="20vh"
         src="../assets/backArrow.png"
       />
     </router-link>
-    <v-card flat style="margin-top: 15vh;margin-left:8vh;margin-right:8vh">
-      <v-layout row wrap justify-center style="margin-inline:10vw">
-        <v-flex md2 xs12 sm12>
-          <a href="/ChitraLane" class="nav-link">
-            <!-- <a to="/ChitraLane" :key="$route.fullPath" tag="div"> -->
-            <v-row align="center" justify="center">
-              <v-col>
+    <div v-if="isMobile()">
+      <v-card flat style="margin-top: 5vh">
+        <v-layout row wrap justify-center>
+          <v-flex md12 xs6 sm6>
+            <a href="/ChitraLane" class="nav-link">
+              <!-- <a to="/ChitraLane" :key="$route.fullPath" tag="div"> -->
+              <v-row align="center" justify="center">
+                <v-col>
+                  <div class="sq"></div>
+                </v-col>
+              </v-row>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm6>
+            <a href="/Arienti" tag="div">
+              <v-card flat>
+                <div class="tri"></div>
+                <!-- <v-img height="20vh" width="20vh" src="../assets/tri.png"></v-img> -->
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm6>
+            <a href="/Bolgoda" tag="div">
+              <v-card flat>
+                <div class="cir"></div>
+              </v-card>
+            </a>
+          </v-flex>
+        </v-layout>
+        <v-layout row wrap justify-center>
+          <v-flex md2 xs6 sm12>
+            <a href="/DamindraHouse" tag="div">
+              <v-card flat>
+                <div class="cir"></div>
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/DinaliHouse" tag="div">
+              <v-card flat>
                 <div class="sq"></div>
-              </v-col>
-            </v-row>
-          </a>
-        </v-flex>
-        <v-flex md2 xs12 sm12>
-          <a href="/Arienti" tag="div">
-            <v-card flat>
-              <div class="tri"></div>
-              <!-- <v-img height="20vh" width="20vh" src="../assets/tri.png"></v-img> -->
-            </v-card>
-          </a>
-        </v-flex>
-        <v-flex md2 xs12 sm12>
-          <a href="/Bolgoda" tag="div">
-            <v-card flat>
-              <div class="cir"></div>
-            </v-card>
-          </a>
-        </v-flex>
-      </v-layout>
-      <v-layout row wrap justify-center style="margin-inline:10vw">
-        <v-flex md2 xs12 sm12>
-          <a href="/DamindraHouse" tag="div">
-            <v-card flat>
-              <div class="cir"></div>
-            </v-card>
-          </a>
-        </v-flex>
-        <v-flex md2 xs12 sm12>
-          <a href="/DinaliHouse" tag="div">
-            <v-card flat>
-              <div class="sq"></div>
-            </v-card>
-          </a>
-        </v-flex>
+              </v-card>
+            </a>
+          </v-flex>
 
-        <v-flex md2 xs12 sm12>
-          <a href="/ChamikaHouse" tag="div">
-            <v-card flat>
-              <div class="tri"></div>
-            </v-card>
-          </a>
-        </v-flex> </v-layout
-      ><v-layout row wrap justify-center style="margin-inline:10vw">
-        <v-flex md2 xs12 sm12>
-          <a href="/StoneHouse" tag="div">
-            <v-card flat>
-              <div class="tri"></div>
-            </v-card>
-          </a>
-        </v-flex>
-        <v-flex md2 xs12 sm12>
-          <a href="/Hanthana" tag="div">
-            <v-card flat>
-              <div class="cir"></div>
-            </v-card>
-          </a>
-        </v-flex>
-        <v-flex md2 xs12 sm12>
-          <a href="/maniumpathy" tag="div">
-            <v-card flat>
-              <div class="sq"></div>
-            </v-card>
-          </a>
-        </v-flex>
-      </v-layout>
-    </v-card>
+          <v-flex md2 xs6 sm12>
+            <a href="/ChamikaHouse" tag="div">
+              <v-card flat>
+                <div class="tri"></div>
+              </v-card>
+            </a>
+          </v-flex> </v-layout
+        ><v-layout row wrap justify-center>
+          <v-flex md2 xs6 sm12>
+            <a href="/StoneHouse" tag="div">
+              <v-card flat>
+                <div class="tri"></div>
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/Hanthana" tag="div">
+              <v-card flat>
+                <div class="cir"></div>
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/maniumpathy" tag="div">
+              <v-card flat>
+                <div class="sq"></div>
+              </v-card>
+            </a>
+          </v-flex>
+        </v-layout>
+      </v-card>
+    </div>
+    <div v-else>
+      <v-card flat style="margin-top: 15vh;margin-left:8vh;margin-right:8vh">
+        <v-layout row wrap justify-center>
+          <v-flex md2 xs6 sm12>
+            <a href="/ChitraLane" class="nav-link">
+              <!-- <a to="/ChitraLane" :key="$route.fullPath" tag="div"> -->
+              <v-row align="center" justify="center">
+                <v-col>
+                  <div class="sq"></div>
+                </v-col>
+              </v-row>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/Arienti" tag="div">
+              <v-card flat>
+                <div class="tri"></div>
+                <!-- <v-img height="20vh" width="20vh" src="../assets/tri.png"></v-img> -->
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/Bolgoda" tag="div">
+              <v-card flat>
+                <div class="cir"></div>
+              </v-card>
+            </a>
+          </v-flex>
+        </v-layout>
+        <v-layout row wrap justify-center>
+          <v-flex md2 xs6 sm12>
+            <a href="/DamindraHouse" tag="div">
+              <v-card flat>
+                <div class="cir"></div>
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/DinaliHouse" tag="div">
+              <v-card flat>
+                <div class="sq"></div>
+              </v-card>
+            </a>
+          </v-flex>
+
+          <v-flex md2 xs6 sm12>
+            <a href="/ChamikaHouse" tag="div">
+              <v-card flat>
+                <div class="tri"></div>
+              </v-card>
+            </a>
+          </v-flex> </v-layout
+        ><v-layout row wrap justify-center>
+          <v-flex md2 xs6 sm12>
+            <a href="/StoneHouse" tag="div">
+              <v-card flat>
+                <div class="tri"></div>
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/Hanthana" tag="div">
+              <v-card flat>
+                <div class="cir"></div>
+              </v-card>
+            </a>
+          </v-flex>
+          <v-flex md2 xs6 sm12>
+            <a href="/maniumpathy" tag="div">
+              <v-card flat>
+                <div class="sq"></div>
+              </v-card>
+            </a>
+          </v-flex>
+        </v-layout>
+      </v-card>
+    </div>
   </v-container>
 </template>
 
@@ -120,6 +199,8 @@ export default {
 .cir:hover {
   height: 20vh;
   width: 20vh;
+  transition: 1s ease;
+
   opacity: 1;
   background-size: 100% 100%;
   background-image: url("../assets/cirHover.png");
@@ -137,6 +218,7 @@ export default {
   height: 20vh;
   width: 20vh;
   opacity: 1;
+  transition: 1s ease;
 
   margin-left: 20%;
   background-size: 100% 100%;
@@ -154,6 +236,7 @@ export default {
   height: 20vh;
   width: 20vh;
   opacity: 1;
+  transition: 1s ease;
   background-size: 100% 100%;
   background-image: url("../assets/tri.png");
 }

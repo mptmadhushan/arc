@@ -1,12 +1,15 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style=" opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
+    <div class="d-flex justify-space-between" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
     <div class="text-center">
       <v-layout row wrap justify-center pa-3>
         <v-flex
@@ -23,7 +26,7 @@
     </div>
     <div
       v-if="isMobile()"
-      style="margin-top: 10vh"
+      style="margin-top: 20vh"
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
@@ -34,7 +37,7 @@
       </p>
     </div>
     <div v-else class="text-center">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:35vh;padding:10px"></div>
       <v-layout row wrap justify-space-around style="height:100vh">
         <v-flex
           md4
@@ -60,7 +63,7 @@
     </div>
     <div
       v-if="isMobile()"
-      style="margin-top: 10vh"
+      style="margin-top: 30vh"
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
@@ -76,7 +79,7 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <div style="width:99vw;height:10vh;padding:10px"></div>
+      <div style="width:99vw;height:20vh;padding:10px"></div>
 
       <v-img height="85vh" contain src="../assets/hanthana/3.jpeg"></v-img>
       <p class="text001">
@@ -85,7 +88,7 @@
     </div>
     <div
       v-if="isMobile()"
-      style="margin-top: 10vh"
+      style="margin-top: 30vh"
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
@@ -98,11 +101,11 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-img height="90vh" contain src="../assets/hanthana/4.jpeg"></v-img>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -151,7 +154,8 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:35vh;padding:10px"></div>
+      <div style="width:99vw;height:35vh;padding:10px"></div>
       <vue-flux :options="options" :images="images" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -163,9 +167,9 @@
       data-aos="fade-down"
       data-aos-delay="300"
       data-aos-duration="1500"
-      style="padding:10vh"
+      style="padding:15vh"
     >
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:10vh;padding:10px"></div>
       <vue-flux :options="options" :images="images" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -174,7 +178,7 @@
     </div>
     <div
       v-if="isMobile()"
-      style="margin-top: 10vh"
+      style="margin-top: 40vh"
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
@@ -182,7 +186,7 @@
       <v-img contain src="../assets/hanthana/6.jpeg"></v-img>
     </div>
     <div v-else>
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <!-- <div style="width:99vw;height:25vh;padding:10px"></div> -->
       <v-img
         data-aos="fade-up"
         data-aos-delay="300"
@@ -193,6 +197,7 @@
         src="../assets/hanthana/6.jpeg"
       ></v-img>
     </div>
+    <div style="width:99vw;height:35vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -213,15 +218,13 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <div style="width:99vw;height:20vh;padding:10px"></div>
-
       <v-img height="85vh" contain src="../assets/hanthana/7.jpeg"></v-img>
       <p class="text001">
         A warm and inviting entrance hall, inviting you into a curated
         experience of art and artefact.
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
       <div style="margin: 1px">
@@ -259,7 +262,7 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:32vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
       <v-img contain height="85vh" src="../assets/hanthana/slide2.jpeg"></v-img>
@@ -269,12 +272,12 @@
         context of a dramatic lounge to wind down after a journey
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:32vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
       <v-img height="85vh" contain src="../assets/hanthana/8.jpeg"></v-img>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:36vh;padding:10px"></div>
 
     <div class="text-center">
       <v-layout row wrap justify-center>
@@ -302,7 +305,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:22vh;padding:10px"></div>
+    <div style="width:99vw;height:34vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
       <div>
@@ -344,7 +347,7 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:31vh;padding:10px"></div>
     <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
       <v-img
         height="90vh"
@@ -352,18 +355,21 @@
         src="../assets/hanthana/_SDS1888.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:35vh;padding:10px"></div>
     <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
       <v-img height="90vh" contain src="../assets/hanthana/slide6.jpg"></v-img>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
       data-aos="fade-up"
       data-aos-delay="300"
+      style="margin-top:-20vh;"
+
       data-aos-duration="1500"
     >
+
       <v-img
         height="90vh"
         contain
@@ -371,13 +377,14 @@
       ></v-img>
     </div>
     <div
+      style="margin-top:10vh;"
       v-else
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
     >
       <v-img
-        height="90vh"
+        height="85vh"
         contain
         style="margin-left: 5vw;margin-right: 5vw"
         src="../assets/hanthana/_SDS2136.JPG.jpeg"
@@ -391,19 +398,22 @@
       data-aos-delay="300"
       data-aos-duration="1500"
       v-if="isMobile()"
+      style="margin-top:-10vh"
     >
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
+      <div style="width:99vw;height:20vh;padding:10px"></div>
     </div>
+
     <div
       v-else
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
-      style="padding:10vh"
+      style="padding:15vh"
     >
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
@@ -483,7 +493,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 92vh;
+  height: 90vh;
 }
 .b1 {
   background-color: #fff;

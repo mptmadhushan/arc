@@ -1,12 +1,16 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style="opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
+    <div class="d-flex justify-space-between" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
+
     <div class="text-center">
       <v-layout
         row
@@ -35,9 +39,9 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <!-- <div style="width:99vw;height:28vh;padding:10px"></div> -->
 
-    <div
+    <!-- <div
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-delay="100"
@@ -46,14 +50,49 @@
       <v-img
         height="85vh"
         contain
+        style="margin-top:3vh"
         src="../assets/Dinali_House/_SDS2866.JPG.jpg"
       ></v-img>
       <p class="text001">
         The natural light entering the room adds to the beautiful ambiance
         created through the precise placement of art and furniture.
       </p>
+    </div> -->
+    <div style="width:99vw;height:19vh;padding:10px"></div>
+
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+      <div v-if="isMobile()">
+        <vue-flux
+          :options="options"
+          :images="images"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader />
+          </template>
+        </vue-flux>
+        <p class="text001">
+          A thought provoking design. This painting was intentionally placed
+          here to capture the attention of the onlooking patrons.
+        </p>
+      </div>
+      <div v-else style="padding:15vh">
+        <vue-flux
+          :options="options"
+          :images="images"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader />
+          </template>
+        </vue-flux>
+        <p class="text001">
+          A thought provoking design. This painting was intentionally placed
+          here to capture the attention of the onlooking patrons.
+        </p>
+      </div>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
@@ -82,12 +121,12 @@
               <figure>
                 <v-img src="../assets/Dinali_House/_SDS2865.JPG.jpg" />
                 <!-- <v-img src="../assets/Dinali_House/_SDS2899.JPG.jpg" /> -->
-              </figure> </slide
-            ><slide :index="2">
+              </figure>
+            </slide>
+            <slide :index="2">
               <figure>
-                <v-img src="../assets/Dinali_House/_SDS2899.JPG.jpg" />
-
-                <!-- <v-img src="../assets/Dinali_House/_SDS2908.png" /> -->
+                <v-img src="../assets/Dinali_House/_SDS2866.JPG.jpg"></v-img>
+                <!-- <v-img src="../assets/Dinali_House/_SDS2899.JPG.jpg" /> -->
               </figure>
             </slide>
           </carousel-3d>
@@ -129,7 +168,7 @@
       </v-layout>
     </div>
     <div v-else class="text-center">
-      <div style="width:99vw;height:17vh;padding:10px"></div>
+      <div style="width:99vw;height:29vh;padding:10px"></div>
 
       <v-layout
         row
@@ -162,42 +201,9 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
-      <div v-if="isMobile()">
-        <vue-flux
-          :options="options"
-          :images="images"
-          :transitions="transitions"
-        >
-          <template v-slot:preloader>
-            <flux-preloader />
-          </template>
-        </vue-flux>
-        <p class="text001">
-          A thought provoking design. This painting was intentionally placed
-          here to capture the attention of the onlooking patrons.
-        </p>
-      </div>
-      <div v-else style="padding:9vh">
-        <vue-flux
-          :options="options"
-          :images="images"
-          :transitions="transitions"
-        >
-          <template v-slot:preloader>
-            <flux-preloader />
-          </template>
-        </vue-flux>
-        <p class="text001">
-          A thought provoking design. This painting was intentionally placed
-          here to capture the attention of the onlooking patrons.
-        </p>
-      </div>
-    </div>
     <div class="text-center">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:10vh;padding:10px"></div>
 
       <v-layout row wrap justify-space-around pt-md-12>
         <v-flex
@@ -227,7 +233,12 @@
     </div>
     <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+    <div
+      style="margin-top:5vh"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="2000"
+    >
       <v-img
         height="85vh"
         contain
@@ -242,11 +253,13 @@
 </template>
 
 <script>
+import ShapesPop from "../components/ShapesPop";
 import { VueFlux, FluxPreloader } from "vue-flux";
 
 export default {
   components: {
     VueFlux,
+    ShapesPop,
     FluxPreloader,
   },
   data: () => ({
@@ -295,7 +308,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 89vh;
+  height: 87vh;
 }
 .b1 {
   background-color: #fff;

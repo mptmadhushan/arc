@@ -1,12 +1,15 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style=" opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
+    <div class="d-flex justify-space-between" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
     <div class="text-center">
       <v-layout row wrap justify-center pa-3>
         <v-flex
@@ -16,12 +19,15 @@
           align-self-center
           data-aos="fade-up"
           data-aos-duration="2000"
+          data-aos-easing="linear"
+          data-aos-delay="200"
         >
           <div
             class="b1con"
             data-aos="zoom-out"
-            data-aos-delay="100"
             data-aos-duration="2000"
+            data-aos-easing="linear"
+            data-aos-delay="200"
           >
             <div class="b1"></div>
           </div>
@@ -43,13 +49,15 @@
     <div
       v-else
       data-aos="fade-up"
-      data-aos-delay="300"
-      data-aos-duration="2500"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="1500"
     >
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
       <v-img
+        style="margin-top:5vh"
         contain
-        height="90vh"
+        height="88vh"
         object-fit
         src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"
       ></v-img>
@@ -59,6 +67,8 @@
       </p>
     </div>
     <div v-if="isMobile()">
+      <div style="width:99vw;height:30vh;padding:10px"></div>
+
       <v-img
         contain
         src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
@@ -69,14 +79,15 @@
       </p>
     </div>
     <div v-else class="text-center" style="padding:2vh">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-layout row wrap justify-space-around>
         <v-flex md9 pa-4 xs12 sm12 align-self-center>
           <v-img
             data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="2500"
+            data-aos-easing="linear"
+            data-aos-delay="400"
+            data-aos-duration="1500"
             contain
             src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
           ></v-img>
@@ -88,8 +99,9 @@
           sm10
           align-self-center
           data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="2500"
+          data-aos-easing="linear"
+          data-aos-delay="400"
+          data-aos-duration="1500"
         >
           <p class="text002">
             The carefully structured arches help display the surrounding
@@ -98,10 +110,40 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:18vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-duration="2500">
-      <div style="padding:10vh">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
+      style="height:100vh"
+      v-if="isMobile()"
+    >
+      <div>
+        <vue-flux
+          :options="options"
+          :images="images"
+          :transitions="transitions"
+        >
+          <template v-slot:preloader>
+            <flux-preloader height="40vh" />
+          </template>
+        </vue-flux>
+        <p class="text001">
+          Art and Sculpture. a study of the proprietor's history in the rice
+          industry and Its many permutations throughout the home.
+        </p>
+      </div>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
+    >
+      <div style="padding:15vh">
         <vue-flux
           :options="options"
           :images="images"
@@ -120,8 +162,9 @@
     <div
       v-if="isMobile()"
       data-aos="fade-up"
-      data-aos-delay="300"
-      data-aos-duration="2500"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="1500"
     >
       <v-img
         contain
@@ -133,7 +176,7 @@
       </p>
     </div>
     <div v-else class="text-center">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:11vh;padding:10px"></div>
 
       <v-layout row wrap justify-center pt-md-12>
         <v-flex
@@ -143,7 +186,8 @@
           sm10
           align-self-center
           data-aos="fade-up"
-          data-aos-delay="300"
+          data-aos-easing="linear"
+          data-aos-delay="400"
           data-aos-duration="2500"
         >
           <p class="text002">
@@ -154,19 +198,30 @@
         <v-flex md9 pa-4 xs10 sm10 align-self-center>
           <v-img
             data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="2500"
+            data-aos-easing="linear"
+            data-aos-delay="400"
+            data-aos-duration="1500"
             contain
             src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
           ></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div>
-      <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
-        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
+    <div style="margin-top:5vh">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="400"
+        data-aos-duration="1500"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="500"
+          data-aos-duration="2800"
+        >
           <carousel-3d
             :width="900"
             :height="600"
@@ -217,12 +272,13 @@
         </div>
       </div> -->
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
       data-aos="fade-up"
-      data-aos-delay="300"
+      data-aos-easing="linear"
+      data-aos-delay="400"
       data-aos-duration="2500"
     >
       <v-img
@@ -242,7 +298,8 @@
           sm10
           align-self-center
           data-aos="fade-right"
-          data-aos-delay="300"
+          data-aos-easing="linear"
+          data-aos-delay="400"
           data-aos-duration="2500"
         >
           <p class="text002">
@@ -252,15 +309,16 @@
         <v-flex md8 pa-4 xs10 sm10 justify-center>
           <v-img
             data-aos="fade-left"
-            data-aos-delay="300"
-            data-aos-duration="2500"
+            data-aos-easing="linear"
+            data-aos-delay="400"
+            data-aos-duration="1500"
             contain
             src="../assets/Stone_House/Stone House_DSC5405.JPG.jpg"
           ></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:27vh;padding:10px"></div>
 
     <div v-if="isMobile()">
       <v-img
@@ -271,8 +329,9 @@
     <div
       v-else
       data-aos="fade-up"
-      data-aos-delay="300"
-      data-aos-duration="2000"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
     >
       <v-img
         height="90vh"
@@ -283,22 +342,27 @@
     <div
       v-if="isMobile()"
       data-aos="fade-left"
-      data-aos-delay="300"
+      data-aos-easing="linear"
+      data-aos-delay="400"
       data-aos-duration="2500"
     >
+      <div style="width:99vw;height:30vh;padding:10px"></div>
+
       <v-img
         contain
         style="padding: 10vh"
         src="../assets/Stone_House/Stone House_DSC5074.JPG.jpg"
       ></v-img>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
     </div>
     <div v-else style="padding:5vh;">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-img
         contain
         data-aos="fade-up"
-        data-aos-delay="300"
+        data-aos-easing="linear"
+        data-aos-delay="400"
         data-aos-duration="2500"
         height="90vh"
         src="../assets/Stone_House/Stone House_DSC5074.JPG.jpg"
@@ -361,7 +425,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 93vh;
+  height: 91vh;
 }
 .b1 {
   background-color: #fff;

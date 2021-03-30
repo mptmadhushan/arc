@@ -1,16 +1,26 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style=" opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+    <div class="d-flex justify-space-between" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
       <div
         class="b1con"
         data-aos="zoom-out"
+        data-aos-easing="linear"
         data-aos-delay="100"
         data-aos-duration="2000"
       >
@@ -23,11 +33,13 @@
       </p>
     </div>
 
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:22vh;padding:10px"></div>
     <div
       class="text-center"
       style="height: 100vh"
       data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
       data-aos-duration="1500"
     >
       <v-layout row wrap justify-center pt-md-12>
@@ -45,6 +57,7 @@
         </v-flex>
       </v-layout>
     </div>
+
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <v-layout row justify-center v-if="!isMobile()" wrap>
@@ -52,6 +65,7 @@
         md12
         align-self-center
         data-aos="fade-up"
+        data-aos-easing="linear"
         data-aos-delay="100"
         data-aos-duration="1500"
       >
@@ -66,13 +80,15 @@
     </v-layout>
 
     <v-layout v-else row wrap>
+      <div style="width:99vw;height:10vh;padding:10px"></div>
+
       <v-flex
         md12
         align-self-center
         data-aos="fade-up"
+        data-aos-easing="linear"
         data-aos-delay="100"
         data-aos-duration="1500"
-        data-aos-easing="ease-in-out"
       >
         <div>
           <v-img
@@ -92,9 +108,9 @@
         wrap
         justify-center
         data-aos="fade-up"
-        data-aos-delay="10"
+        data-aos-easing="linear"
+        data-aos-delay="100"
         data-aos-duration="1500"
-        data-aos-easing="ease-in-out"
       >
         <v-flex md4 xs12 sm12 align-self-center>
           <p class="text003">
@@ -115,9 +131,9 @@
     <div
       style="padding-top:10vh"
       data-aos="fade-up"
-      data-aos-delay="10"
+      data-aos-easing="linear"
+      data-aos-delay="100"
       data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
     >
       <div>
         <div>
@@ -125,7 +141,7 @@
             :width="900"
             :height="600"
             :inverse-scaling="200"
-            :space="1300"
+            :space="1180"
             :perspective="0"
             :autoplay="false"
             :autoplay-timeout="3000"
@@ -152,22 +168,14 @@
           </div>
         </div>
       </div>
-      <!-- <div class="box stack-top d-none d-lg-block">
-        <div class="container_l">
-          <div class="sub-left"></div>
-        </div>
-        <div class="container_l">
-          <div class="sub-right"></div>
-        </div>
-      </div> -->
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
-      data-aos-delay="500"
+      data-aos-easing="linear"
+      data-aos-delay="100"
       data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
     >
       <div v-if="isMobile()">
         <v-img contain src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"></v-img>
@@ -183,15 +191,15 @@
         Wooden interiors add to a completed rustic yet modern look.
       </p>
     </div>
-    <div style="width:99vw;height:15vh;padding:10px"></div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <div
       v-if="!isMobile()"
       style="padding:5vh"
       data-aos="fade-up"
-      data-aos-delay="500"
+      data-aos-easing="linear"
+      data-aos-delay="100"
       data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
     >
       <v-img
         contain
@@ -203,9 +211,9 @@
       v-else
       style="padding:1vh"
       data-aos="fade-up"
-      data-aos-delay="500"
+      data-aos-easing="linear"
+      data-aos-delay="100"
       data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
     >
       <v-img
         contain
@@ -213,13 +221,28 @@
         src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
       ></v-img>
     </div>
+    <v-btn
+      v-show="fab"
+      fab
+      dark
+      fixed
+      bottom
+      right
+      color="primary"
+      @click="toTop"
+    >
+      <v-icon>keyboard_arrow_up</v-icon>
+    </v-btn>
   </v-container>
 </template>
 
 <script>
 export default {
+  components: {},
   mounted() {},
+
   data: () => ({
+    fab: false,
     slides: [
       {
         name: "Slide name 1",
@@ -239,9 +262,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 5px;
-}
 ul {
   background-color: #eee;
   transform: scaleY(0);

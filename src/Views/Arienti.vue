@@ -1,17 +1,21 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style="opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+    <div class="d-flex justify-space-between" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
       <div
         class="b1con"
         data-aos="zoom-out"
         data-aos-delay="100"
+        data-aos-easing="linear"
         data-aos-duration="2000"
       >
         <div class="b1"></div>
@@ -22,9 +26,14 @@
         City landmark
       </p>
     </div>
-    <div style="width:99vw;height:18vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div v-if="isMobile()">
         <v-img contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
       </div>
@@ -41,9 +50,14 @@
         beyond, now housing one of Colombo's premier fashion brands.
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="500"
+      data-aos-duration="1500"
+    >
       <div>
         <div>
           <carousel-3d
@@ -59,12 +73,6 @@
             <slide :index="0">
               <figure>
                 <v-img src="../assets/Arienti/_SDS7808.jpeg" />
-                <!-- <div
-                  style="background-color: white;text-align: center;padding:20px;"
-                >
-                  Re-purposing and re-scaling of antique and contemporary
-                  fittings to elevate the shopping experience
-                </div> -->
               </figure> </slide
             ><slide :index="1">
               <figure>
@@ -99,10 +107,16 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div v-if="isMobile()">
+        <div style="width:99vw;height:15vh;padding:10px"></div>
         <v-img contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
       </div>
       <div v-else>
@@ -112,10 +126,10 @@
           src="../assets/Arienti/_SDS7793.jpeg"
         ></v-img>
       </div>
-
       <p class="text001">
         Balancing reflections and artificial light.
       </p>
+      <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
     </div>
   </v-container>
 </template>
@@ -166,7 +180,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 85vh;
 }
 .b1 {
   background-color: #fff;

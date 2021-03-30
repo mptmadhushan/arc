@@ -1,11 +1,13 @@
 <template>
   <div class="scroll-container">
     <router-link to="/">
-      <img
-        style=" opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
+      <div style="margin-top:2vh">
+        <img
+          style=" opacity: 0.5;margin-inline:20px;margin-top:2vh"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </div>
     </router-link>
     <audio
       allow="autoplay;fullscreen"
@@ -78,11 +80,11 @@
       </div>
 
       <div
-        style="height:100vh; overflow-x: scroll;"
+        style="height:94vh; overflow-x: scroll;"
         v-on:scroll.once="scrollToElement1"
       >
-        <v-layout row wrap justify-center style="margin-top:5vh">
-          <v-flex md6 align-self-start style="height:70vh">
+        <v-layout row wrap justify-center style="height:80vh">
+          <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
             <div class="b1con" data-aos="zoom-in-left" data-aos-duration="1500">
               <div class="b1"></div>
             </div>
@@ -154,7 +156,7 @@
     </div>
     <section id="sec-3"></section>
 
-    <div v-if="isMobile()" style="margin-top: 60vh;padding:2vh">
+    <div v-if="isMobile()" style="margin-top: 10vh;padding:2vh">
       <v-img contain src="../assets/blueprint/1.png"></v-img>
       <p class="text002">
         Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
@@ -185,25 +187,71 @@
             >
               <div class="newBox"></div>
             </div>
-
-            <!-- <v-img
-              align-content-end
-              contain
-              height="100%"
-              style="margin-right:1vw"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              src="../assets/blueprint/1.png"
-            /> -->
           </div>
-          <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
         </v-flex>
         <v-flex md3 align-self-start>
           <p class="text001"></p>
         </v-flex>
       </v-layout>
     </div>
-    <div style="height:100vh;margin-top:10vh" class="first-slide" ref="slider1">
+    <div v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      v-if="isMobile()"
+      style="height:100vh"
+      class="first-slide"
+      ref="slider1"
+    >
+      <div class="outer-wrapper">
+        <div class="wrapper">
+          <div class="slide one_m">
+            <div style="height:100vh">
+              <v-row no-gutters>
+                <v-col>
+                  <div style="height:100vh">
+                    <div
+                      class="b1sli"
+                      data-aos="zoom-in-left"
+                      data-aos-duration="1500"
+                    >
+                      <div class="newBox2"></div>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col
+                  data-aos="zoom-in-left"
+                  data-aos-delay="400"
+                  data-aos-duration="2500"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div style="height:100vh;">
+                    <div
+                      class="b2sli"
+                      data-aos="zoom-in-left"
+                      data-aos-duration="1500"
+                    >
+                      <div class="b1"></div>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col>
+                  <div style="height:100vh;">
+                    <div
+                      class="b3sli"
+                      data-aos="zoom-in-left"
+                      data-aos-duration="1500"
+                    >
+                      <div class="b1"></div>
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-else style="height:100vh" class="first-slide" ref="slider1">
       <div class="outer-wrapper">
         <div class="wrapper">
           <div class="slide one">
@@ -248,38 +296,12 @@
                   </div>
                 </v-col>
               </v-row>
-              <!-- <img
-                data-aos="zoom-in-left"
-                data-aos-delay="400"
-                data-aos-duration="2500"
-                data-aos-easing="ease-in-out"
-                height="100%"
-                src="../assets/blueprint/2.png"
-              /> -->
-              <!-- <div
-                class="b1sli"
-                data-aos="fade-right"
-                data-aos-delay="400"
-                data-aos-duration="2500"
-                data-aos-easing="ease-in-out"
-              >
-                <div class="newBox"></div>
-              </div>
-              <img
-                height="100%"
-                style="padding:5vh"
-                src="../assets/blueprint/3.png"
-              />
-              <img
-                height="100%"
-                style="padding:5vh"
-                src="../assets/blueprint/4.png"
-              /> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
     <div class="d-flex flex-row mb-6">
       <div
         data-aos="fade-up"
@@ -342,11 +364,11 @@
         </p>
       </div>
     </div>
-
-    <div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
+    <div v-if="!isMobile()">
       <v-layout row wrap justify-space-around>
-        <v-flex md8 align-self-start>
-          <div class="align-start" style="text-align:start;height: 90vh">
+        <v-flex md8 xs10 sm10 align-self-start>
+          <div class="align-start" style="text-align:start;height: 80vh">
             <img
               data-aos="fade-up"
               data-aos-duration="3000"
@@ -355,7 +377,7 @@
               contain
               style="margin-right:1vw"
               height="100%"
-              src="../assets/blueprint/5.png"
+              src="../assets/blueprint/Space/ludwig-mies-van-der-rohe-maciej-jezyk-barcelona-pavilion.jpg"
             />
           </div>
           <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
@@ -363,14 +385,35 @@
         <v-flex md3 align-self-start> </v-flex>
       </v-layout>
     </div>
-    <div>
-      <p class="text003" style="width:20vw">
+    <div
+      v-if="isMobile()"
+      class="align-start"
+      style="text-align:start;height: 80vh"
+    >
+      <img
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-delay="1000"
+        align-content-end
+        contain
+        style="margin-right:1vw"
+        width="90%"
+        src="../assets/blueprint/Space/ludwig-mies-van-der-rohe-maciej-jezyk-barcelona-pavilion.jpg"
+      />
+      <p class="text003" style="width:40vw;margin-top:5vh;padding:1vw">
         Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
         pariatur dolore et.z
       </p>
     </div>
+    <div v-if="!isMobile()">
+      <p class="text003" style="width:20vw;margin-top:5vh">
+        Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
+        pariatur dolore et.z
+      </p>
+    </div>
+    <div v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div style="height:100vh;margin-top:10vh">
+    <div v-if="!isMobile()" style="height:100vh;margin-top:10vh">
       <v-layout row wrap justify-center>
         <v-flex md6 xs12 sm12 align-self-end>
           <div
@@ -387,11 +430,6 @@
               src="../assets/blueprint/_SDS3614.png"
             />
           </div>
-          <!-- <v-img
-            contain
-            height="60vh"
-            src="../assets/blueprint/_SDS3006.png"
-          ></v-img> -->
         </v-flex>
         <v-flex md6 xs12 sm12 align-self-end>
           <div class="align-center" style="text-align:center;height: 100vh;">
@@ -405,22 +443,40 @@
               src="../assets/blueprint/_SDS3199b.png"
             />
           </div>
-          <!-- <v-img
-            contain
-            height="80vh"
-            src="../assets/blueprint/_SDS2960.png"
-          ></v-img> -->
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-else style="height:100vh;margin-top:10vh">
+      <v-layout row wrap>
+        <v-flex md6 xs12 sm12>
+          <div style="height:100vh">
+            <img
+              align-content-end
+              contain
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              width="100%"
+              src="../assets/blueprint/_SDS3614.png"
+            />
+          </div>
+        </v-flex>
+        <v-flex md6 xs12 sm12 align-self-end>
+          <div class="align-center" style="text-align:center;height: 100vh;">
+            <img
+              align-content-start
+              contain
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              style="margin-top:15vh;margin-left:-1vw"
+              height="60%"
+              src="../assets/blueprint/_SDS3199b.png"
+            />
+          </div>
         </v-flex>
       </v-layout>
     </div>
 
-    <div v-if="isMobile()" style="margin-top: 10vh;height:200vh">
-      <v-img contain src="../assets/blueprint/6.png"></v-img>
-      <p class="text001">
-        Esse voluptate laborum ea sunt ea mollit aute quis.
-      </p>
-    </div>
-    <div v-if="isMobile()" style="margin-top: 60vh;padding:2vh">
+    <div v-if="isMobile()" style="margin-top: 100vh;padding:2vh">
       <v-img contain src="../assets/blueprint/6.png"></v-img>
       <p class="text002">
         Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
@@ -429,6 +485,8 @@
     </div>
 
     <div v-else style="height: 100vh;margin-top: 10vh">
+      <div style="width:99vw;height:15vh;padding:10px"></div>
+
       <v-layout
         row
         wrap
@@ -436,15 +494,15 @@
         data-aos="fade-left"
         data-aos-duration="3000"
       >
-        <v-flex md8 xs11 sm11 align-self-center>
+        <v-flex md9 xs11 sm11 align-self-center>
           <v-img
             style="margin-left:40px"
             contain
-            height="80vh"
+            height="85vh"
             src="../assets/blueprint/6.png"
           ></v-img>
         </v-flex>
-        <v-flex md5 align-self-center>
+        <v-flex md5 align-self-start>
           <p class="text002" style="margin-left:5vw">
             Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
             pariatur dolore et.as
@@ -453,34 +511,21 @@
       </v-layout>
     </div>
     <div v-if="isMobile()">
-      <v-layout row wrap justify-space-around>
-        <v-flex md8 align-self-start>
-          <div class="align-start" style="text-align:start;height: 100vh;">
-            <img
-              align-content-end
-              contain
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              style="margin-left:-6vw"
-              height="90%"
-              src="../assets/blueprint/7.png"
-            />
-          </div>
-          <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
-        </v-flex>
-        <v-flex md3 align-self-start>
-          <p class="text001"></p>
-        </v-flex>
-      </v-layout>
-    </div>
+      <div class="align-start" style="text-align:start;height: 100vh;">
+      <div style="width:99vw;height:5vh;margin:10vh"></div>
 
-    <!-- <div v-else style="height:100vh;">
-      <v-layout row wrap justify-start style="margin-top: 10vh">
-        <v-flex md10 sm11 xs11 align-self-start>
-          <v-img center contain src="../assets/blueprint/7.png"></v-img>
-        </v-flex>
-      </v-layout>
-    </div> -->
+        <img
+          align-content-end
+          contain
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          width="100%"
+          src="../assets/blueprint/7.png"
+        />
+      </div>
+      <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
+    </div>
+    <div style="width:99vw;height:34vh;padding:10px"></div>
 
     <div
       style="height:100vh;width:100vw;overflow-x: scroll;"
@@ -488,15 +533,15 @@
     >
       <p class="text001" data-aos="fade-right" data-aos-duration="3000"></p>
       <v-layout row wrap justify-space-around>
-        <v-flex md9 align-self-start>
-          <div class="align-start" style="text-align:start;height: 100.01vh;">
+        <v-flex md12 align-self-start>
+          <div class="align-start" style="text-align:start;height: 93vh;">
             <v-img
               contain
               height="100%"
               style="margin-right:1vw"
               data-aos="fade-right"
               data-aos-duration="3000"
-              src="../assets/blueprint/7.png"
+              src="../assets/blueprint/Space/museebourdelle.jpg"
             />
           </div>
           <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
@@ -521,21 +566,198 @@
                 data-aos-duration="2500"
                 data-aos-easing="ease-in-out"
                 height="100%"
-                style="padding:5vh;margin-right:15vw"
-                src="../assets/blueprint/_SDS3184.png"
+                style="padding:5vh;margin-right:5vw"
+                src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
               />
               <img
-                data-aos="zoom-in-left"
-                data-aos-duration="2500"
-                data-aos-easing="ease-in-out"
                 height="100%"
-                style="padding:5vh;margin-right:15vw"
+                style="padding:5vh;margin-right:5vw"
                 src="../assets/blueprint/slide.png"
               />
               <img
                 height="100%"
                 style="padding:5vh"
-                src="../assets/_SDS3169.png"
+                src="../assets/blueprint/Space/C79Ay3iXwAAddP2.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
+
+    <div class="d-flex flex-row mb-6">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
+        <p style="font-size:10vw;color:grey;">
+          S
+        </p>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-out"
+      >
+        <p style="font-size:10vw;color:grey;">
+          P
+        </p>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="500"
+        data-aos-easing="ease-in-out"
+      >
+        <p style="font-size:10vw;color:grey;">
+          A
+        </p>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="700"
+        data-aos-easing="ease-in-out"
+      >
+        <p style="font-size:10vw;color:grey;">
+          C
+        </p>
+      </div>
+
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="1100"
+        data-aos-easing="ease-in-out"
+      >
+        <p style="font-size:10vw;color:grey;">
+          E
+        </p>
+      </div>
+    </div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
+
+    <div>
+      <v-layout row wrap justify-space-around>
+        <v-flex md8 align-self-start>
+          <div class="align-start" style="text-align:start;height: 85vh">
+            <img
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="1000"
+              align-content-end
+              contain
+              style="margin-right:1vw"
+              height="87%"
+              src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
+            />
+          </div>
+          <!-- <v-img height="70vh" contain src="../assets/blueprint/1.png"></v-img> -->
+        </v-flex>
+        <v-flex md3 align-self-start> </v-flex>
+      </v-layout>
+    </div>
+    <div>
+      <p class="text003" style="width:20vw">
+        Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
+        pariatur dolore et.z
+      </p>
+    </div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
+
+    <v-layout row justify-center>
+      <v-flex md7 style="height:100vh" align-self-end>
+        <v-img
+          contain
+          height="90%"
+          src="../assets/blueprint/Space/1280.jpg"
+        ></v-img>
+      </v-flex>
+      <v-flex md3 align-self-center>
+        <v-img
+          contain
+          height="40%"
+          src="../assets/blueprint/Space/asd950x1338.jpg"
+        ></v-img>
+      </v-flex>
+    </v-layout>
+    <div v-if="isMobile()" style="margin-top: 60vh;padding:2vh">
+      <v-img
+        contain
+        src="../assets/blueprint/Space/Giorgio-Armani-4.jpg"
+      ></v-img>
+      <p class="text002">
+        Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
+        adipisicing culpa magna culpa.
+      </p>
+    </div>
+
+    <div v-else style="height: 100vh;margin-top: 30vh">
+      <v-layout
+        row
+        wrap
+        justify-end
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <v-flex md8 xs11 sm11 align-self-center pr-12>
+          <v-img
+            style="margin-left:40px"
+            contain
+            height="80vh"
+            src="../assets/blueprint/Space/Giorgio-Armani-4.jpg"
+          ></v-img>
+        </v-flex>
+        <v-flex md5 align-self-center>
+          <p class="text002" style="margin-left:5vw">
+            Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
+            pariatur dolore et.as
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div style="width:99vw;height:22vh;padding:10px"></div>
+
+    <div
+      style="height:80vh;width:100vw;overflow-x: scroll;"
+      v-on:scroll.once="scrollToElement5"
+    >
+      <v-img
+        height="90vh"
+        contain
+        src="../assets/blueprint/Space/MV5BMmI2ODUxMTQtODVhZi00YzUyLTlmYWItODExOTg2ZDZlOWMxXkEyXkFqcGdeQXVyMTQ4OTMyMjE@._V1_.jpg"
+      >
+      </v-img>
+    </div>
+    <div style="width:99vw;height:22vh;padding:10px"></div>
+
+    <div class="sliderStory" ref="sliderStory">
+      <div class="outer-wrapper">
+        <div class="wrapper">
+          <div class="slide one">
+            <div style="height:100vh">
+              <img
+                data-aos="zoom-in-left"
+                data-aos-delay="400"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out"
+                height="100%"
+                style="padding:5vh;margin-right:10vw"
+                src="../assets/blueprint/Space/616893dbba1de63f51e8674494080e60.jpg"
+              />
+              <img
+                height="100%"
+                style="padding:5vh;margin-right:10vw"
+                src="../assets/blueprint/Space/image31.jpg"
+              />
+              <img
+                height="100%"
+                style="padding:5vh"
+                src="../assets/blueprint/Space/qweqw.jpg"
               />
             </div>
           </div>
@@ -575,6 +797,8 @@ export default {
       this.$smoothScroll({
         scrollTo: this.$refs.slider1,
         duration: 2000,
+        // scrollIntoView({ behavior: "smooth" });
+
         // offset: -50,
       });
       console.log("scroll to element");
@@ -607,9 +831,23 @@ export default {
 
       if (el) {
         // Use el.scrollIntoView() to instantly scroll to the element
-        // el.scrollIntoView({ behavior: "smooth" });
+        el.scrollIntoView({ behavior: "smooth" });
         this.$smoothScroll({
           scrollTo: this.$refs.page2,
+          duration: 2000,
+          // offset: -50,
+        });
+      }
+    },
+    scrollToElement5() {
+      console.log("scroll to element");
+      const el = this.$el.getElementsByClassName("sliderStory")[0];
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        // el.scrollIntoView({ behavior: "smooth" });
+        this.$smoothScroll({
+          scrollTo: this.$refs.sliderStory,
           duration: 2000,
           // offset: -50,
         });
@@ -947,6 +1185,11 @@ p {
   background: #ffffff;
   height: 100vh;
   padding-left: 50vw;
+  transition: 4s ease;
+}
+.one_m {
+  background: #ffffff;
+  height: 100vh;
   transition: 4s ease;
 }
 .outer-wrapper:hover .one {

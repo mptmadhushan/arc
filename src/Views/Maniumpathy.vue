@@ -1,14 +1,17 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style=" opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
+    <div class="d-flex justify-space-between mb-6" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px;"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
     <div class="text-center">
-      <v-layout row wrap justify-center pa-3 style="height:100vh">
+      <v-layout row wrap justify-center pa-3 style="height:90vh">
         <v-flex
           md12
           align-self-center
@@ -31,12 +34,13 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="2000">
+    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2400">
       <v-img
-        height="88vh"
+        height="85vh"
         contain
+        style="margin-bottom:5vh"
         src="../assets/Maniumpathy/SDS2436.png"
       ></v-img>
     </div>
@@ -44,13 +48,15 @@
     <div
       v-if="isMobile()"
       data-aos="fade-up"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="100"
+      data-aos-duration="2500"
     >
+      <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
+
       <v-img contain src="../assets/Maniumpathy/_SDS2725.JPG.jpeg"></v-img>
     </div>
     <div v-else data-aos="fade-up" data-aos-delay="10" data-aos-duration="2000">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-img
         contain
@@ -62,9 +68,11 @@
       v-if="isMobile()"
       style="margin-top: 10vh"
       data-aos="fade-left"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="200"
+      data-aos-duration="2500"
     >
+      <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
+
       <v-img contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
       <p class="text002">
         A strong tonality within the room are balanced by distinctive antiques,
@@ -73,16 +81,16 @@
       </p>
     </div>
     <div v-else class="text-center">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:28vh;padding:10px"></div>
 
-      <v-layout row wrap justify-space-around>
+      <v-layout row wrap justify-space-around style="margin-top:5vh">
         <v-flex
           md9
           pa-4
           align-self-center
           data-aos="fade-left"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <v-img contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
         </v-flex>
@@ -91,8 +99,8 @@
           pa-4
           align-self-center
           data-aos="fade-right"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <p class="text002">
             A strong tonality within the room are balanced by distinctive
@@ -106,8 +114,10 @@
       v-if="isMobile()"
       data-aos="fade-up"
       data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-duration="2500"
     >
+      <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
+
       <vue-flux :options="options" :images="images" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -122,11 +132,12 @@
     <div
       v-else
       data-aos="fade-in"
-      data-aos-delay="10"
-      data-aos-duration="2000"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
       style="padding:8vh"
     >
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:15vh;padding:10px"></div>
       <div style="margin:11vh">
         <vue-flux
           :options="options"
@@ -148,23 +159,25 @@
       v-if="isMobile()"
       style="margin-top: 10vh"
       data-aos="fade-left"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="300"
+      data-aos-duration="2500"
     >
+      <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
+
       <v-img contain src="../assets/Maniumpathy/_SDS2554.JPG.jpeg"></v-img>
       <p class="text002">
         Subtle Interiors of Charm and Softness
       </p>
     </div>
     <div v-else>
-      <div style="width:99vw;height:20vh;padding:10px"></div>
-      <v-layout row wrap justify-center>
+      <div style="width:99vw;height:16vh;padding:10px"></div>
+      <v-layout row wrap justify-center style="margin-bottom: 10vh">
         <v-flex
           md3
           align-self-center
           data-aos="fade-up"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <p class="text002">
             Subtle Interiors of Charm and Softness
@@ -174,8 +187,8 @@
           md4
           align-self-center
           data-aos="fade-up"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <v-img
             height="85vh"
@@ -185,9 +198,8 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
-    =
-    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+    <div style="width:99vw;height:21vh;padding:10px"></div>
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
       <div>
         <div>
           <carousel-3d
@@ -206,7 +218,7 @@
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/Maniumpathy/_SDS2577.png" />
+                <v-img src="../assets/Maniumpathy/_SDS2515.JPG.jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
@@ -222,9 +234,9 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:31vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-duration="2000">
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
       <v-img
         contain
         height="85vh"
@@ -234,9 +246,9 @@
         Opulent Dutch furniture lends the space depth and graciousness
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:31vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
       <v-img
         height="90vh"
         contain
@@ -247,8 +259,8 @@
       v-if="isMobile()"
       style="margin-top: 10vh"
       data-aos="fade-up"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="300"
+      data-aos-duration="2500"
     >
       <v-img contain src="../assets/Maniumpathy/_SDS2557.png"></v-img>
       <div style="margin-top: 10vh">
@@ -256,17 +268,17 @@
       </div>
     </div>
     <div v-else class="text-center">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:25vh;padding:10px"></div>
 
-      <v-layout row wrap justify-space-around>
+      <v-layout row wrap justify-space-around style="margin-top: 10vh">
         <v-flex
           md6
           xs10
           sm10
           align-self-center
           data-aos="fade-up"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <v-img
             height="80vh"
@@ -280,8 +292,8 @@
           sm12
           align-self-center
           data-aos="fade-up"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <v-img
             height="80vh"
@@ -291,34 +303,18 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:17vh;padding:10px"></div>
+    <div style="width:99vw;height:12vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
-      <div v-if="isMobile()">
-        <vue-flux
-          :options="options"
-          :images="images3"
-          :transitions="transitions"
-        >
-          <template v-slot:preloader>
-            <flux-preloader height="40vh" />
-          </template>
-        </vue-flux>
-      </div>
-      <div v-else style="margin:11vh">
-        <vue-flux
-          :options="options"
-          :images="images3"
-          :transitions="transitions"
-        >
-          <template v-slot:preloader>
-            <flux-preloader height="40vh" />
-          </template>
-        </vue-flux>
-      </div>
-    </div>
-    <div style="width:99vw;height:15vh;padding:10px"></div>
-    <div v-if="isMobile()">
+    <div style="width:99vw;height:10vh;padding:10px"></div>
+    <div
+      v-if="isMobile()"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos="fade-up"
+      data-aos-duration="2500"
+    >
+      <div v-if="isMobile()" style="width:99vw;height:10vh;padding:10px"></div>
+
       <vue-flux :options="options" :images="images4" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -329,7 +325,14 @@
         and frame the context of the play on Indoor-Outdoors--
       </p>
     </div>
-    <div v-else style="margin:14vh">
+    <div
+      v-else
+      style="margin:14vh"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos="fade-up"
+      data-aos-duration="2500"
+    >
       <vue-flux :options="options" :images="images4" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -340,25 +343,12 @@
         and frame the context of the play on Indoor-Outdoors--
       </p>
     </div>
-    <!-- <div style="padding:1vh">
-      <v-img
-        contain
-        data-aos="fade-up"
-        data-aos-delay="10"
-        data-aos-duration="1500"
-        height="85vh"
-        src="../assets/Maniumpathy/_SDS2529.JPG 13-06-02-327.png"
-      ></v-img>
-      <p class="text001">
-        Re-purposing Indo-Portugese fittings to provide strength to the space
-        and frame the context of the play on Indoor-Outdoors
-      </p>
-    </div> -->
-    <div style="width:99vw;height:22vh;padding:10px"></div>
 
-    <div data-aos="fade-down" data-aos-delay="10" data-aos-duration="1500">
+    <div style="width:99vw;height:19vh;padding:10px"></div>
+
+    <div data-aos="fade-down" data-aos-delay="300" data-aos-duration="2500">
       <v-img
-        height="88vh"
+        height="86vh"
         style="margin-left: 5vw;margin-right: 5vw"
         contain
         src="../assets/Maniumpathy/_SDS2607.png"
@@ -368,9 +358,10 @@
     <div
       v-if="isMobile()"
       data-aos="fade-up"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="300"
+      data-aos-duration="2500"
     >
+      <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
       <v-img contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
       <p class="text002">
         Outdoor soft seating with a mix of natural textures in washed wood and
@@ -378,41 +369,35 @@
       </p>
     </div>
     <div v-else class="text-center">
-      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div style="width:99vw;height:28vh;padding:10px"></div>
 
-      <v-layout row wrap justify-center>
-        <v-flex
-          md3
-          pa-4
-          align-self-end
-          data-aos="fade-right"
-          data-aos-delay="10"
-          data-aos-duration="1500"
-        >
+      <v-layout
+        row
+        style="margin-top: 5vh"
+        wrap
+        justify-center
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="2500"
+      >
+        <v-flex md3 pa-4 align-self-end>
           <p class="text002">
             Outdoor soft seating with a mix of natural textures in washed wood
             and delicate marble.
           </p>
         </v-flex>
-        <v-flex
-          md8
-          pa-4
-          justify-center
-          data-aos="fade-left"
-          data-aos-delay="10"
-          data-aos-duration="1500"
-        >
+        <v-flex md8 pa-4 justify-center>
           <v-img contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
-
+    <div style="width:99vw;height:29vh;padding:10px"></div>
     <div
       v-if="isMobile()"
+      data-aos-easing="linear"
       data-aos="fade-up"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="300"
+      data-aos-duration="2500"
     >
       <v-img contain src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"></v-img>
       <p class="text002">
@@ -420,9 +405,16 @@
         outdoor dining experience
       </p>
     </div>
-    <div v-else data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-easing="linear"
+      data-aos-duration="2500"
+    >
       <v-img
-        height="85vh"
+        height="80vh"
+        style="margin-top: 5vh"
         contain
         src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"
       ></v-img>
@@ -432,14 +424,17 @@
       </p>
     </div>
 
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:19vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
       data-aos="fade-up"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="300"
+      data-aos-easing="linear"
+      data-aos-duration="2500"
     >
+      <div v-if="isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
+
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -453,8 +448,8 @@
     <div
       v-else
       data-aos="fade-down"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="300"
+      data-aos-duration="2500"
       style="margin:12vh"
     >
       <vue-flux :options="options" :images="images2" :transitions="transitions">
@@ -467,16 +462,18 @@
         serene outdoor pavilion
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:22vh;padding:10px"></div>
 
     <div class="text-center" pa-12>
+      <div v-if="isMobile()" style="width:99vw;height:10vh;padding:10px"></div>
+
       <v-layout row wrap justify-center>
         <v-flex
           md6
           align-self-center
           data-aos="fade-right"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <v-img
             height="85vh"
@@ -488,8 +485,8 @@
           md5
           align-self-center
           data-aos="fade-left"
-          data-aos-delay="10"
-          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-duration="2500"
         >
           <p class="text002">
             A fresh take on delivering a timeless quality to this Intimate
@@ -498,21 +495,23 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:31vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
       data-aos="fade-up"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="100"
+      data-aos-easing="linear"
+      data-aos-duration="2500"
     >
       <v-img contain src="../assets/Maniumpathy/_SDS2457-2.png"></v-img>
     </div>
     <div
       v-else
       data-aos="fade-up"
-      data-aos-delay="10"
-      data-aos-duration="1500"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+      data-aos-easing="linear"
       style="padding:5vh"
     >
       <v-img
@@ -589,7 +588,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 87vh;
+  height: 85vh;
 }
 .b1 {
   background-color: #fff;

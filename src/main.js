@@ -7,19 +7,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel3d from "vue-carousel-3d";
 import VueSlickCarousel from "vue-slick-carousel";
-import KsVueScrollmagic from "ks-vue-scrollmagic";
-Vue.use(KsVueScrollmagic);
-import SequentialEntrance from "vue-sequential-entrance";
-import "vue-sequential-entrance/vue-sequential-entrance.css";
 import VueAnime from "vue-animejs";
-import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
-// import "./fullpage.scrollHorizontally.min"; // Optional. When using fullpage extensions
-import VueFullPage from "vue-fullpage.js";
 Vue.use(VueAnime);
-Vue.use(VueFullPage);
 import VueSmoothScroll from "vue2-smooth-scroll";
 Vue.use(VueSmoothScroll);
-import InfiniteSlideBar from "vue-infinite-slide-bar";
+Vue.component("ShapesPop", require("./components/ShapesPop.vue").default);
+import VScrollToTop from "v-scroll-to-top";
+
+Vue.use(VScrollToTop);
 Vue.mixin({
   methods: {
     isMobile() {
@@ -36,8 +31,6 @@ Vue.mixin({
   },
 });
 
-Vue.component("InfiniteSlideBar", InfiniteSlideBar);
-Vue.use(SequentialEntrance);
 Vue.use(Carousel3d);
 Vue.use(VueSlickCarousel);
 Vue.config.productionTip = false;

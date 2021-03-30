@@ -7,7 +7,7 @@
             row
             wrap
             justify-center
-            style="margin-top:10%;margin-bottom:5%;"
+            style="margin-top:15%;margin-bottom:5%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p
@@ -17,11 +17,11 @@
                 ABOUT US
               </p></v-flex
             >
-            <v-flex md2 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-              <v-img height="40vh" src="../assets/1.png"></v-img>
+            <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
+              <v-img height="60vh" src="../assets/1.png"></v-img>
             </v-flex>
             <v-flex md3 xs12 pa-1>
-              <v-img height="70vh" src="../assets/2.png"></v-img>
+              <v-img height="90vh" src="../assets/2.png"></v-img>
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
@@ -67,7 +67,13 @@
           </p>
         </div>
         <div v-else data-aos="fade-up" data-aos-duration="3000">
-          <v-layout row wrap justify-space-around pt-md-12 style="height:100vh">
+          <v-layout
+            row
+            wrap
+            justify-space-around
+            pt-md-12
+            style="margin-top:20%;height:100vh"
+          >
             <v-flex md4 sm12 xs12 align-self-center pa-md-12>
               <v-img height="70vh" src="../assets/12.png"></v-img>
             </v-flex>
@@ -102,7 +108,7 @@
             row
             wrap
             justify-center
-            style="margin-top:10%;margin-bottom:5%;"
+            style="margin-top:15%;margin-bottom:5%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p
@@ -112,11 +118,11 @@
                 ABOUT US
               </p></v-flex
             >
-            <v-flex md2 sm12 xs12 align-self-end pa-1>
-              <v-img height="40vh" src="../assets/1.png"></v-img>
+            <v-flex md3 sm12 xs12 align-self-end pa-1>
+              <v-img height="60vh" src="../assets/1.png"></v-img>
             </v-flex>
             <v-flex md3 xs12 pa-1>
-              <v-img height="70vh" src="../assets/2.png"></v-img>
+              <v-img height="90vh" src="../assets/2.png"></v-img>
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
@@ -142,7 +148,13 @@
         </div>
 
         <div>
-          <v-layout row wrap justify-space-around pt-12 style="height:100vh">
+          <v-layout
+            row
+            wrap
+            justify-space-around
+            pt-12
+            style="margin-top:15%;height:100vh"
+          >
             <v-flex md4 sm12 xs12 align-self-center pa-12>
               <v-img height="70vh" src="../assets/12.png"></v-img>
             </v-flex>
@@ -171,6 +183,11 @@
           </v-layout>
         </div>
       </div>
+    </div>
+    <div class="brand">
+      <a style="color:black" href="http://cyberchaps.com"
+        ><p>Powerd by @cyberchaps</p></a
+      >
     </div>
   </v-container>
 </template>
@@ -201,6 +218,16 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 .v-application p {
   margin-bottom: 1px !important;
+}
+.brand {
+  opacity: 0;
+  height: 50px;
+  margin-top: -2vh;
+}
+.brand:hover {
+  text-align: right;
+  height: 200px;
+  opacity: 1;
 }
 .new {
   font-family: "Josefin Sans", sans-serif;

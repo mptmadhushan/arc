@@ -1,24 +1,41 @@
 <template>
   <v-container fluid>
-    <router-link to="/projects">
-      <img
-        style="opacity: 0.5;margin-inline:20px"
-        height="20vh"
-        src="../assets/backArrow.png"
-      />
-    </router-link>
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
-      <div class="b1con" data-aos="zoom-out" data-aos-duration="1500">
+    <div class="d-flex justify-space-between" style="margin-top:2vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <ShapesPop />
+    </div>
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+    >
+      <div
+        class="b1con"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+      >
         <div class="b1"></div>
       </div>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
     <div>
       <v-img
         height="85vh"
+        style="margin-top:6vh"
         contain
         data-aos="fade-up"
-        data-aos-duration="1500"
+        data-aos-duration="2000"
+        data-aos-easing="linear"
+        data-aos-delay="100"
         src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
       ></v-img>
       <p class="text001">
@@ -26,7 +43,7 @@
         lake.
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div v-if="isMobile()" class="text-center">
       <v-layout row wrap justify-center pt-md-12 style="height:70vh">
@@ -46,7 +63,9 @@
           pa-4
           align-self-center
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="2000"
+          data-aos-easing="linear"
+          data-aos-delay="100"
         >
           <p class="text002">
             A play on traditional Sri Lankan art to enhance the sense of
@@ -58,15 +77,22 @@
           pa-4
           align-self-center
           data-aos="fade-left"
-          data-aos-duration="1500"
+          data-aos-easing="linear"
+          data-aos-delay="100"
+          data-aos-duration="2000"
         >
           <v-img contain src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
+    <div style="width:99vw;height:35vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-duration="1500">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2500"
+    >
       <v-img
         contain
         height="85vh"
@@ -77,18 +103,31 @@
         prelude to the indoor-outdoor theme carried throughout.
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:23vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-duration="1500">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos-duration="2000"
+    >
       <v-img
         contain
+        style="margin-top:8vh"
         height="90vh"
         src="../assets/Bolgoda/_SDS1292.JPG.jpeg"
       ></v-img>
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
 
-    <div v-if="isMobile()" data-aos="fade-up" data-aos-duration="1500">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+      style="height:100vh"
+    >
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
       <p class="text001">
@@ -98,7 +137,14 @@
         compation of Tha inside and out.
       </p>
     </div>
-    <div v-else data-aos="fade-up" data-aos-duration="1500" style="padding:8vw">
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      style="padding:8vw"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+    >
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
       <p class="text001">
@@ -113,63 +159,70 @@
     <div v-if="isMobile()" style="margin-top: 10vh">
       <v-img height="80vh" src="../assets/Bolgoda/_SDS1452.JPG.jpeg"></v-img>
     </div>
-    <div v-else data-aos="fade-up" data-aos-duration="1500">
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+    >
       <v-img
         height="90vh"
         contain
         src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
-
-    <div data-aos="fade-up" data-aos-duration="1500">
-      <div>
-        <div>
-          <carousel-3d
-            :width="900"
-            :height="600"
-            :inverse-scaling="200"
-            :space="1300"
-            :perspective="0"
-            :autoplay="false"
-            :autoplay-timeout="1500"
-            :display="3"
-          >
-            <slide :index="0">
-              <figure>
-                <v-img contain src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg" />
-              </figure> </slide
-            ><slide :index="1">
-              <figure>
-                <v-img contain src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
-              </figure> </slide
-            ><slide :index="2">
-              <figure>
-                <!-- <v-img src="../assets/Bolgoda/bath3.jpeg" /> -->
-              </figure>
-            </slide>
-          </carousel-3d>
-
-          <p class="text001">
-            The combination of the almost monastic serenity and pale colours and
-            soft textures show off the strength and beauty of the rooms.
-            Sometimes refined and sometimes playfull.
-          </p>
-        </div>
-      </div>
-      <!-- <div class="box stack-top d-none d-lg-block">
-        <div class="container_l">
-          <div class="sub-left"></div>
-        </div>
-        <div class="container_l">
-          <div class="sub-right"></div>
-        </div>
-      </div> -->
+    <div style="width:99vw;height:40vh;padding:10px"></div>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2500"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+    >
+      <v-layout row wrap>
+        <v-flex md8 align-self-center>
+          <div>
+            <carousel-3d
+              :width="800"
+              :height="500"
+              :inverse-scaling="200"
+              :space="1000"
+              :perspective="0"
+              :autoplay="false"
+              :autoplay-timeout="2000"
+              :display="2"
+            >
+              <slide :index="0">
+                <figure>
+                  <v-img
+                    contain
+                    src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg"
+                  />
+                </figure> </slide
+              ><slide :index="1">
+                <figure>
+                  <v-img contain src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
+                </figure>
+              </slide>
+            </carousel-3d>
+          </div>
+        </v-flex>
+        <v-flex md3>
+          <v-img contain src="../assets/Bolgoda/_SDS1239-HDR.JPG.jpeg" />
+        </v-flex>
+      </v-layout>
     </div>
-    <div style="width:99vw;height:15vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-duration="1500">
+    <div style="width:99vw;height:35vh;padding:10px"></div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos-duration="2400"
+    >
       <v-img
+        style="margin-top:6vh"
         height="85vh"
         contain
         src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
@@ -178,12 +231,12 @@
         A contempoary twist to a timeless view.
       </p>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
       class="text-center"
-      style="margin-left: 5vw;margin-right: 5vw"
+      style="margin-left: 5vw;margin-right: 5vw;margin-top:10vh"
     >
       <v-layout row wrap justify-space-around>
         <v-flex md7 xs12 sm12 align-self-center>
@@ -201,14 +254,16 @@
       </v-layout>
     </div>
     <div v-else class="text-center">
-      <v-layout row wrap justify-center>
+      <v-layout row wrap justify-center style="margin-top:5vh">
         <v-flex
           md8
           xs12
           pa-4
           align-self-center
+          data-aos-easing="linear"
+          data-aos-delay="100"
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="2000"
         >
           <v-img contain src="../assets/Bolgoda/_SDS1360.JPG.jpeg"></v-img>
         </v-flex>
@@ -217,7 +272,9 @@
           pa-4
           align-self-center
           data-aos="fade-left"
-          data-aos-duration="1500"
+          data-aos-easing="linear"
+          data-aos-delay="100"
+          data-aos-duration="2000"
         >
           <p class="text002">
             Old wood to accentuate the seamless interaction of indoors and
@@ -227,9 +284,15 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div v-if="isMobile()" data-aos="fade-up" data-aos-duration="1500">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+    >
       <v-img
         height="100vh"
         contain
@@ -240,7 +303,9 @@
       v-else
       style="padding-block:5vh"
       data-aos="fade-up"
-      data-aos-duration="1500"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
     >
       <v-img
         height="90vh"
@@ -304,7 +369,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 92vh;
+  height: 90vh;
 }
 .b1 {
   background-color: #fff;

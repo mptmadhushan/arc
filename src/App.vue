@@ -4,12 +4,14 @@
       <transition name="fade">
         <router-view> </router-view>
       </transition>
+      <v-scroll-to-top></v-scroll-to-top>
     </v-main>
+    <!-- <ScrollTopArrow></ScrollTopArrow> -->
   </v-app>
 </template>
 
 <script>
-// import PreLoader from "./components/PreLoader";
+// import ScrollTopArrow from "./components/ScrollTopArrow";
 export default {
   // watch: {
   //   $route(to, from) {
@@ -25,6 +27,7 @@ export default {
   data: () => ({
     newName: "hellp",
   }),
+  methods: {},
   name: "App",
   mounted() {
     window.onbeforeunload = function() {
@@ -37,14 +40,32 @@ export default {
       localStorage.name = newName;
     },
   },
-  components: {},
+  components: {
+    // ScrollTopArrow,
+  },
 };
 </script>
 <style>
-* {
+#icon-arrow-up {
+  position: relative;
+  color: #fff;
   margin: 0;
-  transform: translate3d(0px, 0px, 0px);
-  transition: all 700ms ease;
+  top: 8px !important;
+  width: 20px !important;
+  height: 20px !important;
+  transition: all 0.3s ease;
+}
+#icon-container {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 30px !important;
+  height: 30px !important;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 ::-webkit-scrollbar {
   display: none;

@@ -1,6 +1,5 @@
 <template>
   <div class="aaa">
-    <!-- <hnew /> -->
     <hero />
     <page1 />
   </div>
@@ -9,17 +8,13 @@
 <script>
 import hero from "./Hero";
 import page1 from "./page1";
-// import hnew from "./new";
 export default {
   components: {
     hero,
     page1,
-    // hnew,
-    // page4,
   },
   watch: {
     $route(to, from) {
-      // react to route changes...
       console.log("route parameter changed");
       console.log(to);
       console.log(from);
