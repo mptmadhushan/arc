@@ -185,9 +185,7 @@
       </div>
     </div>
     <div class="brand">
-      <a style="color:black" href="http://cyberchaps.com"
-        ><p>Powerd by @cyberchaps</p></a
-      >
+      <a style="color:black" href="http://cyberchaps.com"><p>@cyberchaps</p></a>
     </div>
   </v-container>
 </template>
@@ -220,15 +218,11 @@ export default {
   margin-bottom: 1px !important;
 }
 .brand {
-  opacity: 0;
-  height: 50px;
-  margin-top: -2vh;
-}
-.brand:hover {
+  opacity: 0.4;
   text-align: right;
-  height: 200px;
-  opacity: 1;
+  height: 30px;
 }
+
 .new {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 10px;

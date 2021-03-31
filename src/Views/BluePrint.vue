@@ -1,7 +1,7 @@
 <template>
   <div class="scroll-container">
     <router-link to="/">
-      <div style="margin-top:1vh">
+      <div style="margin-top:vh">
         <img
           style=" opacity: 0.5;margin-inline:20px;margin-top:2vh"
           height="20vh"
@@ -512,7 +512,7 @@
     </div>
     <div v-if="isMobile()">
       <div class="align-start" style="text-align:start;height: 100vh;">
-      <div style="width:99vw;height:5vh;margin:10vh"></div>
+        <div style="width:99vw;height:5vh;margin:10vh"></div>
 
         <img
           align-content-end
@@ -686,10 +686,7 @@
       </v-flex>
     </v-layout>
     <div v-if="isMobile()" style="margin-top: 60vh;padding:2vh">
-      <v-img
-        contain
-        src="../assets/blueprint/Space/Giorgio-Armani-4.jpg"
-      ></v-img>
+      <v-img contain src="../assets/blueprint/imgspace.jpg"></v-img>
       <p class="text002">
         Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
         adipisicing culpa magna culpa.
@@ -704,19 +701,20 @@
         data-aos="fade-left"
         data-aos-duration="3000"
       >
-        <v-flex md8 xs11 sm11 align-self-center pr-12>
+        <v-flex md12 xs11 sm11 align-self-center pr-12>
           <v-img
-            style="margin-left:40px"
             contain
             height="80vh"
-            src="../assets/blueprint/Space/Giorgio-Armani-4.jpg"
+            src="../assets/blueprint/imgspace.jpg"
           ></v-img>
         </v-flex>
-        <v-flex md5 align-self-center>
-          <p class="text002" style="margin-left:5vw">
-            Quis ullamco consectetur pariatur dolore etQuis ullamco consectetur
-            pariatur dolore et.as
-          </p>
+        <v-flex md12 align-self-center>
+          <div class="text-center">
+            <p class="text002">
+              Quis ullamco consectetur pariatur dolore etQuis ullamco
+              consectetur pariatur dolore et.as
+            </p>
+          </div>
         </v-flex>
       </v-layout>
     </div>
@@ -747,7 +745,7 @@
                 data-aos-easing="ease-in-out"
                 height="100%"
                 style="padding:5vh;margin-right:10vw"
-                src="../assets/blueprint/Space/616893dbba1de63f51e8674494080e60.jpg"
+                src="../assets/blueprint/_SDS1585-3.jpg"
               />
               <img
                 height="100%"
