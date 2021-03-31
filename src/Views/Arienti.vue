@@ -29,16 +29,18 @@
     <div style="width:99vw;height:30vh;padding:10px"></div>
 
     <div
+      eager
       data-aos="fade-up"
       data-aos-delay="100"
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
       <div v-if="isMobile()">
-        <v-img contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
+        <v-img eager contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
       </div>
       <div v-else>
         <v-img
+          eager
           contain
           height="85vh"
           src="../assets/Arienti/_SDS7732.jpeg"
@@ -53,6 +55,7 @@
     <div style="width:99vw;height:30vh;padding:10px"></div>
 
     <div
+      eager
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-delay="500"
@@ -72,24 +75,24 @@
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/Arienti/_SDS7808.jpeg" />
+                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/Arienti/_SDS7783.jpeg" />
+                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/Arienti/_SDS7782.jpeg" />
+                <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
               </figure>
             </slide>
             <slide :index="3">
               <figure>
-                <v-img src="../assets/Arienti/_SDS7808.jpeg" />
+                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
               </figure> </slide
             ><slide :index="4">
               <figure>
-                <v-img src="../assets/Arienti/_SDS7783.jpeg" />
+                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
               </figure> </slide
             ><slide :index="5">
               <figure>
@@ -110,6 +113,7 @@
     <div style="width:99vw;height:30vh;padding:10px"></div>
 
     <div
+      eager
       data-aos="fade-up"
       data-aos-delay="100"
       data-aos-easing="linear"
@@ -117,12 +121,13 @@
     >
       <div v-if="isMobile()">
         <div style="width:99vw;height:15vh;padding:10px"></div>
-        <v-img contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
+        <v-img eager contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
       </div>
       <div v-else>
         <v-img
           height="85vh"
           contain
+          eager
           src="../assets/Arienti/_SDS7793.jpeg"
         ></v-img>
       </div>

@@ -45,6 +45,7 @@
           data-aos-duration="1500"
         >
           <v-img
+          
             contain
             height="90vh"
             src="../assets/chamika_house/_SDS3575.jpg"

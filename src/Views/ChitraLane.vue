@@ -51,6 +51,7 @@
         </v-flex>
         <v-flex md7 justify-center>
           <v-img
+            eager
             height="80vh"
             src="../assets/Chitra_Lane/_SDS3762-HDR.JPG.jpg"
           ></v-img>
@@ -71,6 +72,7 @@
       >
         <div>
           <v-img
+            eager
             height="90vh"
             contain
             src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
@@ -94,6 +96,7 @@
           <v-img
             height="100%"
             contain
+            eager
             src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
           ></v-img>
         </div>
@@ -119,6 +122,7 @@
         </v-flex>
         <v-flex md7 xs12 sm12 justify-center>
           <v-img
+            eager
             contain
             height="90vh"
             src="../assets/Chitra_Lane/_SDS3689.JPG.jpg"
@@ -149,15 +153,15 @@
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/Chitra_Lane/_SDS3699-HDR.JPG.jpg" />
+                <v-img eager src="../assets/Chitra_Lane/_SDS3699-HDR.JPG.jpg" />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/Chitra_Lane/_SDS3725-HDR.JPG.jpg" />
+                <v-img eager src="../assets/Chitra_Lane/_SDS3725-HDR.JPG.jpg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/Chitra_Lane/_SDS3741-HDR.JPG.jpg" />
+                <v-img eager src="../assets/Chitra_Lane/_SDS3741-HDR.JPG.jpg" />
               </figure>
             </slide>
           </carousel-3d>
@@ -178,11 +182,16 @@
       data-aos-duration="1500"
     >
       <div v-if="isMobile()">
-        <v-img contain src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"></v-img>
+        <v-img
+          contain
+          eager
+          src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
+        ></v-img>
       </div>
       <div v-else>
         <v-img
           contain
+          eager
           height="90vh"
           src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
         ></v-img>
@@ -203,6 +212,7 @@
     >
       <v-img
         contain
+        eager
         height="90vh"
         src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
       ></v-img>
@@ -216,6 +226,7 @@
       data-aos-duration="1500"
     >
       <v-img
+        eager
         contain
         height="95vh"
         src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
