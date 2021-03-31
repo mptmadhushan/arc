@@ -1,5 +1,28 @@
 <template>
   <v-container fluid>
+    <div class="text-center">
+      <v-dialog
+        v-model="dialog"
+        persistent
+        width="100vw"
+        content-class="elevation-0"
+        hide-overlay
+        transition="fade"
+      >
+        <v-card color="transparent" flat content-class="elevation-0">
+          <v-card-text>
+            <div class="d-flex flex-row">
+              <v-img
+                contain
+                height="10vh"
+                width="20vw"
+                src="../assets/logoTitle.png"
+              ></v-img>
+            </div>
+          </v-card-text>
+        </v-card>
+      </v-dialog>
+    </div>
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -393,7 +416,19 @@ export default {
     VueFlux,
     FluxPreloader,
   },
+  mounted() {
+    // eslint-disable-next-line no-extra-boolean-cast
+    if (Boolean(this.dialog)) this.showToggle();
+  },
+  methods: {
+    showToggle() {
+      setTimeout(() => {
+        this.dialog = false;
+      }, 700);
+    },
+  },
   data: () => ({
+    dialog: true,
     options: {
       allowFullscreen: false,
       allowToSkipTransition: true,
