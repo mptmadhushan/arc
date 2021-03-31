@@ -34,6 +34,7 @@
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
+        eager
         contain
         style="margin-top:10vh"
         height="85vh"
@@ -56,6 +57,7 @@
       <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
         <v-flex md7 xs12 sm12 align-self-center>
           <v-img
+            eager
             contain
             src="../assets/Damindra_House/_SDS7634.JPG.jpg"
           ></v-img>
@@ -88,6 +90,7 @@
           data-aos-duration="2500"
         >
           <v-img
+            eager
             contain
             height="85vh"
             src="../assets/Damindra_House/_SDS7634.JPG.jpg"
@@ -99,6 +102,7 @@
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
+        eager
         contain
         height="85vh"
         src="../assets/Damindra_House/_SDS7591.JPG.jpg"
@@ -114,6 +118,7 @@
       <v-layout row wrap justify-space-around>
         <v-flex md7 xs12 sm12 align-self-center mt-12>
           <v-img
+            eager
             contain
             height="100%"
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
@@ -149,6 +154,7 @@
           data-aos-duration="2500"
         >
           <v-img
+            eager
             contain
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
           ></v-img>

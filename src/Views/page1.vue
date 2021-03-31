@@ -18,10 +18,10 @@
               </p></v-flex
             >
             <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-              <v-img height="60vh" src="../assets/1.png"></v-img>
+              <v-img eager height="60vh" src="../assets/1.png"></v-img>
             </v-flex>
             <v-flex md3 xs12 pa-1>
-              <v-img height="90vh" src="../assets/2.png"></v-img>
+              <v-img eager height="90vh" src="../assets/2.png"></v-img>
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
@@ -75,7 +75,7 @@
             style="margin-top:20%;height:100vh"
           >
             <v-flex md4 sm12 xs12 align-self-center pa-md-12>
-              <v-img height="70vh" src="../assets/12.png"></v-img>
+              <v-img eager height="70vh" src="../assets/12.png"></v-img>
             </v-flex>
             <v-flex md6 align-self-center>
               <p class="pa-2 new">
@@ -119,10 +119,10 @@
               </p></v-flex
             >
             <v-flex md3 sm12 xs12 align-self-end pa-1>
-              <v-img height="60vh" src="../assets/1.png"></v-img>
+              <v-img eager height="60vh" src="../assets/1.png"></v-img>
             </v-flex>
             <v-flex md3 xs12 pa-1>
-              <v-img height="90vh" src="../assets/2.png"></v-img>
+              <v-img eager height="90vh" src="../assets/2.png"></v-img>
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
@@ -156,7 +156,7 @@
             style="margin-top:15%;height:100vh"
           >
             <v-flex md4 sm12 xs12 align-self-center pa-12>
-              <v-img height="70vh" src="../assets/12.png"></v-img>
+              <v-img eager height="70vh" src="../assets/12.png"></v-img>
             </v-flex>
             <v-flex md6 align-self-center>
               <p class="pa-2 new">
@@ -184,9 +184,9 @@
         </div>
       </div>
     </div>
-    <div class="brand">
+    <!-- <div class="brand">
       <a style="color:black" href="http://cyberchaps.com"><p>@cyberchaps</p></a>
-    </div>
+    </div> -->
   </v-container>
 </template>
 

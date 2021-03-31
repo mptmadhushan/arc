@@ -47,7 +47,7 @@
       data-aos-delay="100"
       data-aos-duration="1500"
     >
-      <v-img
+      <v-img eager
         height="85vh"
         contain
         style="margin-top:3vh"
@@ -114,19 +114,22 @@
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/Dinali_House/_SDS2911.JPG.jpg" />
+                <v-img eager src="../assets/Dinali_House/_SDS2911.JPG.jpg" />
               </figure>
             </slide>
             <slide :index="1">
               <figure>
-                <v-img src="../assets/Dinali_House/_SDS2865.JPG.jpg" />
-                <!-- <v-img src="../assets/Dinali_House/_SDS2899.JPG.jpg" /> -->
+                <v-img eager src="../assets/Dinali_House/_SDS2865.JPG.jpg" />
+                <!-- <v-img eager src="../assets/Dinali_House/_SDS2899.JPG.jpg" /> -->
               </figure>
             </slide>
             <slide :index="2">
               <figure>
-                <v-img src="../assets/Dinali_House/_SDS2866.JPG.jpg"></v-img>
-                <!-- <v-img src="../assets/Dinali_House/_SDS2899.JPG.jpg" /> -->
+                <v-img
+                  eager
+                  src="../assets/Dinali_House/_SDS2866.JPG.jpg"
+                ></v-img>
+                <!-- <v-img eager src="../assets/Dinali_House/_SDS2899.JPG.jpg" /> -->
               </figure>
             </slide>
           </carousel-3d>
@@ -159,7 +162,11 @@
       <v-layout row wrap justify-center style="height: 100vh;">
         <v-flex md4 align-self-center> </v-flex>
         <v-flex md7 align-self-center>
-          <v-img contain src="../assets/Dinali_House/_SDS2888.JPG.jpg"></v-img>
+          <v-img
+            eager
+            contain
+            src="../assets/Dinali_House/_SDS2888.JPG.jpg"
+          ></v-img>
           <p class="text002">
             The painting and sculptures chosen to be showcased portray a story
             told through the eyes of some of the island's best artists
@@ -194,6 +201,7 @@
           data-aos-duration="1500"
         >
           <v-img
+            eager
             contain
             height="85vh"
             src="../assets/Dinali_House/_SDS2888.JPG.jpg"
@@ -214,7 +222,11 @@
           data-aos-delay="100"
           data-aos-duration="1500"
         >
-          <v-img contain src="../assets/Dinali_House/_SDS2881.JPG.jpg"></v-img>
+          <v-img
+            eager
+            contain
+            src="../assets/Dinali_House/_SDS2881.JPG.jpg"
+          ></v-img>
         </v-flex>
         <v-flex
           md3
@@ -240,6 +252,7 @@
       data-aos-duration="2000"
     >
       <v-img
+        eager
         height="85vh"
         contain
         style="margin-left: 5vw;margin-right: 5vw"

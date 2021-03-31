@@ -30,7 +30,7 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img contain src="../assets/hanthana/2.jpeg"></v-img>
+      <v-img eager contain src="../assets/hanthana/2.jpeg"></v-img>
       <p class="text002">
         Wilderness framed to prelude the view and experiences beyond it.
       </p>
@@ -56,7 +56,12 @@
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <v-img contain height="85vh" src="../assets/hanthana/2.jpeg"></v-img>
+          <v-img
+            eager
+            contain
+            height="85vh"
+            src="../assets/hanthana/2.jpeg"
+          ></v-img>
         </v-flex>
       </v-layout>
     </div>
@@ -67,7 +72,7 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img contain src="../assets/hanthana/3.jpeg"></v-img>
+      <v-img eager contain src="../assets/hanthana/3.jpeg"></v-img>
       <p class="text002">
         Working the landscape to pay homage to the surrounding natural beauty.
       </p>
@@ -80,7 +85,12 @@
     >
       <div style="width:99vw;height:20vh;padding:10px"></div>
 
-      <v-img height="85vh" contain src="../assets/hanthana/3.jpeg"></v-img>
+      <v-img
+        eager
+        height="85vh"
+        contain
+        src="../assets/hanthana/3.jpeg"
+      ></v-img>
       <p class="text001">
         Working the landscape to pay homage to the surrounding natural beauty.
       </p>
@@ -92,7 +102,7 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img contain src="../assets/hanthana/4.jpeg"></v-img>
+      <v-img eager contain src="../assets/hanthana/4.jpeg"></v-img>
     </div>
     <div
       v-else
@@ -102,7 +112,12 @@
     >
       <div style="width:99vw;height:30vh;padding:10px"></div>
 
-      <v-img height="90vh" contain src="../assets/hanthana/4.jpeg"></v-img>
+      <v-img
+        eager
+        height="90vh"
+        contain
+        src="../assets/hanthana/4.jpeg"
+      ></v-img>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
 
@@ -113,7 +128,7 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img contain src="../assets/hanthana/5.png"></v-img>
+      <v-img eager contain src="../assets/hanthana/5.png"></v-img>
       <p class="text002">
         Clean lines and simplicity in form define the view and allow for an
         uninterrupted visual experience.
@@ -142,7 +157,7 @@
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <v-img contain src="../assets/hanthana/5.png"></v-img>
+          <v-img eager contain src="../assets/hanthana/5.png"></v-img>
         </v-flex>
       </v-layout>
     </div>
@@ -182,11 +197,12 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img contain src="../assets/hanthana/6.jpeg"></v-img>
+      <v-img eager contain src="../assets/hanthana/6.jpeg"></v-img>
     </div>
     <div v-else>
       <!-- <div style="width:99vw;height:25vh;padding:10px"></div> -->
       <v-img
+        eager
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-duration="1500"
@@ -205,7 +221,7 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img contain src="../assets/hanthana/7.jpeg"></v-img>
+      <v-img eager contain src="../assets/hanthana/7.jpeg"></v-img>
       <p class="text002">
         A warm and inviting entrance hall, inviting you into a curated
         experience of art and artefact.
@@ -217,7 +233,12 @@
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img height="85vh" contain src="../assets/hanthana/7.jpeg"></v-img>
+      <v-img
+        eager
+        height="85vh"
+        contain
+        src="../assets/hanthana/7.jpeg"
+      ></v-img>
       <p class="text001">
         A warm and inviting entrance hall, inviting you into a curated
         experience of art and artefact.
@@ -240,15 +261,15 @@
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/hanthana/slide.jpeg" />
+                <v-img eager src="../assets/hanthana/slide.jpeg" />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/hanthana/_SDS1957.JPG (1).jpeg" />
+                <v-img eager src="../assets/hanthana/_SDS1957.JPG (1).jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/hanthana/_SDS1947.JPG.jpeg" />
+                <v-img eager src="../assets/hanthana/_SDS1947.JPG.jpeg" />
               </figure>
             </slide>
           </carousel-3d>
@@ -264,7 +285,12 @@
     <div style="width:99vw;height:32vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-      <v-img contain height="85vh" src="../assets/hanthana/slide2.jpeg"></v-img>
+      <v-img
+        eager
+        contain
+        height="85vh"
+        src="../assets/hanthana/slide2.jpeg"
+      ></v-img>
       <p class="text001" style="padding-inline:15vw">
         Bandu Manamperi's take on the surrounding vista of mountains from
         Hanthana itself, creating a contemporary stage for his work within the
@@ -274,7 +300,12 @@
     <div style="width:99vw;height:32vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-      <v-img height="85vh" contain src="../assets/hanthana/8.jpeg"></v-img>
+      <v-img
+        eager
+        height="85vh"
+        contain
+        src="../assets/hanthana/8.jpeg"
+      ></v-img>
     </div>
     <div style="width:99vw;height:36vh;padding:10px"></div>
 
@@ -287,7 +318,12 @@
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <v-img height="85vh" contain src="../assets/hanthana/9.jpeg"></v-img>
+          <v-img
+            eager
+            height="85vh"
+            contain
+            src="../assets/hanthana/9.jpeg"
+          ></v-img>
         </v-flex>
         <v-flex md4 align-self-center>
           <p
@@ -321,19 +357,19 @@
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/hanthana/slide3.jpeg" />
+                <v-img eager src="../assets/hanthana/slide3.jpeg" />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/hanthana/sln.jpeg" />
+                <v-img eager src="../assets/hanthana/sln.jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/hanthana/sln2.jpeg" />
+                <v-img eager src="../assets/hanthana/sln2.jpeg" />
               </figure> </slide
             ><slide :index="3">
               <figure>
-                <v-img src="../assets/hanthana/slide7.jpg" />
+                <v-img eager src="../assets/hanthana/slide7.jpg" />
               </figure>
             </slide>
           </carousel-3d>
@@ -349,6 +385,7 @@
     <div style="width:99vw;height:31vh;padding:10px"></div>
     <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
       <v-img
+        eager
         height="90vh"
         contain
         src="../assets/hanthana/_SDS1888.JPG.jpeg"
@@ -356,7 +393,12 @@
     </div>
     <div style="width:99vw;height:35vh;padding:10px"></div>
     <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
-      <v-img height="90vh" contain src="../assets/hanthana/slide6.jpg"></v-img>
+      <v-img
+        eager
+        height="90vh"
+        contain
+        src="../assets/hanthana/slide6.jpg"
+      ></v-img>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
 
@@ -368,6 +410,7 @@
       data-aos-duration="1500"
     >
       <v-img
+        eager
         height="90vh"
         contain
         src="../assets/hanthana/_SDS2136.JPG.jpeg"
@@ -381,6 +424,7 @@
       data-aos-duration="1500"
     >
       <v-img
+        eager
         height="85vh"
         contain
         style="margin-left: 5vw;margin-right: 5vw"
@@ -422,6 +466,7 @@
 
     <div style="padding-bottom:4vh">
       <v-img
+        eager
         data-aos="fade-down"
         data-aos-delay="500"
         data-aos-duration="3000"

@@ -40,7 +40,7 @@
       data-aos-delay="300"
       data-aos-duration="2500"
     >
-      <v-img contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
+      <v-img eager contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
       <p class="text001">
         Revitalising a Kandyan Icon into a boutique hotel maintaining its
         heritage
@@ -55,6 +55,7 @@
     >
       <div style="width:99vw;height:30vh;padding:10px"></div>
       <v-img
+        eager
         style="margin-top:5vh"
         contain
         height="88vh"
@@ -70,6 +71,7 @@
       <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-img
+        eager
         contain
         src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
       ></v-img>
@@ -84,6 +86,7 @@
       <v-layout row wrap justify-space-around>
         <v-flex md9 pa-4 xs12 sm12 align-self-center>
           <v-img
+            eager
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-delay="400"
@@ -167,6 +170,7 @@
       data-aos-duration="1500"
     >
       <v-img
+        eager
         contain
         src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
       ></v-img>
@@ -197,6 +201,7 @@
         </v-flex>
         <v-flex md9 pa-4 xs10 sm10 align-self-center>
           <v-img
+            eager
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-delay="400"
@@ -235,12 +240,14 @@
             <slide :index="0">
               <figure>
                 <v-img
+                  eager
                   src="../assets/Stone_House/Stone House_DSC5402.JPG.jpg"
                 />
               </figure> </slide
             ><slide :index="1">
               <figure>
                 <v-img
+                  eager
                   src="../assets/Stone_House/Stone House_DSC5086.JPG.jpg"
                 />
               </figure>
@@ -248,6 +255,7 @@
             <slide :index="2">
               <figure>
                 <v-img
+                  eager
                   src="../assets/Stone_House/Stone House_DSC5224.JPG.jpg"
                 />
               </figure>
@@ -282,6 +290,7 @@
       data-aos-duration="2500"
     >
       <v-img
+        eager
         contain
         src="../assets/Stone_House/Stone House_DSC5405.JPG.jpg"
       ></v-img>
@@ -308,6 +317,7 @@
         </v-flex>
         <v-flex md8 pa-4 xs10 sm10 justify-center>
           <v-img
+            eager
             data-aos="fade-left"
             data-aos-easing="linear"
             data-aos-delay="400"
@@ -322,6 +332,7 @@
 
     <div v-if="isMobile()">
       <v-img
+        eager
         contain
         src="../assets/Stone_House/Stone House_DSC5196.JPG.jpg"
       ></v-img>
@@ -334,6 +345,7 @@
       data-aos-duration="2500"
     >
       <v-img
+        eager
         height="90vh"
         contain
         src="../assets/Stone_House/Stone House_DSC5196.JPG.jpg"
@@ -349,6 +361,7 @@
       <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-img
+        eager
         contain
         style="padding: 10vh"
         src="../assets/Stone_House/Stone House_DSC5074.JPG.jpg"
@@ -359,6 +372,7 @@
       <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-img
+        eager
         contain
         data-aos="fade-up"
         data-aos-easing="linear"

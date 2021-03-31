@@ -38,6 +38,7 @@
 
     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2400">
       <v-img
+        eager
         height="85vh"
         contain
         style="margin-bottom:5vh"
@@ -53,12 +54,17 @@
     >
       <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
 
-      <v-img contain src="../assets/Maniumpathy/_SDS2725.JPG.jpeg"></v-img>
+      <v-img
+        eager
+        contain
+        src="../assets/Maniumpathy/_SDS2725.JPG.jpeg"
+      ></v-img>
     </div>
     <div v-else data-aos="fade-up" data-aos-delay="10" data-aos-duration="2000">
       <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-img
+        eager
         contain
         height="90vh"
         src="../assets/Maniumpathy/_SDS2725.JPG.jpeg"
@@ -73,7 +79,7 @@
     >
       <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
 
-      <v-img contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
+      <v-img eager contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
       <p class="text002">
         A strong tonality within the room are balanced by distinctive antiques,
         including chandeliers. mirrors and carefully considered details create a
@@ -92,7 +98,7 @@
           data-aos-delay="300"
           data-aos-duration="2500"
         >
-          <v-img contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
+          <v-img eager contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
         </v-flex>
         <v-flex
           md3
@@ -164,7 +170,11 @@
     >
       <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
 
-      <v-img contain src="../assets/Maniumpathy/_SDS2554.JPG.jpeg"></v-img>
+      <v-img
+        eager
+        contain
+        src="../assets/Maniumpathy/_SDS2554.JPG.jpeg"
+      ></v-img>
       <p class="text002">
         Subtle Interiors of Charm and Softness
       </p>
@@ -191,6 +201,7 @@
           data-aos-duration="2500"
         >
           <v-img
+            eager
             height="85vh"
             contain
             src="../assets/Maniumpathy/_SDS2554.JPG.jpeg"
@@ -214,15 +225,15 @@
           >
             <slide :index="0">
               <figure>
-                <v-img src="../assets/Maniumpathy/_SDS2576.JPG.jpeg" />
+                <v-img eager src="../assets/Maniumpathy/_SDS2576.JPG.jpeg" />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img src="../assets/Maniumpathy/_SDS2515.JPG.jpeg" />
+                <v-img eager src="../assets/Maniumpathy/_SDS2515.JPG.jpeg" />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img src="../assets/Maniumpathy/_SDS2583.JPG.jpeg" />
+                <v-img eager src="../assets/Maniumpathy/_SDS2583.JPG.jpeg" />
               </figure>
             </slide>
           </carousel-3d>
@@ -238,6 +249,7 @@
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
       <v-img
+        eager
         contain
         height="85vh"
         src="../assets/Maniumpathy/_SDS2577.png"
@@ -250,6 +262,7 @@
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
       <v-img
+        eager
         height="90vh"
         contain
         src="../assets/Maniumpathy/_SDS2497-2.JPG.jpeg"
@@ -262,9 +275,9 @@
       data-aos-delay="300"
       data-aos-duration="2500"
     >
-      <v-img contain src="../assets/Maniumpathy/_SDS2557.png"></v-img>
+      <v-img eager contain src="../assets/Maniumpathy/_SDS2557.png"></v-img>
       <div style="margin-top: 10vh">
-        <v-img contain src="../assets/Maniumpathy/_SDS2545.jpeg"></v-img>
+        <v-img eager contain src="../assets/Maniumpathy/_SDS2545.jpeg"></v-img>
       </div>
     </div>
     <div v-else class="text-center">
@@ -281,6 +294,7 @@
           data-aos-duration="2500"
         >
           <v-img
+            eager
             height="80vh"
             contain
             src="../assets/Maniumpathy/_SDS2557.png"
@@ -296,6 +310,7 @@
           data-aos-duration="2500"
         >
           <v-img
+            eager
             height="80vh"
             width="70%"
             src="../assets/Maniumpathy/_SDS2545.jpeg"
@@ -348,6 +363,7 @@
 
     <div data-aos="fade-down" data-aos-delay="300" data-aos-duration="2500">
       <v-img
+        eager
         height="86vh"
         style="margin-left: 5vw;margin-right: 5vw"
         contain
@@ -362,7 +378,7 @@
       data-aos-duration="2500"
     >
       <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
-      <v-img contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
+      <v-img eager contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
       <p class="text002">
         Outdoor soft seating with a mix of natural textures in washed wood and
         delicate marble.
@@ -387,7 +403,7 @@
           </p>
         </v-flex>
         <v-flex md8 pa-4 justify-center>
-          <v-img contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
+          <v-img eager contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
         </v-flex>
       </v-layout>
     </div>
@@ -399,7 +415,11 @@
       data-aos-delay="300"
       data-aos-duration="2500"
     >
-      <v-img contain src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"></v-img>
+      <v-img
+        eager
+        contain
+        src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"
+      ></v-img>
       <p class="text002">
         Former sewing tables that were given new life within this contemporary
         outdoor dining experience
@@ -413,6 +433,7 @@
       data-aos-duration="2500"
     >
       <v-img
+        eager
         height="80vh"
         style="margin-top: 5vh"
         contain
@@ -476,6 +497,7 @@
           data-aos-duration="2500"
         >
           <v-img
+            eager
             height="85vh"
             contain
             src="../assets/Maniumpathy/_SDS2563.png"
@@ -504,7 +526,7 @@
       data-aos-easing="linear"
       data-aos-duration="2500"
     >
-      <v-img contain src="../assets/Maniumpathy/_SDS2457-2.png"></v-img>
+      <v-img eager contain src="../assets/Maniumpathy/_SDS2457-2.png"></v-img>
     </div>
     <div
       v-else
@@ -515,6 +537,7 @@
       style="padding:5vh"
     >
       <v-img
+        eager
         height="90vh"
         contain
         src="../assets/Maniumpathy/_SDS2457-2.png"

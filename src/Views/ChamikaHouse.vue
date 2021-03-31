@@ -45,7 +45,7 @@
           data-aos-duration="1500"
         >
           <v-img
-          
+            eager
             contain
             height="90vh"
             src="../assets/chamika_house/_SDS3575.jpg"
@@ -57,6 +57,7 @@
 
     <div>
       <v-img
+        eager
         contain
         height="95vh"
         src="../assets/chamika_house/_SDS3429.jpg"
@@ -75,6 +76,7 @@
       data-aos-duration="1500"
     >
       <v-img
+        eager
         height="90vh"
         contain
         src="../assets/chamika_house/_SDS3650-HDR.jpg"
@@ -82,7 +84,7 @@
     </div>
 
     <div v-if="isMobile()">
-      <v-img contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
+      <v-img eager contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
     </div>
     <div
       v-else
@@ -94,6 +96,7 @@
       <div style="width:99vw;height:35vh;padding:10px"></div>
 
       <v-img
+        eager
         contain
         height="90vh"
         src="../assets/chamika_house/_SDS3393b.jpg"
@@ -102,7 +105,7 @@
     <div v-if="isMobile()" style="height: 100vh;">
       <div style="width:99vw;height:25vh;margin:10vh"></div>
 
-      <v-img contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
+      <v-img eager contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
     </div>
     <div
       v-else
@@ -115,6 +118,7 @@
       <div style="width:99vw;height:10vh;margin:10vh"></div>
 
       <v-img
+        eager
         contain
         data-aos="fade-up"
         data-aos-easing="linear"

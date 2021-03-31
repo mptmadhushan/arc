@@ -29,6 +29,7 @@
     <div style="width:99vw;height:30vh;padding:10px"></div>
     <div>
       <v-img
+        eager
         height="85vh"
         style="margin-top:6vh"
         contain
@@ -48,7 +49,7 @@
     <div v-if="isMobile()" class="text-center">
       <v-layout row wrap justify-center pt-md-12 style="height:70vh">
         <v-flex md7 xs12 sm12 align-self-center>
-          <v-img src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
+          <v-img eager src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
           <p class="text002">
             A play on traditional sri lankan art to enhance the sense of arival.
           </p>
@@ -81,7 +82,11 @@
           data-aos-delay="100"
           data-aos-duration="2000"
         >
-          <v-img contain src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
+          <v-img
+            eager
+            contain
+            src="../assets/Bolgoda/_SDS1459.JPG.jpeg"
+          ></v-img>
         </v-flex>
       </v-layout>
     </div>
@@ -94,6 +99,7 @@
       data-aos-duration="2500"
     >
       <v-img
+        eager
         contain
         height="85vh"
         src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
@@ -112,6 +118,7 @@
       data-aos-duration="2000"
     >
       <v-img
+        eager
         contain
         style="margin-top:8vh"
         height="90vh"
@@ -157,7 +164,11 @@
     <div style="width:99vw;height:18vh;padding:10px"></div>
 
     <div v-if="isMobile()" style="margin-top: 10vh">
-      <v-img height="80vh" src="../assets/Bolgoda/_SDS1452.JPG.jpeg"></v-img>
+      <v-img
+        eager
+        height="80vh"
+        src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
+      ></v-img>
     </div>
     <div
       v-else
@@ -167,6 +178,7 @@
       data-aos-delay="300"
     >
       <v-img
+        eager
         height="90vh"
         contain
         src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
@@ -195,20 +207,25 @@
               <slide :index="0">
                 <figure>
                   <v-img
+                    eager
                     contain
                     src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg"
                   />
                 </figure> </slide
               ><slide :index="1">
                 <figure>
-                  <v-img contain src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
+                  <v-img
+                    eager
+                    contain
+                    src="../assets/Bolgoda/_SDS1434.JPG.jpeg"
+                  />
                 </figure>
               </slide>
             </carousel-3d>
           </div>
         </v-flex>
         <v-flex md3 md8 align-self-center>
-          <v-img contain src="../assets/Bolgoda/_SDS1239-HDR.JPG.jpeg" />
+          <v-img eager contain src="../assets/Bolgoda/_SDS1239-HDR.JPG.jpeg" />
         </v-flex>
       </v-layout>
     </div>
@@ -222,6 +239,7 @@
       data-aos-duration="2400"
     >
       <v-img
+        eager
         style="margin-top:6vh"
         height="85vh"
         contain
@@ -241,6 +259,7 @@
       <v-layout row wrap justify-space-around>
         <v-flex md7 xs12 sm12 align-self-center>
           <v-img
+            eager
             height="100%"
             contain
             src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
@@ -265,7 +284,11 @@
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          <v-img contain src="../assets/Bolgoda/_SDS1360.JPG.jpeg"></v-img>
+          <v-img
+            eager
+            contain
+            src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
+          ></v-img>
         </v-flex>
         <v-flex
           md4
@@ -294,6 +317,7 @@
       data-aos-duration="2000"
     >
       <v-img
+        eager
         height="100vh"
         contain
         src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
@@ -308,6 +332,7 @@
       data-aos-duration="2500"
     >
       <v-img
+        eager
         height="90vh"
         contain
         style="margin-left: 5vw;margin-right: 5vw"
