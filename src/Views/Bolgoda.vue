@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <div class="d-flex justify-space-between" style="margin-top:2vh">
+    <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
           style="opacity: 0.5;margin-inline:20px"
@@ -8,7 +8,7 @@
           src="../assets/backArrow.png"
         />
       </router-link>
-      <ShapesPop />
+      <!-- <ShapesPop /> -->
     </div>
     <div
       data-aos="fade-up"
@@ -207,7 +207,7 @@
             </carousel-3d>
           </div>
         </v-flex>
-        <v-flex md3>
+        <v-flex md3 md8 align-self-center>
           <v-img contain src="../assets/Bolgoda/_SDS1239-HDR.JPG.jpeg" />
         </v-flex>
       </v-layout>

@@ -1,7 +1,7 @@
 <template>
   <div class="scroll-container">
     <router-link to="/">
-      <div style="margin-top:2vh">
+      <div style="margin-top:1vh">
         <img
           style=" opacity: 0.5;margin-inline:20px;margin-top:2vh"
           height="20vh"

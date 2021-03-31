@@ -2,7 +2,7 @@
   <v-container fluid style="overflow: hidden">
     <router-link to="/">
       <img
-        style=" opacity: 0.5;margin-inline:20px;margin-top:2vh"
+        style=" opacity: 0.5;margin-inline:20px;margin-top:1vh"
         height="20vh"
         src="../assets/backArrow.png"
       />

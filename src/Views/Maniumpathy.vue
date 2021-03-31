@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <div class="d-flex justify-space-between mb-6" style="margin-top:2vh">
+    <div class="d-flex justify-space-between mb-6" style="margin-top:1vh">
       <router-link to="/projects">
         <img
           style="opacity: 0.5;margin-inline:20px;"
@@ -8,7 +8,7 @@
           src="../assets/backArrow.png"
         />
       </router-link>
-      <ShapesPop />
+      <!-- <ShapesPop /> -->
     </div>
     <div class="text-center">
       <v-layout row wrap justify-center pa-3 style="height:90vh">

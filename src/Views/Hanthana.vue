@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <div class="d-flex justify-space-between" style="margin-top:2vh">
+    <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
           style="opacity: 0.5;margin-inline:20px"
@@ -8,7 +8,6 @@
           src="../assets/backArrow.png"
         />
       </router-link>
-      <ShapesPop />
     </div>
     <div class="text-center">
       <v-layout row wrap justify-center pa-3>
@@ -366,10 +365,8 @@
       data-aos="fade-up"
       data-aos-delay="300"
       style="margin-top:-20vh;"
-
       data-aos-duration="1500"
     >
-
       <v-img
         height="90vh"
         contain
@@ -493,7 +490,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 88vh;
 }
 .b1 {
   background-color: #fff;
