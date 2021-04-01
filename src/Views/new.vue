@@ -51,13 +51,27 @@
           <div class="sub-right">
             <div class="center_r">
               <p>
-                <v-card flat color="transparent" class="d-flex flex-row">
+                <v-card
+                  flat
+                  color="transparent"
+                  class="d-flex flex-row"
+                  style="position:relative"
+                >
                   <v-img
                     contain
                     height="30%"
                     width="20vw"
                     src="../assets/main.png"
                   ></v-img>
+                  <div class="scroll" v-if="arrow">
+                    <v-img
+                      contain
+                      height="10vh"
+                      width="5vh"
+                      eager
+                      src="../assets/scrollImage.png"
+                    ></v-img>
+                  </div>
                 </v-card>
               </p>
             </div>
@@ -67,7 +81,13 @@
     </div>
   </div>
 </template>
+
 <style scoped>
+.scroll {
+  position: fixed;
+  top: 90%;
+  left: 49%;
+}
 .slide {
   width: 100%;
   height: 100vh;
@@ -90,7 +110,7 @@
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
-  position: absolute;
+  position: relative;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
@@ -169,7 +189,7 @@ body {
   text-align: center;
 }
 
-.center_r p {
+.center_r as {
   line-height: 1.5;
   display: inline-block;
   vertical-align: middle;
@@ -210,6 +230,7 @@ body {
 export default {
   data: () => ({
     hell: false,
+    arrow: true,
   }),
   created() {
     // this.handleScroll2();

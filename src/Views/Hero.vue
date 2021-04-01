@@ -47,10 +47,19 @@
     </div>
 
     <div class="clear-both"></div>
-    <p style="font-size:200px"></p>
+    <p style="font-size:200px" v-if="arrowa"></p>
+    <div class="scroll">
+      <v-img
+        contain
+        height="10vh"
+        width="5vh"
+        eager
+        src="../assets/whiteArrow.png"
+      ></v-img>
+    </div>
+    
   </div>
-  <!-- </div> -->
-  <!-- </div> -->
+
 </template>
 
 <script>
@@ -68,6 +77,7 @@ export default {
     },
   },
   data: () => ({
+    arrowa: true,
     dialog: false,
     isloaded: true,
     isloaded2: false,
@@ -151,6 +161,7 @@ export default {
         console.log("if");
       } else {
         console.log("this.heh");
+        this.arrowa = false;
         this.handleScroll();
       }
     },
@@ -167,10 +178,10 @@ export default {
       document.documentElement.style.overflow = "hidden";
       window.scrollTo(0, 0);
     },
+
     handleScroll() {
       this.methodNnew;
       document.documentElement.style.overflow = "auto";
-
       console.log("🐼🐼🐼🐼🐼🐼🐼");
       this.isloaded = false;
       localStorage.setItem("isloaded", false);
@@ -195,6 +206,12 @@ export default {
 </script>
 
 <style scoped>
+.scroll {
+  width: 100%;
+  height: 100%;
+  margin-top: -10vh;
+  margin-left: 49%;
+}
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;

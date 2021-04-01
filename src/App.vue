@@ -6,21 +6,11 @@
       </transition>
       <v-scroll-to-top></v-scroll-to-top>
     </v-main>
-    <!-- <ScrollTopArrow></ScrollTopArrow> -->
   </v-app>
 </template>
 
 <script>
-// import ScrollTopArrow from "./components/ScrollTopArrow";
 export default {
-  // watch: {
-  //   $route(to, from) {
-  //     // react to route changes...
-  //     console.log("route parameter changed");
-  //     // console.log(to.fullPath);
-  //     console.log(from);
-  //   },
-  // },
   created: function() {
     this.globalVar = "It's will change global var";
   },

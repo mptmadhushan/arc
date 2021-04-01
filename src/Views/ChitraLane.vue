@@ -13,6 +13,7 @@
           <v-card-text>
             <div class="d-flex flex-row">
               <v-img
+                eager
                 contain
                 height="10vh"
                 width="20vw"

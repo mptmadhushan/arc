@@ -7,7 +7,7 @@
             row
             wrap
             justify-center
-            style="margin-top:15%;margin-bottom:5%;"
+            style="margin-top:27%;margin-bottom:5%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p
@@ -108,7 +108,7 @@
             row
             wrap
             justify-center
-            style="margin-top:15%;margin-bottom:5%;"
+            style="margin-top:30%;margin-bottom:5%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p

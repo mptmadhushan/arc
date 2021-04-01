@@ -25,6 +25,20 @@ export default {
     window.scrollTo(0, 0);
   },
   methods: {
+    scrollToElement1() {
+      console.log("scroll to element");
+      const el = this.$el.getElementsByClassName("1stPage")[0];
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        // el.scrollIntoView({ behavior: "smooth" });
+        this.$smoothScroll({
+          scrollTo: this.$refs.page1,
+          duration: 2000,
+          // offset: -50,
+        });
+      }
+    },
     hello() {
       window.scrollTo(0, 0);
     },
