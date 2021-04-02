@@ -2,7 +2,12 @@
   <v-container fluid>
     <div>
       <div v-if="loaded">
-        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="3000">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="3000"
+          class="about_us_bg"
+        >
           <v-layout
             row
             wrap
@@ -18,12 +23,35 @@
               </p></v-flex
             >
             <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-              <v-img eager height="60vh" src="../assets/1.png"></v-img>
+              <!-- <v-img eager height="60vh" src="../assets/1.png"></v-img> -->
+              <!-- <div
+                class="ab1con"
+                data-aos="zoom-out"
+                data-aos-delay="100"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+              > -->
+
+              <v-img eager height="60vh" src="../assets/1.png">
+                <div class="ab1"></div>
+              </v-img>
+              <!-- </div> -->
             </v-flex>
-            <v-flex md3 xs12 pa-1>
-              <v-img eager height="90vh" src="../assets/2.png"></v-img>
+            <v-flex md3 xs12 pa-1 align-self-baseline>
+              <!-- <div
+                class="b2con"
+                data-aos="zoom-out"
+                data-aos-delay="100"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+              >
+                <div class="b2"></div>
+              </div> -->
+              <v-img eager height="90vh" src="../assets/2.png">
+                <div class="b2"></div>
+              </v-img>
             </v-flex>
-            <v-flex md5 align-self-end px-3>
+            <v-flex md5 align-self-center px-3>
               <p class="new">
                 A visionary in his field, Chamika De Alwis has been taking the
                 architecture world by storm through his distinctive tastes and
@@ -103,7 +131,7 @@
         </div>
       </div>
       <div v-else>
-        <div>
+        <div class="about_us_bg">
           <v-layout
             row
             wrap
@@ -119,10 +147,14 @@
               </p></v-flex
             >
             <v-flex md3 sm12 xs12 align-self-end pa-1>
-              <v-img eager height="60vh" src="../assets/1.png"></v-img>
+              <v-img eager height="60vh" src="../assets/1.png">
+                <div class="ab1"></div>
+              </v-img>
             </v-flex>
             <v-flex md3 xs12 pa-1>
-              <v-img eager height="90vh" src="../assets/2.png"></v-img>
+              <v-img eager height="90vh" src="../assets/2.png">
+                <div class="b2"></div>
+              </v-img>
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
@@ -213,6 +245,71 @@ export default {
 </script>
 
 <style scoped>
+.ab1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/1.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+.ab1 {
+  background-color: #fff;
+  transform: scaleY(1);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+}
+.about_us_bg:hover .ab1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 2s ease-in;
+}
+.b2con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/2.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+.b2 {
+  background-color: #fff;
+  transform: scaleY(1);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  /* animation: slideInFromLeft 1.5s ease-in; */
+}
+.about_us_bg:hover .b2 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 .v-application p {
   margin-bottom: 1px !important;
