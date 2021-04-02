@@ -1,17 +1,27 @@
 <template>
   <div class="aaa">
-    <hero />
-    <page1 />
+    <vue-scroll-snap>
+      <div class="item"><hero /></div>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
+      <div class="item"><page1 /></div>
+      <div style="width:99vw;height:30vh;padding:10px"></div>
+      <div class="item"><page2/></div>
+    </vue-scroll-snap>
   </div>
 </template>
 
 <script>
+import VueScrollSnap from "vue-scroll-snap";
+
 import hero from "./Hero";
 import page1 from "./page1";
+import page2 from "./page2";
 export default {
   components: {
     hero,
     page1,
+    page2,
+    VueScrollSnap,
   },
   watch: {
     $route(to, from) {
@@ -47,6 +57,16 @@ export default {
 </script>
 
 <style scoped>
+.item {
+  /* Set the minimum height of the items to be the same as the height of the scroll-snap-container.*/
+  width: 100vw;
+  height: 100vh;
+}
+
+.scroll-snap-container {
+  width: 100vw;
+  height: 100vh;
+}
 .aaa {
   scrollbar-width: none;
   -ms-overflow-style: none;

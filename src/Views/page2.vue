@@ -1,36 +1,196 @@
 <template>
-  <div>
-    <v-layout row wrap justify-space-around pt-12>
-      <v-flex md5 sm12 xs12 align-self-center pa-12>
-        <v-img height="90vh" src="../assets/12.png"></v-img>
-      </v-flex>
-      <v-flex md6 align-self-center>
-        <p>
-          Ex quis qui non et ad dolore. Consectetur enim consequat ea voluptate
-          proident est ut exercitation quis ipsum cillum consectetur aliqua.
-          Reprehenderit tempor pariatur excepteur laboris culpa exercitation ea
-          reprehenderit non. Irure consectetur aliqua proident cillum aute nisi
-          cillum aliquip irure est et. Tempor sit nulla anim minim consectetur
-          reprehenderit. Ex quis qui non et ad dolore. Consectetur enim
-          consequat ea voluptate proident est ut exercitation quis ipsum cillum
-          consectetur aliqua. Reprehenderit tempor pariatur excepteur laboris
-          culpa exercitation ea reprehenderit non. Irure consectetur aliqua
-          proident cillum aute nisi cillum aliquip irure est et. Tempor sit
-          nulla anim minim consectetur reprehenderit.
-        </p>
-      </v-flex>
-    </v-layout>
-  </div>
+  <v-container fluid>
+    <div class="about_us_bg2">
+      <div>
+        <div v-if="isMobile()" style="margin-top: 10vh">
+          <v-img contain src="../assets/12.png">
+            <div class="ab1"></div>
+          </v-img>
+          <p class="new">
+            Chamika De Alwis began his architectural career in 2003 with MICD
+            Associates while pursuing a Diploma in Architecture at the City
+            School of Architecture, Colombo. Following his education and
+            becoming a Chartered Architect at the Sri Lanka Institute of
+            Architects, he continued working with MICD Associates as a Senior
+            Associate and Principal assistant to Architect Channa Daswatte where
+            he contributed to many prominent locations throughout the island. In
+            addition to this, he is on the board of Trustees of the Geoffrey
+            Bawa Trust and the Lunuganga Trust, respectively. In 2014 he
+            established his own practice, C atelier design studio, which
+            specialized in hotels, boutique properties and residential
+            developments in reference to both interior design and architecture.
+            After nearly two decades of experience in the industry, in 2020, CDA
+            was formed. It continues to excel in it’s creative endeavors and
+            deliver intricately inventive and exquisite designs to their
+            clientele.
+          </p>
+        </div>
+
+        <!-- <div v-else>
+          <v-layout
+            row
+            wrap
+            justify-space-around
+            pt-md-12
+            style="margin-top:20%;height:100vh"
+          >
+            <v-flex md4 sm12 xs12 align-self-center pa-md-12>
+              <v-img eager height="70vh" src="../assets/12.png"></v-img>
+            </v-flex>
+            <v-flex md6 align-self-center>
+              <p class="pa-2 new">
+                Chamika De Alwis began his career in 2003 with MICD Associates
+                while pursuing a Diploma in Architecture at the City School of
+                Architecture, Colombo. Following his education, he continued
+                working with MICD Associates as a Senior Associate and Principal
+                assistant. In 2016 he embarked on his own practice as the
+                Principal Architect of C Atelier Consultants and CDA Associates.
+                Since then, he’s been involved in several curatorial projects in
+                Sri Lanka including the exhibition Second Skin in March 2017 and
+                Revive; Ethical Use of Material in June 2017 in collaboration
+                with the Colombo Fashion Week. In 2019, he curated One Won in
+                collaboration with the University of the Visual and Performing
+                Arts, Colombo in the aftermath of the Easter Attacks in Sri
+                Lanka. He was the recipient of the Conde Nast Johansens award
+                for excellence in 2020 – 21 for his work in the architecture
+                field and is on the board of Trustees of the Geoffrey Bawa Trust
+                and the Lunuganga Trust, respectively. With CDA he continues to
+                excel in his creative endeavours and deliver intricately
+                inventive and exquisite designs to his clientele.
+              </p>
+            </v-flex>
+          </v-layout>
+        </div> -->
+      </div>
+    </div>
+    <!-- <div class="brand">
+      <a style="color:black" href="http://cyberchaps.com"><p>@cyberchaps</p></a>
+    </div> -->
+  </v-container>
 </template>
 
 <script>
-export default {};
+// import page2 from "./page2";
+export default {
+  // components: { page2 },
+  data: () => ({
+    showWithDelay: false,
+    loaded: true,
+  }),
+  mounted() {
+    setTimeout(() => {
+      this.showWithDelay = true;
+    }, 2000);
+    this.hey = localStorage.getItem("isloaded");
+    console.log("hello", this.hey);
+    if (this.hey == "false") {
+      this.loaded = false;
+      console.log("false", this.loaded);
+    }
+  },
+};
 </script>
 
-<style>
+<style scoped>
+.ab1con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/1.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+.ab1 {
+  background-color: #fff;
+  transform: scaleY(1);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+}
+.about_us_bg2:hover .ab1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 2s ease-in;
+}
+.b2con {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/2.png");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+.b2 {
+  background-color: #fff;
+  transform: scaleY(1);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  /* animation: slideInFromLeft 1.5s ease-in; */
+}
+.about_us_bg:hover .b2 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+.v-application p {
+  margin-bottom: 1px !important;
+}
+.brand {
+  opacity: 0.4;
+  text-align: right;
+  height: 30px;
+}
+
+.new {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 10px;
+}
+.about_us {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5vh;
+}
 .title-page2 {
-  font-size: 30px;
+  font-size: 3vh;
   font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+
   color: #8f9092c5;
+}
+.slide-fade {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
 }
 </style>

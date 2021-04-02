@@ -207,7 +207,7 @@ export default {
 
 <style scoped>
 .scroll {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   margin-top: -10vh;
   margin-left: 49%;

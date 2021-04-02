@@ -2,17 +2,12 @@
   <v-container fluid>
     <div>
       <div v-if="loaded">
-        <div
-          data-aos="fade-up"
-          data-aos-delay="500"
-          data-aos-duration="3000"
-          class="about_us_bg"
-        >
+        <div class="about_us_bg">
           <v-layout
             row
             wrap
             justify-center
-            style="margin-top:27%;margin-bottom:5%;"
+            style="margin-top:2%;margin-bottom:2%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p
@@ -51,7 +46,7 @@
                 <div class="b2"></div>
               </v-img>
             </v-flex>
-            <v-flex md5 align-self-center px-3>
+            <v-flex md5 align-self-end px-3>
               <p class="new">
                 A visionary in his field, Chamika De Alwis has been taking the
                 architecture world by storm through his distinctive tastes and
@@ -94,7 +89,7 @@
             clientele.
           </p>
         </div>
-        <div v-else data-aos="fade-up" data-aos-duration="3000">
+        <div v-else>
           <v-layout
             row
             wrap
@@ -136,7 +131,7 @@
             row
             wrap
             justify-center
-            style="margin-top:30%;margin-bottom:5%;"
+            style="margin-top:2%;margin-bottom:2%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p
