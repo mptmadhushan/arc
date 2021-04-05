@@ -1,11 +1,11 @@
 <template>
   <div class="aaa">
-    <vue-scroll-snap>
+    <vue-scroll-snap :fullscreen="true">
       <div class="item"><hero /></div>
       <div style="width:99vw;height:30vh;padding:10px"></div>
       <div class="item"><page1 /></div>
       <div style="width:99vw;height:30vh;padding:10px"></div>
-      <div class="item"><page2/></div>
+      <div class="item"><page2 /></div>
     </vue-scroll-snap>
   </div>
 </template>
