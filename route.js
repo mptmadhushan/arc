@@ -12,8 +12,13 @@ import Maniumpathy from "./src/Views/Maniumpathy.vue";
 import PreLoader from "./src/components/PreLoader.vue";
 import Hanthana from "./src/Views/Hanthana.vue";
 import BluePrint from "./src/Views/BluePrint.vue";
+import test from "./src/Views/Slider1.vue";
 
 export default [
+  {
+    path: "/test",
+    component: test,
+  },
   {
     path: "/pre",
     component: PreLoader,

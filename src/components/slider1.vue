@@ -63,7 +63,7 @@ export default {
   /* width: 100%; */
   padding-left: 10px;
 }
-/* .inner-content {
+.inner-content {
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@ export default {
   height: calc(100vh - 40px);
   border: solid 1px #2c3e50;
   border-radius: 5px;
-} */
+}
 .inner-content:not(:first-of-type) {
   margin-left: 30px;
 }
