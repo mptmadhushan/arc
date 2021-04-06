@@ -327,7 +327,7 @@ export default {
       console.log("flag ");
       this.$smoothScroll({
         scrollTo: this.$refs.slider1,
-        duration: 2000,
+        duration: 500,
         // scrollIntoView({ behavior: "smooth" });
 
         // offset: -50,
