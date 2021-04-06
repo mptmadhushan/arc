@@ -208,9 +208,12 @@
                 consectetur pariatur dolore et.z
               </p></v-flex
             >
+            <div style="width:99vw;height:20vh"></div>
           </v-layout>
         </div>
-        <!-- <div class="fixed_wrapper">
+        <div style="width:99vw;height:20vh"></div>
+
+        <div class="fixed_wrapper">
           <div class="fixed_target" id="fixed-target"></div>
           <div
             class="fixed"
@@ -218,8 +221,10 @@
             data-scroll-sticky
             data-scroll-target="#fixed-target"
           ></div>
-        </div> -->
-        <div v-if="!isMobile()" style="height:100vh;margin-top:20vh">
+        </div>
+        <div style="width:99vw;height:1vh"></div>
+
+        <div v-if="isMobile()" style="height:100vh;margin-top:20vh">
           <v-layout row wrap justify-center>
             <v-flex md6 xs12 sm12 align-self-end>
               <div
@@ -251,40 +256,40 @@
             </v-flex>
           </v-layout>
         </div>
-        <div v-else style="height:100vh;margin-top:10vh">
-          <v-layout row wrap>
-            <v-flex md6 xs12 sm12>
-              <div style="height:100vh">
-                <img
-                  align-content-end
-                  contain
-                  width="100%"
-                  src="../assets/blueprint/_SDS3614.png"
-                />
-              </div>
-            </v-flex>
-            <v-flex md6 xs12 sm12 align-self-end>
-              <div
-                class="align-center"
-                style="text-align:center;height: 100vh;"
-              >
-                <img
-                  align-content-start
-                  contain
-                  style="margin-top:15vh;margin-left:-1vw"
-                  height="60%"
-                  src="../assets/blueprint/_SDS3199b.png"
-                />
-              </div>
-            </v-flex>
-          </v-layout>
-        </div>
-        <!-- <div class="modal">
-          <button @click="closeModal">X</button>
-          <div class="modal-content" v-scroll-lock="open">
-            <p>Modal Content Here</p>
+        <div v-else style="height:100vh;margin-top:10vh" class="fadeClass">
+          <div class="fadeClassHover">
+            <v-layout row wrap>
+              <v-flex md6 xs12 sm12>
+                <div
+                  class="align-end"
+                  style="text-align:end;height: 100vh;margin-left:20vw"
+                >
+                  <img
+                    align-content-end
+                    contain
+                    style="margin-right:1vw"
+                    height="90%"
+                    src="../assets/blueprint/_SDS3614.png"
+                  />
+                </div>
+              </v-flex>
+              <v-flex md6 xs12 sm12 align-self-end>
+                <div
+                  class="align-center"
+                  style="text-align:center;height: 100vh;"
+                >
+                  <img
+                    align-content-start
+                    contain
+                    style="margin-top:15vh;margin-left:-1vw"
+                    height="60%"
+                    src="../assets/blueprint/_SDS3199b.png"
+                  />
+                </div>
+              </v-flex>
+            </v-layout>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -338,7 +343,15 @@ export default {
 </script>
 
 <style scoped>
-/* .fixed_wrapper {
+.fadeClassHover {
+  opacity: 0;
+  transition: all 3s ease;
+}
+.fadeClass:hover .fadeClassHover {
+  opacity: 1;
+  transition: all 3s ease;
+}
+.fixed_wrapper {
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -359,7 +372,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-image: url("../assets/blueprint/3.png");
-} */
+}
 
 .ab1 {
   background-color: #fff;
