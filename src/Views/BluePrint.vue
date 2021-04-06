@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div
+    v-smooth-scroll="{ duration: 1000, offset: -50 }"
+  >
     <audio
       allow="autoplay;fullscreen"
       id="my_audio"

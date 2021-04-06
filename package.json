@@ -10,6 +10,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "core-js": "^3.6.5",
+    "locomotive-scroll": "^4.1.1",
     "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^6.4.15",
     "v-scroll-to-top": "^1.0.2",
@@ -24,6 +25,7 @@
     "vue-scroll-snap": "^0.1.10",
     "vue-slick-carousel": "^1.0.6",
     "vue2-smooth-scroll": "^1.5.0",
+    "vuescroll": "^4.17.3",
     "vuetify": "^2.4.0"
   },
   "devDependencies": {

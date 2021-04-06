@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
-    <div>
+    <div class="about_us_bg">
       <div v-if="loaded">
-        <div class="about_us_bg">
+        <div>
           <v-layout
             row
             wrap
@@ -49,6 +49,34 @@
             </v-flex>
           </v-layout>
         </div>
+        <div style="width:99vw;height:20vh;padding:10px"></div>
+        <!-- <v-layout row wrap justify-space-around>
+          <v-flex md4 sm12 xs12 align-self-center>
+            <v-img eager contain src="../assets/12.png"></v-img>
+          </v-flex>
+          <v-flex md6 sm12 xs12 align-self-center>
+            <p class="pa-2 new">
+              Chamika De Alwis began his career in 2003 with MICD Associates
+              while pursuing a Diploma in Architecture at the City School of
+              Architecture, Colombo. Following his education, he continued
+              working with MICD Associates as a Senior Associate and Principal
+              assistant. In 2016 he embarked on his own practice as the
+              Principal Architect of C Atelier Consultants and CDA Associates.
+              Since then, he’s been involved in several curatorial projects in
+              Sri Lanka including the exhibition Second Skin in March 2017 and
+              Revive; Ethical Use of Material in June 2017 in collaboration with
+              the Colombo Fashion Week. In 2019, he curated One Won in
+              collaboration with the University of the Visual and Performing
+              Arts, Colombo in the aftermath of the Easter Attacks in Sri Lanka.
+              He was the recipient of the Conde Nast Johansens award for
+              excellence in 2020 – 21 for his work in the architecture field and
+              is on the board of Trustees of the Geoffrey Bawa Trust and the
+              Lunuganga Trust, respectively. With CDA he continues to excel in
+              his creative endeavours and deliver intricately inventive and
+              exquisite designs to his clientele.
+            </p>
+          </v-flex>
+        </v-layout> -->
       </div>
       <div v-else>
         <div class="about_us_bg">
@@ -98,7 +126,36 @@
             </v-flex>
           </v-layout>
         </div>
+        <div style="width:99vw;height:20vh;padding:10px"></div>
+        <!-- <v-layout row wrap justify-space-around>
+          <v-flex md4 sm12 xs12 align-self-center>
+            <v-img eager contain src="../assets/12.png"></v-img>
+          </v-flex>
+          <v-flex md6 sm12 xs12 align-self-center>
+            <p class="pa-2 new">
+              Chamika De Alwis began his career in 2003 with MICD Associates
+              while pursuing a Diploma in Architecture at the City School of
+              Architecture, Colombo. Following his education, he continued
+              working with MICD Associates as a Senior Associate and Principal
+              assistant. In 2016 he embarked on his own practice as the
+              Principal Architect of C Atelier Consultants and CDA Associates.
+              Since then, he’s been involved in several curatorial projects in
+              Sri Lanka including the exhibition Second Skin in March 2017 and
+              Revive; Ethical Use of Material in June 2017 in collaboration with
+              the Colombo Fashion Week. In 2019, he curated One Won in
+              collaboration with the University of the Visual and Performing
+              Arts, Colombo in the aftermath of the Easter Attacks in Sri Lanka.
+              He was the recipient of the Conde Nast Johansens award for
+              excellence in 2020 – 21 for his work in the architecture field and
+              is on the board of Trustees of the Geoffrey Bawa Trust and the
+              Lunuganga Trust, respectively. With CDA he continues to excel in
+              his creative endeavours and deliver intricately inventive and
+              exquisite designs to his clientele.
+            </p>
+          </v-flex>
+        </v-layout> -->
       </div>
+      <div style="width:99vw;height:5vh;padding:10px"></div>
     </div>
   </v-container>
 </template>
@@ -133,6 +190,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   height: 45vh;
+  transition-delay: 4s;
 }
 .ab1 {
   background-color: #fff;
@@ -140,6 +198,7 @@ export default {
   transform-origin: top;
   height: 100%;
   width: 100%;
+  transition-delay: 4s;
 }
 .about_us_bg:hover .ab1 {
   background-color: #fff;
@@ -160,6 +219,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   height: 95vh;
+  transition-delay: 4s;
 }
 .b2 {
   background-color: #fff;
@@ -167,6 +227,8 @@ export default {
   transform-origin: top;
   height: 100%;
   width: 100%;
+  transition-delay: 4s;
+
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
   /* animation: slideInFromLeft 1.5s ease-in; */

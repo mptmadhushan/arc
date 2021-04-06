@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-scroll-container>
     <div>
       <div class="d-flex flex-row mb-6">
         <div
@@ -64,10 +64,7 @@
         </div>
       </div>
 
-      <div
-        style="height:94vh; overflow-x: scroll;"
-        v-on:scroll.once="scrollToElement1"
-      >
+      <div style="height:94vh; overflow-x: scroll;">
         <v-layout row wrap justify-center style="height:80vh">
           <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
             <div class="b1con" data-aos="zoom-in-left" data-aos-duration="1500">
@@ -91,12 +88,7 @@
       </div>
     </div>
 
-    <div
-      ref="page1"
-      class="1stPage"
-      style="height:100vh;overflow-x: scroll;"
-      v-on:scroll.once="scrollToElement3"
-    >
+    <div ref="page1" class="1stPage" style="height:100vh;overflow-x: scroll;">
       <p class="text001" data-aos="fade-left" data-aos-duration="3000">
         Cupidatat laborum magna Lorem eiusmod aute nisi qui laborum.
       </p>
@@ -180,12 +172,13 @@
       </v-layout>
     </div>
     <div v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
-
     <div
+      data-scroll
+      data-scroll-id="hey"
       v-if="isMobile()"
       style="height:100vh"
       class="first-slide"
-      ref="slider1"
+      ref="xxxSlide"
     >
       <div class="outer-wrapper">
         <div class="wrapper">
@@ -739,6 +732,10 @@
                 src="../assets/blueprint/_SDS1585-3.jpg"
               />
               <img
+                data-aos="zoom-in-left"
+                data-aos-delay="400"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out"
                 height="100%"
                 style="padding:5vh;margin-right:10vw"
                 src="../assets/blueprint/Space/image31.jpg"
@@ -759,10 +756,12 @@
 <script>
 // import HorizontalScroll from "vue-horizontal-scroll";
 import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
+// import NewBlue from "./NewBlue";
 
 export default {
   components: {
     // HorizontalScroll,
+    // NewBlue,
   },
   data: () => ({
     offsetTop: 0,
@@ -776,8 +775,8 @@ export default {
     });
   },
   methods: {
-    test() {
-      alert("test");
+    test(event) {
+      console.log("test", event);
     },
     myFunction() {
       alert("test");
@@ -791,6 +790,16 @@ export default {
         // offset: -50,
       });
       console.log("scroll to element");
+    },
+    scrollToElementTest() {
+      // this.$smoothScroll({
+      //   scrollTo: this.$refs.slider1,
+      //   duration: 2000,
+      //   // scrollIntoView({ behavior: "smooth" });
+
+      //   // offset: -50,
+      // });
+      console.log("focus 😀😆🕵️‍♀️");
     },
     scrollToElement4() {
       this.$smoothScroll({
@@ -872,6 +881,7 @@ export default {
     },
   },
   mounted() {
+    window.addEventListener("scroll", this.test);
     console.log(this.$refs);
     this.$nextTick(function() {
       console.log(".tom-chapters"); //empty!!!!
@@ -884,12 +894,17 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth;
+}
+* {
+  scroll-behavior: smooth;
+}
 .newBox {
   background: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   transition: 4s ease;
-
   -webkit-animation-fill-mode: backwards;
 }
 .newBox2 {
@@ -897,7 +912,6 @@ export default {
   width: 100%;
   height: 100%;
   transition: 4s ease;
-
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {

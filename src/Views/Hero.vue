@@ -57,9 +57,7 @@
         src="../assets/whiteArrow.png"
       ></v-img>
     </div>
-    
   </div>
-
 </template>
 
 <script>
@@ -93,7 +91,7 @@ export default {
     //  console.log('hello',jjjc)
 
     //     console.log(event.deltaY);
-    //     if (event.deltaY < 0) {
+  //     if (event.deltaY < 0) {
     //       console.log('if')
     //     } else {
     //       // this.handleScroll()
@@ -156,11 +154,11 @@ export default {
 
   methods: {
     helb() {
-      console.log("scrolled", event);
+      // console.log("scrolled", event);
       if (event.deltaY < 0) {
         console.log("if");
       } else {
-        console.log("this.heh");
+        // console.log("this.heh");
         this.arrowa = false;
         this.handleScroll();
       }
@@ -181,8 +179,11 @@ export default {
 
     handleScroll() {
       this.methodNnew;
-      document.documentElement.style.overflow = "auto";
-      console.log("🐼🐼🐼🐼🐼🐼🐼");
+      setTimeout(function() {
+        document.documentElement.style.overflow = "auto";
+      }, 3000);
+
+      // console.log("🐼🐼🐼🐼🐼🐼🐼");
       this.isloaded = false;
       localStorage.setItem("isloaded", false);
       if (this.isloaded == true) {

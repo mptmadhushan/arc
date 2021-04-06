@@ -1,27 +1,29 @@
 <template>
   <div class="aaa">
-    <vue-scroll-snap>
-      <div class="item"><hero /></div>
-      <!-- <div style="width:99vw;height:30vh;padding:10px"></div> -->
-      <div class="item"><page1 /></div>
-      <!-- <div style="width:99vw;height:30vh;padding:10px"></div> -->
-      <div class="item"><page2 /></div>
-    </vue-scroll-snap>
+    <div>
+      <div class="hero" ref="hero"><hero /></div>
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+      <div class="page1" ref="page1" id="viewElement">
+        <page1 />
+      </div>
+      <div style="width:99vw;height:15vh;padding:10px"></div>
+      <div class="pasdadage" ref="asd" id="viewElement2">
+        <page2 />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import VueScrollSnap from "vue-scroll-snap";
-
 import hero from "./Hero";
 import page1 from "./page1";
 import page2 from "./page2";
+
 export default {
   components: {
     hero,
     page1,
     page2,
-    VueScrollSnap,
   },
   watch: {
     $route(to, from) {
@@ -30,18 +32,87 @@ export default {
       console.log(from);
     },
   },
+
   mounted() {
-    this.hello();
-    window.scrollTo(0, 0);
+    // document.addEventListener("wheel", this.helb);
+    this.hell();
+
+    document.addEventListener("focusin", this.focusChanged);
   },
+
   methods: {
+    hell() {
+      console.log("scrolled new");
+
+      document.addEventListener("scroll", inView);
+      document.addEventListener("scroll", inView2);
+      function inView() {
+        if (
+          document.getElementById("viewElement").getBoundingClientRect().top <=
+          window.innerHeight
+        ) {
+          console.log("in view 🥰");
+
+          document.removeEventListener("scroll", inView);
+        }
+      }
+      function inView2() {
+        if (
+          document.getElementById("viewElement2").getBoundingClientRect().top <=
+          window.innerHeight
+        ) {
+          console.log("in view 2 🕵️‍♂️");
+
+          document.removeEventListener("scroll", inView2);
+        }
+      }
+    },
+    methnew() {
+      console.log("in view methods 😷");
+    },
+    helb() {
+      if (event.deltaY < 0) {
+        console.log("up");
+      } else {
+        // const el = this.$refs.;
+
+        if (
+          document.getElementById("viewElement").getBoundingClientRect().top <=
+          window.innerHeight
+        ) {
+          // this.scrollToElement1();
+          console.log("in view", window.innerHeight);
+          // uncomment below if you only want it to notify once
+          document.removeEventListener("scroll", this.helb);
+        }
+
+        // if (
+        //   document.getElementById("viewElement2").getBoundingClientRect().top <=
+        //   window.innerHeight
+        // ) {
+        //   // this.scrollToElement1();
+        //   console.log("in view2", window.innerHeight);
+        //   // uncomment below if you only want it to notify once
+        //   // document.removeEventListener("scroll", inView);
+        // }
+        // this.scrollToElement1();
+      }
+    },
+    focusChanged(event) {
+      const el = event.target;
+      console.log(el);
+    },
+    scrollToElement5() {
+      console.log("scroll to element");
+    },
     scrollToElement1() {
       console.log("scroll to element");
-      const el = this.$el.getElementsByClassName("1stPage")[0];
+      const el = this.$el.getElementsByClassName("page1")[0];
 
       if (el) {
         // Use el.scrollIntoView() to instantly scroll to the element
         // el.scrollIntoView({ behavior: "smooth" });
+
         this.$smoothScroll({
           scrollTo: this.$refs.page1,
           duration: 2000,
@@ -49,14 +120,27 @@ export default {
         });
       }
     },
-    hello() {
-      window.scrollTo(0, 0);
-    },
   },
 };
 </script>
 
 <style scoped>
+.main {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* scroll-snap-stop: always; 
+        This third property is very much like manatory vs proximity
+        doesn't work in IE, Edge, Firefox, or Safari */
+}
+.section {
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
 .item {
   /* Set the minimum height of the items to be the same as the height of the scroll-snap-container.*/
   width: 100vw;
@@ -70,6 +154,7 @@ export default {
 .aaa {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 .a::-webkit-scrollbar {
   display: none;
