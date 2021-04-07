@@ -315,6 +315,7 @@ export default {
     (this.scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
       // smooth: true,
+      // getSpeed: true,
     })),
       this.scroll.on("scroll", (args) => {
         // Get all current elements : args.currentElements
