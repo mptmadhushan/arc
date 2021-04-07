@@ -101,32 +101,36 @@
         </div>
       </div>
       <div style="width:99vw;height:20vh"></div>
-      <p class="text001">
-        Cupidatat laborum magna Lorem eiusmod aute nisi qui laborum.
-      </p>
-      <v-layout row wrap justify-center>
-        <v-flex md6 xs12 sm12 align-self-end>
-          <div class="align-end" style="text-align:end">
-            <img
-              align-content-end
-              contain
-              style="margin-top:20vh;margin-right:1vw;height:60vh"
-              src="../assets/blueprint/_SDS3006.png"
-            />
-          </div>
-        </v-flex>
-        <v-flex md6 xs12 sm12 align-self-end>
-          <div class="align-end" style="text-align:start">
-            <img
-              align-content-start
-              contain
-              style="margin-left:1vw;;height:80vh"
-              height="80%"
-              src="../assets/blueprint/_SDS2960.png"
-            />
-          </div>
-        </v-flex>
-      </v-layout>
+      <div class="fadeClass">
+        <div class="fadeClassHover">
+          <p class="text001">
+            Cupidatat laborum magna Lorem eiusmod aute nisi qui laborum.
+          </p>
+          <v-layout row wrap justify-center>
+            <v-flex md6 xs12 sm12 align-self-end>
+              <div class="align-end" style="text-align:end">
+                <img
+                  align-content-end
+                  contain
+                  style="margin-top:20vh;margin-right:1vw;height:60vh"
+                  src="../assets/blueprint/_SDS3006.png"
+                />
+              </div>
+            </v-flex>
+            <v-flex md6 xs12 sm12 align-self-end>
+              <div class="align-end" style="text-align:start">
+                <img
+                  align-content-start
+                  contain
+                  style="margin-left:1vw;;height:80vh"
+                  height="80%"
+                  src="../assets/blueprint/_SDS2960.png"
+                />
+              </div>
+            </v-flex>
+          </v-layout>
+        </div>
+      </div>
       <div style="width:99vw;height:20vh"></div>
       <div v-if="isMobile()" style="margin-top: 10vh;padding:2vh">
         <v-img eager contain src="../assets/blueprint/1.png"></v-img>
@@ -212,8 +216,10 @@
           </v-layout>
         </div>
         <div style="width:99vw;height:20vh"></div>
-
-        <div class="fixed_wrapper">
+        <div>
+          <div class="parallax"></div>
+        </div>
+        <!-- <div class="fixed_wrapper">
           <div class="fixed_target" id="fixed-target"></div>
           <div
             class="fixed"
@@ -221,7 +227,7 @@
             data-scroll-sticky
             data-scroll-target="#fixed-target"
           ></div>
-        </div>
+        </div> -->
         <div style="width:99vw;height:1vh"></div>
 
         <div v-if="isMobile()" style="height:100vh;margin-top:20vh">
@@ -308,7 +314,7 @@ export default {
   mounted() {
     (this.scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
+      // smooth: true,
     })),
       this.scroll.on("scroll", (args) => {
         // Get all current elements : args.currentElements
@@ -343,6 +349,19 @@ export default {
 </script>
 
 <style scoped>
+.parallax {
+  /* The image used */
+  background-image: url("../assets/blueprint/_SDS1585-3.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .fadeClassHover {
   opacity: 0;
   transition: all 3s ease;

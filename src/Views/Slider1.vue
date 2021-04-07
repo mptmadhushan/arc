@@ -1,5 +1,5 @@
 <template>
-  <div data-scroll data-scroll-id="hey" v-if="isMobile()" style="height:100vh">
+  <!-- <div data-scroll data-scroll-id="hey" v-if="isMobile()" style="height:100vh">
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide one_m">
@@ -35,14 +35,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div
-    v-else
-    style="height:100vh"
-    class="first-slide"
-    ref="slider1"
-    id="viewElement"
-  >
+  </div> -->
+  <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide one">
@@ -83,12 +77,12 @@ export default {
     open: true,
   }),
   mounted() {
-    document.documentElement.style.overflow = "hidden";
+    // document.documentElement.style.overflow = "hidden";
   },
   methods: {
     mouseOver: function() {
       console.log("flag ");
-      document.documentElement.style.overflow = "hidden";
+      // document.documentElement.style.overflow = "hidden";
     },
   },
 };
