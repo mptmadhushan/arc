@@ -66,8 +66,7 @@
     >
       <v-img eager contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
       <p class="text001">
-        Revitalising a Kandyan Icon into a boutique hotel maintaining its
-        heritage
+        A Hill Country icon. Revitalised
       </p>
     </div>
     <div
@@ -87,8 +86,7 @@
         src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Revitalising a Kandyan Icon into a boutique hotel maintaining its
-        heritage
+        A Hill Country icon. Revitalised
       </p>
     </div>
     <div v-if="isMobile()">
@@ -100,8 +98,7 @@
         src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
       ></v-img>
       <p class="text001">
-        The carefully structured arches help display the surrounding greenery.
-        which makes for a serene sight
+        Silence. Nature through the existing architectural frame.
       </p>
     </div>
     <div v-else class="text-center" style="padding:2vh">
@@ -131,8 +128,7 @@
           data-aos-duration="1500"
         >
           <p class="text002">
-            The carefully structured arches help display the surrounding
-            greenery. which makes for a serene sight
+            Silence. Nature through the existing architectural frame.
           </p>
         </v-flex>
       </v-layout>
@@ -159,7 +155,8 @@
         </vue-flux>
         <p class="text001">
           Art and Sculpture. a study of the proprietor's history in the rice
-          industry and Its many permutations throughout the home.
+          industry and its many permutations through the lens of Kingsley
+          Goonatilake
         </p>
       </div>
     </div>
@@ -182,7 +179,8 @@
         </vue-flux>
         <p class="text001">
           Art and Sculpture. a study of the proprietor's history in the rice
-          industry and Its many permutations throughout the home.
+          industry and its many permutations through the lens of Kingsley
+          Goonatilake
         </p>
       </div>
     </div>
@@ -199,8 +197,7 @@
         src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Rustic, contemporary furniture to tie together the ethos of the house
-        and its strong tonality.
+        Duality. A sincere collision.
       </p>
     </div>
     <div v-else class="text-center">
@@ -219,8 +216,7 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            Rustic, contemporary furniture to tie together the ethos of the
-            house and its strong tonality.
+            Duality. A sincere collision.
           </p>
         </v-flex>
         <v-flex md9 pa-4 xs10 sm10 align-self-center>
@@ -287,10 +283,9 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              The study of rice continues through artists such as Kingsley
-              Goonatilake, Pala Pothupitiya and Mahen Perera encapsulating each
-              room with their materiality and use of textures such as rice
-              paper, gold leaf, canvas etc.
+              Tea stained rice paper and gold leaf - Kingsley Goonatilake, Pala
+              Pothupitiya and Mahen Perera encapsulating each room with their
+              materiality.
             </p>
           </div>
         </div>
@@ -319,7 +314,7 @@
         src="../assets/Stone_House/Stone House_DSC5405.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Harmonious interiors to reassure and uplift
+        Warmth; timeless elegance
       </p>
     </div>
     <div v-else class="text-center" style="height: 100vh;">
@@ -336,7 +331,7 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            Harmonious interiors to reassure and uplift
+            Warmth; timeless elegance
           </p>
         </v-flex>
         <v-flex md8 pa-4 xs10 sm10 justify-center>

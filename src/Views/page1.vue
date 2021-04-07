@@ -29,22 +29,19 @@
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
-                visionary in his field, Chamika De Alwis has been taking the as
-                architecture world by storm through his distinctive tastes and
-                thought-provoking designs. When it comes to his work, the
-                dedication and creativity he showcases knows no bounds, and his
-                strive for the unconventional is increasingly prominent. This is
-                something he wishes to carry on through CDA, an association
-                formed with the notion of reaching more people and enriching
-                their lives through elegance and luxury. The individuals
-                involved in this firm are looking to break boundaries and set
-                limitless precedents; it is made up of creative and passionate
-                young people who bring in fresh perspectives and new ideas.
-                Exceeding client expectations through combining the forces of
-                opulence and intricacy, CDA aims to refine the palettes of
-                everyone they work with and elevate their taste for the finer
-                things in life. At their current momentum, the sky is not the
-                limit for CDA, it is a mere stepping stone.
+                CDA are a collective of like-minded humanists. We believe the
+                difference between good and great design is the human factor;
+                how people interact with our spaces and how our structures
+                impact lives. Drawing inspiration from all corners of the world
+                and connecting it with modern ideologies. Our CDA team consists
+                of young, passionately creative individuals who have fresh
+                perspectives, bright new ideas, and are looking to break
+                boundaries and set limitless precedents within the architecture
+                industry. We aim to elevate lives and incorporate beauty in art
+                to magnify spaces. The dedication we have towards our clientele,
+                and the measures we take to meld their visions with our artistic
+                enterprise is clear evidence of that; we strive for the
+                unconventional with meticulous care and defined personality.
               </p>
             </v-flex>
           </v-layout>
@@ -106,22 +103,19 @@
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
-                visionary in his field, Chamika De Alwis has been taking the
-                architecture world by storm through his distinctive tastes and
-                thought-provoking designs. When it comes to his work, the
-                dedication and creativity he showcases knows no bounds, and his
-                strive for the unconventional is increasingly prominent. This is
-                something he wishes to carry on through CDA, an association
-                formed with the notion of reaching more people and enriching
-                their lives through elegance and luxury. The individuals
-                involved in this firm are looking to break boundaries and set
-                limitless precedents; it is made up of creative and passionate
-                young people who bring in fresh perspectives and new ideas.
-                Exceeding client expectations through combining the forces of
-                opulence and intricacy, CDA aims to refine the palettes of
-                everyone they work with and elevate their taste for the finer
-                things in life. At their current momentum, the sky is not the
-                limit for CDA, it is a mere stepping stone.
+                CDA are a collective of like-minded humanists. We believe the
+                difference between good and great design is the human factor;
+                how people interact with our spaces and how our structures
+                impact lives. Drawing inspiration from all corners of the world
+                and connecting it with modern ideologies. Our CDA team consists
+                of young, passionately creative individuals who have fresh
+                perspectives, bright new ideas, and are looking to break
+                boundaries and set limitless precedents within the architecture
+                industry. We aim to elevate lives and incorporate beauty in art
+                to magnify spaces. The dedication we have towards our clientele,
+                and the measures we take to meld their visions with our artistic
+                enterprise is clear evidence of that; we strive for the
+                unconventional with meticulous care and defined personality.
               </p>
             </v-flex>
           </v-layout>

@@ -10,20 +10,24 @@
       </router-link>
       <!-- <ShapesPop /> -->
     </div>
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
       <div
         class="b1con"
         data-aos="zoom-out"
-        data-aos-delay="100"
         data-aos-easing="linear"
+        data-aos-delay="100"
         data-aos-duration="2000"
       >
         <div class="b1"></div>
       </div>
 
       <p class="text001">
-        Formerly in disrepair, unearthing hidden potential in what would be a
-        City landmark
+        Resuscitate. Repurpose. Reinvigorate
       </p>
     </div>
     <div style="width:99vw;height:30vh;padding:10px"></div>
@@ -47,9 +51,8 @@
         ></v-img>
       </div>
 
-      <p class="text001">
-        Eliminating high boundary walls to expose the exceptional facades
-        beyond, now housing one of Colombo's premier fashion brands.
+      <p class="text0011">
+        Formerly in disrepair - A compendium of contemporary lines
       </p>
     </div>
     <div style="width:99vw;height:30vh;padding:10px"></div>
@@ -101,11 +104,10 @@
             </slide>
           </carousel-3d>
           <div
-            class="text001"
+            class="text0011"
             style="background-color: white;text-align: center;padding:20px;"
           >
-            Re-purposing and re-scaling of antique and contemporary fittings to
-            elevate the shopping experience
+            A study in subtlety.
           </div>
         </div>
       </div>
@@ -131,10 +133,8 @@
           src="../assets/Arienti/_SDS7793.jpeg"
         ></v-img>
       </div>
-      <p class="text001">
-        Balancing reflections and artificial light.
-      </p>
-      <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
+
+      <div style="width:99vw;height:7vh;padding:10px"></div>
     </div>
   </v-container>
 </template>
@@ -244,7 +244,7 @@ export default {
   text-align: center;
   padding: 20px;
 }
-.text001 {
+.text0011 {
   text-align: center;
   padding: 20px;
   padding: 10px;

@@ -32,10 +32,10 @@
           </div>
         </v-flex>
         <v-flex md10 xs12 sm12 justify-center>
-          <p class="text001">
+          <!-- <p class="text001">
             A classic modern structure melding with carefully paired plants
             makes for an, elegant outlook.
-          </p>
+          </p> -->
         </v-flex>
       </v-layout>
     </div>
@@ -72,8 +72,7 @@
           </template>
         </vue-flux>
         <p class="text001">
-          A thought provoking design. This painting was intentionally placed
-          here to capture the attention of the onlooking patrons.
+          Peripheral. Kingsley Goonatilake elevates and uplifts
         </p>
       </div>
       <div v-else style="padding:15vh">
@@ -87,8 +86,7 @@
           </template>
         </vue-flux>
         <p class="text001">
-          A thought provoking design. This painting was intentionally placed
-          here to capture the attention of the onlooking patrons.
+          Peripheral. Kingsley Goonatilake elevates and uplifts
         </p>
       </div>
     </div>
@@ -135,8 +133,9 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              An sleek wooden chest adding color and class to elevate an already
-              Intimate lounge area.
+              Purity and Refinement - Sculptural mix of carefully curated
+              contemporary and antique by Laki Senanayake and Kingsley
+              Goonatilake
             </p>
           </div>
         </div>
@@ -168,8 +167,8 @@
             src="../assets/Dinali_House/_SDS2888.JPG.jpg"
           ></v-img>
           <p class="text002">
-            The painting and sculptures chosen to be showcased portray a story
-            told through the eyes of some of the island's best artists
+            Work by Sujith Rathnakaye and Laki Senanayake complement this
+            intimate space
           </p>
         </v-flex>
       </v-layout>
@@ -188,8 +187,8 @@
       >
         <v-flex md3 align-self-center pa-4>
           <p class="text002">
-            The painting and sculptures chosen to be showcased portray a story
-            told through the eyes of some of the island's best artists
+            Work by Sujith Rathnakaye and Laki Senanayake complement this
+            intimate space
           </p>
         </v-flex>
         <v-flex
@@ -237,8 +236,7 @@
           data-aos-duration="1500"
         >
           <p class="text002">
-            The balance of a rich interior and a simple exterior is the secret
-            to class.
+            Timeless Modernity
           </p>
         </v-flex>
       </v-layout>
@@ -259,7 +257,7 @@
         src="../assets/Dinali_House/_SDS2903.JPG.jpg"
       ></v-img>
       <p class="text001">
-        An idyllic setting made complete with luscious greens and wicker chairs.
+        Hidden oasis of calm
       </p>
     </div>
   </v-container>
@@ -319,7 +317,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 87vh;
+  height: 90vh;
 }
 .b1 {
   background-color: #fff;

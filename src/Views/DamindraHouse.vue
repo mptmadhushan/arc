@@ -41,8 +41,7 @@
         src="../assets/Damindra_House/_SDS7604.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Working with rustic wooden benches, and lavish modern furniture to
-        combine two worlds into one cohesive unit.
+        Hidden Expression - Communication between material and form
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
@@ -62,8 +61,7 @@
             src="../assets/Damindra_House/_SDS7634.JPG.jpg"
           ></v-img>
           <p class="text002 text-center">
-            Open air area inside a home, which not only adds to it's beauty but
-            also creates a cooling effect through efficient ventilation.
+            Respite through natural installations
           </p>
         </v-flex>
       </v-layout>
@@ -78,8 +76,7 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            Open air area inside a home, which not only adds to it's beauty but
-            also creates a cooling effect through efficient ventilation.
+            Respite through natural installations
           </p>
         </v-flex>
         <v-flex
@@ -108,8 +105,7 @@
         src="../assets/Damindra_House/_SDS7591.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Artwork expertly placed in a position where it can be seen in an
-        unobstructed view, highlighted further wifh neutral toned furniture.
+        Interiors of contemporary character and charm
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
@@ -124,8 +120,7 @@
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
           ></v-img>
           <p class="text002 ">
-            The trees and gravel exterior adds a quiet charm and homely feel,
-            which is elevated through the framed artwork.
+            Harmony - between architecture and the elements
           </p>
         </v-flex>
       </v-layout>
@@ -141,8 +136,7 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            The trees and gravel exterior adds a quiet charm and homely feel,
-            which is elevated through the framed artwork.
+            Harmony - between architecture and the elements
           </p>
         </v-flex>
         <v-flex

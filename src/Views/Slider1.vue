@@ -332,11 +332,11 @@ h2 span:last-child {
   margin-top: -20px;
 }
 
-p {
+/* p {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-}
+} */
 
 .word {
   position: absolute;

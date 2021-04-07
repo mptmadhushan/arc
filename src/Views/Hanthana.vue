@@ -32,7 +32,7 @@
     >
       <v-img eager contain src="../assets/hanthana/2.jpeg"></v-img>
       <p class="text002">
-        Wilderness framed to prelude the view and experiences beyond it.
+        Prelude - A journey forthcoming
       </p>
     </div>
     <div v-else class="text-center">
@@ -46,7 +46,7 @@
           data-aos-duration="1500"
         >
           <p class="text002">
-            Wilderness framed to prelude the view and experiences beyond it.
+            Prelude - A journey forthcoming
           </p>
         </v-flex>
         <v-flex
@@ -74,7 +74,7 @@
     >
       <v-img eager contain src="../assets/hanthana/3.jpeg"></v-img>
       <p class="text002">
-        Working the landscape to pay homage to the surrounding natural beauty.
+        Viridescent Charm
       </p>
     </div>
     <div
@@ -92,7 +92,7 @@
         src="../assets/hanthana/3.jpeg"
       ></v-img>
       <p class="text001">
-        Working the landscape to pay homage to the surrounding natural beauty.
+        Viridescent Charm
       </p>
     </div>
     <div
@@ -130,8 +130,7 @@
     >
       <v-img eager contain src="../assets/hanthana/5.png"></v-img>
       <p class="text002">
-        Clean lines and simplicity in form define the view and allow for an
-        uninterrupted visual experience.
+        Peaceful Interdependence - A contemplative mountain setting
       </p>
     </div>
     <div v-else class="text-center">
@@ -145,8 +144,7 @@
           data-aos-duration="1500"
         >
           <p class="text002">
-            Clean lines and simplicity in form define the view and allow for an
-            uninterrupted visual experience.
+            Peaceful Interdependence - A contemplative mountain setting
           </p>
         </v-flex>
         <v-flex
@@ -223,8 +221,7 @@
     >
       <v-img eager contain src="../assets/hanthana/7.jpeg"></v-img>
       <p class="text002">
-        A warm and inviting entrance hall, inviting you into a curated
-        experience of art and artefact.
+        Curated experience of Art and Artifact
       </p>
     </div>
     <div
@@ -240,8 +237,7 @@
         src="../assets/hanthana/7.jpeg"
       ></v-img>
       <p class="text001">
-        A warm and inviting entrance hall, inviting you into a curated
-        experience of art and artefact.
+        Curated experience of Art and Artifact
       </p>
     </div>
     <div style="width:99vw;height:30vh;padding:10px"></div>
@@ -275,8 +271,7 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Raw natural materials compliment the warm tones. elevating a cosy
-              hill-country atmosphere
+              Pleasure in Interaction. A human space
             </p>
           </div>
         </div>
@@ -291,11 +286,11 @@
         height="85vh"
         src="../assets/hanthana/slide2.jpeg"
       ></v-img>
-      <p class="text001" style="padding-inline:15vw">
+      <!-- <p class="text001" style="padding-inline:15vw">
         Bandu Manamperi's take on the surrounding vista of mountains from
         Hanthana itself, creating a contemporary stage for his work within the
         context of a dramatic lounge to wind down after a journey
-      </p>
+      </p> -->
     </div>
     <div style="width:99vw;height:32vh;padding:10px"></div>
 
@@ -332,10 +327,8 @@
             data-aos-delay="300"
             data-aos-duration="1500"
           >
-            Spare, Sumptuous and Seductive<br /><br />
-            Creating a timeless and functional space by elevating a lifestyle,
-            Spaces that are thoughtful yet provoke a deeper sense of purpose
-            when interacting within it.
+            Spare. Sumptuous. Seductive <br />
+            A deep minimalism through a light-hearted setting
           </p>
         </v-flex>
       </v-layout>
@@ -375,8 +368,7 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              An eclectic mix of contemporary and antique. Artistic accents to
-              enhance, offering strength and warmth
+              Timeless Materiality. Gentle contemporary with textured warmth
             </p>
           </div>
         </div>
@@ -446,6 +438,9 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
+      <p class="text001">
+        Romantic dissolution between interior and exterior
+      </p>
       <div style="width:99vw;height:20vh;padding:10px"></div>
     </div>
 
@@ -461,6 +456,9 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
+      <p class="text001">
+        Romantic dissolution between interior and exterior
+      </p>
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
 

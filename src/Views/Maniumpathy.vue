@@ -29,7 +29,7 @@
           </div>
 
           <p class="text001">
-            A literal elevation of a bastion of our colonial past.
+            Transformed Elevation
           </p>
         </v-flex>
       </v-layout>
@@ -81,9 +81,7 @@
 
       <v-img eager contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
       <p class="text002">
-        A strong tonality within the room are balanced by distinctive antiques,
-        including chandeliers. mirrors and carefully considered details create a
-        vibrant and welcoming atmosphere
+        Understated Refinement - Singularity relative to its surroundings.
       </p>
     </div>
     <div v-else class="text-center">
@@ -109,9 +107,7 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            A strong tonality within the room are balanced by distinctive
-            antiques, including chandeliers. mirrors and carefully considered
-            details create a vibrant and welcoming atmosphere
+            Understated Refinement - Singularity relative to its surroundings.
           </p>
         </v-flex>
       </v-layout>
@@ -130,9 +126,7 @@
         </template>
       </vue-flux>
       <p class="text001">
-        Extending the physical structure to shed a spotlight on the large dining
-        space, styled with beautiful Rajastani chandeliers and exquisite table
-        service
+        Craftsmanship. Material Sensitivity
       </p>
     </div>
     <div
@@ -155,9 +149,7 @@
           </template>
         </vue-flux>
         <p class="text001">
-          Extending the physical structure to shed a spotlight on the large
-          dining space, styled with beautiful Rajastani chandeliers and
-          exquisite table service
+          Craftsmanship. Material Sensitivity
         </p>
       </div>
     </div>
@@ -239,7 +231,8 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Opulent Dutch furniture lends the space depth and graciousness
+              Indo-portugese and contemporary. Thoughtfully considered and
+              diligently placed
             </p>
           </div>
         </div>
@@ -255,7 +248,8 @@
         src="../assets/Maniumpathy/_SDS2577.png"
       ></v-img>
       <p class="text001">
-        Opulent Dutch furniture lends the space depth and graciousness
+        Indo-portugese and contemporary. Thoughtfully considered and diligently
+        placed
       </p>
     </div>
     <div style="width:99vw;height:31vh;padding:10px"></div>
@@ -336,8 +330,7 @@
         </template>
       </vue-flux>
       <p class="text001">
-        Re-purposing Indo-Portugese fittings to provide strength to the space
-        and frame the context of the play on Indoor-Outdoors--
+        Unparalleled Emotion. Atmosphere. Gentle Contemporary
       </p>
     </div>
     <div
@@ -354,8 +347,7 @@
         </template>
       </vue-flux>
       <p class="text001">
-        Re-purposing Indo-Portugese fittings to provide strength to the space
-        and frame the context of the play on Indoor-Outdoors--
+        Unparalleled Emotion. Atmosphere. Gentle Contemporary
       </p>
     </div>
 
@@ -380,8 +372,7 @@
       <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
       <v-img eager contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
       <p class="text002">
-        Outdoor soft seating with a mix of natural textures in washed wood and
-        delicate marble.
+        Modern convenience through a material lens
       </p>
     </div>
     <div v-else class="text-center">
@@ -398,8 +389,7 @@
       >
         <v-flex md3 pa-4 align-self-end>
           <p class="text002">
-            Outdoor soft seating with a mix of natural textures in washed wood
-            and delicate marble.
+            Modern convenience through a material lens
           </p>
         </v-flex>
         <v-flex md8 pa-4 justify-center>
@@ -462,8 +452,8 @@
         </template>
       </vue-flux>
       <p class="text001">
-        Proportionate Doric pillars to supplement and frame this restful and
-        serene outdoor pavilion
+        <!-- Proportionate Doric pillars to supplement and frame this restful and
+        serene outdoor pavilion -->
       </p>
     </div>
     <div
@@ -479,8 +469,8 @@
         </template>
       </vue-flux>
       <p class="text001">
-        Proportionate Doric pillars to supplement and frame this restful and
-        serene outdoor pavilion
+        <!-- Proportionate Doric pillars to supplement and frame this restful and
+        serene outdoor pavilion -->
       </p>
     </div>
     <div style="width:99vw;height:22vh;padding:10px"></div>
@@ -511,8 +501,8 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            A fresh take on delivering a timeless quality to this Intimate
-            space.
+            Masterclass in White - providing contrast and variation with a nod
+            to the history of the building.
           </p>
         </v-flex>
       </v-layout>

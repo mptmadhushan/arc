@@ -52,8 +52,7 @@
       </div>
 
       <p class="text001">
-        Use of the trellice to provide privacy and controlled lighting to the
-        property
+        Shades and Shadow
       </p>
     </div>
 
@@ -67,10 +66,9 @@
       data-aos-duration="1500"
     >
       <v-layout row wrap justify-center pt-md-12>
-        <v-flex md4 align-self-end>
+        <v-flex md4 align-self-center>
           <p class="text002">
-            Tall windows to create efficient ventilation and keep fhe rooms cool
-            under scorching island sun.
+            The Trellis <br />Brutalist harmony in Contemporary lines
           </p>
         </v-flex>
         <v-flex md7 justify-center>
@@ -141,7 +139,7 @@
       >
         <v-flex md4 xs12 sm12 align-self-center>
           <p class="text003">
-            Narrow, Sleek stairways focused on minimalistic aesthetics
+            Narrowness
           </p>
         </v-flex>
         <v-flex md7 xs12 sm12 justify-center>
@@ -191,7 +189,7 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Neutral tones, and tall artworks convey spaciousness.
+              Light and space. A pleasing neutrality
             </p>
           </div>
         </div>
@@ -220,9 +218,6 @@
           src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
         ></v-img>
       </div>
-      <p class="text001" pt-5>
-        Wooden interiors add to a completed rustic yet modern look.
-      </p>
     </div>
     <div style="width:99vw;height:20vh;padding:10px"></div>
 

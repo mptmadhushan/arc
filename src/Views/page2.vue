@@ -12,23 +12,19 @@
       </v-flex>
       <v-flex md6 sm12 xs12 align-self-center>
         <p class="pa-2 new">
-          Chamika De Alwis began his career in 2003 with MICD Associates while
-          pursuing a Diploma in Architecture at the City School of Architecture,
-          Colombo. Following his education, he continued working with MICD
-          Associates as a Senior Associate and Principal assistant. In 2016 he
+          Chamika De Alwis began his architectural career at MICD Associates and
+          continues to practice at the firm as a Senior Associate. In 2016 he
           embarked on his own practice as the Principal Architect of C Atelier
-          Consultants and CDA Associates. Since then, he’s been involved in
-          several curatorial projects in Sri Lanka including the exhibition
-          Second Skin in March 2017 and Revive; Ethical Use of Material in June
-          2017 in collaboration with the Colombo Fashion Week. In 2019, he
-          curated One Won in collaboration with the University of the Visual and
-          Performing Arts, Colombo in the aftermath of the Easter Attacks in Sri
-          Lanka. He was the recipient of the Conde Nast Johansens award for
-          excellence in 2020 – 21 for his work in the architecture field and is
-          on the board of Trustees of the Geoffrey Bawa Trust and the Lunuganga
-          Trust, respectively. With CDA he continues to excel in his creative
-          endeavours and deliver intricately inventive and exquisite designs to
-          his clientele.
+          Consultants and CDA Associates. He has worked on numerous
+          architectural and restoration projects of which one was the recipient
+          of the Conde Nast Johansens award for excellence in 2020 – 21. He has
+          also been involved in several curatorial projects in Sri Lanka
+          including the exhibitions Second Skin in March 2017 and Revive;
+          Ethical Use of Material in June 2017 in collaboration with the Colombo
+          Fashion Week. In 2019 he also curated One Won in collaboration with
+          the University of the Visual and Performing Arts, Colombo in the
+          aftermath of the Easter Attacks in Sri Lanka He is a Trustee of the
+          Geoffrey Bawa Trust and the Lunuganga Trust.
         </p>
       </v-flex>
     </v-layout>
