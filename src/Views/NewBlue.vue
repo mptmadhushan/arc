@@ -397,7 +397,7 @@
 </template>
 
 <script>
-// import LocomotiveScroll from "locomotive-scroll";
+import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from "./Slider1";
 export default {
   components: {
@@ -414,24 +414,24 @@ export default {
     //   }, 1000);
     // });
 
-    // (this.scroll = new LocomotiveScroll({
-    //   el: document.querySelector("[data-scroll-container]"),
-    //   // smooth: true,
-    //   // getSpeed: true,
-    // })),
-    this.scroll.on("scroll", (args) => {
-      // Get all current elements : args.currentElements
-      if (typeof args.currentElements["hey"] === "object") {
-        // let progress = args.currentElements["hey"].progress;
-        // console.log(progress);
-        console.log("hello-focused");
-        //   this.test();
-        document.documentElement.style.overflow = "hidden";
+    (this.scroll = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      // smooth: true,
+      // getSpeed: true,
+    })),
+      this.scroll.on("scroll", (args) => {
+        // Get all current elements : args.currentElements
+        if (typeof args.currentElements["hey"] === "object") {
+          // let progress = args.currentElements["hey"].progress;
+          // console.log(progress);
+          console.log("hello-focused");
+          //   this.test();
+          document.documentElement.style.overflow = "hidden";
 
-        // ouput log example: 0.34
-        // gsap example : myGsapAnimation.progress(progress);
-      }
-    });
+          // ouput log example: 0.34
+          // gsap example : myGsapAnimation.progress(progress);
+        }
+      });
   },
   methods: {
     heyl() {
