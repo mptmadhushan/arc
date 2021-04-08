@@ -133,9 +133,9 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Purity and Refinement - Sculptural mix of carefully curated
-              contemporary and antique by Laki Senanayake and Kingsley
-              Goonatilake
+              Purity and Refinement <br />
+              Sculptural mix of carefully curated contemporary and antique by
+              Laki Senanayake and Kingsley Goonatilake
             </p>
           </div>
         </div>
@@ -167,8 +167,8 @@
             src="../assets/Dinali_House/_SDS2888.JPG.jpg"
           ></v-img>
           <p class="text002">
-            Work by Sujith Rathnakaye and Laki Senanayake complement this
-            intimate space
+            Work by Sujith Rathnakaye and Laki<br />
+            Senanayake complement this intimate <br />space
           </p>
         </v-flex>
       </v-layout>
@@ -187,8 +187,9 @@
       >
         <v-flex md3 align-self-center pa-4>
           <p class="text002">
-            Work by Sujith Rathnakaye and Laki Senanayake complement this
-            intimate space
+            Work by Sujith Rathnakaye and Laki<br />
+            Senanayake complement this intimate<br />
+            space
           </p>
         </v-flex>
         <v-flex
@@ -339,6 +340,7 @@ export default {
 }
 .text001 {
   text-align: center;
+  font-weight: bold;
   padding: 10px;
   font-size: 2vh;
   color: #11111193;
@@ -346,6 +348,7 @@ export default {
 .text002 {
   text-align: left;
   padding: 10px;
+  font-weight: bold;
   font-size: 2vh;
   color: #11111193;
 }

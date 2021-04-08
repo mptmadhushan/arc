@@ -12,7 +12,7 @@
             <v-flex md1 sm5 xs5 align-self-start>
               <p
                 class="about_us"
-                style="margin-top:20vh;margin-right:-2vw;text-align:right"
+                style="margin-top:40vh;margin-right:-2vw;text-align:right"
               >
                 ABOUT US
               </p></v-flex
@@ -86,7 +86,7 @@
             <v-flex md1 sm5 xs5 align-self-start>
               <p
                 class="about_us"
-                style="margin-top:20vh;margin-right:-2vw;text-align:right"
+                style="margin-top:40vh;margin-right:-2vw;text-align:right"
               >
                 ABOUT US
               </p></v-flex

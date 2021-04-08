@@ -16,14 +16,8 @@
       data-aos-delay="100"
       data-aos-duration="1500"
     >
-      <div
-        class="b1con"
-        data-aos="zoom-out"
-        data-aos-easing="linear"
-        data-aos-delay="100"
-        data-aos-duration="2000"
-      >
-        <div class="b1"></div>
+      <div class="b4con" data-aos="zoom-out" data-aos-duration="2000">
+        <div class="b4"></div>
       </div>
 
       <p class="text001">
@@ -51,7 +45,7 @@
         ></v-img>
       </div>
 
-      <p class="text0011">
+      <p class="text0011 text-center mt-12">
         Formerly in disrepair - A compendium of contemporary lines
       </p>
     </div>
@@ -177,7 +171,7 @@ export default {
 </script>
 
 <style>
-.b1con {
+.b4con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Arienti/_SDS7737.jpeg");
   /* background-size: 100% 100%;
@@ -185,9 +179,9 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 85vh;
+  height: 88vh;
 }
-.b1 {
+.b4 {
   background-color: #fff;
   transform: scaleY(0);
   transform-origin: top;
@@ -244,10 +238,11 @@ export default {
   text-align: center;
   padding: 20px;
 }
-.text0011 {
+.text001 {
   text-align: center;
   padding: 20px;
   padding: 10px;
+  font-weight: bold;
   margin-top: 10px;
   font-size: 2vh;
   color: #11111193;

@@ -98,7 +98,7 @@
         src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Silence. Nature through the existing architectural frame.
+        Silence <br /><br />Nature through the existing architectural frame.
       </p>
     </div>
     <div v-else class="text-center" style="padding:2vh">
@@ -128,7 +128,8 @@
           data-aos-duration="1500"
         >
           <p class="text002">
-            Silence. Nature through the existing architectural frame.
+            Silence.<br /><br />
+            Nature through the existing architectural frame.
           </p>
         </v-flex>
       </v-layout>
@@ -155,8 +156,8 @@
         </vue-flux>
         <p class="text001">
           Art and Sculpture. a study of the proprietor's history in the rice
-          industry and its many permutations through the lens of Kingsley
-          Goonatilake
+          industry and its many permutations<br />
+          through the lens of Kingsley Goonatilake
         </p>
       </div>
     </div>
@@ -179,8 +180,8 @@
         </vue-flux>
         <p class="text001">
           Art and Sculpture. a study of the proprietor's history in the rice
-          industry and its many permutations through the lens of Kingsley
-          Goonatilake
+          industry and its many permutations<br />
+          through the lens of Kingsley Goonatilake
         </p>
       </div>
     </div>
@@ -197,7 +198,9 @@
         src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Duality. A sincere collision.
+        Duality<br />
+        <br />
+        A sincere collision.
       </p>
     </div>
     <div v-else class="text-center">
@@ -216,7 +219,8 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            Duality. A sincere collision.
+            Duality<br /><br />
+            A sincere collision.
           </p>
         </v-flex>
         <v-flex md9 pa-4 xs10 sm10 align-self-center>
@@ -283,9 +287,9 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Tea stained rice paper and gold leaf - Kingsley Goonatilake, Pala
-              Pothupitiya and Mahen Perera encapsulating each room with their
-              materiality.
+              Tea stained rice paper and gold leaf <br /><br />
+              Kingsley Goonatilake, Pala Pothupitiya and Mahen Perera
+              encapsulating each room <br />with their materiality.
             </p>
           </div>
         </div>
@@ -324,13 +328,13 @@
           xs10
           pa-4
           sm10
-          align-self-center
+          align-self-start
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-delay="400"
           data-aos-duration="2500"
         >
-          <p class="text002">
+          <p class="text002" style="margin-top:5vh">
             Warmth; timeless elegance
           </p>
         </v-flex>
@@ -494,11 +498,13 @@ export default {
   text-align: center;
   padding: 10px;
   font-size: 2vh;
+  font-weight: bold;
   color: #11111193;
 }
 .text002 {
   text-align: left;
   padding: 10px;
+  font-weight: bold;
   font-size: 2vh;
   color: #11111193;
 }

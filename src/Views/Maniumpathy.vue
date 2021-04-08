@@ -80,8 +80,14 @@
       <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
 
       <v-img eager contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
-      <p class="text002">
-        Understated Refinement - Singularity relative to its surroundings.
+      <p
+        style=" text-align: right;
+  padding: 10px;
+  font-size: 2vh;
+  color: #11111193;"
+      >
+        Understated Refinement <br />
+        Singularity relative to its surroundings.
       </p>
     </div>
     <div v-else class="text-center">
@@ -106,8 +112,15 @@
           data-aos-delay="300"
           data-aos-duration="2500"
         >
-          <p class="text002">
-            Understated Refinement - Singularity relative to its surroundings.
+          <p
+            style=" text-align: right;
+  padding: 10px;
+  font-size: 2vh;
+  color: #11111193;"
+          >
+            Understated Refinement <br />
+            <br />
+            Singularity relative to its <br />surroundings.
           </p>
         </v-flex>
       </v-layout>
@@ -176,12 +189,17 @@
       <v-layout row wrap justify-center style="margin-bottom: 10vh">
         <v-flex
           md3
-          align-self-center
+          align-self-end
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="2500"
         >
-          <p class="text002">
+          <p
+            style=" text-align: left;
+  padding: 20px;
+  font-size: 2vh;
+  color: #11111193;"
+          >
             Subtle Interiors of Charm and Softness
           </p>
         </v-flex>
@@ -230,10 +248,10 @@
             </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
-            <p class="text001">
+            <!-- <p class="text001">
               Indo-portugese and contemporary. Thoughtfully considered and
               diligently placed
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -248,8 +266,8 @@
         src="../assets/Maniumpathy/_SDS2577.png"
       ></v-img>
       <p class="text001">
-        Indo-portugese and contemporary. Thoughtfully considered and diligently
-        placed
+        Indo-portugese and contemporary.<br />
+        Thoughtfully considered and diligently placed
       </p>
     </div>
     <div style="width:99vw;height:31vh;padding:10px"></div>
@@ -372,7 +390,8 @@
       <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
       <v-img eager contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
       <p class="text002">
-        Modern convenience through a material lens
+        Modern convenience through a<br />
+        material lens
       </p>
     </div>
     <div v-else class="text-center">
@@ -389,7 +408,8 @@
       >
         <v-flex md3 pa-4 align-self-end>
           <p class="text002">
-            Modern convenience through a material lens
+            Modern convenience through a<br />
+            material lens
           </p>
         </v-flex>
         <v-flex md8 pa-4 justify-center>
@@ -410,10 +430,10 @@
         contain
         src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"
       ></v-img>
-      <p class="text002">
+      <!-- <p class="text002">
         Former sewing tables that were given new life within this contemporary
         outdoor dining experience
-      </p>
+      </p> -->
     </div>
     <div
       v-else
@@ -429,10 +449,10 @@
         contain
         src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"
       ></v-img>
-      <p class="text001">
+      <!-- <p class="text001">
         Former sewing tables that were given new life within this contemporary
         outdoor dining experience
-      </p>
+      </p> -->
     </div>
 
     <div style="width:99vw;height:19vh;padding:10px"></div>
@@ -501,8 +521,8 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            Masterclass in White - providing contrast and variation with a nod
-            to the history of the building.
+            Masterclass in White <br />providing contrast and variation with a
+            nod to the history of the building.
           </p>
         </v-flex>
       </v-layout>
@@ -625,11 +645,13 @@ export default {
   text-align: center;
   padding: 10px;
   font-size: 2vh;
+  font-weight: bold;
   color: #11111193;
 }
 .text002 {
   text-align: left;
   padding: 10px;
+  font-weight: bold;
   font-size: 2vh;
   color: #11111193;
 }

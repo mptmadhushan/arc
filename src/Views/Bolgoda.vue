@@ -40,8 +40,7 @@
         src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
       ></v-img>
       <p class="text001">
-        To create a harmonious interior within the context of a home on the
-        lake.
+        Intimacy and indulgence on Bolgoda Lake
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
@@ -51,7 +50,8 @@
         <v-flex md7 xs12 sm12 align-self-center>
           <v-img eager src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
           <p class="text002">
-            A play on traditional sri lankan art to enhance the sense of arival.
+            Arrival <br />
+            A play on traditional Sri Lankan art
           </p>
         </v-flex>
       </v-layout>
@@ -69,8 +69,8 @@
           data-aos-delay="100"
         >
           <p class="text002">
-            A play on traditional Sri Lankan art to enhance the sense of
-            arrival.
+            Arrival<br />
+            A play on traditional Sri Lankan art
           </p>
         </v-flex>
         <v-flex
@@ -105,8 +105,8 @@
         src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
       ></v-img>
       <p class="text001">
-        The interplay of Sri Lankan pop art and indo-Portuguese furniture. A
-        prelude to the indoor-outdoor theme carried throughout.
+        Harmonious Coexistence <br />
+        The interplay of Sri Lankan pop art and indo-Portuguese furniture.
       </p>
     </div>
     <div style="width:99vw;height:23vh;padding:10px"></div>
@@ -140,6 +140,7 @@
       <p class="text001">
         "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
+        <br />
         <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
         compation of Tha inside and out.
       </p>
@@ -155,9 +156,10 @@
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
       <p class="text001">
-        "We wanted the art to speak for the house. To create an environment
+        "We wanted the art to speak for the house. To create an environment<br />
         where that harmony could be understood throughout the home."
-        <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
+        <br /><br />A Bandu Manamperi study of Life on Bolgoda Lake, extending
+        the<br />
         compation of Tha inside and out.
       </p>
     </div>
@@ -299,10 +301,10 @@
           data-aos-delay="100"
           data-aos-duration="2000"
         >
-          <p class="text002">
-            Old wood to accentuate the seamless interaction of indoors and
-            outdoors. A space that can function independently from the pool and
-            lake beyond
+          <p class="text002 text-center">
+            Monastic Calm <br /><br />
+            Blurring the boundaries between<br />
+            inside and outside
           </p>
         </v-flex>
       </v-layout>

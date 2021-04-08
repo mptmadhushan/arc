@@ -68,7 +68,7 @@
       <v-layout row wrap justify-center pt-md-12>
         <v-flex md4 align-self-center>
           <p class="text002">
-            The Trellis <br />Brutalist harmony in Contemporary lines
+            The Trellis <br /><br />Brutalist harmony in Contemporary lines
           </p>
         </v-flex>
         <v-flex md7 justify-center>
@@ -137,12 +137,12 @@
         data-aos-delay="100"
         data-aos-duration="1500"
       >
-        <v-flex md4 xs12 sm12 align-self-center>
+        <v-flex md4 xs12 sm12 align-self-center justify-end>
           <p class="text003">
             Narrowness
           </p>
         </v-flex>
-        <v-flex md7 xs12 sm12 justify-center>
+        <v-flex md7 xs12 sm12 justify-start>
           <v-img
             eager
             contain

@@ -41,7 +41,7 @@
         src="../assets/Damindra_House/_SDS7604.JPG.jpg"
       ></v-img>
       <p class="text001">
-        Hidden Expression - Communication between material and form
+        Hidden Expression <br />Communication between material and form
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
@@ -75,7 +75,7 @@
           data-aos-delay="100"
           data-aos-duration="2500"
         >
-          <p class="text002">
+          <p class="text002 text-end">
             Respite through natural installations
           </p>
         </v-flex>
@@ -120,7 +120,9 @@
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
           ></v-img>
           <p class="text002 ">
-            Harmony - between architecture and the elements
+            Harmony <br />
+            <br />
+            between architecture and the elements
           </p>
         </v-flex>
       </v-layout>
@@ -136,7 +138,9 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            Harmony - between architecture and the elements
+            Harmony <br />
+            <br />
+            between architecture and the elements
           </p>
         </v-flex>
         <v-flex
@@ -335,12 +339,14 @@ export default {
   text-align: center;
   padding: 10px;
   font-size: 2vh;
+  font-weight: bold;
   color: #11111193;
 }
 .text002 {
   text-align: left;
   padding: 10px;
   font-size: 2vh;
+  font-weight: bold;
   color: #11111193;
 }
 .slider-container {

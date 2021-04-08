@@ -32,7 +32,8 @@
     >
       <v-img eager contain src="../assets/hanthana/2.jpeg"></v-img>
       <p class="text002">
-        Prelude - A journey forthcoming
+        Prelude <br /><br />
+        A journey forthcoming
       </p>
     </div>
     <div v-else class="text-center">
@@ -45,8 +46,8 @@
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <p class="text002">
-            Prelude - A journey forthcoming
+          <p class="text002 text-end">
+            Prelude <br /><br />A journey forthcoming
           </p>
         </v-flex>
         <v-flex
@@ -130,7 +131,8 @@
     >
       <v-img eager contain src="../assets/hanthana/5.png"></v-img>
       <p class="text002">
-        Peaceful Interdependence - A contemplative mountain setting
+        Peaceful Interdependence <br /><br />
+        A contemplative mountain setting
       </p>
     </div>
     <div v-else class="text-center">
@@ -144,7 +146,8 @@
           data-aos-duration="1500"
         >
           <p class="text002">
-            Peaceful Interdependence - A contemplative mountain setting
+            Peaceful Interdependence <br /><br />
+            A contemplative mountain setting
           </p>
         </v-flex>
         <v-flex
@@ -286,11 +289,11 @@
         height="85vh"
         src="../assets/hanthana/slide2.jpeg"
       ></v-img>
-      <!-- <p class="text001" style="padding-inline:15vw">
+      <p class="text001" style="padding-inline:15vw">
         Bandu Manamperi's take on the surrounding vista of mountains from
         Hanthana itself, creating a contemporary stage for his work within the
         context of a dramatic lounge to wind down after a journey
-      </p> -->
+      </p>
     </div>
     <div style="width:99vw;height:32vh;padding:10px"></div>
 
@@ -327,7 +330,7 @@
             data-aos-delay="300"
             data-aos-duration="1500"
           >
-            Spare. Sumptuous. Seductive <br />
+            Spare. Sumptuous. Seductive <br /> <br />
             A deep minimalism through a light-hearted setting
           </p>
         </v-flex>
@@ -368,7 +371,7 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Timeless Materiality. Gentle contemporary with textured warmth
+              Timeless Materiality. Gentle contemporary with textured <br/>warmth
             </p>
           </div>
         </div>
@@ -548,6 +551,7 @@ export default {
 .text001 {
   text-align: center;
   padding: 10px;
+  font-weight: bold;
   font-size: 2vh;
   color: #11111193;
 }
@@ -555,6 +559,7 @@ export default {
   text-align: left;
   padding: 10px;
   font-size: 2vh;
+  font-weight: bold;
   color: #11111193;
 }
 .slider-container {
