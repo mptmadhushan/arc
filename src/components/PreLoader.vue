@@ -9,6 +9,7 @@
                 <p>
                   <v-card flat color="transparent" class="d-flex flex-row">
                     <v-img
+                      eager
                       contain
                       height="30%"
                       width="20vw"

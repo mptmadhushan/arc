@@ -175,15 +175,27 @@
           >
             <slide :index="0">
               <figure>
-                <v-img eager src="../assets/Chitra_Lane/_SDS3699-HDR.JPG.jpg" />
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Chitra_Lane/_SDS3699-HDR.JPG.jpg"
+                />
               </figure> </slide
             ><slide :index="1">
               <figure>
-                <v-img eager src="../assets/Chitra_Lane/_SDS3725-HDR.JPG.jpg" />
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Chitra_Lane/_SDS3725-HDR.JPG.jpg"
+                />
               </figure> </slide
             ><slide :index="2">
               <figure>
-                <v-img eager src="../assets/Chitra_Lane/_SDS3741-HDR.JPG.jpg" />
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Chitra_Lane/_SDS3741-HDR.JPG.jpg"
+                />
               </figure>
             </slide>
           </carousel-3d>

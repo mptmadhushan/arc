@@ -9,12 +9,16 @@ import Carousel3d from "vue-carousel-3d";
 import VueSlickCarousel from "vue-slick-carousel";
 import VueAnime from "vue-animejs";
 Vue.use(VueAnime);
-import VueSmoothScroll from "vue2-smooth-scroll";
-Vue.use(VueSmoothScroll);
+
 Vue.component("ShapesPop", require("./components/ShapesPop.vue").default);
 import VScrollToTop from "v-scroll-to-top";
 import VScrollLock from "v-scroll-lock";
+import VueSmoothScroll from "vue2-smooth-scroll";
 
+Vue.use(VueSmoothScroll, {
+  duration: 1000,
+  updateHistory: false,
+});
 Vue.use(VScrollLock);
 Vue.use(VScrollToTop);
 Vue.mixin({

@@ -302,7 +302,7 @@
 </template>
 
 <script>
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from "./Slider1";
 export default {
   components: {
@@ -312,11 +312,11 @@ export default {
     open: true,
   }),
   mounted() {
-    (this.scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      // smooth: true,
-      // getSpeed: true,
-    })),
+    // (this.scroll = new LocomotiveScroll({
+    //   el: document.querySelector("[data-scroll-container]"),
+    //   // smooth: true,
+    //   // getSpeed: true,
+    // })),
       this.scroll.on("scroll", (args) => {
         // Get all current elements : args.currentElements
         if (typeof args.currentElements["hey"] === "object") {

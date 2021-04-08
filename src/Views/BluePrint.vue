@@ -1,5 +1,5 @@
 <template>
-  <div v-smooth-scroll="{ duration: 1000, offset: -50 }">
+  <div data-scroll-container>
     <audio
       allow="autoplay;fullscreen"
       id="my_audio"
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+// import LocomotiveScroll from "locomotive-scroll";
+
 import Blue from "./NewBlue";
 // import HorizontalScroll from "vue-horizontal-scroll";
 import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
@@ -140,6 +142,11 @@ export default {
     },
   },
   mounted() {
+    // (this.scroll = new LocomotiveScroll({
+    //   el: document.querySelector("[data-scroll-container]"),
+    //   smooth: true,
+    //   // getSpeed: true,
+    // })),
     localStorage.setItem("isloaded", false);
     console.log(this.$refs);
     this.$nextTick(function() {
