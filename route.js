@@ -12,7 +12,7 @@ import Maniumpathy from "./src/Views/Maniumpathy.vue";
 import PreLoader from "./src/components/PreLoader.vue";
 import Hanthana from "./src/Views/Hanthana.vue";
 import BluePrint from "./src/Views/BluePrint.vue";
-import test from "./src/Views/Slider1.vue";
+import test from "./src/Views/testVue.vue";
 
 export default [
   {

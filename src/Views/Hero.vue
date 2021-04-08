@@ -181,7 +181,7 @@ export default {
       this.methodNnew;
       setTimeout(function() {
         document.documentElement.style.overflow = "auto";
-      }, 3000);
+      }, 1500);
 
       // console.log("🐼🐼🐼🐼🐼🐼🐼");
       this.isloaded = false;

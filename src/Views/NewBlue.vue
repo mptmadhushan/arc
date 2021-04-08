@@ -11,101 +11,180 @@
         </div>
       </router-link>
       <div>
-        <div class="d-flex flex-row mb-6">
-          <div
-            data-aos="zoom-up"
-            data-aos-delay="600"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
-          >
-            <p style="font-size:10vw;color:grey;">
-              D
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="700"
-            data-aos-easing="ease-in-out"
-          >
-            <p style="font-size:10vw;color:grey;">
-              E
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="800"
-            data-aos-easing="ease-in-out"
-          >
-            <p style="font-size:10vw;color:grey;">
-              S
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="900"
-            data-aos-easing="ease-in-out"
-          >
-            <p style="font-size:10vw;color:grey;">
-              I
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="1100"
-            data-aos-easing="ease-in-out"
-          >
-            <p style="font-size:10vw;color:grey;">
-              G
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="1200"
-            data-aos-easing="ease-in-out"
-          >
-            <p style="font-size:10vw;color:grey;">
-              N
-            </p>
-          </div>
-        </div>
+        <div class="body">
+          <!-- <div class="text-container">
+            <span class="letter">D</span><span class="letter">E</span
+            ><span class="letter">S</span><span class="letter">I</span
+            ><span class="letter">G</span><span class="letter">N</span>
 
-        <div>
-          <v-layout row wrap justify-center>
-            <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
-              <div
-                class="b1con"
-                data-aos="zoom-in-left"
-                data-aos-duration="1500"
-              >
-                <div class="b1"></div>
-              </div>
-            </v-flex>
-            <v-flex md5 align-self-start>
-              <p
-                class="text001"
-                data-aos="fade-left"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              >
-                Enim incididunt id tempor minim incididunt consectetur ut ad
-                laboris velit Enim incididunt id tempor minim incididunt
-                consectetur ut ad laboris velit
+            <span class="reg-text">D</span><span class="reg-text">E</span
+            ><span class="letter">S</span><span class="reg-text">I</span
+            ><span class="reg-text">G</span><span class="reg-text">N</span>
+          </div> -->
+          <div class="d-flex flex-row reg-text">
+            <div
+              data-aos="zoom-up"
+              data-aos-delay="600"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                D
               </p>
-            </v-flex>
-          </v-layout>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="700"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                E
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="800"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                S
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="900"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                I
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1100"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                G
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1200"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                N
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row" style="margin-top:-20vh">
+            <div
+              data-aos="zoom-up"
+              data-aos-delay="1600"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                D
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1700"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                E
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1800"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                S
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1900"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                I
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="2100"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                G
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="2200"
+              data-aos-easing="ease-in-out"
+            >
+              <p style="font-size:10vw;color:grey;">
+                N
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <v-layout row wrap justify-center>
+              <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
+                <div
+                  class="b1con"
+                  data-aos="zoom-in-left"
+                  data-aos-duration="1500"
+                >
+                  <div class="b1"></div>
+                </div>
+              </v-flex>
+              <v-flex md5 align-self-start>
+                <p
+                  class="text001"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="1500"
+                >
+                  "Enim incididunt id tempor minim incididunt consectetur ut ad
+                  laboris velit Enim incididunt id tempor minim incididunt
+                  consectetur ut ad laboris velit"
+                </p>
+                <div
+                  class="textMini"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="1500"
+                >
+                  -Le Corbased
+                </div>
+              </v-flex>
+            </v-layout>
+          </div>
         </div>
       </div>
-      <div style="width:99vw;height:20vh"></div>
+      <div style="width:99vw;height:40vh"></div>
       <div class="fadeClass">
         <div class="fadeClassHover">
-          <p class="text001">
-            Cupidatat laborum magna Lorem eiusmod aute nisi qui laborum.
-          </p>
           <v-layout row wrap justify-center>
             <v-flex md6 xs12 sm12 align-self-end>
               <div class="align-end" style="text-align:end">
@@ -128,26 +207,32 @@
                 />
               </div>
             </v-flex>
+            <p class="text001">
+              "Cupidatat laborum magna Lorem eiusmod aute nisi qui laborum.
+              magna Lorem eiusmod aute nisi"<span class="textMini">
+                -Le Corbased
+              </span>
+            </p>
           </v-layout>
         </div>
       </div>
       <div style="width:99vw;height:20vh"></div>
       <div v-if="isMobile()" style="margin-top: 10vh;padding:2vh">
         <v-img eager contain src="../assets/blueprint/1.png"></v-img>
-        <p class="text002">
+        <!-- <p class="text002">
           Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
           adipisicing culpa magna culpa.
-        </p>
+        </p> -->
       </div>
 
       <div v-else class="blueBack">
-        <p class="text001">
+        <!-- <p class="text001">
           Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
           adipisicing culpa magna culpa.
-        </p>
+        </p> -->
         <v-layout row wrap justify-start>
           <v-flex md8 xs12 sm12 align-self-start ml-12>
-            <v-img eager height="90vh" src="../assets/blueprint/1.png">
+            <v-img eager height="100vh" src="../assets/blueprint/1.png">
               <div class="ab1"></div>
             </v-img>
           </v-flex>
@@ -195,8 +280,18 @@
         <div style="width:99vw;height:20vh"></div>
         <div>
           <v-layout row wrap justify-start pl-12>
-            <v-flex md8 xs10 sm10 align-self-start>
-              <div class="align-start" style="text-align:start;height: 80vh">
+            <v-flex md12 xs10 sm10 align-self-start>
+              <div class="hover03 column">
+                <div>
+                  <figure>
+                    <img
+                      height="100%"
+                      src="../assets/blueprint/Space/ludwig-mies-van-der-rohe-maciej-jezyk-barcelona-pavilion.jpg"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <!-- <div class="align-start" style="text-align:start;height: 80vh">
                 <img
                   align-content-end
                   contain
@@ -204,7 +299,7 @@
                   height="100%"
                   src="../assets/blueprint/Space/ludwig-mies-van-der-rohe-maciej-jezyk-barcelona-pavilion.jpg"
                 />
-              </div>
+              </div> -->
             </v-flex>
             <v-flex md12 align-self-start>
               <p class="text003" style="width:40vw;margin-top:5vh;padding:1vw">
@@ -312,24 +407,31 @@ export default {
     open: true,
   }),
   mounted() {
+    // document.on("ready", function() {
+    //   setTimeout(function() {
+    //     ".letter".addClass("loaded");
+    //     ".reg-text".addClass("loaded");
+    //   }, 1000);
+    // });
+
     // (this.scroll = new LocomotiveScroll({
     //   el: document.querySelector("[data-scroll-container]"),
     //   // smooth: true,
     //   // getSpeed: true,
     // })),
-      this.scroll.on("scroll", (args) => {
-        // Get all current elements : args.currentElements
-        if (typeof args.currentElements["hey"] === "object") {
-          // let progress = args.currentElements["hey"].progress;
-          // console.log(progress);
-          console.log("hello-focused");
-          //   this.test();
-          document.documentElement.style.overflow = "hidden";
+    this.scroll.on("scroll", (args) => {
+      // Get all current elements : args.currentElements
+      if (typeof args.currentElements["hey"] === "object") {
+        // let progress = args.currentElements["hey"].progress;
+        // console.log(progress);
+        console.log("hello-focused");
+        //   this.test();
+        document.documentElement.style.overflow = "hidden";
 
-          // ouput log example: 0.34
-          // gsap example : myGsapAnimation.progress(progress);
-        }
-      });
+        // ouput log example: 0.34
+        // gsap example : myGsapAnimation.progress(progress);
+      }
+    });
   },
   methods: {
     heyl() {
@@ -350,6 +452,106 @@ export default {
 </script>
 
 <style scoped>
+figure {
+  width: 1000px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+.hover03 figure img {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.hover03 figure:hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.textMini {
+  text-align: right;
+  font-size: 1.5vh;
+  padding-right: 10%;
+  margin-top: -5%;
+  font-weight: bold;
+  color: grey;
+}
+.body {
+  /* height: 50vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0; */
+  /* background-color: black;S */
+}
+
+.text-container {
+  width: 100%;
+  position: absolute;
+  padding: 5vh;
+  font-weight: bold;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: grey;
+  letter-spacing: 4px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10vw;
+  margin-bottom: 10vh;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+}
+
+.reg-text {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0;
+}
+.body:hover .reg-text {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 3.3333333333s ease-out, opacity 5s ease;
+}
+.body:hover .letter {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.letter {
+  transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
+    opacity 5s ease;
+  opacity: 0;
+  filter: blur(5px);
+}
+.letter:nth-of-type(2) {
+  transform: translateY(-160px);
+  transition-duration: 2.5s;
+}
+.letter:nth-of-type(3) {
+  filter: blur(0);
+  transform: translateY(-170px);
+  transition-duration: 3.8461538462s;
+}
+.letter:nth-of-type(4) {
+  transform: translateY(-200px);
+  transition-duration: 3.3333333333s;
+}
+.letter:nth-of-type(5) {
+  transform: translateY(-150px);
+  transition-duration: 2.5s;
+}
+.letter:nth-of-type(6) {
+  filter: blur(0);
+  transform: translateY(-180px);
+  transition-duration: 2.1739130435s;
+}
+/* new 🇵🇬 */
+
 .parallax {
   /* The image used */
   background-image: url("../assets/blueprint/_SDS1585-3.jpg");
@@ -736,9 +938,9 @@ p {
 }
 .text001 {
   text-align: center;
-  padding: 5vh;
-  font-size: 2vh;
-  color: #11111193;
+  font-size: 3vh;
+  font-weight: bold;
+  color: #000000;
 }
 .text003 {
   text-align: left;

@@ -163,6 +163,18 @@ html {
   width: 0%;
   background: #282729;
 }
+.b1sli:hover {
+  transform: scale(1.1);
+  transition: all 3s ease;
+}
+.b2sli:hover {
+  transform: scale(1.1);
+  transition: all 3s ease;
+}
+.b3sli:hover {
+  transform: scale(1.1);
+  transition: all 3s ease;
+}
 .b1sli {
   /* background-color: blueviolet; */
   background-image: url("../assets/blueprint/3.png");
