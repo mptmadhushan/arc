@@ -1,5 +1,5 @@
 <template>
-  <div class="fadeClass">
+  <div class="fadeClass" style="margin-top:25vh">
     <v-layout
       row
       wrap

@@ -1,187 +1,120 @@
 <template>
-  <div>
-    <div data-scroll-container>
-      <router-link to="/">
-        <div
-          style="position:relative;
-   z-index:1000"
-        >
-          <img
-            style="opacity: 0.5;margin-inline:20px;margin-top:2vh"
-            height="20vh"
-            src="../assets/backArrow.png"
-          />
+  <div style="margin-top:50vh">
+    <div>
+      <div class="body">
+        <div class="text-container">
+          <span class="letter">D</span><span class="letter">E</span
+          ><span class="letter">S</span><span class="letter">I</span
+          ><span class="letter">G</span><span class="letter">N</span>
         </div>
-      </router-link>
-      <div>
-        <div class="body">
-          <div class="text-container">
-            <span class="letter">D</span><span class="letter">E</span
-            ><span class="letter">S</span><span class="letter">I</span
-            ><span class="letter">G</span><span class="letter">N</span>
-          </div>
-          <div class="text-container" style="margin-top:25vh">
-            <span class="letter">D</span><span class="letter">E</span
-            ><span class="letter">S</span><span class="letter">I</span
-            ><span class="letter">G</span><span class="letter">N</span>
-          </div>
-          <div style="margin-top:25vh">
-            <v-layout row wrap justify-center>
-              <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
-                <div
-                  style="position:relative;z-index:1000"
-                  class="b1con"
-                  data-aos="zoom-in-left"
-                  data-aos-duration="1500"
-                >
-                  <div class="b1"></div>
-                </div>
-              </v-flex>
-              <v-flex md5 align-self-start>
-                <p
-                  class="text001"
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="1500"
-                >
-                  "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
-                  FORMS ASSEMBLED IN THE LIGHT"
-                </p>
-                <div
-                  class="textMini"
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="1500"
-                >
-                  -Le Corbusier
-                </div>
-              </v-flex>
-            </v-layout>
-          </div>
+        <div class="text-container" style="margin-top:25vh">
+          <span class="letter">D</span><span class="letter">E</span
+          ><span class="letter">S</span><span class="letter">I</span
+          ><span class="letter">G</span><span class="letter">N</span>
         </div>
-      </div>
-      <div style="width:99vw;height:40vh"></div>
-      <div class="fadeClass">
-        <div class="fadeClassHover">
+        <div style="margin-top:25vh">
           <v-layout row wrap justify-center>
-            <v-flex md4 xs12 sm12 align-self-end>
-              <div>
-                <v-img
-                  eager
-                  contain
-                  style="margin-top:20vh;margin-right:1vw;height:75vh"
-                  src="../assets/blueprint/_SDS3006.png"
-                />
+            <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
+              <div
+                style="position:relative;z-index:1000"
+                class="b1con"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <div class="b1"></div>
               </div>
             </v-flex>
-            <v-flex md5 xs12 sm12 align-self-end>
-              <div>
-                <v-img
-                  eager
-                  contain
-                  style="margin-left:1vw;;height:95vh"
-                  height="80%"
-                  src="../assets/blueprint/_SDS2960.png"
-                />
+            <v-flex md5 align-self-start>
+              <p
+                class="text001"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+              >
+                "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
+                FORMS ASSEMBLED IN THE LIGHT"
+              </p>
+              <div
+                class="textMini"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+              >
+                -Le Corbusier
               </div>
             </v-flex>
-            <p class="text001" style="margin-top:5vh">
-              "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELFE PRESSION WITH THE
-              CREATIVE ACT"<span class="textMini">
-                -Charles Eamaes
-              </span>
-            </p>
           </v-layout>
         </div>
       </div>
-      <div style="width:99vw;height:20vh"></div>
-      <div v-if="isMobile()" style="margin-top: 10vh;padding:2vh">
-        <v-img eager contain src="../assets/blueprint/1.png"></v-img>
-        <!-- <p class="text002">
-          Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
-          adipisicing culpa magna culpa.
-        </p> -->
-      </div>
-
-      <div v-else class="blueBack">
-        <!-- <p class="text001">
-          Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
-          adipisicing culpa magna culpa.
-        </p> -->
-        <v-layout row wrap justify-start>
-          <v-flex md8 xs12 sm12 align-self-start ml-12>
-            <v-img eager height="100vh" src="../assets/blueprint/1.png">
-              <div class="ab1"></div>
-            </v-img>
+    </div>
+    <div>
+      <div class="parallax"></div>
+    </div>
+    <div v-if="isMobile()" style="height:100vh;margin-top:20vh">
+      <v-layout row wrap justify-center>
+        <v-flex md6 xs12 sm12 align-self-end>
+          <div
+            class="align-end"
+            style="text-align:end;height: 100vh;margin-left:20vw"
+          >
+            <img
+              align-content-end
+              contain
+              style="margin-right:1vw"
+              height="90%"
+              src="../assets/blueprint/_SDS3614.png"
+            />
+          </div>
+        </v-flex>
+        <v-flex md6 xs12 sm12 align-self-end>
+          <div class="align-center" style="text-align:center;height: 100vh;">
+            <img
+              align-content-start
+              contain
+              style="margin-top:15vh;margin-left:-1vw"
+              height="60%"
+              src="../assets/blueprint/_SDS3199b.png"
+            />
+          </div>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-else style="height:100vh;margin-top:10vh" class="fadeClass">
+      <div class="fadeClassHover">
+        <v-layout row wrap>
+          <v-flex md6 xs12 sm12>
+            <div
+              class="align-end"
+              style="text-align:end;height: 100vh;margin-left:20vw"
+            >
+              <img
+                align-content-end
+                contain
+                style="margin-right:1vw"
+                height="90%"
+                src="../assets/blueprint/_SDS3614.png"
+              />
+            </div>
+          </v-flex>
+          <v-flex md6 xs12 sm12 align-self-end>
+            <div class="align-center" style="text-align:center;height: 100vh;">
+              <img
+                align-content-start
+                contain
+                style="margin-top:15vh;margin-left:-1vw"
+                height="60%"
+                src="../assets/blueprint/_SDS3199b.png"
+              />
+            </div>
           </v-flex>
         </v-layout>
-      </div>
-      <div style="width:99vw;height:20vh"></div>
-      <div v-on:mouseover="mouseOver" ref="slider1">
-        <Slider1 />
-      </div>
-      <div>
-        <BeautyBlue />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import LocomotiveScroll from "locomotive-scroll";
-import Slider1 from "./Slider1";
-import BeautyBlue from "./BeautyBlue";
-export default {
-  components: {
-    Slider1,
-    BeautyBlue,
-  },
-  data: () => ({
-    open: true,
-  }),
-  mounted() {
-    // document.on("ready", function() {
-    //   setTimeout(function() {
-    //     ".letter".addClass("loaded");
-    //     ".reg-text".addClass("loaded");
-    //   }, 1000);
-    // });
-
-    (this.scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      // smooth: true,
-      // getSpeed: true,
-    })),
-      this.scroll.on("scroll", (args) => {
-        // Get all current elements : args.currentElements
-        if (typeof args.currentElements["hey"] === "object") {
-          // let progress = args.currentElements["hey"].progress;
-          // console.log(progress);
-          console.log("hello-focused");
-          //   this.test();
-          document.documentElement.style.overflow = "hidden";
-
-          // ouput log example: 0.34
-          // gsap example : myGsapAnimation.progress(progress);
-        }
-      });
-  },
-  methods: {
-    heyl() {
-      console.log("helasd 😷helasd");
-    },
-    mouseOver: function() {
-      console.log("flag ");
-      this.$smoothScroll({
-        scrollTo: this.$refs.slider1,
-        duration: 500,
-        // scrollIntoView({ behavior: "smooth" });
-
-        // offset: -50,
-      });
-    },
-  },
-};
+export default {};
 </script>
 
 <style scoped>
@@ -217,8 +150,8 @@ figure {
   /* height: 50vh;
   width: 100vw;
   padding: 0;
-  margin: 0; */
-  /* background-color: black;S */
+  margin: 0;
+  background-color: black; */
 }
 
 .text-container {

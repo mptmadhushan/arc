@@ -330,7 +330,8 @@
             data-aos-delay="300"
             data-aos-duration="1500"
           >
-            Spare. Sumptuous. Seductive <br /> <br />
+            Spare. Sumptuous. Seductive <br />
+            <br />
             A deep minimalism through a light-hearted setting
           </p>
         </v-flex>
@@ -369,11 +370,6 @@
               </figure>
             </slide>
           </carousel-3d>
-          <div style="margin-inline: 20%">
-            <p class="text001">
-              Timeless Materiality. Gentle contemporary with textured <br/>warmth
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -394,6 +390,9 @@
         contain
         src="../assets/hanthana/slide6.jpg"
       ></v-img>
+      <p class="text001">
+        Timeless Materiality. Gentle contemporary with textured <br />warmth
+      </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
 

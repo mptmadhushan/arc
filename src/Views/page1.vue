@@ -7,12 +7,12 @@
             row
             wrap
             justify-center
-            style="margin-top:2%;margin-bottom:2%;"
+            style="margin-top:20vh;margin-bottom:2%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p
                 class="about_us"
-                style="margin-top:40vh;margin-right:-2vw;text-align:right"
+                style="margin-top:20vh;margin-right:-2vw;text-align:right"
               >
                 ABOUT US
               </p></v-flex
@@ -184,7 +184,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   height: 45vh;
-  transition-delay: 4s;
+  transition-delay: 10s;
 }
 .ab1 {
   background-color: #fff;
@@ -192,7 +192,7 @@ export default {
   transform-origin: top;
   height: 100%;
   width: 100%;
-  transition-delay: 4s;
+  transition-delay: 10s;
 }
 .about_us_bg:hover .ab1 {
   background-color: #fff;

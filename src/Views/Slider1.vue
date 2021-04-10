@@ -172,7 +172,7 @@ html {
   transition: all 3s ease;
 }
 .b3sli:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
   transition: all 3s ease;
 }
 .b1sli {
