@@ -120,9 +120,6 @@
       <div v-on:mouseover="mouseOver" ref="slider1">
         <Slider1 />
       </div>
-      <div>
-        <BeautyBlue />
-      </div>
     </div>
   </div>
 </template>
@@ -130,11 +127,9 @@
 <script>
 import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from "./Slider1";
-import BeautyBlue from "./BeautyBlue";
 export default {
   components: {
     Slider1,
-    BeautyBlue,
   },
   data: () => ({
     open: true,

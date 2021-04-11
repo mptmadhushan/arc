@@ -54,7 +54,7 @@ export default {
 <style scoped>
 .fadeClassHover {
   opacity: 0;
-  transition: all 3s ease-in;
+  transition: all cubic-bezier(0.23, 1, 0.32, 1) ease-in;
 }
 .fadeClass:hover .fadeClassHover {
   opacity: 1;

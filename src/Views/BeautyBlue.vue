@@ -1,20 +1,16 @@
 <template>
-  <div style="margin-top:50vh">
+  <div style="margin-top: 10vh">
     <div>
       <div class="body">
         <div class="text-container">
-          <span class="letter">D</span><span class="letter">E</span
-          ><span class="letter">S</span><span class="letter">I</span
-          ><span class="letter">G</span><span class="letter">N</span>
+          <span class="letter">B</span><span class="letter">E</span
+          ><span class="letter">A</span><span class="letter">U</span
+          ><span class="letter">T</span><span class="letter">Y</span>
         </div>
-        <div class="text-container" style="margin-top:25vh">
-          <span class="letter">D</span><span class="letter">E</span
-          ><span class="letter">S</span><span class="letter">I</span
-          ><span class="letter">G</span><span class="letter">N</span>
-        </div>
+
         <div style="margin-top:25vh">
           <v-layout row wrap justify-center>
-            <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
+            <v-flex md12 xs12 sm12 align-self-start style="height:100vh">
               <div
                 style="position:relative;z-index:1000"
                 class="b1con"
@@ -22,94 +18,40 @@
                 data-aos-duration="1500"
               >
                 <div class="b1"></div>
-              </div>
-            </v-flex>
-            <v-flex md5 align-self-start>
-              <p
-                class="text001"
-                data-aos="fade-left"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              >
-                "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
-                FORMS ASSEMBLED IN THE LIGHT"
-              </p>
-              <div
-                class="textMini"
-                data-aos="fade-left"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              >
-                -Le Corbusier
+                <div
+                  style="margin-left:29vw;padding:1vh
+                text-align: left;
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: grey;"
+                >
+                  <p>Pablo Picasso,<br />cannes,france<br />1956</p>
+                </div>
+                <div>
+                  <p class="text005" style="margin-left:50%;width:50vw">
+                    "ENJOYING ART IS A PERSONAL MATTER. IT'S A MADE UP BY
+                    CONTEMPLATION,SILENCE,<br />ABSTRACTION"
+                  </p>
+                  <div
+                    style="margin-left:93vw;padding:1vh
+                text-align: left;
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: grey;"
+                  >
+                    <p>-Renzo Piano</p>
+                  </div>
+                </div>
               </div>
             </v-flex>
           </v-layout>
         </div>
       </div>
     </div>
-    <div>
+
+    <!-- <div style="margin-top:10vh">
       <div class="parallax"></div>
-    </div>
-    <div v-if="isMobile()" style="height:100vh;margin-top:20vh">
-      <v-layout row wrap justify-center>
-        <v-flex md6 xs12 sm12 align-self-end>
-          <div
-            class="align-end"
-            style="text-align:end;height: 100vh;margin-left:20vw"
-          >
-            <img
-              align-content-end
-              contain
-              style="margin-right:1vw"
-              height="90%"
-              src="../assets/blueprint/_SDS3614.png"
-            />
-          </div>
-        </v-flex>
-        <v-flex md6 xs12 sm12 align-self-end>
-          <div class="align-center" style="text-align:center;height: 100vh;">
-            <img
-              align-content-start
-              contain
-              style="margin-top:15vh;margin-left:-1vw"
-              height="60%"
-              src="../assets/blueprint/_SDS3199b.png"
-            />
-          </div>
-        </v-flex>
-      </v-layout>
-    </div>
-    <div v-else style="height:100vh;margin-top:10vh" class="fadeClass">
-      <div class="fadeClassHover">
-        <v-layout row wrap>
-          <v-flex md6 xs12 sm12>
-            <div
-              class="align-end"
-              style="text-align:end;height: 100vh;margin-left:20vw"
-            >
-              <img
-                align-content-end
-                contain
-                style="margin-right:1vw"
-                height="90%"
-                src="../assets/blueprint/_SDS3614.png"
-              />
-            </div>
-          </v-flex>
-          <v-flex md6 xs12 sm12 align-self-end>
-            <div class="align-center" style="text-align:center;height: 100vh;">
-              <img
-                align-content-start
-                contain
-                style="margin-top:15vh;margin-left:-1vw"
-                height="60%"
-                src="../assets/blueprint/_SDS3199b.png"
-              />
-            </div>
-          </v-flex>
-        </v-layout>
-      </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -147,25 +89,20 @@ figure {
   color: grey;
 }
 .body {
-  /* height: 50vh;
+  height: 50vh;
   width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: black; */
+  /* background-color: black; */
 }
 
 .text-container {
-  width: 100%;
-  position: absolute;
+  width: 100vw;
   padding: 5vh;
-  /* font-weight: bold;  */
-  top: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 10vh;
   color: grey;
   letter-spacing: 4px;
   font-family: "Oranienbaum", serif;
-  /* font-family: "Josefin Sans", sans-serif; */
   font-size: 10vw;
   margin-bottom: 10vh;
   -webkit-font-smoothing: antialiased;
@@ -317,11 +254,11 @@ html {
 }
 .b1con {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/_SDS3203b.png");
+  background-image: url("../assets/blueprint/imgspace.jpg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -607,6 +544,13 @@ p {
 }
 .text001 {
   text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 2.5vh;
+  font-weight: 900;
+  color: #000000;
+}
+.text005 {
+  text-align: right;
   font-family: "Arimo", sans-serif;
   font-size: 2.5vh;
   font-weight: 900;

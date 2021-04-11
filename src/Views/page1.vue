@@ -202,11 +202,11 @@ export default {
   width: 100%;
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
-  animation: slideInFromLeft 2s ease-in;
+  animation: slideInFromLeft 1.5s ease-in;
 }
 .b2con {
   /* background-color: blueviolet; */
-  background-image: url("../assets/2.png");
+background-image: url("../assets/2.png");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
@@ -235,7 +235,7 @@ export default {
   width: 100%;
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
-  animation: slideInFromLeft 1.5s ease-in;
+  animation: slideInFromLeft 1s ease-in;
 }
 @keyframes slideInFromLeft {
   0% {

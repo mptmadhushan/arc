@@ -5,17 +5,9 @@
       id="my_audio"
       src="../assets/music.mp3"
     ></audio>
-    <!-- <router-link to="/">
-      <div style="margin-top:1vh">
-        <img
-          style=" opacity: 0.5;margin-inline:20px;margin-top:2vh"
-          height="20vh"
-          src="../assets/backArrow.png"
-        />
-      </div>
-    </router-link> -->
 
     <Blue />
+    <BeautyBlue />
   </div>
 </template>
 
@@ -23,6 +15,7 @@
 // import LocomotiveScroll from "locomotive-scroll";
 
 import Blue from "./NewBlue";
+import BeautyBlue from "./BeautyBlue";
 // import HorizontalScroll from "vue-horizontal-scroll";
 import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
 // import VueScrollSnap from "vue-scroll-snap";
@@ -30,6 +23,7 @@ import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
 export default {
   components: {
     Blue,
+    BeautyBlue,
     // VueScrollSnap,
     // HorizontalScroll,
   },
