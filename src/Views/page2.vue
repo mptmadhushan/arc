@@ -58,7 +58,7 @@ export default {
 }
 .fadeClass:hover .fadeClassHover {
   opacity: 1;
-  transition: all 3s ease-in;
+  transition: all 1.5s ease-in;
 }
 .ab1con {
   /* background-color: blueviolet; */
@@ -85,7 +85,7 @@ export default {
   width: 100%;
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
-  animation: slideInFromLeft 2s ease-in;
+  animation: slideInFromLeft 1.5s ease-in;
 }
 .b2con {
   /* background-color: blueviolet; */

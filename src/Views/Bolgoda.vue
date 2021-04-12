@@ -142,7 +142,7 @@
         where that harmony could be understood throughout the home."
         <br />
         <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
-        compation of Tha inside and out.
+        composition of inside - out.
       </p>
     </div>
     <div
@@ -160,7 +160,7 @@
         where that harmony could be understood throughout the home."
         <br /><br />A Bandu Manamperi study of Life on Bolgoda Lake, extending
         the<br />
-        compation of Tha inside and out.
+        composition of inside - out.
       </p>
     </div>
     <div style="width:99vw;height:18vh;padding:10px"></div>

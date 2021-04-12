@@ -81,7 +81,7 @@
             row
             wrap
             justify-center
-            style="margin-top:2%;margin-bottom:2%;"
+            style="margin-top:20vh;margin-bottom:2%;"
           >
             <v-flex md1 sm5 xs5 align-self-start>
               <p
@@ -202,7 +202,7 @@ export default {
   width: 100%;
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
-  animation: slideInFromLeft 1.5s ease-in;
+  animation: slideInFromLeft 1s ease-in;
 }
 .b2con {
   /* background-color: blueviolet; */
@@ -235,7 +235,7 @@ background-image: url("../assets/2.png");
   width: 100%;
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
-  animation: slideInFromLeft 1s ease-in;
+  animation: slideInFromLeft 0.5s ease-in;
 }
 @keyframes slideInFromLeft {
   0% {
