@@ -2,39 +2,43 @@
   <div>
     <div data-scroll-container>
       <router-link to="/">
-        <div
-          style="position:relative;
-   z-index:1000"
-        >
+        <div style="position:relative;z-index:1000">
           <img
-            style="opacity: 0.5;margin-inline:20px;margin-top:2vh"
+            style="opacity:0.5;margin-inline:20px;margin-top:2vh"
             height="20vh"
             src="../assets/backArrow.png"
           />
         </div>
       </router-link>
       <div>
-        <div class="body">
-          <div class="text-container">
-            <span class="letter">D</span><span class="letter">E</span
-            ><span class="letter">S</span><span class="letter">I</span
-            ><span class="letter">G</span><span class="letter">N</span>
+        <div class="body fadeClass">
+          <div class="back-text">
+            <div class="text-container">
+              <span class="letter">D</span><span class="letter">E</span
+              ><span class="letter">S</span><span class="letter">I</span
+              ><span class="letter">G</span><span class="letter">N</span>
+            </div>
           </div>
-          <div class="text-container" style="margin-top:25vh">
-            <span class="letter">D</span><span class="letter">E</span
-            ><span class="letter">S</span><span class="letter">I</span
-            ><span class="letter">G</span><span class="letter">N</span>
+          <div class="back-text" style="margin-top:-50vh">
+            <div class="text-container">
+              <span class="letter2">D</span><span class="letter2">E</span
+              ><span class="letter2">S</span><span class="letter2">I</span
+              ><span class="letter2">G</span><span class="letter2">N</span>
+            </div>
           </div>
           <div style="margin-top:25vh">
             <v-layout row wrap justify-center>
               <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
-                <div
-                  style="position:relative;z-index:1000"
-                  class="b1con"
-                  data-aos="zoom-in-left"
-                  data-aos-duration="1500"
-                >
-                  <div class="b1"></div>
+                <div class="bg-items">
+                  <v-img
+                    class="img-to-ef"
+                    eager
+                    contain
+                    height="80vh"
+                    src="../assets/blueprint/_SDS3203b.png"
+                  >
+                    <div class="twelve"></div>
+                  </v-img>
                 </div>
               </v-flex>
               <v-flex md5 align-self-start>
@@ -62,27 +66,32 @@
       </div>
       <div style="width:99vw;height:40vh"></div>
       <div class="fadeClass">
-        <div class="fadeClassHover">
+        <div>
           <v-layout row wrap justify-center>
             <v-flex md4 xs12 sm12 align-self-end>
-              <div>
+              <div class="bg-items">
                 <v-img
+                  class="img-to-ef"
                   eager
                   contain
-                  style="margin-top:20vh;margin-right:1vw;height:75vh"
+                  height="80vh"
                   src="../assets/blueprint/_SDS3006.png"
-                />
+                >
+                  <div class="twelve"></div>
+                </v-img>
               </div>
             </v-flex>
             <v-flex md5 xs12 sm12 align-self-end>
-              <div>
+              <div class="bg-items">
                 <v-img
+                  class="img-to-ef"
                   eager
                   contain
-                  style="margin-left:1vw;;height:95vh"
-                  height="80%"
-                  src="../assets/blueprint/_SDS2960.png"
-                />
+                  height="110vh"
+                  src="../assets/blueprint/_SDS3211.jpeg"
+                >
+                  <div class="twelve"></div>
+                </v-img>
               </div>
             </v-flex>
             <p class="text001" style="margin-top:5vh">
@@ -95,27 +104,17 @@
         </div>
       </div>
       <div style="width:99vw;height:20vh"></div>
-      <div v-if="isMobile()" style="margin-top: 10vh;padding:2vh">
-        <v-img eager contain src="../assets/blueprint/1.png"></v-img>
-        <!-- <p class="text002">
-          Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
-          adipisicing culpa magna culpa.
-        </p> -->
-      </div>
+      <div class="parallax"></div>
+      <p class="textMini text-left" style="margin:5vh">
+        -Charles and Ray Eamaes
+        <br />
 
-      <div v-else class="blueBack">
-        <!-- <p class="text001">
-          Eu id sint aliquip quis aliquip excepteur velit ut laboris esse
-          adipisicing culpa magna culpa.
-        </p> -->
-        <v-layout row wrap justify-start>
-          <v-flex md8 xs12 sm12 align-self-start ml-12>
-            <v-img eager height="100vh" src="../assets/blueprint/1.png">
-              <div class="ab1"></div>
-            </v-img>
-          </v-flex>
-        </v-layout>
-      </div>
+        Londge chair by Herman Miller
+
+        <br />
+
+        1956
+      </p>
       <div style="width:99vw;height:20vh"></div>
       <div v-on:mouseover="mouseOver" ref="slider1">
         <Slider1 />
@@ -182,24 +181,44 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
-figure {
-  width: 1000px;
-  height: 400px;
-  margin: 0;
-  padding: 0;
-  background: #fff;
+.parallax-new {
+  /* The image used */
+  background-image: url("../assets/blueprint/1.png");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.items {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
   overflow: hidden;
+  background-color: #fff;
 }
-.hover03 figure img {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+.items div {
+  position: absolute;
 }
-.hover03 figure:hover img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
+.twelve {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 5s;
 }
+
+.items:hover .twelve {
+  height: 0%;
+  transition: all 3s;
+}
+
 .textMini {
   text-align: right;
   font-size: 1.5vh;
@@ -215,23 +234,22 @@ figure {
   margin: 0; */
   /* background-color: black;S */
 }
-
+.back-text {
+  max-height: 32vh;
+  /* background-color: red; */
+  overflow: hidden;
+}
 .text-container {
+  margin-top: -4vh;
   width: 100%;
-  position: absolute;
-  padding: 5vh;
-  /* font-weight: bold;  */
-  top: 2%;
+  height: 100%;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   color: grey;
-  letter-spacing: 4px;
   font-family: "Oranienbaum", serif;
-  /* font-family: "Josefin Sans", sans-serif; */
-  font-size: 10vw;
-  margin-bottom: 10vh;
+  font-size: 30vh;
   -webkit-font-smoothing: antialiased;
-  text-align: center;
 }
 
 span {
@@ -244,7 +262,7 @@ span {
   transition: opacity 0;
 }
 .body:hover .reg-text {
-  transform: translateY(100px);
+  transform: translateY(-100px);
   opacity: 0;
   transition: transform 3.3333333333s ease-out, opacity 5s ease;
 }
@@ -257,36 +275,75 @@ span {
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
-  /* filter: blur(5px); */
+  filter: blur(5px);
+}
+.letter:nth-of-type(1) {
+  transform: translateY(10vh);
+  transition-duration: 2s;
 }
 .letter:nth-of-type(2) {
-  transform: translateY(-160px);
-  transition-duration: 2.5s;
+  transform: translateY(20vh);
+  transition-duration: 2.4s;
 }
 .letter:nth-of-type(3) {
-  filter: blur(0);
-  transform: translateY(-170px);
-  transition-duration: 3.8461538462s;
+  transform: translateY(30vh);
+  transition-duration: 2.8s;
 }
 .letter:nth-of-type(4) {
-  transform: translateY(-200px);
-  transition-duration: 3.3333333333s;
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
 }
 .letter:nth-of-type(5) {
-  transform: translateY(-150px);
-  transition-duration: 2.5s;
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
 }
 .letter:nth-of-type(6) {
   filter: blur(0);
-  transform: translateY(-180px);
-  transition-duration: 2.1739130435s;
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
+}
+.body:hover .letter2 {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.letter2 {
+  transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
+    opacity 5s ease;
+  opacity: 0;
+  filter: blur(5px);
+}
+.letter2:nth-of-type(1) {
+  transform: translateY(25vh);
+  transition-duration: 2s;
+}
+.letter2:nth-of-type(2) {
+  transform: translateY(30vh);
+  transition-duration: 2.4s;
+}
+.letter2:nth-of-type(3) {
+  transform: translateY(35vh);
+  transition-duration: 2.8s;
+}
+.letter2:nth-of-type(4) {
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
+}
+.letter2:nth-of-type(5) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(6) {
+  filter: blur(0);
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
 }
 /* new 🇵🇬 */
 
 .parallax {
   /* The image used */
-  background-image: url("../assets/blueprint/_SDS1585-3.jpg");
-
+  background-image: url("../assets/blueprint/1.png");
+  margin: 10px;
   /* Set a specific height */
   min-height: 100vh;
 
@@ -296,13 +353,19 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.fadeClassHover {
-  opacity: 0;
-  transition: all 3s ease;
+.bg-items {
+  overflow: hidden;
+  width: 100%;
 }
-.fadeClass:hover .fadeClassHover {
-  opacity: 1;
-  transition: all 3s ease;
+.img-to-ef {
+
+}.fadeClass:hover .img-to-ef {
+  transform: scale(1.1);
+  transition: all 5s ease-in-out;
+}
+.fadeClass:hover .twelve {
+  height: 0%;
+  transition: all 3s;
 }
 .fixed_wrapper {
   position: relative;
@@ -568,12 +631,6 @@ h2 span:last-child {
   height: 40px;
   top: 50%;
   margin-top: -20px;
-}
-
-p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
 }
 
 .word {

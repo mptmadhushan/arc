@@ -47,6 +47,16 @@
                   <div class="b1sli">
                     <div class="newBox2"></div>
                   </div>
+                  <p class="textMini text-left" style="margin:5vh">
+                    -Charles and Ray Eamaes
+                    <br />
+
+                    Londge chair by Herman Miller
+
+                    <br />
+
+                    1956
+                  </p>
                 </div>
               </v-col>
               <v-col>
@@ -163,7 +173,7 @@ html {
   width: 0%;
   background: #282729;
 }
-.b1sli:hover {
+/* .b1sli:hover {
   transform: scale(1.1);
   transition: all 3s ease;
 }
@@ -174,13 +184,13 @@ html {
 .b3sli:hover {
   transform: scale(0.9);
   transition: all 3s ease;
-}
+} */
 .b1sli {
   /* background-color: blueviolet; */
   background-image: url("../assets/blueprint/3.png");
   /* background-size: 100% 100%;
   object-fit: fill; */
-  background-position: center;
+  background-position:center;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;

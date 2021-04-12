@@ -1,598 +1,218 @@
 <template>
-  <div>
-    <div class="hover01 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
+  <body>
+    <div class="container">
+      <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+        <div>
+          <h1 data-scroll data-scroll-speed="1">
+            <span>Horizontal</span> <span>scroll</span> <span>section</span>
+          </h1>
+          <p data-scroll data-scroll-speed="2" data-scroll-delay="0.2">
+            with GSAP ScrollTrigger & Locomotive Scroll
+          </p>
+        </div>
+      </section>
 
-    <h2 id="demo02">2. Zoom In #2</h2>
-    <div class="hover02 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
+      <section id="sectionPin">
+        <div class="pin-wrap">
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h2>
+          <img
+            src="https://images.pexels.com/photos/5207262/pexels-photo-5207262.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/3371358/pexels-photo-3371358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/3618545/pexels-photo-3618545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+            alt=""
+          />
+        </div>
+      </section>
+      <section data-bgcolor="#e3857a" data-textcolor="#f1dba7">
+        <img
+          src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt=""
+        />
+        <h2 data-scroll data-scroll-speed="1" class="credit">
+          <a href="https://thisisadvantage.com" target="_blank"
+            >Made by Advantage</a
+          >
+        </h2>
+      </section>
     </div>
-
-    <h2 id="demo03">3. Zoom Out #1</h2>
-    <div class="hover03 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo04">4. Zoom Out #2</h2>
-    <div class="hover04 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo05">5. Slide</h2>
-    <div class="hover05 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo06">6. Rotate<span>(+Zoom Out)</span></h2>
-    <div class="hover06 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo07">7. Blur</h2>
-    <div class="hover07 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo08">8. Gray Scale</h2>
-    <div class="hover08 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo09">9. Sepia</h2>
-    <div class="hover09 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo10">10. Blur + Gray Scale</h2>
-    <div class="hover10 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo11">11. Opacity #1</h2>
-    <div class="hover11 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo12">12. Opacity #2</h2>
-    <div class="hover12 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo13">13. Flashing</h2>
-    <div class="hover13 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo14">14. Shine</h2>
-    <div class="hover14 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-
-    <h2 id="demo15">15. Circle</h2>
-    <div class="hover15 column">
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-        <span>Hover</span>
-      </div>
-      <div>
-        <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-        <span>Hover</span>
-      </div>
-    </div>
-  </div>
+  </body>
 </template>
 
 <script>
+import LocomotiveScroll from "locomotive-scroll";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
-    // setTimeout(function() {
-    //   const a = document.createElement("div");
-    //   a.classList.add("letter");
-    //   document.body.appendChild(a);
-    //   a.classList.add("loaded");
-    // }, 1000);
+    gsap.registerPlugin(ScrollTrigger);
 
-    // document.on("ready", function() {
-    setTimeout(function() {
-      ".letter".addClass("loaded");
-      ".reg-text".addClass("loaded");
-    }, 1000);
-    // });
+    const pageContainer = document.querySelector(".container");
+
+    /* SMOOTH SCROLL */
+    const scroller = new LocomotiveScroll({
+      el: pageContainer,
+      smooth: true,
+    });
+
+    scroller.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy(pageContainer, {
+      scrollTop(value) {
+        return arguments.length
+          ? scroller.scrollTo(value, 0, 0)
+          : scroller.scroll.instance.scroll.y;
+      },
+      getBoundingClientRect() {
+        return {
+          left: 0,
+          top: 0,
+          width: window.innerWidth,
+          height: window.innerHeight,
+        };
+      },
+      pinType: pageContainer.style.transform ? "transform" : "fixed",
+    });
+
+    ////////////////////////////////////
+    ////////////////////////////////////
+    window.addEventListener("load", function() {
+      let pinBoxes = document.querySelectorAll(".pin-wrap > *");
+      let pinWrap = document.querySelector(".pin-wrap");
+      let pinWrapWidth = pinWrap.offsetWidth;
+      let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+      console.log(pinBoxes);
+      // Pinning and horizontal scrolling
+
+      gsap.to(".pin-wrap", {
+        scrollTrigger: {
+          scroller: pageContainer, //locomotive-scroll
+          scrub: true,
+          trigger: "#sectionPin",
+          pin: true,
+          // anticipatePin: 1,
+          start: "top top",
+          end: pinWrapWidth,
+        },
+        x: -horizontalScrollLength,
+        ease: "none",
+      });
+
+      ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
+
+      ScrollTrigger.refresh();
+    });
   },
 };
 </script>
 
 <style scoped>
+* {
+  --text-color: #111;
+  --bg-color: #b9b3a9;
+}
+
 body {
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
 }
-h1,
-h1 + p {
-  margin: 30px 15px 0;
-  font-weight: 300;
+
+section:not(#sectionPin) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
 }
-h1 + p a {
-  color: #333;
+
+img {
+  height: 80vh;
+  width: auto;
+  object-fit: cover;
 }
-h1 + p a:hover {
-  text-decoration: none;
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 4;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
+h1 span {
+  display: block;
+}
+
 h2 {
-  margin: 60px 15px 0;
-  padding: 0;
-  font-weight: 300;
+  font-size: 2rem;
+  max-width: 400px;
 }
-h2 span {
-  margin-left: 1em;
-  color: #aaa;
-  font-size: 85%;
+
+.credit {
+  font-family: Termina, sans-serif;
 }
-.column {
-  margin: 15px 15px 0;
-  padding: 0;
+.credit a {
+  color: var(--text-color);
 }
-.column:last-child {
-  padding-bottom: 60px;
+
+* {
+  box-sizing: border-box;
 }
-.column::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-.column div {
-  position: relative;
-  float: left;
-  width: 300px;
-  height: 200px;
-  margin: 0 0 0 25px;
-  padding: 0;
-}
-.column div:first-child {
-  margin-left: 0;
-}
-.column div span {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  z-index: -1;
-  display: block;
-  width: 300px;
-  margin: 0;
-  padding: 0;
-  color: #444;
-  font-size: 18px;
-  text-decoration: none;
-  text-align: center;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  opacity: 0;
-}
-figure {
-  width: 100vw;
+
+#sectionPin {
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: #fff;
   overflow: hidden;
-}
-figure:hover + span {
-  bottom: -36px;
-  opacity: 1;
-}
-
-/* Zoom In #1 */
-.hover01 figure img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover01 figure:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  display: flex;
+  left: 0;
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 
-/* Zoom In #2 */
-.hover02 figure img {
-  width: 300px;
-  height: auto;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
 }
-.hover02 figure:hover img {
-  width: 350px;
-}
-
-/* Zoom Out #1 */
-.hover03 figure img {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover03 figure:hover img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
 }
 
-/* Zoom Out #2 */
-.hover04 figure img {
-  width: 400px;
-  height: auto;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover04 figure:hover img {
-  width: 300px;
-}
-
-/* Slide */
-.hover05 figure img {
-  margin-left: 30px;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover05 figure:hover img {
-  margin-left: 0;
-}
-
-/* Rotate */
-.hover06 figure img {
-  -webkit-transform: rotate(15deg) scale(1.4);
-  transform: rotate(15deg) scale(1.4);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover06 figure:hover img {
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1);
-}
-
-/* Blur */
-.hover07 figure img {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover07 figure:hover img {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-}
-
-/* Gray Scale */
-.hover08 figure img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover08 figure:hover img {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-
-/* Sepia */
-.hover09 figure img {
-  -webkit-filter: sepia(100%);
-  filter: sepia(100%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover09 figure:hover img {
-  -webkit-filter: sepia(0);
-  filter: sepia(0);
-}
-
-/* Blur + Gray Scale */
-.hover10 figure img {
-  -webkit-filter: grayscale(0) blur(0);
-  filter: grayscale(0) blur(0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover10 figure:hover img {
-  -webkit-filter: grayscale(100%) blur(3px);
-  filter: grayscale(100%) blur(3px);
-}
-
-/* Opacity #1 */
-.hover11 figure img {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover11 figure:hover img {
-  opacity: 0.5;
-}
-
-/* Opacity #2 */
-.hover12 figure {
-  background: #1abc9c;
-}
-.hover12 figure img {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.hover12 figure:hover img {
-  opacity: 0.5;
-}
-
-/* Flashing */
-.hover13 figure:hover img {
-  opacity: 1;
-  -webkit-animation: flash 1.5s;
-  animation: flash 1.5s;
-}
-@-webkit-keyframes flash {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes flash {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Shine */
-.hover14 figure {
-  position: relative;
-}
-.hover14 figure::before {
+p {
   position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
-}
-.hover14 figure:hover::before {
-  -webkit-animation: shine 0.75s;
-  animation: shine 0.75s;
-}
-@-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
-@keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
-
-/* Circle */
-.hover15 figure {
-  position: relative;
-}
-.hover15 figure::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  display: block;
-  content: "";
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-.hover15 figure:hover::before {
-  -webkit-animation: circle 0.75s;
-  animation: circle 0.75s;
-}
-@-webkit-keyframes circle {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
-}
-@keyframes circle {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+  line-height: 1.5;
 }
 </style>
