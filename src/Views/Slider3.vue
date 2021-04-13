@@ -1,168 +1,129 @@
 <template>
-  <div data-scroll-container>
-    <audio
-      allow="autoplay;fullscreen"
-      id="my_audio"
-      src="../assets/music.mp3"
-    ></audio>
-
-    <Blue />
-    <BeautyBlue />
-    <SpaceBlue />
+  <!-- <div data-scroll data-scroll-id="hey" v-if="isMobile()" style="height:100vh">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one_m">
+          <div style="height:100vh">
+            <v-row no-gutters>
+              <v-col>
+                <div style="height:100vh">
+                  <div
+                    class="slicder3"
+                    data-aos="zoom-in-left"
+                    data-aos-duration="1500"
+                  >
+                    <div class="newBox2"></div>
+                  </div>
+                </div>
+              </v-col>
+              <v-col>
+                <div style="height:100vh;">
+                  <div class="slider3n">
+                    <div class="b1"></div>
+                  </div>
+                </div>
+              </v-col>
+              <v-col>
+                <div style="height:100vh;">
+                  <div>
+                    <div class="b1"></div>
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one">
+          <div style="height:100vh">
+            <v-row no-gutters>
+              <v-col>
+                <div style="height:100vh">
+                  <div class="slicder3">
+                    <div class="newBox2"></div>
+                  </div>
+                </div>
+              </v-col>
+              <v-col>
+                <div style="height:100vh;">
+                  <div class="slider3n">
+                    <div class="b1"></div>
+                  </div>
+                </div>
+              </v-col>
+              <v-col>
+                <div style="height:100vh;">
+                  <div class="slider3nwe">
+                    <div class="b1"></div>
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// import LocomotiveScroll from "locomotive-scroll";
-
-import Blue from "./NewBlue";
-import BeautyBlue from "./BeautyBlue";
-import SpaceBlue from "./SpaceBlue";
-// import HorizontalScroll from "vue-horizontal-scroll";
-import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
-// import VueScrollSnap from "vue-scroll-snap";
-
 export default {
-  components: {
-    Blue,
-    BeautyBlue,
-    SpaceBlue,
-    // VueScrollSnap,
-    // HorizontalScroll,
-  },
-
   data: () => ({
-    offsetTop: 0,
-    bgColor: "",
+    open: true,
   }),
-  updated: function() {
-    this.$nextTick(function() {
-      console.log("hello");
-      // Code that will run only after the
-      // entire view has been re-rendered
-    });
+  mounted() {
+    // document.documentElement.style.overflow = "hidden";
   },
   methods: {
-    test() {
-      alert("test");
+    mouseOver: function() {
+      console.log("flag ");
+      // document.documentElement.style.overflow = "hidden";
     },
-    myFunction() {
-      alert("test");
-    },
-    scrollToElement() {
-      this.$smoothScroll({
-        scrollTo: this.$refs.slider1,
-        duration: 2000,
-        // scrollIntoView({ behavior: "smooth" });
-
-        // offset: -50,
-      });
-      console.log("scroll to element");
-    },
-    scrollToElement4() {
-      this.$smoothScroll({
-        scrollTo: this.$refs.slider2,
-        duration: 2000,
-        // offset: -50,
-      });
-      console.log("scroll to element");
-    },
-    scrollToElement1() {
-      console.log("scroll to element");
-      const el = this.$el.getElementsByClassName("1stPage")[0];
-
-      if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
-        // el.scrollIntoView({ behavior: "smooth" });
-        this.$smoothScroll({
-          scrollTo: this.$refs.page1,
-          duration: 2000,
-          // offset: -50,
-        });
-      }
-    },
-    scrollToElement3() {
-      console.log("scroll to element");
-      const el = this.$el.getElementsByClassName("1stPage")[0];
-
-      if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollIntoView({ behavior: "smooth" });
-        this.$smoothScroll({
-          scrollTo: this.$refs.page2,
-          duration: 2000,
-          // offset: -50,
-        });
-      }
-    },
-    scrollToElement5() {
-      console.log("scroll to element");
-      const el = this.$el.getElementsByClassName("sliderStory")[0];
-
-      if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
-        // el.scrollIntoView({ behavior: "smooth" });
-        this.$smoothScroll({
-          scrollTo: this.$refs.sliderStory,
-          duration: 2000,
-          // offset: -50,
-        });
-      }
-    },
-    scrollToElement2() {
-      console.log("scroll to element");
-      const el = this.$el.getElementsByClassName("second-slide")[0];
-
-      if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    },
-    handleScroll2() {
-      document.addEventListener("scroll", (e) =>
-        console.log("birch 😉😉😉😉", e)
-      );
-
-      document.getElementById("demo");
-      // console.log(this.$refs.section3);
-      if (window.scrollY.$refs == this.$refs.page1.offsetHeight) {
-        // this.bgColor = "hey1";
-        console.log("this.$refs.page1");
-      }
-      if (window.scrollY == this.$refs.page2.offsetHeight) {
-        // this.bgColor = "hey1";
-        console.log("page2");
-      }
-    },
-    onScroll(e) {
-      this.offsetTop = e.target.scrollTop;
-    },
-  },
-  mounted() {
-    // (this.scroll = new LocomotiveScroll({
-    //   el: document.querySelector("[data-scroll-container]"),
-    //   smooth: true,
-    //   // getSpeed: true,
-    // })),
-    localStorage.setItem("isloaded", false);
-    console.log(this.$refs);
-    this.$nextTick(function() {
-      console.log(".tom-chapters"); //empty!!!!
-    });
-
-    document.getElementById("my_audio").muted = false;
-    document.getElementById("my_audio").play();
   },
 };
 </script>
 
-<style scoped>
+<style>
+.textMini {
+  text-align: right;
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: #fff;
+}
+.ab1 {
+  background-color: #fff;
+  transform: scaleY(1);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  transition-delay: 10s;
+}
+.blueBack:hover .ab1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 2s ease-in;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  scroll-behavior: smooth;
+}
 .newBox {
   background: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   transition: 4s ease;
-
   -webkit-animation-fill-mode: backwards;
 }
 .newBox2 {
@@ -170,7 +131,6 @@ export default {
   width: 100%;
   height: 100%;
   transition: 4s ease;
-
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {
@@ -203,41 +163,56 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
 }
 .outer-wrapper:hover .newBox2 {
   width: 0%;
   background: #282729;
 }
-.b1sli {
-  /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/3.png");
-  /* background-size: 100% 100%;
-  object-fit: fill; */
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
+/* .slicder3:hover .slicder3 {
+  transform: scale(1.1);
+  transition: all 3s ease;
 }
-.b2sli {
-  /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/2.png");
-  /* background-size: 100% 100%;
-  object-fit: fill; */
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
+.outer-wrapper:hover .slider3n{
+  transform: scale(1.1);
+  transition: all 3s ease;
 }
-.b3sli {
+.outer-wrapper:hover .slider3nwe{
+  transform: scale(0.9);
+  transition: all 3s ease;
+} */
+.slicder3 {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/4.png");
+  background-image: url("../assets/blueprint/slider3.jpeg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 90%;
+  margin-top: 5%;
+}
+.slider3n {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/blueprint/slider32.jpeg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90%;
+  margin-top: 5%;
+}
+.slider3nwe {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/blueprint/slider33.jpeg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90%;
+  margin-top: 5%;
 }
 .b1 {
   background-color: rgb(255, 255, 255);
@@ -378,11 +353,11 @@ h2 span:last-child {
   margin-top: -20px;
 }
 
-p {
+/* p {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-}
+} */
 
 .word {
   position: absolute;

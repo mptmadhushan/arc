@@ -6,46 +6,49 @@
       <div class="body fadeClass">
         <div class="back-text">
           <div class="text-container">
-            <span class="letter">B</span><span class="letter">E</span
-            ><span class="letter">A</span><span class="letter">U</span
-            ><span class="letter">T</span><span class="letter">Y</span>
+            <span class="letter">S</span><span class="letter">P</span
+            ><span class="letter">A</span><span class="letter">C</span
+            ><span class="letter">E</span>
           </div>
         </div>
         <div class="back-text" style="margin-top:-50vh">
           <div class="text-container">
-            <span class="letter2">B</span><span class="letter2">E</span
-            ><span class="letter2">A</span><span class="letter2">U</span
-            ><span class="letter2">T</span><span class="letter2">Y</span>
+            <span class="letter2">S</span><span class="letter2">P</span
+            ><span class="letter2">A</span><span class="letter2">C</span
+            ><span class="letter2">E</span>
           </div>
         </div>
-        <div
-          style="margin-top:35vh"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1500"
-        >
-          <div class="bg-items">
+        <div style="margin-top:35vh;width:100vw;height:100vh">
+          <div class="bg-item-zoom">
             <v-img
               class="img-to-ef"
               eager
               contain
-              height="100vh"
-              src="../assets/blueprint/imgspace.jpg"
+              src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
             >
               <div class="twelve"></div>
             </v-img>
           </div>
           <div style="width:99vw;height:13vh"></div>
           <div>
-            <P class="textMini text-center">
-              Pablo Piccaso<br />Cannes,france<br />1956
+            <P class="textMini text-left" style="margin-left:5vw">
+              Geoffrey Bawa<br />LunuGanga,france<br />1948 - onwards
             </P>
+          </div>
+          <div>
+            <P class="text001 text-right">
+              "WE BORROW FROM NATURE THE<br />
+              SPACE UPON WHICH WE BUILD"<br />
+              <span class="textMini text-right">
+                - Tadao Ando
+              </span>
+            </P>
+            <P class="textMini text-right" style="margin:1vw"> </P>
           </div>
         </div>
       </div>
     </div>
-
-    <div style="width:99vw;height:40vh"></div>
+    <div style="width:99vw;height:20vh"></div>
     <div class="fadeClass">
       <div>
         <v-layout row wrap justify-center>
@@ -56,10 +59,18 @@
                 eager
                 contain
                 height="110vh"
-                src="../assets/blueprint/_SDS3614.png"
+                src="../assets/blueprint/Space/1280.jpg"
               >
                 <div class="twelve"></div>
               </v-img>
+            </div>
+            <div>
+              <P
+                class="textMini text-left"
+                style="margin-top:1vw;margin-left:5vw"
+              >
+                Ricardo Bofill<br />La Fabrica<br />1973
+              </P>
             </div>
           </v-flex>
           <v-flex md4 xs12 sm12 align-self-end>
@@ -69,22 +80,17 @@
                 eager
                 contain
                 height="110vh"
-                src="../assets/blueprint/_SDS2957.jpeg"
+                src="../assets/blueprint/_SDS3496.jpeg"
               >
                 <div class="twelve"></div>
               </v-img>
             </div>
           </v-flex>
-          <p class="text001" style="margin-top:5vh">
-            "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELFE PRESSION WITH THE
-            CREATIVE ACT"<span class="textMini">
-              -Charles Eamaes
-            </span>
-          </p>
         </v-layout>
       </div>
     </div>
-    <div style="width:99vw;height:20vh"></div>
+
+    <!-- <div style="width:99vw;height:20vh"></div>
     <div class="parallax"></div>
     <p class="textMini text-left" style="margin:5vh">
       -Charles and Ray Eamaes
@@ -95,30 +101,8 @@
       <br />
 
       1956
-    </p>
-    <div style="width:99vw;height:20vh"></div>
-    <div class="fadeClass">
-      <div class="bg-items">
-        <v-img
-          class="img-to-ef"
-          eager
-          contain
-          height="90vh"
-          src="../assets/blueprint/6.png"
-        >
-          <div class="twelve"></div>
-        </v-img>
-      </div>
+    </p> -->
 
-      <div>
-        <p class="text001">
-          "AN EMPTY CANSVAS IS FULL"
-        </p>
-        <P class="textMini text-center mt-1">
-          - Robert Rauschenburg
-        </P>
-      </div>
-    </div>
     <div style="width:99vw;height:25vh"></div>
 
     <div class="fadeClass">
@@ -128,7 +112,7 @@
           eager
           contain
           height="120vh"
-          src="../assets/blueprint/Space/museebourdelle.jpg"
+          src="../assets/blueprint/_SDS3571b.jpeg"
         >
           <div class="twelve"></div>
         </v-img>
@@ -143,7 +127,7 @@
 
 <script scoped>
 import LocomotiveScroll from "locomotive-scroll";
-import Slider2 from "./Slider2";
+import Slider2 from "./Slider3";
 export default {
   components: {
     Slider2,
@@ -198,7 +182,15 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
-
+.bg-item-zoom {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  margin-left: 5vw;
+  width: 70%;
+  height: 70%;
+  transition: all 13s;
+}
 .image-box {
   position: relative;
   margin: auto;
@@ -388,7 +380,7 @@ span {
 
 .parallax {
   /* The image used */
-  background-image: url("../assets/blueprint/_SDS3206b.jpeg");
+  background-image: url("../assets/blueprint/_SDS3571b.jpeg");
   margin: 10px;
   /* Set a specific height */
   min-height: 100vh;
@@ -404,11 +396,12 @@ span {
   width: 100%;
 }
 .img-to-ef {
+  transform: scale(1.5);
   transition: all 10s;
 }
 .fadeClass:hover .img-to-ef {
-  transform: scale(1.1);
-  transition: all 5s ease-in-out;
+  transform: scale(1);
+  transition: all 4s ease-in-out;
 }
 .fadeClass:hover .twelve {
   height: 0%;

@@ -1,5 +1,12 @@
 <template>
-  <div class="fadeClass" style="margin-top:25vh">
+  <div
+    class="fadeClass"
+    style="margin-top:25vh"
+    data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-delay="400"
+    data-aos-duration="3500"
+  >
     <v-layout
       row
       wrap
@@ -8,7 +15,10 @@
       class="fadeClassHover"
     >
       <v-flex md4 sm12 xs12 align-self-center>
-        <v-img eager contain height="90vh" src="../assets/12.png"></v-img>
+        <div class="image-box">
+          <img src="../assets/12.png" alt="Unsplashed Randm" />
+        </div>
+        <!-- <v-img eager contain height="90vh" src="../assets/12.png"></v-img> -->
       </v-flex>
       <v-flex md6 sm12 xs12 align-self-center>
         <p class="pa-2 new">
@@ -52,6 +62,26 @@ export default {
 </script>
 
 <style scoped>
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+}
+
+.fadeClass:hover img {
+  transform: scale(1);
+  transition: all 3s;
+}
+
 .fadeClassHover {
   opacity: 0;
   transition: all cubic-bezier(0.23, 1, 0.32, 1) ease-in;

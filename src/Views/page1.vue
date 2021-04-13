@@ -2,7 +2,13 @@
   <v-container fluid>
     <div class="about_us_bg">
       <div v-if="loaded">
-        <div>
+        <div
+          class="fadeClass"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="400"
+          data-aos-duration="3500"
+        >
           <v-layout
             row
             wrap
@@ -18,14 +24,28 @@
               </p></v-flex
             >
             <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-              <v-img eager height="60vh" src="../assets/1.png">
-                <div class="ab1"></div>
-              </v-img>
+              <div class="imgDiv">
+                <v-img
+                  eager
+                  height="60vh"
+                  src="../assets/1.png"
+                  class="zoomImage"
+                >
+                  <div class="ab1"></div>
+                </v-img>
+              </div>
             </v-flex>
             <v-flex md3 xs12 pa-1 align-self-baseline>
-              <v-img eager height="90vh" src="../assets/2.png">
-                <div class="b2"></div>
-              </v-img>
+              <div class="imgDiv">
+                <v-img
+                  eager
+                  height="90vh"
+                  src="../assets/2.png"
+                  class="zoomImage"
+                >
+                  <div class="b2"></div>
+                </v-img>
+              </div>
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
@@ -75,7 +95,14 @@
           </v-flex>
         </v-layout> -->
       </div>
-      <div v-else>
+      <div
+        v-else
+        class="fadeClass"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="400"
+        data-aos-duration="3500"
+      >
         <div class="about_us_bg">
           <v-layout
             row
@@ -92,9 +119,11 @@
               </p></v-flex
             >
             <v-flex md3 sm12 xs12 align-self-end pa-1>
-              <v-img eager height="60vh" src="../assets/1.png">
-                <div class="ab1"></div>
-              </v-img>
+              <div class="image-box">
+                <v-img eager height="60vh" src="../assets/1.png" class="img">
+                  <div class="ab1"></div>
+                </v-img>
+              </div>
             </v-flex>
             <v-flex md3 xs12 pa-1>
               <v-img eager height="90vh" src="../assets/2.png">
@@ -175,6 +204,44 @@ export default {
 </script>
 
 <style scoped>
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.img {
+  max-width: 100%;
+  transition: all 3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+}
+
+.fadeClass:hover .img {
+  transform: scale(1);
+  transition: all 3s;
+}
+
+.fadeClass:hover .zoomImage {
+  transform: scale(1);
+  transition: all 5s;
+}
+.zoomImage {
+  transform: scale(1.3);
+  height: 100%;
+  width: 100%;
+  transition: all 5s;
+}
+.imgDiv {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  transition: all 13s;
+}
+
 .ab1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/1.png");
@@ -206,7 +273,7 @@ export default {
 }
 .b2con {
   /* background-color: blueviolet; */
-background-image: url("../assets/2.png");
+  background-image: url("../assets/2.png");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;

@@ -8,7 +8,7 @@
               <v-col>
                 <div style="height:100vh">
                   <div
-                    class="b1sli"
+                    class="b1sli2"
                     data-aos="zoom-in-left"
                     data-aos-duration="1500"
                   >
@@ -18,7 +18,7 @@
               </v-col>
               <v-col>
                 <div style="height:100vh;">
-                  <div class="b2sli">
+                  <div class="b2sli2">
                     <div class="b1"></div>
                   </div>
                 </div>
@@ -44,9 +44,12 @@
             <v-row no-gutters>
               <v-col>
                 <div style="height:100vh">
-                  <div class="b1sli">
+                  <div class="b1sli2">
                     <div class="newBox2"></div>
-                    <p class="textMini text-center mt-5" style="margin-left:1%;">
+                    <p
+                      class="textMini text-center mt-5"
+                      style="margin-left:1%;"
+                    >
                       Geoffrey Bawa
                       <br />
                       Geoffrey Bawa Trust
@@ -54,28 +57,18 @@
                       circa 1992
                     </p>
                   </div>
-                  <!-- <p class="textMini text-left" style="margin:5vh">
-                    -Charles and Ray Eamaes
-                    <br />
-
-                    Londge chair by Herman Miller
-
-                    <br />
-
-                    1956
-                  </p> -->
                 </div>
               </v-col>
               <v-col>
                 <div style="height:100vh;">
-                  <div class="b2sli">
+                  <div class="b2sli2">
                     <div class="b1"></div>
                   </div>
                 </div>
               </v-col>
               <v-col>
                 <div style="height:100vh;">
-                  <div class="b3sli">
+                  <div class="b3sli2">
                     <div class="b1"></div>
                   </div>
                 </div>
@@ -186,19 +179,19 @@ html {
   width: 0%;
   background: #282729;
 }
-/* .b1sli:hover .b1sli {
+/* .b1sli2:hover .b1sli2 {
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .b2sli{
+.outer-wrapper:hover .b2sli2{
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .b3sli{
+.outer-wrapper:hover .b3sli2{
   transform: scale(0.9);
   transition: all 3s ease;
 } */
-.b1sli {
+.b1sli2 {
   /* background-color: blueviolet; */
   background-image: url("../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg");
   /* background-size: 100% 100%;
@@ -209,7 +202,7 @@ html {
   height: 80%;
   margin-top: 5%;
 }
-.b2sli {
+.b2sli2 {
   /* background-color: blueviolet; */
   background-image: url("../assets/blueprint/slide.png");
   /* background-size: 100% 100%;
@@ -220,7 +213,7 @@ html {
   height: 67%;
   margin-top: 14%;
 }
-.b3sli {
+.b3sli2 {
   /* background-color: blueviolet; */
   background-image: url("../assets/blueprint/_SDS3367.jpeg");
   /* background-size: 100% 100%;
