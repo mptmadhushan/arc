@@ -1,6 +1,8 @@
+/* eslint-disable vue/no-parsing-error */ /* eslint-disable vue/no-parsing-error
+*/
 <template>
   <div>
-    <div data-scroll-container>
+    <div>
       <router-link to="/">
         <div style="position:relative;z-index:1000">
           <img
@@ -69,12 +71,12 @@
         <div>
           <v-layout row wrap justify-center>
             <v-flex md4 xs12 sm12 align-self-end>
-              <div class="bg-items">
+              <div class="image-box">
                 <v-img
-                  class="img-to-ef"
+                  class="zoom_image"
                   eager
                   contain
-                  height="80vh"
+                  height="110vh"
                   src="../assets/blueprint/_SDS3006.png"
                 >
                   <div class="twelve"></div>
@@ -82,9 +84,9 @@
               </div>
             </v-flex>
             <v-flex md5 xs12 sm12 align-self-end>
-              <div class="bg-items">
+              <div class="image-box">
                 <v-img
-                  class="img-to-ef"
+                  class="zoom_image"
                   eager
                   contain
                   height="110vh"
@@ -144,6 +146,7 @@ export default {
     (this.scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
       // smooth: true,
+
       // getSpeed: true,
     })),
       this.scroll.on("scroll", (args) => {
@@ -168,10 +171,8 @@ export default {
       console.log("flag ");
       this.$smoothScroll({
         scrollTo: this.$refs.slider1,
-        duration: 500,
-        // scrollIntoView({ behavior: "smooth" });
-
-        // offset: -50,
+        duration: 100,
+        // offset: 50,
       });
     },
   },
@@ -181,6 +182,35 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 90%;
+  height: 90%;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.3);
+}
+.zoom_image {
+  transform: scale(1.5);
+  transition: all 10s;
+}
+.fadeClass:hover img {
+  transform: scale(1);
+  transition: ease-out 3.5s;
+}
+.fadeClass:hover .zoom_image {
+  transform: scale(1);
+  transition: ease-out 3.5s;
+}
+
 .parallax-new {
   /* The image used */
   background-image: url("../assets/blueprint/1.png");
@@ -211,11 +241,11 @@ export default {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  transition: all 5s;
+  transition: all 10s;
 }
 
 .items:hover .twelve {
-  height: 0%;
+  height: 10%;
   transition: all 3s;
 }
 
@@ -358,8 +388,9 @@ span {
   width: 100%;
 }
 .img-to-ef {
-
-}.fadeClass:hover .img-to-ef {
+  transition: all 10s;
+}
+.fadeClass:hover .img-to-ef {
   transform: scale(1.1);
   transition: all 5s ease-in-out;
 }

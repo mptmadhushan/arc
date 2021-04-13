@@ -46,7 +46,7 @@
                 <div style="height:100vh">
                   <div class="b1sli">
                     <div class="newBox2"></div>
-                    <p class="textMini text-center" style="margin-left:1%;">
+                    <p class="textMini text-center mt-5" style="margin-left:1%;">
                       Geoffrey Bawa
                       <br />
                       Geoffrey Bawa Trust
@@ -70,13 +70,6 @@
                 <div style="height:100vh;">
                   <div class="b2sli">
                     <div class="b1"></div>
-                    <p class="textMini text-center" style="margin-top:5%">
-                      LC4
-                      <br />
-                      Chaelette Perriand
-                      <br />
-                      Cassina 1930
-                    </p>
                   </div>
                 </div>
               </v-col>
@@ -84,16 +77,6 @@
                 <div style="height:100vh;">
                   <div class="b3sli">
                     <div class="b1"></div>
-                    <p
-                      class="textMini text-center"
-                      style="margin-top:5%;margin-left:3%;"
-                    >
-                      Louis Gost Chair
-                      <br />
-                      Philippe Starck
-                      <br />
-                      2002
-                    </p>
                   </div>
                 </div>
               </v-col>
@@ -217,18 +200,18 @@ html {
 } */
 .b1sli {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/3.png");
+  background-image: url("../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 80%;
   margin-top: 5%;
 }
 .b2sli {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/slider1img2.jpg");
+  background-image: url("../assets/blueprint/slide.png");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
@@ -239,7 +222,7 @@ html {
 }
 .b3sli {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/slider1img3.jpg");
+  background-image: url("../assets/blueprint/_SDS3367.jpeg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
