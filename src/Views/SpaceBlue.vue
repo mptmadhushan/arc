@@ -24,12 +24,13 @@
               class="img-to-ef"
               eager
               contain
+              height="100vh"
               src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
             >
               <div class="twelve"></div>
             </v-img>
           </div>
-          <div style="width:99vw;height:13vh"></div>
+          <!-- <div style="width:99vw;height:13vh"></div> -->
           <div>
             <P class="textMini text-left" style="margin-left:5vw">
               Geoffrey Bawa<br />LunuGanga,france<br />1948 - onwards
@@ -188,7 +189,7 @@ export default {
   overflow: hidden;
   margin-left: 5vw;
   width: 70%;
-  height: 70%;
+  height: 100%;
   transition: all 13s;
 }
 .image-box {

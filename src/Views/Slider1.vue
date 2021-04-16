@@ -43,30 +43,6 @@
           <div style="height:100vh">
             <v-row no-gutters>
               <v-col>
-                <div style="height:100vh">
-                  <div class="b1sli">
-                    <div class="newBox2"></div>
-                    <p class="textMini text-center" style="margin-left:1%;">
-                      Geoffrey Bawa
-                      <br />
-                      Geoffrey Bawa Trust
-                      <br />
-                      circa 1992
-                    </p>
-                  </div>
-                  <!-- <p class="textMini text-left" style="margin:5vh">
-                    -Charles and Ray Eamaes
-                    <br />
-
-                    Londge chair by Herman Miller
-
-                    <br />
-
-                    1956
-                  </p> -->
-                </div>
-              </v-col>
-              <v-col>
                 <div style="height:100vh;">
                   <div class="b2sli">
                     <div class="b1"></div>
@@ -80,20 +56,36 @@
                   </div>
                 </div>
               </v-col>
+
               <v-col>
                 <div style="height:100vh;">
-                  <div class="b3sli">
-                    <div class="b1"></div>
-                    <p
-                      class="textMini text-center"
-                      style="margin-top:5%;margin-left:3%;"
-                    >
-                      Louis Gost Chair
-                      <br />
-                      Philippe Starck
-                      <br />
-                      2002
-                    </p>
+                  <div class="b1sli"></div>
+                  <p class="textMini text-center" style="margin-left:1%;">
+                    Geoffrey Bawa
+                    <br />
+                    Geoffrey Bawa Trust
+                    <br />
+                    circa 1992
+                  </p>
+                </div>
+              </v-col>
+
+              <v-col>
+                <div>
+                  <div style="height:100vh;">
+                    <div class="b3sli">
+                      <div class="b1"></div>
+                      <p
+                        class="textMini text-center"
+                        style="margin-top:5%;margin-left:3%;"
+                      >
+                        Louis Gost Chair
+                        <br />
+                        Philippe Starck
+                        <br />
+                        2002
+                      </p>
+                    </div>
                   </div>
                 </div>
               </v-col>
@@ -221,7 +213,7 @@ html {
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 80%;
   margin-top: 5%;
@@ -243,10 +235,11 @@ html {
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 90%;
   height: 67%;
+
   margin-top: 14%;
 }
 .b1 {
@@ -471,7 +464,7 @@ h2 span:last-child {
   padding-left: 10px;
 }
 .outer-wrapper {
-  width: 100vh;
+  width: 101vh;
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;

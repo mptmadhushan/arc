@@ -40,6 +40,11 @@
             <P class="textMini text-center">
               Pablo Piccaso<br />Cannes,france<br />1956
             </P>
+            <p class="text001 text-right" style="">
+              "ENJOYING ART IS A PERSONAL MATTER.<br />
+              IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
+              ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
+            </p>
           </div>
         </div>
       </div>
@@ -75,13 +80,15 @@
               </v-img>
             </div>
           </v-flex>
-          <p class="text001" style="margin-top:5vh">
-            "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELFE PRESSION WITH THE
-            CREATIVE ACT"<span class="textMini">
-              -Charles Eamaes
-            </span>
-          </p>
         </v-layout>
+        <p class="text001 text-left" style="margin-top:5vh;margin-left:7vh">
+          "i dont know where my work begins or ends,<br />
+          or where it wants to take me, but i believe<br />
+          that's where things truly belong"<br />
+          <span class="textMini">
+            - Mahen Perera
+          </span>
+        </p>
       </div>
     </div>
     <div style="width:99vw;height:20vh"></div>

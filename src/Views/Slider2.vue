@@ -199,7 +199,7 @@ html {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 80%;
+  height: 85%;
   margin-top: 5%;
 }
 .b2sli2 {
@@ -210,8 +210,8 @@ html {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 67%;
-  margin-top: 14%;
+  height: 90%;
+  margin-top: 5%;
 }
 .b3sli2 {
   /* background-color: blueviolet; */
@@ -222,8 +222,8 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   width: 90%;
-  height: 67%;
-  margin-top: 14%;
+  height: 90%;
+  margin-top: 5%;
 }
 .b1 {
   background-color: rgb(255, 255, 255);

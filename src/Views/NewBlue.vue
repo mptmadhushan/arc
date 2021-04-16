@@ -172,7 +172,7 @@ export default {
       this.$smoothScroll({
         scrollTo: this.$refs.slider1,
         duration: 100,
-        // offset: 50,
+        offset: 1,
       });
     },
   },
