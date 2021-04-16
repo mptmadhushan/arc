@@ -59,7 +59,7 @@
                 class="zoom_image"
                 eager
                 contain
-                height="110vh"
+                height="90vh"
                 src="../assets/blueprint/Space/1280.jpg"
               >
                 <div class="twelve"></div>
@@ -68,19 +68,19 @@
             <div>
               <P
                 class="textMini text-left"
-                style="margin-top:1vw;margin-left:5vw"
+                style="margin-top:1vw;margin-left:10vw"
               >
                 Ricardo Bofill<br />La Fabrica<br />1973
               </P>
             </div>
           </v-flex>
-          <v-flex md4 xs12 sm12 align-self-end>
+          <v-flex md4 xs12 sm12 align-self-center>
             <div class="image-box">
               <v-img
                 class="zoom_image"
                 eager
                 contain
-                height="110vh"
+                height="70vh"
                 src="../assets/blueprint/_SDS3496.jpeg"
               >
                 <div class="twelve"></div>
@@ -112,7 +112,7 @@
           class="img-to-ef"
           eager
           contain
-          height="120vh"
+          height="90vh"
           src="../assets/blueprint/_SDS3571b.jpeg"
         >
           <div class="twelve"></div>

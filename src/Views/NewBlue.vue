@@ -76,7 +76,7 @@
                   class="zoom_image"
                   eager
                   contain
-                  height="110vh"
+                  height="80vh"
                   src="../assets/blueprint/_SDS3006.png"
                 >
                   <div class="twelve"></div>
@@ -89,7 +89,7 @@
                   class="zoom_image"
                   eager
                   contain
-                  height="110vh"
+                  height="90vh"
                   src="../assets/blueprint/_SDS3211.jpeg"
                 >
                   <div class="twelve"></div>
@@ -108,7 +108,7 @@
       <div style="width:99vw;height:20vh"></div>
       <div class="parallax"></div>
       <p class="textMini text-left" style="margin:5vh">
-        -Charles and Ray Eamaes
+        Charles and Ray Eamaes
         <br />
 
         Londge chair by Herman Miller

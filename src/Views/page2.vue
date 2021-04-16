@@ -11,7 +11,7 @@
       row
       wrap
       justify-space-around
-      style="height:100vh"
+      style="height:90vh;margin-bottom:5vh;"
       class="fadeClassHover"
     >
       <v-flex md4 sm12 xs12 align-self-center>
@@ -83,11 +83,9 @@ export default {
 }
 
 .fadeClassHover {
-  opacity: 0;
   transition: all cubic-bezier(0.23, 1, 0.32, 1) ease-in;
 }
 .fadeClass:hover .fadeClassHover {
-  opacity: 1;
   transition: all 1.5s ease-in;
 }
 .ab1con {

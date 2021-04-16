@@ -29,7 +29,7 @@
               class="img-to-ef"
               eager
               contain
-              height="100vh"
+              height="90vh"
               src="../assets/blueprint/imgspace.jpg"
             >
               <div class="twelve"></div>
@@ -60,7 +60,7 @@
                 class="zoom_image"
                 eager
                 contain
-                height="110vh"
+                height="90vh"
                 src="../assets/blueprint/_SDS3614.png"
               >
                 <div class="twelve"></div>
@@ -73,7 +73,7 @@
                 class="zoom_image"
                 eager
                 contain
-                height="110vh"
+                height="80vh"
                 src="../assets/blueprint/_SDS2957.jpeg"
               >
                 <div class="twelve"></div>
@@ -81,7 +81,7 @@
             </div>
           </v-flex>
         </v-layout>
-        <p class="text001 text-left" style="margin-top:5vh;margin-left:7vh">
+        <p class="text001 text-left" style="margin-top:5vh;margin-left:12vh">
           "i dont know where my work begins or ends,<br />
           or where it wants to take me, but i believe<br />
           that's where things truly belong"<br />
@@ -134,14 +134,14 @@
           class="img-to-ef"
           eager
           contain
-          height="120vh"
+          height="90vh"
           src="../assets/blueprint/Space/museebourdelle.jpg"
         >
           <div class="twelve"></div>
         </v-img>
       </div>
     </div>
-    <div style="width:99vw;height:25vh"></div>
+    <div style="width:99vw;height:30vh"></div>
     <div v-on:mouseover="mouseOver" ref="slider1">
       <Slider2 />
     </div>

@@ -237,10 +237,9 @@ html {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 90%;
   height: 67%;
-
   margin-top: 14%;
+  margin-left: 14%;
 }
 .b1 {
   background-color: rgb(255, 255, 255);
@@ -464,7 +463,7 @@ h2 span:last-child {
   padding-left: 10px;
 }
 .outer-wrapper {
-  width: 101vh;
+  width: 100vh;
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;

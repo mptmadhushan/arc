@@ -219,11 +219,11 @@ html {
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 90%;
   height: 90%;
   margin-top: 5%;
+  margin-left: 8vw;
 }
 .b1 {
   background-color: rgb(255, 255, 255);
