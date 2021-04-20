@@ -51,7 +51,7 @@
                 forth a unique and distinctive end product. What sets us apart
                 from the norm is the human factor- how interacting with our
                 designs can impact lives. By collaborating with our clientele,
-                we add a sense of defined lifestyle our creations. Melding
+                we add a sense of defined lifestyle to our creations. Melding
                 vision and sensibilities to enhance the way you experience life.
               </p>
             </v-flex>
@@ -136,7 +136,7 @@
                 forth a unique and distinctive end product. What sets us apart
                 from the norm is the human factor- how interacting with our
                 designs can impact lives. By collaborating with our clientele,
-                we add a sense of defined lifestyle our creations. Melding
+                we add a sense of defined lifestyle to our creations. Melding
                 vision and sensibilities to enhance the way you experience life.
               </p>
             </v-flex>
