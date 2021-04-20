@@ -30,6 +30,13 @@
             <div class="b1"></div>
           </div>
         </v-flex>
+        <div>
+          <p class="text001">
+            Architecture should speak of its time and place but yearn for
+            timelessness<br />
+            <span class="textBold"> Frank Gehry</span>
+          </p>
+        </div>
       </v-layout>
     </div>
     <div style="width:99vw;height:27vh;padding:10px"></div>
@@ -56,16 +63,29 @@
     <div style="width:99vw;height:36vh;padding:10px"></div>
 
     <div>
-      <v-img
-        eager
-        contain
-        height="95vh"
-        src="../assets/chamika_house/_SDS3429.jpg"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-delay="100"
-        data-aos-duration="1500"
-      ></v-img>
+      <v-layout row wrap>
+        <v-flex md10 pl-4>
+          <v-img
+            eager
+            contain
+            src="../assets/chamika_house/_SDS3429.jpg"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+          ></v-img>
+        </v-flex>
+        <v-flex md2 align-self-center>
+          <p class="text001 text-right">
+            God is in the details<br />
+            <br />
+            <span class="textBold text-right">
+              Mies Van Der<br />
+              Rohe</span
+            >
+          </p>
+        </v-flex>
+      </v-layout>
     </div>
     <div style="width:99vw;height:35vh;padding:10px"></div>
 
@@ -94,13 +114,24 @@
       data-aos-duration="1500"
     >
       <div style="width:99vw;height:35vh;padding:10px"></div>
+      <v-layout row wrap justify-center>
+        <v-flex md3 align-self-center>
+          <p class="text001 text-left">
+            Simplicity is the ultimate<br />
+            sophisticattion<br /><br />
+            <span class="textBold"> Leonardo Da Vinci</span>
+          </p>
+        </v-flex>
 
-      <v-img
-        eager
-        contain
-        height="90vh"
-        src="../assets/chamika_house/_SDS3393b.jpg"
-      ></v-img>
+        <v-flex md6>
+          <v-img
+            eager
+            contain
+            height="90vh"
+            src="../assets/chamika_house/_SDS3393b.jpg"
+          ></v-img>
+        </v-flex>
+      </v-layout>
     </div>
     <div v-if="isMobile()" style="height: 100vh;">
       <div style="width:99vw;height:25vh;margin:10vh"></div>
@@ -153,6 +184,13 @@ export default {
 </script>
 
 <style scoped>
+.textBold {
+  font-size: 2vh;
+  /* padding-right: 10%; */
+  margin-top: -5%;
+  font-weight: bold;
+  color: black;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/chamika_house/_SDS3079-HDR_1.jpg");
@@ -161,7 +199,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 93vh;
+  height: 88vh;
 }
 .b1 {
   background-color: #fff;

@@ -40,7 +40,7 @@
         src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
       ></v-img>
       <p class="text001">
-        Intimacy and indulgence on Bolgoda Lake
+        Intimacy and indulgence
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
@@ -50,8 +50,8 @@
         <v-flex md7 xs12 sm12 align-self-center>
           <v-img eager src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
           <p class="text002">
-            Arrival <br />
-            A play on traditional Sri Lankan art
+            A play on Sri Lankan traditional art through a tapestry by Ena De
+            Silva (A Tree Of Life)
           </p>
         </v-flex>
       </v-layout>
@@ -68,9 +68,9 @@
           data-aos-easing="linear"
           data-aos-delay="100"
         >
-          <p class="text002">
-            Arrival<br />
-            A play on traditional Sri Lankan art
+          <p class="text002 text-center">
+            A play on Sri Lankan traditional art through<br />
+            a tapestry by Ena De Silva (A Tree Of Life)
           </p>
         </v-flex>
         <v-flex

@@ -66,7 +66,7 @@
     >
       <v-img eager contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
       <p class="text001">
-        A Hill Country icon. Revitalised
+        Revitalization of an icon.
       </p>
     </div>
     <div
@@ -86,7 +86,7 @@
         src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"
       ></v-img>
       <p class="text001">
-        A Hill Country icon. Revitalised
+        Revitalization of an icon.
       </p>
     </div>
     <div v-if="isMobile()">
@@ -97,8 +97,9 @@
         contain
         src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
       ></v-img>
+      <span style="font-weight:bold">Silence</span>
       <p class="text001">
-        Silence <br /><br />Nature through the existing architectural frame.
+        Nature through the existing architectural frame.
       </p>
     </div>
     <div v-else class="text-center" style="padding:2vh">
@@ -127,8 +128,8 @@
           data-aos-delay="400"
           data-aos-duration="1500"
         >
+          <p class="textBold" style="font-weight:600">Silence</p>
           <p class="text002">
-            Silence.<br /><br />
             Nature through the existing architectural frame.
           </p>
         </v-flex>
@@ -287,9 +288,9 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text001">
-              Tea stained rice paper and gold leaf <br /><br />
-              Kingsley Goonatilake, Pala Pothupitiya and Mahen Perera
-              encapsulating each room <br />with their materiality.
+              Tea stained rice paper and gold leaf <br />Thisath Thoradeniya and
+              Pala Pothupitiya encapsulating each room<br />
+              with their materiality
             </p>
           </div>
         </div>
@@ -466,6 +467,15 @@ export default {
 </script>
 
 <style scoped>
+.textBold {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 2vh;
+  /* padding-right: 10%; */
+  padding: 10px;
+  font-weight: bold;
+  color: grey;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Stone_House/Stone House_DSC5533.JPG.jpg");

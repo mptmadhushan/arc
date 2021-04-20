@@ -29,7 +29,7 @@
           </div>
 
           <p class="text001">
-            Transformed Elevation
+          Universal Elevation
           </p>
         </v-flex>
       </v-layout>

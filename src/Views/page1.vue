@@ -2,13 +2,7 @@
   <v-container fluid>
     <div class="about_us_bg">
       <div v-if="loaded">
-        <div
-          class="fadeClass"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-delay="400"
-          data-aos-duration="3500"
-        >
+        <div class="fadeClass">
           <v-layout
             row
             wrap
@@ -49,19 +43,16 @@
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
-                CDA are a collective of like-minded humanists. We believe the
-                difference between good and great design is the human factor;
-                how people interact with our spaces and how our structures
-                impact lives. Drawing inspiration from all corners of the world
-                and connecting it with modern ideologies. Our CDA team consists
-                of young, passionately creative individuals who have fresh
-                perspectives, bright new ideas, and are looking to break
-                boundaries and set limitless precedents within the architecture
-                industry. We aim to elevate lives and incorporate beauty in art
-                to magnify spaces. The dedication we have towards our clientele,
-                and the measures we take to meld their visions with our artistic
-                enterprise is clear evidence of that; we strive for the
-                unconventional with meticulous care and defined personality.
+                CDA aims to elevate lives and incorporate beauty in art to
+                magnify spaces. Our team consists of young, creatively
+                passionate like-minded individuals who bring in new
+                perspectives. By drawing inspiration from all corners of the
+                world and connecting it with modern ideologies, it helps us put
+                forth a unique and distinctive end product. What sets us apart
+                from the norm is the human factor- how interacting with our
+                designs can impact lives. By collaborating with our clientele,
+                we add a sense of defined lifestyle our creations. Melding
+                vision and sensibilities to enhance the way you experience life.
               </p>
             </v-flex>
           </v-layout>
@@ -95,14 +86,7 @@
           </v-flex>
         </v-layout> -->
       </div>
-      <div
-        v-else
-        class="fadeClass"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-delay="400"
-        data-aos-duration="3500"
-      >
+      <div v-else class="fadeClass">
         <div class="about_us_bg">
           <v-layout
             row
@@ -113,38 +97,47 @@
             <v-flex md1 sm5 xs5 align-self-start>
               <p
                 class="about_us"
-                style="margin-top:40vh;margin-right:-2vw;text-align:right"
+                style="margin-top:20vh;margin-right:-2vw;text-align:right"
               >
                 ABOUT US
               </p></v-flex
             >
-            <v-flex md3 sm12 xs12 align-self-end pa-1>
-              <div class="image-box">
-                <v-img eager height="60vh" src="../assets/1.png" class="img">
+            <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
+              <div class="imgDiv">
+                <v-img
+                  eager
+                  height="60vh"
+                  src="../assets/1.png"
+                  class="zoomImage"
+                >
                   <div class="ab1"></div>
                 </v-img>
               </div>
             </v-flex>
-            <v-flex md3 xs12 pa-1>
-              <v-img eager height="90vh" src="../assets/2.png">
-                <div class="b2"></div>
-              </v-img>
+            <v-flex md3 xs12 pa-1 align-self-baseline>
+              <div class="imgDiv">
+                <v-img
+                  eager
+                  height="90vh"
+                  src="../assets/2.png"
+                  class="zoomImage"
+                >
+                  <div class="b2"></div>
+                </v-img>
+              </div>
             </v-flex>
             <v-flex md5 align-self-end px-3>
               <p class="new">
-                CDA are a collective of like-minded humanists. We believe the
-                difference between good and great design is the human factor;
-                how people interact with our spaces and how our structures
-                impact lives. Drawing inspiration from all corners of the world
-                and connecting it with modern ideologies. Our CDA team consists
-                of young, passionately creative individuals who have fresh
-                perspectives, bright new ideas, and are looking to break
-                boundaries and set limitless precedents within the architecture
-                industry. We aim to elevate lives and incorporate beauty in art
-                to magnify spaces. The dedication we have towards our clientele,
-                and the measures we take to meld their visions with our artistic
-                enterprise is clear evidence of that; we strive for the
-                unconventional with meticulous care and defined personality.
+                CDA aims to elevate lives and incorporate beauty in art to
+                magnify spaces. Our team consists of young, creatively
+                passionate like-minded individuals who bring in new
+                perspectives. By drawing inspiration from all corners of the
+                world and connecting it with modern ideologies, it helps us put
+                forth a unique and distinctive end product. What sets us apart
+                from the norm is the human factor- how interacting with our
+                designs can impact lives. By collaborating with our clientele,
+                we add a sense of defined lifestyle our creations. Melding
+                vision and sensibilities to enhance the way you experience life.
               </p>
             </v-flex>
           </v-layout>

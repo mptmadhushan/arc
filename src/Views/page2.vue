@@ -1,11 +1,7 @@
 <template>
   <div
     class="fadeClass"
-    style="margin-top:25vh"
-    data-aos="fade-up"
-    data-aos-easing="linear"
-    data-aos-delay="400"
-    data-aos-duration="3500"
+    style="margin-top:35vh"
   >
     <v-layout
       row
@@ -72,8 +68,8 @@ export default {
   max-width: 100%;
   transition: all 3s;
   display: block;
-  width: 100%;
-  height: auto;
+  width: 80vw;
+  height: 80vh;
   transform: scale(1.1);
 }
 
