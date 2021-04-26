@@ -50,14 +50,14 @@
                 </div>
               </v-col>
               <v-col>
-                <div style="height:100vh;">
+                <div style="height:100vh;margin-left:3vw">
                   <div class="slider3n">
                     <div class="b1"></div>
                   </div>
                 </div>
               </v-col>
               <v-col>
-                <div style="height:100vh;">
+                <div style="height:100vh;margin-left:3vw">
                   <div class="slider3nwe">
                     <div class="b1"></div>
                   </div>

@@ -43,9 +43,9 @@
                   </v-img>
                 </div>
               </v-flex>
-              <v-flex md5 align-self-start>
+              <v-flex md5 align-self-start style="margin-top:6vh">
                 <p
-                  class="text001"
+                  class="text001 text-right"
                   data-aos="fade-left"
                   data-aos-delay="300"
                   data-aos-duration="1500"
@@ -54,6 +54,7 @@
                   FORMS ASSEMBLED IN THE LIGHT"
                 </p>
                 <div
+                 style="margin-top:5px"
                   class="textMini"
                   data-aos="fade-left"
                   data-aos-delay="300"
@@ -119,10 +120,10 @@
             <div class="twelve"></div>
           </v-img>
           <p class="textMini text-left" style="margin-top:5vh">
-            Charles and Ray Emes
+            Charles and Ray Eames
             <br />
 
-            Londge chair by Herman Miller
+            Loundge chair by Herman Miller
 
             <br />
 

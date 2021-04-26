@@ -40,11 +40,6 @@
             <P class="textMini text-left" style="margin-left:35%">
               Pablo Piccaso<br />Cannes,france<br />1956
             </P>
-            <p class="text001 text-right" style="">
-              "ENJOYING ART IS A PERSONAL MATTER.<br />
-              IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
-              ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
-            </p>
           </div>
         </div>
       </div>
@@ -53,6 +48,11 @@
     <div style="width:99vw;height:40vh"></div>
     <div class="fadeClass">
       <div>
+        <p class="text001 text-right">
+          "ENJOYING ART IS A PERSONAL MATTER.<br />
+          IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
+          ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
+        </p>
         <v-layout row wrap justify-center>
           <v-flex md6 xs12 sm12 align-self-end>
             <div class="image-box">
@@ -81,7 +81,10 @@
             </div>
           </v-flex>
         </v-layout>
-        <p class="text001 text-left" style="margin-top:5vh;margin-left:15%">
+        <p
+          class="text001 text-center"
+          style="margin-top:5vh; text-transform: capitalize;"
+        >
           "i dont know where my work begins or ends,<br />
           or where it wants to take me, but i believe<br />
           that's where things truly belong"<br />

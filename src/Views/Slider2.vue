@@ -46,7 +46,7 @@
                 <div style="height:100vh">
                   <div class="b1sli2">
                     <div class="newBox2"></div>
-                    <p class="textMini text-left mt-5" style="margin-left:6vw;">
+                    <p class="textMini text-left mt-5" style="margin-left:10vw;">
                       Kuzao Shiraga
                       <br />
                       Gutai Group

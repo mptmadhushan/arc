@@ -34,13 +34,14 @@
           <div>
             <P
               class="textMini text-left"
-              style="margin-left:5vw;margin-top:5vh"
+              style="margin-left:5vw;margin-top:1vh"
             >
               Geoffrey Bawa<br />LunuGanga,france<br />1948 - onwards
             </P>
+            <div style="width:99vw;height:30vh"></div>
           </div>
           <div>
-            <P class="text001 text-right" style="margin-right:10vh">
+            <P class="text001 text-right" style="margin-right:10vh;margin-top:-20vh">
               "WE BORROW FROM NATURE THE<br />
               SPACE UPON WHICH WE BUILD"<br />
               <span class="textMini text-right">
