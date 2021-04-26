@@ -84,7 +84,7 @@
         </v-layout>
         <p
           class="text001 text-center"
-          style="margin-top:5vh; text-transform: uppercase;"
+          style="margin-top:15vh; text-transform: uppercase;"
         >
           "i dont know where my work begins or ends,<br />
           or where it wants to take me, but i believe<br />

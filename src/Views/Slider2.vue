@@ -46,7 +46,10 @@
                 <div style="height:100vh">
                   <div class="b1sli2">
                     <div class="newBox2"></div>
-                    <p class="textMini text-left mt-5" style="margin-left:10vw;">
+                    <p
+                      class="textMini text-left mt-5"
+                      style="margin-left:7vw;"
+                    >
                       Kuzao Shiraga
                       <br />
                       Gutai Group
@@ -209,7 +212,7 @@ html {
   background-repeat: no-repeat;
   height: 85%;
   margin-top: 5%;
-  margin-right: 8vw;
+  margin-left: 2vw;
 }
 .b3sli2 {
   /* background-color: blueviolet; */
@@ -221,7 +224,7 @@ html {
   background-repeat: no-repeat;
   height: 85%;
   margin-top: 5%;
-  margin-right: 8vw;
+  margin-left: 5vw;
 }
 .b1 {
   background-color: rgb(255, 255, 255);
@@ -423,7 +426,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 130vw;
+  width: 120vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

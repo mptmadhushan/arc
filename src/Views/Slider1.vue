@@ -45,9 +45,8 @@
               <v-col align-self="center" style="margin-left:2vw">
                 <div>
                   <v-img
-                    width="60vw"
                     height="70vh"
-                    src="../assets/blueprint/slider1img2.jpg"
+                    src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
                   >
                     <div class="newBox2"></div>
                   </v-img>
@@ -60,10 +59,11 @@
                   </p>
                 </div>
               </v-col>
-              <v-col align-self="center" style="margin-left: 3vw">
-                <div style="margin-top:-8%">
-                  <v-img height="85vh" src="../assets/blueprint/3.png"> </v-img>
-                  <p class="textMini text-left" style="margin-left:7vw">
+              <v-col align-self="center">
+                <div style="margin-top:-8%;margin-left:3vw;">
+                  <v-img  height="85vh" src="../assets/blueprint/3.png">
+                  </v-img>
+                  <p class="textMini text-left" style="margin-left:8vw">
                     Geoffrey Bawa
                     <br />
                     Geoffrey Bawa Trust
@@ -74,15 +74,14 @@
               ><v-col align-self="center">
                 <div>
                   <v-img
-                    style="margin-left:-4vw"
                     height="70vh"
                     contain
-                    src="../assets/blueprint/slider1img3.jpg"
+                    src="../assets/blueprint/960x0-ConvertImage.jpg"
                   >
                   </v-img>
                   <p
                     class="textMini text-left"
-                    style="margin-top:5%;margin-left:12vw"
+                    style="margin-top:5%;margin-left:7vw"
                   >
                     Louis Gost Chair
                     <br />
@@ -464,7 +463,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 180vw;
+  width: 200vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
