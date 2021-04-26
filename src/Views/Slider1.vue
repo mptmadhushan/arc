@@ -63,7 +63,7 @@
               <v-col align-self="center" style="margin-left: 3vw">
                 <div style="margin-top:-8%">
                   <v-img height="85vh" src="../assets/blueprint/3.png"> </v-img>
-                  <p class="textMini text-left" style="margin-left:8vw">
+                  <p class="textMini text-left" style="margin-left:7vw">
                     Geoffrey Bawa
                     <br />
                     Geoffrey Bawa Trust
@@ -82,7 +82,7 @@
                   </v-img>
                   <p
                     class="textMini text-left"
-                    style="margin-top:5%;margin-left:15vw"
+                    style="margin-top:5%;margin-left:12vw"
                   >
                     Louis Gost Chair
                     <br />
