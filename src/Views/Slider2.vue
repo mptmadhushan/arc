@@ -47,7 +47,7 @@
                   <div class="b1sli2">
                     <div class="newBox2"></div>
                     <p class="textMini text-left mt-5" style="margin-left:6vw;">
-                      Kuzao Shiranga
+                      Kuzao Shiraga
                       <br />
                       Gutai Group
                       <br />

@@ -37,7 +37,7 @@
           </div>
           <div style="width:99vw;height:13vh"></div>
           <div>
-            <P class="textMini text-left" style="margin-left:29%">
+            <P class="textMini text-left" style="margin-left:35%">
               Pablo Piccaso<br />Cannes,france<br />1956
             </P>
             <p class="text001 text-right" style="">
@@ -81,7 +81,7 @@
             </div>
           </v-flex>
         </v-layout>
-        <p class="text001 text-left" style="margin-top:5vh;margin-left:12vh">
+        <p class="text001 text-left" style="margin-top:5vh;margin-left:15%">
           "i dont know where my work begins or ends,<br />
           or where it wants to take me, but i believe<br />
           that's where things truly belong"<br />
