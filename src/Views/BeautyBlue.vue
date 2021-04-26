@@ -38,14 +38,14 @@
           <div style="width:99vw;height:13vh"></div>
           <div>
             <P class="textMini text-left" style="margin-left:31%">
-              Pablo Piccaso<br />Cannes,france<br />1956
+              Pablo Piccaso<br />Cannes,France<br />1956
             </P>
           </div>
         </div>
       </div>
     </div>
 
-    <div style="width:99vw;height:40vh"></div>
+    <div style="width:99vw;height:30vh"></div>
     <div class="fadeClass">
       <div>
         <p class="text001 text-right">
@@ -53,6 +53,8 @@
           IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
           ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
         </p>
+    <div style="width:99vw;height:30vh"></div>
+
         <v-layout row wrap justify-center>
           <v-flex md6 xs12 sm12 align-self-end>
             <div class="image-box">
@@ -60,7 +62,6 @@
                 class="zoom_image"
                 eager
                 contain
-                style="margin-right: 5vw"
                 height="90vh"
                 src="../assets/blueprint/_SDS3614.png"
               >
@@ -73,6 +74,7 @@
               <v-img
                 class="zoom_image"
                 eager
+                style="margin-right: 5vw"
                 contain
                 height="80vh"
                 src="../assets/blueprint/_SDS2957.jpeg"
@@ -84,7 +86,7 @@
         </v-layout>
         <p
           class="text001 text-center"
-          style="margin-top:15vh; text-transform: uppercase;"
+          style="margin-top:25vh; text-transform: uppercase;"
         >
           "i dont know where my work begins or ends,<br />
           or where it wants to take me, but i believe<br />
@@ -120,7 +122,7 @@
 
       1956
     </p> -->
-    <div style="width:99vw;height:20vh"></div>
+    <div style="width:99vw;height:30vh"></div>
     <div class="fadeClass">
       <div class="bg-items">
         <v-img
@@ -286,7 +288,7 @@ export default {
 
 .items:hover .twelve {
   height: 10%;
-  transition: all 3s;
+  transition: all 2s;
 }
 
 .textMini {

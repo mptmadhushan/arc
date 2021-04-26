@@ -1,6 +1,6 @@
 /* eslint-disable vue/no-parsing-error */ /* eslint-disable vue/no-parsing-error
 */
-<template>
+<template >
   <div>
     <div>
       <router-link to="/">
@@ -12,7 +12,7 @@
           />
         </div>
       </router-link>
-      <div>
+      <div style="margin-left: 7vw">
         <div class="body fadeClass">
           <div class="back-text">
             <div class="text-container" style="margin-top:-5vh">
@@ -122,11 +122,11 @@
                 <div class="twelve"></div>
               </v-img>
             </v-flex>
-            <v-flex md10>
+            <v-flex md10 style="margin-top:1vh">
               <p class="textMini2 text-left" style="margin-left:1.5vh">
                 Charles and Ray Eames
                 <br />
-                Loundge chair by Herman Miller
+                Lounge chair by Herman Miller
                 <br />
                 1956
               </p>
@@ -272,7 +272,7 @@ export default {
 
 .items:hover .twelve {
   height: 10%;
-  transition: all 3s;
+  transition: all 2s;
 }
 
 .textMini {

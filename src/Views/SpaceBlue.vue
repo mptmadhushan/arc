@@ -18,7 +18,8 @@
             ><span class="letter2">E</span>
           </div>
         </div>
-        <div style="margin-top:35vh;width:100vw;height:100vh">
+        <div style="width:99vw;height:30vh"></div>
+        <div style="margin-top:5vh;width:100vw;height:100vh">
           <div class="bg-item-zoom">
             <v-img
               class="img-to-ef"
@@ -36,12 +37,17 @@
               class="textMini text-left"
               style="margin-left:5vw;margin-top:1vh"
             >
-              Geoffrey Bawa<br />LunuGanga,france<br />1948 - onwards
+              Geoffrey Bawa<br />LunuGanga<br />1948 - onwards
             </P>
-            <div style="width:99vw;height:30vh"></div>
+            <div style="width:99vw;height:40vh"></div>
           </div>
+          
+
           <div>
-            <P class="text001 text-right" style="margin-right:10vh;margin-top:-20vh">
+            <P
+              class="text001 text-right"
+              style="margin-right:10vh;margin-top:-20vh"
+            >
               "WE BORROW FROM NATURE THE<br />
               SPACE UPON WHICH WE BUILD"<br />
               <span class="textMini text-right">
@@ -53,10 +59,10 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:20vh"></div>
+    <div style="width:99vw;height:50vh"></div>
     <div class="fadeClass">
       <div>
-        <v-layout row wrap justify-center>
+        <v-layout row wrap justify-center mt-12>
           <v-flex md6 xs12 sm12 align-self-end>
             <div class="image-box">
               <v-img
@@ -72,7 +78,7 @@
             <div>
               <P
                 class="textMini text-left"
-                style="margin-top:1vw;margin-left:10vw"
+                style="margin-top:1vw;margin-left:15vw"
               >
                 Ricardo Bofill<br />La Fabrica<br />1973
               </P>

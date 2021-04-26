@@ -50,7 +50,7 @@
                   >
                     <div class="newBox2"></div>
                   </v-img>
-                  <p class="textMini text-left" style="margin-top:5%">
+                  <p class="textMini text-left" style="margin-top:5%;margin-left:10%">
                     LC4
                     <br />
                     Charlotte Perriand
@@ -176,13 +176,14 @@ html {
 }
 .newBox2 {
   background: rgb(255, 255, 255);
-  width: 100%;
+  width: 20%;
   height: 100%;
   transition: 4s ease;
+  padding-right: 100px;
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {
-  width: 0%;
+  width: 50%;
   background: rgb(255, 255, 255);
 }
 @-webkit-keyframes animateThis {
@@ -470,7 +471,7 @@ h2 span:last-child {
 .one {
   background: #ffffff;
   height: 100vh;
-  padding-left: 80vw;
+  padding-left: 60vw;
   transition: 4s ease;
 }
 .one_m {
