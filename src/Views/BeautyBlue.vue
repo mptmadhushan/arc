@@ -37,7 +37,7 @@
           </div>
           <div style="width:99vw;height:13vh"></div>
           <div>
-            <P class="textMini text-left" style="margin-left:27%">
+            <P class="textMini text-left" style="margin-left:31%">
               Pablo Piccaso<br />Cannes,france<br />1956
             </P>
           </div>
@@ -60,6 +60,7 @@
                 class="zoom_image"
                 eager
                 contain
+                style="margin-right: 5vw"
                 height="90vh"
                 src="../assets/blueprint/_SDS3614.png"
               >
@@ -83,7 +84,7 @@
         </v-layout>
         <p
           class="text001 text-center"
-          style="margin-top:5vh; text-transform: capitalize;"
+          style="margin-top:5vh; text-transform: uppercase;"
         >
           "i dont know where my work begins or ends,<br />
           or where it wants to take me, but i believe<br />

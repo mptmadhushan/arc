@@ -43,7 +43,7 @@
                   </v-img>
                 </div>
               </v-flex>
-              <v-flex md5 align-self-start style="margin-top:6vh">
+              <v-flex md5 align-self-start style="margin-top:4.5vh">
                 <p
                   class="text001 text-right"
                   data-aos="fade-left"
@@ -54,7 +54,7 @@
                   FORMS ASSEMBLED IN THE LIGHT"
                 </p>
                 <div
-                 style="margin-top:5px"
+                  style="margin-top:5px"
                   class="textMini"
                   data-aos="fade-left"
                   data-aos-delay="300"
@@ -109,26 +109,31 @@
       <div style="width:99vw;height:20vh"></div>
       <!-- <div class="parallax"></div> -->
       <div class="fadeClass">
-        <div class="image-box">
-          <v-img
-            class="img-to-ef"
-            eager
-            contain
-            height="100vh"
-            src="../assets/blueprint/1.png"
-          >
-            <div class="twelve"></div>
-          </v-img>
-          <p class="textMini text-left" style="margin-top:5vh">
-            Charles and Ray Eames
-            <br />
+        <div class="image-box ">
+          <v-layout row wrap>
+            <v-flex md8>
+              <v-img
+                class="img-to-ef"
+                eager
+                contain
+                height="100vh"
+                src="../assets/blueprint/1.png"
+              >
+                <div class="twelve"></div>
+              </v-img>
+            </v-flex>
+            <v-flex md10>
+              <p class="textMini2 text-left" style="margin-left:1.5vh">
+                Charles and Ray Eames
+                <br />
+                Loundge chair by Herman Miller
+                <br />
+                1956
+              </p>
+            </v-flex>
+          </v-layout>
 
-            Loundge chair by Herman Miller
-
-            <br />
-
-            1956
-          </p>
+          <div></div>
         </div>
       </div>
 
@@ -275,6 +280,13 @@ export default {
   font-size: 1.5vh;
   padding-right: 10%;
   margin-top: -5%;
+  font-weight: bold;
+  color: grey;
+}
+.textMini2 {
+  text-align: left;
+  margin-top: -5%;
+  font-size: 1.5vh;
   font-weight: bold;
   color: grey;
 }
