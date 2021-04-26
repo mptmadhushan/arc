@@ -2,7 +2,7 @@
 */
 <template>
   <div>
-    <div style="margin-top:10vh">
+    <div>
       <div class="body fadeClass">
         <div class="back-text">
           <div class="text-container">
@@ -11,7 +11,7 @@
             ><span class="letter">T</span><span class="letter">Y</span>
           </div>
         </div>
-        <div class="back-text" style="margin-top:-50vh">
+        <div class="back-text" style="margin-top:-70vh">
           <div class="text-container">
             <span class="letter2">B</span><span class="letter2">E</span
             ><span class="letter2">A</span><span class="letter2">U</span
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div
-          style="margin-top:35vh"
+          style="margin-top:45vh"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1500"
@@ -92,8 +92,21 @@
       </div>
     </div>
     <div style="width:99vw;height:20vh"></div>
-    <div class="parallax"></div>
-    <p class="textMini text-left" style="margin:5vh">
+    <!-- <div class="parallax"></div> -->
+    <div class="fadeClass">
+      <div class="image-box">
+        <v-img
+          class="img-to-ef"
+          eager
+          contain
+          height="90vh"
+          src="../assets/blueprint/_SDS3206b.jpeg"
+        >
+          <div class="twelve"></div>
+        </v-img>
+      </div>
+    </div>
+    <!-- <p class="textMini text-left" style="margin:5vh">
       -Charles and Ray Eamaes
       <br />
 
@@ -102,7 +115,7 @@
       <br />
 
       1956
-    </p>
+    </p> -->
     <div style="width:99vw;height:20vh"></div>
     <div class="fadeClass">
       <div class="bg-items">
@@ -288,20 +301,20 @@ export default {
   /* background-color: black;S */
 }
 .back-text {
-  max-height: 32vh;
+  max-height: 38vh;
   /* background-color: red; */
   overflow: hidden;
 }
 .text-container {
-  margin-top: -10vh;
+  margin-top: -17vh;
   width: 100%;
   height: 100%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: grey;
+  color: black;
   font-family: "Oranienbaum", serif;
-  font-size: 30vh;
+  font-size: 50vh;
   -webkit-font-smoothing: antialiased;
 }
 

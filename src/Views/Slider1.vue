@@ -46,7 +46,7 @@
                 <div style="height:100vh;">
                   <div class="b2sli">
                     <div class="b1"></div>
-                    <p class="textMini text-center" style="margin-top:5%">
+                    <p class="textMini text-left" style="margin-top:5%">
                       LC4
                       <br />
                       Chaelette Perriand
@@ -60,7 +60,7 @@
               <v-col>
                 <div style="height:100vh;">
                   <div class="b1sli"></div>
-                  <p class="textMini text-center" style="margin-left:1%;">
+                  <p class="textMini text-left" style="margin-left:6%;">
                     Geoffrey Bawa
                     <br />
                     Geoffrey Bawa Trust
@@ -76,8 +76,8 @@
                     <div class="b3sli">
                       <div class="b1"></div>
                       <p
-                        class="textMini text-center"
-                        style="margin-top:5%;margin-left:3%;"
+                        class="textMini text-left"
+                        style="margin-top:5%;margin-left:2%;"
                       >
                         Louis Gost Chair
                         <br />
@@ -213,7 +213,7 @@ html {
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 80%;
   margin-top: 5%;
@@ -224,7 +224,7 @@ html {
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 67%;
   margin-top: 14%;
@@ -235,11 +235,11 @@ html {
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 67%;
   margin-top: 14%;
-  margin-left: 14%;
+  margin-left: 9%;
 }
 .b1 {
   background-color: rgb(255, 255, 255);
@@ -441,7 +441,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 160vw;
+  width: 190vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

@@ -47,14 +47,14 @@
                   <div class="b1sli2">
                     <div class="newBox2"></div>
                     <p
-                      class="textMini text-center mt-5"
-                      style="margin-left:1%;"
+                      class="textMini text-left mt-5"
+                      style="margin-left:20%;"
                     >
-                      Geoffrey Bawa
+                      Kuzao Shiranga
                       <br />
-                      Geoffrey Bawa Trust
+                      Gutai Group
                       <br />
-                      circa 1992
+                      1960
                     </p>
                   </div>
                 </div>

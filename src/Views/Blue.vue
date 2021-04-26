@@ -8,7 +8,7 @@
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
         >
-          <p style="font-size:10vw;color:grey;">
+          <p style="font-size:20vw;color:grey;">
             D
           </p>
         </div>

@@ -11,7 +11,7 @@
             ><span class="letter">E</span>
           </div>
         </div>
-        <div class="back-text" style="margin-top:-50vh">
+        <div class="back-text" style="margin-top:-80vh">
           <div class="text-container">
             <span class="letter2">S</span><span class="letter2">P</span
             ><span class="letter2">A</span><span class="letter2">C</span
@@ -274,20 +274,20 @@ export default {
   /* background-color: black;S */
 }
 .back-text {
-  max-height: 32vh;
+  max-height: 52vh;
   /* background-color: red; */
   overflow: hidden;
 }
 .text-container {
-  margin-top: -10vh;
+  margin-top: -15vh;
   width: 100%;
   height: 100%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: grey;
+  color: black;
   font-family: "Oranienbaum", serif;
-  font-size: 30vh;
+  font-size: 50vh;
   -webkit-font-smoothing: antialiased;
 }
 

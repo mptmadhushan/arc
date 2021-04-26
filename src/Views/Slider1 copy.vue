@@ -391,7 +391,7 @@ p {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 160vw;
+  width: 190vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

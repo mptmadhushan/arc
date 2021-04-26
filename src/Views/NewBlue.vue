@@ -15,20 +15,20 @@
       <div>
         <div class="body fadeClass">
           <div class="back-text">
-            <div class="text-container">
+            <div class="text-container" style="margin-top:-5vh">
               <span class="letter">D</span><span class="letter">E</span
               ><span class="letter">S</span><span class="letter">I</span
               ><span class="letter">G</span><span class="letter">N</span>
             </div>
           </div>
-          <div class="back-text" style="margin-top:-50vh">
+          <div class="back-text" style="margin-top:-90vh">
             <div class="text-container">
               <span class="letter2">D</span><span class="letter2">E</span
               ><span class="letter2">S</span><span class="letter2">I</span
               ><span class="letter2">G</span><span class="letter2">N</span>
             </div>
           </div>
-          <div style="margin-top:25vh">
+          <div style="margin-top:35vh">
             <v-layout row wrap justify-center>
               <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
                 <div class="bg-items">
@@ -96,8 +96,8 @@
                 </v-img>
               </div>
             </v-flex>
-            <p class="text001" style="margin-top:5vh">
-              "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELFE PRESSION WITH THE
+            <p class="text001" style="margin-top:10vh">
+              "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELFE EXPRESSION WITH THE
               CREATIVE ACT"<span class="textMini">
                 -Charles Eamaes
               </span>
@@ -106,8 +106,21 @@
         </div>
       </div>
       <div style="width:99vw;height:20vh"></div>
-      <div class="parallax"></div>
-      <p class="textMini text-left" style="margin:5vh">
+      <!-- <div class="parallax"></div> -->
+      <div class="fadeClass">
+        <div class="image-box">
+          <v-img
+            class="img-to-ef"
+            eager
+            contain
+            height="100vh"
+            src="../assets/blueprint/1.png"
+          >
+            <div class="twelve"></div>
+          </v-img>
+        </div>
+      </div>
+      <p class="textMini text-left" style="margin:5vh;margin-left:10vh">
         Charles and Ray Eamaes
         <br />
 
@@ -182,7 +195,13 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
-
+.img-to-ef {
+  transition: all 10s;
+}
+.fadeClass:hover .img-to-ef {
+  transform: scale(1.1);
+  transition: all 5s ease-in-out;
+}
 .image-box {
   position: relative;
   margin: auto;
@@ -265,20 +284,20 @@ export default {
   /* background-color: black;S */
 }
 .back-text {
-  max-height: 32vh;
+  max-height: 62vh;
   /* background-color: red; */
   overflow: hidden;
 }
 .text-container {
-  margin-top: -4vh;
+  /* margin-top: -4vh; */
   width: 100%;
   height: 100%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: grey;
+  color: black;
   font-family: "Oranienbaum", serif;
-  font-size: 30vh;
+  font-size: 50vh;
   -webkit-font-smoothing: antialiased;
 }
 
