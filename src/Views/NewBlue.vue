@@ -28,7 +28,7 @@
               ><span class="letter2">G</span><span class="letter2">N</span>
             </div>
           </div>
-          <div style="margin-top:35vh">
+          <div style="margin-top:45vh">
             <v-layout row wrap justify-center>
               <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
                 <div class="bg-items">
@@ -97,9 +97,9 @@
               </div>
             </v-flex>
             <p class="text001" style="margin-top:10vh">
-              "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELFE EXPRESSION WITH THE
+              "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH THE
               CREATIVE ACT"<span class="textMini">
-                -Charles Eamaes
+                -Charles Eames
               </span>
             </p>
           </v-layout>
@@ -118,18 +118,19 @@
           >
             <div class="twelve"></div>
           </v-img>
+          <p class="textMini text-left" style="margin-top:5vh">
+            Charles and Ray Emes
+            <br />
+
+            Londge chair by Herman Miller
+
+            <br />
+
+            1956
+          </p>
         </div>
       </div>
-      <p class="textMini text-left" style="margin:5vh;margin-left:10vh">
-        Charles and Ray Eamaes
-        <br />
 
-        Londge chair by Herman Miller
-
-        <br />
-
-        1956
-      </p>
       <div style="width:99vw;height:20vh"></div>
       <div v-on:mouseover="mouseOver" ref="slider1">
         <Slider1 />

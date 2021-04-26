@@ -40,37 +40,60 @@
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide one">
-          <div style="height:100vh">
-            <v-row no-gutters>
-              <v-col>
-                <div style="height:100vh;">
-                  <div class="b2sli">
-                    <div class="b1"></div>
-                    <p class="textMini text-left" style="margin-top:5%">
-                      LC4
-                      <br />
-                      Chaelette Perriand
-                      <br />
-                      Cassina 1930
-                    </p>
-                  </div>
+          <div>
+            <v-row no-gutters style="height:100vh;">
+              <v-col align-self="center" style="margin-left:2vw">
+                <div>
+                  <v-img
+                    width="60vw"
+                    height="70vh"
+                    src="../assets/blueprint/slider1img2.jpg"
+                  >
+                    <div class="newBox2"></div>
+                  </v-img>
+                  <p class="textMini text-left" style="margin-top:5%">
+                    LC4
+                    <br />
+                    Charlotte Perriand
+                    <br />
+                    Cassina 1930
+                  </p>
                 </div>
               </v-col>
-
-              <v-col>
-                <div style="height:100vh;">
-                  <div class="b1sli"></div>
-                  <p class="textMini text-left" style="margin-left:6%;">
+              <v-col align-self="center" style="margin-left: 3vw">
+                <div style="margin-top:-8%">
+                  <v-img height="85vh" src="../assets/blueprint/3.png"> </v-img>
+                  <p class="textMini text-left" style="margin-left:4vw">
                     Geoffrey Bawa
                     <br />
                     Geoffrey Bawa Trust
                     <br />
                     circa 1992
                   </p>
+                </div> </v-col
+              ><v-col align-self="center">
+                <div>
+                  <v-img
+                    style="margin-left:-4vw"
+                    height="70vh"
+                    contain
+                    src="../assets/blueprint/slider1img3.jpg"
+                  >
+                  </v-img>
+                  <p
+                    class="textMini text-left"
+                    style="margin-top:5%;margin-left:10vw"
+                  >
+                    Louis Gost Chair
+                    <br />
+                    Philippe Starck
+                    <br />
+                    2002
+                  </p>
                 </div>
               </v-col>
 
-              <v-col>
+              <!-- <v-col>
                 <div>
                   <div style="height:100vh;">
                     <div class="b3sli">
@@ -88,7 +111,7 @@
                     </div>
                   </div>
                 </div>
-              </v-col>
+              </v-col> -->
             </v-row>
           </div>
         </div>
@@ -114,7 +137,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .textMini {
   text-align: right;
   font-size: 1.5vh;
@@ -441,14 +464,14 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 190vw;
+  width: 180vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 .one {
   background: #ffffff;
   height: 100vh;
-  padding-left: 50vw;
+  padding-left: 80vw;
   transition: 4s ease;
 }
 .one_m {

@@ -2,7 +2,7 @@
 */
 <template>
   <div>
-    <div>
+    <div style="margin-top:20vh">
       <div class="body fadeClass">
         <div class="back-text">
           <div class="text-container">
@@ -11,7 +11,7 @@
             ><span class="letter">T</span><span class="letter">Y</span>
           </div>
         </div>
-        <div class="back-text" style="margin-top:-70vh">
+        <div class="back-text" style="margin-top:-90vh">
           <div class="text-container">
             <span class="letter2">B</span><span class="letter2">E</span
             ><span class="letter2">A</span><span class="letter2">U</span
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div
-          style="margin-top:45vh"
+          style="margin-top:55vh"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1500"
@@ -37,7 +37,7 @@
           </div>
           <div style="width:99vw;height:13vh"></div>
           <div>
-            <P class="textMini text-center">
+            <P class="textMini text-left" style="margin-left:29%">
               Pablo Piccaso<br />Cannes,france<br />1956
             </P>
             <p class="text001 text-right" style="">
@@ -132,7 +132,7 @@
 
       <div>
         <p class="text001">
-          "AN EMPTY CANSVAS IS FULL"
+          "AN EMPTY CANVAS IS FULL"
         </p>
         <P class="textMini text-center mt-1">
           - Robert Rauschenburg
@@ -301,12 +301,13 @@ export default {
   /* background-color: black;S */
 }
 .back-text {
-  max-height: 38vh;
+  max-height: 50vh;
   /* background-color: red; */
   overflow: hidden;
 }
+
 .text-container {
-  margin-top: -17vh;
+  margin-top: -15vh;
   width: 100%;
   height: 100%;
   position: relative;

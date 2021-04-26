@@ -88,7 +88,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .textMini {
   text-align: right;
   font-size: 1.5vh;
@@ -414,7 +414,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 160vw;
+  width: 120vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

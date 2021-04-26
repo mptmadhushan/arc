@@ -37,7 +37,7 @@
             </P>
           </div>
           <div>
-            <P class="text001 text-right">
+            <P class="text001 text-left">
               "WE BORROW FROM NATURE THE<br />
               SPACE UPON WHICH WE BUILD"<br />
               <span class="textMini text-right">
