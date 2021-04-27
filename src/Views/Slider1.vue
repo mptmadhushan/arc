@@ -52,7 +52,7 @@
                   </v-img>
                   <p
                     class="textMini text-left"
-                    style="margin-top:1%;margin-left:2%"
+                    style="margin-top:1%;margin-left:8%"
                   >
                     LC4
                     <br />
@@ -75,7 +75,7 @@
                   </div>
                   <p
                     class="textMini text-left"
-                    style="margin-left:-1vw;margin-top:1%;"
+                    style="margin-left:3vw;margin-top:1%;"
                   >
                     Geoffrey Bawa
                     <br />
@@ -97,7 +97,7 @@
                   </div>
                   <p
                     class="textMini text-left"
-                    style="margin-left:-1vw;margin-top:1%;"
+                    style="margin-left:3vw;margin-top:1%;"
                   >
                     Louis Gost Chair
                     <br />
