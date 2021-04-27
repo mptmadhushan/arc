@@ -1,68 +1,69 @@
 <template>
-  <!-- <div data-scroll data-scroll-id="hey" v-if="isMobile()" style="height:100vh">
-    <div class="outer-wrapper">
-      <div class="wrapper">
-        <div class="slide one_m">
-          <div style="height:100vh">
-            <v-row no-gutters>
-              <v-col>
-                <div style="height:100vh">
-                  <div
-                    class="slicder3"
-                    data-aos="zoom-in-left"
-                    data-aos-duration="1500"
-                  >
-                    <div class="newBox2"></div>
-                  </div>
-                </div>
-              </v-col>
-              <v-col>
-                <div style="height:100vh;">
-                  <div class="slider3n">
-                    <div class="b1"></div>
-                  </div>
-                </div>
-              </v-col>
-              <v-col>
-                <div style="height:100vh;">
-                  <div>
-                    <div class="b1"></div>
-                  </div>
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide one">
-          <div style="height:100vh">
-            <v-row no-gutters>
-              <v-col>
-                <div style="height:100vh">
-                  <div class="slicder3">
+          <div>
+            <v-row no-gutters style="height:100vh;">
+              <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
+                <div>
+                  <v-img
+                    height="75vh"
+                    width="50vw"
+                    src="../assets/blueprint/slider3.jpeg"
+                  >
                     <div class="newBox2"></div>
+                  </v-img>
+                </div>
+              </v-col>
+              <v-col align-self="center" style="margin-left:8vw;margin-top:7vh">
+                <div class="fadeClass">
+                  <div class="image-box">
+                    <v-img
+                      class="zoom_image"
+                      height="100%"
+                      cover
+                      src="../assets/blueprint/slider32.jpeg"
+                    >
+                    </v-img>
+                  </div>
+                </div> </v-col
+              ><v-col
+                align-self="center"
+                style="margin-left:-12vw;margin-top:7vh"
+              >
+                <div class="fadeClass">
+                  <div class="image-box">
+                    <v-img
+                      class="zoom_image"
+                      height="100%"
+                      cover
+                      src="../assets/blueprint/slider33.jpeg"
+                    >
+                    </v-img>
                   </div>
                 </div>
               </v-col>
-              <v-col>
-                <div style="height:100vh;margin-left:3vw">
-                  <div class="slider3n">
-                    <div class="b1"></div>
+
+              <!-- <v-col>
+                <div>
+                  <div style="height:100vh;">
+                    <div class="b3sli">
+                      <div class="b1"></div>
+                      <p
+                        class="textMini text-left"
+                        style="margin-top:5%;margin-left:2%;"
+                      >
+                        Louis Gost Chair
+                        <br />
+                        Philippe Starck
+                        <br />
+                        2002
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </v-col>
-              <v-col>
-                <div style="height:100vh;margin-left:3vw">
-                  <div class="slider3nwe">
-                    <div class="b1"></div>
-                  </div>
-                </div>
-              </v-col>
+              </v-col> -->
             </v-row>
           </div>
         </div>
@@ -89,6 +90,48 @@ export default {
 </script>
 
 <style scoped>
+.img-to-ef {
+  transition: all 10s;
+}
+.fadeClass:hover .img-to-ef {
+  transform: scale(1.1);
+  transition: all 5s ease-in-out;
+}
+.fadeClass {
+  display: inline-block;
+  overflow: hidden;
+  height: 85vh;
+  width: 40vw;
+  margin-top: -4%;
+}
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 90%;
+  height: 90%;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.3);
+}
+.zoom_image {
+  transform: scale(1.1);
+  transition: all 10s;
+}
+.fadeClass:hover img {
+  transform: scale(1);
+  transition: ease-out 3.5s;
+}
+.fadeClass:hover .zoom_image {
+  transform: scale(1);
+  transition: ease-out 3.5s;
+}
+
 .textMini {
   text-align: right;
   font-size: 1.5vh;
@@ -128,13 +171,14 @@ html {
 }
 .newBox2 {
   background: rgb(255, 255, 255);
-  width: 100%;
+  width: 20%;
   height: 100%;
   transition: 4s ease;
+  padding-right: 100px;
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {
-  width: 0%;
+  width: 50%;
   background: rgb(255, 255, 255);
 }
 @-webkit-keyframes animateThis {
@@ -169,50 +213,51 @@ html {
   width: 0%;
   background: #282729;
 }
-/* .slicder3:hover .slicder3 {
+/* .b1sli:hover .b1sli {
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .slider3n{
+.outer-wrapper:hover .b2sli{
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .slider3nwe{
+.outer-wrapper:hover .b3sli{
   transform: scale(0.9);
   transition: all 3s ease;
 } */
-.slicder3 {
+.b1sli {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/slider3.jpeg");
+  background-image: url("../assets/blueprint/3.png");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 90%;
+  height: 80%;
   margin-top: 5%;
 }
-.slider3n {
+.b2sli {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/slider32.jpeg");
+  background-image: url("../assets/blueprint/slider1img2.jpg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 90%;
-  margin-top: 5%;
+  height: 67%;
+  margin-top: 14%;
 }
-.slider3nwe {
+.b3sli {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/slider33.jpeg");
+  background-image: url("../assets/blueprint/slider1img3.jpg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 90%;
-  margin-top: 5%;
+  height: 67%;
+  margin-top: 14%;
+  margin-left: 9%;
 }
 .b1 {
   background-color: rgb(255, 255, 255);
@@ -414,14 +459,14 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 120vw;
+  width: 180vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 .one {
   background: #ffffff;
   height: 100vh;
-  padding-left: 50vw;
+  padding-left: 60vw;
   transition: 4s ease;
 }
 .one_m {

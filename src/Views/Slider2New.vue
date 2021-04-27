@@ -1,4 +1,41 @@
 <template>
+  <!-- <div data-scroll data-scroll-id="hey" v-if="isMobile()" style="height:100vh">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one_m">
+          <div style="height:100vh">
+            <v-row no-gutters>
+              <v-col>
+                <div style="height:100vh">
+                  <div
+                    class="b1sli"
+                    data-aos="zoom-in-left"
+                    data-aos-duration="1500"
+                  >
+                    <div class="newBox2"></div>
+                  </div>
+                </div>
+              </v-col>
+              <v-col>
+                <div style="height:100vh;">
+                  <div class="b2sli">
+                    <div class="b1"></div>
+                  </div>
+                </div>
+              </v-col>
+              <v-col>
+                <div style="height:100vh;">
+                  <div>
+                    <div class="b1"></div>
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
   <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
     <div class="outer-wrapper">
       <div class="wrapper">
@@ -13,7 +50,10 @@
                   >
                     <div class="newBox2"></div>
                   </v-img>
-                  <p class="textMini text-left mt-5" style="margin-left:7vw;">
+                  <p
+                    class="textMini text-left"
+                    style="margin-top:1%;margin-left:2%"
+                  >
                     Kuzao Shiraga
                     <br />
                     Gutai Group
@@ -22,25 +62,25 @@
                   </p>
                 </div>
               </v-col>
-              <v-col align-self="center" style="margin-left:5vw">
+              <v-col align-self="center" style="margin-left:8vw">
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
                       class="zoom_image"
                       height="100%"
-                      contain
+                      cover
                       src="../assets/blueprint/slide.png"
                     >
                     </v-img>
                   </div>
                 </div> </v-col
-              ><v-col align-self="center" style="margin-left:-19vw">
+              ><v-col align-self="center" style="margin-left:-12vw">
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
                       class="zoom_image"
                       height="100%"
-                      contain
+                      cover
                       src="../assets/blueprint/_SDS3367.jpeg"
                     >
                     </v-img>
@@ -104,7 +144,7 @@ export default {
   display: inline-block;
   overflow: hidden;
   height: 78vh;
-  width: 30vw;
+  width: 40vw;
   margin-top: -4%;
 }
 .image-box {
@@ -462,7 +502,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 250vh;
+  width: 180vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
