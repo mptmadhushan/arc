@@ -8,7 +8,7 @@
               <v-col>
                 <div style="height:100vh">
                   <div
-                    class="b1sli"
+                    class="slicder3"
                     data-aos="zoom-in-left"
                     data-aos-duration="1500"
                   >
@@ -18,7 +18,7 @@
               </v-col>
               <v-col>
                 <div style="height:100vh;">
-                  <div class="b2sli">
+                  <div class="slider3n">
                     <div class="b1"></div>
                   </div>
                 </div>
@@ -40,93 +40,29 @@
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide one">
-          <div>
-            <v-row no-gutters style="height:100vh;">
-              <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
-                <div>
-                  <v-img
-                    height="70vh"
-                    src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
-                  >
+          <div style="height:100vh">
+            <v-row no-gutters>
+              <v-col>
+                <div style="height:100vh">
+                  <div class="slicder3">
                     <div class="newBox2"></div>
-                  </v-img>
-                  <p
-                    class="textMini text-left"
-                    style="margin-top:1%;margin-left:10%"
-                  >
-                    LC4
-                    <br />
-                    Charlotte Perriand
-                    <br />
-                    Cassina 1930
-                  </p>
+                  </div>
                 </div>
               </v-col>
-              <v-col align-self="center" style="margin-left:8vw">
-                <div class="fadeClass">
-                  <div class="image-box">
-                    <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/GB-in-office--Sowden--1985.jpg"
-                    >
-                    </v-img>
+              <v-col>
+                <div style="height:100vh;margin-left:3vw">
+                  <div class="slider3n">
+                    <div class="b1"></div>
                   </div>
-                  <p
-                    class="textMini text-left"
-                    style="margin-left:5vw;margin-top:1%;"
-                  >
-                    Geoffrey Bawa
-                    <br />
-                    Geoffrey Bawa Trust
-                    <br />
-                    circa 1992
-                  </p>
-                </div> </v-col
-              ><v-col align-self="center"  style="margin-left:-12vw">
-                <div class="fadeClass">
-                  <div class="image-box">
-                    <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/960x0-ConvertImage.jpg"
-                    >
-                    </v-img>
-                  </div>
-                  <p
-                    class="textMini text-left"
-                    style="margin-left:7vw;margin-top:1%;"
-                  >
-                    Louis Gost Chair
-                    <br />
-                    Philippe Starck
-                    <br />
-                    2002
-                  </p>
                 </div>
               </v-col>
-
-              <!-- <v-col>
-                <div>
-                  <div style="height:100vh;">
-                    <div class="b3sli">
-                      <div class="b1"></div>
-                      <p
-                        class="textMini text-left"
-                        style="margin-top:5%;margin-left:2%;"
-                      >
-                        Louis Gost Chair
-                        <br />
-                        Philippe Starck
-                        <br />
-                        2002
-                      </p>
-                    </div>
+              <v-col>
+                <div style="height:100vh;margin-left:3vw">
+                  <div class="slider3nwe">
+                    <div class="b1"></div>
                   </div>
                 </div>
-              </v-col> -->
+              </v-col>
             </v-row>
           </div>
         </div>
@@ -153,48 +89,6 @@ export default {
 </script>
 
 <style scoped>
-.img-to-ef {
-  transition: all 10s;
-}
-.fadeClass:hover .img-to-ef {
-  transform: scale(1.1);
-  transition: all 5s ease-in-out;
-}
-.fadeClass {
-  display: inline-block;
-  overflow: hidden;
-  height: 78vh;
-  width: 60vw;
-  margin-top: -4%;
-}
-.image-box {
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  width: 90%;
-  height: 90%;
-}
-.image-box img {
-  max-width: 100%;
-  transition: all 0.3s;
-  display: block;
-  width: 100%;
-  height: auto;
-  transform: scale(1.3);
-}
-.zoom_image {
-  transform: scale(1.1);
-  transition: all 10s;
-}
-.fadeClass:hover img {
-  transform: scale(1);
-  transition: ease-out 3.5s;
-}
-.fadeClass:hover .zoom_image {
-  transform: scale(1);
-  transition: ease-out 3.5s;
-}
-
 .textMini {
   text-align: right;
   font-size: 1.5vh;
@@ -234,14 +128,13 @@ html {
 }
 .newBox2 {
   background: rgb(255, 255, 255);
-  width: 20%;
+  width: 100%;
   height: 100%;
   transition: 4s ease;
-  padding-right: 100px;
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {
-  width: 50%;
+  width: 0%;
   background: rgb(255, 255, 255);
 }
 @-webkit-keyframes animateThis {
@@ -276,51 +169,50 @@ html {
   width: 0%;
   background: #282729;
 }
-/* .b1sli:hover .b1sli {
+/* .slicder3:hover .slicder3 {
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .b2sli{
+.outer-wrapper:hover .slider3n{
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .b3sli{
+.outer-wrapper:hover .slider3nwe{
   transform: scale(0.9);
   transition: all 3s ease;
 } */
-.b1sli {
+.slicder3 {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/3.png");
+  background-image: url("../assets/blueprint/slider3.jpeg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 80%;
+  height: 90%;
   margin-top: 5%;
 }
-.b2sli {
+.slider3n {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/slider1img2.jpg");
+  background-image: url("../assets/blueprint/slider32.jpeg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 67%;
-  margin-top: 14%;
+  height: 90%;
+  margin-top: 5%;
 }
-.b3sli {
+.slider3nwe {
   /* background-color: blueviolet; */
-  background-image: url("../assets/blueprint/slider1img3.jpg");
+  background-image: url("../assets/blueprint/slider33.jpeg");
   /* background-size: 100% 100%;
   object-fit: fill; */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 67%;
-  margin-top: 14%;
-  margin-left: 9%;
+  height: 90%;
+  margin-top: 5%;
 }
 .b1 {
   background-color: rgb(255, 255, 255);
@@ -522,14 +414,14 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 230vw;
+  width: 120vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 .one {
   background: #ffffff;
   height: 100vh;
-  padding-left: 60vw;
+  padding-left: 50vw;
   transition: 4s ease;
 }
 .one_m {

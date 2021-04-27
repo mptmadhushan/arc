@@ -139,7 +139,7 @@
 
 <script scoped>
 import LocomotiveScroll from "locomotive-scroll";
-import Slider2 from "./Slider3";
+import Slider2 from "./Slide3New";
 export default {
   components: {
     Slider2,

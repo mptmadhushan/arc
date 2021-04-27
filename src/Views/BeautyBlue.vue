@@ -37,7 +37,7 @@
           </div>
           <div style="width:99vw;height:13vh"></div>
           <div>
-            <P class="textMini text-left" style="margin-left:31%">
+            <P class="textMini text-left" style="margin-left:35%">
               Pablo Piccaso<br />Cannes,France<br />1956
             </P>
           </div>
@@ -170,7 +170,7 @@
 
 <script scoped>
 import LocomotiveScroll from "locomotive-scroll";
-import Slider2 from "./Slider2";
+import Slider2 from "./Slider2New";
 export default {
   components: {
     Slider2,
