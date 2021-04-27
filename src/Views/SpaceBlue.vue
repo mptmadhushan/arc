@@ -78,7 +78,7 @@
             <div>
               <P
                 class="textMini text-left"
-                style="margin-top:1vw;margin-left:8vw"
+                style="margin-top:1vw;margin-left:13vw"
               >
                 Ricardo Bofill<br />La Fabrica<br />1973
               </P>

@@ -52,7 +52,7 @@
                   </v-img>
                   <p
                     class="textMini text-left"
-                    style="margin-top:1%;margin-left:8%"
+                    style="margin-top:1%;margin-left:7%"
                   >
                     LC4
                     <br />
