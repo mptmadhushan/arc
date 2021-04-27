@@ -78,15 +78,16 @@
             <div>
               <P
                 class="textMini text-left"
-                style="margin-top:1vw;margin-left:15vw"
+                style="margin-top:1vw;margin-left:10vw"
               >
                 Ricardo Bofill<br />La Fabrica<br />1973
               </P>
             </div>
           </v-flex>
-          <v-flex md4 xs12 sm12 align-self-center>
+          <v-flex md4 xs12 sm12 align-self-center >
             <div class="image-box">
               <v-img
+              style="margin-right:5vw"
                 class="zoom_image"
                 eager
                 contain

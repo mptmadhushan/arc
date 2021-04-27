@@ -135,6 +135,7 @@
           <div class="twelve"></div>
         </v-img>
       </div>
+    <div style="width:99vw;height:10vh"></div>
 
       <div>
         <p class="text001">

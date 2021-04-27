@@ -42,7 +42,7 @@
         <div class="slide one">
           <div>
             <v-row no-gutters style="height:100vh;">
-              <v-col align-self="center" style="margin-left:2vw">
+              <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
                 <div>
                   <v-img
                     height="70vh"
@@ -50,7 +50,10 @@
                   >
                     <div class="newBox2"></div>
                   </v-img>
-                  <p class="textMini text-left" style="margin-top:5%;margin-left:10%">
+                  <p
+                    class="textMini text-left"
+                    style="margin-top:1%;margin-left:10%"
+                  >
                     LC4
                     <br />
                     Charlotte Perriand
@@ -59,11 +62,21 @@
                   </p>
                 </div>
               </v-col>
-              <v-col align-self="center">
-                <div style="margin-top:-8%;margin-left:3vw;">
-                  <v-img  height="85vh" src="../assets/blueprint/3.png">
-                  </v-img>
-                  <p class="textMini text-left" style="margin-left:8vw">
+              <v-col align-self="center" style="margin-left:7vw">
+                <div class="fadeClass">
+                  <div class="image-box">
+                    <v-img
+                      class="zoom_image"
+                      height="100%"
+                      cover
+                      src="../assets/blueprint/GB-in-office--Sowden--1985.jpg"
+                    >
+                    </v-img>
+                  </div>
+                  <p
+                    class="textMini text-left"
+                    style="margin-left:5vw;margin-top:1%;"
+                  >
                     Geoffrey Bawa
                     <br />
                     Geoffrey Bawa Trust
@@ -72,16 +85,19 @@
                   </p>
                 </div> </v-col
               ><v-col align-self="center">
-                <div>
-                  <v-img
-                    height="70vh"
-                    contain
-                    src="../assets/blueprint/960x0-ConvertImage.jpg"
-                  >
-                  </v-img>
+                <div class="fadeClass">
+                  <div class="image-box">
+                    <v-img
+                      class="zoom_image"
+                      height="100%"
+                      cover
+                      src="../assets/blueprint/960x0-ConvertImage.jpg"
+                    >
+                    </v-img>
+                  </div>
                   <p
                     class="textMini text-left"
-                    style="margin-top:5%;margin-left:7vw"
+                    style="margin-left:7vw;margin-top:1%;"
                   >
                     Louis Gost Chair
                     <br />
@@ -137,6 +153,48 @@ export default {
 </script>
 
 <style scoped>
+.img-to-ef {
+  transition: all 10s;
+}
+.fadeClass:hover .img-to-ef {
+  transform: scale(1.1);
+  transition: all 5s ease-in-out;
+}
+.fadeClass {
+  display: inline-block;
+  overflow: hidden;
+  height: 78vh;
+  width: 60vw;
+  margin-top: -4%;
+}
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 90%;
+  height: 90%;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.3);
+}
+.zoom_image {
+  transform: scale(1.1);
+  transition: all 10s;
+}
+.fadeClass:hover img {
+  transform: scale(1);
+  transition: ease-out 3.5s;
+}
+.fadeClass:hover .zoom_image {
+  transform: scale(1);
+  transition: ease-out 3.5s;
+}
+
 .textMini {
   text-align: right;
   font-size: 1.5vh;
