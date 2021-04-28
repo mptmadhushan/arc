@@ -37,7 +37,7 @@
           </div>
           <div style="width:99vw;height:13vh"></div>
           <div>
-            <P class="textMini text-left" style="margin-left:32%">
+            <P class="textMini text-left" style="margin-left:30%">
               Pablo Piccaso<br />Cannes,France<br />1956
             </P>
           </div>
