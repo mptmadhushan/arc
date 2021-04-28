@@ -62,7 +62,7 @@
                   </p>
                 </div>
               </v-col>
-              <v-col align-self="center" style="margin-left:8vw">
+              <v-col align-self="center" style="margin-left:8vw;margin-top:10vh">
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
@@ -74,7 +74,7 @@
                     </v-img>
                   </div>
                 </div> </v-col
-              ><v-col align-self="center" style="margin-left:-12vw">
+              ><v-col align-self="center" style="margin-left:-12vw;margin-top:10vh">
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
@@ -143,7 +143,7 @@ export default {
 .fadeClass {
   display: inline-block;
   overflow: hidden;
-  height: 78vh;
+  height: 95vh;
   width: 40vw;
   margin-top: -4%;
 }

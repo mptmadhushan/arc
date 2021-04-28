@@ -8,15 +8,15 @@
               <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
                 <div>
                   <v-img
-                    height="75vh"
-                    width="50vw"
+                    height="85vh"
+                    width="40vw"
                     src="../assets/blueprint/slider3.jpeg"
                   >
                     <div class="newBox2"></div>
                   </v-img>
                 </div>
               </v-col>
-              <v-col align-self="center" style="margin-left:8vw;margin-top:7vh">
+              <v-col align-self="center" style="margin-left:5vw;margin-top:12vh">
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
@@ -30,7 +30,7 @@
                 </div> </v-col
               ><v-col
                 align-self="center"
-                style="margin-left:-12vw;margin-top:7vh"
+                style="margin-left:3vw;margin-top:12vh"
               >
                 <div class="fadeClass">
                   <div class="image-box">
@@ -100,7 +100,7 @@ export default {
 .fadeClass {
   display: inline-block;
   overflow: hidden;
-  height: 85vh;
+  height: 95vh;
   width: 40vw;
   margin-top: -4%;
 }
@@ -459,7 +459,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 190vw;
+  width: 160vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
