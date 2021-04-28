@@ -30,7 +30,7 @@
                 </div> </v-col
               ><v-col
                 align-self="center"
-                style="margin-left:3vw;margin-top:12vh"
+                style="margin-left:-3vw;margin-top:12vh"
               >
                 <div class="fadeClass">
                   <div class="image-box">
@@ -101,7 +101,7 @@ export default {
   display: inline-block;
   overflow: hidden;
   height: 95vh;
-  width: 40vw;
+  width: 35vw;
   margin-top: -4%;
 }
 .image-box {

@@ -42,10 +42,11 @@
         <div class="slide one">
           <div>
             <v-row no-gutters style="height:100vh;">
-              <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
+              <v-col align-self="center" style="margin-left:2vw;margin-top:5vh">
                 <div>
                   <v-img
-                    height="70vh"
+                    height="85vh"
+                    width="40vw"
                     src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
                   >
                     <div class="newBox2"></div>
@@ -62,7 +63,10 @@
                   </p>
                 </div>
               </v-col>
-              <v-col align-self="center" style="margin-left:8vw;margin-top:10vh">
+              <v-col
+                align-self="center"
+                style="margin-left:-7vw;margin-top:10vh"
+              >
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
@@ -74,7 +78,10 @@
                     </v-img>
                   </div>
                 </div> </v-col
-              ><v-col align-self="center" style="margin-left:-12vw;margin-top:10vh">
+              ><v-col
+                align-self="center"
+                style="margin-left:-12vw;margin-top:10vh"
+              >
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
@@ -144,7 +151,7 @@ export default {
   display: inline-block;
   overflow: hidden;
   height: 95vh;
-  width: 40vw;
+  width: 35vw;
   margin-top: -4%;
 }
 .image-box {
