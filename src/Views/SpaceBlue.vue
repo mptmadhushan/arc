@@ -37,7 +37,7 @@
               class="textMini text-left"
               style="margin-left:5vw;margin-top:1vh"
             >
-              Geoffrey Bawa<br />LunuGanga<br />1948 - onwards
+              Geoffrey Bawa<br />Lunuganga<br />1948 - onwards
             </P>
             <div style="width:99vw;height:40vh"></div>
           </div>

@@ -459,7 +459,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 180vw;
+  width: 190vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

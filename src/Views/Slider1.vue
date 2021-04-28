@@ -99,7 +99,7 @@
                     class="textMini text-left"
                     style="margin-left:3vw;margin-top:1%;"
                   >
-                    Louis Gost Chair
+                    Louis Ghost Chair
                     <br />
                     Philippe Starck
                     <br />
