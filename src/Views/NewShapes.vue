@@ -11,7 +11,7 @@
     <div v-if="isMobile()">
       <v-card flat style="margin-top: 5vh">
         <v-layout row wrap justify-center>
-          <v-flex md12 xs6 sm6>
+          <v-flex md12 xs6 sm6 class="project1H">
             <a href="/ChitraLane" class="nav-link">
               <v-row align="center" justify="center">
                 <v-col>
@@ -83,83 +83,185 @@
         </v-layout>
       </v-card>
     </div>
+    <div
+      v-else
+      class="d-flex flex-row align-top justify-center"
+      style="margin-left:20vw"
+    >
+      <div>
+        <v-card
+          class="d-flex flex-column align-center justify-center"
+          flat
+          height="90vh"
+        >
+          <v-card class="d-flex justify-center " flat>
+            <v-card
+              class="pa-2 "
+              flat
+              @mouseover="hover = true"
+              @mouseleave="hover = false"
+            >
+              <a href="/ChitraLane" tag="div">
+                <v-row align="center" justify="center">
+                  <v-col>
+                    <!-- <p class="project1B">lorema asdasd asd</p> -->
+                    <div class="sq"></div>
+                  </v-col>
+                </v-row>
+              </a> </v-card
+            ><v-card
+              @mouseover="hover2 = true"
+              @mouseleave="hover2 = false"
+              class="pa-2"
+              flat
+            >
+              <a href="/Arienti" tag="div">
+                <v-card flat>
+                  <div class="tri"></div>
+                  <!-- <v-img height="20vh" width="20vh" src="../assets/tri.png"></v-img> -->
+                </v-card>
+              </a> </v-card
+            ><v-card
+              @mouseover="hover3 = true"
+              @mouseleave="hover3 = false"
+              class="pa-2"
+              flat
+            >
+              <a href="/Bolgoda" tag="div">
+                <v-card flat>
+                  <div class="cir"></div>
+                </v-card>
+              </a>
+            </v-card>
+          </v-card>
 
-    <div v-else>
-      <v-card
-        class="d-flex flex-column align-center justify-center  mb-6"
-        flat
-        height="90vh"
-      >
-        <v-card class="d-flex justify-center" flat>
-          <v-card class="pa-2" flat>
-            <a href="/ChitraLane" class="nav-link">
-              <!-- <a to="/ChitraLane" :key="$route.fullPath" tag="div"> -->
-              <v-row align="center" justify="center">
-                <v-col>
+          <v-card class="d-flex justify-center" flat>
+            <v-card
+              class="pa-2"
+              flat
+              @mouseover="hover4 = true"
+              @mouseleave="hover4 = false"
+            >
+              <a href="/DamindraHouse" tag="div">
+                <v-card flat>
+                  <div class="cir"></div>
+                </v-card>
+              </a>
+            </v-card>
+            <v-card
+              class="pa-2"
+              flat
+              @mouseover="hover5 = true"
+              @mouseleave="hover5 = false"
+            >
+              <a href="/DinaliHouse" tag="div">
+                <v-card flat>
                   <div class="sq"></div>
-                </v-col>
-              </v-row>
-            </a> </v-card
-          ><v-card class="pa-2" flat>
-            <a href="/Arienti" tag="div">
-              <v-card flat>
-                <div class="tri"></div>
-                <!-- <v-img height="20vh" width="20vh" src="../assets/tri.png"></v-img> -->
-              </v-card>
-            </a> </v-card
-          ><v-card class="pa-2" flat>
-            <a href="/Bolgoda" tag="div">
-              <v-card flat>
-                <div class="cir"></div>
-              </v-card>
-            </a>
+                </v-card>
+              </a> </v-card
+            ><v-card
+              class="pa-2"
+              flat
+              @mouseover="hover6 = true"
+              @mouseleave="hover6 = false"
+            >
+              <a href="/ChamikaHouse" tag="div">
+                <v-card flat>
+                  <div class="tri"></div>
+                </v-card>
+              </a>
+            </v-card>
           </v-card>
-        </v-card>
 
-        <v-card class="d-flex justify-center" flat>
-          <v-card class="pa-2" flat>
-            <a href="/DamindraHouse" tag="div">
-              <v-card flat>
-                <div class="cir"></div>
-              </v-card>
-            </a> </v-card
-          ><v-card class="pa-2" flat>
-            <a href="/DinaliHouse" tag="div">
-              <v-card flat>
-                <div class="sq"></div>
-              </v-card>
-            </a> </v-card
-          ><v-card class="pa-2" flat>
-            <a href="/ChamikaHouse" tag="div">
-              <v-card flat>
-                <div class="tri"></div>
-              </v-card>
-            </a>
+          <v-card class="d-flex justify-center" flat>
+            <v-card
+              class="pa-2"
+              flat
+              @mouseover="hover7 = true"
+              @mouseleave="hover7 = false"
+            >
+              <a href="/StoneHouse" tag="div">
+                <v-card flat>
+                  <div class="tri"></div>
+                </v-card>
+              </a> </v-card
+            ><v-card
+              @mouseover="hover8 = true"
+              @mouseleave="hover8 = false"
+              class="pa-2"
+              flat
+            >
+              <a href="/Hanthana" tag="div">
+                <v-card flat>
+                  <div class="cir"></div>
+                </v-card>
+              </a> </v-card
+            ><v-card
+              @mouseover="hover9 = true"
+              @mouseleave="hover9 = false"
+              class="pa-2"
+              flat
+            >
+              <a href="/maniumpathy" tag="div">
+                <v-card flat>
+                  <div class="sq"></div>
+                </v-card>
+              </a>
+            </v-card>
           </v-card>
         </v-card>
-
-        <v-card class="d-flex justify-center" flat>
-          <v-card class="pa-2" flat>
-            <a href="/StoneHouse" tag="div">
-              <v-card flat>
-                <div class="tri"></div>
-              </v-card>
-            </a> </v-card
-          ><v-card class="pa-2" flat>
-            <a href="/Hanthana" tag="div">
-              <v-card flat>
-                <div class="cir"></div>
-              </v-card>
-            </a> </v-card
-          ><v-card class="pa-2" flat>
-            <a href="/maniumpathy" tag="div">
-              <v-card flat>
-                <div class="sq"></div>
-              </v-card>
-            </a>
-          </v-card>
-        </v-card>
-      </v-card>
+      </div>
+      <div style="width:20vw;margin-top:10vw;padding-left:5vw" flat>
+        <div v-if="hover">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA071</p>
+          <p class="textPro">Address - Colombo 05</p>
+        </div>
+        <div v-if="hover2">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA058</p>
+          <p class="textPro">Address - Colombo 03</p>
+          <p class="textPro">Arienti</p>
+        </div>
+        <div v-if="hover3">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA033</p>
+          <p class="textPro">Address - Bolgoda Lake</p>
+        </div>
+        <div v-if="hover5">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA084</p>
+          <p class="textPro">Address - Colombo</p>
+        </div>
+        <div v-if="hover6">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA005</p>
+          <p class="textPro">Address - Maharagama</p>
+        </div>
+        <div v-if="hover9">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA019</p>
+          <p class="textPro">Address - Colombo 07</p>
+          <p class="textPro">Maniumpathy</p>
+        </div>
+        <div v-if="hover8">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA094</p>
+          <p class="textPro">Address - Hanthana</p>
+          <p class="textPro">W15</p>
+        </div>
+        <div v-if="hover7">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA003</p>
+          <p class="textPro">Address - Kandy</p>
+          <p class="textPro">Stone House</p>
+        </div>
+        <div v-if="hover4">
+          <p class="textProHead">Projects</p>
+          <p class="textPro">Project Code - CDA047</p>
+          <p class="textPro">Address - Colombo 06</p>
+        </div>
+      </div>
     </div>
   </v-container>
 </template>
@@ -170,6 +272,15 @@ export default {
     localStorage.setItem("isloaded", false);
   },
   data: () => ({
+    hover: false,
+    hover2: false,
+    hover3: false,
+    hover4: false,
+    hover5: false,
+    hover6: false,
+    hover7: false,
+    hover8: false,
+    hover9: false,
     myImage:
       "https://s-media-cache-ak0.pinimg.com/originals/bd/5d/84/bd5d845c980508d41b0329dc21d08d2b.jpg",
     otherImage:
@@ -187,6 +298,33 @@ export default {
 </script>
 
 <style scoped>
+.textProHead {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 2.5vh;
+  font-weight: bold;
+  color: #11111193;
+}
+.textPro {
+  margin-top: -0.9vh;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 1.5vh;
+  color: #11111193;
+}
+.project1B {
+  background-color: red;
+}
+.project1B:hover .project1 {
+  opacity: 0;
+  background-color: blue;
+}
+.project1B:hover {
+  background-color: blue;
+}
+.project1 {
+  color: aqua;
+}
 .cir {
   height: 20vh;
   width: 20vh;

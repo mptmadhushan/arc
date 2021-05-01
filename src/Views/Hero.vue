@@ -47,15 +47,41 @@
     </div>
 
     <div class="clear-both"></div>
-    <p style="font-size:200px" v-if="arrowa"></p>
-    <div class="scroll">
-      <v-img
+    <!-- <p style="font-size:200px" v-if="arrowa"></p> -->
+    <div>
+      <!-- <v-img
         contain
         height="10vh"
         width="5vh"
         eager
         src="../assets/whiteArrow.png"
-      ></v-img>
+      ></v-img> -->
+      <v-layout row wrap justify-space-between style="margin-top:-5vh">
+        <v-flex md2>
+          <v-img
+            contain
+            height="30px"
+            eager
+            src="../assets/whiteArrowL.png"
+          ></v-img>
+        </v-flex>
+        <v-flex md2 style="margin-top:2vh">
+          <v-img
+            contain
+            height="20px"
+            eager
+            src="../assets/whiteArrow.png"
+          ></v-img>
+        </v-flex>
+        <v-flex md2>
+          <v-img
+            contain
+            height="30px"
+            eager
+            src="../assets/whiteArrowRi.png"
+          ></v-img>
+        </v-flex>
+      </v-layout>
     </div>
   </div>
 </template>
@@ -91,7 +117,7 @@ export default {
     //  console.log('hello',jjjc)
 
     //     console.log(event.deltaY);
-  //     if (event.deltaY < 0) {
+    //     if (event.deltaY < 0) {
     //       console.log('if')
     //     } else {
     //       // this.handleScroll()
@@ -377,7 +403,7 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
   /* color: "red"; */
-  background-image: url("../assets/new_main.jpg");
+  background-image: url("../assets/2.0home page.png");
   animation: fadeIn ease 20s;
   -webkit-animation: fadeIn ease 20s;
   -moz-animation: fadeIn ease 20s;

@@ -10,6 +10,9 @@
       <div class="pasdadage" ref="asd" id="viewElement2">
         <page2 />
       </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   </div>
 </template>
@@ -18,12 +21,14 @@
 import hero from "./Hero";
 import page1 from "./page1";
 import page2 from "./page2";
+import Footer from "./Footer";
 
 export default {
   components: {
     hero,
     page1,
     page2,
+    Footer,
   },
   watch: {
     $route(to, from) {

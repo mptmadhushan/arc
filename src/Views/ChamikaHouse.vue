@@ -34,7 +34,7 @@
           <p class="text001">
             Architecture should speak of its time and place but yearn for
             timelessness<br />
-            <span class="textBold"> Frank Gehry</span>
+            <span class="text001"> Frank Gehry</span>
           </p>
         </div>
       </v-layout>
@@ -79,7 +79,7 @@
           <p class="text001 text-right">
             God is in the details<br />
             <br />
-            <span class="textBold text-right">
+            <span class="text001 text-right">
               Mies Van Der<br />
               Rohe</span
             >
@@ -119,7 +119,7 @@
           <p class="text001 text-left">
             Simplicity is the ultimate<br />
             sophisticattion<br /><br />
-            <span class="textBold"> Leonardo Da Vinci</span>
+            <span class="text001"> Leonardo Da Vinci</span>
           </p>
         </v-flex>
 
