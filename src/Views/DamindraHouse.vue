@@ -40,7 +40,7 @@
         height="85vh"
         src="../assets/Damindra_House/_SDS7604.JPG.jpg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Hidden Expression <br />Communication between material and form
       </p>
     </div>
@@ -104,7 +104,7 @@
         height="85vh"
         src="../assets/Damindra_House/_SDS7591.JPG.jpg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Interiors of contemporary character and charm
       </p>
     </div>
@@ -346,7 +346,6 @@ export default {
   text-align: left;
   padding: 10px;
   font-size: 2vh;
-  font-weight: bold;
   color: #11111193;
 }
 .slider-container {

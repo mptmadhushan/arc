@@ -213,53 +213,44 @@
       </div>
       <div style="width:20vw;margin-top:10vw;padding-left:5vw" flat>
         <div v-if="hover">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA071</p>
-          <p class="textPro">Address - Colombo 05</p>
+          <p class="textPro">CDA071</p>
+          <p class="textPro">Colombo 05</p>
         </div>
         <div v-if="hover2">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA058</p>
-          <p class="textPro">Address - Colombo 03</p>
+          <p class="textPro">CDA058</p>
+          <p class="textPro">Colombo 03</p>
           <p class="textPro">Arienti</p>
         </div>
         <div v-if="hover3">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA033</p>
-          <p class="textPro">Address - Bolgoda Lake</p>
+          <p class="textPro">CDA033</p>
+          <p class="textPro">Bolgoda Lake</p>
         </div>
         <div v-if="hover5">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA084</p>
-          <p class="textPro">Address - Colombo</p>
+          <p class="textPro">CDA084</p>
+          <p class="textPro">Colombo</p>
         </div>
         <div v-if="hover6">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA005</p>
-          <p class="textPro">Address - Maharagama</p>
+          <p class="textPro">CDA005</p>
+          <p class="textPro">Maharagama</p>
         </div>
         <div v-if="hover9">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA019</p>
-          <p class="textPro">Address - Colombo 07</p>
+          <p class="textPro">CDA019</p>
+          <p class="textPro">Colombo 07</p>
           <p class="textPro">Maniumpathy</p>
         </div>
         <div v-if="hover8">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA094</p>
-          <p class="textPro">Address - Hanthana</p>
+          <p class="textPro">CDA094</p>
+          <p class="textPro">Hanthana</p>
           <p class="textPro">W15</p>
         </div>
         <div v-if="hover7">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA003</p>
-          <p class="textPro">Address - Kandy</p>
+          <p class="textPro">CDA003</p>
+          <p class="textPro">Kandy</p>
           <p class="textPro">Stone House</p>
         </div>
         <div v-if="hover4">
-          <p class="textProHead">Projects</p>
-          <p class="textPro">Project Code - CDA047</p>
-          <p class="textPro">Address - Colombo 06</p>
+          <p class="textPro">CDA047</p>
+          <p class="textPro">Colombo 06</p>
         </div>
       </div>
     </div>

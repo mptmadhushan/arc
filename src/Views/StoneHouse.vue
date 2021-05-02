@@ -65,7 +65,7 @@
       data-aos-duration="2500"
     >
       <v-img eager contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Revitalization of an icon.
       </p>
     </div>
@@ -85,7 +85,7 @@
         object-fit
         src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Revitalization of an icon.
       </p>
     </div>
@@ -97,8 +97,8 @@
         contain
         src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
       ></v-img>
-      <span style="font-weight:bold">Silence</span>
-      <p class="text001">
+      <span style="text002 text-center">Silence</span>
+      <p class="text002 text-center">
         Nature through the existing architectural frame.
       </p>
     </div>
@@ -128,7 +128,7 @@
           data-aos-delay="400"
           data-aos-duration="1500"
         >
-          <p class="textBold" style="font-weight:600">Silence</p>
+          <p class="text002 text-center" style="font-weight:600">Silence</p>
           <p class="text002">
             Nature through the existing architectural frame.
           </p>
@@ -155,7 +155,7 @@
             <flux-preloader height="40vh" />
           </template>
         </vue-flux>
-        <p class="text001">
+        <p class="text002 text-center">
           Art and Sculpture. a study of the proprietor's history in the rice
           industry and its many permutations<br />
           through the lens of Kingsley Goonatilake
@@ -179,7 +179,7 @@
             <flux-preloader height="40vh" />
           </template>
         </vue-flux>
-        <p class="text001">
+        <p class="text002 text-center">
           Art and Sculpture. a study of the proprietor's history in the rice
           industry and its many permutations<br />
           through the lens of Kingsley Goonatilake
@@ -198,7 +198,7 @@
         contain
         src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Duality<br />
         <br />
         A sincere collision.
@@ -287,7 +287,7 @@
             </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
-            <p class="text001">
+            <p class="text002 text-center">
               Tea stained rice paper and gold leaf <br />Thisath Thoradeniya and
               Pala Pothupitiya encapsulating each room<br />
               with their materiality
@@ -508,13 +508,11 @@ export default {
   text-align: center;
   padding: 10px;
   font-size: 2vh;
-  font-weight: bold;
   color: #11111193;
 }
 .text002 {
   text-align: left;
   padding: 10px;
-  font-weight: bold;
   font-size: 2vh;
   color: #11111193;
 }

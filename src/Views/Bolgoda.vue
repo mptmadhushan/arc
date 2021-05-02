@@ -39,7 +39,7 @@
         data-aos-delay="100"
         src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Intimacy and indulgence
       </p>
     </div>
@@ -104,7 +104,7 @@
         height="85vh"
         src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Harmonious Coexistence <br />
         The interplay of Sri Lankan pop art and indo-Portuguese furniture.
       </p>
@@ -247,7 +247,7 @@
         contain
         src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         A contempoary twist to a timeless view.
       </p>
     </div>

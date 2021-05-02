@@ -20,7 +20,7 @@
         <div class="b4"></div>
       </div>
 
-      <p class="text001">
+      <p class="newText2 text-center">
         Resuscitate. Repurpose. Reinvigorate
       </p>
     </div>
@@ -45,7 +45,7 @@
         ></v-img>
       </div>
 
-      <p class="text0011 text-center mt-12">
+      <p class="newText2 text-center mt-12">
         Formerly in disrepair - A compendium of contemporary lines
       </p>
     </div>
@@ -98,7 +98,7 @@
             </slide>
           </carousel-3d>
           <div
-            class="text0011"
+            class="newText2 text-center"
             style="background-color: white;text-align: center;padding:20px;"
           >
             A study in subtlety.
@@ -171,6 +171,21 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+.text001 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.5vh;
+  color: #11111193;
+}
+.newText2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: justify;
+  font-size: 2vh;
+  color: #11111193;
+}
 .b4con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Arienti/_SDS7737.jpeg");

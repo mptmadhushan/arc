@@ -71,7 +71,7 @@
             <flux-preloader />
           </template>
         </vue-flux>
-        <p class="text001">
+        <p class="text002 text-center">
           Peripheral. Kingsley Goonatilake elevates and uplifts
         </p>
       </div>
@@ -85,7 +85,7 @@
             <flux-preloader />
           </template>
         </vue-flux>
-        <p class="text001">
+        <p class="text002 text-center">
           Peripheral. Kingsley Goonatilake elevates and uplifts
         </p>
       </div>
@@ -132,7 +132,7 @@
             </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
-            <p class="text001">
+            <p class="text002 text-center">
               Purity and Refinement <br />
               Sculptural mix of carefully curated contemporary and antique by
               Laki Senanayake and Kingsley Goonatilake
@@ -257,7 +257,7 @@
         style="margin-left: 5vw;margin-right: 5vw"
         src="../assets/Dinali_House/_SDS2903.JPG.jpg"
       ></v-img>
-      <p class="text001">
+      <p class="text002 text-center">
         Hidden oasis of calm
       </p>
     </div>
@@ -340,7 +340,6 @@ export default {
 }
 .text001 {
   text-align: center;
-  font-weight: bold;
   padding: 10px;
   font-size: 2vh;
   color: #11111193;
@@ -348,7 +347,6 @@ export default {
 .text002 {
   text-align: left;
   padding: 10px;
-  font-weight: bold;
   font-size: 2vh;
   color: #11111193;
 }

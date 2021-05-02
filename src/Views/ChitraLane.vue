@@ -51,7 +51,7 @@
         <div class="b1"></div>
       </div>
 
-      <p class="text001">
+      <p class="text002 text-center">
         Shades and Shadow
       </p>
     </div>
@@ -200,7 +200,7 @@
             </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
-            <p class="text001">
+            <p class="text002 text-center">
               Light and space. A pleasing neutrality
             </p>
           </div>

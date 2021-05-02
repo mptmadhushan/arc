@@ -31,10 +31,10 @@
           </div>
         </v-flex>
         <div>
-          <p class="text001">
+          <p class="text002 text-center">
             Architecture should speak of its time and place but yearn for
             timelessness<br />
-            <span class="text001"> Frank Gehry</span>
+            <span class="text002 text-center"> Frank Gehry</span>
           </p>
         </div>
       </v-layout>
@@ -76,10 +76,10 @@
           ></v-img>
         </v-flex>
         <v-flex md2 align-self-center>
-          <p class="text001 text-right">
+          <p class="text002 text-right">
             God is in the details<br />
             <br />
-            <span class="text001 text-right">
+            <span class="text002 text-right">
               Mies Van Der<br />
               Rohe</span
             >
@@ -116,10 +116,10 @@
       <div style="width:99vw;height:35vh;padding:10px"></div>
       <v-layout row wrap justify-center>
         <v-flex md3 align-self-center>
-          <p class="text001 text-left">
+          <p class="text002 text-left">
             Simplicity is the ultimate<br />
             sophisticattion<br /><br />
-            <span class="text001"> Leonardo Da Vinci</span>
+            <span class="text002 text-left">Leonardo Da Vinci</span>
           </p>
         </v-flex>
 
