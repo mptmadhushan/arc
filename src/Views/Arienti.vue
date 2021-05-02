@@ -184,6 +184,7 @@ export default {
   font-family: "Josefin Sans", sans-serif;
   text-align: justify;
   font-size: 2vh;
+  margin-top: 10px;
   color: #11111193;
 }
 .b4con {

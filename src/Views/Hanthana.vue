@@ -31,7 +31,7 @@
       data-aos-duration="1500"
     >
       <v-img eager contain src="../assets/hanthana/2.jpeg"></v-img>
-      <p class="text002">
+      <p class="newText2 text-center">
         Prelude <br /><br />
         A journey forthcoming
       </p>
@@ -46,7 +46,7 @@
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <p class="text002 text-end">
+          <p class="newText2 text-end">
             Prelude <br /><br />A journey forthcoming
           </p>
         </v-flex>
@@ -74,7 +74,7 @@
       data-aos-duration="1500"
     >
       <v-img eager contain src="../assets/hanthana/3.jpeg"></v-img>
-      <p class="text002">
+      <p class="newText2 text-center">
         Viridescent Charm
       </p>
     </div>
@@ -92,7 +92,7 @@
         contain
         src="../assets/hanthana/3.jpeg"
       ></v-img>
-      <p class="text001">
+      <p class="newText2 text-center">
         Viridescent Charm
       </p>
     </div>
@@ -130,7 +130,7 @@
       data-aos-duration="1500"
     >
       <v-img eager contain src="../assets/hanthana/5.png"></v-img>
-      <p class="text002">
+      <p class="newText2 text-center">
         Peaceful Interdependence <br /><br />
         A contemplative mountain setting
       </p>
@@ -145,7 +145,7 @@
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <p class="text002">
+          <p class="newText2 text-center">
             Peaceful Interdependence <br /><br />
             A contemplative mountain setting
           </p>
@@ -223,7 +223,7 @@
       data-aos-duration="1500"
     >
       <v-img eager contain src="../assets/hanthana/7.jpeg"></v-img>
-      <p class="text002">
+      <p class="newText2 text-center">
         Curated experience of Art and Artifact
       </p>
     </div>
@@ -239,7 +239,7 @@
         contain
         src="../assets/hanthana/7.jpeg"
       ></v-img>
-      <p class="text001">
+      <p class="newText2 text-center">
         Curated experience of Art and Artifact
       </p>
     </div>
@@ -273,7 +273,7 @@
             </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
-            <p class="text001">
+            <p class="newText2 text-center">
               Pleasure in Interaction. A human space
             </p>
           </div>
@@ -289,7 +289,7 @@
         height="85vh"
         src="../assets/hanthana/slide2.jpeg"
       ></v-img>
-      <p class="text001" style="padding-inline:15vw">
+      <p class="newText2 text-center" style="padding-inline:15vw">
         Bandu Manamperi's take on the surrounding vista of mountains from
         Hanthana itself, creating a contemporary stage for his work within the
         context of a dramatic lounge to wind down after a journey
@@ -325,7 +325,7 @@
         </v-flex>
         <v-flex md4 align-self-center>
           <p
-            class="text001"
+            class="newText2 text-center"
             data-aos="fade-right"
             data-aos-delay="300"
             data-aos-duration="1500"
@@ -390,7 +390,7 @@
         contain
         src="../assets/hanthana/slide6.jpg"
       ></v-img>
-      <p class="text001">
+      <p class="newText2 text-center">
         Timeless Materiality. Gentle contemporary with textured <br />warmth
       </p>
     </div>
@@ -440,7 +440,7 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-      <p class="text001">
+      <p class="newText2 text-center">
         Romantic dissolution between interior and exterior
       </p>
       <div style="width:99vw;height:20vh;padding:10px"></div>
@@ -458,7 +458,7 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-      <p class="text001">
+      <p class="newText2 text-center">
         Romantic dissolution between interior and exterior
       </p>
     </div>
@@ -547,7 +547,7 @@ export default {
   animation: mymove 5s infinite; */
   animation: slideInFromLeft 1.5s ease-in;
 }
-.text001 {
+.newText2 text-center {
   text-align: center;
   padding: 10px;
   font-weight: bold;

@@ -28,8 +28,8 @@
             <div class="b1"></div>
           </div>
 
-          <p class="text001">
-          Universal Elevation
+          <p class="newText2 text-center">
+            Universal Elevation
           </p>
         </v-flex>
       </v-layout>
@@ -80,12 +80,7 @@
       <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
 
       <v-img eager contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
-      <p
-        style=" text-align: right;
-  padding: 10px;
-  font-size: 2vh;
-  color: #11111193;"
-      >
+      <p class="newText2 text-right">
         Understated Refinement <br />
         Singularity relative to its surroundings.
       </p>
@@ -112,12 +107,7 @@
           data-aos-delay="300"
           data-aos-duration="2500"
         >
-          <p
-            style=" text-align: right;
-  padding: 10px;
-  font-size: 2vh;
-  color: #11111193;"
-          >
+          <p class="newText2 text-right">
             Understated Refinement <br />
             <br />
             Singularity relative to its <br />surroundings.
@@ -138,7 +128,7 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-      <p class="text001">
+      <p class="newText2 text-center">
         Craftsmanship. Material Sensitivity
       </p>
     </div>
@@ -161,7 +151,7 @@
             <flux-preloader height="40vh" />
           </template>
         </vue-flux>
-        <p class="text001">
+        <p class="newText2 text-center">
           Craftsmanship. Material Sensitivity
         </p>
       </div>
@@ -180,7 +170,7 @@
         contain
         src="../assets/Maniumpathy/_SDS2554.JPG.jpeg"
       ></v-img>
-      <p class="text002">
+      <p class="newText2 text-center">
         Subtle Interiors of Charm and Softness
       </p>
     </div>
@@ -194,12 +184,7 @@
           data-aos-delay="300"
           data-aos-duration="2500"
         >
-          <p
-            style=" text-align: left;
-  padding: 20px;
-  font-size: 2vh;
-  color: #11111193;"
-          >
+          <p class="newText2 text-left">
             Subtle Interiors of Charm and Softness
           </p>
         </v-flex>
@@ -248,7 +233,7 @@
             </slide>
           </carousel-3d>
           <div style="margin-inline: 20%">
-            <!-- <p class="text001">
+            <!-- <p class="newText2 text-center">
               Indo-portugese and contemporary. Thoughtfully considered and
               diligently placed
             </p> -->
@@ -265,7 +250,7 @@
         height="85vh"
         src="../assets/Maniumpathy/_SDS2577.png"
       ></v-img>
-      <p class="text001">
+      <p class="newText2 text-center">
         Indo-portugese and contemporary.<br />
         Thoughtfully considered and diligently placed
       </p>
@@ -347,7 +332,7 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-      <p class="text001">
+      <p class="newText2 text-center">
         Unparalleled Emotion. Atmosphere. Gentle Contemporary
       </p>
     </div>
@@ -364,7 +349,7 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-      <p class="text001">
+      <p class="newText2 text-center">
         Unparalleled Emotion. Atmosphere. Gentle Contemporary
       </p>
     </div>
@@ -389,7 +374,7 @@
     >
       <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
       <v-img eager contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
-      <p class="text002">
+      <p class="newText2 text-center">
         Modern convenience through a<br />
         material lens
       </p>
@@ -407,7 +392,7 @@
         data-aos-duration="2500"
       >
         <v-flex md3 pa-4 align-self-end>
-          <p class="text002">
+          <p class="newText2 text-center">
             Modern convenience through a<br />
             material lens
           </p>
@@ -430,7 +415,7 @@
         contain
         src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"
       ></v-img>
-      <!-- <p class="text002">
+      <!-- <p class="newText2 text-center">
         Former sewing tables that were given new life within this contemporary
         outdoor dining experience
       </p> -->
@@ -449,7 +434,7 @@
         contain
         src="../assets/Maniumpathy/_SDS2649-2.JPG.jpeg"
       ></v-img>
-      <!-- <p class="text001">
+      <!-- <p class="newText2 text-center">
         Former sewing tables that were given new life within this contemporary
         outdoor dining experience
       </p> -->
@@ -471,7 +456,7 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-      <p class="text001">
+      <p class="newText2 text-center">
         <!-- Proportionate Doric pillars to supplement and frame this restful and
         serene outdoor pavilion -->
       </p>
@@ -488,7 +473,7 @@
           <flux-preloader height="40vh" />
         </template>
       </vue-flux>
-      <p class="text001">
+      <p class="newText2 text-center">
         <!-- Proportionate Doric pillars to supplement and frame this restful and
         serene outdoor pavilion -->
       </p>
@@ -520,7 +505,7 @@
           data-aos-delay="300"
           data-aos-duration="2500"
         >
-          <p class="text002">
+          <p class="newText2 text-center">
             Masterclass in White <br />providing contrast and variation with a
             nod to the history of the building.
           </p>
@@ -641,14 +626,14 @@ export default {
     transform: translateY(-100%);
   }
 }
-.text001 {
+.newText2 text-center {
   text-align: center;
   padding: 10px;
   font-size: 2vh;
   font-weight: bold;
   color: #11111193;
 }
-.text002 {
+.newText2 text-center {
   text-align: left;
   padding: 10px;
   font-weight: bold;
