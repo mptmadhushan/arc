@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p class="email">info@cda-ca.com</p>
+    <p class="email left">info@cda-ca.com</p>
     <p class="contry">
       Sri Lanka
     </p>
@@ -9,6 +9,7 @@
       Pamanuwa, <br />Maharagama, <br />
       Lanka
     </p>
+
     <!-- <v-layout row wrap>
       <v-flex md6>
         <p class="text001">lorem ipsum dolor</p>
@@ -32,7 +33,25 @@ export default {};
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+.email {
+  text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) bottom / 0 0.1em
+    no-repeat;
+  transition: 1s background-size;
+}
 
+.email:hover {
+  background-size: 51% 0.1em;
+}
+
+/* Variations */
+.email.left {
+  background-position: left bottom;
+}
+
+.email.right {
+  background-position: right bottom;
+}
 .email {
   font-family: "Josefin Sans", sans-serif;
 
