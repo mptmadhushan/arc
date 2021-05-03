@@ -227,7 +227,7 @@
         </div>
         <div v-if="hover5">
           <p class="textPro">CDA084</p>
-          <p class="textPro">Colombo</p>
+          <p class="textPro">Colombo 07</p>
         </div>
         <div v-if="hover6">
           <p class="textPro">CDA005</p>
@@ -251,6 +251,7 @@
         <div v-if="hover4">
           <p class="textPro">CDA047</p>
           <p class="textPro">Colombo 06</p>
+          <p class="textPro">Havelock Road</p>
         </div>
       </div>
     </div>
@@ -320,21 +321,21 @@ export default {
   height: 20vh;
   width: 20vh;
   opacity: 0.4;
-  background-size: 70% 70%;
-  background-image: url("../assets/ncir.svg");
+  background-size: 100% 100%;
+  background-image: url("../assets/cir.png");
 }
 .cir:hover {
   height: 20vh;
   width: 20vh;
   transition: 1s ease;
   opacity: 0.3;
-  background-size: 70% 70%;
-  background-image: url("../assets/ncirHover.svg");
+  background-size: 100% 100%;
+  background-image: url("../assets/cirHover.png");
 }
 .sq {
   height: 20vh;
   width: 20vh;
-  background-size: 90% 90%;
+  background-size: 100% 100%;
   opacity: 0.4;
 
   background-image: url("../assets/sqHover.png");
