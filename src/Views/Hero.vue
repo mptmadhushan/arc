@@ -56,13 +56,13 @@
         eager
         src="../assets/whiteArrow.png"
       ></v-img> -->
-      <v-layout row wrap justify-space-between style="margin-top:-5vh">
-        <v-flex md2>
+      <v-layout row wrap justify-space-between style="margin-top:-10vh">
+        <v-flex md2 class="leftArr">
           <v-img
             contain
-            height="30px"
+            height="100%"
             eager
-            src="../assets/whiteArrowL.png"
+            src="../assets/transparent-brush-arrow-5e332a3c82c7f2.0719248015804114525357 left.png"
           ></v-img>
         </v-flex>
         <v-flex md2 style="margin-top:2vh">
@@ -73,12 +73,12 @@
             src="../assets/whiteArrow.png"
           ></v-img>
         </v-flex>
-        <v-flex md2>
+        <v-flex md2 class="rightArr">
           <v-img
             contain
-            height="30px"
+            height="100%"
             eager
-            src="../assets/whiteArrowRi.png"
+            src="../assets/transparent-brush-arrow-5e332a3c82c7f2.0719248015804114525357.png"
           ></v-img>
         </v-flex>
       </v-layout>
@@ -233,6 +233,16 @@ export default {
 </script>
 
 <style scoped>
+.bg:hover .leftArr {
+  animation-delay: 3s;
+  margin-left: -10vw;
+  transition: 6s ease-in;
+}
+.bg:hover .rightArr {
+  margin-right: -10vw;
+  transition: 6s ease-in;
+  opacity: 0 6s;
+}
 .scroll {
   /* width: 100%; */
   height: 100%;

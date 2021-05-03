@@ -321,23 +321,23 @@ export default {
   height: 20vh;
   width: 20vh;
   opacity: 0.4;
-  background-size: 100% 100%;
-  background-image: url("../assets/cir.png");
+  padding: -10vh;
+  background-size: 70% 100%;
+  background-image: url("../assets/cir.svg");
 }
 .cir:hover {
   height: 20vh;
   width: 20vh;
-  transition: 1s ease;
+  transition: 2s ease;
   opacity: 0.3;
-  background-size: 100% 100%;
-  background-image: url("../assets/cirHover.png");
+  background-size: 70% 100%;
+  background-image: url("../assets/cirHover.svg");
 }
 .sq {
   height: 20vh;
   width: 20vh;
   background-size: 100% 100%;
   opacity: 0.4;
-
   background-image: url("../assets/sqHover.png");
 }
 .sq:hover {
