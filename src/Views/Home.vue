@@ -2,7 +2,6 @@
   <div class="aaa">
     <div>
       <div class="hero" ref="hero"><hero /></div>
-      <div style="width:99vw;height:20vh;padding:10px"></div>
       <div class="page1" ref="page1" id="viewElement">
         <page1 />
       </div>

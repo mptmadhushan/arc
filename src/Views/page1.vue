@@ -3,6 +3,7 @@
     <div class="about_us_bg">
       <div v-if="loaded">
         <div class="fadeClass">
+          <div style="width:99vw;height:20vh;padding:10px"></div>
           <v-layout
             row
             wrap
@@ -87,6 +88,7 @@
         </v-layout> -->
       </div>
       <div v-else class="fadeClass">
+        <div style="width:99vw;height:20vh;padding:10px"></div>
         <div class="about_us_bg">
           <v-layout
             row

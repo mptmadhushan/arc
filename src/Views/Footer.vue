@@ -55,7 +55,7 @@ export default {};
 .email {
   font-family: "Josefin Sans", sans-serif;
 
-  margin-left: 29vh;
+  margin-left: 14vh;
   padding-top: 20vh;
   color: grey;
   font-size: 10vh;
@@ -63,7 +63,7 @@ export default {};
 .address {
   font-family: "Josefin Sans", sans-serif;
 
-  margin-left: 30vh;
+  margin-left: 15vh;
   padding-top: 0.5vh;
   color: grey;
   font-size: 1.5vh;
@@ -71,7 +71,7 @@ export default {};
 .contry {
   font-family: "Josefin Sans", sans-serif;
 
-  margin-left: 30vh;
+  margin-left: 15vh;
   padding-top: 10vh;
   color: white;
   font-size: 2vh;
