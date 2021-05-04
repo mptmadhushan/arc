@@ -1,6 +1,6 @@
 /* eslint-disable vue/no-parsing-error */ /* eslint-disable vue/no-parsing-error
 */
-<template >
+<template>
   <div>
     <div>
       <router-link to="/">
@@ -200,6 +200,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 .img-to-ef {
@@ -281,14 +282,16 @@ export default {
   padding-right: 10%;
   margin-top: -5%;
   font-weight: bold;
-  color: grey;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .textMini2 {
   text-align: left;
   margin-top: -5%;
   font-size: 1.5vh;
   font-weight: bold;
-  color: grey;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .body {
   /* height: 50vh;
@@ -335,6 +338,7 @@ span {
   filter: blur(0);
 }
 .letter {
+  color: #a6a6a6;
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
@@ -371,6 +375,7 @@ span {
   filter: blur(0);
 }
 .letter2 {
+  color: #a6a6a6;
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
@@ -790,22 +795,24 @@ h2 span:last-child {
 }
 .text001 {
   text-align: center;
-  font-family: "Arimo", sans-serif;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
   font-size: 2.5vh;
   font-weight: 900;
-  color: #000000;
 }
 .text003 {
   text-align: left;
   padding-left: 2vw;
   font-size: 2vh;
-  color: #11111193;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .text002 {
   text-align: start;
   padding: 5vh;
   font-size: 2vh;
-  color: #11111193;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .image_slider {
   display: flex;

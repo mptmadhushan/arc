@@ -41,7 +41,6 @@
             </P>
             <div style="width:99vw;height:40vh"></div>
           </div>
-          
 
           <div>
             <P
@@ -84,10 +83,10 @@
               </P>
             </div>
           </v-flex>
-          <v-flex md4 xs12 sm12 align-self-center >
+          <v-flex md4 xs12 sm12 align-self-center>
             <div class="image-box">
               <v-img
-              style="margin-right:5vw"
+                style="margin-right:5vw"
                 class="zoom_image"
                 eager
                 contain
@@ -275,7 +274,8 @@ export default {
   /* padding-right: 10%; */
   margin-top: -5%;
   font-weight: bold;
-  color: grey;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .body {
   /* height: 50vh;
@@ -322,6 +322,7 @@ span {
   filter: blur(0);
 }
 .letter {
+  color: #a6a6a6;
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
@@ -358,6 +359,7 @@ span {
   filter: blur(0);
 }
 .letter2 {
+  color: #a6a6a6;
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
@@ -778,22 +780,24 @@ h2 span:last-child {
 }
 .text001 {
   text-align: center;
-  font-family: "Arimo", sans-serif;
   font-size: 2.5vh;
   font-weight: 900;
-  color: #000000;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .text003 {
   text-align: left;
   padding-left: 2vw;
   font-size: 2vh;
-  color: #11111193;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .text002 {
   text-align: start;
   padding: 5vh;
   font-size: 2vh;
-  color: #11111193;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .image_slider {
   display: flex;

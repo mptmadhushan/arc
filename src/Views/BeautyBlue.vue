@@ -53,7 +53,7 @@
           IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
           ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
         </p>
-    <div style="width:99vw;height:30vh"></div>
+        <div style="width:99vw;height:30vh"></div>
 
         <v-layout row wrap justify-center>
           <v-flex md6 xs12 sm12 align-self-end>
@@ -135,7 +135,7 @@
           <div class="twelve"></div>
         </v-img>
       </div>
-    <div style="width:99vw;height:10vh"></div>
+      <div style="width:99vw;height:10vh"></div>
 
       <div>
         <p class="text001">
@@ -223,6 +223,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 
@@ -298,7 +299,8 @@ export default {
   /* padding-right: 10%; */
   margin-top: -5%;
   font-weight: bold;
-  color: grey;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .body {
   /* height: 50vh;
@@ -346,6 +348,7 @@ span {
   filter: blur(0);
 }
 .letter {
+  color: #a6a6a6;
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
@@ -382,6 +385,7 @@ span {
   filter: blur(0);
 }
 .letter2 {
+  color: #a6a6a6;
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
@@ -804,19 +808,22 @@ h2 span:last-child {
   font-family: "Arimo", sans-serif;
   font-size: 2.5vh;
   font-weight: 900;
-  color: #000000;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .text003 {
   text-align: left;
   padding-left: 2vw;
   font-size: 2vh;
-  color: #11111193;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .text002 {
   text-align: start;
   padding: 5vh;
   font-size: 2vh;
-  color: #11111193;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
 }
 .image_slider {
   display: flex;
