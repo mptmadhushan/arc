@@ -28,7 +28,7 @@
               ><span class="letter2">G</span><span class="letter2">N</span>
             </div>
           </div>
-          <div style="margin-top:55vh">
+          <div style="margin-top:60vh">
             <v-layout row wrap justify-center>
               <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
                 <div class="bg-items">
