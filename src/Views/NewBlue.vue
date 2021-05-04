@@ -12,23 +12,31 @@
           />
         </div>
       </router-link>
-      <div style="margin-left: 7vw">
-        <div class="body fadeClass">
-          <div class="back-text">
-            <div class="text-container" style="margin-top:-5vh">
-              <span class="letter">D</span><span class="letter">E</span
-              ><span class="letter">S</span><span class="letter">I</span
-              ><span class="letter">G</span><span class="letter">N</span>
-            </div>
-          </div>
-          <div class="back-text" style="margin-top:-90vh">
+      <div>
+        <p
+          class="text1st text-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1500"
+          style="margin-top:35vh"
+        >
+          TO THOSE THAT INSPIRE AND CREATE<br /><br />
+          A MOMENT
+        </p>
+      </div>
+      <div style="margin-left: 7vw;" class="body2 fadeClass">
+        <div>
+          <div class="back-text" style="margin-top:16vh">
             <div class="text-container">
               <span class="letter2">D</span><span class="letter2">E</span
               ><span class="letter2">S</span><span class="letter2">I</span
               ><span class="letter2">G</span><span class="letter2">N</span>
+              <span class="letter2">D</span><span class="letter2">E</span>
+              <span class="letter2">S</span><span class="letter2">I</span>
+              <span class="letter2">G</span><span class="letter2">N</span>
             </div>
           </div>
-          <div style="margin-top:60vh">
+          <div style="margin-top:40vh">
             <v-layout row wrap justify-center>
               <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
                 <div class="bg-items">
@@ -43,7 +51,7 @@
                   </v-img>
                 </div>
               </v-flex>
-              <v-flex md5 align-self-start style="margin-top:4.5vh">
+              <v-flex md5 align-self-start style="margin-top:7vh">
                 <p
                   class="text001 text-right"
                   data-aos="fade-left"
@@ -56,7 +64,7 @@
                 <div
                   style="margin-top:5px"
                   class="textMini"
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-delay="300"
                   data-aos-duration="1500"
                 >
@@ -67,8 +75,8 @@
           </div>
         </div>
       </div>
-      <div style="width:99vw;height:40vh"></div>
       <div class="fadeClass">
+        <div style="width:99vw;height:40vh"></div>
         <div>
           <v-layout row wrap justify-center>
             <v-flex md4 xs12 sm12 align-self-end>
@@ -123,7 +131,7 @@
               </v-img>
             </v-flex>
             <v-flex md10 style="margin-top:1vh">
-              <p class="textMini2 text-left" style="margin-left:1.5vh">
+              <p class="textMini2 text-left" style="margin-left:2vh">
                 Charles and Ray Eames
                 <br />
                 Lounge chair by Herman Miller
@@ -306,9 +314,10 @@ export default {
   overflow: hidden;
 }
 .text-container {
+  /* background-color: red; */
   /* margin-top: -4vh; */
   width: 100%;
-  height: 100%;
+  height: 90%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -369,7 +378,7 @@ span {
   transform: translateY(50vh);
   transition-duration: 3.8s;
 }
-.body:hover .letter2 {
+.body2:hover .letter2 {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
@@ -382,26 +391,61 @@ span {
   filter: blur(5px);
 }
 .letter2:nth-of-type(1) {
-  transform: translateY(25vh);
+  transform: translateY(55vh);
   transition-duration: 2s;
 }
 .letter2:nth-of-type(2) {
-  transform: translateY(30vh);
+  transform: translateY(60vh);
   transition-duration: 2.4s;
 }
 .letter2:nth-of-type(3) {
-  transform: translateY(35vh);
+  transform: translateY(65vh);
   transition-duration: 2.8s;
 }
 .letter2:nth-of-type(4) {
-  transform: translateY(40vh);
+  transform: translateY(70vh);
   transition-duration: 3.2s;
 }
 .letter2:nth-of-type(5) {
-  transform: translateY(45vh);
+  transform: translateY(75vh);
   transition-duration: 3.6s;
 }
 .letter2:nth-of-type(6) {
+  filter: blur(0);
+  transform: translateY(80vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(7) {
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
+}
+.letter2:nth-of-type(8) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(9) {
+  filter: blur(0);
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(10) {
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
+}
+.letter2:nth-of-type(11) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(12) {
+  filter: blur(0);
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(13) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(14) {
   filter: blur(0);
   transform: translateY(50vh);
   transition-duration: 3.8s;
@@ -798,6 +842,13 @@ h2 span:last-child {
   font-family: "Spectral", serif;
   color: #a6a6a6;
   font-size: 2.5vh;
+  font-weight: 900;
+}
+.text1st {
+  text-align: center;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
+  font-size: 4vh;
   font-weight: 900;
 }
 .text003 {

@@ -29,7 +29,7 @@
               class="img-to-ef"
               eager
               contain
-              height="90vh"
+              height="0vh"
               src="../assets/blueprint/imgspace.jpg"
             >
               <div class="twelve"></div>
@@ -53,7 +53,6 @@
           IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
           ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
         </p>
-        <div style="width:99vw;height:30vh"></div>
 
         <v-layout row wrap justify-center>
           <v-flex md6 xs12 sm12 align-self-end>
@@ -138,6 +137,8 @@
       <div style="width:99vw;height:10vh"></div>
 
       <div>
+        <div style="width:99vw;height:30vh"></div>
+
         <p class="text001">
           "AN EMPTY CANVAS IS FULL"
         </p>
@@ -146,9 +147,9 @@
         </P>
       </div>
     </div>
-    <div style="width:99vw;height:25vh"></div>
 
     <div class="fadeClass">
+      <div style="width:99vw;height:45vh"></div>
       <div class="bg-items">
         <v-img
           class="img-to-ef"
