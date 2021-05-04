@@ -18,11 +18,11 @@
     <div class="container_l">
       <div class="sub-left">
         <div class="center">
-          <!-- <a href="/blueprint">
+          <a href="/blueprint">
             <v-card flat color="transparent">
               <p class="pa-2 title">BLUEPRINT</p>
             </v-card>
-          </a> -->
+          </a>
         </div>
       </div>
     </div>
