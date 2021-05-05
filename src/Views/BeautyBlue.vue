@@ -328,7 +328,7 @@ export default {
 
 .text-container {
   margin-top: -15vh;
-  width: 100%;
+  width: 85%;
   height: 100%;
   position: relative;
   left: 50%;

@@ -60,9 +60,8 @@
       <div>
         <v-layout row wrap justify-center mt-12>
           <v-flex md6 xs12 sm12 align-self-end>
-            <div class="image-box">
+            <div>
               <v-img
-                class="zoom_image"
                 eager
                 contain
                 height="90vh"
@@ -74,7 +73,7 @@
             <div>
               <P
                 class="textMini text-left"
-                style="margin-top:1vw;margin-left:12vw"
+                style="margin-top:1vw;margin-left:8vw"
               >
                 Ricardo Bofill<br />La Fabrica<br />1973
               </P>
@@ -344,7 +343,7 @@ export default {
 }
 .text-container {
   margin-top: -15vh;
-  width: 90vw;
+  width: 85%;
   height: 100%;
   position: relative;
   left: 50%;

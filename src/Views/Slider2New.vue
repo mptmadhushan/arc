@@ -53,7 +53,7 @@
                   </v-img>
                   <p
                     class="textMini text-left"
-                    style="margin-top:1%;margin-left:8.6%"
+                    style="margin-top:1%;margin-left:8.4%"
                   >
                     Kuzao Shiraga
                     <br />

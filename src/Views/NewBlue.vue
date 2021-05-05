@@ -323,8 +323,8 @@ export default {
 .text-container {
   /* background-color: red; */
   /* margin-top: -4vh; */
-  width: 100%;
-  height: 90%;
+  width: 85%;
+  height: 100%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
