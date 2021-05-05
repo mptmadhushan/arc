@@ -1,6 +1,7 @@
 <template>
   <div data-scroll-container>
     <audio
+      loop
       allow="autoplay;fullscreen"
       id="my_audio"
       src="../assets/music.mp3"
@@ -152,6 +153,7 @@ export default {
 
     document.getElementById("my_audio").muted = false;
     document.getElementById("my_audio").play();
+    document.getElementById("my_audio").loop = true;
   },
 };
 </script>
