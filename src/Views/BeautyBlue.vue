@@ -4,7 +4,17 @@
   <div>
     <div style="margin-top:20vh">
       <div class="body fadeClass">
-        <div class="back-text">
+        <div class="back-text" style="margin-top:16vh">
+          <div class="text-container">
+            <span class="letter2">B</span><span class="letter2">E</span
+            ><span class="letter2">A</span><span class="letter2">U</span
+            ><span class="letter2">T</span><span class="letter2">Y</span>
+            <span class="letter2">B</span><span class="letter2">E</span>
+            <span class="letter2">A</span><span class="letter2">U</span>
+            <span class="letter2">T</span><span class="letter2">Y</span>
+          </div>
+        </div>
+        <!-- <div class="back-text">
           <div class="text-container">
             <span class="letter">B</span><span class="letter">E</span
             ><span class="letter">A</span><span class="letter">U</span
@@ -17,27 +27,26 @@
             ><span class="letter2">A</span><span class="letter2">U</span
             ><span class="letter2">T</span><span class="letter2">Y</span>
           </div>
-        </div>
+        </div> -->
         <div
-          style="margin-top:55vh"
+          class="fadeClass"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <div class="bg-items">
+          <div class="bg-items" style="margin-left:20vw;margin-top:20vh">
             <v-img
               class="img-to-ef"
               eager
-              contain
-              height="0vh"
+              height="90vh"
               src="../assets/blueprint/imgspace.jpg"
             >
               <div class="twelve"></div>
             </v-img>
           </div>
-          <div style="width:99vw;height:13vh"></div>
+          <div style="width:99vw;height:12vh"></div>
           <div>
-            <P class="textMini text-left" style="margin-left:30%">
+            <P class="textMini text-center">
               Pablo Piccaso<br />Cannes,France<br />1956
             </P>
           </div>
@@ -45,10 +54,10 @@
       </div>
     </div>
 
-    <div style="width:99vw;height:30vh"></div>
     <div class="fadeClass">
+      <div style="width:99vw;height:30vh"></div>
       <div>
-        <p class="text001 text-right">
+        <p class="text001 text-right mr-12">
           "ENJOYING ART IS A PERSONAL MATTER.<br />
           IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
           ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
@@ -121,11 +130,11 @@
 
       1956
     </p> -->
-    <div style="width:99vw;height:30vh"></div>
     <div class="fadeClass">
-      <div class="bg-items">
+      <div style="width:99vw;height:30vh"></div>
+      <div class="bg-itemsOld">
         <v-img
-          class="img-to-ef"
+          class="img-to-efOld"
           eager
           contain
           height="90vh"
@@ -134,25 +143,20 @@
           <div class="twelve"></div>
         </v-img>
       </div>
-      <div style="width:99vw;height:10vh"></div>
-
-      <div>
-        <div style="width:99vw;height:30vh"></div>
-
+      <div style="height:100vh" class="d-flex justify-center align-center">
         <p class="text001">
-          "AN EMPTY CANVAS IS FULL"
+          "AN EMPTY CANVAS IS FULL"<br />
+          <span class="textMini text-right mt-1">
+            - Robert Rauschenburg
+          </span>
         </p>
-        <P class="textMini text-center mt-1">
-          - Robert Rauschenburg
-        </P>
       </div>
     </div>
 
     <div class="fadeClass">
-      <div style="width:99vw;height:45vh"></div>
-      <div class="bg-items">
+      <div class="bg-itemsOld">
         <v-img
-          class="img-to-ef"
+          class="img-to-efOld"
           eager
           contain
           height="90vh"
@@ -393,26 +397,61 @@ span {
   filter: blur(5px);
 }
 .letter2:nth-of-type(1) {
-  transform: translateY(25vh);
+  transform: translateY(55vh);
   transition-duration: 2s;
 }
 .letter2:nth-of-type(2) {
-  transform: translateY(30vh);
+  transform: translateY(60vh);
   transition-duration: 2.4s;
 }
 .letter2:nth-of-type(3) {
-  transform: translateY(35vh);
+  transform: translateY(65vh);
   transition-duration: 2.8s;
 }
 .letter2:nth-of-type(4) {
-  transform: translateY(40vh);
+  transform: translateY(70vh);
   transition-duration: 3.2s;
 }
 .letter2:nth-of-type(5) {
-  transform: translateY(45vh);
+  transform: translateY(75vh);
   transition-duration: 3.6s;
 }
 .letter2:nth-of-type(6) {
+  filter: blur(0);
+  transform: translateY(80vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(7) {
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
+}
+.letter2:nth-of-type(8) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(9) {
+  filter: blur(0);
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(10) {
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
+}
+.letter2:nth-of-type(11) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(12) {
+  filter: blur(0);
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(13) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(14) {
   filter: blur(0);
   transform: translateY(50vh);
   transition-duration: 3.8s;
@@ -433,13 +472,26 @@ span {
   background-size: cover;
 }
 .bg-items {
+  width: 60vw;
+  display: inline-block;
+  overflow: hidden;
+}
+.img-to-ef {
+  display: block;
+  transition: transform 4s; /* smoother zoom */
+}
+.fadeClass:hover .img-to-ef {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+.bg-itemsOld {
   overflow: hidden;
   width: 100%;
 }
-.img-to-ef {
+.img-to-efOld {
   transition: all 10s;
 }
-.fadeClass:hover .img-to-ef {
+.fadeClass:hover .img-to-efOld {
   transform: scale(1.1);
   transition: all 5s ease-in-out;
 }

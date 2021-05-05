@@ -37,23 +37,22 @@
             </div>
           </div>
           <div style="margin-top:40vh">
-            <v-layout row wrap justify-center>
+            <v-layout row wrap justify-space-around>
               <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
                 <div class="bg-items">
                   <v-img
                     class="img-to-ef"
                     eager
-                    contain
-                    height="80vh"
                     src="../assets/blueprint/_SDS3203b.png"
                   >
                     <div class="twelve"></div>
                   </v-img>
                 </div>
               </v-flex>
-              <v-flex md5 align-self-start style="margin-top:7vh">
+              <v-flex md5 align-self-start>
                 <p
                   class="text001 text-right"
+                  style="margin:0;padding:0"
                   data-aos="fade-left"
                   data-aos-delay="300"
                   data-aos-duration="1500"
@@ -466,15 +465,17 @@ span {
   background-size: cover;
 }
 .bg-items {
+  width: 50vw;
+  display: inline-block;
   overflow: hidden;
-  width: 100%;
 }
 .img-to-ef {
-  transition: all 10s;
+  display: block;
+  transition: transform 4s; /* smoother zoom */
 }
 .fadeClass:hover .img-to-ef {
   transform: scale(1.1);
-  transition: all 5s ease-in-out;
+  transform-origin: 50% 50%;
 }
 .fadeClass:hover .twelve {
   height: 0%;

@@ -77,7 +77,7 @@
             <div>
               <P
                 class="textMini text-left"
-                style="margin-top:1vw;margin-left:10vw"
+                style="margin-top:1vw;margin-left:12vw"
               >
                 Ricardo Bofill<br />La Fabrica<br />1973
               </P>
@@ -99,6 +99,37 @@
           </v-flex>
         </v-layout>
       </div>
+      <!-- <div class="d-flex flex-row justify-center">
+        <div class="bg-items mr-12 d-flex align-start mb-12">
+          <v-img
+            class="img-to-ef"
+            eager
+            height="50vh"
+            src="../assets/blueprint/Space/1280.jpg"
+          >
+            <div class="twelve"></div>
+          </v-img>
+          <div>
+            <P
+              class="textMini text-left"
+              style="margin-top:20vh;margin-left:10vw"
+            >
+              Ricardo Bofill<br />La Fabrica<br />1973
+            </P>
+          </div>
+        </div>
+
+        <div class="bg-items2 d-flex align-end">
+          <v-img
+            class="img-to-ef2"
+            eager
+            height="70vh"
+            src="../assets/blueprint/_SDS3496.jpeg"
+          >
+            <div class="twelve"></div>
+          </v-img>
+        </div>
+      </div> -->
     </div>
 
     <!-- <div style="width:99vw;height:20vh"></div>
@@ -117,9 +148,9 @@
     <div style="width:99vw;height:25vh"></div>
 
     <div class="fadeClass">
-      <div class="bg-items">
+      <div class="bg-itemsOld">
         <v-img
-          class="img-to-ef"
+          class="img-to-efOld"
           eager
           contain
           height="90vh"
@@ -193,6 +224,44 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
+.bg-itemsOld {
+  overflow: hidden;
+  width: 100%;
+}
+.img-to-efOld {
+  transition: all 10s;
+}
+.fadeClass:hover .img-to-efOld {
+  transform: scale(1.1);
+  transition: all 5s ease-in-out;
+}
+.bg-items {
+  max-width: 40vw;
+  display: inline-block;
+  overflow: hidden;
+}
+.bg-items2 {
+  width: 30vw;
+  display: inline-block;
+  overflow: hidden;
+}
+.img-to-ef {
+  display: block;
+  transition: transform 4s; /* smoother zoom */
+}
+.img-to-ef2 {
+  display: block;
+  transition: transform 4s; /* smoother zoom */
+}
+.fadeClass:hover .img-to-ef {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+.fadeClass:hover .img-to-ef2 {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
 .bg-item-zoom {
   position: relative;
   text-align: left;

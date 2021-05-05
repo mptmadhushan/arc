@@ -48,7 +48,7 @@
                     <div class="newBox2"></div>
                     <p
                       class="textMini text-left mt-5"
-                      style="margin-left:7vw;"
+                      style="margin-left:6.4vw;"
                     >
                       Kuzao Shiraga
                       <br />

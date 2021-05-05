@@ -322,16 +322,16 @@ export default {
   width: 20vh;
   opacity: 0.4;
   padding: -10vh;
-  background-size: 70% 100%;
-  background-image: url("../assets/cir.svg");
+  background-size: 100% 100%;
+  background-image: url("../assets/cir.png");
 }
 .cir:hover {
   height: 20vh;
   width: 20vh;
   transition: 2s ease;
   opacity: 0.3;
-  background-size: 70% 100%;
-  background-image: url("../assets/cirHover.svg");
+  background-size: 100% 100%;
+  background-image: url("../assets/cirHover.png");
 }
 .sq {
   height: 20vh;
