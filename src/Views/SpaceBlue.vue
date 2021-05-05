@@ -205,6 +205,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 
@@ -869,22 +870,24 @@ h2 span:last-child {
 .text001 {
   text-align: center;
   font-size: 2.5vh;
-  font-weight: 900;
-  font-family: "Spectral", serif;
+
+   font-family: "Roboto", sans-serif;
   color: #a6a6a6;
 }
 .text003 {
   text-align: left;
   padding-left: 2vw;
   font-size: 2vh;
-  font-family: "Spectral", serif;
+   font-family: "Roboto", sans-serif;
+
   color: #a6a6a6;
 }
 .text002 {
   text-align: start;
   padding: 5vh;
   font-size: 2vh;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
+
   color: #a6a6a6;
 }
 .image_slider {

@@ -26,7 +26,7 @@
       </div>
       <div style="margin-left: 7vw;" class="body2 fadeClass">
         <div>
-          <div style="height:16vh"></div>
+          <div style="height:46vh"></div>
           <div class="back-text">
             <div class="text-container">
               <span class="letter2">D</span><span class="letter2">E</span
@@ -211,6 +211,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
@@ -326,11 +327,11 @@ export default {
   width: 85%;
   height: 100%;
   position: relative;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   color: black;
   font-family: "Oranienbaum", serif;
-  font-size: 50vh;
+  font-size: 45vh;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -848,30 +849,30 @@ h2 span:last-child {
 }
 .text001 {
   text-align: center;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #a6a6a6;
   font-size: 2.5vh;
-  font-weight: 900;
 }
 .text1st {
   text-align: center;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #a6a6a6;
-  font-size: 4vh;
-  font-weight: 900;
+  font-size: 3.2vh;
+  font-weight: 500;
 }
 .text003 {
   text-align: left;
   padding-left: 2vw;
   font-size: 2vh;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
+
   color: #a6a6a6;
 }
 .text002 {
   text-align: start;
   padding: 5vh;
   font-size: 2vh;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #a6a6a6;
 }
 .image_slider {

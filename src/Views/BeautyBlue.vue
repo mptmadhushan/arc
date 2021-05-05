@@ -165,7 +165,7 @@
           class="img-to-efOld"
           eager
           contain
-          height="90vh"
+          height="100vh"
           src="../assets/blueprint/Space/museebourdelle.jpg"
         >
           <div class="twelve"></div>
@@ -234,6 +234,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
@@ -335,7 +336,7 @@ export default {
   transform: translate(-50%, -50%);
   color: black;
   font-family: "Oranienbaum", serif;
-  font-size: 50vh;
+  font-size: 45vh;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -864,24 +865,24 @@ h2 span:last-child {
 }
 .text001 {
   text-align: center;
-  font-family: "Arimo", sans-serif;
+  font-family: "Roboto", sans-serif;
+
   font-size: 2.5vh;
-  font-weight: 900;
-  font-family: "Spectral", serif;
+
   color: #a6a6a6;
 }
 .text003 {
   text-align: left;
   padding-left: 2vw;
   font-size: 2vh;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #a6a6a6;
 }
 .text002 {
   text-align: start;
   padding: 5vh;
   font-size: 2vh;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
   color: #a6a6a6;
 }
 .image_slider {
