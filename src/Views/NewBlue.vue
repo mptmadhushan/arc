@@ -26,7 +26,8 @@
       </div>
       <div style="margin-left: 7vw;" class="body2 fadeClass">
         <div>
-          <div class="back-text" style="margin-top:16vh">
+          <div style="height:16vh"></div>
+          <div class="back-text">
             <div class="text-container">
               <span class="letter2">D</span><span class="letter2">E</span
               ><span class="letter2">S</span><span class="letter2">I</span
@@ -36,46 +37,49 @@
               <span class="letter2">G</span><span class="letter2">N</span>
             </div>
           </div>
-          <div style="margin-top:40vh">
-            <v-layout row wrap justify-space-around>
-              <v-flex md6 xs12 sm12 align-self-start style="height:65vh">
-                <div class="bg-items">
-                  <v-img
-                    class="img-to-ef"
-                    eager
-                    src="../assets/blueprint/_SDS3203b.png"
-                  >
-                    <div class="twelve"></div>
-                  </v-img>
-                </div>
-              </v-flex>
-              <v-flex md5 align-self-start>
-                <p
-                  class="text001 text-right"
-                  style="margin:0;padding:0"
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="1500"
-                >
-                  "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
-                  FORMS ASSEMBLED IN THE LIGHT"
-                </p>
-                <div
-                  style="margin-top:5px"
-                  class="textMini"
-                  data-aos="fade-right"
-                  data-aos-delay="300"
-                  data-aos-duration="1500"
-                >
-                  -Le Corbusier
-                </div>
-              </v-flex>
-            </v-layout>
-          </div>
         </div>
       </div>
-      <div class="fadeClass">
-        <div style="width:99vw;height:40vh"></div>
+      <div class="fadeClassNew">
+        <div style="height:40vh"></div>
+        <v-layout row wrap justify-space-around>
+          <v-flex md6 xs12 sm12 align-self-start>
+            <div>
+              <v-img
+                style="margin-top:-6vh"
+                height="80vh"
+                eager
+                cover
+                src="../assets/blueprint/_SDS3203b.png"
+              >
+                <div class="twelve"></div>
+              </v-img>
+            </div>
+          </v-flex>
+          <v-flex md5 align-self-start>
+            <p
+              class="text001 text-right"
+              style="margin:0;padding:0"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+            >
+              "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
+              FORMS ASSEMBLED IN THE LIGHT"
+            </p>
+            <div
+              style="margin-top:5px"
+              class="textMini"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+            >
+              -Le Corbusier
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+      <div class="fadeClass" style="margin-top:-20vh">
+        <div style="width:99vw;height:50vh"></div>
         <div>
           <v-layout row wrap justify-center>
             <v-flex md4 xs12 sm12 align-self-end>
@@ -278,6 +282,10 @@ export default {
   transition: all 10s;
 }
 
+.fadeClassNew:hover .twelve {
+  height: 10%;
+  transition: all 2s;
+}
 .items:hover .twelve {
   height: 10%;
   transition: all 2s;
@@ -473,7 +481,7 @@ span {
   display: block;
   transition: transform 4s; /* smoother zoom */
 }
-.fadeClass:hover .img-to-ef {
+.fadeClassNew:hover .img-to-ef {
   transform: scale(1.1);
   transform-origin: 50% 50%;
 }

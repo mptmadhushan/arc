@@ -3,21 +3,18 @@
 <template>
   <div>
     <div style="margin-top:10vh">
-      <div class="body fadeClass">
+      <div class="body2 fadeClass">
         <div class="back-text">
-          <div class="text-container">
-            <span class="letter">S</span><span class="letter">P</span
-            ><span class="letter">A</span><span class="letter">C</span
-            ><span class="letter">E</span>
-          </div>
-        </div>
-        <div class="back-text" style="margin-top:-80vh">
           <div class="text-container">
             <span class="letter2">S</span><span class="letter2">P</span
             ><span class="letter2">A</span><span class="letter2">C</span
-            ><span class="letter2">E</span>
+            ><span class="letter2">E</span><span class="letter2"></span>
+            <span class="letter2">D</span><span class="letter2">S</span>
+            <span class="letter2">P</span><span class="letter2">A</span>
+            <span class="letter2">C</span><span class="letter2">E</span>
           </div>
         </div>
+
         <div style="width:99vw;height:30vh"></div>
         <div style="margin-top:5vh;width:100vw;height:100vh">
           <div class="bg-item-zoom">
@@ -41,25 +38,25 @@
             </P>
             <div style="width:99vw;height:40vh"></div>
           </div>
-
-          <div>
-            <P
-              class="text001 text-right"
-              style="margin-right:10vh;margin-top:-20vh"
-            >
-              "WE BORROW FROM NATURE THE<br />
-              SPACE UPON WHICH WE BUILD"<br />
-              <span class="textMini text-right">
-                - Tadao Ando
-              </span>
-            </P>
-            <P class="textMini text-right" style="margin:1vw"> </P>
-          </div>
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:50vh"></div>
     <div class="fadeClass">
+      <div style="width:99vw;height:50vh"></div>
+
+      <div>
+        <P
+          class="text001 text-right"
+          style="margin-right:10vh;margin-top:-20vh"
+        >
+          "WE BORROW FROM NATURE THE<br />
+          SPACE UPON WHICH WE BUILD"<br />
+          <span class="textMini text-right">
+            - Tadao Ando
+          </span>
+        </P>
+        <P class="textMini text-right" style="margin:1vw"> </P>
+      </div>
       <div>
         <v-layout row wrap justify-center mt-12>
           <v-flex md6 xs12 sm12 align-self-end>
@@ -132,22 +129,9 @@
       </div> -->
     </div>
 
-    <!-- <div style="width:99vw;height:20vh"></div>
-    <div class="parallax"></div>
-    <p class="textMini text-left" style="margin:5vh">
-      -Charles and Ray Eamaes
-      <br />
-
-      Londge chair by Herman Miller
-
-      <br />
-
-      1956
-    </p> -->
-
-    <div style="width:99vw;height:25vh"></div>
-
     <div class="fadeClass">
+      <div style="width:99vw;height:25vh"></div>
+
       <div class="bg-itemsOld">
         <v-img
           class="img-to-efOld"
@@ -360,7 +344,7 @@ export default {
 }
 .text-container {
   margin-top: -15vh;
-  width: 100%;
+  width: 90vw;
   height: 100%;
   position: relative;
   left: 50%;
@@ -422,7 +406,8 @@ span {
   transform: translateY(50vh);
   transition-duration: 3.8s;
 }
-.body:hover .letter2 {
+
+.body2:hover .letter2 {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
@@ -435,26 +420,61 @@ span {
   filter: blur(5px);
 }
 .letter2:nth-of-type(1) {
-  transform: translateY(25vh);
+  transform: translateY(55vh);
   transition-duration: 2s;
 }
 .letter2:nth-of-type(2) {
-  transform: translateY(30vh);
+  transform: translateY(60vh);
   transition-duration: 2.4s;
 }
 .letter2:nth-of-type(3) {
-  transform: translateY(35vh);
+  transform: translateY(65vh);
   transition-duration: 2.8s;
 }
 .letter2:nth-of-type(4) {
-  transform: translateY(40vh);
+  transform: translateY(70vh);
   transition-duration: 3.2s;
 }
 .letter2:nth-of-type(5) {
-  transform: translateY(45vh);
+  transform: translateY(75vh);
   transition-duration: 3.6s;
 }
 .letter2:nth-of-type(6) {
+  filter: blur(0);
+  transform: translateY(80vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(7) {
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
+}
+.letter2:nth-of-type(8) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(9) {
+  filter: blur(0);
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(10) {
+  transform: translateY(40vh);
+  transition-duration: 3.2s;
+}
+.letter2:nth-of-type(11) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(12) {
+  filter: blur(0);
+  transform: translateY(50vh);
+  transition-duration: 3.8s;
+}
+.letter2:nth-of-type(13) {
+  transform: translateY(45vh);
+  transition-duration: 3.6s;
+}
+.letter2:nth-of-type(14) {
   filter: blur(0);
   transform: translateY(50vh);
   transition-duration: 3.8s;

@@ -2,9 +2,11 @@
 */
 <template>
   <div>
-    <div style="margin-top:20vh">
+    <div>
       <div class="body fadeClass">
-        <div class="back-text" style="margin-top:16vh">
+        <div style="height:26vh"></div>
+
+        <div class="back-text">
           <div class="text-container">
             <span class="letter2">B</span><span class="letter2">E</span
             ><span class="letter2">A</span><span class="letter2">U</span
@@ -46,7 +48,7 @@
           </div>
           <div style="width:99vw;height:12vh"></div>
           <div>
-            <P class="textMini text-center">
+            <P class="textMini text-left" style="margin-left:20vw">
               Pablo Piccaso<br />Cannes,France<br />1956
             </P>
           </div>
@@ -57,7 +59,7 @@
     <div class="fadeClass">
       <div style="width:99vw;height:30vh"></div>
       <div>
-        <p class="text001 text-right mr-12">
+        <p class="text001 text-right mr-12" style="margin-bottom:-5vh">
           "ENJOYING ART IS A PERSONAL MATTER.<br />
           IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
           ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
@@ -143,7 +145,13 @@
           <div class="twelve"></div>
         </v-img>
       </div>
-      <div style="height:100vh" class="d-flex justify-center align-center">
+      <div style="height:20vh"></div>
+    </div>
+
+    <div class="fadeClass">
+      <div style="height:20vh"></div>
+
+      <div class="d-flex justify-center align-center">
         <p class="text001">
           "AN EMPTY CANVAS IS FULL"<br />
           <span class="textMini text-right mt-1">
@@ -151,9 +159,7 @@
           </span>
         </p>
       </div>
-    </div>
-
-    <div class="fadeClass">
+      <div style="height:40vh"></div>
       <div class="bg-itemsOld">
         <v-img
           class="img-to-efOld"
