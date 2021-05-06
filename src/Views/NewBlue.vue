@@ -857,7 +857,7 @@ h2 span:last-child {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #a6a6a6;
-  font-size: 3.2vh;
+  font-size: 2.8vh;
   font-weight: 500;
 }
 .text003 {

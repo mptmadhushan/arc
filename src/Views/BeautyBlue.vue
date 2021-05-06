@@ -329,14 +329,14 @@ export default {
 
 .text-container {
   margin-top: -15vh;
-  width: 85%;
+  width: 82%;
   height: 100%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
   font-family: "Oranienbaum", serif;
-  font-size: 45vh;
+  font-size: 47vh;
   -webkit-font-smoothing: antialiased;
 }
 
