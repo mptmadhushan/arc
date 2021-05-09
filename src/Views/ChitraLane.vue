@@ -68,7 +68,8 @@
       <v-layout row wrap justify-center pt-md-12>
         <v-flex md4 align-self-center>
           <p class="text002">
-            The Trellis <br /><br />Brutalist harmony in Contemporary lines
+            <span class="text005">The Trellis</span><br />Brutalist harmony in
+            Contemporary lines
           </p>
         </v-flex>
         <v-flex md7 justify-center>
@@ -314,6 +315,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text005 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.3vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: #11111193;
+}
 ul {
   background-color: #eee;
   transform: scaleY(0);

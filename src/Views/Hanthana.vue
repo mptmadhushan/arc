@@ -32,7 +32,7 @@
     >
       <v-img eager contain src="../assets/hanthana/2.jpeg"></v-img>
       <p class="newText2 text-center">
-        Prelude <br /><br />
+        <span class="text005"> Prelude </span><br />
         A journey forthcoming
       </p>
     </div>
@@ -47,7 +47,8 @@
           data-aos-duration="1500"
         >
           <p class="newText2 text-end">
-            Prelude <br /><br />A journey forthcoming
+            <span class="text005"> Prelude </span>
+            <br />A journey forthcoming
           </p>
         </v-flex>
         <v-flex
@@ -131,7 +132,7 @@
     >
       <v-img eager contain src="../assets/hanthana/5.png"></v-img>
       <p class="newText2 text-center">
-        Peaceful Interdependence <br /><br />
+        <span class="text005">Peaceful Interdependence</span><br />
         A contemplative mountain setting
       </p>
     </div>
@@ -146,7 +147,7 @@
           data-aos-duration="1500"
         >
           <p class="newText2 text-center">
-            Peaceful Interdependence <br /><br />
+            <span class="text005">Peaceful Interdependence</span><br />
             A contemplative mountain setting
           </p>
         </v-flex>
@@ -330,8 +331,7 @@
             data-aos-delay="300"
             data-aos-duration="1500"
           >
-            Spare. Sumptuous. Seductive <br />
-            <br />
+            <span class="text005"> Spare. Sumptuous. Seductive</span> <br />
             A deep minimalism through a light-hearted setting
           </p>
         </v-flex>
@@ -527,6 +527,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text005 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.3vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: #11111193;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/hanthana/1st.jpeg");
@@ -535,7 +544,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 88vh;
+  height: 92vh;
 }
 .b1 {
   background-color: #fff;

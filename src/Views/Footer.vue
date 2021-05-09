@@ -85,9 +85,10 @@ export default {};
 .footer {
   height: 70vh;
   width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../assets/footer.jpg");
+  background-color: black;
+  /* background-position: center; */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  /* background-image: url("../assets/footer.jpg"); */
 }
 </style>

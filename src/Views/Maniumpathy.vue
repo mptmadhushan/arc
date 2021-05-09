@@ -81,7 +81,7 @@
 
       <v-img eager contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
       <p class="newText2 text-right">
-        Understated Refinement <br />
+        <span class="text007">Understated Refinement </span><br />
         Singularity relative to its surroundings.
       </p>
     </div>
@@ -108,8 +108,7 @@
           data-aos-duration="2500"
         >
           <p class="newText2 text-right">
-            Understated Refinement <br />
-            <br />
+            <span class="text007">Understated Refinement </span><br />
             Singularity relative to its <br />surroundings.
           </p>
         </v-flex>
@@ -251,7 +250,7 @@
         src="../assets/Maniumpathy/_SDS2577.png"
       ></v-img>
       <p class="newText2 text-center">
-        Indo-portugese and contemporary.<br />
+        <span class="text007"> Indo-portugese and contemporary.</span><br />
         Thoughtfully considered and diligently placed
       </p>
     </div>
@@ -375,8 +374,7 @@
       <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
       <v-img eager contain src="../assets/Maniumpathy/_SDS2638.png"></v-img>
       <p class="newText2 text-center">
-        Modern convenience through a<br />
-        material lens
+        Modern convenience through a material lens
       </p>
     </div>
     <div v-else class="text-center">
@@ -393,8 +391,7 @@
       >
         <v-flex md3 pa-4 align-self-end>
           <p class="newText2 text-center">
-            Modern convenience through a<br />
-            material lens
+            Modern convenience through a material lens
           </p>
         </v-flex>
         <v-flex md8 pa-4 justify-center>
@@ -506,8 +503,9 @@
           data-aos-duration="2500"
         >
           <p class="newText2 text-center">
-            Masterclass in White <br />providing contrast and variation with a
-            nod to the history of the building.
+            <span class="text007">Masterclass in White </span><br />
+            Providing contrast and variation with a nod to the history of the
+            building.
           </p>
         </v-flex>
       </v-layout>
@@ -598,6 +596,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text007 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.3vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: #11111193;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Maniumpathy/1.png");

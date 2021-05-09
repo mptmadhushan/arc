@@ -133,7 +133,7 @@
           </carousel-3d>
           <div style="margin-inline: 20%">
             <p class="text002 text-center">
-              Purity and Refinement <br />
+              <span class="text005">Purity and Refinement </span><br />
               Sculptural mix of carefully curated contemporary and antique by
               Laki Senanayake and Kingsley Goonatilake
             </p>
@@ -310,6 +310,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text005 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.3vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: #11111193;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Dinali_House/_SDS2871.JPG.jpg");

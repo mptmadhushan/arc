@@ -97,8 +97,9 @@
         contain
         src="../assets/Stone_House/Stone House_DSC5412.JPG.jpg"
       ></v-img>
-      <span style="text002 text-center">Silence</span>
       <p class="text002 text-center">
+        <span class="text007 text-center">Silence</span>
+
         Nature through the existing architectural frame.
       </p>
     </div>
@@ -128,8 +129,8 @@
           data-aos-delay="400"
           data-aos-duration="1500"
         >
-          <p class="text002 text-center" style="font-weight:600">Silence</p>
-          <p class="text002">
+          <p class="text002 text-center">
+            <span class="text007 text-center">Silence</span><br />
             Nature through the existing architectural frame.
           </p>
         </v-flex>
@@ -199,8 +200,7 @@
         src="../assets/Stone_House/Stone House_DSC5305.JPG.jpg"
       ></v-img>
       <p class="text002 text-center">
-        Duality<br />
-        <br />
+        <span class="text007"> Duality</span><br />
         A sincere collision.
       </p>
     </div>
@@ -219,8 +219,8 @@
           data-aos-delay="400"
           data-aos-duration="2500"
         >
-          <p class="text002">
-            Duality<br /><br />
+          <p class="text002 text-center">
+            <span class="text007"> Duality</span><br />
             A sincere collision.
           </p>
         </v-flex>
@@ -467,6 +467,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text007 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.3vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: #11111193;
+}
 .textBold {
   font-family: "Josefin Sans", sans-serif;
   text-align: left;

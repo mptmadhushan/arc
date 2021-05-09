@@ -219,7 +219,7 @@
         <div v-if="hover2">
           <p class="textPro">CDA058</p>
           <p class="textPro">Colombo 03</p>
-          <p class="textPro">Arienti</p>
+          <!-- <p class="textPro">Arienti</p> -->
         </div>
         <div v-if="hover3">
           <p class="textPro">CDA033</p>
@@ -236,22 +236,22 @@
         <div v-if="hover9">
           <p class="textPro">CDA019</p>
           <p class="textPro">Colombo 07</p>
-          <p class="textPro">Maniumpathy</p>
+          <!-- <p class="textPro">Maniumpathy</p> -->
         </div>
         <div v-if="hover8">
           <p class="textPro">CDA094</p>
           <p class="textPro">Hanthana</p>
-          <p class="textPro">W15</p>
+          <!-- <p class="textPro">W15</p> -->
         </div>
         <div v-if="hover7">
           <p class="textPro">CDA003</p>
           <p class="textPro">Kandy</p>
-          <p class="textPro">Stone House</p>
+          <!-- <p class="textPro">Stone House</p> -->
         </div>
         <div v-if="hover4">
           <p class="textPro">CDA047</p>
           <p class="textPro">Colombo 06</p>
-          <p class="textPro">Havelock Road</p>
+          <!-- <p class="textPro">Havelock Road</p> -->
         </div>
       </div>
     </div>

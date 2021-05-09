@@ -33,8 +33,8 @@
         <div>
           <p class="text002 text-center">
             Architecture should speak of its time and place but yearn for
-            timelessness<br />
-            <span class="text002 text-center"> Frank Gehry</span>
+            <br />
+            <span class="text009 text-center">Frank Gehry</span>
           </p>
         </div>
       </v-layout>
@@ -77,12 +77,9 @@
         </v-flex>
         <v-flex md2 align-self-center>
           <p class="text002 text-right">
-            God is in the details<br />
+            God is in the details
             <br />
-            <span class="text002 text-right">
-              Mies Van Der<br />
-              Rohe</span
-            >
+            <span class="text009 text-right"> Mies Van Der Rohe</span>
           </p>
         </v-flex>
       </v-layout>
@@ -117,9 +114,8 @@
       <v-layout row wrap justify-center>
         <v-flex md3 align-self-center>
           <p class="text002 text-left">
-            Simplicity is the ultimate<br />
-            sophisticattion<br /><br />
-            <span class="text002 text-left">Leonardo Da Vinci</span>
+            Simplicity is the ultimate sophisticattion<br />
+            <span class="text009 text-left">Leonardo Da Vinci</span>
           </p>
         </v-flex>
 
@@ -184,6 +180,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 .textBold {
   font-size: 2vh;
   /* padding-right: 10%; */
@@ -222,6 +219,14 @@ export default {
   text-align: left;
   padding: 10px;
   font-size: 2vh;
+  color: #11111193;
+}
+.text009 {
+  text-align: left;
+  /* padding: 10px; */
+  font-weight: bold;
+  font-size: 1.6vh;
+  font-family: "Josefin Sans", sans-serif;
   color: #11111193;
 }
 .slider-container {

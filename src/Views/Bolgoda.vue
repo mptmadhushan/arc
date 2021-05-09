@@ -105,7 +105,7 @@
         src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
       ></v-img>
       <p class="text002 text-center">
-        Harmonious Coexistence <br />
+        <span class="text005">Harmonious Coexistence</span> <br />
         The interplay of Sri Lankan pop art and indo-Portuguese furniture.
       </p>
     </div>
@@ -156,10 +156,9 @@
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
       <p class="newText2 text-center mt-5">
-        "We wanted the art to speak for the house. To create an environment<br />
+        "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
-        <br /><br />A Bandu Manamperi study of Life on Bolgoda Lake, extending
-        the<br />
+        <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the<br />
         composition of inside - out.
       </p>
     </div>
@@ -302,7 +301,7 @@
           data-aos-duration="2000"
         >
           <p class="text002 text-center">
-            Monastic Calm <br /><br />
+            <span class="text005"> Monastic Calm </span><br />
             Blurring the boundaries between<br />
             inside and outside
           </p>
@@ -388,6 +387,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text005 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.3vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: #11111193;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Bolgoda/_SDS1498.JPG.jpeg");

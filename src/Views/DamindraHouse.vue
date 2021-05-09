@@ -41,7 +41,8 @@
         src="../assets/Damindra_House/_SDS7604.JPG.jpg"
       ></v-img>
       <p class="text002 text-center">
-        Hidden Expression <br />Communication between material and form
+        <span class="text005"> Hidden Expression</span> <br />Communication
+        between material and form
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>
@@ -120,9 +121,9 @@
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
           ></v-img>
           <p class="text002 ">
-            Harmony <br />
+            <span class="text005">Harmony </span>
             <br />
-            between architecture and the elements
+            Between architecture and the elements
           </p>
         </v-flex>
       </v-layout>
@@ -138,9 +139,9 @@
           data-aos-duration="2500"
         >
           <p class="text002">
-            Harmony <br />
+            <span class="text005">Harmony </span>
             <br />
-            between architecture and the elements
+            Between architecture and the elements
           </p>
         </v-flex>
         <v-flex
@@ -261,6 +262,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text005 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.3vh;
+  font-family: "Josefin Sans", sans-serif;
+  color: #11111193;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Damindra_House/_SDS7569.JPG.jpg");

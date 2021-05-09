@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="fadeClass"
-    style="margin-top:35vh"
-  >
+  <div class="fadeClass" style="margin-top:35vh">
     <v-layout
       row
       wrap
@@ -69,6 +66,7 @@ export default {
   transition: all 3s;
   display: block;
   width: 80vw;
+  object-fit: contain;
   height: 80vh;
   transform: scale(1.1);
 }
