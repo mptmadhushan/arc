@@ -3,154 +3,167 @@
 <template>
   <div>
     <div>
-      <router-link to="/">
-        <div style="position:relative;z-index:1000">
-          <img
-            style="opacity:0.5;margin-inline:20px;margin-top:2vh"
-            height="20vh"
-            src="../assets/backArrow.png"
-          />
+      <div class="scroll-container">
+        <div class="scroll-area">
+          <router-link to="/">
+            <div style="position:relative;z-index:1000">
+              <img
+                style="opacity:0.5;margin-inline:20px;margin-top:-10vh"
+                height="20vh"
+                src="../assets/backArrow.png"
+              />
+            </div>
+          </router-link>
+          <div>
+            <p
+              class="text1st text-center"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              style="margin-top:35vh"
+            >
+              TO THOSE THAT INSPIRE AND CREATE<br />
+              <span class="text1s"> A MOMENT</span>
+            </p>
+          </div>
         </div>
-      </router-link>
-      <div>
-        <p
-          class="text1st text-center"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1500"
-          style="margin-top:35vh"
-        >
-          TO THOSE THAT INSPIRE AND CREATE<br /><br />
-          A MOMENT
-        </p>
-      </div>
-      <div style="margin-left: 7vw;" class="body2 fadeClass">
-        <div>
-          <div style="height:46vh"></div>
-          <div class="back-text">
-            <div class="text-container">
-              <span class="letter2">D</span><span class="letter2">E</span
-              ><span class="letter2">S</span><span class="letter2">I</span
-              ><span class="letter2">G</span><span class="letter2">N</span>
-              <span class="letter2">D</span><span class="letter2">E</span>
-              <span class="letter2">S</span><span class="letter2">I</span>
-              <span class="letter2">G</span><span class="letter2">N</span>
+        <div class="scroll-area">
+          <div style="margin-left: 7vw;" class="body2 fadeClass">
+            <div>
+              <div style="height:6vh"></div>
+              <div class="back-text">
+                <div class="text-container">
+                  <span class="letter2">D</span><span class="letter2">E</span
+                  ><span class="letter2">S</span><span class="letter2">I</span
+                  ><span class="letter2">G</span><span class="letter2">N</span>
+                  <span class="letter2">D</span><span class="letter2">E</span>
+                  <span class="letter2">S</span><span class="letter2">I</span>
+                  <span class="letter2">G</span><span class="letter2">N</span>
+                </div>
+              </div>
+              <div style="height:30vh"></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="fadeClassNew">
-        <div style="height:40vh"></div>
-        <v-layout row wrap justify-space-around>
-          <v-flex md6 xs12 sm12 align-self-start>
+        <div class="scroll-area">
+          <div class="fadeClassNew">
+            <div style="height:10vh"></div>
+            <v-layout row wrap justify-space-around>
+              <v-flex md6 xs12 sm12 align-self-start>
+                <div>
+                  <v-img
+                    height="80vh"
+                    eager
+                    cover
+                    src="../assets/blueprint/_SDS3203b.png"
+                  >
+                    <div class="twelve"></div>
+                  </v-img>
+                </div>
+              </v-flex>
+              <v-flex md5 align-self-start>
+                <p class="text001 text-right" style="margin:0;padding:0">
+                  "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
+                  FORMS ASSEMBLED IN THE LIGHT"
+                </p>
+                <div
+                  style="margin-top:5px"
+                  class="textMini"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  data-aos-duration="1500"
+                >
+                  -Le Corbusier
+                </div>
+              </v-flex>
+            </v-layout>
+          </div>
+        </div>
+
+        <div class="scroll-area">
+          <div class="fadeClass">
+            <div style="width:99vw;height:2vh"></div>
             <div>
-              <v-img
-                style="margin-top:-6vh"
-                height="80vh"
-                eager
-                cover
-                src="../assets/blueprint/_SDS3203b.png"
-              >
-                <div class="twelve"></div>
-              </v-img>
+              <v-layout row wrap justify-center>
+                <v-flex md4 xs12 sm12 align-self-end>
+                  <div class="image-box">
+                    <v-img
+                      class="zoom_image"
+                      eager
+                      contain
+                      height="70vh"
+                      src="../assets/blueprint/_SDS3006.png"
+                    >
+                      <div class="twelve"></div>
+                    </v-img>
+                  </div>
+                </v-flex>
+                <v-flex md5 xs12 sm12 align-self-end>
+                  <div class="image-box">
+                    <v-img
+                      class="zoom_image"
+                      eager
+                      contain
+                      height="80vh"
+                      src="../assets/blueprint/_SDS3211.jpeg"
+                    >
+                      <div class="twelve"></div>
+                    </v-img>
+                  </div>
+                </v-flex>
+                <p class="text001" style="margin-top:4vh">
+                  "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH THE
+                  CREATIVE ACT"<span class="textMini">
+                    -Charles Eames
+                  </span>
+                </p>
+              </v-layout>
             </div>
-          </v-flex>
-          <v-flex md5 align-self-start>
-            <p
-              class="text001 text-right"
-              style="margin:0;padding:0"
-              data-aos="fade-left"
-              data-aos-delay="300"
-              data-aos-duration="1500"
-            >
-              "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
-              FORMS ASSEMBLED IN THE LIGHT"
-            </p>
-            <div
-              style="margin-top:5px"
-              class="textMini"
-              data-aos="fade-right"
-              data-aos-delay="300"
-              data-aos-duration="1500"
-            >
-              -Le Corbusier
+          </div>
+        </div>
+
+        <div class="scroll-area">
+          <div class="fadeClass">
+            <div class="image-box ">
+              <v-layout row wrap>
+                <v-flex md8>
+                  <v-img
+                    class="img-to-ef"
+                    eager
+                    contain
+                    height="100vh"
+                    src="../assets/blueprint/1.png"
+                  >
+                    <div class="twelve"></div>
+                  </v-img>
+                </v-flex>
+                <v-flex md10 style="margin-top:1vh">
+                  <p class="textMini2 text-left" style="margin-left:2vh">
+                    Charles and Ray Eames
+                    <br />
+                    Lounge chair by Herman Miller
+                    <br />
+                    1956
+                  </p>
+                </v-flex>
+              </v-layout>
             </div>
-          </v-flex>
-        </v-layout>
-      </div>
-      <div class="fadeClass" style="margin-top:-20vh">
-        <div style="width:99vw;height:50vh"></div>
-        <div>
-          <v-layout row wrap justify-center>
-            <v-flex md4 xs12 sm12 align-self-end>
-              <div class="image-box">
-                <v-img
-                  class="zoom_image"
-                  eager
-                  contain
-                  height="80vh"
-                  src="../assets/blueprint/_SDS3006.png"
-                >
-                  <div class="twelve"></div>
-                </v-img>
-              </div>
-            </v-flex>
-            <v-flex md5 xs12 sm12 align-self-end>
-              <div class="image-box">
-                <v-img
-                  class="zoom_image"
-                  eager
-                  contain
-                  height="90vh"
-                  src="../assets/blueprint/_SDS3211.jpeg"
-                >
-                  <div class="twelve"></div>
-                </v-img>
-              </div>
-            </v-flex>
-            <p class="text001" style="margin-top:10vh">
-              "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH THE
-              CREATIVE ACT"<span class="textMini">
-                -Charles Eames
-              </span>
-            </p>
-          </v-layout>
+          </div>
+          <div
+            class="scroll-area"
+            v-on:mouseover="mouseOver"
+            style="width:100vw;height:100vh"
+          ></div>
         </div>
+        <!-- <div
+          v-on:mouseover="mouseOver"
+          style="width:100vw;height:100vh"
+        ></div> -->
       </div>
-      <div style="width:99vw;height:20vh"></div>
-      <!-- <div class="parallax"></div> -->
-      <div class="fadeClass">
-        <div class="image-box ">
-          <v-layout row wrap>
-            <v-flex md8>
-              <v-img
-                class="img-to-ef"
-                eager
-                contain
-                height="100vh"
-                src="../assets/blueprint/1.png"
-              >
-                <div class="twelve"></div>
-              </v-img>
-            </v-flex>
-            <v-flex md10 style="margin-top:1vh">
-              <p class="textMini2 text-left" style="margin-left:2vh">
-                Charles and Ray Eames
-                <br />
-                Lounge chair by Herman Miller
-                <br />
-                1956
-              </p>
-            </v-flex>
-          </v-layout>
-
-          <div></div>
+      <div>
+        <div v-on:mouseover="mouseOver" ref="slider1">
+          <Slider1 />
         </div>
-      </div>
-
-      <div style="width:99vw;height:20vh"></div>
-      <div v-on:mouseover="mouseOver" ref="slider1">
-        <Slider1 />
       </div>
     </div>
   </div>
@@ -215,6 +228,51 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
+.scroll-container,
+.scroll-area {
+  max-width: 100vw;
+  height: 100vh;
+  font-size: 60px;
+}
+
+.scroll-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+  scroll-snap-align: start;
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+
+.scroll-area {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; */
+}
+/* 
+.scroll-area:nth-of-type(1) {
+  background: #49b293;
+}
+
+.scroll-area:nth-of-type(2) {
+  background: #c94e4b;
+}
+
+.scroll-area:nth-of-type(3) {
+  background: #4cc1be;
+}
+
+.scroll-area:nth-of-type(4) {
+  background: #8360a6;
+} */
+
 .img-to-ef {
   transition: all 10s;
 }
@@ -390,7 +448,6 @@ span {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
-  
 }
 .letter2 {
   color: #a6a6a6;
@@ -401,28 +458,28 @@ span {
 }
 .letter2:nth-of-type(1) {
   transform: translateY(55vh);
-  transition-duration: 2s;
+  transition-duration: 1.4s;
 }
 .letter2:nth-of-type(2) {
   transform: translateY(60vh);
-  transition-duration: 2.4s;
+  transition-duration: 1.7s;
 }
 .letter2:nth-of-type(3) {
   transform: translateY(65vh);
-  transition-duration: 2.8s;
+  transition-duration: 1.9s;
 }
 .letter2:nth-of-type(4) {
   transform: translateY(70vh);
-  transition-duration: 3.2s;
+  transition-duration: 2.2s;
 }
 .letter2:nth-of-type(5) {
   transform: translateY(75vh);
-  transition-duration: 3.6s;
+  transition-duration: 2.6s;
 }
 .letter2:nth-of-type(6) {
   filter: blur(0);
   transform: translateY(80vh);
-  transition-duration: 3.8s;
+  transition-duration: 2.8s;
 }
 .letter2:nth-of-type(7) {
   transform: translateY(40vh);
@@ -859,6 +916,13 @@ h2 span:last-child {
   font-family: "Roboto", sans-serif;
   color: #a6a6a6;
   font-size: 2.8vh;
+  font-weight: 500;
+}
+.text1s {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #a6a6a6;
+  font-size: 2.3vh;
   font-weight: 500;
 }
 .text003 {
