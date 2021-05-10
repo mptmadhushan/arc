@@ -390,6 +390,7 @@ span {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
+  
 }
 .letter2 {
   color: #a6a6a6;

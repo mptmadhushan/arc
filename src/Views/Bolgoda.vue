@@ -140,7 +140,6 @@
       <p class="newText2">
         "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
-        <br />
         <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
         composition of inside - out.
       </p>
@@ -158,7 +157,7 @@
       <p class="newText2 text-center mt-5">
         "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
-        <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the<br />
+        <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
         composition of inside - out.
       </p>
     </div>
@@ -192,43 +191,43 @@
       data-aos-easing="linear"
       data-aos-delay="300"
     >
-      <v-layout row wrap>
-        <v-flex md8 align-self-center>
-          <div>
-            <carousel-3d
-              :width="800"
-              :height="500"
-              :inverse-scaling="200"
-              :space="1000"
-              :perspective="0"
-              :autoplay="false"
-              :autoplay-timeout="2000"
-              :display="2"
-            >
-              <slide :index="0">
-                <figure>
-                  <v-img
-                    eager
-                    contain
-                    src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg"
-                  />
-                </figure> </slide
-              ><slide :index="1">
-                <figure>
-                  <v-img
-                    eager
-                    contain
-                    src="../assets/Bolgoda/_SDS1434.JPG.jpeg"
-                  />
-                </figure>
-              </slide>
-            </carousel-3d>
-          </div>
-        </v-flex>
-        <v-flex md3 md8 align-self-center>
+      <!-- <v-layout row wrap>
+        <v-flex md12 align-self-center> -->
+      <div>
+        <carousel-3d
+          :width="899"
+          :height="600"
+          :inverse-scaling="200"
+          :space="1300"
+          :perspective="0"
+          :autoplay="false"
+          :autoplay-timeout="3000"
+          :display="3"
+        >
+          <slide :index="1">
+            <figure>
+              <v-img
+                eager
+                contain
+                src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg"
+              />
+            </figure> </slide
+          ><slide :index="0">
+            <figure>
+              <v-img eager contain src="../assets/Bolgoda/bath2.png" />
+            </figure> </slide
+          ><slide :index="2">
+            <figure>
+              <v-img eager contain src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
+            </figure>
+          </slide>
+        </carousel-3d>
+      </div>
+      <!-- </v-flex> -->
+      <!-- <v-flex md3 md8 align-self-center>
           <v-img eager contain src="../assets/Bolgoda/_SDS1239-HDR.JPG.jpeg" />
-        </v-flex>
-      </v-layout>
+        </v-flex> -->
+      <!-- </v-layout> -->
     </div>
 
     <div style="width:99vw;height:35vh;padding:10px"></div>

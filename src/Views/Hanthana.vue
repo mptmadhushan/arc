@@ -391,7 +391,7 @@
         src="../assets/hanthana/slide6.jpg"
       ></v-img>
       <p class="newText2 text-center">
-        Timeless Materiality. Gentle contemporary with textured <br />warmth
+        Timeless Materiality. Gentle contemporary with textured warmth
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>

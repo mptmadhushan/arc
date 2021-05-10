@@ -109,7 +109,7 @@
         >
           <p class="newText2 text-right">
             <span class="text007">Understated Refinement </span><br />
-            Singularity relative to its <br />surroundings.
+            Singularity relative to its surroundings.
           </p>
         </v-flex>
       </v-layout>

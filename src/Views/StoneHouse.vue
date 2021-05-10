@@ -158,7 +158,7 @@
         </vue-flux>
         <p class="text002 text-center">
           Art and Sculpture. a study of the proprietor's history in the rice
-          industry and its many permutations<br />
+          industry and its many permutations
           through the lens of Kingsley Goonatilake
         </p>
       </div>
@@ -182,7 +182,7 @@
         </vue-flux>
         <p class="text002 text-center">
           Art and Sculpture. a study of the proprietor's history in the rice
-          industry and its many permutations<br />
+          industry and its many permutations
           through the lens of Kingsley Goonatilake
         </p>
       </div>
