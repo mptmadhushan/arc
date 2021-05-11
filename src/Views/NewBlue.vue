@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="scroll-area">
-          <div style="margin-left: 7vw;" class="body2 fadeClass">
+          <div style="margin-left:7vw;" class="body2 fadeClass">
             <div>
               <div style="height:6vh"></div>
               <div class="back-text">
@@ -62,7 +62,7 @@
                 </div>
               </v-flex>
               <v-flex md5 align-self-start>
-                <p class="text001 text-right" style="margin:0;padding:0">
+                <p class="text001 text-right" style="margin:0;padding-top:6.6vh">
                   "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
                   FORMS ASSEMBLED IN THE LIGHT"
                 </p>
@@ -82,7 +82,7 @@
 
         <div class="scroll-area">
           <div class="fadeClass">
-            <div style="width:99vw;height:2vh"></div>
+            <div style="width:99vw;height:5.5vh"></div>
             <div>
               <v-layout row wrap justify-center>
                 <v-flex md4 xs12 sm12 align-self-end>
@@ -239,10 +239,12 @@ export default {
 .scroll-container {
   overflow: auto;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scroll-area {
   scroll-snap-align: start;
+  scroll-behavior: smooth;
 }
 
 .scroll-container,
