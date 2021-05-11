@@ -183,7 +183,7 @@
       data-aos="fade-down"
       data-aos-delay="300"
       data-aos-duration="1500"
-      style="padding:15vh"
+      style="padding:25vh"
     >
       <div style="width:99vw;height:10vh;padding:10px"></div>
       <vue-flux :options="options" :images="images" :transitions="transitions">
@@ -451,7 +451,7 @@
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
-      style="padding:15vh"
+      style="padding:25vh"
     >
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>
@@ -544,7 +544,7 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 92vh;
+  height: 90vh;
 }
 .b1 {
   background-color: #fff;

@@ -45,7 +45,7 @@
         ></v-img>
       </div>
 
-      <p class="newText2 text-center mt-12">
+      <p class="newText2 text-center mt-6">
         Formerly in disrepair - A compendium of contemporary lines
       </p>
     </div>

@@ -148,7 +148,7 @@
       v-else
       data-aos="fade-up"
       data-aos-duration="2000"
-      style="padding:8vw"
+      style="padding:15vw;"
       data-aos-easing="linear"
       data-aos-delay="300"
     >
@@ -198,7 +198,7 @@
           :width="899"
           :height="600"
           :inverse-scaling="200"
-          :space="1300"
+          :space="1100"
           :perspective="0"
           :autoplay="false"
           :autoplay-timeout="3000"
@@ -246,7 +246,7 @@
         src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
       ></v-img>
       <p class="text002 text-center">
-        A contempoary twist to a timeless view.
+        A contemporary twist to a timeless view.
       </p>
     </div>
     <div style="width:99vw;height:25vh;padding:10px"></div>

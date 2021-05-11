@@ -75,7 +75,7 @@
           Peripheral. Kingsley Goonatilake elevates and uplifts
         </p>
       </div>
-      <div v-else style="padding:15vh">
+      <div v-else style="padding:25vh">
         <vue-flux
           :options="options"
           :images="images"
@@ -212,10 +212,9 @@
 
     <div class="text-center">
       <div style="width:99vw;height:10vh;padding:10px"></div>
-
       <v-layout row wrap justify-space-around pt-md-12>
         <v-flex
-          pa-4
+          pa-12
           md9
           justify-center
           data-aos="fade-up"

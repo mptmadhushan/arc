@@ -32,7 +32,7 @@
         </v-flex>
         <div>
           <p class="text002 text-center">
-            Architecture should speak of its time and place but yearn for
+            Architecture should speak of its time and place but yearn for timelessness 
             <br />
             <span class="text009 text-center">Frank Gehry</span>
           </p>

@@ -91,7 +91,7 @@
       <v-layout row wrap justify-space-around style="margin-top:5vh">
         <v-flex
           md9
-          pa-4
+          pa-12
           align-self-center
           data-aos="fade-left"
           data-aos-delay="300"
@@ -137,7 +137,7 @@
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
-      style="padding:8vh"
+      style="padding:15vh"
     >
       <div style="width:99vw;height:15vh;padding:10px"></div>
       <div style="margin:11vh">
@@ -337,7 +337,7 @@
     </div>
     <div
       v-else
-      style="margin:14vh"
+      style="margin:24vh"
       data-aos-easing="linear"
       data-aos-delay="300"
       data-aos="fade-up"
@@ -463,7 +463,7 @@
       data-aos="fade-down"
       data-aos-delay="300"
       data-aos-duration="2500"
-      style="margin:12vh"
+      style="margin:22vh"
     >
       <vue-flux :options="options" :images="images2" :transitions="transitions">
         <template v-slot:preloader>

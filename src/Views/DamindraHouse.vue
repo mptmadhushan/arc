@@ -173,7 +173,7 @@
       data-aos-delay="400"
       data-aos-duration="2500"
     >
-      <div style="padding:5vw">
+      <div style="padding-top:5vw;padding-bottom:3.5vw">
         <vue-flux
           :options="options"
           :images="images2"

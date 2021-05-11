@@ -107,7 +107,7 @@
       <div style="width:99vw;height:30vh;padding:10px"></div>
 
       <v-layout row wrap justify-space-around>
-        <v-flex md9 pa-4 xs12 sm12 align-self-center>
+        <v-flex md9 pa-12 xs12 sm12 align-self-center>
           <v-img
             eager
             data-aos="fade-up"
@@ -170,7 +170,7 @@
       data-aos-delay="400"
       data-aos-duration="2500"
     >
-      <div style="padding:15vh">
+      <div style="padding:25vh">
         <vue-flux
           :options="options"
           :images="images"
@@ -224,7 +224,7 @@
             A sincere collision.
           </p>
         </v-flex>
-        <v-flex md9 pa-4 xs10 sm10 align-self-center>
+        <v-flex md9 pa-12 xs10 sm10 align-self-center>
           <v-img
             eager
             data-aos="fade-up"
