@@ -59,12 +59,6 @@
     <div class="fadeClass">
       <div style="width:99vw;height:30vh"></div>
       <div>
-        <p class="text001 text-right mr-12" style="margin-bottom:-5vh">
-          "ENJOYING ART IS A PERSONAL MATTER.<br />
-          IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
-          ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
-        </p>
-
         <v-layout row wrap justify-center>
           <v-flex md6 xs12 sm12 align-self-end>
             <div class="image-box">
@@ -80,6 +74,11 @@
             </div>
           </v-flex>
           <v-flex md4 xs12 sm12 align-self-end>
+            <p class="text001 text-right" style="margin-bottom:-5vh">
+              "ENJOYING ART IS A PERSONAL MATTER.<br />
+              IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
+              ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
+            </p>
             <div class="image-box">
               <v-img
                 class="zoom_image"

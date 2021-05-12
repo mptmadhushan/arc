@@ -45,19 +45,6 @@
       <div style="width:99vw;height:50vh"></div>
 
       <div>
-        <P
-          class="text001 text-right"
-          style="margin-right:10vh;margin-top:-20vh"
-        >
-          "WE BORROW FROM NATURE THE<br />
-          SPACE UPON WHICH WE BUILD"<br />
-          <span class="textMini text-right">
-            - Tadao Ando
-          </span>
-        </P>
-        <P class="textMini text-right" style="margin:1vw"> </P>
-      </div>
-      <div>
         <v-layout row wrap justify-center mt-12>
           <v-flex md6 xs12 sm12 align-self-end>
             <div>
@@ -80,6 +67,19 @@
             </div>
           </v-flex>
           <v-flex md4 xs12 sm12 align-self-center>
+            <div>
+              <P
+                class="text001 text-right"
+                style="margin-right:10vh;margin-top:-20vh"
+              >
+                "WE BORROW FROM NATURE THE<br />
+                SPACE UPON WHICH WE BUILD"<br />
+                <span class="textMini text-right">
+                  - Tadao Ando
+                </span>
+              </P>
+              <P class="textMini text-right" style="margin:1vw"> </P>
+            </div>
             <div class="image-box">
               <v-img
                 style="margin-right:5vw"
@@ -871,14 +871,14 @@ h2 span:last-child {
   text-align: center;
   font-size: 2.5vh;
 
-   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #a6a6a6;
 }
 .text003 {
   text-align: left;
   padding-left: 2vw;
   font-size: 2vh;
-   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 
   color: #a6a6a6;
 }
