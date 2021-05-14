@@ -26,6 +26,7 @@
           TO THOSE THAT INSPIRE AND CREATE<br />
           <span class="text1s"> A MOMENT</span>
         </p>
+        <div style="height:30vh;width: 10vw;"></div>
       </div>
       <div class="body" style="height:100vh">
         <div style="height:30vh;width: 20vw;"></div>
@@ -123,7 +124,7 @@
                     class="zoom_image"
                     eager
                     contain
-                    height="90vh"
+                    height="95vh"
                     src="../../assets/blueprint/_SDS3211.jpeg"
                   >
                     <div
@@ -155,7 +156,6 @@
             <v-layout row wrap>
               <v-flex md9 ml-12 class="image-box2">
                 <v-img
-                  class="zoom_image2"
                   eager
                   contain
                   height="100vh"
@@ -234,13 +234,13 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 
-.fadeClass:hover .zoom_image {
+/* .fadeClass:hover .zoom_image {
   transform: scale(1);
   transition: ease-out 2.5s;
-}
+} */
 
 .zoom_image {
-  transform: scale(1.3);
+  transform: scale(1);
   transition: all 10s;
 }
 .image-box {
@@ -248,7 +248,7 @@ export default {
   margin: auto;
   overflow: hidden;
   width: 90%;
-  height: 90%;
+  height: 100%;
 }
 .zoom_image2 {
   transform: scale(1.2);
@@ -271,7 +271,7 @@ export default {
 }
 .twelve.active {
   height: 10%;
-  transition: all 3s;
+  transition: all 2s;
 }
 .twelve {
   width: 100%;
