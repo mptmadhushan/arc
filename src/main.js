@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import Carousel3d from "vue-carousel-3d";
 import VueSlickCarousel from "vue-slick-carousel";
 import VueAnime from "vue-animejs";
+import axios from 'axios'
 Vue.use(VueAnime);
 
 Vue.component("ShapesPop", require("./components/ShapesPop.vue").default);
@@ -19,6 +20,13 @@ Vue.use(VueSmoothScroll, {
   duration: 1000,
   updateHistory: false,
 });
+Vue.component("manage-posts", function(resolve) {
+  axios.get("../src/hello.html").then((response) => {
+    console.log(response)
+    resolve({ template: response.data });
+  });
+});
+
 Vue.use(VScrollLock);
 Vue.use(VScrollToTop);
 Vue.mixin({

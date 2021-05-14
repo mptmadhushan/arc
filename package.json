@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "gsap": "^3.6.1",
     "intersection-observer": "^0.12.0",
