@@ -21,25 +21,20 @@
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1500"
-          style="margin-top:35vh"
+          style="margin-top:35vh;margin-bottom:10vh"
         >
           TO THOSE THAT INSPIRE AND CREATE<br />
           <span class="text1s"> A MOMENT</span>
         </p>
       </div>
       <div class="body" style="height:100vh">
-        <div style="height:20vh;width: 20vw;"></div>
+        <div style="height:30vh;width: 20vw;"></div>
         <div class="fadeClass ml-12">
           <div class="back-text">
-            <div class="text-container" style="margin-top:-15vh">
-              <span
-                class="letter"
-                :data-step-no="4"
-                :class="{ active: 4 == currStep }"
-                >D</span
-              ><span class="letter">E</span><span class="letter">S</span
-              ><span class="letter">I</span><span class="letter">G</span
-              ><span class="letter">N</span>
+            <div class="text-container" style="margin-top:-25vh">
+              <span class="letter">D</span><span class="letter">E</span
+              ><span class="letter">S</span><span class="letter">I</span
+              ><span class="letter">G</span><span class="letter">N</span>
             </div>
             <div class="text-container" style="margin-top:-20vh">
               <span class="letter2">D</span><span class="letter2">E</span
@@ -54,7 +49,7 @@
           class="fadeClassNew"
           data-aos="fade-up"
           data-aos-delay="500"
-          data-aos-duration="2500"
+          data-aos-duration="1500"
         >
           <div style="height:10vh"></div>
           <v-layout row wrap justify-space-around>
@@ -62,7 +57,6 @@
               <div>
                 <v-img
                   data-aos="fade-up"
-                  data-aos-delay="500"
                   data-aos-duration="2500"
                   height="80vh"
                   eager
@@ -101,9 +95,9 @@
           class="fadeClass"
           data-aos="fade-up"
           data-aos-delay="500"
-          data-aos-duration="2500"
+          data-aos-duration="1500"
         >
-          <div style="width:99vw;height:35.5vh"></div>
+          <div style="width:99vw;height:20vh"></div>
           <div>
             <v-layout row wrap justify-center>
               <v-flex md4 xs12 sm12 align-self-end>
@@ -129,7 +123,7 @@
                     class="zoom_image"
                     eager
                     contain
-                    height="80vh"
+                    height="90vh"
                     src="../../assets/blueprint/_SDS3211.jpeg"
                   >
                     <div
@@ -154,7 +148,7 @@
         <div
           class="fadeClass"
           data-aos-delay="500"
-          data-aos-duration="2500"
+          data-aos-duration="1500"
           data-aos="fade-up"
         >
           <div class="image-box ">
@@ -188,7 +182,7 @@
         </div>
       </div>
     </Scrollama>
-        <div style="height:10vh;width: 20vw;"></div>
+    <div style="height:10vh;width: 20vw;"></div>
     <div v-on:mouseover="mouseOver" ref="slider1">
       <Slider1 />
     </div>
@@ -240,8 +234,13 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 
+.fadeClass:hover .zoom_image {
+  transform: scale(1);
+  transition: ease-out 2.5s;
+}
+
 .zoom_image {
-  transform: scale(1.5);
+  transform: scale(1.3);
   transition: all 10s;
 }
 .image-box {
@@ -272,7 +271,7 @@ export default {
 }
 .twelve.active {
   height: 10%;
-  transition: all 5s;
+  transition: all 3s;
 }
 .twelve {
   width: 100%;
@@ -321,7 +320,6 @@ span {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
-  
 }
 .letter {
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
