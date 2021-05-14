@@ -1,8 +1,608 @@
-<html>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href="https://fonts.gstatic.com" rel="preconnect" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&amp;display=swap" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" /><meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<title>Invoice {{invoice_name}}</title>
+	<style type="text/css">html, body {
+      font-family: Arial, "Arial Unicode", "Arial Unicode MS", Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      word-wrap: break-word;
+    }
+
+    .print-container {
+      clear: both;
+      /*Do something here with A4*/
+      padding: 0px 40px 0px 40px;
+      z-index: 0;
+    }
+
+    .print-title {
+      font-family: Arial, "Arial Unicode", "Arial Unicode MS", Helvetica, sans-serif;
+      position: absolute;
+      top: 0;
+      margin-left: 0.5in;
+      border: solid 1px #f1f1f1;
+      padding: 3px 5px;
+    }
+
+    .clearb {
+      clear: both;
+    }
+
+    .invheader {
+      min-height: 230px;
+      position: relative;
+    }
+
+    .invheader-upper {
+      z-index: 10;
+      position: relative;
+      margin-left: 0.20in;
+      min-height: 90px;
+    }
+
+    .invheader-lower {
+      clear: both;
+      margin-top: 20px;
+      margin-left: 0.20in;
+      min-height: 100px;
+    }
+
+    .invheader-address-account {
+      float: left;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .invheader-logo {
+      float: left;
+    }
+
+    .invheader-logo-container {
+      width: 350px;
+      height: 130px;
+      float: left;
+    }
+
+    .invheader-address-client {
+      float: left;
+      width: 300px;
+      padding-bottom: 20px;
+    }
+
+    .invheader-invoicedetails {
+      float: right;
+      width: 300px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-top: 40px;
+      page-break-inside: avoid;
+    }
+
+    .invheader-invoicedetails table {
+      width: 100%;
+    }
+
+    .invbody {
+      clear: both;
+      position: relative;
+      overflow: auto;
+    }
+
+    .invheader,
+    .invheader th,
+    .invbody,
+    .invbody .description,
+    .invstub th,
+    .invheader-invoicedetails th,
+    .attachment-header th, {
+      font-family: Arial, "Arial Unicode", "Arial Unicode MS", Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: left;
+    }
+
+    .invheader-logo {
+      text-align: center;
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    .attachment-image img {
+      max-height: 9in;
+      max-width: 100%;
+    }
+
+    .invheader-invoicedetails table th {
+      width: 50%;
+      font-weight: normal;
+      white-space: nowrap;
+      text-align: left;
+    }
+
+    .invheader-invoicedetails table td,
+    .attachment-header td {
+      text-align: right;
+      font-family: Arial, "Arial Unicode", "Arial Unicode MS", Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .invheader-invoicedetails th, .invheader-invoicedetails td {
+      padding: 0px 5px;
+    }
+
+    .invheader-invoicedetails-balance th, .invheader-invoicedetails-balance td,
+    .attachment-header th, .attachment-header td {
+      background-color: #0a95c4;
+      padding: 0px;
+      margin: 0px;
+      color: #FFFF;
+      font-weight: bold;
+    }
+
+    .attachment-header td {
+      font-weight: normal;
+    }
+
+    .attachment-header th, .attachment-header td {
+      vertical-align: top;
+    }
+
+    .invheader-invoicedetails .invheader-invoicedetails-balance th, .attachment-header th {
+      /* border-left: solid 1px red; */
+    }
+
+    .invheader-invoicedetails .invheader-invoicedetails-balance td, .attachment-header td {
+      /* border-right: solid 1px #c7c7c7; */
+    }
+
+    .invheader-invoicedetails .invheader-invoicedetails-balance th div, .attachment-header th div {
+      border-left: solid 1px #f1f1f1;
+      /* border-top: solid 1px #f1f1f1; */
+      padding: 3px 5px;
+    }
+
+    .invheader-invoicedetails .invheader-invoicedetails-balance td div, .attachment-header td div {
+      /* border-top: solid 1px #f1f1f1;
+      padding: 3px 5px; */
+    }
+
+    /*
+     * 		TABLE
+     */
+
+    .invbody-items.worksheet-table {
+      width: 32%;
+    }
+
+    .invbody-items {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .invbody-items td, .invbody-expenses td, .invbody-timeentries td {
+      vertical-align: top;
+    }
+
+    .invbody-items thead, .invbody-expenses thead, .invbody-timeentries thead {
+      font-weight: bold;
+      page-break-after: avoid;
+    }
+
+    .invbody-items tbody, .invbody-expenses tbody, .invbody-timeentries tbody {
+      page-break-before: avoid;
+      vertical-align: top;
+    }
+
+    .invbody-items td, .invbody-expenses td, .invbody-timeentries td {
+      padding: 3px 0px 3px 2px;
+      /* border-bottom: solid 1px #e5e5e5; */
+    }
+
+    .invbody-items th, .invbody-expenses th, .invbody-timeentries th {
+      background-image: linear-gradient(#0a95c4, black);
+      line-height: normal;
+      color:#fff;
+      vertical-align: top;
+    }
+
+    .invbody-items th div, .invbody-expenses th div, .invbody-timeentries th div {
+      padding: 5px 0;
+    }
+
+    .invbody-items th.first, .invbody-expenses th.first, .invbody-timeentries th.first {
+      /* border-left: solid 1px #c7c7c7; */
+    }
+
+    .invbody-items th.last, .invbody-expenses th.last, .invbody-timeentries th.last {
+      /* border-right: solid 1px #c7c7c7; */
+    }
+
+    /*
+     * 		ITEMS TABLE
+     */
+    .invbody-items thead .item {
+      /* border-left: solid 1px #f1f1f1;
+      border-top: solid 1px #f1f1f1; */
+      padding-left: 5px;
+      text-align: left;
+    }
+
+    .invbody-items tbody .item {
+      padding-left: 5px;
+      text-align: left;
+    }
+
+    .invbody-items thead .description {
+      /* border-top: solid 1px #f1f1f1; */
+      text-align: left;
+    }
+
+    .invbody-items thead .unitcost {
+      /* border-top: solid 1px #f1f1f1; */
+      text-align: right;
+    }
+
+    .invbody-items tbody .unitcost {
+      text-align: right;
+    }
+
+    .invbody-items thead .quantity {
+      /* border-top: solid 1px #f1f1f1; */
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .invbody-items tbody .quantity {
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .invbody-items thead .linetotal {
+      /* border-top: solid 1px #f1f1f1; */
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .invbody-items tbody .linetotal {
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    /*
+     * 		EXPENSE TABLE
+     */
+
+    .invbody-expenses thead .description {
+      border-left: solid 1px #f1f1f1;
+      border-top: solid 1px #f1f1f1;
+      padding-left: 5px;
+      text-align: left;
+    }
+
+    .invbody-expenses tbody .description {
+      padding-left: 5px;
+      text-align: left;
+    }
+
+    .invbody-expenses thead .unitcost {
+      border-top: solid 1px #f1f1f1;
+      text-align: right;
+    }
+
+    .invbody-expenses tbody .unitcost {
+      text-align: right;
+    }
+
+    .invbody-expenses thead .quantity {
+      border-top: solid 1px #f1f1f1;
+      text-align: right;
+    }
+
+    .invbody-expenses tbody .quantity {
+      text-align: right;
+    }
+
+    .invbody-expenses thead .linetotal {
+      border-top: solid 1px #f1f1f1;
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .invbody-expenses tbody .linetotal {
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    /*
+     * 		TIME ENTRIES TABLE
+     */
+
+    .invbody-timeentries thead .notes {
+      border-left: solid 1px #f1f1f1;
+      border-top: solid 1px #f1f1f1;
+      padding-left: 5px;
+      text-align: left;
+    }
+
+    .invbody-timeentries tbody .notes {
+      padding-left: 5px;
+      text-align: left;
+    }
+
+    .invbody-timeentries thead .rate {
+      border-top: solid 1px #f1f1f1;
+      text-align: right;
+    }
+
+    .invbody-timeentries tbody .rate {
+      text-align: right;
+    }
+
+    .invbody-timeentries thead .hours {
+      border-top: solid 1px #f1f1f1;
+      text-align: right;
+    }
+
+    .invbody-timeentries tbody .hours {
+      text-align: right;
+    }
+
+    .invbody-timeentries thead .linetotal {
+      border-top: solid 1px #f1f1f1;
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .invbody-timeentries tbody .linetotal {
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    /*
+     * 		SUMMARY TABLE
+     */
+
+    .invbody-summary {
+      page-break-before: always;
+      page-break-inside: avoid;
+      min-height: 126px;
+      clear: both;
+      width: 100%;
+      border-top: solid 3px #e3e3e3;
+      margin-bottom: 18px;
+    }
+
+    .invbody-summary th {
+      font-weight: normal;
+      text-align: left;
+    }
+
+    .invbody-summary td {
+      text-align: right;
+    }
+
+    .invbody-summary th, .invbody-summary td {
+      padding: 0px 5px;
+    }
+
+    .invbody-summary .border {
+      border-top: solid 1px #e5e5e5;
+      padding-top: 3px;
+    }
+
+    .invbody-summary-paid td, .invbody-summary-paid th {
+      padding-bottom: 3px;
+    }
+
+    .invbody-summary-subtotal td, .invbody-summary-subtotal th {
+      padding-top: 3px;
+    }
+
+    .invbody-summary-discount td, .invbody-summary-discount th {
+      padding-top: 3px;
+    }
+
+    .invbody-summary-total td, .invbody-summary-total th {
+      background-color: #0a95c4;
+      /* border-top: solid 1px #c7c7c7; */
+      /* border-bottom: solid 1px #c7c7c7; */
+      color: #fff;
+      padding: 0px;
+    }
+
+    .invbody-summary-total th {
+      /* border-left: solid 1px #c7c7c7; */
+    }
+
+    .invbody-summary-total td {
+      /* border-right: solid 1px #c7c7c7; */
+    }
+
+    .invbody-summary .invbody-summary-total th div {
+      /* border-left: solid 1px #f1f1f1;
+      border-top: solid 1px #f1f1f1; */
+      padding: 3px 5px;
+    }
+
+    .invbody-summary .invbody-summary-total td div {
+      /* border-top: solid 1px #f1f1f1; */
+      padding: 3px 5px;
+    }
+    .invoiceText{
+      color:#0a95c4;
+      font-size:100px;
+      font-family: 'Noto Serif', serif;
+      float: right;
+    }    .invoiceTo{
+      color:#0a95c4;
+      font-size:20px;
+      font-family: 'Noto Serif', serif;
+     
+    }
+	</style>
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1010.0" data-new-gr-c-s-loaded="14.1010.0">
+
+  <div class="row">
+<div class="col-sm-3">
+  <img src="https://e7.pngegg.com/pngimages/1022/5/png-clipart-emblem-logo-illustration-microsoft-azure-building-exterior-emblem-logo.png" style="font-size:11px; max-height:150px; max-width:320px; text-align:center" />
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="invheader-logo-container" style="margin-left:100px">{{invoice_paid_stamp}}</div>
+</div>
+
+<div class="col-sm-4">
+<p class="invoiceText">INVOICE</p></div>
+
+<div class="invheader-invoicedetails">
+<table cellspacing="0">
+	<tbody>
+		<tr>
+			<th>Invoice #</th>
+			<td>{{invoice_number}}</td>
+		</tr>
+		<tr>
+			<th>Invoice Date</th>
+			<td>{{invoice_date}}</td>
+		</tr>
+		<tr>
+			<th>Customer PO #</th>
+			<td>{{invoice_po_number}}</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr class="invheader-invoicedetails-balance">
+			<th style="background-color:#0a95c4">
+			<div>Balance Due</div>
+			</th>
+			<td>
+			<div>{{invoice_balance_due}}</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="print-container">
+<p class="invoiceTo">INVOICE TO:</p>
+
+<div class="invheader-address-client">{{customer_business_name_or_customer_full_name}}<br />
+{{customer_billing_address}} {{customer_billing_address2}}<br />
+{{customer_billing_city}}, {{customer_billing_state}} {{customer_billing_zip}}</div>
+</div>
+
+<div style="margin-left:400px">
+<div class="invheader-address-account">{{account_name}}<br />
+{{account_street}}<br />
+{{account_city}}, {{account_state}} {{account_zip}}<br />
+{{account_website}}<br />
+{{account_email}}<br />
+{{account_phone}}</div>
+</div>
+
+<div class="invbody" style="margin:20px">
+<table cellspacing="0" class="invbody-items">
+	<thead>
+		<tr>
+			<th class="first">
+			<div class="item">Item</div>
+			</th>
+			<th>
+			<div class="description">Description</div>
+			</th>
+			<th>
+			<div class="quantity">Quantity</div>
+			</th>
+			<th>
+			<div class="unitcost">Unit Cost</div>
+			</th>
+			<th>
+			<div class="unitcost">Net Amount</div>
+			</th>
+			<th>
+			<div class="unitcost">{{tax_label}} Rate</div>
+			</th>
+			<th class="last">
+			<div class="linetotal">{{tax_label}}</div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>{{invoice_line_items_table}}
+	</tbody>
+</table>
+
+<div class="row">
+<div class="col-sm-6">
+<div>{{signature_line}}</div>
+</div>
+
+<div class="col-sm-6">
+<div class="invbody-summary">
+<div class="row">
+<div class="column">&nbsp;</div>
+
+<div class="column" style="margin-top:-30px;margin-right:100px">
+<div class="invheader-invoicedetails">
+<table cellspacing="0">
+	<tbody>
+		<tr>
+			<th style="width: 150px;"><strong>Total Net Amount</strong></th>
+			<td style="width: 120px;"><strong>{{invoice_subtotal}}</strong></td>
+		</tr>
+		<tr>
+			<th style="width: 150px;"><strong>Carriage Net</strong></th>
+			<td style="width: 120px;">&nbsp;</td>
+		</tr>
+		<tr class="invbody-summary-paid">
+			<th style="width: 150px;">Total {{tax_label}} Amount</th>
+			<td style="width: 120px;">{{invoice_tax}}</td>
+		</tr>
+		<tr class="invbody-summary-paid">
+			<th style="width: 150px;">Invoice Total</th>
+			<td style="width: 120px;">{{invoice_total}}</td>
+		</tr>
+		<tr class="invbody-summary-paid">
+			<th style="width: 150px;">Payments</th>
+			<td style="width: 120px;">{{invoice_payments_amount}}</td>
+		</tr>
+		<tr class="invbody-summary-paid">
+			<th style="width: 150px;">Credits</th>
+			<td style="width: 120px;">{{invoice_misc_credits}}</td>
+		</tr>
+		<tr class="invbody-summary-total">
+			<th style="width: 150px;">
+			<div><strong>Balance Due</strong></div>
+			</th>
+			<td style="width: 120px;">
+			<div><strong>{{invoice_balance_due}}</strong></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div><img src="http://barcody.herokuapp.com/barcodes/{{customer_phone}}.png" /></div>
+</div>
+
+<div class="col-sm-6">
+<h2>Disclaimer</h2>
+
+<p><span style="font-size:12px; line-height:16px">{{invoice_disclaimer}} </span></p>
+</div>
+</div>
+</body>
 </html>

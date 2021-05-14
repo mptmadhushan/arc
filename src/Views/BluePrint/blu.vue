@@ -9,6 +9,7 @@ export default {
     return {
       fileName: "hello.html",
       input: "",
+      htmlCon: "<h1>hello</h1>",
     };
   },
   created() {
