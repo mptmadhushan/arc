@@ -11,8 +11,8 @@ import ChamikaHouse from "./src/Views/ChamikaHouse.vue";
 import Maniumpathy from "./src/Views/Maniumpathy.vue";
 import PreLoader from "./src/components/PreLoader.vue";
 import Hanthana from "./src/Views/Hanthana.vue";
-import BluePrint from "./src/Views/BluePrint/blu.vue";
-// import BluePrint from "./src/Views/BluePrint.vue";
+// import BluePrint from "./src/Views/BluePrint/blu.vue";
+import BluePrint from "./src/Views/BluePrint.vue";
 import test from "./src/Views/testVue.vue";
 
 export default [

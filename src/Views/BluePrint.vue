@@ -16,7 +16,7 @@
 <script>
 // import LocomotiveScroll from "locomotive-scroll";
 
-import Blue from "./NewBlue";
+import Blue from "./../Views/BluePrint/blu";
 import BeautyBlue from "./BeautyBlue";
 import SpaceBlue from "./SpaceBlue";
 // import HorizontalScroll from "vue-horizontal-scroll";
