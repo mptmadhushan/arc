@@ -22,7 +22,7 @@ Vue.use(VueSmoothScroll, {
 });
 Vue.component("manage-posts", function(resolve) {
   axios.get("../src/hello.html").then((response) => {
-    console.log(response)
+    console.log(response.data)
     resolve({ template: response.data });
   });
 });
