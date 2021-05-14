@@ -1,6 +1,6 @@
 <template>
   <div class="data-scroll-container">
-    <div data-scroll-container style="max-height:300vh;overflow:hidden">
+    <div data-scroll-container style="padding-bottom:-1000px">
       <div data-scroll-section style="padding-bottom: 20px;">
         <router-link to="/">
           <div style="position:relative;z-index:1000">
@@ -185,7 +185,7 @@
 <script>
 import "intersection-observer";
 import Scrollama from "vue-scrollama";
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from ".././Slider1";
 
 export default {
@@ -200,10 +200,10 @@ export default {
     };
   },
   mounted() {
-    this.scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
-    });
+    // this.scroll = new LocomotiveScroll({
+    //   el: document.querySelector("[data-scroll-container]"),
+    //   smooth: true,
+    // });
   },
   methods: {
     heyl() {
