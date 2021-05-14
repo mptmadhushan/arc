@@ -12,8 +12,9 @@
 
     <Scrollama
       :debug="true"
-      :offset="0.99"
+      :offset="0.5"
       @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
+      @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
     >
       <div>
         <p
@@ -29,14 +30,14 @@
       </div>
       <div class="body" style="height:100vh">
         <div style="height:20vh;width: 20vw;"></div>
-        <div class=" fadeClass ml-12">
+        <div class="fadeClass ml-12">
           <div class="back-text">
             <div class="text-container" style="margin-top:-15vh">
               <span class="letter">D</span><span class="letter">E</span
               ><span class="letter">S</span><span class="letter">I</span
               ><span class="letter">G</span><span class="letter">N</span>
             </div>
-            <div class="text-container" style="margin-top:-30vh">
+            <div class="text-container" style="margin-top:-20vh">
               <span class="letter2">D</span><span class="letter2">E</span
               ><span class="letter2">S</span><span class="letter2">I</span
               ><span class="letter2">G</span><span class="letter2">N</span>
@@ -154,9 +155,9 @@
         >
           <div class="image-box ">
             <v-layout row wrap>
-              <v-flex md9 ml-12>
+              <v-flex md9 ml-12 class="image-box2">
                 <v-img
-                  class="img-to-ef"
+                  class="zoom_image2"
                   eager
                   contain
                   height="100vh"
@@ -234,6 +235,36 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 
+.zoom_image {
+  transform: scale(1.5);
+  transition: all 10s;
+}
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 90%;
+  height: 90%;
+}
+.zoom_image2 {
+  transform: scale(1.2);
+  transition: all 10s;
+}
+.image-box2 {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 90%;
+  height: 90%;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.3);
+}
 .twelve.active {
   height: 10%;
   transition: all 5s;
