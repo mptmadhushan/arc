@@ -44,6 +44,7 @@
             </div>
           </div>
         </div>
+        <div style="height:10vh"></div>
       </div>
       <div class="twelve" :data-step-no="3" :class="{ active: 3 == currStep }">
         <div
@@ -52,7 +53,6 @@
           data-aos-delay="500"
           data-aos-duration="1500"
         >
-          <div style="height:10vh"></div>
           <v-layout row wrap justify-space-around>
             <v-flex md6 xs12 sm12 align-self-start>
               <div>
@@ -291,7 +291,7 @@ export default {
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
+  color: #a6a6a6;
   font-family: "Oranienbaum", serif;
   font-size: 25vw;
   -webkit-font-smoothing: antialiased;
