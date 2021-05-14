@@ -11,7 +11,6 @@
     </router-link>
 
     <Scrollama
-      :debug="true"
       :offset="0.5"
       @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
       @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
@@ -33,9 +32,14 @@
         <div class="fadeClass ml-12">
           <div class="back-text">
             <div class="text-container" style="margin-top:-15vh">
-              <span class="letter">D</span><span class="letter">E</span
-              ><span class="letter">S</span><span class="letter">I</span
-              ><span class="letter">G</span><span class="letter">N</span>
+              <span
+                class="letter"
+                :data-step-no="4"
+                :class="{ active: 4 == currStep }"
+                >D</span
+              ><span class="letter">E</span><span class="letter">S</span
+              ><span class="letter">I</span><span class="letter">G</span
+              ><span class="letter">N</span>
             </div>
             <div class="text-container" style="margin-top:-20vh">
               <span class="letter2">D</span><span class="letter2">E</span
@@ -184,6 +188,7 @@
         </div>
       </div>
     </Scrollama>
+        <div style="height:10vh;width: 20vw;"></div>
     <div v-on:mouseover="mouseOver" ref="slider1">
       <Slider1 />
     </div>
@@ -312,11 +317,18 @@ span {
   transform: translateY(0);
   filter: blur(0);
 }
+.body:hover .letter2 {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  
+}
 .letter {
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
   filter: blur(5px);
+  /* transition: all 20s; */
 }
 .letter:nth-of-type(1) {
   transform: translateY(10vh);
@@ -343,16 +355,13 @@ span {
   transform: translateY(50vh);
   transition-duration: 3.8s;
 }
-.body:hover .letter2 {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0);
-}
+
 .letter2 {
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease,
     opacity 5s ease;
   opacity: 0;
   filter: blur(5px);
+  transition: all 20s;
 }
 .letter2:nth-of-type(1) {
   transform: translateY(25vh);
