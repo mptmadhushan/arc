@@ -1,7 +1,7 @@
 <template>
-  <div class="data-scroll-container">
-    <div data-scroll-container style="padding-bottom:-1000px">
-      <div data-scroll-section style="padding-bottom: 20px;">
+  <div>
+    <div data-scroll-container>
+      <section data-scroll-section>
         <router-link to="/">
           <div style="position:relative;z-index:1000">
             <img
@@ -25,9 +25,9 @@
               TO THOSE THAT INSPIRE AND CREATE<br />
               <span class="text1s"> A MOMENT</span>
             </p>
-            <div style="height:30vh;width: 10vw;"></div>
           </div>
           <div class="body" style="height:100vh">
+            <div style="height:30vh;width: 10vw;"></div>
             <div style="height:30vh;width: 20vw;"></div>
             <div class="fadeClass ml-12">
               <div class="back-text">
@@ -173,7 +173,7 @@
             </div>
           </div>
         </Scrollama>
-      </div>
+      </section>
     </div>
     <div style="height:10vh;width: 20vw;"></div>
     <div v-on:mouseover="mouseOver" ref="slider1">
@@ -185,7 +185,8 @@
 <script>
 import "intersection-observer";
 import Scrollama from "vue-scrollama";
-// import LocomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/dist/locomotive-scroll.min.css";
+import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from ".././Slider1";
 
 export default {
@@ -204,6 +205,15 @@ export default {
     //   el: document.querySelector("[data-scroll-container]"),
     //   smooth: true,
     // });
+    this.lmS = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+    });
+
+    // eslint-disable-next-line no-undef
+    imagesLoaded("[data-scroll-container]", () => {
+      this.lmS.update();
+    });
   },
   methods: {
     heyl() {
@@ -231,7 +241,12 @@ export default {
   transform: scale(1);
   transition: ease-out 2.5s;
 } */
-
+.body {
+  margin: 0;
+  background-color: red;
+  padding: 0;
+  overflow: hidden;
+}
 .zoom_image {
   transform: scale(1);
   transition: all 10s;
