@@ -1,182 +1,361 @@
 <template>
-  <div data-scroll-container class="body-loco">
-    <div class="main">
-      <section data-scroll-section>
-        <router-link to="/">
-          <div style="position:relative;z-index:1000">
-            <img
-              style="opacity:0.5;margin-inline:20px;margin-top:1vh"
-              height="20vh"
-              src="../assets/backArrow.png"
-            />
-          </div>
-        </router-link>
-        <Scrollama
-          :offset="0.5"
-          @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
-          @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
-        >
-          <div>
-            <p
-              class="text1st text-center"
-              style="margin-top:35vh;margin-bottom:10vh"
+  <div>
+    <div data-scroll-container class="body-loco">
+      <div>
+        <section data-scroll-section>
+          <router-link to="/">
+            <div style="position:relative;z-index:1000">
+              <img
+                style="opacity:0.5;margin-inline:20px;margin-top:1vh"
+                height="20vh"
+                src="../assets/backArrow.png"
+              />
+            </div>
+          </router-link>
+          <Scrollama
+            :offset="0.5"
+            @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
+            @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
+          >
+            <div>
+              <p
+                class="text1st text-center"
+                style="margin-top:35vh;margin-bottom:10vh"
+              >
+                TO THOSE THAT INSPIRE AND CREATE<br />
+                <span class="text1s"> A MOMENT</span>
+              </p>
+            </div>
+            <div class="body" style="height:100vh">
+              <div style="height:40vh;width: 20vw;"></div>
+              <div class="fadeClass ml-12">
+                <div class="back-text">
+                  <div class="text-container" style="margin-top:-25vh">
+                    <span class="letter">D</span><span class="letter">E</span
+                    ><span class="letter">S</span><span class="letter">I</span
+                    ><span class="letter">G</span><span class="letter">N</span>
+                  </div>
+                  <div class="text-container" style="margin-top:-20vh">
+                    <span class="letter2">D</span><span class="letter2">E</span
+                    ><span class="letter2">S</span><span class="letter2">I</span
+                    ><span class="letter2">G</span
+                    ><span class="letter2">N</span>
+                  </div>
+                </div>
+              </div>
+              <div style="height:10vh"></div>
+            </div>
+            <div
+              class="twelve"
+              :data-step-no="3"
+              :class="{ active: 3 == currStep }"
             >
-              TO THOSE THAT INSPIRE AND CREATE<br />
-              <span class="text1s"> A MOMENT</span>
-            </p>
-          </div>
-          <div class="body" style="height:100vh">
-            <div style="height:40vh;width: 20vw;"></div>
-            <div class="fadeClass ml-12">
-              <div class="back-text">
-                <div class="text-container" style="margin-top:-25vh">
-                  <span class="letter">D</span><span class="letter">E</span
-                  ><span class="letter">S</span><span class="letter">I</span
-                  ><span class="letter">G</span><span class="letter">N</span>
-                </div>
-                <div class="text-container" style="margin-top:-20vh">
-                  <span class="letter2">D</span><span class="letter2">E</span
-                  ><span class="letter2">S</span><span class="letter2">I</span
-                  ><span class="letter2">G</span><span class="letter2">N</span>
-                </div>
-              </div>
-            </div>
-            <div style="height:10vh"></div>
-          </div>
-          <div
-            class="twelve"
-            :data-step-no="3"
-            :class="{ active: 3 == currStep }"
-          >
-            <div class="fadeClassNew">
-              <v-layout row wrap justify-space-around>
-                <v-flex md6 xs12 sm12 align-self-start>
-                  <div>
-                    <v-img
-                      height="80vh"
-                      eager
-                      cover
-                      src="../assets/blueprint/_SDS3203b.png"
-                    >
-                      <div
-                        class="twelve"
-                        :data-step-no="3"
-                        :class="{ active: 3 == currStep }"
-                      ></div>
-                    </v-img>
-                  </div>
-                </v-flex>
-                <v-flex md5 align-self-start>
-                  <p
-                    class="text001 text-right"
-                    style="margin:0;padding-top:6.6vh"
-                  >
-                    "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT,
-                    OF FORMS ASSEMBLED IN THE LIGHT"
-                  </p>
-                  <div style="margin-top:5px" class="textMini">
-                    -Le Corbusier
-                  </div>
-                </v-flex>
-              </v-layout>
-            </div>
-            <div style="height:10vh"></div>
-          </div>
-          <div
-            class="twelve"
-            :data-step-no="4"
-            :class="{ active: 4 == currStep }"
-          >
-            <div class="fadeClass">
-              <div style="width:99vw;height:20vh"></div>
-              <div>
-                <v-layout row wrap justify-center>
-                  <v-flex md4 xs12 sm12 align-self-end>
-                    <div class="image-box">
+              <div class="fadeClassNew">
+                <v-layout row wrap justify-space-around>
+                  <v-flex md6 xs12 sm12 align-self-start>
+                    <div>
                       <v-img
-                        class="zoom_image"
+                        height="80vh"
                         eager
-                        contain
-                        height="70vh"
-                        src="../assets/blueprint/_SDS3006.png"
+                        cover
+                        src="../assets/blueprint/_SDS3203b.png"
                       >
                         <div
                           class="twelve"
-                          :data-step-no="4"
-                          :class="{ active: 4 == currStep }"
+                          :data-step-no="3"
+                          :class="{ active: 3 == currStep }"
                         ></div>
                       </v-img>
                     </div>
                   </v-flex>
-                  <v-flex md5 xs12 sm12 align-self-end>
-                    <div class="image-box">
-                      <v-img
-                        class="zoom_image"
-                        eager
-                        contain
-                        height="95vh"
-                        src="../assets/blueprint/_SDS3211.jpeg"
-                      >
-                        <div
-                          class="twelve"
-                          :data-step-no="4"
-                          :class="{ active: 4 == currStep }"
-                        ></div>
-                      </v-img>
-                    </div>
-                  </v-flex>
-                  <p class="text001" style="margin-top:4vh">
-                    "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH
-                    THE CREATIVE ACT"<span class="textMini">
-                      -Charles Eames
-                    </span>
-                  </p>
-                </v-layout>
-              </div>
-            </div>
-          </div>
-          <div
-            class="twelve"
-            :data-step-no="5"
-            :class="{ active: 5 == currStep }"
-          >
-            <div class="fadeClass">
-              <div class="image-box ">
-                <v-layout row wrap>
-                  <v-flex md9 ml-12 class="image-box2">
-                    <v-img
-                      eager
-                      contain
-                      height="100vh"
-                      src="../assets/blueprint/1.png"
+                  <v-flex md5 align-self-start>
+                    <p
+                      class="text001 text-right"
+                      style="margin:0;padding-top:6.6vh"
                     >
-                      <div
-                        class="twelve"
-                        :data-step-no="5"
-                        :class="{ active: 5 == currStep }"
-                      ></div>
-                    </v-img>
-                  </v-flex>
-                  <v-flex md9 style="margin-top:-6vh" ml-12>
-                    <p class="textMini2 text-left">
-                      Charles and Ray Eames
-                      <br />
-                      Lounge chair by Herman Miller
-                      <br />
-                      1956
+                      "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND
+                      MAGNIFICENT, OF FORMS ASSEMBLED IN THE LIGHT"
                     </p>
+                    <div style="margin-top:5px" class="textMini">
+                      -Le Corbusier
+                    </div>
                   </v-flex>
                 </v-layout>
               </div>
+              <div style="height:10vh"></div>
             </div>
+            <div
+              class="twelve"
+              :data-step-no="4"
+              :class="{ active: 4 == currStep }"
+            >
+              <div class="fadeClass">
+                <div style="width:99vw;height:20vh"></div>
+                <div>
+                  <v-layout row wrap justify-center>
+                    <v-flex md4 xs12 sm12 align-self-end>
+                      <div class="image-box">
+                        <v-img
+                          class="zoom_image"
+                          eager
+                          contain
+                          height="70vh"
+                          src="../assets/blueprint/_SDS3006.png"
+                        >
+                          <div
+                            class="twelve"
+                            :data-step-no="4"
+                            :class="{ active: 4 == currStep }"
+                          ></div>
+                        </v-img>
+                      </div>
+                    </v-flex>
+                    <v-flex md5 xs12 sm12 align-self-end>
+                      <div class="image-box">
+                        <v-img
+                          class="zoom_image"
+                          eager
+                          contain
+                          height="95vh"
+                          src="../assets/blueprint/_SDS3211.jpeg"
+                        >
+                          <div
+                            class="twelve"
+                            :data-step-no="4"
+                            :class="{ active: 4 == currStep }"
+                          ></div>
+                        </v-img>
+                      </div>
+                    </v-flex>
+                    <p class="text001" style="margin-top:4vh">
+                      "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH
+                      THE CREATIVE ACT"<span class="textMini">
+                        -Charles Eames
+                      </span>
+                    </p>
+                  </v-layout>
+                </div>
+              </div>
+            </div>
+            <div
+              class="twelve"
+              :data-step-no="5"
+              :class="{ active: 5 == currStep }"
+            >
+              <div class="fadeClass">
+                <div class="image-box ">
+                  <v-layout row wrap>
+                    <v-flex md9 ml-12 class="image-box2">
+                      <v-img
+                        eager
+                        contain
+                        height="100vh"
+                        src="../assets/blueprint/1.png"
+                      >
+                        <div
+                          class="twelve"
+                          :data-step-no="5"
+                          :class="{ active: 5 == currStep }"
+                        ></div>
+                      </v-img>
+                    </v-flex>
+                    <v-flex md9 style="margin-top:-6vh" ml-12>
+                      <p class="textMini2 text-left">
+                        Charles and Ray Eames
+                        <br />
+                        Lounge chair by Herman Miller
+                        <br />
+                        1956
+                      </p>
+                    </v-flex>
+                  </v-layout>
+                </div>
+              </div>
+            </div>
+          </Scrollama>
+          <!-- <div style="height:10vh;width: 20vw;"></div> -->
+        </section>
+        <section data-scroll-section>
+          <div v-on:mouseover="mouseOver" ref="slider1">
+            <Slider1 />
           </div>
-        </Scrollama>
-        <div style="height:10vh;width: 20vw;"></div>
-        <div v-on:mouseover="mouseOver" ref="slider1">
-          <Slider1 />
-        </div>
-      </section>
+        </section>
+        <section data-scroll-section>
+          <router-link to="/">
+            <div style="position:relative;z-index:1000">
+              <img
+                style="opacity:0.5;margin-inline:20px;margin-top:1vh"
+                height="20vh"
+                src="../assets/backArrow.png"
+              />
+            </div>
+          </router-link>
+          <Scrollama
+            :offset="0.5"
+            @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
+            @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
+          >
+            <div>
+              <p
+                class="text1st text-center"
+                style="margin-top:35vh;margin-bottom:10vh"
+              >
+                TO THOSE THAT INSPIRE AND CREATE<br />
+                <span class="text1s"> A MOMENT</span>
+              </p>
+            </div>
+            <div class="body" style="height:100vh">
+              <div style="height:40vh;width: 20vw;"></div>
+              <div class="fadeClass ml-12">
+                <div class="back-text">
+                  <div class="text-container" style="margin-top:-25vh">
+                    <span class="letter">D</span><span class="letter">E</span
+                    ><span class="letter">S</span><span class="letter">I</span
+                    ><span class="letter">G</span><span class="letter">N</span>
+                  </div>
+                  <div class="text-container" style="margin-top:-20vh">
+                    <span class="letter2">D</span><span class="letter2">E</span
+                    ><span class="letter2">S</span><span class="letter2">I</span
+                    ><span class="letter2">G</span
+                    ><span class="letter2">N</span>
+                  </div>
+                </div>
+              </div>
+              <div style="height:10vh"></div>
+            </div>
+            <div
+              class="twelve"
+              :data-step-no="3"
+              :class="{ active: 3 == currStep }"
+            >
+              <div class="fadeClassNew">
+                <v-layout row wrap justify-space-around>
+                  <v-flex md6 xs12 sm12 align-self-start>
+                    <div>
+                      <v-img
+                        height="80vh"
+                        eager
+                        cover
+                        src="../assets/blueprint/_SDS3203b.png"
+                      >
+                        <div
+                          class="twelve"
+                          :data-step-no="3"
+                          :class="{ active: 3 == currStep }"
+                        ></div>
+                      </v-img>
+                    </div>
+                  </v-flex>
+                  <v-flex md5 align-self-start>
+                    <p
+                      class="text001 text-right"
+                      style="margin:0;padding-top:6.6vh"
+                    >
+                      "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND
+                      MAGNIFICENT, OF FORMS ASSEMBLED IN THE LIGHT"
+                    </p>
+                    <div style="margin-top:5px" class="textMini">
+                      -Le Corbusier
+                    </div>
+                  </v-flex>
+                </v-layout>
+              </div>
+              <div style="height:10vh"></div>
+            </div>
+            <div
+              class="twelve"
+              :data-step-no="4"
+              :class="{ active: 4 == currStep }"
+            >
+              <div class="fadeClass">
+                <div style="width:99vw;height:20vh"></div>
+                <div>
+                  <v-layout row wrap justify-center>
+                    <v-flex md4 xs12 sm12 align-self-end>
+                      <div class="image-box">
+                        <v-img
+                          class="zoom_image"
+                          eager
+                          contain
+                          height="70vh"
+                          src="../assets/blueprint/_SDS3006.png"
+                        >
+                          <div
+                            class="twelve"
+                            :data-step-no="4"
+                            :class="{ active: 4 == currStep }"
+                          ></div>
+                        </v-img>
+                      </div>
+                    </v-flex>
+                    <v-flex md5 xs12 sm12 align-self-end>
+                      <div class="image-box">
+                        <v-img
+                          class="zoom_image"
+                          eager
+                          contain
+                          height="95vh"
+                          src="../assets/blueprint/_SDS3211.jpeg"
+                        >
+                          <div
+                            class="twelve"
+                            :data-step-no="4"
+                            :class="{ active: 4 == currStep }"
+                          ></div>
+                        </v-img>
+                      </div>
+                    </v-flex>
+                    <p class="text001" style="margin-top:4vh">
+                      "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH
+                      THE CREATIVE ACT"<span class="textMini">
+                        -Charles Eames
+                      </span>
+                    </p>
+                  </v-layout>
+                </div>
+              </div>
+            </div>
+            <div
+              class="twelve"
+              :data-step-no="5"
+              :class="{ active: 5 == currStep }"
+            >
+              <div class="fadeClass">
+                <div class="image-box ">
+                  <v-layout row wrap>
+                    <v-flex md9 ml-12 class="image-box2">
+                      <v-img
+                        eager
+                        contain
+                        height="100vh"
+                        src="../assets/blueprint/1.png"
+                      >
+                        <div
+                          class="twelve"
+                          :data-step-no="5"
+                          :class="{ active: 5 == currStep }"
+                        ></div>
+                      </v-img>
+                    </v-flex>
+                    <v-flex md9 style="margin-top:-6vh" ml-12>
+                      <p class="textMini2 text-left">
+                        Charles and Ray Eames
+                        <br />
+                        Lounge chair by Herman Miller
+                        <br />
+                        1956
+                      </p>
+                    </v-flex>
+                  </v-layout>
+                </div>
+              </div>
+            </div>
+          </Scrollama>
+          <!-- <div style="height:10vh;width: 20vw;"></div> -->
+        </section>
+      </div>
     </div>
+    <div></div>
   </div>
 </template>
 
@@ -208,6 +387,11 @@ export default {
       el: document.querySelector("[data-scroll-container]"),
       smooth: true,
     });
+    this.lmS = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container2]"),
+      smooth: true,
+      direction: "horizontal",
+    });
 
     // eslint-disable-next-line no-undef
     imagesLoaded("[data-scroll-container]", () => {
@@ -216,7 +400,9 @@ export default {
   },
   methods: {
     mouseOver: function() {
+      document.documentElement.style.overflow = "hidden";
       console.log("flag ");
+
       this.$smoothScroll({
         scrollTo: this.$refs.slider1,
         duration: 100,
@@ -240,7 +426,7 @@ export default {
 .body-loco {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .zoom_image {
   transform: scale(1);

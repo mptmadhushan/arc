@@ -26,10 +26,9 @@
               <span class="text1s"> A MOMENT</span>
             </p>
           </div>
-          <div class="body" style="height:100vh">
-            <div style="height:30vh;width: 10vw;"></div>
-            <div style="height:30vh;width: 20vw;"></div>
-            <div class="fadeClass ml-12">
+          <div class="body">
+            <div style="height:40vh;width: 10vw;"></div>
+            <div class="fadeClass ml-12" style="height:70vh">
               <div class="back-text">
                 <div class="text-container" style="margin-top:-25vh">
                   <span class="letter">D</span><span class="letter">E</span
@@ -43,7 +42,6 @@
                 </div>
               </div>
             </div>
-            <div style="height:10vh"></div>
           </div>
           <div
             class="twelve"
@@ -186,7 +184,7 @@
 import "intersection-observer";
 import Scrollama from "vue-scrollama";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from ".././Slider1";
 
 export default {
@@ -205,15 +203,14 @@ export default {
     //   el: document.querySelector("[data-scroll-container]"),
     //   smooth: true,
     // });
-    this.lmS = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
-    });
-
+    // this.lmS = new LocomotiveScroll({
+    //   el: document.querySelector("[data-scroll-container]"),
+    //   smooth: true,
+    // });
     // eslint-disable-next-line no-undef
-    imagesLoaded("[data-scroll-container]", () => {
-      this.lmS.update();
-    });
+    // imagesLoaded("[data-scroll-container]", () => {
+    //   this.lmS.update();
+    // });
   },
   methods: {
     heyl() {
@@ -241,12 +238,13 @@ export default {
   transform: scale(1);
   transition: ease-out 2.5s;
 } */
-.body {
-  margin: 0;
-  background-color: red;
-  padding: 0;
-  overflow: hidden;
+.text001 {
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: "Roboto", sans-serif;
+  color: #a6a6a6;
 }
+
 .zoom_image {
   transform: scale(1);
   transition: all 10s;
@@ -279,7 +277,7 @@ export default {
 }
 .twelve.active {
   height: 10%;
-  transition: all 2s;
+  transition: all 1s;
 }
 .twelve {
   width: 100%;
@@ -446,6 +444,15 @@ span {
   color: white;
 }
 .textMini {
+  text-align: right;
+  font-size: 1.5vh;
+  padding-right: 10%;
+  margin-top: -5%;
+  font-weight: bold;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
+}
+.textMini2 {
   text-align: right;
   font-size: 1.5vh;
   padding-right: 10%;
