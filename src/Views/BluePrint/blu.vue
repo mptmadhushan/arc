@@ -88,7 +88,7 @@
             :class="{ active: 4 == currStep }"
           >
             <div class="fadeClass">
-              <div style="width:99vw;height:20vh"></div>
+              <div style="width:99vw;height:18vh"></div>
               <div>
                 <v-layout row wrap justify-center>
                   <v-flex md4 xs12 sm12 align-self-end>
@@ -125,7 +125,7 @@
                       </v-img>
                     </div>
                   </v-flex>
-                  <p class="text001" style="margin-top:4vh">
+                  <p class="text001" style="margin-top:1vh">
                     "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH
                     THE CREATIVE ACT"<span class="textMini">
                       -Charles Eames
