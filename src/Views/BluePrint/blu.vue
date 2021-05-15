@@ -20,14 +20,14 @@
           <div>
             <p
               class="text1st text-center"
-              style="margin-top:35vh;margin-bottom:10vh"
+              style="margin-top:35vh;margin-bottom:11vh"
             >
               TO THOSE THAT INSPIRE AND CREATE<br />
               <span class="text1s"> A MOMENT</span>
             </p>
           </div>
           <div class="body">
-            <div style="height:40vh;width: 10vw;"></div>
+            <div style="height:43vh;width: 10vw;"></div>
             <div class="fadeClass ml-12" style="height:70vh">
               <div class="back-text">
                 <div class="text-container" style="margin-top:-25vh">
@@ -157,7 +157,7 @@
                       ></div>
                     </v-img>
                   </v-flex>
-                  <v-flex md9 style="margin-top:-5vh" ml-12>
+                  <v-flex md9 style="margin-top:-6vh" ml-12>
                     <p class="textMini2 text-left">
                       Charles and Ray Eames
                       <br />
