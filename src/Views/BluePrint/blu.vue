@@ -157,7 +157,7 @@
                       ></div>
                     </v-img>
                   </v-flex>
-                  <v-flex md9 style="margin-top:-6vh" ml-12>
+                  <v-flex md9 style="margin-top:-5vh" ml-12>
                     <p class="textMini2 text-left">
                       Charles and Ray Eames
                       <br />
@@ -456,7 +456,6 @@ span {
   text-align: right;
   font-size: 1.5vh;
   padding-right: 10%;
-  margin-top: -5%;
   font-weight: bold;
   font-family: "Spectral", serif;
   color: #a6a6a6;
