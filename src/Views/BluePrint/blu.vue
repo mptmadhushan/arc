@@ -88,7 +88,7 @@
             :class="{ active: 4 == currStep }"
           >
             <div class="fadeClass">
-              <div style="width:99vw;height:18vh"></div>
+              <div style="width:99vw;height:16.8vh"></div>
               <div>
                 <v-layout row wrap justify-center>
                   <v-flex md4 xs12 sm12 align-self-end>
