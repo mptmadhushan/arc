@@ -17,38 +17,66 @@
           @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
           @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
         >
-          <div>
+          <div class="blue-body">
             <p
               class="text1st text-center"
-              style="margin-top:35vh;margin-bottom:11vh"
+              style="padding-top:35vh;margin-bottom:11vh"
             >
               TO THOSE THAT INSPIRE AND CREATE<br />
               <span class="text1s"> A MOMENT</span>
             </p>
+            <div
+              class="d-flex flex-row justify-center align-center"
+              style="margin-top:45vh"
+            >
+              <div id="animated-example" class="animated bounce">
+                <v-btn x-small fab color="transparent"
+                  ><v-icon href="#design" v-smooth-scroll
+                    >mdi-chevron-down</v-icon
+                  ></v-btn
+                >
+              </div>
+            </div>
           </div>
-          <div class="body">
-            <div style="height:43vh;width: 10vw;"></div>
-            <div class="fadeClass ml-12" style="height:70vh">
-              <div class="back-text">
-                <div class="text-container" style="margin-top:-25vh">
-                  <span class="letter">D</span><span class="letter">E</span
-                  ><span class="letter">S</span><span class="letter">I</span
-                  ><span class="letter">G</span><span class="letter">N</span>
+
+          <div class="blue-body" id="design" ref="design">
+            <div class="body">
+              <div style="height:22vh;width: 10vw;"></div>
+              <div class="fadeClass ml-12" style="height:70vh">
+                <div class="back-text">
+                  <div class="text-container" style="margin-top:-25vh">
+                    <span class="letter">D</span><span class="letter">E</span
+                    ><span class="letter">S</span><span class="letter">I</span
+                    ><span class="letter">G</span><span class="letter">N</span>
+                  </div>
+                  <div class="text-container" style="margin-top:-20vh">
+                    <span class="letter2">D</span><span class="letter2">E</span
+                    ><span class="letter2">S</span><span class="letter2">I</span
+                    ><span class="letter2">G</span
+                    ><span class="letter2">N</span>
+                  </div>
                 </div>
-                <div class="text-container" style="margin-top:-20vh">
-                  <span class="letter2">D</span><span class="letter2">E</span
-                  ><span class="letter2">S</span><span class="letter2">I</span
-                  ><span class="letter2">G</span><span class="letter2">N</span>
-                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-center align-center">
+              <div id="animated-example" class="animated bounce">
+                <v-btn x-small fab color="transparent"
+                  ><v-icon href="#ARCHITECTURE" v-smooth-scroll
+                    >mdi-chevron-down</v-icon
+                  ></v-btn
+                >
               </div>
             </div>
           </div>
           <div
-            class="twelve"
+            id="ARCHITECTURE"
+            class="twelve "
             :data-step-no="3"
             :class="{ active: 3 == currStep }"
           >
             <div class="fadeClassNew">
+              <div style="height:10vh;width: 100vw"></div>
+
               <v-layout row wrap justify-space-around>
                 <v-flex md6 xs12 sm12 align-self-start>
                   <div>
@@ -67,10 +95,7 @@
                   </div>
                 </v-flex>
                 <v-flex md5 align-self-start>
-                  <p
-                    class="text001 text-right"
-                    style="margin:0;padding-top:6.6vh"
-                  >
+                  <p class="text001 text-right" style="margin-top:-2vh;">
                     "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT,
                     OF FORMS ASSEMBLED IN THE LIGHT"
                   </p>
@@ -80,21 +105,33 @@
                 </v-flex>
               </v-layout>
             </div>
-            <div style="height:10vh"></div>
+            <div style="height:6vh"></div>
+
+            <!-- <div style="height:15vh;background-color:red"></div> -->
+            <div class="d-flex flex-row justify-center align-center">
+              <div id="animated-example" class="animated bounce">
+                <v-btn x-small fab color="transparent"
+                  ><v-icon href="#act" v-smooth-scroll
+                    >mdi-chevron-down</v-icon
+                  ></v-btn
+                >
+              </div>
+            </div>
           </div>
+          <div style="height:10vh;width: 100vw"></div>
           <div
+            id="act"
             class="twelve"
             :data-step-no="4"
             :class="{ active: 4 == currStep }"
           >
+            <div style="height:4vh;width: 100vw"></div>
             <div class="fadeClass">
-              <div style="width:99vw;height:16.8vh"></div>
               <div>
                 <v-layout row wrap justify-center>
                   <v-flex md4 xs12 sm12 align-self-end>
-                    <div class="image-box">
+                    <div>
                       <v-img
-                        class="zoom_image"
                         eager
                         contain
                         height="70vh"
@@ -108,13 +145,12 @@
                       </v-img>
                     </div>
                   </v-flex>
-                  <v-flex md5 xs12 sm12 align-self-end>
-                    <div class="image-box">
+                  <v-flex md5 xs12 sm12 align-self-center>
+                    <div>
                       <v-img
-                        class="zoom_image"
                         eager
                         contain
-                        height="95vh"
+                        height="85vh"
                         src="../../assets/blueprint/_SDS3211.jpeg"
                       >
                         <div
@@ -125,31 +161,40 @@
                       </v-img>
                     </div>
                   </v-flex>
-                  <p class="text001" style="margin-top:1vh">
+                  <p class="text001">
                     "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH
                     THE CREATIVE ACT"<span class="textMini">
                       -Charles Eames
                     </span>
                   </p>
                 </v-layout>
+                <div
+                  class="d-flex flex-row justify-start align-start"
+                  style="margin-top:-5vh;margin-left:5vh"
+                >
+                  <div id="animated-example" class="animated bounce">
+                    <v-btn x-small fab color="transparent"
+                      ><v-icon href="#act2" v-smooth-scroll
+                        >mdi-chevron-down</v-icon
+                      ></v-btn
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div
+            id="act2"
+            style="height:100vh;margin-top:10vh"
             class="twelve"
             :data-step-no="5"
             :class="{ active: 5 == currStep }"
           >
             <div class="fadeClass">
-              <div class="image-box ">
+              <div>
                 <v-layout row wrap>
-                  <v-flex md9 ml-12 class="image-box2">
-                    <v-img
-                      eager
-                      contain
-                      height="100vh"
-                      src="../../assets/blueprint/1.png"
-                    >
+                  <v-flex md9 ml-12>
+                    <v-img eager contain src="../../assets/blueprint/1.png">
                       <div
                         class="twelve"
                         :data-step-no="5"
@@ -169,13 +214,37 @@
                 </v-layout>
               </div>
             </div>
+            <div
+              class="d-flex flex-row justify-start align-start"
+              style="margin-left:5vh"
+            >
+              <div id="animated-example" class="animated bounce">
+                <v-btn x-small fab color="transparent"
+                  ><v-icon href="#slider1" v-smooth-scroll
+                    >mdi-chevron-down</v-icon
+                  ></v-btn
+                >
+              </div>
+            </div>
           </div>
         </Scrollama>
       </section>
     </div>
     <div style="height:10vh;width: 20vw;"></div>
-    <div v-on:mouseover="mouseOver" ref="slider1">
+    <div v-on:mouseover="mouseOver" ref="slider1" id="slider1">
       <Slider1 />
+      <div
+        class="d-flex flex-row justify-start align-start"
+        style="margin-left:5vh;margin-top:-6vh"
+      >
+        <div id="animated-example" class="animated bounce">
+          <v-btn x-small fab dark color="transparent"
+            ><v-icon href="#slider1" v-smooth-scroll
+              >mdi-chevron-down</v-icon
+            ></v-btn
+          >
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -216,11 +285,15 @@ export default {
     heyl() {
       console.log("helasd 😷helasd");
     },
-    mouseOver: function() {
+    mouseOver: function(val) {
+      console.log("😎", val);
       console.log("flag ");
+      let rr = "this.$refs." + val;
+      console.log(rr);
       this.$smoothScroll({
+        // scrollTo: rr,
         scrollTo: this.$refs.slider1,
-        duration: 100,
+        duration: 1000,
         offset: 1,
       });
     },
@@ -233,11 +306,55 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
-
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+#animated-example {
+  width: 20px;
+  height: 20px;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
+}
 /* .fadeClass:hover .zoom_image {
   transform: scale(1);
   transition: ease-out 2.5s;
 } */
+.blue-body {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: red;
+  margin-top: 10px; */
+}
 .text001 {
   text-align: center;
   font-size: 2.5vh;
@@ -276,7 +393,7 @@ export default {
   transform: scale(1.3);
 }
 .twelve.active {
-  height: 10%;
+  height: 0%;
   transition: all 1s;
 }
 .twelve {
@@ -317,12 +434,12 @@ span {
   transform: translateY(0);
   filter: blur(0);
 } */
-.body:hover .letter {
+.blue-body:hover .letter {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
 }
-.body:hover .letter2 {
+.blue-body:hover .letter2 {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
@@ -444,7 +561,7 @@ span {
   color: white;
 }
 .textMini {
-  text-align: right;
+  text-align: center;
   font-size: 1.5vh;
   padding-right: 10%;
   margin-top: -5%;

@@ -84,7 +84,7 @@
                     circa 1992
                   </p>
                 </div> </v-col
-              ><v-col align-self="center"  style="margin-left:-12vw">
+              ><v-col align-self="center" style="margin-left:-12vw">
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
