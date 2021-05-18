@@ -26,12 +26,12 @@
               <span class="text1s"> A MOMENT</span>
             </p>
             <div
-              class="d-flex flex-row justify-center align-center"
-              style="margin-top:45vh"
+              class="d-flex flex-row justify-left align-center"
+              style="margin-top:47vh;margin-left:20vw"
             >
               <div id="animated-example" class="animated bounce">
                 <v-btn x-small fab color="transparent"
-                  ><v-icon href="#design" v-smooth-scroll
+                  ><v-icon href="#design" v-smooth-scroll="{ duration: 2000 }"
                     >mdi-chevron-down</v-icon
                   ></v-btn
                 >
@@ -58,10 +58,16 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-row justify-center align-center">
+            <div class="d-flex flex-row justify-left align-center">
               <div id="animated-example" class="animated bounce">
-                <v-btn x-small fab color="transparent"
-                  ><v-icon href="#ARCHITECTURE" v-smooth-scroll
+                <v-btn
+                  style="margin-left:20vw;margin-top:2vh"
+                  x-small
+                  fab
+                  color="transparent"
+                  ><v-icon
+                    href="#ARCHITECTURE"
+                    v-smooth-scroll="{ duration: 2000 }"
                     >mdi-chevron-down</v-icon
                   ></v-btn
                 >
@@ -105,13 +111,17 @@
                 </v-flex>
               </v-layout>
             </div>
-            <div style="height:6vh"></div>
+            <div style="height:5vh"></div>
 
             <!-- <div style="height:15vh;background-color:red"></div> -->
-            <div class="d-flex flex-row justify-center align-center">
+            <div class="d-flex flex-row justify-left align-center">
               <div id="animated-example" class="animated bounce">
-                <v-btn x-small fab color="transparent"
-                  ><v-icon href="#act" v-smooth-scroll
+                <v-btn
+                  x-small
+                  fab
+                  color="transparent"
+                  style="margin-left:20vw;margin-top:2vh"
+                  ><v-icon href="#act" v-smooth-scroll="{ duration: 2000 }"
                     >mdi-chevron-down</v-icon
                   ></v-btn
                 >
@@ -170,11 +180,15 @@
                 </v-layout>
                 <div
                   class="d-flex flex-row justify-start align-start"
-                  style="margin-top:-5vh;margin-left:5vh"
+                  style="margin-top:-5.2vh;margin-left:5vh"
                 >
                   <div id="animated-example" class="animated bounce">
-                    <v-btn x-small fab color="transparent"
-                      ><v-icon href="#act2" v-smooth-scroll
+                    <v-btn
+                      x-small
+                      fab
+                      color="transparent"
+                      style="margin-left:17vw"
+                      ><v-icon href="#act2" v-smooth-scroll="{ duration: 2000 }"
                         >mdi-chevron-down</v-icon
                       ></v-btn
                     >
@@ -219,32 +233,85 @@
               style="margin-left:5vh"
             >
               <div id="animated-example" class="animated bounce">
-                <v-btn x-small fab color="transparent"
-                  ><v-icon href="#slider1" v-smooth-scroll
+                <v-btn
+                  x-small
+                  fab
+                  color="transparent"
+                  style="margin-left:17.3vw;margin-top:-0.3vh"
+                  ><v-icon href="#act-slider" v-smooth-scroll
                     >mdi-chevron-down</v-icon
                   ></v-btn
                 >
               </div>
             </div>
           </div>
+          <div
+            id="act-slider"
+            style="height:100vh;margin-top:10vh"
+            class="twelve"
+            :data-step-no="5"
+            :class="{ active: 5 == currStep }"
+          >
+            <Slider1 />
+          </div>
         </Scrollama>
       </section>
     </div>
     <div style="height:10vh;width: 20vw;"></div>
-    <div v-on:mouseover="mouseOver" ref="slider1" id="slider1">
+    <!-- <div v-on:mouseover="mouseOver" ref="slider1" id="slider1">
       <Slider1 />
       <div
         class="d-flex flex-row justify-start align-start"
         style="margin-left:5vh;margin-top:-6vh"
       >
         <div id="animated-example" class="animated bounce">
-          <v-btn x-small fab dark color="transparent"
-            ><v-icon href="#slider1" v-smooth-scroll
+          <v-btn
+            x-small
+            fab
+            dark
+            color="transparent"
+            style="margin-left:17.4vw;margin-top:0vh"
+            ><v-icon href="#beaty" v-smooth-scroll
               >mdi-chevron-down</v-icon
             ></v-btn
           >
         </div>
       </div>
+    </div> -->
+    <div class="blue-body" id="beaty" ref="beaty">
+      <div class="body">
+        <div style="height:22vh;width: 10vw;"></div>
+        <div class="fadeClass ml-12" style="height:70vh">
+          <div class="back-text">
+            <div class="text-container" style="margin-top:-25vh">
+              <span class="letter">B</span><span class="letter">E</span
+              ><span class="letter">A</span><span class="letter">U</span
+              ><span class="letter">T</span><span class="letter">Y</span>
+            </div>
+            <div class="text-container" style="margin-top:-20vh">
+              <span class="letter2">B</span><span class="letter2">E</span
+              ><span class="letter2">A</span><span class="letter2">U</span
+              ><span class="letter2">T</span><span class="letter2">Y</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-left align-center">
+        <div id="animated-example" class="animated bounce">
+          <v-btn
+            style="margin-left:20vw;margin-top:2vh"
+            x-small
+            fab
+            color="transparent"
+            ><v-icon href="#beaty-blue" v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down</v-icon
+            ></v-btn
+          >
+        </div>
+      </div>
+    </div>
+    <div id="beaty-blue">
+      <BeautyBlue />
     </div>
   </div>
 </template>
@@ -255,11 +322,13 @@ import Scrollama from "vue-scrollama";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
 // import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from ".././Slider1";
+import BeautyBlue from ".././BeautyBlue";
 
 export default {
   name: "App",
   components: {
     Scrollama,
+    BeautyBlue,
     Slider1,
   },
   data() {
@@ -268,10 +337,6 @@ export default {
     };
   },
   mounted() {
-    // this.scroll = new LocomotiveScroll({
-    //   el: document.querySelector("[data-scroll-container]"),
-    //   smooth: true,
-    // });
     // this.lmS = new LocomotiveScroll({
     //   el: document.querySelector("[data-scroll-container]"),
     //   smooth: true,
@@ -293,7 +358,7 @@ export default {
       this.$smoothScroll({
         // scrollTo: rr,
         scrollTo: this.$refs.slider1,
-        duration: 1000,
+        duration: 2000,
         offset: 1,
       });
     },

@@ -1,41 +1,4 @@
 <template>
-  <!-- <div data-scroll data-scroll-id="hey" v-if="isMobile()" style="height:100vh">
-    <div class="outer-wrapper">
-      <div class="wrapper">
-        <div class="slide one_m">
-          <div style="height:100vh">
-            <v-row no-gutters>
-              <v-col>
-                <div style="height:100vh">
-                  <div
-                    class="b1sli"
-                    data-aos="zoom-in-left"
-                    data-aos-duration="1500"
-                  >
-                    <div class="newBox2"></div>
-                  </div>
-                </div>
-              </v-col>
-              <v-col>
-                <div style="height:100vh;">
-                  <div class="b2sli">
-                    <div class="b1"></div>
-                  </div>
-                </div>
-              </v-col>
-              <v-col>
-                <div style="height:100vh;">
-                  <div>
-                    <div class="b1"></div>
-                  </div>
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
     <div class="outer-wrapper">
       <div class="wrapper">
@@ -107,26 +70,6 @@
                   </p>
                 </div>
               </v-col>
-
-              <!-- <v-col>
-                <div>
-                  <div style="height:100vh;">
-                    <div class="b3sli">
-                      <div class="b1"></div>
-                      <p
-                        class="textMini text-left"
-                        style="margin-top:5%;margin-left:2%;"
-                      >
-                        Louis Gost Chair
-                        <br />
-                        Philippe Starck
-                        <br />
-                        2002
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </v-col> -->
             </v-row>
           </div>
         </div>
@@ -531,6 +474,7 @@ h2 span:last-child {
   height: 100vh;
   padding-left: 60vw;
   transition: 4s ease;
+  animation-fill-mode: forwards;
 }
 .one_m {
   background: #ffffff;
