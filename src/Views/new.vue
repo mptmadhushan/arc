@@ -1,33 +1,4 @@
 <template>
-  <!-- <div class="pinContainer">
-    <section class="panel" :class="`panel-0`">
-      <transition name="fade">
-        <div class="page-loader">
-          <div class="bg">
-            <div id="sub-title">
-              <div class="container_l">
-                <div class="sub-right">
-                  <div class="center_r">
-                    <p>
-                      <v-card flat color="transparent" class="d-flex flex-row">
-                        <v-img
-                          contain
-                          height="30%"
-                          width="20vw"
-                          src="../assets/main.png"
-                        ></v-img>
-                      </v-card>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="clear-both"></div>
-            </div>
-          </div>
-        </div>
-      </transition>
-    </section>
-  </div> -->
   <div>
     <div v-if="isMobile()" style="height:100vh;width:100vw;overflow:hidden">
       <div class="sub-right">
@@ -54,13 +25,15 @@
                 <v-card
                   flat
                   color="transparent"
-                  class="d-flex flex-row"
+                  class="d-flex flex-row justify-center align-center"
                   style="position:relative"
                 >
                   <v-img
+                    eager
                     contain
-                    height="30%"
+                    height="30vh"
                     width="20vw"
+                    style="margin-top:30vh"
                     src="../assets/main.png"
                   ></v-img>
                   <div class="scroll" v-if="arrow">

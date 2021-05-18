@@ -2,11 +2,10 @@
   <div class="aaa">
     <div>
       <div class="hero" ref="hero"><hero /></div>
-      <div class="page1" ref="page1" id="viewElement">
+      <div>
         <page1 />
       </div>
-      <div style="width:99vw;height:15vh;padding:10px"></div>
-      <div class="pasdadage" ref="asd" id="viewElement2">
+      <div>
         <page2 />
       </div>
       <div>

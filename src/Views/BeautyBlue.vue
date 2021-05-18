@@ -4,60 +4,45 @@
   <div>
     <div>
       <div class="body fadeClass">
-        <div style="height:26vh"></div>
-
-        <div class="back-text">
-          <div class="text-container">
-            <span class="letter2">B</span><span class="letter2">E</span
-            ><span class="letter2">A</span><span class="letter2">U</span
-            ><span class="letter2">T</span><span class="letter2">Y</span>
-            <span class="letter2">B</span><span class="letter2">E</span>
-            <span class="letter2">A</span><span class="letter2">U</span>
-            <span class="letter2">T</span><span class="letter2">Y</span>
-          </div>
-        </div>
-        <!-- <div class="back-text">
-          <div class="text-container">
-            <span class="letter">B</span><span class="letter">E</span
-            ><span class="letter">A</span><span class="letter">U</span
-            ><span class="letter">T</span><span class="letter">Y</span>
-          </div>
-        </div>
-        <div class="back-text" style="margin-top:-90vh">
-          <div class="text-container">
-            <span class="letter2">B</span><span class="letter2">E</span
-            ><span class="letter2">A</span><span class="letter2">U</span
-            ><span class="letter2">T</span><span class="letter2">Y</span>
-          </div>
-        </div> -->
         <div
           class="fadeClass"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1500"
         >
-          <div class="bg-items" style="margin-left:20vw;margin-top:20vh">
+          <div class="bg-items" style="margin-left:20vw;margin-top:2vh">
             <v-img
               class="img-to-ef"
               eager
-              height="90vh"
+              height="85vh"
               src="../assets/blueprint/imgspace.jpg"
             >
               <div class="twelve"></div>
             </v-img>
           </div>
-          <div style="width:99vw;height:12vh"></div>
+          <div style="width:99vw;height:10vh"></div>
           <div>
             <P class="textMini text-left" style="margin-left:20vw">
               Pablo Piccaso<br />Cannes,France<br />1956
             </P>
           </div>
         </div>
+        <div id="animated-example" class="animated bounce">
+          <v-btn
+            x-small
+            fab
+            color="transparent"
+            style="margin-left:20vw;margin-top:-2vh"
+            ><v-icon href="#bnew" v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down</v-icon
+            ></v-btn
+          >
+        </div>
       </div>
     </div>
-
-    <div class="fadeClass">
-      <div style="width:99vw;height:30vh"></div>
+    <div style="width:99vw;height:30vh"></div>
+    <div class="fadeClass" id="bnew" ref="bnew" style="height:100vh">
+      <!-- <div style="width:99vw;height:30vh"></div> -->
       <div>
         <v-layout row wrap justify-center>
           <v-flex md6 xs12 sm12 align-self-end>
@@ -93,47 +78,72 @@
             </div>
           </v-flex>
         </v-layout>
-        <p
-          class="text001 text-center"
-          style="margin-top:25vh; text-transform: uppercase;"
-        >
-          "i dont know where my work begins or ends,<br />
-          or where it wants to take me, but i believe<br />
-          that's where things truly belong"<br />
-          <span class="textMini">
-            - Mahen Perera
-          </span>
-        </p>
+        <div id="animated-example" class="animated bounce">
+          <v-btn
+            x-small
+            fab
+            color="transparent"
+            style="margin-left:20vw;margin-top:3vh"
+            ><v-icon href="#bnew2" v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down</v-icon
+            ></v-btn
+          >
+        </div>
       </div>
     </div>
-    <div style="width:99vw;height:20vh"></div>
-    <!-- <div class="parallax"></div> -->
-    <div class="fadeClass">
-      <div class="image-box">
+
+    <div
+      id="bnew2"
+      style="width:100vw;height:100vh"
+      class="d-flex justify-center align-center"
+    >
+      <p class="text001 text-center" style=" text-transform: uppercase;">
+        "i dont know where my work begins or ends,<br />
+        or where it wants to take me, but i believe<br />
+        that's where things truly belong"<br />
+        <span class="textMini">
+          - Mahen Perera
+        </span>
+      </p>
+    </div>
+    <div id="animated-example" class="animated bounce">
+      <v-btn
+        x-small
+        fab
+        color="transparent"
+        style="margin-left:20vw;margin-top:-10vh"
+        ><v-icon href="#bnew3" v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-down</v-icon
+        ></v-btn
+      >
+    </div>
+    <div class="fadeClass" id="bnew3">
+      <div class="image-box" style="padding-top:8vh;">
         <v-img
           class="img-to-ef"
           eager
           contain
-          height="90vh"
+          height="87vh"
           src="../assets/blueprint/_SDS3206b.jpeg"
         >
           <div class="twelve"></div>
         </v-img>
       </div>
+      <div id="animated-example" class="animated bounce">
+        <v-btn
+          x-small
+          fab
+          color="transparent"
+          style="margin-left:20vw;margin-top:0vh"
+          ><v-icon href="#bnew4" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down</v-icon
+          ></v-btn
+        >
+      </div>
     </div>
-    <!-- <p class="textMini text-left" style="margin:5vh">
-      -Charles and Ray Eamaes
-      <br />
-
-      Londge chair by Herman Miller
-
-      <br />
-
-      1956
-    </p> -->
-    <div class="fadeClass">
-      <div style="width:99vw;height:30vh"></div>
-      <div class="bg-itemsOld">
+    <div style="width:99vw;height:30vh"></div>
+    <div class="fadeClass" id="bnew4">
+      <div class="bg-itemsOld" style="padding-top:6vh">
         <v-img
           class="img-to-efOld"
           eager
@@ -144,35 +154,66 @@
           <div class="twelve"></div>
         </v-img>
       </div>
-      <div style="height:20vh"></div>
-    </div>
-
-    <div class="fadeClass">
-      <div style="height:20vh"></div>
-
-      <div class="d-flex justify-center align-center">
-        <p class="text001">
-          "AN EMPTY CANVAS IS FULL"<br />
-          <span class="textMini text-right mt-1">
-            - Robert Rauschenburg
-          </span>
-        </p>
+      <div id="animated-example" class="animated bounce">
+        <v-btn
+          x-small
+          fab
+          color="transparent"
+          style="margin-left:20vw;margin-top:0vh"
+          ><v-icon href="#bnew5" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down</v-icon
+          ></v-btn
+        >
       </div>
-      <div style="height:40vh"></div>
-      <div class="bg-itemsOld">
+    </div>
+    <div
+      id="bnew5"
+      style="height:100vh"
+      class="d-flex justify-center align-center"
+    >
+      <p class="text001">
+        "AN EMPTY CANVAS IS FULL"<br />
+        <span class="textMini text-right mt-1">
+          - Robert Rauschenburg
+        </span>
+      </p>
+    </div>
+    <div id="animated-example" class="animated bounce">
+      <v-btn
+        x-small
+        fab
+        color="transparent"
+        style="margin-left:20vw;margin-top:-10vh"
+        ><v-icon href="#bnew65" v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-down</v-icon
+        ></v-btn
+      >
+    </div>
+    <div style="height:40vh"></div>
+    <div class="fadeClass" id="bnew65" style="height:100vh">
+      <div class="bg-itemsOld" style="padding-top:5vh">
         <v-img
           class="img-to-efOld"
           eager
           contain
-          height="100vh"
+          height="90vh"
           src="../assets/blueprint/Space/museebourdelle.jpg"
         >
           <div class="twelve"></div>
         </v-img>
       </div>
+      <v-btn
+        x-small
+        fab
+        color="transparent"
+        style="margin-left:20vw;margin-top:0vh"
+        ><v-icon href="#slider2" v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-down</v-icon
+        ></v-btn
+      >
     </div>
     <div style="width:99vw;height:30vh"></div>
-    <div v-on:mouseover="mouseOver" ref="slider1">
+    <div v-on:mouseover="mouseOver" id="slider2" ref="slider2">
       <Slider2 />
     </div>
   </div>

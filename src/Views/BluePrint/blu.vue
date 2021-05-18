@@ -278,7 +278,12 @@
         </div>
       </div>
     </div> -->
-    <div class="blue-body" id="beaty" ref="beaty">
+    <div
+      v-on:mouseover.once="mouseOver2"
+      class="blue-body"
+      id="beaty"
+      ref="beaty"
+    >
       <div class="body">
         <div style="height:22vh;width: 10vw;"></div>
         <div class="fadeClass ml-12" style="height:70vh">
@@ -358,6 +363,14 @@ export default {
       this.$smoothScroll({
         // scrollTo: rr,
         scrollTo: this.$refs.slider1,
+        duration: 2000,
+        offset: 1,
+      });
+    },
+    mouseOver2: function() {
+      this.$smoothScroll({
+        // scrollTo: rr,
+        scrollTo: this.$refs.beaty,
         duration: 2000,
         offset: 1,
       });

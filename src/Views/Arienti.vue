@@ -1,177 +1,168 @@
 <template>
-  <v-container fluid>
-    <div class="d-flex justify-space-between" style="margin-top:1vh">
-      <router-link to="/projects">
-        <img
-          style="opacity: 0.5;margin-inline:20px"
-          height="20vh"
-          src="../assets/backArrow.png"
-        />
-      </router-link>
-      <!-- <ShapesPop /> -->
-    </div>
-    <div
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="100"
-      data-aos-duration="1500"
-    >
-      <div class="b4con" data-aos="zoom-out" data-aos-duration="2000">
-        <div class="b4"></div>
-      </div>
-
-      <p class="newText2 text-center">
-        Resuscitate. Repurpose. Reinvigorate
-      </p>
-    </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
-
-    <div
-      eager
-      data-aos="fade-up"
-      data-aos-delay="100"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-    >
-      <div v-if="isMobile()">
-        <v-img eager contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
-      </div>
-      <div v-else>
-        <v-img
-          eager
-          contain
-          height="85vh"
-          src="../assets/Arienti/_SDS7732.jpeg"
-        ></v-img>
-      </div>
-
-      <p class="newText2 text-center mt-6">
-        Formerly in disrepair - A compendium of contemporary lines
-      </p>
-    </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
-
-    <div
-      eager
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="500"
-      data-aos-duration="1500"
-    >
-      <div>
+  <div ref="scrollSections" class="hello">
+    <section data-scroll-section>
+      <div data-scroll data-scroll-speed="1">
+        <div class="d-flex justify-space-between" style="margin-top:1vh">
+          <router-link to="/projects">
+            <img
+              style="opacity: 0.5;margin-inline:20px"
+              height="20vh"
+              src="../assets/backArrow.png"
+            />
+          </router-link>
+        </div>
         <div>
-          <carousel-3d
-            :width="900"
-            :height="600"
-            :inverse-scaling="200"
-            :space="1300"
-            :autoplay="false"
-            :autoplay-timeout="3000"
-            :display="3"
-            :perspective="0"
-          >
-            <slide :index="0">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
-              </figure> </slide
-            ><slide :index="1">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
-              </figure> </slide
-            ><slide :index="2">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
-              </figure>
-            </slide>
-            <slide :index="3">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
-              </figure> </slide
-            ><slide :index="4">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
-              </figure> </slide
-            ><slide :index="5">
-              <figure>
-                <v-img src="../assets/Arienti/_SDS7782.jpeg" />
-              </figure>
-            </slide>
-          </carousel-3d>
-          <div
-            class="newText2 text-center"
-            style="background-color: white;text-align: center;padding:20px;"
-          >
-            A study in subtlety.
+          <div class="b4con" data-aos="zoom-out" data-aos-duration="2000">
+            <div class="b4"></div>
+          </div>
+
+          <p class="newText2 text-center">
+            Resuscitate. Repurpose. Reinvigorate
+          </p>
+        </div>
+      </div>
+    </section>
+    <section data-scroll-section data-scroll-speed="1">
+      <div eager>
+        <div v-if="isMobile()">
+          <v-img eager contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
+        </div>
+        <div v-else>
+          <v-img
+            eager
+            contain
+            height="85vh"
+            src="../assets/Arienti/_SDS7732.jpeg"
+          ></v-img>
+        </div>
+
+        <p class="newText2 text-center mt-6">
+          Formerly in disrepair - A compendium of contemporary lines
+        </p>
+      </div>
+    </section>
+    <section data-scroll-section>
+      <div data-scroll data-scroll-speed="1">
+        <div eager>
+          <div>
+            <div>
+              <carousel-3d
+                :width="900"
+                :height="600"
+                :inverse-scaling="200"
+                :space="1300"
+                :autoplay="false"
+                :autoplay-timeout="3000"
+                :display="3"
+                :perspective="0"
+              >
+                <slide :index="0">
+                  <figure>
+                    <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
+                  </figure> </slide
+                ><slide :index="1">
+                  <figure>
+                    <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
+                  </figure> </slide
+                ><slide :index="2">
+                  <figure>
+                    <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
+                  </figure>
+                </slide>
+                <slide :index="3">
+                  <figure>
+                    <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
+                  </figure> </slide
+                ><slide :index="4">
+                  <figure>
+                    <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
+                  </figure> </slide
+                ><slide :index="5">
+                  <figure>
+                    <v-img src="../assets/Arienti/_SDS7782.jpeg" />
+                  </figure>
+                </slide>
+              </carousel-3d>
+              <div
+                class="newText2 text-center"
+                style="background-color: white;text-align: center;padding:20px;"
+              >
+                A study in subtlety.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
-
-    <div
-      eager
-      data-aos="fade-up"
-      data-aos-delay="100"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-    >
-      <div v-if="isMobile()">
-        <div style="width:99vw;height:15vh;padding:10px"></div>
-        <v-img eager contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
+    </section>
+    <section data-scroll-section>
+      <div data-scroll data-scroll-speed="1">
+        <div eager>
+          <div v-if="isMobile()">
+            <v-img eager contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
+          </div>
+          <div v-else>
+            <v-img
+              height="85vh"
+              contain
+              eager
+              src="../assets/Arienti/_SDS7793.jpeg"
+            ></v-img>
+          </div>
+        </div>
       </div>
-      <div v-else>
-        <v-img
-          height="85vh"
-          contain
-          eager
-          src="../assets/Arienti/_SDS7793.jpeg"
-        ></v-img>
-      </div>
-
-      <div style="width:99vw;height:7vh;padding:10px"></div>
-    </div>
-  </v-container>
+    </section>
+  </div>
 </template>
 
 <script>
+import locomotiveScroll from "locomotive-scroll";
 export default {
-  computed: {},
-  mounted() {
-    console.log(this.is_mobile());
+  name: "locoScroll",
+  props: {
+    msg: String,
   },
-  methods: {},
-  data: () => ({
-    settings: {
-      arrows: false,
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
+  data() {
+    return {
+      scrollIns: null,
+    };
+  },
+  mounted() {
+    const _self = this;
+    this.$nextTick(function() {
+      _self.initLocoScroll();
+    });
+  },
+  methods: {
+    initLocoScroll() {
+      const _self = this;
+      this.scroll = new locomotiveScroll({
+        el: _self.$refs["scrollSections"],
+        smooth: true,
+        smoothMobile: true,
+        getDirection: true,
+      });
     },
-    slides: [
-      {
-        name: "Slide name 1",
-        url: "https://drive.google.com/uc?id=16p04rwVOo8E_jm26sxmYcBsGv4LWOxyb",
-      },
-      {
-        name: "Slide name 1",
-        url: "https://drive.google.com/uc?id=1zwaXIdre34_s0dzbaLOdw5Icek-Emn7f",
-      },
-      {
-        name: "Slide name 1",
-        url: "https://drive.google.com/uc?id=1pNjWuxQ3Tctwq6Vxtk-tOFPJm8PTVyS9",
-      },
-    ],
-  }),
+  },
 };
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+/* section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
 .text001 {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
@@ -214,219 +205,5 @@ export default {
   100% {
     transform: translateY(-100%);
   }
-}
-.container {
-  width: 100vw;
-  height: 1000px;
-  position: relative;
-  margin: 0;
-}
-.container_mob {
-  /* width: 100vw; */
-  height: 100vw;
-  position: relative;
-  margin: 0;
-}
-.box {
-  margin-top: 100px;
-  width: 100vw;
-  /* height: 900px; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.8; /* for demo purpose  */
-}
-.stack-top {
-  z-index: 9;
-  margin: 0; /* for demo purpose  */
-}
-.carousel-3d-container figcaption[data-v-0251a268] {
-  position: absolute;
-  background-color: #ffff;
-  color: #111;
-  bottom: 0;
-  position: absolute;
-  bottom: 0;
-  padding: 15px;
-  font-size: 12px;
-  min-width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 20px;
-}
-.text001 {
-  text-align: center;
-  padding: 20px;
-  padding: 10px;
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 2vh;
-  color: #11111193;
-}
-.slider-container {
-  position: relative;
-  text-align: center;
-  padding: 20px;
-  color: white;
-}
-.slider-text {
-  background-color: rgba(0, 0, 0, 0.637);
-  color: white;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.carousel-3d-container figure {
-  margin: 0;
-}
-.carousel-3d-container figcaption {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  bottom: 0;
-  position: absolute;
-  bottom: 0;
-  padding: 15px;
-  font-size: 12px;
-  min-width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 20px;
-}
-
-.center_text {
-  line-height: 100vh;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
-}
-
-.center_text p {
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-  color: rgb(241, 233, 233);
-  font-size: 10vh;
-}
-.overlay_text {
-  float: right;
-  height: 100vh;
-  width: 100vw;
-  opacity: 1;
-  transition: 0.6s linear;
-  background-image: linear-gradient(to left, rgb(221, 30, 30), rgb(5, 81, 221));
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 3000ms;
-}
-.overlay:hover .overlay_text {
-  opacity: 0;
-}
-.sub-left {
-  float: left;
-  height: 900px;
-  width: 7%;
-  align-items: center;
-  opacity: 1;
-  transition: 0.6s ease;
-  background-image: linear-gradient(to left, transparent, white);
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 1300ms;
-}
-.sub-right {
-  float: right;
-  height: 900px;
-  width: 7%;
-  opacity: 1;
-  transition: 0.6s ease;
-  background-image: linear-gradient(to left, white, transparent);
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 3000ms;
-}
-.clear-both {
-  clear: both;
-}
-
-.center {
-  line-height: 100vh;
-  height: 100vh;
-  text-align: left;
-}
-
-.center p {
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-  color: white;
-}
-.center_r {
-  line-height: 100vh;
-  height: 100vh;
-  text-align: right;
-}
-
-.center_r p {
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-  color: black;
-}
-
-.container_l:hover .sub-left {
-  opacity: 1;
-}
-.bg:hover .bg2 {
-  opacity: 1;
-}
-.container_l:hover .sub-right {
-  opacity: 1;
-}
-.bg {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  width: 100vw;
-  background-size: 100% 110%;
-  height: 100vh;
-  /* color: "red"; */
-  background-image: url("../assets/new_main.jpg");
-  animation: fadeIn ease 20s;
-  -webkit-animation: fadeIn ease 20s;
-  -moz-animation: fadeIn ease 20s;
-  -o-animation: fadeIn ease 20s;
-  -ms-animation: fadeIn ease 20s;
-}
-.change_color {
-  background-image: linear-gradient(to left, white, black);
-}
-.change_color2 {
-  background-image: linear-gradient(to left, rgb(138, 16, 16), black);
-}
-.bg2 {
-  float: right;
-  height: 100vh;
-  width: 100vw;
-  opacity: 1;
-  transition: 0.6s linear;
-  background-image: linear-gradient(to left, white, black);
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 3000ms;
-  animation: fadeIn ease 20s;
-  -webkit-animation: fadeIn ease 20s;
-  -moz-animation: fadeIn ease 20s;
-  -o-animation: fadeIn ease 20s;
-  -ms-animation: fadeIn ease 20s;
-}
-.hello {
-  /* background-color: red; */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hello :hover {
-  background-color: rgb(0, 4, 255);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 </style>
