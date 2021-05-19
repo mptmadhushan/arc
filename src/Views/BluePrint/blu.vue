@@ -318,6 +318,46 @@
     <div id="beaty-blue">
       <BeautyBlue />
     </div>
+    <div
+      v-on:mouseover.once="mouseOver2"
+      class="blue-body"
+      id="beaty"
+      ref="beaty"
+    >
+      <div class="body">
+        <div style="height:22vh;width: 10vw;"></div>
+        <div class="fadeClass ml-12" style="height:70vh">
+          <div class="back-text">
+            <div class="text-container" style="margin-top:-25vh">
+              <span class="letter">S</span><span class="letter">P</span
+              ><span class="letter">A</span><span class="letter">C</span
+              ><span class="letter">E</span>
+            </div>
+            <div class="text-container" style="margin-top:-20vh">
+              <span class="letter2">S</span><span class="letter2">P</span
+              ><span class="letter2">A</span><span class="letter2">C</span
+              ><span class="letter2">E</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-left align-center">
+        <div id="animated-example" class="animated bounce">
+          <v-btn
+            style="margin-left:20vw;margin-top:2vh"
+            x-small
+            fab
+            color="transparent"
+            ><v-icon href="#space-blue" v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down</v-icon
+            ></v-btn
+          >
+        </div>
+      </div>
+    </div>
+    <div id="space-blue">
+      <SpaceBlue />
+    </div>
   </div>
 </template>
 
@@ -328,6 +368,7 @@ import "locomotive-scroll/dist/locomotive-scroll.min.css";
 // import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from ".././Slider1";
 import BeautyBlue from ".././BeautyBlue";
+import SpaceBlue from ".././SpaceBlue";
 
 export default {
   name: "App",
@@ -335,6 +376,7 @@ export default {
     Scrollama,
     BeautyBlue,
     Slider1,
+    SpaceBlue,
   },
   data() {
     return {

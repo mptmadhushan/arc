@@ -8,8 +8,8 @@
     ></audio>
 
     <Blue />
-    <BeautyBlue />
-    <SpaceBlue />
+    <!-- <BeautyBlue />
+    <SpaceBlue /> -->
   </div>
 </template>
 
@@ -17,8 +17,8 @@
 // import LocomotiveScroll from "locomotive-scroll";
 
 import Blue from "./../Views/BluePrint/blu";
-import BeautyBlue from "./BeautyBlue";
-import SpaceBlue from "./SpaceBlue";
+// import BeautyBlue from "./BeautyBlue";
+// import SpaceBlue from "./SpaceBlue";
 // import HorizontalScroll from "vue-horizontal-scroll";
 import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
 // import VueScrollSnap from "vue-scroll-snap";
@@ -26,8 +26,8 @@ import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
 export default {
   components: {
     Blue,
-    BeautyBlue,
-    SpaceBlue,
+    // BeautyBlue,
+    // SpaceBlue,
     // VueScrollSnap,
     // HorizontalScroll,
   },

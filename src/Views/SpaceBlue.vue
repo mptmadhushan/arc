@@ -4,7 +4,7 @@
   <div>
     <div style="margin-top:10vh">
       <div class="body2 fadeClass">
-        <div class="back-text">
+        <!-- <div class="back-text">
           <div class="text-container">
             <span class="letter2">S</span><span class="letter2">P</span
             ><span class="letter2">A</span><span class="letter2">C</span
@@ -13,16 +13,16 @@
             <span class="letter2">P</span><span class="letter2">A</span>
             <span class="letter2">C</span><span class="letter2">E</span>
           </div>
-        </div>
+        </div> -->
 
-        <div style="width:99vw;height:30vh"></div>
+        <!-- <div style="width:99vw;height:30vh"></div> -->
         <div style="margin-top:5vh;width:100vw;height:100vh">
-          <div class="bg-item-zoom">
+          <div class="bg-item-zoom" style="height:80vh;margin-top:5vh">
             <v-img
               class="img-to-ef"
               eager
               contain
-              height="100vh"
+              height="90vh"
               src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
             >
               <div class="twelve"></div>
@@ -32,26 +32,41 @@
           <div>
             <P
               class="textMini text-left"
-              style="margin-left:5vw;margin-top:1vh"
+              style="margin-left:5vw;margin-top:5vh"
             >
               Geoffrey Bawa<br />Lunuganga<br />1948 - onwards
             </P>
+            <div class="d-flex flex-row justify-left align-center">
+              <div id="animated-example" class="animated bounce">
+                <v-btn
+                  style="margin-left:20vw;margin-top:2vh"
+                  x-small
+                  fab
+                  color="transparent"
+                  ><v-icon
+                    href="#space-blue1"
+                    v-smooth-scroll="{ duration: 2000 }"
+                    >mdi-chevron-down</v-icon
+                  ></v-btn
+                >
+              </div>
+            </div>
             <div style="width:99vw;height:40vh"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="fadeClass">
-      <div style="width:99vw;height:50vh"></div>
-
+    <div class="fadeClass" id="space-blue1">
       <div>
+        <div style="width:99vw;height:1vh"></div>
+
         <v-layout row wrap justify-center mt-12>
-          <v-flex md6 xs12 sm12 align-self-end>
+          <v-flex md6 xs12 sm12 align-self-start>
             <div>
               <v-img
                 eager
                 contain
-                height="90vh"
+                height="80vh"
                 src="../assets/blueprint/Space/1280.jpg"
               >
                 <div class="twelve"></div>
@@ -70,7 +85,7 @@
             <div>
               <P
                 class="text001 text-right"
-                style="margin-right:10vh;margin-top:-20vh"
+                style="margin-right:10vh;margin-top:-15vh"
               >
                 "WE BORROW FROM NATURE THE<br />
                 SPACE UPON WHICH WE BUILD"<br />
@@ -95,42 +110,19 @@
           </v-flex>
         </v-layout>
       </div>
-      <!-- <div class="d-flex flex-row justify-center">
-        <div class="bg-items mr-12 d-flex align-start mb-12">
-          <v-img
-            class="img-to-ef"
-            eager
-            height="50vh"
-            src="../assets/blueprint/Space/1280.jpg"
+      <div class="d-flex flex-row justify-left align-center">
+        <div id="animated-example" class="animated bounce">
+          <v-btn style="margin-left:20vw;" x-small fab color="transparent"
+            ><v-icon href="#space-blue2" v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down</v-icon
+            ></v-btn
           >
-            <div class="twelve"></div>
-          </v-img>
-          <div>
-            <P
-              class="textMini text-left"
-              style="margin-top:20vh;margin-left:10vw"
-            >
-              Ricardo Bofill<br />La Fabrica<br />1973
-            </P>
-          </div>
         </div>
-
-        <div class="bg-items2 d-flex align-end">
-          <v-img
-            class="img-to-ef2"
-            eager
-            height="70vh"
-            src="../assets/blueprint/_SDS3496.jpeg"
-          >
-            <div class="twelve"></div>
-          </v-img>
-        </div>
-      </div> -->
+      </div>
     </div>
 
-    <div class="fadeClass">
-      <div style="width:99vw;height:25vh"></div>
-
+    <div class="fadeClass" id="space-blue2">
+      <div style="width:99vw;height:5vh"></div>
       <div class="bg-itemsOld">
         <v-img
           class="img-to-efOld"
@@ -142,9 +134,18 @@
           <div class="twelve"></div>
         </v-img>
       </div>
+      <div class="d-flex flex-row justify-left align-center">
+        <div id="animated-example" class="animated bounce">
+          <v-btn style="margin-left:20vw;" x-small fab color="transparent"
+            ><v-icon href="#space-blue4" v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down</v-icon
+            ></v-btn
+          >
+        </div>
+      </div>
     </div>
     <div style="width:99vw;height:25vh"></div>
-    <div v-on:mouseover="mouseOver" ref="slider1">
+    <div v-on:mouseover="mouseOver" ref="space-blue4">
       <Slider2 />
     </div>
   </div>
