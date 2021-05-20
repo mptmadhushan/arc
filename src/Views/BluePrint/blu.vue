@@ -27,7 +27,7 @@
             </p>
             <div
               class="d-flex flex-row justify-left align-center"
-              style="margin-top:47vh;margin-left:20vw"
+              style="margin-top:48vh;margin-left:20vw"
             >
               <div id="animated-example" class="animated bounce">
                 <v-btn x-small fab color="transparent"
@@ -61,7 +61,7 @@
             <div class="d-flex flex-row justify-left align-center">
               <div id="animated-example" class="animated bounce">
                 <v-btn
-                  style="margin-left:20vw;margin-top:2vh"
+                  style="margin-left:20vw;margin-top:3vh"
                   x-small
                   fab
                   color="transparent"
@@ -237,7 +237,7 @@
                   x-small
                   fab
                   color="transparent"
-                  style="margin-left:17.3vw;margin-top:-0.3vh"
+                  style="margin-left:17.3vw;margin-top:1vh"
                   ><v-icon href="#act-slider" v-smooth-scroll
                     >mdi-chevron-down</v-icon
                   ></v-btn
@@ -258,26 +258,6 @@
       </section>
     </div>
     <div style="height:10vh;width: 20vw;"></div>
-    <!-- <div v-on:mouseover="mouseOver" ref="slider1" id="slider1">
-      <Slider1 />
-      <div
-        class="d-flex flex-row justify-start align-start"
-        style="margin-left:5vh;margin-top:-6vh"
-      >
-        <div id="animated-example" class="animated bounce">
-          <v-btn
-            x-small
-            fab
-            dark
-            color="transparent"
-            style="margin-left:17.4vw;margin-top:0vh"
-            ><v-icon href="#beaty" v-smooth-scroll
-              >mdi-chevron-down</v-icon
-            ></v-btn
-          >
-        </div>
-      </div>
-    </div> -->
     <div
       v-on:mouseover.once="mouseOver2"
       class="blue-body"
@@ -304,7 +284,7 @@
       <div class="d-flex flex-row justify-left align-center">
         <div id="animated-example" class="animated bounce">
           <v-btn
-            style="margin-left:20vw;margin-top:2vh"
+            style="margin-left:20vw;margin-top:3vh"
             x-small
             fab
             color="transparent"
@@ -319,10 +299,10 @@
       <BeautyBlue />
     </div>
     <div
-      v-on:mouseover.once="mouseOver2"
+      v-on:mouseover.once="mouseOver3"
       class="blue-body"
-      id="beaty"
-      ref="beaty"
+      id="space"
+      ref="space"
     >
       <div class="body">
         <div style="height:22vh;width: 10vw;"></div>
@@ -413,6 +393,14 @@ export default {
       this.$smoothScroll({
         // scrollTo: rr,
         scrollTo: this.$refs.beaty,
+        duration: 2000,
+        offset: 1,
+      });
+    },
+    mouseOver3: function() {
+      this.$smoothScroll({
+        // scrollTo: rr,
+        scrollTo: this.$refs.space,
         duration: 2000,
         offset: 1,
       });

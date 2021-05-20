@@ -32,7 +32,7 @@
             x-small
             fab
             color="transparent"
-            style="margin-left:20vw;margin-top:-2vh"
+            style="margin-left:20vw;margin-top:-2.3vh"
             ><v-icon href="#bnew" v-smooth-scroll="{ duration: 2000 }"
               >mdi-chevron-down</v-icon
             ></v-btn
@@ -159,7 +159,7 @@
           x-small
           fab
           color="transparent"
-          style="margin-left:20vw;margin-top:0vh"
+          style="margin-left:20vw;margin-top:-1vh"
           ><v-icon href="#bnew5" v-smooth-scroll="{ duration: 2000 }"
             >mdi-chevron-down</v-icon
           ></v-btn

@@ -145,7 +145,7 @@
       </div>
     </div>
     <div style="width:99vw;height:25vh"></div>
-    <div v-on:mouseover="mouseOver" ref="space-blue4">
+    <div v-on:mouseover="mouseOver" ref="space-blue4" id="space-blue4">
       <Slider2 />
     </div>
   </div>
