@@ -130,7 +130,6 @@
             </v-layout>
           </div>
           <div v-else class="text-center">
-
             <v-layout row wrap justify-center>
               <v-flex md3 align-self-center pa-4>
                 <p class="text002">
