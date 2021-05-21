@@ -2,7 +2,7 @@
   <v-container fluid>
     <div ref="scrollSections">
       <section data-scroll-section>
-        <div class="d-flex justify-space-between" style="margin-top:-5vh">
+        <div class="d-flex justify-space-between" style="margin-top:-7vh">
           <router-link to="/projects">
             <img
               style="opacity: 0.5;margin-inline:20px"
@@ -24,7 +24,7 @@
       </section>
       <div>
         <section data-scroll-section>
-          <div>
+          <div  data-scroll data-scroll-speed="3">
             <v-img
               eager
               contain
@@ -39,6 +39,7 @@
           </div>
         </section>
       </div>
+      
       <div>
         <section data-scroll-section>
           <div v-if="isMobile()" class="text-center">
@@ -55,7 +56,7 @@
               </v-flex>
             </v-layout>
           </div>
-          <div v-else class="text-center">
+          <div v-else class="text-center"  data-scroll data-scroll-speed="3">
             <v-layout row wrap justify-center style="height: 100vh">
               <v-flex md4 align-self-center>
                 <p class="text002 text-end">
@@ -76,7 +77,7 @@
       </div>
       <div>
         <section data-scroll-section>
-          <div>
+          <div  data-scroll data-scroll-speed="3">
             <v-img
               eager
               contain
@@ -109,7 +110,7 @@
             </v-layout>
           </div>
 
-          <div v-else class="text-center" style="padding:5vh">
+          <div v-else class="text-center" style="padding:5vh"  data-scroll data-scroll-speed="3">
             <v-layout row wrap justify-space-around>
               <v-flex
                 md3
@@ -126,9 +127,7 @@
                 md9
                 pa-4
                 align-self-center
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="2500"
+              
               >
                 <v-img
                   eager
@@ -150,8 +149,8 @@
             >
             </vue-flux>
           </div>
-          <div v-else>
-            <div style="padding-top:5vw;padding-bottom:3.5vw">
+          <div v-else  data-scroll data-scroll-speed="3">
+            <div style="padding-top:-9vh;padding-bottom:3.5vw">
               <vue-flux
                 :options="options"
                 :images="images2"
