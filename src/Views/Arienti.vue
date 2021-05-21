@@ -28,6 +28,8 @@
           <v-img eager contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
         </div>
         <div v-else>
+          <div style="width:99vw;height:20vh;padding:10px"></div>
+
           <v-img
             eager
             contain
@@ -42,7 +44,8 @@
       </div>
     </section>
     <section data-scroll-section>
-      <div data-scroll data-scroll-speed="1">
+      <div style="width:99vw;height:23vh;padding:10px"></div>
+      <div data-scroll data-scroll-speed="4">
         <div eager>
           <div>
             <div>
@@ -95,14 +98,14 @@
       </div>
     </section>
     <section data-scroll-section>
-      <div data-scroll data-scroll-speed="1">
+      <div data-scroll data-scroll-speed="3">
         <div eager>
           <div v-if="isMobile()">
             <v-img eager contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
           </div>
           <div v-else>
             <v-img
-              height="85vh"
+              height="90vh"
               contain
               eager
               src="../assets/Arienti/_SDS7793.jpeg"
@@ -116,6 +119,8 @@
 
 <script>
 import locomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/dist/locomotive-scroll.min.css";
+
 export default {
   name: "locoScroll",
   props: {

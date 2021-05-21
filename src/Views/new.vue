@@ -4,7 +4,11 @@
       <div class="sub-right">
         <div class="center_r">
           <p>
-            <v-card flat color="transparent" class="d-flex flex-row">
+            <v-card
+              flat
+              color="transparent"
+              class="d-flex flex-row"
+            >
               <v-img
                 contain
                 height="30%"
@@ -33,7 +37,7 @@
                     contain
                     height="30vh"
                     width="20vw"
-                    style="margin-top:30vh"
+                    style="margin-top:33vh"
                     src="../assets/main.png"
                   ></v-img>
                   <div class="scroll" v-if="arrow">

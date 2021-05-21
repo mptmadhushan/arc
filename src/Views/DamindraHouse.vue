@@ -1,188 +1,169 @@
 <template>
   <v-container fluid>
-    <div class="d-flex justify-space-between" style="margin-top:1vh">
-      <router-link to="/projects">
-        <img
-          style="opacity: 0.5;margin-inline:20px"
-          height="20vh"
-          src="../assets/backArrow.png"
-        />
-      </router-link>
-      <!-- <ShapesPop /> -->
-    </div>
-    <div class="text-center">
-      <v-layout row wrap justify-center>
-        <v-flex
-          md10
-          align-self-center
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="2500"
-        >
-          <div
-            class="b1con"
-            data-aos="zoom-out"
-            data-aos-delay="100"
-            data-aos-duration="2000"
-          >
-            <div class="b1"></div>
+    <div ref="scrollSections">
+      <section data-scroll-section>
+        <div class="d-flex justify-space-between" style="margin-top:-5vh">
+          <router-link to="/projects">
+            <img
+              style="opacity: 0.5;margin-inline:20px"
+              height="20vh"
+              src="../assets/backArrow.png"
+            />
+          </router-link>
+          <!-- <ShapesPop /> -->
+        </div>
+        <div class="text-center">
+          <v-layout row wrap justify-center>
+            <v-flex md10 align-self-center>
+              <div class="b1con">
+                <div class="b1"></div>
+              </div>
+            </v-flex>
+          </v-layout>
+        </div>
+      </section>
+      <div>
+        <section data-scroll-section>
+          <div>
+            <v-img
+              eager
+              contain
+              style="margin-top:10vh"
+              height="85vh"
+              src="../assets/Damindra_House/_SDS7604.JPG.jpg"
+            ></v-img>
+            <p class="text002 text-center">
+              <span class="text005"> Hidden Expression</span>
+              <br />Communication between material and form
+            </p>
           </div>
-        </v-flex>
-      </v-layout>
-    </div>
-    <div style="width:99vw;height:26vh;padding:10px"></div>
+        </section>
+      </div>
+      <div>
+        <section data-scroll-section>
+          <div v-if="isMobile()" class="text-center">
+            <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
+              <v-flex md7 xs12 sm12 align-self-center>
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Damindra_House/_SDS7634.JPG.jpg"
+                ></v-img>
+                <p class="text002 text-center">
+                  Respite through natural installations
+                </p>
+              </v-flex>
+            </v-layout>
+          </div>
+          <div v-else class="text-center">
+            <v-layout row wrap justify-center style="height: 100vh">
+              <v-flex md4 align-self-center>
+                <p class="text002 text-end">
+                  Respite through natural installations
+                </p>
+              </v-flex>
+              <v-flex md7 align-self-center>
+                <v-img
+                  eager
+                  contain
+                  height="85vh"
+                  src="../assets/Damindra_House/_SDS7634.JPG.jpg"
+                ></v-img>
+              </v-flex>
+            </v-layout>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section data-scroll-section>
+          <div>
+            <v-img
+              eager
+              contain
+              height="85vh"
+              src="../assets/Damindra_House/_SDS7591.JPG.jpg"
+            ></v-img>
+            <p class="text002 text-center">
+              Interiors of contemporary character and charm
+            </p>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section data-scroll-section>
+          <div v-if="isMobile()" class="text-center">
+            <v-layout row wrap justify-space-around>
+              <v-flex md7 xs12 sm12 align-self-center mt-12>
+                <v-img
+                  eager
+                  contain
+                  height="100%"
+                  src="../assets/Damindra_House/_SDS7595.JPG.jpg"
+                ></v-img>
+                <p class="text002 ">
+                  <span class="text005">Harmony </span>
+                  <br />
+                  Between architecture and the elements
+                </p>
+              </v-flex>
+            </v-layout>
+          </div>
 
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
-      <v-img
-        eager
-        contain
-        style="margin-top:10vh"
-        height="85vh"
-        src="../assets/Damindra_House/_SDS7604.JPG.jpg"
-      ></v-img>
-      <p class="text002 text-center">
-        <span class="text005"> Hidden Expression</span> <br />Communication
-        between material and form
-      </p>
-    </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
-
-    <div
-      v-if="isMobile()"
-      class="text-center"
-      data-aos="fade-up"
-      data-aos-delay="100"
-      data-aos-duration="2500"
-    >
-      <v-layout row wrap justify-center pt-md-12 style="height: 100vh">
-        <v-flex md7 xs12 sm12 align-self-center>
-          <v-img
-            eager
-            contain
-            src="../assets/Damindra_House/_SDS7634.JPG.jpg"
-          ></v-img>
-          <p class="text002 text-center">
-            Respite through natural installations
-          </p>
-        </v-flex>
-      </v-layout>
-    </div>
-    <div v-else class="text-center">
-      <v-layout row wrap justify-center style="height: 100vh">
-        <v-flex
-          md4
-          align-self-center
-          data-aos="fade-right"
-          data-aos-delay="100"
-          data-aos-duration="2500"
-        >
-          <p class="text002 text-end">
-            Respite through natural installations
-          </p>
-        </v-flex>
-        <v-flex
-          md7
-          align-self-center
-          data-aos="fade-left"
-          data-aos-delay="100"
-          data-aos-duration="2500"
-        >
-          <v-img
-            eager
-            contain
-            height="85vh"
-            src="../assets/Damindra_House/_SDS7634.JPG.jpg"
-          ></v-img>
-        </v-flex>
-      </v-layout>
-    </div>
-    <div style="width:99vw;height:28vh;padding:10px"></div>
-
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
-      <v-img
-        eager
-        contain
-        height="85vh"
-        src="../assets/Damindra_House/_SDS7591.JPG.jpg"
-      ></v-img>
-      <p class="text002 text-center">
-        Interiors of contemporary character and charm
-      </p>
-    </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
-
-    <div v-if="isMobile()" class="text-center">
-      <v-layout row wrap justify-space-around>
-        <v-flex md7 xs12 sm12 align-self-center mt-12>
-          <v-img
-            eager
-            contain
-            height="100%"
-            src="../assets/Damindra_House/_SDS7595.JPG.jpg"
-          ></v-img>
-          <p class="text002 ">
-            <span class="text005">Harmony </span>
-            <br />
-            Between architecture and the elements
-          </p>
-        </v-flex>
-      </v-layout>
-    </div>
-
-    <div v-else class="text-center" style="padding:5vh">
-      <v-layout row wrap justify-space-around>
-        <v-flex
-          md3
-          align-self-center
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="2500"
-        >
-          <p class="text002">
-            <span class="text005">Harmony </span>
-            <br />
-            Between architecture and the elements
-          </p>
-        </v-flex>
-        <v-flex
-          md9
-          pa-4
-          align-self-center
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="2500"
-        >
-          <v-img
-            eager
-            contain
-            src="../assets/Damindra_House/_SDS7595.JPG.jpg"
-          ></v-img>
-        </v-flex>
-      </v-layout>
-    </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
-
-    <div v-if="isMobile()" style="margin-top:10vh;height:60vh">
-      <vue-flux :options="options" :images="images2" :transitions="transitions">
-      </vue-flux>
-    </div>
-    <div
-      v-else
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="400"
-      data-aos-duration="2500"
-    >
-      <div style="padding-top:5vw;padding-bottom:3.5vw">
-        <vue-flux
-          :options="options"
-          :images="images2"
-          :transitions="transitions"
-        >
-          <template v-slot:preloader>
-            <flux-preloader height="40vh" />
-          </template>
-        </vue-flux>
+          <div v-else class="text-center" style="padding:5vh">
+            <v-layout row wrap justify-space-around>
+              <v-flex
+                md3
+                align-self-center
+              
+              >
+                <p class="text002">
+                  <span class="text005">Harmony </span>
+                  <br />
+                  Between architecture and the elements
+                </p>
+              </v-flex>
+              <v-flex
+                md9
+                pa-4
+                align-self-center
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="2500"
+              >
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Damindra_House/_SDS7595.JPG.jpg"
+                ></v-img>
+              </v-flex>
+            </v-layout>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section data-scroll-section>
+          <div v-if="isMobile()" style="margin-top:10vh;height:60vh">
+            <vue-flux
+              :options="options"
+              :images="images2"
+              :transitions="transitions"
+            >
+            </vue-flux>
+          </div>
+          <div v-else>
+            <div style="padding-top:5vw;padding-bottom:3.5vw">
+              <vue-flux
+                :options="options"
+                :images="images2"
+                :transitions="transitions"
+              >
+                <template v-slot:preloader>
+                  <flux-preloader height="40vh" />
+                </template>
+              </vue-flux>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </v-container>
@@ -190,6 +171,8 @@
 
 <script>
 import { VueFlux, FluxPreloader } from "vue-flux";
+import locomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/dist/locomotive-scroll.min.css";
 
 export default {
   components: {
@@ -198,9 +181,22 @@ export default {
   },
   mounted: function() {
     this.startSlide();
+    const _self = this;
+    this.$nextTick(function() {
+      _self.initLocoScroll();
+    });
   },
 
   methods: {
+    initLocoScroll() {
+      const _self = this;
+      this.scroll = new locomotiveScroll({
+        el: _self.$refs["scrollSections"],
+        smooth: true,
+        smoothMobile: true,
+        getDirection: true,
+      });
+    },
     startSlide: function() {
       this.timer = setInterval(this.next, 4000);
     },
