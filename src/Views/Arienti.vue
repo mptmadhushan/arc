@@ -1,8 +1,8 @@
 <template>
   <div ref="scrollSections" class="hello">
     <section data-scroll-section>
-      <div data-scroll data-scroll-speed="1">
-        <div class="d-flex justify-space-between" style="margin-top:1vh">
+      <div>
+        <div class="d-flex justify-space-between" style="margin-top:-4vh">
           <router-link to="/projects">
             <img
               style="opacity: 0.5;margin-inline:20px"
@@ -12,99 +12,97 @@
           </router-link>
         </div>
         <div>
-          <div class="b4con" data-aos="zoom-out" data-aos-duration="2000">
+          <div class="b4con" data-scroll data-scroll-speed="3">
             <div class="b4"></div>
           </div>
 
-          <p class="newText2 text-center">
+          <p class="newText2 text-center" data-scroll data-scroll-speed="1">
             Resuscitate. Repurpose. Reinvigorate
           </p>
         </div>
       </div>
     </section>
-    <section data-scroll-section data-scroll-speed="1">
-      <div eager>
-        <div v-if="isMobile()">
-          <v-img eager contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
-        </div>
-        <div v-else>
-          <div style="width:99vw;height:20vh;padding:10px"></div>
-
-          <v-img
-            eager
-            contain
-            height="85vh"
-            src="../assets/Arienti/_SDS7732.jpeg"
-          ></v-img>
-        </div>
-
-        <p class="newText2 text-center mt-6">
+    <section data-scroll-section>
+      <div class="hoverPart">
+        <v-img
+          data-scroll
+          data-scroll-speed="1"
+          eager
+          contain
+          height="85vh"
+          src="../assets/Arienti/_SDS7732.jpeg"
+        >
+          <!-- <div class="effect-on-hover"></div> -->
+        </v-img>
+        <p class="newText2 text-center" data-scroll data-scroll-speed="1">
           Formerly in disrepair - A compendium of contemporary lines
         </p>
       </div>
     </section>
     <section data-scroll-section>
-      <div style="width:99vw;height:23vh;padding:10px"></div>
-      <div data-scroll data-scroll-speed="4">
-        <div eager>
-          <div>
-            <div>
-              <carousel-3d
-                :width="900"
-                :height="600"
-                :inverse-scaling="200"
-                :space="1300"
-                :autoplay="false"
-                :autoplay-timeout="3000"
-                :display="3"
-                :perspective="0"
-              >
-                <slide :index="0">
-                  <figure>
-                    <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
-                  </figure> </slide
-                ><slide :index="1">
-                  <figure>
-                    <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
-                  </figure> </slide
-                ><slide :index="2">
-                  <figure>
-                    <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
-                  </figure>
-                </slide>
-                <slide :index="3">
-                  <figure>
-                    <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
-                  </figure> </slide
-                ><slide :index="4">
-                  <figure>
-                    <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
-                  </figure> </slide
-                ><slide :index="5">
-                  <figure>
-                    <v-img src="../assets/Arienti/_SDS7782.jpeg" />
-                  </figure>
-                </slide>
-              </carousel-3d>
-              <div
-                class="newText2 text-center"
-                style="background-color: white;text-align: center;padding:20px;"
-              >
-                A study in subtlety.
-              </div>
-            </div>
+      <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
+        <div>
+          <carousel-3d
+            :width="900"
+            :height="600"
+            :inverse-scaling="200"
+            :space="1300"
+            :autoplay="false"
+            :autoplay-timeout="3000"
+            :display="3"
+            :perspective="0"
+          >
+            <slide :index="0">
+              <figure>
+                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
+              </figure> </slide
+            ><slide :index="1">
+              <figure>
+                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
+              </figure> </slide
+            ><slide :index="2">
+              <figure>
+                <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
+              </figure>
+            </slide>
+            <slide :index="3">
+              <figure>
+                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
+              </figure> </slide
+            ><slide :index="4">
+              <figure>
+                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
+              </figure> </slide
+            ><slide :index="5">
+              <figure>
+                <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
+              </figure>
+            </slide>
+          </carousel-3d>
+          <div
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="1"
+            data-scroll-id="hey"
+            class="newText2 text-center"
+            style="background-color: white;text-align: center;padding:20px;"
+          >
+            A study in subtlety.
           </div>
         </div>
       </div>
     </section>
     <section data-scroll-section>
-      <div data-scroll data-scroll-speed="3">
+      <div data-scroll data-scroll-speed="4">
         <div eager>
           <div v-if="isMobile()">
             <v-img eager contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
           </div>
           <div v-else>
             <v-img
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-speed="4"
               height="90vh"
               contain
               eager
@@ -132,12 +130,25 @@ export default {
     };
   },
   mounted() {
+    document.addEventListener("wheel", this.helb);
+
     const _self = this;
     this.$nextTick(function() {
       _self.initLocoScroll();
     });
   },
   methods: {
+    helb() {
+      locomotiveScroll.on("scroll", (args) => {
+        // Get all current elements : args.currentElements
+        if (typeof args.currentElements["hey"] === "object") {
+          let progress = args.currentElements["hey"].progress;
+          console.log(progress);
+          // ouput log example: 0.34
+          // gsap example : myGsapAnimation.progress(progress);
+        }
+      });
+    },
     initLocoScroll() {
       const _self = this;
       this.scroll = new locomotiveScroll({
@@ -161,6 +172,21 @@ section {
   /* align-items: center; */
   justify-content: center;
 }
+.hoverPart {
+  height: 100vh;
+  overflow: hidden;
+}
+.hoverPart:hover .effect-on-hover {
+  background-color: white;
+  min-height: 1vh;
+  width: 100vw;
+  transition: all 3s linear;
+}
+.effect-on-hover {
+  background-color: white;
+  min-height: 100vh;
+  width: 100vw;
+}
 /* section {
   min-height: 100vh;
   display: flex;
@@ -180,21 +206,27 @@ section {
   font-family: "Josefin Sans", sans-serif;
   text-align: justify;
   font-size: 2vh;
-  margin-top: 10px;
+  margin-top: -3vh;
   color: #11111193;
 }
 .b4con {
-  /* background-color: blueviolet; */
   background-image: url("../assets/Arienti/_SDS7737.jpeg");
-  /* background-size: 100% 100%;
-  object-fit: fill; */
+
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   height: 88vh;
 }
+.b4con:hover .b4 {
+  background-color: #111;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  animation: slideInFromLeft 1.5s ease-in;
+}
 .b4 {
-  background-color: #fff;
+  background-color: #111;
   transform: scaleY(0);
   transform-origin: top;
   height: 100%;
@@ -202,6 +234,13 @@ section {
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
   animation: slideInFromLeft 1.5s ease-in;
+}
+.b4-n {
+  background-color: #111;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
 }
 @keyframes slideInFromLeft {
   0% {
