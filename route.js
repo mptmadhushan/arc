@@ -50,7 +50,7 @@ export default [
     component: Bolgoda,
   },
   {
-    path: "/StoneHouse",
+    path: "/StoneHouse1",
     component: StoneHouse,
   },
   {
@@ -70,7 +70,7 @@ export default [
     component: ChamikaHouse,
   },
   {
-    path: "/Maniumpathy",
+    path: "/Maniumpathy1",
     component: Maniumpathy,
   },
   {

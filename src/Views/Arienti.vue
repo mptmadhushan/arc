@@ -34,13 +34,17 @@
         >
           <!-- <div class="effect-on-hover"></div> -->
         </v-img>
-        <p class="newText2 text-center" data-scroll data-scroll-speed="1">
+        <p class="newText2 text-center" data-scroll data-scroll-speed="2">
           Formerly in disrepair - A compendium of contemporary lines
         </p>
       </div>
     </section>
     <section data-scroll-section>
-      <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
+      <div
+        data-scroll
+        data-scroll-direction="horizontal"
+        data-scroll-speed="-2"
+      >
         <div>
           <carousel-3d
             :width="900"
@@ -82,10 +86,10 @@
           <div
             data-scroll
             data-scroll-direction="horizontal"
-            data-scroll-speed="1"
-            data-scroll-id="hey"
-            class="newText2 text-center"
-            style="background-color: white;text-align: center;padding:20px;"
+            data-scroll-speed="-4"
+            data-scroll-class="testStudy2"
+            data-scroll-delay="5"
+            class="newText2 text-center testStudy"
           >
             A study in subtlety.
           </div>
@@ -172,15 +176,27 @@ section {
   /* align-items: center; */
   justify-content: center;
 }
+.testStudy {
+  background-color: rgb(218, 17, 17);
+  text-align: center;
+  padding-top: 20px;
+  transition: all 10s linear;
+}
+.testStudy2 {
+  background-color: rgb(30, 17, 218);
+  text-align: center;
+  padding-top: 20px;
+  transition: all 10s linear;
+}
 .hoverPart {
   height: 100vh;
   overflow: hidden;
 }
 .hoverPart:hover .effect-on-hover {
   background-color: white;
-  min-height: 1vh;
+  min-height: 0vh;
   width: 100vw;
-  transition: all 3s linear;
+  transition: all 2s linear;
 }
 .effect-on-hover {
   background-color: white;
