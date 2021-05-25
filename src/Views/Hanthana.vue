@@ -136,7 +136,6 @@
       <section data-scroll-section>
         <div v-if="isMobile()">
           <div style="width:99vw;height:35vh;padding:10px"></div>
-          <div style="width:99vw;height:35vh;padding:10px"></div>
           <vue-flux
             :options="options"
             :images="images"
@@ -147,8 +146,8 @@
             </template>
           </vue-flux>
         </div>
-        <div v-else style="padding:25vh" data-scroll-speed="-3" data-scroll>
-          <div style="width:99vw;height:10vh;padding:10px"></div>
+        <div v-else style="margin:25vh">
+          <div style="width:99vw;height:10vh;margin:10px"></div>
           <vue-flux
             :options="options"
             :images="images"
