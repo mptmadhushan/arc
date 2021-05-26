@@ -8,6 +8,7 @@
     >
       <div class="hello" :data-step-no="1" :class="{ active: 1 == currStep }">
         <div
+          style="min-width:100vw"
           v-if="loaded"
           data-aos="fade-up"
           data-aos-duration="2000"
@@ -82,6 +83,7 @@
         </div>
         <div
           v-else
+          style="min-width:100vw"
           class="fadeClass"
           data-aos="fade-up"
           data-aos-duration="2000"

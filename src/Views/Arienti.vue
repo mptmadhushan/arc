@@ -40,7 +40,8 @@
     <section data-scroll-section>
       <!-- <div data-scroll data-scroll-class="ren-class2" class="ren-class"></div> -->
       <div
-        data-scroll-speed="4"
+        style="margin-top:-10vh"
+        data-scroll-speed="2"
         class="v-img"
         data-scroll
         data-scroll-class="v-img-active"
