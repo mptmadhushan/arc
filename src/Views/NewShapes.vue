@@ -2,7 +2,7 @@
   <v-container fluid style="height:100vh">
     <router-link to="/">
       <img
-        style=" opacity: 0.5;margin-inline:20px;margin-top:1vh"
+        style=" opacity: 0.5;margin-inline:2px"
         height="20vh"
         src="../assets/backArrow.png"
       />

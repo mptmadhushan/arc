@@ -1,188 +1,166 @@
 <template>
   <v-container fluid>
-    <div class="about_us_bg">
-      <div v-if="loaded">
-        <div class="fadeClass">
+    <Scrollama
+      :debug="true"
+      :offset="0.7"
+      @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
+      @step-exit="({ element }) => (currStep = null)"
+    >
+      <div class="hello" :data-step-no="1" :class="{ active: 1 == currStep }">
+        <div
+          v-if="loaded"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-easing="linear"
+        >
+          <div class="fadeClass">
+            <!-- <div style="width:99vw;height:10vh;padding:10px"></div> -->
+            <v-layout
+              row
+              wrap
+              justify-center
+              style="margin-top:20vh;margin-bottom:2%;"
+            >
+              <v-flex md1 sm5 xs5 align-self-start>
+                <p
+                  class="about_us"
+                  style="margin-top:20vh;margin-right:-2vw;text-align:right"
+                >
+                  ABOUT US
+                </p></v-flex
+              >
+              <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
+                <div class="imgDiv">
+                  <v-img
+                    eager
+                    height="60vh"
+                    src="../assets/1.png"
+                    class="zoomImage"
+                  >
+                    <div
+                      class="ab1"
+                      :data-step-no="1"
+                      :class="{ active: 1 == currStep }"
+                    ></div>
+                  </v-img>
+                </div>
+              </v-flex>
+              <v-flex md3 xs12 pa-1 align-self-baseline>
+                <div class="imgDiv">
+                  <v-img
+                    eager
+                    height="90vh"
+                    src="../assets/2.png"
+                    class="zoomImage"
+                  >
+                    <div
+                      class="b2"
+                      :data-step-no="1"
+                      :class="{ active: 1 == currStep }"
+                    ></div>
+                  </v-img>
+                </div>
+              </v-flex>
+              <v-flex md5 align-self-end px-3>
+                <p class="new">
+                  CDA aims to elevate lives and incorporate beauty in art to
+                  magnify spaces. Our team consists of young, creatively
+                  passionate like-minded individuals who bring in new
+                  perspectives. By drawing inspiration from all corners of the
+                  world and connecting it with modern ideologies, it helps us
+                  put forth a unique and distinctive end product. What sets us
+                  apart from the norm is the human factor- how interacting with
+                  our designs can impact lives. By collaborating with our
+                  clientele, we add a sense of defined lifestyle to our
+                  creations. Melding vision and sensibilities to enhance the way
+                  you experience life.
+                </p>
+              </v-flex>
+            </v-layout>
+          </div>
           <div style="width:99vw;height:20vh;padding:10px"></div>
-          <v-layout
-            row
-            wrap
-            justify-center
-            style="margin-top:20vh;margin-bottom:2%;"
-          >
-            <v-flex md1 sm5 xs5 align-self-start>
-              <p
-                class="about_us"
-                style="margin-top:20vh;margin-right:-2vw;text-align:right"
-              >
-                ABOUT US
-              </p></v-flex
-            >
-            <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-              <div class="imgDiv">
-                <v-img
-                  eager
-                  height="60vh"
-                  src="../assets/1.png"
-                  class="zoomImage"
-                >
-                  <div class="ab1"></div>
-                </v-img>
-              </div>
-            </v-flex>
-            <v-flex md3 xs12 pa-1 align-self-baseline>
-              <div class="imgDiv">
-                <v-img
-                  eager
-                  height="90vh"
-                  src="../assets/2.png"
-                  class="zoomImage"
-                >
-                  <div class="b2"></div>
-                </v-img>
-              </div>
-            </v-flex>
-            <v-flex md5 align-self-end px-3>
-              <p class="new">
-                CDA aims to elevate lives and incorporate beauty in art to
-                magnify spaces. Our team consists of young, creatively
-                passionate like-minded individuals who bring in new
-                perspectives. By drawing inspiration from all corners of the
-                world and connecting it with modern ideologies, it helps us put
-                forth a unique and distinctive end product. What sets us apart
-                from the norm is the human factor- how interacting with our
-                designs can impact lives. By collaborating with our clientele,
-                we add a sense of defined lifestyle to our creations. Melding
-                vision and sensibilities to enhance the way you experience life.
-              </p>
-            </v-flex>
-          </v-layout>
         </div>
-        <div style="width:99vw;height:20vh;padding:10px"></div>
-        <!-- <v-layout row wrap justify-space-around>
-          <v-flex md4 sm12 xs12 align-self-center>
-            <v-img eager contain src="../assets/12.png"></v-img>
-          </v-flex>
-          <v-flex md6 sm12 xs12 align-self-center>
-            <p class="pa-2 new">
-              Chamika De Alwis began his career in 2003 with MICD Associates
-              while pursuing a Diploma in Architecture at the City School of
-              Architecture, Colombo. Following his education, he continued
-              working with MICD Associates as a Senior Associate and Principal
-              assistant. In 2016 he embarked on his own practice as the
-              Principal Architect of C Atelier Consultants and CDA Associates.
-              Since then, he’s been involved in several curatorial projects in
-              Sri Lanka including the exhibition Second Skin in March 2017 and
-              Revive; Ethical Use of Material in June 2017 in collaboration with
-              the Colombo Fashion Week. In 2019, he curated One Won in
-              collaboration with the University of the Visual and Performing
-              Arts, Colombo in the aftermath of the Easter Attacks in Sri Lanka.
-              He was the recipient of the Conde Nast Johansens award for
-              excellence in 2020 – 21 for his work in the architecture field and
-              is on the board of Trustees of the Geoffrey Bawa Trust and the
-              Lunuganga Trust, respectively. With CDA he continues to excel in
-              his creative endeavours and deliver intricately inventive and
-              exquisite designs to his clientele.
-            </p>
-          </v-flex>
-        </v-layout> -->
-      </div>
-      <div v-else class="fadeClass">
-        <div style="width:99vw;height:20vh;padding:10px"></div>
-        <div class="about_us_bg">
-          <v-layout
-            row
-            wrap
-            justify-center
-            style="margin-top:20vh;margin-bottom:2%;"
-          >
-            <v-flex md1 sm5 xs5 align-self-start>
-              <p
-                class="about_us"
-                style="margin-top:20vh;margin-right:-2vw;text-align:right"
-              >
-                ABOUT US
-              </p></v-flex
+        <div
+          v-else
+          class="fadeClass"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-easing="linear"
+        >
+          <div class="about_us_bg">
+            <v-layout
+              row
+              wrap
+              justify-center
+              style="margin-top:20vh;margin-bottom:2%;"
             >
-            <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-              <div class="imgDiv">
-                <v-img
-                  eager
-                  height="60vh"
-                  src="../assets/1.png"
-                  class="zoomImage"
+              <v-flex md1 sm5 xs5 align-self-start>
+                <p
+                  class="about_us"
+                  style="margin-top:20vh;margin-right:-2vw;text-align:right"
                 >
-                  <div class="ab1"></div>
-                </v-img>
-              </div>
-            </v-flex>
-            <v-flex md3 xs12 pa-1 align-self-baseline>
-              <div class="imgDiv">
-                <v-img
-                  eager
-                  height="90vh"
-                  src="../assets/2.png"
-                  class="zoomImage"
-                >
-                  <div class="b2"></div>
-                </v-img>
-              </div>
-            </v-flex>
-            <v-flex md5 align-self-end px-3>
-              <p class="new">
-                CDA aims to elevate lives and incorporate beauty in art to
-                magnify spaces. Our team consists of young, creatively
-                passionate like-minded individuals who bring in new
-                perspectives. By drawing inspiration from all corners of the
-                world and connecting it with modern ideologies, it helps us put
-                forth a unique and distinctive end product. What sets us apart
-                from the norm is the human factor- how interacting with our
-                designs can impact lives. By collaborating with our clientele,
-                we add a sense of defined lifestyle to our creations. Melding
-                vision and sensibilities to enhance the way you experience life.
-              </p>
-            </v-flex>
-          </v-layout>
+                  ABOUT US
+                </p></v-flex
+              >
+              <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
+                <div class="imgDiv">
+                  <v-img
+                    eager
+                    height="60vh"
+                    src="../assets/1.png"
+                    class="zoomImage"
+                  >
+                    <div class="ab1"></div>
+                  </v-img>
+                </div>
+              </v-flex>
+              <v-flex md3 xs12 pa-1 align-self-baseline>
+                <div class="imgDiv">
+                  <v-img
+                    eager
+                    height="90vh"
+                    src="../assets/2.png"
+                    class="zoomImage"
+                  >
+                    <div class="b2"></div>
+                  </v-img>
+                </div>
+              </v-flex>
+              <v-flex md5 align-self-end px-3>
+                <p class="new">
+                  CDA aims to elevate lives and incorporate beauty in art to
+                  magnify spaces. Our team consists of young, creatively
+                  passionate like-minded individuals who bring in new
+                  perspectives. By drawing inspiration from all corners of the
+                  world and connecting it with modern ideologies, it helps us
+                  put forth a unique and distinctive end product. What sets us
+                  apart from the norm is the human factor- how interacting with
+                  our designs can impact lives. By collaborating with our
+                  clientele, we add a sense of defined lifestyle to our
+                  creations. Melding vision and sensibilities to enhance the way
+                  you experience life.
+                </p>
+              </v-flex>
+            </v-layout>
+          </div>
+          <div style="width:99vw;height:20vh;padding:10px"></div>
         </div>
-        <div style="width:99vw;height:20vh;padding:10px"></div>
-        <!-- <v-layout row wrap justify-space-around>
-          <v-flex md4 sm12 xs12 align-self-center>
-            <v-img eager contain src="../assets/12.png"></v-img>
-          </v-flex>
-          <v-flex md6 sm12 xs12 align-self-center>
-            <p class="pa-2 new">
-              Chamika De Alwis began his career in 2003 with MICD Associates
-              while pursuing a Diploma in Architecture at the City School of
-              Architecture, Colombo. Following his education, he continued
-              working with MICD Associates as a Senior Associate and Principal
-              assistant. In 2016 he embarked on his own practice as the
-              Principal Architect of C Atelier Consultants and CDA Associates.
-              Since then, he’s been involved in several curatorial projects in
-              Sri Lanka including the exhibition Second Skin in March 2017 and
-              Revive; Ethical Use of Material in June 2017 in collaboration with
-              the Colombo Fashion Week. In 2019, he curated One Won in
-              collaboration with the University of the Visual and Performing
-              Arts, Colombo in the aftermath of the Easter Attacks in Sri Lanka.
-              He was the recipient of the Conde Nast Johansens award for
-              excellence in 2020 – 21 for his work in the architecture field and
-              is on the board of Trustees of the Geoffrey Bawa Trust and the
-              Lunuganga Trust, respectively. With CDA he continues to excel in
-              his creative endeavours and deliver intricately inventive and
-              exquisite designs to his clientele.
-            </p>
-          </v-flex>
-        </v-layout> -->
       </div>
-      <div style="width:99vw;height:5vh;padding:10px"></div>
-    </div>
+    </Scrollama>
   </v-container>
 </template>
 
 <script>
+import "intersection-observer";
+import Scrollama from "vue-scrollama";
 export default {
+  components: {
+    Scrollama,
+  },
   data: () => ({
     showWithDelay: false,
     loaded: true,
+    currStep: null,
   }),
   mounted() {
     setTimeout(() => {
@@ -256,7 +234,15 @@ export default {
   width: 100%;
   transition-delay: 10s;
 }
-.about_us_bg:hover .ab1 {
+/* .about_us_bg:hover .ab1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  animation: slideInFromLeft 1s ease-in;
+} */
+.ab1.active {
   background-color: #fff;
   transform: scaleY(0);
   transform-origin: top;
@@ -264,7 +250,7 @@ export default {
   width: 100%;
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
-  animation: slideInFromLeft 1s ease-in;
+  animation: slideInFromLeft 1.3s ease-in;
 }
 .b2con {
   /* background-color: blueviolet; */
@@ -283,13 +269,21 @@ export default {
   transform-origin: top;
   height: 100%;
   width: 100%;
-  transition-delay: 4s;
+  transition-delay: 10s;
 
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
   /* animation: slideInFromLeft 1.5s ease-in; */
 }
-.about_us_bg:hover .b2 {
+/* .about_us_bg:hover .b2 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  animation: slideInFromLeft 0.9s ease-in;
+} */
+.b2.active {
   background-color: #fff;
   transform: scaleY(0);
   transform-origin: top;
@@ -297,7 +291,7 @@ export default {
   width: 100%;
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
-  animation: slideInFromLeft 0.5s ease-in;
+  animation: slideInFromLeft 1.3s ease-in;
 }
 @keyframes slideInFromLeft {
   0% {
@@ -325,6 +319,10 @@ export default {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5vh;
 }
+.about_us.active {
+  color: red;
+  background-color: blue;
+}
 .title-page2 {
   font-size: 3vh;
   font-weight: bold;
@@ -342,5 +340,19 @@ export default {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(10px);
   opacity: 0;
+}
+.step {
+  padding: 15vh 0;
+  width: 50%;
+  margin: 0 auto 30vh;
+  background-color: rgb(230, 230, 8);
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step.active {
+  background-color: teal;
+  color: white;
 }
 </style>

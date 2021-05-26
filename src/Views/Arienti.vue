@@ -1,16 +1,14 @@
 <template>
   <div ref="scrollSections" class="hello">
     <section data-scroll-section>
-      <div>
-        <div class="d-flex justify-space-between" style="margin-top:-4vh">
-          <router-link to="/projects">
-            <img
-              style="opacity: 0.5;margin-inline:20px"
-              height="20vh"
-              src="../assets/backArrow.png"
-            />
-          </router-link>
-        </div>
+      <div style="margin-top:-4vh">
+        <router-link to="/projects">
+          <img
+            style="opacity: 0.5;margin-inline:20px"
+            height="20vh"
+            src="../assets/backArrow.png"
+          />
+        </router-link>
         <div>
           <div class="b4con" data-scroll data-scroll-speed="3">
             <div class="b4"></div>
@@ -23,10 +21,10 @@
       </div>
     </section>
     <section data-scroll-section>
-      <div class="hoverPart">
+      <div class="hoverPart v-img" data-scroll data-scroll-class="v-img-active">
         <v-img
           data-scroll
-          data-scroll-speed="1"
+          data-scroll-speed="4"
           eager
           contain
           height="85vh"
@@ -40,10 +38,12 @@
       </div>
     </section>
     <section data-scroll-section>
+      <!-- <div data-scroll data-scroll-class="ren-class2" class="ren-class"></div> -->
       <div
+        data-scroll-speed="4"
+        class="v-img"
         data-scroll
-        data-scroll-direction="horizontal"
-        data-scroll-speed="-2"
+        data-scroll-class="v-img-active"
       >
         <div>
           <carousel-3d
@@ -85,10 +85,7 @@
           </carousel-3d>
           <div
             data-scroll
-            data-scroll-direction="horizontal"
-            data-scroll-speed="-4"
-            data-scroll-class="testStudy2"
-            data-scroll-delay="5"
+            data-scroll-speed="1"
             class="newText2 text-center testStudy"
           >
             A study in subtlety.
@@ -96,8 +93,9 @@
         </div>
       </div>
     </section>
+
     <section data-scroll-section>
-      <div data-scroll data-scroll-speed="4">
+      <div data-scroll class="v-img" data-scroll-class="v-img-active">
         <div eager>
           <div v-if="isMobile()">
             <v-img eager contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
@@ -105,8 +103,7 @@
           <div v-else>
             <v-img
               data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-speed="4"
+              data-scroll-speed="2"
               height="90vh"
               contain
               eager
@@ -118,7 +115,6 @@
     </section>
   </div>
 </template>
-
 <script>
 import locomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
@@ -128,8 +124,10 @@ export default {
   props: {
     msg: String,
   },
+  components: {},
   data() {
     return {
+      currStep: null,
       scrollIns: null,
     };
   },
@@ -176,17 +174,53 @@ section {
   /* align-items: center; */
   justify-content: center;
 }
+.imgEffect {
+  margin-top: -10vh;
+  background-color: blue;
+  opacity: 1;
+  transition: all 13s linear;
+}
+.v-img {
+  margin-top: 10vh;
+  /* background-color: rgb(218, 17, 17); */
+  opacity: 0.5;
+  transition: all 2s linear;
+}
+.v-img-active {
+  margin-top: -10vh;
+  /* background-color: rgb(17, 218, 61); */
+  opacity: 1;
+  transition: all 2s linear;
+}
+.v-img2:hover {
+  margin-top: -10vh;
+  background-color: blue;
+  opacity: 1;
+  transition: all 3s linear;
+}
+
 .testStudy {
-  background-color: rgb(218, 17, 17);
+  /* background-color: rgb(218, 17, 17); */
   text-align: center;
   padding-top: 20px;
-  transition: all 10s linear;
+  /* transition: all 10s linear; */
 }
 .testStudy2 {
-  background-color: rgb(30, 17, 218);
+  /* background-color: rgb(30, 17, 218); */
   text-align: center;
   padding-top: 20px;
-  transition: all 10s linear;
+  /* transition: all 10s linear; */
+}
+.ren-class {
+  min-height: 100vh;
+  background-color: rgb(30, 17, 218);
+  transition: all 5s linear;
+}
+.ren-class2 {
+  max-height: 10vh;
+  background-color: rgb(238, 166, 10);
+  padding-top: -20vh;
+  transition: all 5s linear;
 }
 .hoverPart {
   height: 100vh;
@@ -227,22 +261,14 @@ section {
 }
 .b4con {
   background-image: url("../assets/Arienti/_SDS7737.jpeg");
-
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   height: 88vh;
 }
-.b4con:hover .b4 {
-  background-color: #111;
-  transform: scaleY(0);
-  transform-origin: top;
-  height: 100%;
-  width: 100%;
-  animation: slideInFromLeft 1.5s ease-in;
-}
+
 .b4 {
-  background-color: #111;
+  background-color: #fff;
   transform: scaleY(0);
   transform-origin: top;
   height: 100%;

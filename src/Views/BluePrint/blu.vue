@@ -76,7 +76,7 @@
           </div>
           <div
             id="ARCHITECTURE"
-            class="twelve "
+            class="twelve"
             :data-step-no="3"
             :class="{ active: 3 == currStep }"
           >
