@@ -5,7 +5,7 @@
       <div>
         <page1 />
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
         <page2 />
       </div>
       <div>

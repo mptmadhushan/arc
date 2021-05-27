@@ -184,14 +184,14 @@ section {
 .v-img {
   margin-top: 10vh;
   /* background-color: rgb(218, 17, 17); */
-  opacity: 0.5;
+  opacity: 0.2;
   transition: all 2s linear;
 }
 .v-img-active {
   margin-top: -10vh;
   /* background-color: rgb(17, 218, 61); */
   opacity: 1;
-  transition: all 2s linear;
+  transition: all 4s linear;
 }
 .v-img2:hover {
   margin-top: -10vh;

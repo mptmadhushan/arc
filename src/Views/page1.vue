@@ -1,7 +1,6 @@
 <template>
   <v-container fluid>
     <Scrollama
-      :debug="true"
       :offset="0.7"
       @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
       @step-exit="({ element }) => (currStep = null)"
@@ -20,7 +19,7 @@
               row
               wrap
               justify-center
-              style="margin-top:20vh;margin-bottom:2%;"
+              style="margin-top:20vh;margin-bottom:2%;min-width:100vw"
             >
               <v-flex md1 sm5 xs5 align-self-start>
                 <p
@@ -38,11 +37,11 @@
                     src="../assets/1.png"
                     class="zoomImage"
                   >
-                    <div
+                    <!-- <div
                       class="ab1"
                       :data-step-no="1"
                       :class="{ active: 1 == currStep }"
-                    ></div>
+                    ></div> -->
                   </v-img>
                 </div>
               </v-flex>
@@ -54,11 +53,11 @@
                     src="../assets/2.png"
                     class="zoomImage"
                   >
-                    <div
+                    <!-- <div
                       class="b2"
                       :data-step-no="1"
                       :class="{ active: 1 == currStep }"
-                    ></div>
+                    ></div> -->
                   </v-img>
                 </div>
               </v-flex>
