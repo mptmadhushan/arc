@@ -2,6 +2,7 @@ import Home from "./src/Views/Home.vue";
 import Shapes from "./src/Views/NewShapes.vue";
 import Page2 from "./src/Views/page2.vue";
 import Arienti from "./src/Views/Arienti.vue";
+import Arienti2 from "./src/Views/Arienti2.vue";
 import Bolgoda from "./src/Views/Bolgoda.vue";
 import StoneHouse from "./src/Views/StoneHouse.vue";
 import ChitraLane from "./src/Views/ChitraLane.vue";
@@ -44,6 +45,10 @@ export default [
   {
     path: "/Arienti",
     component: Arienti,
+  },
+  {
+    path: "/Arienti2",
+    component: Arienti2,
   },
   {
     path: "/Bolgoda",

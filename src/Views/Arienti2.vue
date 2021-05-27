@@ -1,6 +1,14 @@
 <template>
-  <v-container fluid>
-    <div class="d-flex justify-space-between" style="margin-top:1vh">
+  <div>
+    <div
+      data-aos-delay="100"
+      data-aos-easing="linear"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      class="d-flex justify-space-between"
+      style="margin-top:1vh"
+      id="0"
+    >
       <router-link to="/projects">
         <img
           style="opacity: 0.5;margin-inline:20px"
@@ -8,129 +16,182 @@
           src="../assets/backArrow.png"
         />
       </router-link>
-      <!-- <ShapesPop /> -->
     </div>
-    <div
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="100"
-      data-aos-duration="1500"
-    >
-      <div class="b4con" data-aos="zoom-out" data-aos-duration="2000">
-        <div class="b4"></div>
+    <div data-aos-delay="100" data-aos-duration="1500">
+      <div class="b1con">
+        <div class="b1"></div>
       </div>
 
-      <p class="newText2 text-center">
-        Resuscitate. Repurpose. Reinvigorate
+      <p class="text001">
+        Formerly in disrepair, unearthing hidden potential in what would be a
+        City landmark
       </p>
-    </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
-
-    <div
-      eager
-      data-aos="fade-up"
-      data-aos-delay="100"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-    >
-      <div v-if="isMobile()">
-        <v-img eager contain src="../assets/Arienti/_SDS7732.jpeg"></v-img>
+      <div
+        class="d-flex flex-column mb-6"
+        style="margin-top:-3vh;margin-left:10vw"
+      >
+        <div>
+          <v-icon size="30" href="#1" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
+          >
+        </div>
       </div>
-      <div v-else>
+    </div>
+
+    <div style="width:99vw;height:15vh;padding:10px"></div>
+
+    <div id="1">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        style="height:100vh;width:100vw;"
+        class="d-flex flex-column justify-space-between align-center"
+      >
         <v-img
           eager
           contain
           height="85vh"
           src="../assets/Arienti/_SDS7732.jpeg"
         ></v-img>
+        <p class="text001">
+          Eliminating high boundary walls to expose the exceptional facades
+          beyond, now housing one of Colombo's premier fashion brands.
+        </p>
       </div>
-
-      <p class="newText2 text-center mt-6">
-        Formerly in disrepair - A compendium of contemporary lines
-      </p>
-    </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
-
-    <div
-      eager
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="500"
-      data-aos-duration="1500"
-    >
-      <div>
+      <div
+        class="d-flex flex-column mb-6"
+        style="margin-top:-10vh;margin-left:10vw"
+      >
         <div>
-          <carousel-3d
-            :width="900"
-            :height="600"
-            :inverse-scaling="200"
-            :space="1300"
-            :autoplay="false"
-            :autoplay-timeout="3000"
-            :display="3"
-            :perspective="0"
+          <v-icon size="30" href="#0" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-up-circle-outline</v-icon
           >
-            <slide :index="0">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
-              </figure> </slide
-            ><slide :index="1">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
-              </figure> </slide
-            ><slide :index="2">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
-              </figure>
-            </slide>
-            <slide :index="3">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
-              </figure> </slide
-            ><slide :index="4">
-              <figure>
-                <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
-              </figure> </slide
-            ><slide :index="5">
-              <figure>
-                <v-img src="../assets/Arienti/_SDS7782.jpeg" />
-              </figure>
-            </slide>
-          </carousel-3d>
-          <div
-            class="newText2 text-center"
-            style="background-color: white;text-align: center;padding:20px;"
+        </div>
+        <div>
+          <v-icon size="30" href="#2" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
           >
-            A study in subtlety.
-          </div>
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
+
+    <div style="width:99vw;height:15vh;padding:10px"></div>
 
     <div
-      eager
+      id="2"
       data-aos="fade-up"
       data-aos-delay="100"
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <div v-if="isMobile()">
-        <div style="width:99vw;height:15vh;padding:10px"></div>
-        <v-img eager contain src="../assets/Arienti/_SDS7793.jpeg"></v-img>
+      <div
+        style="height:100vh;width:100vw;"
+        class="d-flex flex-column justify-space-around align-center"
+      >
+        <carousel-3d
+          :width="900"
+          :height="600"
+          :inverse-scaling="200"
+          :space="1300"
+          :autoplay="false"
+          :autoplay-timeout="3000"
+          :display="3"
+          :perspective="0"
+        >
+          <slide :index="0">
+            <figure>
+              <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
+            </figure> </slide
+          ><slide :index="1">
+            <figure>
+              <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
+            </figure> </slide
+          ><slide :index="2">
+            <figure>
+              <v-img eager src="../assets/Arienti/_SDS7782.jpeg" />
+            </figure>
+          </slide>
+          <slide :index="3">
+            <figure>
+              <v-img eager src="../assets/Arienti/_SDS7808.jpeg" />
+            </figure> </slide
+          ><slide :index="4">
+            <figure>
+              <v-img eager src="../assets/Arienti/_SDS7783.jpeg" />
+            </figure> </slide
+          ><slide :index="5">
+            <figure>
+              <v-img src="../assets/Arienti/_SDS7782.jpeg" />
+            </figure>
+          </slide>
+        </carousel-3d>
+        <div class="text001">
+          Re-purposing and re-scaling of antique and contemporary fittings to
+          elevate the shopping experience
+        </div>
       </div>
-      <div v-else>
-        <v-img
-          height="85vh"
-          contain
-          eager
-          src="../assets/Arienti/_SDS7793.jpeg"
-        ></v-img>
+      <div
+        class="d-flex flex-column mb-6"
+        style="margin-top:-10vh;margin-left:10vw"
+      >
+        <div>
+          <v-icon size="30" href="#1" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-up-circle-outline</v-icon
+          >
+        </div>
+        <div>
+          <v-icon size="30" href="#3" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
+          >
+        </div>
       </div>
-
-      <div style="width:99vw;height:7vh;padding:10px"></div>
     </div>
-  </v-container>
+
+    <div style="width:99vw;height:15vh;padding:10px"></div>
+
+    <div
+      id="3"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      <div
+        style="height:100vh;width:100vw;"
+        class="d-flex flex-column justify-space-around align-center"
+      >
+        <div>
+          <v-img
+            height="85vh"
+            contain
+            eager
+            src="../assets/Arienti/_SDS7793.jpeg"
+          ></v-img>
+        </div>
+        <p class="text001">
+          Balancing reflections and artificial light.
+        </p>
+      </div>
+      <div
+        class="d-flex flex-column mb-6"
+        style="margin-top:-10vh;margin-left:10vw"
+      >
+        <div>
+          <v-icon size="30" href="#2" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-up-circle-outline</v-icon
+          >
+        </div>
+        <div>
+          <v-icon size="30" href="#4" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
+          >
+        </div>
+      </div>
+    </div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
+  </div>
 </template>
 
 <script>
@@ -171,23 +232,7 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-.text001 {
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 1.5vh;
-  color: #11111193;
-}
-.newText2 {
-  font-family: "Josefin Sans", sans-serif;
-  text-align: justify;
-  font-size: 2vh;
-  margin-top: 10px;
-  color: #11111193;
-}
-.b4con {
+.b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Arienti/_SDS7737.jpeg");
   /* background-size: 100% 100%;
@@ -195,9 +240,9 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 88vh;
+  height: 85vh;
 }
-.b4 {
+.b1 {
   background-color: #fff;
   transform: scaleY(0);
   transform-origin: top;
@@ -258,8 +303,7 @@ export default {
   text-align: center;
   padding: 20px;
   padding: 10px;
-  font-weight: bold;
-  margin-top: 10px;
+  margin-top: 1vh;
   font-size: 2vh;
   color: #11111193;
 }
@@ -292,14 +336,12 @@ export default {
   text-align: center;
   padding: 20px;
 }
-
 .center_text {
   line-height: 100vh;
   height: 100vh;
   text-align: center;
   padding: 20px;
 }
-
 .center_text p {
   line-height: 1.5;
   display: inline-block;
@@ -344,13 +386,11 @@ export default {
 .clear-both {
   clear: both;
 }
-
 .center {
   line-height: 100vh;
   height: 100vh;
   text-align: left;
 }
-
 .center p {
   line-height: 1.5;
   display: inline-block;
@@ -362,14 +402,12 @@ export default {
   height: 100vh;
   text-align: right;
 }
-
 .center_r p {
   line-height: 1.5;
   display: inline-block;
   vertical-align: middle;
   color: black;
 }
-
 .container_l:hover .sub-left {
   opacity: 1;
 }
