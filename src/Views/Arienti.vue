@@ -191,7 +191,7 @@ section {
   margin-top: -10vh;
   /* background-color: rgb(17, 218, 61); */
   opacity: 1;
-  transition: all 4s linear;
+  transition: all 3s linear;
 }
 .v-img2:hover {
   margin-top: -10vh;
