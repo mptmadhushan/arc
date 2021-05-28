@@ -80,14 +80,13 @@
             :data-step-no="3"
             :class="{ active: 3 == currStep }"
           >
-            <div class="fadeClassNew">
-              <div style="height:10vh;width: 100vw"></div>
-
+            <div class="fadeClassNew" style="height: 100vh;padding:5vh">
+              <div style="height:15vh;width: 100vw"></div>
               <v-layout row wrap justify-space-around>
-                <v-flex md6 xs12 sm12 align-self-start>
+                <v-flex md7 xs12 sm12 align-self-start>
                   <div>
                     <v-img
-                      height="80vh"
+                      height="100%"
                       eager
                       cover
                       src="../../assets/blueprint/_SDS3203b.png"
@@ -113,14 +112,11 @@
                 </v-flex>
               </v-layout>
             </div>
-            <div style="height:5vh"></div>
-
-            <!-- <div style="height:15vh;background-color:red"></div> -->
             <div class="d-flex flex-row justify-left align-center">
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:10vw;margin-top:-0.7vh"
+                style="margin-left:10vw;margin-top:-13.5vh"
               >
                 <v-icon
                   size="30"

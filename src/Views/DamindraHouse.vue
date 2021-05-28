@@ -341,6 +341,7 @@ export default {
   text-align: center;
   padding: 10px;
   font-size: 2vh;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   color: #11111193;
 }
@@ -348,6 +349,7 @@ export default {
   text-align: left;
   padding: 10px;
   font-size: 2vh;
+  font-family: "Josefin Sans", sans-serif;
   color: #11111193;
 }
 .slider-container {
