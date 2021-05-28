@@ -172,16 +172,14 @@
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
+      style="padding:5vh;width:100vw;height:100vh"
     >
-      <div style="padding-top:5vw;padding-bottom:3.5vw">
+      <div>
         <vue-flux
           :options="options"
           :images="images2"
           :transitions="transitions"
         >
-          <template v-slot:preloader>
-            <flux-preloader height="40vh" />
-          </template>
         </vue-flux>
       </div>
     </div>
@@ -189,11 +187,10 @@
 </template>
 
 <script>
-import { VueFlux, FluxPreloader } from "vue-flux";
+import { VueFlux } from "vue-flux";
 export default {
   components: {
     VueFlux,
-    FluxPreloader,
   },
   mounted: function() {
     this.startSlide();
@@ -259,6 +256,11 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
 .text005 {
   text-align: left;
   font-weight: bold;

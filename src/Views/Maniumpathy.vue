@@ -114,6 +114,8 @@
         </v-flex>
       </v-layout>
     </div>
+    <div style="width:99vw;height:15vh;padding:10px"></div>
+
     <div
       v-if="isMobile()"
       data-aos="fade-up"
@@ -131,24 +133,21 @@
         Craftsmanship. Material Sensitivity
       </p>
     </div>
+
     <div
       v-else
       data-aos="fade-in"
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
-      style="padding:15vh"
+      style="padding:1vh"
     >
-      <div style="width:99vw;height:15vh;padding:10px"></div>
       <div style="margin:11vh">
         <vue-flux
           :options="options"
           :images="images"
           :transitions="transitions"
         >
-          <template v-slot:preloader>
-            <flux-preloader height="40vh" />
-          </template>
         </vue-flux>
         <p class="newText2 text-center">
           Craftsmanship. Material Sensitivity
@@ -632,6 +631,8 @@ export default {
   }
 }
 .newText2 {
+  font-family: "Josefin Sans", sans-serif;
+
   text-align: center;
   padding: 10px;
   font-size: 2vh;

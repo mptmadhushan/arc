@@ -527,6 +527,7 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
 .text002 {
   text-align: left;
   font-weight: bold;
@@ -558,17 +559,10 @@ export default {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   padding: 10px;
-  font-weight: bold;
   font-size: 2vh;
   color: #11111193;
 }
-.text002 {
-  text-align: left;
-  padding: 10px;
-  font-size: 2vh;
-  font-weight: bold;
-  color: #11111193;
-}
+
 .slider-container {
   position: relative;
   text-align: center;
