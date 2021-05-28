@@ -37,7 +37,7 @@
         data-aos-easing="linear"
         data-aos-duration="1500"
         style="height:100vh;width:100vw;"
-        class="d-flex flex-column justify-space-between align-center"
+        class="d-flex flex-column "
       >
         <v-img
           eager
@@ -61,10 +61,9 @@
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <div
-        style="height:100vh;width:100vw;"
-        class="d-flex flex-column "
-      >
+      <div style="height:100vh;width:100vw;" class="d-flex flex-column ">
+        <div style="width:99vw;height:15vh;padding:10px"></div>
+
         <carousel-3d
           :width="900"
           :height="600"
@@ -109,7 +108,7 @@
       </div>
     </div>
 
-    <div style="width:99vw;height:15vh;padding:10px"></div>
+    <div style="width:99vw;height:10vh;padding:10px"></div>
 
     <div
       id="3"
@@ -118,12 +117,10 @@
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <div
-        style="height:100vh;width:100vw;"
-        class="d-flex flex-column justify-space-around align-center"
-      >
+      <div style="height:100vh;width:100vw;" class="d-flex flex-column ">
         <div>
           <v-img
+            style="margin-top:5vh"
             height="85vh"
             contain
             eager
