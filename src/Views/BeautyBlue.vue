@@ -17,7 +17,7 @@
               height="85vh"
               src="../assets/blueprint/imgspace.jpg"
             >
-              <div class="twelve"></div>
+              <!-- <div class="twelve"></div> -->
             </v-img>
           </div>
           <div style="width:99vw;height:10vh"></div>
@@ -30,7 +30,7 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:10vw;margin-top:-5vh"
+          style="margin-left:3vw;margin-top:-5vh"
         >
           <v-icon href="#bnew" size="30" v-smooth-scroll="{ duration: 2000 }"
             >mdi-chevron-down-circle-outline</v-icon
@@ -79,7 +79,7 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:10vw;margin-top:0vh"
+          style="margin-left:3vw;margin-top:0vh"
         >
           <v-icon href="#bnew2" size="30" v-smooth-scroll="{ duration: 2000 }"
             >mdi-chevron-down-circle-outline</v-icon
@@ -105,7 +105,7 @@
     <div
       id="animated-example"
       class="animated bounce"
-      style="margin-left:10vw;margin-top:-8vh"
+      style="margin-left:3vw;margin-top:-8vh"
     >
       <v-icon href="#bnew3" size="30" v-smooth-scroll="{ duration: 2000 }"
         >mdi-chevron-down-circle-outline</v-icon
@@ -125,7 +125,7 @@
       </div>
       <div
         id="animated-example"
-        style="margin-left:10vw;margin-top:0vh"
+        style="margin-left:3vw;margin-top:0vh"
         class="animated bounce"
       >
         <v-icon href="#bnew4" size="30" v-smooth-scroll="{ duration: 2000 }"
@@ -149,7 +149,7 @@
       <div
         id="animated-example"
         class="animated bounce"
-        style="margin-left:10vw;margin-top:1.5vh"
+        style="margin-left:3vw;margin-top:1.5vh"
       >
         <v-icon href="#bnew5" size="30" v-smooth-scroll="{ duration: 2000 }"
           >mdi-chevron-down-circle-outline</v-icon
@@ -170,7 +170,7 @@
     </div>
     <div
       id="animated-example"
-      style="margin-left:10vw;margin-top:-7.8vh"
+      style="margin-left:3vw;margin-top:-7.8vh"
       class="animated bounce"
     >
       <v-icon size="30" href="#bnew65" v-smooth-scroll="{ duration: 2000 }"
@@ -192,7 +192,7 @@
       </div>
       <div
         id="animated-example"
-        style="margin-left:10vw;margin-top:-3vh"
+        style="margin-left:3vw;margin-top:-3vh"
         class="animated bounce"
       >
         <v-icon href="#slider2" size="30" v-smooth-scroll="{ duration: 2000 }"

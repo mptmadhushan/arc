@@ -140,7 +140,7 @@
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
-      style="padding:1vh"
+      style="padding:4vh"
     >
       <div style="margin:11vh">
         <vue-flux

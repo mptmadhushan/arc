@@ -172,7 +172,7 @@
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
-      style="padding:5vh;width:100vw;height:100vh"
+      style="padding:5vh;width:100vw;"
     >
       <div>
         <vue-flux

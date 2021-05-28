@@ -27,7 +27,7 @@
             </p>
             <div
               class="d-flex flex-row justify-left align-center"
-              style="margin-top:45vh;margin-left:10vw"
+              style="margin-top:45vh;margin-left:3vw"
             >
               <div id="animated-example" class="animated bounce">
                 <v-icon
@@ -63,7 +63,7 @@
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:10vw"
+                style="margin-left:3vw"
               >
                 <v-icon
                   size="30"
@@ -116,7 +116,7 @@
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:10vw;margin-top:-13.5vh"
+                style="margin-left:3vw;margin-top:-13.5vh"
               >
                 <v-icon
                   size="30"
@@ -179,7 +179,7 @@
                 </v-layout>
                 <div
                   class="d-flex flex-row justify-start align-start"
-                  style="margin-top:-7.4vh;margin-left:10vw"
+                  style="margin-top:-7.4vh;margin-left:3vw"
                 >
                   <div id="animated-example" class="animated bounce">
                     <v-icon
@@ -229,7 +229,7 @@
             </div>
             <div
               class="d-flex flex-row justify-start align-start"
-              style="margin-left:10vw;margin-top:-8vh"
+              style="margin-left:3vw;margin-top:-8vh"
             >
               <div id="animated-example" class="animated bounce">
                 <v-icon href="#act-slider" size="30" v-smooth-scroll
@@ -278,7 +278,7 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:10vw;margin-top:0vh"
+          style="margin-left:3vw;margin-top:0vh"
         >
           <v-icon
             href="#beaty-blue"
@@ -319,7 +319,7 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:10vw;margin-top:0.5vh"
+          style="margin-left:3vw;margin-top:0.5vh"
         >
           <v-icon
             size="30"

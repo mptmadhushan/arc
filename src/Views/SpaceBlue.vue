@@ -40,7 +40,7 @@
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:10vw;margin-top:-1vh"
+                style="margin-left:3vw;margin-top:-1vh"
               >
                 <v-icon
                   size="30"
@@ -113,7 +113,7 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:10vw;margin-top:-2.4vh"
+          style="margin-left:3vw;margin-top:-2.4vh"
         >
           <v-icon
             href="#space-blue2"
@@ -142,7 +142,7 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:10vw;margin-top:-2.vh"
+          style="margin-left:3vw;margin-top:-2.vh"
         >
           <v-icon
             href="#space-blue4"

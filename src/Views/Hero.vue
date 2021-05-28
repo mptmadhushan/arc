@@ -16,7 +16,7 @@
     </div>
 
     <div class="container_l">
-      <div class="sub-left">
+      <div class="sub-left" :class="!isloaded ? 'sub-left-load' : 'sub-left'">
         <div class="center">
           <p>
             <v-card flat color="transparent" style="opacity:0.3">
@@ -35,7 +35,7 @@
     </div>
 
     <div class="container_l">
-      <div class="sub-right">
+      <div class="sub-right" :class="!isloaded ? 'sub-right-load' : 'sub-right'">
         <div class="center_r">
           <p>
             <v-card flat color="transparent">
@@ -119,64 +119,10 @@ export default {
     heh: false,
   }),
   created() {
-    //  console.log(jjjc)
-    //   window.addEventListener("wheel", function(event,jjjc){
-    //  console.log('hello',jjjc)
-
-    //     console.log(event.deltaY);
-    //     if (event.deltaY < 0) {
-    //       console.log('if')
-    //     } else {
-    //       // this.handleScroll()
-    //      console.log(jjjc)
-
-    //      }})
     document.addEventListener("wheel", this.helb);
-
-    //  document.addEventListener("wheel", function(event) {
-    // this.handleScroll;
-    // console.log(event.deltaY);
-    // if (event.deltaY < 0) {
-    //   console.log('if')
-    // } else {
-    //  console.log(this.heh)
-    // this.heh = true;
-
-    //  }})
   },
   mounted() {
-    // document.addEventListener("wheel", function(event) {
-    // this.handleScroll;
-    // console.log(event.deltaY);
-    // if (event.deltaY < 0) {
-    //   console.log('if')
-    // } else {
-    //  console.log(this.heh)
-    // this.heh = true;
-
-    //  }})
-    //     document.addEventListener("wheel", function(event) {
-    //   console.log(event.deltaY);
-    //   if (event.deltaY < 0) {
-    //     this.handleScroll;
-    //   } else {
-    //     console.log("up");
-    //     this.methodNnew;
-    //     //
-    //     console.log("🐼🐼🐼🐼🐼🐼🐼", this.isloaded);
-    //     this.isloaded = false;
-    //     localStorage.setItem("isloaded", false);
-    //     if (this.isloaded == true) {
-    //       console.log("hello bitch");
-    //     }
-    //   }
-    // });
     document.documentElement.style.overflow = "hidden";
-    // window.setTimeout(
-    //   (document.documentElement.style.overflow = "hidden"),
-    //   2000
-    // );
-    // window.addEventListener("scroll", this.updateScroll);
     this.hey = localStorage.getItem("isloaded");
     console.log("hello", this.hey);
     if (this.hey == "false") {
@@ -187,6 +133,7 @@ export default {
 
   methods: {
     helb() {
+      console.log("hello ");
       // console.log("scrolled", event);
       if (event.deltaY < 0) {
         console.log("if");
@@ -364,6 +311,60 @@ body {
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 1300ms;
 }
+.sub-left-load {
+  float: left;
+  height: 100vh;
+  width: 29%;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s ease;
+  background-image: linear-gradient(
+    to right,
+    black,
+    rgba(0, 0, 0, 0.774),
+    transparent
+  );
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1300ms;
+  -webkit-animation: fadein 5s linear 3;
+  -moz-animation: fadein 5s linear 3;
+  animation: fadein 5s linear 3;
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .sub-right {
   float: right;
   height: 100vh;
@@ -378,6 +379,24 @@ body {
   );
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 3000ms;
+}
+.sub-right-load {
+  float: right;
+  height: 100vh;
+  width: 29%;
+  opacity: 0;
+  transition: 0.6s ease;
+  background-image: linear-gradient(
+    to left,
+    white,
+    rgba(255, 255, 255, 0.678),
+    transparent
+  );
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 3000ms;
+  -webkit-animation: fadein 5s linear 3;
+  -moz-animation: fadein 5s linear 3;
+  animation: fadein 5s linear 3;
 }
 .clear-both {
   clear: both;
