@@ -63,7 +63,7 @@
     >
       <div
         style="height:100vh;width:100vw;"
-        class="d-flex flex-column justify-space-around align-center"
+        class="d-flex flex-column "
       >
         <carousel-3d
           :width="900"
