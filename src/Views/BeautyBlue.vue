@@ -27,15 +27,13 @@
             </P>
           </div>
         </div>
-        <div id="animated-example" class="animated bounce">
-          <v-btn
-            x-small
-            fab
-            color="transparent"
-            style="margin-left:20vw;margin-top:-2.3vh"
-            ><v-icon href="#bnew" v-smooth-scroll="{ duration: 2000 }"
-              >mdi-chevron-down</v-icon
-            ></v-btn
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:10vw;margin-top:-5vh"
+        >
+          <v-icon href="#bnew" size="30" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
       </div>
@@ -78,15 +76,13 @@
             </div>
           </v-flex>
         </v-layout>
-        <div id="animated-example" class="animated bounce">
-          <v-btn
-            x-small
-            fab
-            color="transparent"
-            style="margin-left:20vw;margin-top:3vh"
-            ><v-icon href="#bnew2" v-smooth-scroll="{ duration: 2000 }"
-              >mdi-chevron-down</v-icon
-            ></v-btn
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:10vw;margin-top:0vh"
+        >
+          <v-icon href="#bnew2" size="30" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
       </div>
@@ -106,15 +102,13 @@
         </span>
       </p>
     </div>
-    <div id="animated-example" class="animated bounce">
-      <v-btn
-        x-small
-        fab
-        color="transparent"
-        style="margin-left:20vw;margin-top:-10vh"
-        ><v-icon href="#bnew3" v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down</v-icon
-        ></v-btn
+    <div
+      id="animated-example"
+      class="animated bounce"
+      style="margin-left:10vw;margin-top:-8vh"
+    >
+      <v-icon href="#bnew3" size="30" v-smooth-scroll="{ duration: 2000 }"
+        >mdi-chevron-down-circle-outline</v-icon
       >
     </div>
     <div class="fadeClass" id="bnew3">
@@ -123,21 +117,19 @@
           class="img-to-ef"
           eager
           contain
-          height="87vh"
+          height="84vh"
           src="../assets/blueprint/_SDS3206b.jpeg"
         >
           <div class="twelve"></div>
         </v-img>
       </div>
-      <div id="animated-example" class="animated bounce">
-        <v-btn
-          x-small
-          fab
-          color="transparent"
-          style="margin-left:20vw;margin-top:0vh"
-          ><v-icon href="#bnew4" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-down</v-icon
-          ></v-btn
+      <div
+        id="animated-example"
+        style="margin-left:10vw;margin-top:0vh"
+        class="animated bounce"
+      >
+        <v-icon href="#bnew4" size="30" v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-down-circle-outline</v-icon
         >
       </div>
     </div>
@@ -148,21 +140,19 @@
           class="img-to-efOld"
           eager
           contain
-          height="90vh"
+          height="85vh"
           src="../assets/blueprint/6.png"
         >
           <div class="twelve"></div>
         </v-img>
       </div>
-      <div id="animated-example" class="animated bounce">
-        <v-btn
-          x-small
-          fab
-          color="transparent"
-          style="margin-left:20vw;margin-top:-1vh"
-          ><v-icon href="#bnew5" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-down</v-icon
-          ></v-btn
+      <div
+        id="animated-example"
+        class="animated bounce"
+        style="margin-left:10vw;margin-top:1.5vh"
+      >
+        <v-icon href="#bnew5" size="30" v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-down-circle-outline</v-icon
         >
       </div>
     </div>
@@ -178,15 +168,13 @@
         </span>
       </p>
     </div>
-    <div id="animated-example" class="animated bounce">
-      <v-btn
-        x-small
-        fab
-        color="transparent"
-        style="margin-left:20vw;margin-top:-10vh"
-        ><v-icon href="#bnew65" v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down</v-icon
-        ></v-btn
+    <div
+      id="animated-example"
+      style="margin-left:10vw;margin-top:-7.8vh"
+      class="animated bounce"
+    >
+      <v-icon size="30" href="#bnew65" v-smooth-scroll="{ duration: 2000 }"
+        >mdi-chevron-down-circle-outline</v-icon
       >
     </div>
     <div style="height:40vh"></div>
@@ -202,15 +190,15 @@
           <div class="twelve"></div>
         </v-img>
       </div>
-      <v-btn
-        x-small
-        fab
-        color="transparent"
-        style="margin-left:20vw;margin-top:0vh"
-        ><v-icon href="#slider2" v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down</v-icon
-        ></v-btn
+      <div
+        id="animated-example"
+        style="margin-left:10vw;margin-top:-3vh"
+        class="animated bounce"
       >
+        <v-icon href="#slider2" size="30" v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-down-circle-outline</v-icon
+        >
+      </div>
     </div>
     <div style="width:99vw;height:30vh"></div>
     <div v-on:mouseover="mouseOver" id="slider2" ref="slider2">

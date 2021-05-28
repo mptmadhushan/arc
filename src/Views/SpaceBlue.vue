@@ -37,17 +37,16 @@
               Geoffrey Bawa<br />Lunuganga<br />1948 - onwards
             </P>
             <div class="d-flex flex-row justify-left align-center">
-              <div id="animated-example" class="animated bounce">
-                <v-btn
-                  style="margin-left:20vw;margin-top:2vh"
-                  x-small
-                  fab
-                  color="transparent"
-                  ><v-icon
-                    href="#space-blue1"
-                    v-smooth-scroll="{ duration: 2000 }"
-                    >mdi-chevron-down</v-icon
-                  ></v-btn
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="margin-left:10vw;margin-top:-1vh"
+              >
+                <v-icon
+                  size="30"
+                  href="#space-blue1"
+                  v-smooth-scroll="{ duration: 2000 }"
+                  >mdi-chevron-down-circle-outline</v-icon
                 >
               </div>
             </div>
@@ -111,11 +110,13 @@
         </v-layout>
       </div>
       <div class="d-flex flex-row justify-left align-center">
-        <div id="animated-example" class="animated bounce">
-          <v-btn style="margin-left:20vw;" x-small fab color="transparent"
-            ><v-icon href="#space-blue2" v-smooth-scroll="{ duration: 2000 }"
-              >mdi-chevron-down</v-icon
-            ></v-btn
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:10vw;margin-top:-2.4vh"
+        >
+          <v-icon href="#space-blue2" size="30" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
       </div>
@@ -135,11 +136,13 @@
         </v-img>
       </div>
       <div class="d-flex flex-row justify-left align-center">
-        <div id="animated-example" class="animated bounce">
-          <v-btn style="margin-left:20vw;" x-small fab color="transparent"
-            ><v-icon href="#space-blue4" v-smooth-scroll="{ duration: 2000 }"
-              >mdi-chevron-down</v-icon
-            ></v-btn
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:10vw;margin-top:-2.7vh"
+        >
+          <v-icon href="#space-blue4" size="30" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
       </div>

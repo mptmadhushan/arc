@@ -18,11 +18,18 @@
     <div class="container_l">
       <div class="sub-left">
         <div class="center">
-          <a href="/blueprint">
-            <v-card flat color="transparent">
-              <p class="pa-2 title">BLUEPRINT</p>
+          <p>
+            <v-card flat color="#fff" style="opacity:0.3">
+              <v-img
+                @click="hello2()"
+                height="5vh"
+                style="margin-right:-5vw"
+                width="15vw"
+                contain
+                src="../assets/logoTitle.png"
+              ></v-img>
             </v-card>
-          </a>
+          </p>
         </div>
       </div>
     </div>
@@ -228,6 +235,9 @@ export default {
     hello() {
       this.$router.push({ path: "/projects" });
     },
+    hello2() {
+      this.$router.push({ path: "/blueprint" });
+    },
   },
 };
 </script>
@@ -327,7 +337,11 @@ body {
   width: 100vw;
   opacity: 1;
   transition: 0.6s linear;
-  background-image: linear-gradient(to left, rgb(221, 30, 30), rgb(5, 81, 221));
+  background-image: linear-gradient(
+    to left,
+    rgb(238, 228, 228),
+    rgb(5, 81, 221)
+  );
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 3000ms;
 }

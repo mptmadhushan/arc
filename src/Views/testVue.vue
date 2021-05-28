@@ -22,7 +22,7 @@
                 class="text1st text-center"
                 style="margin-top:35vh;margin-bottom:10vh"
               >
-                TO THOSE THAT INSPIRE AND CREATE<br />
+                TO THOSEasd THAT INSPIRE AND CREATE<br />
                 <span class="text1s"> A MOMENT</span>
               </p>
             </div>

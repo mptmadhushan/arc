@@ -27,13 +27,14 @@
             </p>
             <div
               class="d-flex flex-row justify-left align-center"
-              style="margin-top:48vh;margin-left:20vw"
+              style="margin-top:45vh;margin-left:10vw"
             >
               <div id="animated-example" class="animated bounce">
-                <v-btn x-small fab color="transparent"
-                  ><v-icon href="#design" v-smooth-scroll="{ duration: 2000 }"
-                    >mdi-chevron-down</v-icon
-                  ></v-btn
+                <v-icon
+                  size="30"
+                  href="#design"
+                  v-smooth-scroll="{ duration: 2000 }"
+                  >mdi-chevron-down-circle-outline</v-icon
                 >
               </div>
             </div>
@@ -59,17 +60,16 @@
               </div>
             </div>
             <div class="d-flex flex-row justify-left align-center">
-              <div id="animated-example" class="animated bounce">
-                <v-btn
-                  style="margin-left:20vw;margin-top:3vh"
-                  x-small
-                  fab
-                  color="transparent"
-                  ><v-icon
-                    href="#ARCHITECTURE"
-                    v-smooth-scroll="{ duration: 2000 }"
-                    >mdi-chevron-down</v-icon
-                  ></v-btn
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="margin-left:10vw"
+              >
+                <v-icon
+                  size="30"
+                  href="#ARCHITECTURE"
+                  v-smooth-scroll="{ duration: 2000 }"
+                  >mdi-chevron-down-circle-outline</v-icon
                 >
               </div>
             </div>
@@ -103,11 +103,13 @@
                 <v-flex md5 align-self-start>
                   <p class="text001 text-right" style="margin-top:-2vh;">
                     "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT,
-                    OF FORMS ASSEMBLED IN THE LIGHT"
+                    OF FORMS ASSEMBLED IN THE LIGHT"<br />
+                    <span>
+                      <p style="margin-top:5px" class="textMini text-right">
+                        -Le Corbusier
+                      </p>
+                    </span>
                   </p>
-                  <div style="margin-top:5px" class="textMini">
-                    -Le Corbusier
-                  </div>
                 </v-flex>
               </v-layout>
             </div>
@@ -115,15 +117,16 @@
 
             <!-- <div style="height:15vh;background-color:red"></div> -->
             <div class="d-flex flex-row justify-left align-center">
-              <div id="animated-example" class="animated bounce">
-                <v-btn
-                  x-small
-                  fab
-                  color="transparent"
-                  style="margin-left:20vw;margin-top:2vh"
-                  ><v-icon href="#act" v-smooth-scroll="{ duration: 2000 }"
-                    >mdi-chevron-down</v-icon
-                  ></v-btn
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="margin-left:10vw;margin-top:-0.7vh"
+              >
+                <v-icon
+                  size="30"
+                  href="#act"
+                  v-smooth-scroll="{ duration: 2000 }"
+                  >mdi-chevron-down-circle-outline</v-icon
                 >
               </div>
             </div>
@@ -173,24 +176,21 @@
                   </v-flex>
                   <p class="text001">
                     "IT'S ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH
-                    THE CREATIVE ACT"<span class="textMini">
+                    THE CREATIVE ACT" <br /><span class="textMini">
                       -Charles Eames
                     </span>
                   </p>
                 </v-layout>
                 <div
                   class="d-flex flex-row justify-start align-start"
-                  style="margin-top:-5.2vh;margin-left:5vh"
+                  style="margin-top:-7.4vh;margin-left:10vw"
                 >
                   <div id="animated-example" class="animated bounce">
-                    <v-btn
-                      x-small
-                      fab
-                      color="transparent"
-                      style="margin-left:17vw"
-                      ><v-icon href="#act2" v-smooth-scroll="{ duration: 2000 }"
-                        >mdi-chevron-down</v-icon
-                      ></v-btn
+                    <v-icon
+                      href="#act2"
+                      size="30"
+                      v-smooth-scroll="{ duration: 2000 }"
+                      >mdi-chevron-down-circle-outline</v-icon
                     >
                   </div>
                 </div>
@@ -230,17 +230,11 @@
             </div>
             <div
               class="d-flex flex-row justify-start align-start"
-              style="margin-left:5vh"
+              style="margin-left:10vw;margin-top:-2.8vh"
             >
               <div id="animated-example" class="animated bounce">
-                <v-btn
-                  x-small
-                  fab
-                  color="transparent"
-                  style="margin-left:17.3vw;margin-top:1vh"
-                  ><v-icon href="#act-slider" v-smooth-scroll
-                    >mdi-chevron-down</v-icon
-                  ></v-btn
+                <v-icon href="#act-slider" size="30" v-smooth-scroll
+                  >mdi-chevron-down-circle-outline</v-icon
                 >
               </div>
             </div>
@@ -282,15 +276,16 @@
         </div>
       </div>
       <div class="d-flex flex-row justify-left align-center">
-        <div id="animated-example" class="animated bounce">
-          <v-btn
-            style="margin-left:20vw;margin-top:3vh"
-            x-small
-            fab
-            color="transparent"
-            ><v-icon href="#beaty-blue" v-smooth-scroll="{ duration: 2000 }"
-              >mdi-chevron-down</v-icon
-            ></v-btn
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:10vw;margin-top:0vh"
+        >
+          <v-icon
+            href="#beaty-blue"
+            size="30"
+            v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
       </div>
@@ -322,15 +317,16 @@
         </div>
       </div>
       <div class="d-flex flex-row justify-left align-center">
-        <div id="animated-example" class="animated bounce">
-          <v-btn
-            style="margin-left:20vw;margin-top:2vh"
-            x-small
-            fab
-            color="transparent"
-            ><v-icon href="#space-blue" v-smooth-scroll="{ duration: 2000 }"
-              >mdi-chevron-down</v-icon
-            ></v-btn
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:10vw;margin-top:0.5vh"
+        >
+          <v-icon
+            size="30"
+            href="#space-blue"
+            v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
       </div>
@@ -671,7 +667,7 @@ span {
 .textMini {
   text-align: center;
   font-size: 1.5vh;
-  padding-right: 10%;
+  /* padding-right: 10%; */
   margin-top: -5%;
   font-weight: bold;
   font-family: "Spectral", serif;

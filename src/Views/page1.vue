@@ -5,16 +5,14 @@
       @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
       @step-exit="({ element }) => (currStep = null)"
     >
+      <div style="height:10vh;width100vw"></div>
       <div class="hello" :data-step-no="1" :class="{ active: 1 == currStep }">
-        <div
-          style="min-width:100vw"
-          v-if="loaded"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-easing="linear"
-        >
-          <div class="fadeClass">
-            <!-- <div style="width:99vw;height:10vh;padding:10px"></div> -->
+        <div style="min-width:100vw" v-if="loaded">
+          <div
+            class="fadeClass"
+            :data-step-no="1"
+            :class="{ active: 1 == currStep }"
+          >
             <v-layout
               row
               wrap
@@ -37,11 +35,6 @@
                     src="../assets/1.png"
                     class="zoomImage"
                   >
-                    <!-- <div
-                      class="ab1"
-                      :data-step-no="1"
-                      :class="{ active: 1 == currStep }"
-                    ></div> -->
                   </v-img>
                 </div>
               </v-flex>
@@ -80,14 +73,7 @@
           </div>
           <div style="width:99vw;height:20vh;padding:10px"></div>
         </div>
-        <div
-          v-else
-          style="min-width:100vw"
-          class="fadeClass"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-easing="linear"
-        >
+        <div v-else style="min-width:100vw" class="fadeClass">
           <div class="about_us_bg">
             <v-layout
               row
@@ -192,7 +178,14 @@ export default {
   height: auto;
   transform: scale(1.1);
 }
-
+.fadeClass {
+  opacity: 0.5;
+  transition: all 15s linear;
+}
+.fadeClass.active {
+  opacity: 1;
+  transition: all 2s linear;
+}
 .fadeClass:hover .img {
   transform: scale(1);
   transition: all 3s;
