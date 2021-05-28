@@ -137,7 +137,7 @@
     >
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
-      <p class="newText2">
+      <p class="text002">
         "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
         <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
@@ -154,7 +154,7 @@
     >
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
-      <p class="newText2 text-center mt-5">
+      <p class="text002 text-center mt-5">
         "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
         <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
