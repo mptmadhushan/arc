@@ -19,14 +19,14 @@
       <div class="sub-left">
         <div class="center">
           <p>
-            <v-card flat color="#fff" style="opacity:0.3">
+            <v-card flat color="transparent" style="opacity:0.3">
               <v-img
                 @click="hello2()"
-                height="5vh"
+                height="15vh"
                 style="margin-right:-5vw"
                 width="15vw"
                 contain
-                src="../assets/logoTitle.png"
+                src="../assets/white-logo.png"
               ></v-img>
             </v-card>
           </p>
