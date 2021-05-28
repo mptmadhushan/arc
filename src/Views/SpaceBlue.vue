@@ -115,7 +115,10 @@
           class="animated bounce"
           style="margin-left:10vw;margin-top:-2.4vh"
         >
-          <v-icon href="#space-blue2" size="30" v-smooth-scroll="{ duration: 2000 }"
+          <v-icon
+            href="#space-blue2"
+            size="30"
+            v-smooth-scroll="{ duration: 2000 }"
             >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
@@ -139,9 +142,12 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:10vw;margin-top:-2.7vh"
+          style="margin-left:10vw;margin-top:-2.vh"
         >
-          <v-icon href="#space-blue4" size="30" v-smooth-scroll="{ duration: 2000 }"
+          <v-icon
+            href="#space-blue4"
+            size="30"
+            v-smooth-scroll="{ duration: 2000 }"
             >mdi-chevron-down-circle-outline</v-icon
           >
         </div>

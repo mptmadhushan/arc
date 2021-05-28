@@ -199,38 +199,41 @@
           </div>
           <div
             id="act2"
-            style="height:100vh;margin-top:10vh"
+            style="margin-top:10vh"
             class="twelve"
             :data-step-no="5"
             :class="{ active: 5 == currStep }"
           >
             <div class="fadeClass">
-              <div>
-                <v-layout row wrap>
-                  <v-flex md9 ml-12>
-                    <v-img eager contain src="../../assets/blueprint/1.png">
-                      <div
-                        class="twelve"
-                        :data-step-no="5"
-                        :class="{ active: 5 == currStep }"
-                      ></div>
-                    </v-img>
-                  </v-flex>
-                  <v-flex md9 style="margin-top:-6vh" ml-12>
-                    <p class="textMini2 text-left">
-                      Charles and Ray Eames
-                      <br />
-                      Lounge chair by Herman Miller
-                      <br />
-                      1956
-                    </p>
-                  </v-flex>
-                </v-layout>
+              <div class="d-flex flex-column mb-6">
+                <div>
+                  <v-img
+                    eager
+                    height="90vh"
+                    contain
+                    src="../../assets/blueprint/1.png"
+                  >
+                    <div
+                      class="twelve"
+                      :data-step-no="5"
+                      :class="{ active: 5 == currStep }"
+                    ></div>
+                  </v-img>
+                </div>
+                <div>
+                  <p class="textMini2 text-center">
+                    Charles and Ray Eames
+                    <br />
+                    Lounge chair by Herman Miller
+                    <br />
+                    1956
+                  </p>
+                </div>
               </div>
             </div>
             <div
               class="d-flex flex-row justify-start align-start"
-              style="margin-left:10vw;margin-top:-2.8vh"
+              style="margin-left:10vw;margin-top:-8vh"
             >
               <div id="animated-example" class="animated bounce">
                 <v-icon href="#act-slider" size="30" v-smooth-scroll

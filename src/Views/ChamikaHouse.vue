@@ -1,177 +1,166 @@
 <template>
   <v-container fluid>
-    <div ref="scrollSections" class="hello">
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="3">
-          <div class="d-flex justify-space-between" style="margin-top:-2vh">
-            <router-link to="/projects">
-              <img
-                style="opacity: 0.5;margin-inline:20px"
-                height="20vh"
-                src="../assets/backArrow.png"
-              />
-            </router-link>
-            <!-- <ShapesPop /> -->
+    <div class="d-flex justify-space-between" style="margin-top:1vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <!-- <ShapesPop /> -->
+    </div>
+    <div class="text-center">
+      <v-layout row wrap justify-center>
+        <v-flex
+          md12
+          align-self-center
+          data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-delay="100"
+          data-aos-duration="1500"
+        >
+          <div
+            class="b1con"
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-delay="100"
+            data-aos-duration="2000"
+          >
+            <div class="b1"></div>
           </div>
-          <div class="text-center">
-            <v-layout row wrap justify-center>
-              <v-flex
-                md12
-                align-self-center
-                data-aos="zoom-in-up"
-                data-aos-easing="linear"
-                data-aos-delay="100"
-                data-aos-duration="1500"
-              >
-                <div
-                  class="b1con"
-                  data-aos="zoom-out"
-                  data-aos-easing="linear"
-                  data-aos-delay="100"
-                  data-aos-duration="2000"
-                >
-                  <div class="b1"></div>
-                </div>
-              </v-flex>
-              <div>
-                <p class="text002 text-center">
-                  Architecture should speak of its time and place but yearn for
-                  timelessness
-                  <br />
-                  <span class="text009 text-center">Frank Gehry</span>
-                </p>
-              </div>
-            </v-layout>
-          </div>
+        </v-flex>
+        <div>
+          <p class="text002 text-center">
+            Architecture should speak of its time and place but yearn for
+            timelessness
+            <br />
+            <span class="text009 text-center">Frank Gehry</span>
+          </p>
         </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="3">
-          <div class="text-center">
-            <v-layout row wrap justify-center>
-              <v-flex md12 align-self-center>
-                <v-img
-                  eager
-                  contain
-                  height="90vh"
-                  src="../assets/chamika_house/_SDS3575.jpg"
-                ></v-img>
-              </v-flex>
-            </v-layout>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="3">
-          <div>
-            <v-layout row wrap>
-              <v-flex md10 pl-4>
-                <v-img
-                  eager
-                  contain
-                  src="../assets/chamika_house/_SDS3429.jpg"
-                ></v-img>
-              </v-flex>
-              <v-flex md2 align-self-center>
-                <p class="text002 text-right">
-                  God is in the details
-                  <br />
-                  <span class="text009 text-right"> Mies Van Der Rohe</span>
-                </p>
-              </v-flex>
-            </v-layout>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="3">
-          <div>
-            <v-img
-              eager
-              height="90vh"
-              contain
-              src="../assets/chamika_house/_SDS3650-HDR.jpg"
-            ></v-img>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="3">
-          <div v-if="isMobile()">
-            <v-img
-              eager
-              contain
-              src="../assets/chamika_house/_SDS3393b.jpg"
-            ></v-img>
-          </div>
-          <div v-else>
-            <v-layout row wrap justify-center>
-              <v-flex md3 align-self-center>
-                <p class="text002 text-left">
-                  Simplicity is the ultimate sophisticattion<br />
-                  <span class="text009 text-left">Leonardo Da Vinci</span>
-                </p>
-              </v-flex>
+      </v-layout>
+    </div>
+    <div style="width:99vw;height:27vh;padding:10px"></div>
 
-              <v-flex md6>
-                <v-img
-                  eager
-                  contain
-                  height="90vh"
-                  src="../assets/chamika_house/_SDS3393b.jpg"
-                ></v-img>
-              </v-flex>
-            </v-layout>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="3">
-          <div v-if="isMobile()" style="height: 100vh;">
-            <div style="width:99vw;height:25vh;margin:10vh"></div>
+    <div class="text-center" style="margin-top: 10vh;">
+      <v-layout row wrap justify-center>
+        <v-flex
+          md12
+          align-self-center
+          data-aos-easing="linear"
+          data-aos-delay="100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <v-img
+            eager
+            contain
+            height="90vh"
+            src="../assets/chamika_house/_SDS3575.jpg"
+          ></v-img>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div style="width:99vw;height:36vh;padding:10px"></div>
 
-            <v-img
-              eager
-              contain
-              src="../assets/chamika_house/_SDS2989.jpg"
-            ></v-img>
-          </div>
-          <div v-else style="padding:5vh">
-            <v-img
-              eager
-              contain
-              height="90vh"
-              src="../assets/chamika_house/_SDS2989.jpg"
-            ></v-img>
-          </div>
-        </div>
-      </section>
+    <div>
+      <v-layout row wrap>
+        <v-flex md10 pl-4>
+          <v-img
+            eager
+            contain
+            src="../assets/chamika_house/_SDS3429.jpg"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+          ></v-img>
+        </v-flex>
+        <v-flex md2 align-self-center>
+          <p class="text002 text-right">
+            God is in the details
+            <br />
+            <span class="text009 text-right"> Mies Van Der Rohe</span>
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div style="width:99vw;height:35vh;padding:10px"></div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <v-img
+        eager
+        height="90vh"
+        contain
+        src="../assets/chamika_house/_SDS3650-HDR.jpg"
+      ></v-img>
+    </div>
+
+    <div v-if="isMobile()">
+      <v-img eager contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <div style="width:99vw;height:35vh;padding:10px"></div>
+      <v-layout row wrap justify-center>
+        <v-flex md3 align-self-center>
+          <p class="text002 text-left">
+            Simplicity is the ultimate sophisticattion<br />
+            <span class="text009 text-left">Leonardo Da Vinci</span>
+          </p>
+        </v-flex>
+
+        <v-flex md6>
+          <v-img
+            eager
+            contain
+            height="90vh"
+            src="../assets/chamika_house/_SDS3393b.jpg"
+          ></v-img>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-if="isMobile()" style="height: 100vh;">
+      <div style="width:99vw;height:25vh;margin:10vh"></div>
+
+      <v-img eager contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
+    </div>
+    <div
+      v-else
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+      style="padding:5vh"
+    >
+      <div style="width:99vw;height:10vh;margin:10vh"></div>
+
+      <v-img
+        eager
+        contain
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+        height="90vh"
+        src="../assets/chamika_house/_SDS2989.jpg"
+      ></v-img>
     </div>
   </v-container>
 </template>
 
 <script>
-import locomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.min.css";
-
 export default {
-  mounted() {
-    const _self = this;
-    this.$nextTick(function() {
-      _self.initLocoScroll();
-    });
-  },
-  methods: {
-    initLocoScroll() {
-      const _self = this;
-      this.scroll = new locomotiveScroll({
-        el: _self.$refs["scrollSections"],
-        smooth: true,
-        smoothMobile: true,
-        getDirection: true,
-      });
-    },
-  },
   data: () => ({
     slides: [
       {

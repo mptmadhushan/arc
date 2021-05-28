@@ -541,7 +541,6 @@
 
 <script>
 import { VueFlux, FluxPreloader } from "vue-flux";
-
 export default {
   components: {
     VueFlux,
@@ -597,7 +596,6 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-
 .text007 {
   text-align: left;
   font-weight: bold;
@@ -633,11 +631,10 @@ export default {
     transform: translateY(-100%);
   }
 }
-.newText2 text-center {
+.newText2 {
   text-align: center;
   padding: 10px;
   font-size: 2vh;
-  font-weight: bold;
   color: #11111193;
 }
 .newText2 text-center {

@@ -24,177 +24,273 @@
         </v-card>
       </v-dialog>
     </div>
-    <div ref="scrollSections">
-      <section data-scroll-section>
-        <div class="d-flex justify-space-between" style="margin-top:1vh">
-          <router-link to="/projects">
-            <img
-              style="opacity: 0.5;margin-inline:20px"
-              height="20vh"
-              src="../assets/backArrow.png"
-            />
-          </router-link>
-          <!-- <ShapesPop /> -->
-        </div>
-        <div>
-          <div class="b1con" data-aos="zoom-out">
-            <div class="b1"></div>
-          </div>
-
-          <p class="text002 text-center">
-            Shades and Shadow
-          </p>
-        </div>
-      </section>
-      <div style="width:99vw;height:22vh;padding:10px"></div>
-      <section data-scroll-section data-scroll-speed="2">
-        <div class="text-center" style="height: 100vh">
-          <v-layout row wrap justify-center pt-md-12>
-            <v-flex md4 align-self-center>
-              <p class="text002">
-                <span class="text005">The Trellis</span><br />Brutalist harmony
-                in Contemporary lines
-              </p>
-            </v-flex>
-            <v-flex md7 justify-center>
-              <v-img
-                eager
-                height="80vh"
-                src="../assets/Chitra_Lane/_SDS3762-HDR.JPG.jpg"
-              ></v-img>
-            </v-flex>
-          </v-layout>
-        </div>
-      </section>
-      <div style="width:99vw;height:10vh;padding:10px"></div>
-      <section data-scroll-section data-scroll-speed="2">
-        <v-layout row justify-center v-if="!isMobile()" wrap>
-          <v-flex md12 align-self-center>
-            <div>
-              <v-img
-                eager
-                height="90vh"
-                contain
-                src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
-              ></v-img>
-            </div>
-          </v-flex>
-        </v-layout>
-
-        <v-layout v-else row wrap>
-          <v-flex md12 align-self-center>
-            <div>
-              <v-img
-                height="100%"
-                contain
-                eager
-                src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
-              ></v-img>
-            </div>
-          </v-flex>
-        </v-layout>
-      </section>
-      <div style="width:99vw;height:22vh;padding:10px"></div>
-      <section data-scroll-section data-scroll-speed="2">
-        <div class="text-center">
-          <v-layout row wrap justify-center>
-            <v-flex md4 xs12 sm12 align-self-center justify-end>
-              <p class="text003">
-                Narrowness
-              </p>
-            </v-flex>
-            <v-flex md7 xs12 sm12 justify-start>
-              <v-img
-                eager
-                contain
-                height="90vh"
-                src="../assets/Chitra_Lane/_SDS3689.JPG.jpg"
-              ></v-img>
-            </v-flex>
-          </v-layout>
-        </div>
-      </section>
-      <div style="width:99vw;height:22vh;padding:10px"></div>
-      <section data-scroll-section data-scroll-speed="2">
-        <div style="padding-top:10vh">
-          <div>
-            <div>
-              <carousel-3d
-                :width="900"
-                :height="600"
-                :inverse-scaling="200"
-                :space="1180"
-                :perspective="0"
-                :autoplay="false"
-                :autoplay-timeout="3000"
-                :display="3"
-              >
-                <slide :index="0">
-                  <figure>
-                    <v-img
-                      eager
-                      contain
-                      src="../assets/Chitra_Lane/_SDS3699-HDR.JPG.jpg"
-                    />
-                  </figure> </slide
-                ><slide :index="1">
-                  <figure>
-                    <v-img
-                      eager
-                      contain
-                      src="../assets/Chitra_Lane/_SDS3725-HDR.JPG.jpg"
-                    />
-                  </figure> </slide
-                ><slide :index="2">
-                  <figure>
-                    <v-img
-                      eager
-                      contain
-                      src="../assets/Chitra_Lane/_SDS3741-HDR.JPG.jpg"
-                    />
-                  </figure>
-                </slide>
-              </carousel-3d>
-              <div style="margin-inline: 20%">
-                <p class="text002 text-center">
-                  Light and space. A pleasing neutrality
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="d-flex justify-space-between" style="margin-top:1vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <!-- <ShapesPop /> -->
     </div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <div
+        class="b1con"
+        data-aos="zoom-out"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos-duration="2000"
+      >
+        <div class="b1"></div>
+      </div>
+
+      <p class="text002 text-center">
+        Shades and Shadow
+      </p>
+    </div>
+
+    <div style="width:99vw;height:22vh;padding:10px"></div>
+    <div
+      class="text-center"
+      style="height: 100vh"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <v-layout row wrap justify-center pt-md-12>
+        <v-flex md4 align-self-center>
+          <p class="text002">
+            <span class="text005">The Trellis</span><br />Brutalist harmony in
+            Contemporary lines
+          </p>
+        </v-flex>
+        <v-flex md7 justify-center>
+          <v-img
+            eager
+            height="80vh"
+            src="../assets/Chitra_Lane/_SDS3762-HDR.JPG.jpg"
+          ></v-img>
+        </v-flex>
+      </v-layout>
+    </div>
+
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <v-layout row justify-center v-if="!isMobile()" wrap>
+      <v-flex
+        md12
+        align-self-center
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+      >
+        <div>
+          <v-img
+            eager
+            height="90vh"
+            contain
+            src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
+          ></v-img>
+        </div>
+      </v-flex>
+    </v-layout>
+
+    <v-layout v-else row wrap>
+      <div style="width:99vw;height:10vh;padding:10px"></div>
+
+      <v-flex
+        md12
+        align-self-center
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+      >
+        <div>
+          <v-img
+            height="100%"
+            contain
+            eager
+            src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
+          ></v-img>
+        </div>
+      </v-flex>
+    </v-layout>
+
+    <div style="width:99vw;height:30vh;padding:10px"></div>
+
+    <div class="text-center">
+      <v-layout
+        row
+        wrap
+        justify-center
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+      >
+        <v-flex md4 xs12 sm12 align-self-center justify-end>
+          <p class="text003">
+            Narrowness
+          </p>
+        </v-flex>
+        <v-flex md7 xs12 sm12 justify-start>
+          <v-img
+            eager
+            contain
+            height="90vh"
+            src="../assets/Chitra_Lane/_SDS3689.JPG.jpg"
+          ></v-img>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      style="padding-top:10vh"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <div>
+        <div>
+          <carousel-3d
+            :width="900"
+            :height="600"
+            :inverse-scaling="200"
+            :space="1180"
+            :perspective="0"
+            :autoplay="false"
+            :autoplay-timeout="3000"
+            :display="3"
+          >
+            <slide :index="0">
+              <figure>
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Chitra_Lane/_SDS3699-HDR.JPG.jpg"
+                />
+              </figure> </slide
+            ><slide :index="1">
+              <figure>
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Chitra_Lane/_SDS3725-HDR.JPG.jpg"
+                />
+              </figure> </slide
+            ><slide :index="2">
+              <figure>
+                <v-img
+                  eager
+                  contain
+                  src="../assets/Chitra_Lane/_SDS3741-HDR.JPG.jpg"
+                />
+              </figure>
+            </slide>
+          </carousel-3d>
+          <div style="margin-inline: 20%">
+            <p class="text002 text-center">
+              Light and space. A pleasing neutrality
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <div v-if="isMobile()">
+        <v-img
+          contain
+          eager
+          src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
+        ></v-img>
+      </div>
+      <div v-else>
+        <v-img
+          contain
+          eager
+          height="90vh"
+          src="../assets/Chitra_Lane/_SDS3747-HDR.JPG.jpg"
+        ></v-img>
+      </div>
+    </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      v-if="!isMobile()"
+      style="padding:5vh"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <v-img
+        contain
+        eager
+        height="90vh"
+        src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      style="padding:1vh"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="1500"
+    >
+      <v-img
+        eager
+        contain
+        height="95vh"
+        src="../assets/Chitra_Lane/_SDS3692.JPG.jpg"
+      ></v-img>
+    </div>
+    <v-btn
+      v-show="fab"
+      fab
+      dark
+      fixed
+      bottom
+      right
+      color="primary"
+      @click="toTop"
+    >
+      <v-icon>keyboard_arrow_up</v-icon>
+    </v-btn>
   </v-container>
 </template>
 
 <script>
-import locomotiveScroll from "locomotive-scroll";
-
 export default {
   components: {},
   mounted() {
     // eslint-disable-next-line no-extra-boolean-cast
     if (Boolean(this.dialog)) this.showToggle();
-    const _self = this;
-    this.$nextTick(function() {
-      _self.initLocoScroll();
-    });
   },
   methods: {
     showToggle() {
       setTimeout(() => {
         this.dialog = false;
       }, 700);
-    },
-    initLocoScroll() {
-      const _self = this;
-      this.scroll = new locomotiveScroll({
-        el: _self.$refs["scrollSections"],
-        smooth: true,
-        smoothMobile: true,
-        getDirection: true,
-      });
     },
   },
   data: () => ({
@@ -220,7 +316,6 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-
 .text005 {
   text-align: left;
   font-weight: bold;
@@ -237,7 +332,6 @@ ul {
 p:hover ~ ul {
   transform: scaleY(1);
 }
-
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Chitra_Lane/_SDS3756.JPG.jpg");
@@ -284,7 +378,6 @@ p:hover ~ ul {
 .box2 {
   margin-top: 100px;
   width: 100vw;
-
   /* height: 900px; */
   position: absolute;
   top: 0;
@@ -362,3 +455,4 @@ p:hover ~ ul {
   text-align: center;
 }
 </style>
+s

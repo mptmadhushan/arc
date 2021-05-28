@@ -73,7 +73,13 @@
           </div>
           <div style="width:99vw;height:20vh;padding:10px"></div>
         </div>
-        <div v-else style="min-width:100vw" class="fadeClass">
+        <div
+          v-else
+          style="min-width:100vw"
+          class="fadeClass"
+          :data-step-no="1"
+          :class="{ active: 1 == currStep }"
+        >
           <div class="about_us_bg">
             <v-layout
               row
@@ -97,7 +103,6 @@
                     src="../assets/1.png"
                     class="zoomImage"
                   >
-                    <div class="ab1"></div>
                   </v-img>
                 </div>
               </v-flex>
@@ -109,7 +114,6 @@
                     src="../assets/2.png"
                     class="zoomImage"
                   >
-                    <div class="b2"></div>
                   </v-img>
                 </div>
               </v-flex>

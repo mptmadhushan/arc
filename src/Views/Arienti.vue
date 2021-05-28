@@ -2,6 +2,7 @@
   <div>
     <div
       data-aos-delay="100"
+      data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="1500"
       class="d-flex justify-space-between"
@@ -25,22 +26,13 @@
         Formerly in disrepair, unearthing hidden potential in what would be a
         City landmark
       </p>
-      <div
-        class="d-flex flex-column mb-6"
-        style="margin-top:-3vh;margin-left:10vw"
-      >
-        <div>
-          <v-icon size="30" href="#1" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-down-circle-outline</v-icon
-          >
-        </div>
-      </div>
     </div>
 
     <div style="width:99vw;height:15vh;padding:10px"></div>
 
     <div id="1">
       <div
+        data-aos="fade-up"
         data-aos-delay="100"
         data-aos-easing="linear"
         data-aos-duration="1500"
@@ -58,27 +50,13 @@
           beyond, now housing one of Colombo's premier fashion brands.
         </p>
       </div>
-      <div
-        class="d-flex flex-column mb-6"
-        style="margin-top:-10vh;margin-left:10vw"
-      >
-        <div>
-          <v-icon size="30" href="#0" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-up-circle-outline</v-icon
-          >
-        </div>
-        <div>
-          <v-icon size="30" href="#2" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-down-circle-outline</v-icon
-          >
-        </div>
-      </div>
     </div>
 
     <div style="width:99vw;height:15vh;padding:10px"></div>
 
     <div
       id="2"
+      data-aos="fade-up"
       data-aos-delay="100"
       data-aos-easing="linear"
       data-aos-duration="1500"
@@ -129,27 +107,13 @@
           elevate the shopping experience
         </div>
       </div>
-      <div
-        class="d-flex flex-column mb-6"
-        style="margin-top:-10vh;margin-left:10vw"
-      >
-        <div>
-          <v-icon size="30" href="#1" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-up-circle-outline</v-icon
-          >
-        </div>
-        <div>
-          <v-icon size="30" href="#3" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-down-circle-outline</v-icon
-          >
-        </div>
-      </div>
     </div>
 
     <div style="width:99vw;height:15vh;padding:10px"></div>
 
     <div
       id="3"
+      data-aos="fade-up"
       data-aos-delay="100"
       data-aos-easing="linear"
       data-aos-duration="1500"
@@ -169,16 +133,6 @@
         <p class="text001">
           Balancing reflections and artificial light.
         </p>
-      </div>
-      <div
-        class="d-flex flex-column mb-6"
-        style="margin-top:-10vh;margin-left:10vw"
-      >
-        <div>
-          <v-icon size="30" href="#2" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-up-circle-outline</v-icon
-          >
-        </div>
       </div>
     </div>
   </div>

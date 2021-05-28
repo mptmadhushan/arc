@@ -1,282 +1,349 @@
 <template>
   <v-container fluid>
-    <div ref="scrollSections">
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div class="d-flex justify-space-between" style="margin-top:-6vh">
-            <router-link to="/projects">
-              <img
-                style="opacity: 0.5;margin-inline:20px"
-                height="20vh"
-                src="../assets/backArrow.png"
+    <div class="d-flex justify-space-between" style="margin-top:1vh">
+      <router-link to="/projects">
+        <img
+          style="opacity: 0.5;margin-inline:20px"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <!-- <ShapesPop /> -->
+    </div>
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+    >
+      <div
+        class="b1con"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+      >
+        <div class="b1"></div>
+      </div>
+    </div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
+    <div>
+      <v-img
+        eager
+        height="85vh"
+        style="margin-top:6vh"
+        contain
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
+      ></v-img>
+      <p class="text002 text-center">
+        Intimacy and indulgence
+      </p>
+    </div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
+    <div v-if="isMobile()" class="text-center">
+      <v-layout row wrap justify-center pt-md-12 style="height:70vh">
+        <v-flex md7 xs12 sm12 align-self-center>
+          <v-img eager src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
+          <p class="text002">
+            A play on Sri Lankan traditional art through a tapestry by Ena De
+            Silva (A Tree Of Life)
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+
+    <div v-else class="text-center">
+      <v-layout row wrap justify-center pt-md-12>
+        <v-flex
+          md4
+          pa-4
+          align-self-center
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="linear"
+          data-aos-delay="100"
+        >
+          <p class="text002 text-center">
+            A play on Sri Lankan traditional art through<br />
+            a tapestry by Ena De Silva (A Tree Of Life)
+          </p>
+        </v-flex>
+        <v-flex
+          md8
+          pa-4
+          align-self-center
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-delay="100"
+          data-aos-duration="2000"
+        >
+          <v-img
+            eager
+            contain
+            src="../assets/Bolgoda/_SDS1459.JPG.jpeg"
+          ></v-img>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div style="width:99vw;height:35vh;padding:10px"></div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2500"
+    >
+      <v-img
+        eager
+        contain
+        height="85vh"
+        src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
+      ></v-img>
+      <p class="text002 text-center">
+        <span class="text005">Harmonious Coexistence</span> <br />
+        The interplay of Sri Lankan pop art and indo-Portuguese furniture.
+      </p>
+    </div>
+    <div style="width:99vw;height:23vh;padding:10px"></div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos-duration="2000"
+    >
+      <v-img
+        eager
+        contain
+        style="margin-top:8vh"
+        height="90vh"
+        src="../assets/Bolgoda/_SDS1292.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div style="width:99vw;height:20vh;padding:10px"></div>
+
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+      style="height:100vh"
+    >
+      <vue-flux :options="options" :images="images" :transitions="transitions">
+      </vue-flux>
+      <p class="newText2">
+        "We wanted the art to speak for the house. To create an environment
+        where that harmony could be understood throughout the home."
+        <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
+        composition of inside - out.
+      </p>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      style="padding:15vw;"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+    >
+      <vue-flux :options="options" :images="images" :transitions="transitions">
+      </vue-flux>
+      <p class="newText2 text-center mt-5">
+        "We wanted the art to speak for the house. To create an environment
+        where that harmony could be understood throughout the home."
+        <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the
+        composition of inside - out.
+      </p>
+    </div>
+    <div style="width:99vw;height:18vh;padding:10px"></div>
+
+    <div v-if="isMobile()" style="margin-top: 10vh">
+      <v-img
+        eager
+        height="80vh"
+        src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+    >
+      <v-img
+        eager
+        height="90vh"
+        contain
+        src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div style="width:99vw;height:40vh;padding:10px"></div>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2500"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+    >
+      <!-- <v-layout row wrap>
+        <v-flex md12 align-self-center> -->
+      <div>
+        <carousel-3d
+          :width="899"
+          :height="600"
+          :inverse-scaling="200"
+          :space="1100"
+          :perspective="0"
+          :autoplay="false"
+          :autoplay-timeout="3000"
+          :display="3"
+        >
+          <slide :index="1">
+            <figure>
+              <v-img
+                eager
+                contain
+                src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg"
               />
-            </router-link>
-            <!-- <ShapesPop /> -->
-          </div>
-          <div>
-            <div class="b1con" data-aos="zoom-out">
-              <div class="b1"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div>
-            <v-img
-              eager
-              height="90vh"
-              style="margin-top:6vh"
-              contain
-              src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
-            ></v-img>
-            <p class="text002 text-center">
-              Intimacy and indulgence
-            </p>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div v-if="isMobile()" class="text-center">
-            <v-layout row wrap justify-center pt-md-12 style="height:70vh">
-              <v-flex md7 xs12 sm12 align-self-center>
-                <v-img eager src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
-                <p class="text002">
-                  A play on Sri Lankan traditional art through a tapestry by Ena
-                  De Silva (A Tree Of Life)
-                </p>
-              </v-flex>
-            </v-layout>
-          </div>
+            </figure> </slide
+          ><slide :index="0">
+            <figure>
+              <v-img eager contain src="../assets/Bolgoda/bath2.png" />
+            </figure> </slide
+          ><slide :index="2">
+            <figure>
+              <v-img eager contain src="../assets/Bolgoda/_SDS1434.JPG.jpeg" />
+            </figure>
+          </slide>
+        </carousel-3d>
+      </div>
+      <!-- </v-flex> -->
+      <!-- <v-flex md3 md8 align-self-center>
+          <v-img eager contain src="../assets/Bolgoda/_SDS1239-HDR.JPG.jpeg" />
+        </v-flex> -->
+      <!-- </v-layout> -->
+    </div>
 
-          <div v-else class="text-center">
-            <v-layout row wrap justify-center pt-md-12>
-              <v-flex md4 pa-4 align-self-center>
-                <p class="text002 text-center">
-                  A play on Sri Lankan traditional art through<br />
-                  a tapestry by Ena De Silva (A Tree Of Life)
-                </p>
-              </v-flex>
-              <v-flex md8 pa-4 align-self-center>
-                <v-img
-                  eager
-                  contain
-                  src="../assets/Bolgoda/_SDS1459.JPG.jpeg"
-                ></v-img>
-              </v-flex>
-            </v-layout>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div>
-            <v-img
-              eager
-              contain
-              height="87vh"
-              src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
-            ></v-img>
-            <p class="text002 text-center">
-              <span class="text005">Harmonious Coexistence</span> <br />
-              The interplay of Sri Lankan pop art and indo-Portuguese furniture.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div>
-            <v-img
-              eager
-              contain
-              style="margin-top:8vh"
-              height="90vh"
-              src="../assets/Bolgoda/_SDS1292.JPG.jpeg"
-            ></v-img>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div v-if="isMobile()" style="height:100vh">
-            <vue-flux
-              :options="options"
-              :images="images"
-              :transitions="transitions"
-            >
-            </vue-flux>
-            <p class="newText2">
-              "We wanted the art to speak for the house. To create an
-              environment where that harmony could be understood throughout the
-              home."
-              <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending
-              the composition of inside - out.
-            </p>
-          </div>
-          <div v-else style="padding:15vw;">
-            <vue-flux
-              :options="options"
-              :images="images"
-              :transitions="transitions"
-            >
-            </vue-flux>
-            <p class="newText2 text-center mt-5">
-              "We wanted the art to speak for the house. To create an
-              environment where that harmony could be understood throughout the
-              home."
-              <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending
-              the composition of inside - out.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div v-if="isMobile()" style="margin-top: 10vh">
-            <v-img
-              eager
-              height="80vh"
-              src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
-            ></v-img>
-          </div>
-          <div v-else>
-            <v-img
-              eager
-              height="90vh"
-              contain
-              src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
-            ></v-img>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div>
-            <div>
-              <carousel-3d
-                :width="899"
-                :height="600"
-                :inverse-scaling="200"
-                :space="1100"
-                :perspective="0"
-                :autoplay="false"
-                :autoplay-timeout="3000"
-                :display="3"
-              >
-                <slide :index="1">
-                  <figure>
-                    <v-img
-                      eager
-                      contain
-                      src="../assets/Bolgoda/_SDS1344-HDR.JPG.jpeg"
-                    />
-                  </figure> </slide
-                ><slide :index="0">
-                  <figure>
-                    <v-img eager contain src="../assets/Bolgoda/bath2.png" />
-                  </figure> </slide
-                ><slide :index="2">
-                  <figure>
-                    <v-img
-                      eager
-                      contain
-                      src="../assets/Bolgoda/_SDS1434.JPG.jpeg"
-                    />
-                  </figure>
-                </slide>
-              </carousel-3d>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section data-scroll-section>
-        <div data-scroll data-scroll-speed="2">
-          <div>
-            <v-img
-              eager
-              style="margin-top:6vh"
-              height="85vh"
-              contain
-              src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
-            ></v-img>
-            <p class="text002 text-center">
-              A contemporary twist to a timeless view.
-            </p>
-          </div>
-          <div style="width:99vw;height:25vh;padding:10px"></div>
+    <div style="width:99vw;height:35vh;padding:10px"></div>
 
-          <div
-            v-if="isMobile()"
-            class="text-center"
-            style="margin-left: 5vw;margin-right: 5vw;margin-top:10vh"
-          >
-            <v-layout row wrap justify-space-around>
-              <v-flex md7 xs12 sm12 align-self-center>
-                <v-img
-                  eager
-                  height="100%"
-                  contain
-                  src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
-                ></v-img>
-                <p class="text002 text-center">
-                  Old woo to accentuate the seamless interaction of indoors and
-                  outdoors. A space that can function independently from the
-                  pool and lake beyond
-                </p>
-              </v-flex>
-            </v-layout>
-          </div>
-          <div v-else class="text-center">
-            <v-layout row wrap justify-center style="margin-top:5vh">
-              <v-flex md8 xs12 pa-4 align-self-center>
-                <v-img
-                  eager
-                  contain
-                  src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
-                ></v-img>
-              </v-flex>
-              <v-flex md4 pa-4 align-self-center>
-                <p class="text002 text-center">
-                  <span class="text005"> Monastic Calm </span><br />
-                  Blurring the boundaries between<br />
-                  inside and outside
-                </p>
-              </v-flex>
-            </v-layout>
-          </div>
-        </div>
-        <div data-scroll data-scroll-speed="2">
-          <div v-if="isMobile()">
-            <v-img
-              eager
-              height="100vh"
-              contain
-              src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
-            ></v-img>
-          </div>
-          <div v-else>
-            <v-img
-              eager
-              height="90vh"
-              contain
-              style="margin-left: 5vw;margin-right: 5vw"
-              src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
-            ></v-img>
-          </div>
-        </div>
-      </section>
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos-duration="2400"
+    >
+      <v-img
+        eager
+        style="margin-top:6vh"
+        height="85vh"
+        contain
+        src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
+      ></v-img>
+      <p class="text002 text-center">
+        A contemporary twist to a timeless view.
+      </p>
+    </div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
+
+    <div
+      v-if="isMobile()"
+      class="text-center"
+      style="margin-left: 5vw;margin-right: 5vw;margin-top:10vh"
+    >
+      <v-layout row wrap justify-space-around>
+        <v-flex md7 xs12 sm12 align-self-center>
+          <v-img
+            eager
+            height="100%"
+            contain
+            src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
+          ></v-img>
+          <p class="text002 text-center">
+            Old woo to accentuate the seamless interaction of indoors and
+            outdoors. A space that can function independently from the pool and
+            lake beyond
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-else class="text-center">
+      <v-layout row wrap justify-center style="margin-top:5vh">
+        <v-flex
+          md8
+          xs12
+          pa-4
+          align-self-center
+          data-aos-easing="linear"
+          data-aos-delay="100"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <v-img
+            eager
+            contain
+            src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
+          ></v-img>
+        </v-flex>
+        <v-flex
+          md4
+          pa-4
+          align-self-center
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-delay="100"
+          data-aos-duration="2000"
+        >
+          <p class="text002 text-center">
+            <span class="text005"> Monastic Calm </span><br />
+            Blurring the boundaries between<br />
+            inside and outside
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
+
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+    >
+      <v-img
+        eager
+        height="100vh"
+        contain
+        src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      style="padding-block:5vh"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
+    >
+      <v-img
+        eager
+        height="90vh"
+        contain
+        style="margin-left: 5vw;margin-right: 5vw"
+        src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
+      ></v-img>
     </div>
   </v-container>
 </template>
 
 <script>
 import { VueFlux } from "vue-flux";
-
-import locomotiveScroll from "locomotive-scroll";
-// import "locomotive-scroll/dist/locomotive-scroll.min.css";
-
 export default {
   components: {
     VueFlux,
@@ -314,30 +381,11 @@ export default {
     ],
     transitions: ["fade"],
   }),
-
-  mounted() {
-    const _self = this;
-    this.$nextTick(function() {
-      _self.initLocoScroll();
-    });
-  },
-  methods: {
-    initLocoScroll() {
-      const _self = this;
-      this.scroll = new locomotiveScroll({
-        el: _self.$refs["scrollSections"],
-        smooth: true,
-        smoothMobile: true,
-        getDirection: true,
-      });
-    },
-  },
 };
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-
 .text005 {
   text-align: left;
   font-weight: bold;

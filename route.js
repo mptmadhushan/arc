@@ -55,7 +55,7 @@ export default [
     component: Bolgoda,
   },
   {
-    path: "/StoneHouse1",
+    path: "/StoneHouse",
     component: StoneHouse,
   },
   {
@@ -75,7 +75,7 @@ export default [
     component: ChamikaHouse,
   },
   {
-    path: "/Maniumpathy1",
+    path: "/Maniumpathy",
     component: Maniumpathy,
   },
   {
