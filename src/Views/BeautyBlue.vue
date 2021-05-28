@@ -4,12 +4,7 @@
   <div>
     <div>
       <div class="body fadeClass">
-        <div
-          class="fadeClass"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1500"
-        >
+        <div class="fadeClass">
           <div class="bg-items" style="margin-left:20vw;margin-top:2vh">
             <v-img
               class="img-to-ef"

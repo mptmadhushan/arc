@@ -35,7 +35,10 @@
     </div>
 
     <div class="container_l">
-      <div class="sub-right" :class="!isloaded ? 'sub-right-load' : 'sub-right'">
+      <div
+        class="sub-right"
+        :class="!isloaded ? 'sub-right-load' : 'sub-right'"
+      >
         <div class="center_r">
           <p>
             <v-card flat color="transparent">
@@ -326,9 +329,9 @@ body {
   );
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 1300ms;
-  -webkit-animation: fadein 5s linear 3;
-  -moz-animation: fadein 5s linear 3;
-  animation: fadein 5s linear 3;
+  -webkit-animation: fadein 4s ease-in-out 2;
+  -moz-animation: fadein 4s ease-in-out 2;
+  animation: fadein 4s ease-in-out 2;
 }
 @-webkit-keyframes fadein {
   0% {
@@ -394,9 +397,9 @@ body {
   );
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 3000ms;
-  -webkit-animation: fadein 5s linear 3;
-  -moz-animation: fadein 5s linear 3;
-  animation: fadein 5s linear 3;
+  -webkit-animation: fadein 4s ease-in-out 2;
+  -moz-animation: fadein 4s ease-in-out 2;
+  animation: fadein 4s ease-in-out 2;
 }
 .clear-both {
   clear: both;

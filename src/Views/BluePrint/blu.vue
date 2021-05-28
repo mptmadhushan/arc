@@ -27,9 +27,12 @@
             </p>
             <div
               class="d-flex flex-row justify-left align-center"
-              style="margin-top:45vh;margin-left:3vw"
+              style="margin-top:41vh;margin-left:3vw"
             >
               <div id="animated-example" class="animated bounce">
+                <p style="width:10vw" class="textMini-c">
+                  click to start
+                </p>
                 <v-icon
                   size="30"
                   href="#design"
@@ -200,24 +203,16 @@
             :data-step-no="5"
             :class="{ active: 5 == currStep }"
           >
-            <div class="fadeClass">
-              <div class="d-flex flex-column mb-6">
-                <div>
-                  <v-img
-                    eager
-                    height="90vh"
-                    contain
-                    src="../../assets/blueprint/1.png"
-                  >
-                    <div
-                      class="twelve"
-                      :data-step-no="5"
-                      :class="{ active: 5 == currStep }"
-                    ></div>
-                  </v-img>
-                </div>
-                <div>
-                  <p class="textMini2 text-center">
+            <div class="fadeClass" style="height: 100vh">
+              <div class="d-flex flex-column">
+                <div style="margin-left:10vw">
+                  <img style="height:85vh" src="../../assets/blueprint/1.png" />
+                  <div
+                    class="twelve"
+                    :data-step-no="5"
+                    :class="{ active: 5 == currStep }"
+                  ></div>
+                  <p class="textMini2 text-left">
                     Charles and Ray Eames
                     <br />
                     Lounge chair by Herman Miller
@@ -238,6 +233,8 @@
               </div>
             </div>
           </div>
+    <div style="height:10vh;width: 20vw;"></div>
+
           <div
             id="act-slider"
             style="height:100vh;margin-top:10vh"
@@ -668,6 +665,14 @@ span {
   font-size: 1.5vh;
   /* padding-right: 10%; */
   margin-top: -5%;
+  font-weight: bold;
+  font-family: "Spectral", serif;
+  color: #a6a6a6;
+}
+.textMini-c {
+  margin-left: -1.5vw;
+  text-align: left;
+  font-size: 1.5vh;
   font-weight: bold;
   font-family: "Spectral", serif;
   color: #a6a6a6;

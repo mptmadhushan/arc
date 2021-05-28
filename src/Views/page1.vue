@@ -35,6 +35,11 @@
                     src="../assets/1.png"
                     class="zoomImage"
                   >
+                    <div
+                      class="ab1"
+                      :data-step-no="1"
+                      :class="{ active: 1 == currStep }"
+                    ></div>
                   </v-img>
                 </div>
               </v-flex>
@@ -46,11 +51,11 @@
                     src="../assets/2.png"
                     class="zoomImage"
                   >
-                    <!-- <div
+                    <div
                       class="b2"
                       :data-step-no="1"
                       :class="{ active: 1 == currStep }"
-                    ></div> -->
+                    ></div>
                   </v-img>
                 </div>
               </v-flex>
@@ -183,12 +188,13 @@ export default {
   transform: scale(1.1);
 }
 .fadeClass {
+  padding-top: 5vh;
   opacity: 0.5;
   transition: all 15s linear;
 }
 .fadeClass.active {
   opacity: 1;
-  transition: all 2s linear;
+  transition: all 3s linear;
 }
 .fadeClass:hover .img {
   transform: scale(1);
@@ -268,7 +274,6 @@ export default {
   height: 100%;
   width: 100%;
   transition-delay: 10s;
-
   /* transition: transform 0.5s ease-in-out;
   animation: mymove 5s infinite; */
   /* animation: slideInFromLeft 1.5s ease-in; */
@@ -293,7 +298,7 @@ export default {
 }
 @keyframes slideInFromLeft {
   0% {
-    transform: translateY(0);
+    transform: translateY(10%);
   }
   100% {
     transform: translateY(-100%);
