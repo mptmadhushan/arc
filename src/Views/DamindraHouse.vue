@@ -160,17 +160,16 @@
         </v-flex>
       </v-layout>
     </div>
-    <!-- <div style="width:99vw;height:25vh;padding:10px"></div> -->
+    <div style="width:99vw;height:20vh;padding:10px"></div>
 
     <div
+      class="lastS pt-5"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
     >
-      <div
-        style="height:100vh;padding:10vh;margin-bottom:3vh"
-      >
+      <div style="height:90vh;width:90vw;">
         <vue-flux
           :options="options"
           :images="images2"
@@ -263,6 +262,13 @@ export default {
   font-size: 2.3vh;
   font-family: "Josefin Sans", sans-serif;
   color: #11111193;
+}
+.lastS {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .b1con {
   /* background-color: blueviolet; */
