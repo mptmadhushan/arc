@@ -16,7 +16,10 @@
     </div>
 
     <div class="container_l">
-      <div class="sub-left" :class="!isloaded ? 'sub-left-load' : 'sub-left'">
+      <div
+        class="sub-left"
+        :class="!isloaded ? 'sub-left-load' : 'sub-left'"
+      >
         <div class="center">
           <p>
             <v-card flat color="transparent" style="opacity:0.3">
@@ -114,7 +117,7 @@ export default {
     arrowa: true,
     dialog: false,
     isloaded: true,
-    isloaded2: false,
+    isloaded2: true,
     loaded: true,
     scrollPosition: null,
     isIntersectingElement: false,
