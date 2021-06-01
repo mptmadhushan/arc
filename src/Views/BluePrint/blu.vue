@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div data-scroll-container>
+    <div data-scroll-container id="fir">
       <section data-scroll-section>
         <router-link to="/">
           <div style="position:relative;z-index:1000">
@@ -84,7 +84,7 @@
             :class="{ active: 3 == currStep }"
           >
             <div class="fadeClassNew" style="height: 100vh;padding:5vh">
-              <div style="height:15vh;width: 100vw"></div>
+              <div style="height:10vh;width: 100vw"></div>
               <v-layout row wrap justify-space-around>
                 <v-flex md7 xs12 sm12 align-self-start>
                   <div>

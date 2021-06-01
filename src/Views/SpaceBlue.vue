@@ -166,7 +166,7 @@
       >
         <v-icon
           style="margin-left:5vw"
-          href="#space-blue2"
+          href="#fir"
           size="30"
           dark
           v-smooth-scroll="{ duration: 2000 }"

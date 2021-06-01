@@ -130,7 +130,7 @@
     </div>
     <div style="width:99vw;height:30vh"></div>
     <div class="fadeClass" id="bnew4">
-      <div class="bg-itemsOld" style="padding-top:6vh">
+      <div class="bg-itemsOld" style="padding-top:8vh">
         <v-img
           class="img-to-efOld"
           eager
@@ -144,7 +144,7 @@
       <div
         id="animated-example"
         class="animated bounce"
-        style="margin-left:3vw;margin-top:1.5vh"
+        style="margin-left:3vw;margin-top:0vh"
       >
         <v-icon href="#bnew5" size="30" v-smooth-scroll="{ duration: 2000 }"
           >mdi-chevron-down-circle-outline</v-icon
@@ -198,6 +198,20 @@
     <div style="width:99vw;height:30vh"></div>
     <div v-on:mouseover="mouseOver" id="slider2" ref="slider2">
       <Slider2 />
+      <div
+        id="animated-example"
+        class="animated bounce"
+        style="margin-left:90vw;margin-top:-10vh;width:20vh;height:10vw"
+      >
+        <v-icon
+          style="margin-left:5vw"
+          href="#space"
+          size="30"
+          dark
+          v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-down-circle-outline</v-icon
+        >
+      </div>
     </div>
   </div>
 </template>
