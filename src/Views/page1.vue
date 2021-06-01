@@ -108,6 +108,11 @@
                     src="../assets/1.png"
                     class="zoomImage"
                   >
+                    <div
+                      class="b2"
+                      :data-step-no="1"
+                      :class="{ active: 1 == currStep }"
+                    ></div>
                   </v-img>
                 </div>
               </v-flex>
@@ -119,6 +124,11 @@
                     src="../assets/2.png"
                     class="zoomImage"
                   >
+                    <div
+                      class="b2"
+                      :data-step-no="1"
+                      :class="{ active: 1 == currStep }"
+                    ></div>
                   </v-img>
                 </div>
               </v-flex>

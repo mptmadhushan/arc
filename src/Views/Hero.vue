@@ -16,10 +16,7 @@
     </div>
 
     <div class="container_l">
-      <div
-        class="sub-left"
-        :class="!isloaded ? 'sub-left-load' : 'sub-left'"
-      >
+      <div class="sub-left" :class="isloaded ? 'sub-left' : 'sub-left-load'">
         <div class="center">
           <p>
             <v-card flat color="transparent" style="opacity:0.3">
@@ -38,10 +35,7 @@
     </div>
 
     <div class="container_l">
-      <div
-        class="sub-right"
-        :class="!isloaded ? 'sub-right-load' : 'sub-right'"
-      >
+      <div class="sub-right" :class="isloaded ? 'sub-left' : 'sub-left-load'">
         <div class="center_r">
           <p>
             <v-card flat color="transparent">
@@ -128,6 +122,7 @@ export default {
     document.addEventListener("wheel", this.helb);
   },
   mounted() {
+    console.log("😃🇻🇮", this.isloaded, "hey", this.hey);
     document.documentElement.style.overflow = "hidden";
     this.hey = localStorage.getItem("isloaded");
     console.log("hello", this.hey);
