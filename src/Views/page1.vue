@@ -1,6 +1,7 @@
 <template>
   <v-container fluid>
     <Scrollama
+      :once="true"
       :offset="0.7"
       @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
       @step-exit="({ element }) => (currStep = null)"
@@ -11,6 +12,7 @@
           <div
             class="fadeClass"
             :data-step-no="1"
+            once
             :class="{ active: 1 == currStep }"
           >
             <v-layout
@@ -37,6 +39,7 @@
                   >
                     <div
                       class="ab1"
+                      once
                       :data-step-no="1"
                       :class="{ active: 1 == currStep }"
                     ></div>
@@ -52,7 +55,8 @@
                     class="zoomImage"
                   >
                     <div
-                      class="b2"
+                      class="ab1"
+                      once
                       :data-step-no="1"
                       :class="{ active: 1 == currStep }"
                     ></div>
@@ -83,6 +87,7 @@
           style="min-width:100vw"
           class="fadeClass"
           :data-step-no="1"
+          once
           :class="{ active: 1 == currStep }"
         >
           <div class="about_us_bg">
@@ -109,7 +114,8 @@
                     class="zoomImage"
                   >
                     <div
-                      class="b2"
+                      class="ab1"
+                      once
                       :data-step-no="1"
                       :class="{ active: 1 == currStep }"
                     ></div>
@@ -125,7 +131,8 @@
                     class="zoomImage"
                   >
                     <div
-                      class="b2"
+                      once
+                      class="ab1"
                       :data-step-no="1"
                       :class="{ active: 1 == currStep }"
                     ></div>
@@ -199,8 +206,8 @@ export default {
 }
 .fadeClass {
   padding-top: 5vh;
-  opacity: 0.5;
-  transition: all 15s linear;
+  /* opacity: 0.5; */
+  /* transition: all 15s linear; */
 }
 .fadeClass.active {
   opacity: 1;
@@ -241,12 +248,11 @@ export default {
   transition-delay: 10s;
 }
 .ab1 {
-  background-color: #fff;
+  background-color: #f2ff;
   transform: scaleY(1);
   transform-origin: top;
-  height: 100%;
+  height: 0%;
   width: 100%;
-  transition-delay: 10s;
 }
 /* .about_us_bg:hover .ab1 {
   background-color: #fff;
@@ -278,10 +284,10 @@ export default {
   transition-delay: 4s;
 }
 .b2 {
-  background-color: #fff;
+  background-color: #f2ff;
   transform: scaleY(1);
   transform-origin: top;
-  height: 100%;
+  height: 10%;
   width: 100%;
   transition-delay: 10s;
   /* transition: transform 0.5s ease-in-out;
