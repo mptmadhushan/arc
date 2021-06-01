@@ -44,7 +44,7 @@
             <v-card flat color="transparent">
               <v-img
                 @click="hello()"
-                height="5vh"
+                height="15vh"
                 style="margin-right:-5vw"
                 width="15vw"
                 contain

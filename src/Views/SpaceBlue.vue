@@ -60,25 +60,28 @@
         <div style="width:99vw;height:1vh"></div>
 
         <v-layout row wrap justify-center mt-12>
-          <v-flex md6 xs12 sm12 align-self-start>
-            <div>
+          <v-flex md6 xs12 sm12 align-self-center>
+            <div style="width:60%;margin-left:10vw;">
               <v-img
                 eager
-                contain
-                height="80vh"
+                height="85vh"
+                class="ml-left"
                 src="../assets/blueprint/Space/1280.jpg"
               >
                 <div class="twelve"></div>
               </v-img>
-            </div>
-            <div>
-              <P
-                class="textMini text-left"
-                style="margin-top:1vw;margin-left:14vw"
-              >
+              <P class="textMini text-left" style="margin-top:1vw;">
                 Ricardo Bofill<br />La Fabrica<br />1973
               </P>
             </div>
+            <!-- <div>
+              <P
+                class="textMini text-left"
+                style="margin-top:1vw;margin-left:4vw"
+              >
+                Ricardo Bofill<br />La Fabrica<br />1973
+              </P>
+            </div> -->
           </v-flex>
           <v-flex md4 xs12 sm12 align-self-center>
             <div>
@@ -156,6 +159,20 @@
     <div style="width:99vw;height:25vh"></div>
     <div v-on:mouseover="mouseOver" ref="space-blue4" id="space-blue4">
       <Slider2 />
+      <div
+        id="animated-example"
+        class="animated bounce"
+        style="margin-left:90vw;margin-top:-10vh;"
+      >
+        <v-icon
+          style="margin-left:5vw"
+          href="#space-blue2"
+          size="30"
+          dark
+          v-smooth-scroll="{ duration: 2000 }"
+          >mdi-chevron-up-circle-outline</v-icon
+        >
+      </div>
     </div>
   </div>
 </template>

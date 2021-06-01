@@ -233,16 +233,31 @@
               </div>
             </div>
           </div>
-    <div style="height:10vh;width: 20vw;"></div>
-
+          <div style="height:10vh;width: 20vw;"></div>
           <div
+            v-on:mouseover.once="mouseOver"
             id="act-slider"
             style="height:100vh;margin-top:10vh"
             class="twelve"
+            ref="slider1"
             :data-step-no="5"
             :class="{ active: 5 == currStep }"
           >
             <Slider1 />
+            <div
+              id="animated-example"
+              class="animated bounce"
+              style="margin-left:90vw;margin-top:-10vh;width:20vh;height:10vw"
+            >
+              <v-icon
+                style="margin-left:5vw"
+                href="#beaty"
+                size="30"
+                dark
+                v-smooth-scroll="{ duration: 2000 }"
+                >mdi-chevron-down-circle-outline</v-icon
+              >
+            </div>
           </div>
         </Scrollama>
       </section>
@@ -339,6 +354,7 @@ import Scrollama from "vue-scrollama";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
 // import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from ".././Slider1";
+// import Slider2 from ".././Slider2";
 import BeautyBlue from ".././BeautyBlue";
 import SpaceBlue from ".././SpaceBlue";
 
@@ -346,6 +362,7 @@ export default {
   name: "App",
   components: {
     Scrollama,
+    // Slider2,
     BeautyBlue,
     Slider1,
     SpaceBlue,
@@ -366,18 +383,22 @@ export default {
     // });
   },
   methods: {
+    stepEnterHandler({ element, index, direction }) {
+      // handle the step-event as required here
+      console.log(element, index, direction);
+    },
     heyl() {
       console.log("helasd 😷helasd");
     },
-    mouseOver: function(val) {
-      console.log("😎", val);
-      console.log("flag ");
-      let rr = "this.$refs." + val;
-      console.log(rr);
+    mouseOver: function() {
+      // console.log("😎", val);
+      // console.log("flag ");
+      // let rr = "this.$refs." + val;
+      // console.log(rr);
       this.$smoothScroll({
         // scrollTo: rr,
         scrollTo: this.$refs.slider1,
-        duration: 2000,
+        duration: 1000,
         offset: 1,
       });
     },

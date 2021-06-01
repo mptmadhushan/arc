@@ -136,7 +136,7 @@
           eager
           contain
           height="85vh"
-          src="../assets/blueprint/6.png"
+          src="../assets/_SDS3552.png"
         >
           <div class="twelve"></div>
         </v-img>

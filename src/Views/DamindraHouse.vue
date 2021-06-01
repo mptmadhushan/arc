@@ -160,21 +160,17 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
+    <!-- <div style="width:99vw;height:25vh;padding:10px"></div> -->
 
-    <div v-if="isMobile()" style="margin-top:10vh;height:60vh">
-      <vue-flux :options="options" :images="images2" :transitions="transitions">
-      </vue-flux>
-    </div>
     <div
-      v-else
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
-      style="padding:5vh;width:100vw;"
     >
-      <div>
+      <div
+        style="height:100vh;padding:10vh;margin-bottom:3vh"
+      >
         <vue-flux
           :options="options"
           :images="images2"

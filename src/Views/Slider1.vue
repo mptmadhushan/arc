@@ -1,88 +1,111 @@
 <template>
   <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
-    <div class="outer-wrapper">
-      <div class="wrapper">
-        <div class="slide one">
-          <div>
-            <v-row no-gutters style="height:100vh;">
-              <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
-                <div>
-                  <v-img
-                    height="70vh"
-                    src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
-                  >
-                    <div class="newBox2"></div>
-                  </v-img>
-                  <p
-                    class="textMini text-left"
-                    style="margin-top:1%;margin-left:7%"
-                  >
-                    LC4
-                    <br />
-                    Charlotte Perriand
-                    <br />
-                    Cassina 1930
-                  </p>
-                </div>
-              </v-col>
-              <v-col align-self="center" style="margin-left:8vw">
-                <div class="fadeClass">
-                  <div class="image-box">
+    <Scrollama
+      :offset="0.5"
+      @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
+      @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
+    >
+      <div
+        class="outer-wrapper"
+        :data-step-no="1"
+        :class="{ active: 1 == currStep }"
+      >
+        <div class="wrapper">
+          <div
+            class="slide one"
+            :data-step-no="1"
+            :class="{ active: 1 == currStep }"
+          >
+            <div>
+              <v-row no-gutters style="height:100vh;">
+                <v-col
+                  align-self="center"
+                  style="margin-left:2vw;margin-top:-1%"
+                >
+                  <div>
                     <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/GB-in-office--Sowden--1985.jpg"
+                      height="70vh"
+                      src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
                     >
+                      <div class="newBox2"></div>
                     </v-img>
-                  </div>
-                  <p
-                    class="textMini text-left"
-                    style="margin-left:3vw;margin-top:1%;"
-                  >
-                    Geoffrey Bawa
-                    <br />
-                    Geoffrey Bawa Trust
-                    <br />
-                    circa 1992
-                  </p>
-                </div> </v-col
-              ><v-col align-self="center" style="margin-left:-12vw">
-                <div class="fadeClass">
-                  <div class="image-box">
-                    <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/960x0-ConvertImage.jpg"
+                    <p
+                      class="textMini text-left"
+                      style="margin-top:1%;margin-left:7%"
                     >
-                    </v-img>
+                      LC4
+                      <br />
+                      Charlotte Perriand
+                      <br />
+                      Cassina 1930
+                    </p>
                   </div>
-                  <p
-                    class="textMini text-left"
-                    style="margin-left:3vw;margin-top:1%;"
-                  >
-                    Louis Ghost Chair
-                    <br />
-                    Philippe Starck
-                    <br />
-                    2002
-                  </p>
-                </div>
-              </v-col>
-            </v-row>
+                </v-col>
+                <v-col align-self="center" style="margin-left:8vw">
+                  <div class="fadeClass">
+                    <div class="image-box">
+                      <v-img
+                        class="zoom_image"
+                        height="100%"
+                        cover
+                        src="../assets/blueprint/GB-in-office--Sowden--1985.jpg"
+                      >
+                      </v-img>
+                    </div>
+                    <p
+                      class="textMini text-left"
+                      style="margin-left:3vw;margin-top:1%;"
+                    >
+                      Geoffrey Bawa
+                      <br />
+                      Geoffrey Bawa Trust
+                      <br />
+                      circa 1992
+                    </p>
+                  </div> </v-col
+                ><v-col align-self="center" style="margin-left:-12vw">
+                  <div class="fadeClass">
+                    <div class="image-box">
+                      <v-img
+                        class="zoom_image"
+                        height="100%"
+                        cover
+                        src="../assets/blueprint/960x0-ConvertImage.jpg"
+                      >
+                      </v-img>
+                    </div>
+                    <p
+                      class="textMini text-left"
+                      style="margin-left:3vw;margin-top:1%;"
+                    >
+                      Louis Ghost Chair
+                      <br />
+                      Philippe Starck
+                      <br />
+                      2002
+                    </p>
+                  </div>
+                </v-col>
+              </v-row>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Scrollama>
   </div>
 </template>
 
 <script>
+import Scrollama from "vue-scrollama";
+
 export default {
   data: () => ({
     open: true,
+    currStep: null,
   }),
+  components: {
+    Scrollama,
+  },
   mounted() {
     // document.documentElement.style.overflow = "hidden";
   },
@@ -473,8 +496,8 @@ h2 span:last-child {
   background: #ffffff;
   height: 100vh;
   padding-left: 60vw;
-  transition: 4s ease;
   animation-fill-mode: forwards;
+  transition: 4s ease;
 }
 .one_m {
   background: #ffffff;
@@ -498,6 +521,11 @@ h2 span:last-child {
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+.one.active {
+  background-color: #282729;
+  padding-left: 10px;
+
 }
 ::-webkit-scrollbar {
   display: none;
