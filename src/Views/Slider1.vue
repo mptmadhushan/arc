@@ -64,7 +64,7 @@
                     </p>
                   </div> </v-col
                 ><v-col align-self="center" style="margin-left:-12vw">
-                  <div class="fadeClass">
+                  <div class="fadeClass" style="margin-top:2vh">
                     <div class="image-box">
                       <v-img
                         class="zoom_image"
@@ -84,6 +84,20 @@
                       <br />
                       2002
                     </p>
+                  </div>
+                  <div
+                    id="animated-example"
+                    class="animated bounce"
+                   style="padding-left:66vw;margin-top:5vh"
+                  >
+                    <v-icon
+                      style="margin-left:5vw"
+                      href="#beaty"
+                      size="30"
+                      dark
+                      v-smooth-scroll="{ duration: 2000 }"
+                      >mdi-chevron-down-circle-outline</v-icon
+                    >
                   </div>
                 </v-col>
               </v-row>
@@ -525,7 +539,6 @@ h2 span:last-child {
 .one.active {
   background-color: #282729;
   padding-left: 10px;
-
 }
 ::-webkit-scrollbar {
   display: none;

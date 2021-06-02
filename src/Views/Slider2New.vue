@@ -1,67 +1,69 @@
 <template>
-  <!-- <div data-scroll data-scroll-id="hey" v-if="isMobile()" style="height:100vh">
-    <div class="outer-wrapper">
-      <div class="wrapper">
-        <div class="slide one_m">
-          <div style="height:100vh">
-            <v-row no-gutters>
-              <v-col>
-                <div style="height:100vh">
-                  <div
-                    class="b1sli"
-                    data-aos="zoom-in-left"
-                    data-aos-duration="1500"
-                  >
-                    <div class="newBox2"></div>
-                  </div>
-                </div>
-              </v-col>
-              <v-col>
-                <div style="height:100vh;">
-                  <div class="b2sli">
-                    <div class="b1"></div>
-                  </div>
-                </div>
-              </v-col>
-              <v-col>
-                <div style="height:100vh;">
-                  <div>
-                    <div class="b1"></div>
-                  </div>
-                </div>
-              </v-col>
-            </v-row>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide one">
-          <div>
+          <div class="slider-row">
+            <div class="fadeClass" >
+              <v-img
+                height="85vh"
+                width="35vw"
+                src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
+              >
+                <div class="newBox2"></div>
+              </v-img>
+              <p
+                class="textMini text-left"
+                style="margin-top:1%;margin-left:6vw"
+              >
+                Kuzao Shiraga
+                <br />
+                Gutai Group
+                <br />
+                1960
+              </p>
+            </div>
+            <div class="fadeClass">
+              <div class="image-box">
+                <v-img
+                  class="zoom_image"
+                  height="100%"
+                  cover
+                  src="../assets/blueprint/slide.png"
+                >
+                </v-img>
+              </div>
+            </div>
+            <div class="fadeClass">
+              <div class="image-box">
+                <v-img
+                  class="zoom_image"
+                  height="100%"
+                  cover
+                  src="../assets/blueprint/_SDS3367.jpeg"
+                >
+                </v-img>
+              </div>
+            </div>
+            <div
+              id="animated-example"
+              class="animated bounce"
+              style="margin-left:-5vw;margin-top:70vh"
+            >
+              <v-icon
+                style="margin-left:5vw"
+                href="#space"
+                size="30"
+                dark
+                v-smooth-scroll="{ duration: 2000 }"
+                >mdi-chevron-down-circle-outline</v-icon
+              >
+            </div>
+          </div>
+
+          <!-- <div>
             <v-row no-gutters style="height:100vh;">
               <v-col align-self="center" style="margin-left:2vw;margin-top:5vh">
-                <div>
-                  <v-img
-                    height="85vh"
-                    width="40vw"
-                    src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
-                  >
-                    <div class="newBox2"></div>
-                  </v-img>
-                  <p
-                    class="textMini text-left"
-                    style="margin-top:1%;margin-left:8%"
-                  >
-                    Kuzao Shiraga
-                    <br />
-                    Gutai Group
-                    <br />
-                    1960
-                  </p>
-                </div>
               </v-col>
               <v-col
                 align-self="center"
@@ -92,30 +94,26 @@
                     >
                     </v-img>
                   </div>
+                  <div
+                    id="animated-example"
+                    class="animated bounce"
+                    style="padding-left:66vw;margin-top:5vh"
+                  >
+                    <v-icon
+                      style="margin-left:5vw"
+                      href="#beaty"
+                      size="30"
+                      dark
+                      v-smooth-scroll="{ duration: 2000 }"
+                      >mdi-chevron-down-circle-outline</v-icon
+                    >
+                  </div>
                 </div>
               </v-col>
 
-              <!-- <v-col>
-                <div>
-                  <div style="height:100vh;">
-                    <div class="b3sli">
-                      <div class="b1"></div>
-                      <p
-                        class="textMini text-left"
-                        style="margin-top:5%;margin-left:2%;"
-                      >
-                        Louis Gost Chair
-                        <br />
-                        Philippe Starck
-                        <br />
-                        2002
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </v-col> -->
+            
             </v-row>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -140,6 +138,14 @@ export default {
 </script>
 
 <style scoped>
+.slider-row {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 .img-to-ef {
   transition: all 10s;
 }
@@ -509,7 +515,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 180vw;
+  width: 130vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

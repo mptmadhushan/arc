@@ -198,20 +198,6 @@
     <div style="width:99vw;height:30vh"></div>
     <div v-on:mouseover="mouseOver" id="slider2" ref="slider2">
       <Slider2 />
-      <div
-        id="animated-example"
-        class="animated bounce"
-        style="margin-left:90vw;margin-top:-10vh;width:20vh;height:10vw"
-      >
-        <v-icon
-          style="margin-left:5vw"
-          href="#space"
-          size="30"
-          dark
-          v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down-circle-outline</v-icon
-        >
-      </div>
     </div>
   </div>
 </template>

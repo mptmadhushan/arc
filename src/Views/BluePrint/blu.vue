@@ -244,31 +244,14 @@
             :class="{ active: 5 == currStep }"
           >
             <Slider1 />
-            <div
-              id="animated-example"
-              class="animated bounce"
-              style="margin-left:90vw;margin-top:-10vh;width:20vh;height:10vw"
-            >
-              <v-icon
-                style="margin-left:5vw"
-                href="#beaty"
-                size="30"
-                dark
-                v-smooth-scroll="{ duration: 2000 }"
-                >mdi-chevron-down-circle-outline</v-icon
-              >
-            </div>
           </div>
         </Scrollama>
       </section>
     </div>
     <div style="height:10vh;width: 20vw;"></div>
-    <div
-      v-on:mouseover.once="mouseOver2"
-      class="blue-body"
-      id="beaty"
-      ref="beaty"
-    >
+    <div class="blue-body" id="beaty" ref="beaty">
+      <!-- v-on:mouseover.once="mouseOver2" -->
+
       <div class="body">
         <div style="height:22vh;width: 10vw;"></div>
         <div class="fadeClass ml-12" style="height:70vh">
@@ -304,12 +287,9 @@
     <div id="beaty-blue">
       <BeautyBlue />
     </div>
-    <div
-      v-on:mouseover.once="mouseOver3"
-      class="blue-body"
-      id="space"
-      ref="space"
-    >
+    <div class="blue-body" id="space" ref="space">
+      <!-- v-on:mouseover.once="mouseOver3" -->
+
       <div class="body">
         <div style="height:22vh;width: 10vw;"></div>
         <div class="fadeClass ml-12" style="height:70vh">

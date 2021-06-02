@@ -3,7 +3,53 @@
     <div class="outer-wrapper">
       <div class="wrapper">
         <div class="slide one">
-          <div>
+          <div class="slider-row">
+            <div class="fadeClass">
+              <v-img
+                height="85vh"
+                width="40vw"
+                src="../assets/blueprint/slider3.jpeg"
+              >
+                <div class="newBox2"></div>
+              </v-img>
+            </div>
+            <div class="fadeClass">
+              <div class="image-box">
+                <v-img
+                  class="zoom_image"
+                  height="100%"
+                  cover
+                  src="../assets/blueprint/slider32.jpeg"
+                >
+                </v-img>
+              </div>
+            </div>
+            <div class="fadeClass">
+              <div class="image-box">
+                <v-img
+                  class="zoom_image"
+                  height="100%"
+                  cover
+                  src="../assets/blueprint/slider33.jpeg"
+                >
+                </v-img>
+              </div>
+            </div>
+            <div
+              id="animated-example"
+              class="animated bounce"
+              style="margin-left:-5vw;margin-top:70vh"
+            >
+              <v-icon
+                href="#fir"
+                size="30"
+                dark
+                v-smooth-scroll="{ duration: 3000 }"
+                >mdi-chevron-up-circle-outline</v-icon
+              >
+            </div>
+          </div>
+          <!-- <div>
             <v-row no-gutters style="height:100vh;">
               <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
                 <div>
@@ -16,7 +62,10 @@
                   </v-img>
                 </div>
               </v-col>
-              <v-col align-self="center" style="margin-left:5vw;margin-top:12vh">
+              <v-col
+                align-self="center"
+                style="margin-left:5vw;margin-top:12vh"
+              >
                 <div class="fadeClass">
                   <div class="image-box">
                     <v-img
@@ -45,27 +94,9 @@
                 </div>
               </v-col>
 
-              <!-- <v-col>
-                <div>
-                  <div style="height:100vh;">
-                    <div class="b3sli">
-                      <div class="b1"></div>
-                      <p
-                        class="textMini text-left"
-                        style="margin-top:5%;margin-left:2%;"
-                      >
-                        Louis Gost Chair
-                        <br />
-                        Philippe Starck
-                        <br />
-                        2002
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </v-col> -->
+            
             </v-row>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -90,6 +121,14 @@ export default {
 </script>
 
 <style scoped>
+.slider-row {
+  margin-top: 17vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 .img-to-ef {
   transition: all 10s;
 }

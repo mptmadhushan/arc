@@ -159,20 +159,6 @@
     <div style="width:99vw;height:25vh"></div>
     <div v-on:mouseover="mouseOver" ref="space-blue4" id="space-blue4">
       <Slider2 />
-      <div
-        id="animated-example"
-        class="animated bounce"
-        style="margin-left:90vw;margin-top:-10vh;"
-      >
-        <v-icon
-          style="margin-left:5vw"
-          href="#fir"
-          size="30"
-          dark
-          v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-up-circle-outline</v-icon
-        >
-      </div>
     </div>
   </div>
 </template>

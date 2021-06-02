@@ -327,9 +327,9 @@ body {
   );
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 1300ms;
-  -webkit-animation: fadein 4s ease-in-out 2;
-  -moz-animation: fadein 4s ease-in-out 2;
-  animation: fadein 4s ease-in-out 2;
+  -webkit-animation: fadein 3s ease-in-out 2;
+  -moz-animation: fadein 3s ease-in-out 2;
+  animation: fadein 3s ease-in-out 2;
 }
 @-webkit-keyframes fadein {
   0% {

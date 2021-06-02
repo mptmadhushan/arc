@@ -225,8 +225,8 @@ export default {
       require("../assets/Damindra_House/_SDS7572.JPG.jpg"),
     ],
     images2: [
-      require("../assets/Damindra_House/slider1.png"),
-      require("../assets/Damindra_House/slider2.png"),
+      require("../assets/dami1.png"),
+      require("../assets/dami2.png"),
     ],
     transitions: ["fade"],
     timer: null,
@@ -265,7 +265,6 @@ export default {
 }
 .lastS {
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
