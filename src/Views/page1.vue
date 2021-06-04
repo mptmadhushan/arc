@@ -9,7 +9,7 @@
       >
         <div style="height:10vh;width100vw"></div>
         <div class="hello" :data-step-no="1" :class="{ active: 1 == currStep }">
-          <div style="min-width:100vw" v-if="loaded">
+          <div style="min-width:100vw">
             <div
               class="fadeClass"
               :data-step-no="1"
@@ -20,12 +20,7 @@
                 <p class="about_us" style="margin-top:5vh;text-align:center">
                   ABOUT US1
                 </p>
-                <div
-                  class="imgDiv"
-                  style="
-                    margin-left:10vw
-                "
-                >
+                <div class="imgDiv" style="margin-left:3vw">
                   <v-img
                     eager
                     width="80vw"
@@ -40,7 +35,7 @@
                     ></div>
                   </v-img>
                 </div>
-                <div class="imgDiv mt-12">
+                <div class="imgDiv mt-12" style="margin-left:3vw">
                   <v-img
                     eager
                     width="80vw"
@@ -72,7 +67,6 @@
             </div>
             <div style="width:99vw;height:20vh;padding:10px"></div>
           </div>
-          
         </div>
       </Scrollama>
     </div>
@@ -317,7 +311,6 @@ export default {
   flex-direction: column;
   max-width: 100vw;
   flex-wrap: wrap;
-  background-color: red;
 }
 
 .fadeClass:hover .zoomImage {
