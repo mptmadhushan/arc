@@ -9,9 +9,9 @@
     </router-link>
 
     <div v-if="isMobile()">
-      <v-card flat style="margin-top: 5vh">
-        <v-layout row wrap justify-center>
-          <v-flex md12 xs6 sm6 class="project1H">
+      <v-card flat style="margin-top: 15vh">
+        <v-layout row wrap justify-space-around>
+          <v-flex md12 xs4 sm6 class="project1H">
             <a href="/ChitraLane" class="nav-link">
               <v-row align="center" justify="center">
                 <v-col>
@@ -20,14 +20,14 @@
               </v-row>
             </a>
           </v-flex>
-          <v-flex md2 xs6 sm6>
+          <v-flex md2 xs4 sm6>
             <a href="/Arienti" tag="div">
               <v-card flat>
                 <div class="tri"></div>
               </v-card>
             </a>
           </v-flex>
-          <v-flex md2 xs6 sm6>
+          <v-flex md2 xs4 sm6>
             <a href="/Bolgoda" tag="div">
               <v-card flat>
                 <div class="cir"></div>
@@ -36,14 +36,14 @@
           </v-flex>
         </v-layout>
         <v-layout row wrap justify-center>
-          <v-flex md2 xs6 sm12>
+          <v-flex md2 xs4 sm12>
             <a href="/DamindraHouse" tag="div">
               <v-card flat>
                 <div class="cir"></div>
               </v-card>
             </a>
           </v-flex>
-          <v-flex md2 xs6 sm12>
+          <v-flex md2 xs4 sm12>
             <a href="/DinaliHouse" tag="div">
               <v-card flat>
                 <div class="sq"></div>
@@ -51,7 +51,7 @@
             </a>
           </v-flex>
 
-          <v-flex md2 xs6 sm12>
+          <v-flex md2 xs4 sm12>
             <a href="/ChamikaHouse" tag="div">
               <v-card flat>
                 <div class="tri"></div>
@@ -59,21 +59,21 @@
             </a>
           </v-flex> </v-layout
         ><v-layout row wrap justify-center>
-          <v-flex md2 xs6 sm12>
+          <v-flex md2 xs4 sm12>
             <a href="/StoneHouse" tag="div">
               <v-card flat>
                 <div class="tri"></div>
               </v-card>
             </a>
           </v-flex>
-          <v-flex md2 xs6 sm12>
+          <v-flex md2 xs4 sm12>
             <a href="/Hanthana" tag="div">
               <v-card flat>
                 <div class="cir"></div>
               </v-card>
             </a>
           </v-flex>
-          <v-flex md2 xs6 sm12>
+          <v-flex md2 xs4 sm12>
             <a href="/maniumpathy" tag="div">
               <v-card flat>
                 <div class="sq"></div>

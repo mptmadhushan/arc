@@ -4,16 +4,16 @@
       row
       wrap
       justify-space-around
-      style="height:90vh;margin-bottom:5vh;"
+      style="height:100%;margin-bottom:5vh;"
       class="fadeClassHover"
     >
-      <v-flex md4 sm12 xs12 align-self-center>
+      <v-flex md4 sm10 xs10 align-self-center>
         <div class="image-box">
           <img src="../assets/12.png" alt="Unsplashed Randm" />
         </div>
         <!-- <v-img eager contain height="90vh" src="../assets/12.png"></v-img> -->
       </v-flex>
-      <v-flex md6 sm12 xs12 align-self-center>
+      <v-flex md6 sm10 xs10 align-self-center>
         <p class="pa-2 new">
           Chamika De Alwis began his architectural career at MICD Associates and
           continues to practice at the firm as a Senior Associate. In 2016 he

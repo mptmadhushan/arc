@@ -1,166 +1,258 @@
 <template>
-  <v-container fluid>
-    <Scrollama
-      :once="true"
-      :offset="0.7"
-      @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
-      @step-exit="({ element }) => (currStep = null)"
-    >
-      <div style="height:10vh;width100vw"></div>
-      <div class="hello" :data-step-no="1" :class="{ active: 1 == currStep }">
-        <div style="min-width:100vw" v-if="loaded">
+  <div>
+    <div v-if="isMobile()">
+      <Scrollama
+        :once="true"
+        :offset="0.7"
+        @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
+        @step-exit="({ element }) => (currStep = null)"
+      >
+        <div style="height:10vh;width100vw"></div>
+        <div class="hello" :data-step-no="1" :class="{ active: 1 == currStep }">
+          <div style="min-width:100vw" v-if="loaded">
+            <div
+              class="fadeClass"
+              :data-step-no="1"
+              once
+              :class="{ active: 1 == currStep }"
+            >
+              <div class="about-mb">
+                <p class="about_us" style="margin-top:5vh;text-align:center">
+                  ABOUT US1
+                </p>
+                <div
+                  class="imgDiv"
+                  style="
+                    margin-left:10vw
+                "
+                >
+                  <v-img
+                    eager
+                    width="80vw"
+                    src="../assets/1.png"
+                    class="zoomImage"
+                  >
+                    <div
+                      class="ab1"
+                      once
+                      :data-step-no="1"
+                      :class="{ active: 1 == currStep }"
+                    ></div>
+                  </v-img>
+                </div>
+                <div class="imgDiv mt-12">
+                  <v-img
+                    eager
+                    width="80vw"
+                    src="../assets/2.png"
+                    class="zoomImage"
+                  >
+                    <div
+                      class="ab1"
+                      once
+                      :data-step-no="1"
+                      :class="{ active: 1 == currStep }"
+                    ></div>
+                  </v-img>
+                </div>
+                <p class="new">
+                  CDA aims to elevate lives and incorporate beauty in art to
+                  magnify spaces. Our team consists of young, creatively
+                  passionate like-minded individuals who bring in new
+                  perspectives. By drawing inspiration from all corners of the
+                  world and connecting it with modern ideologies, it helps us
+                  put forth a unique and distinctive end product. What sets us
+                  apart from the norm is the human factor- how interacting with
+                  our designs can impact lives. By collaborating with our
+                  clientele, we add a sense of defined lifestyle to our
+                  creations. Melding vision and sensibilities to enhance the way
+                  you experience life.
+                </p>
+              </div>
+            </div>
+            <div style="width:99vw;height:20vh;padding:10px"></div>
+          </div>
+          
+        </div>
+      </Scrollama>
+    </div>
+    <div v-else>
+      <Scrollama
+        :once="true"
+        :offset="0.7"
+        @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
+        @step-exit="({ element }) => (currStep = null)"
+      >
+        <div style="height:10vh;width100vw"></div>
+        <div class="hello" :data-step-no="1" :class="{ active: 1 == currStep }">
+          <div style="min-width:100vw" v-if="loaded">
+            <div
+              class="fadeClass"
+              :data-step-no="1"
+              once
+              :class="{ active: 1 == currStep }"
+            >
+              <v-layout
+                row
+                wrap
+                justify-center
+                style="margin-top:20vh;margin-bottom:2%;min-width:100vw"
+              >
+                <v-flex md1 sm3 xs3 align-self-start>
+                  <p
+                    class="about_us"
+                    style="margin-top:20vh;margin-right:-2vw;text-align:right"
+                  >
+                    ABOUT US
+                  </p></v-flex
+                >
+                <v-flex
+                  md3
+                  sm10
+                  xs10
+                  align-self-end
+                  style="margin-top:20vh"
+                  pa-1
+                >
+                  <div class="imgDiv">
+                    <v-img
+                      eager
+                      height="60vh"
+                      src="../assets/1.png"
+                      class="zoomImage"
+                    >
+                      <div
+                        class="ab1"
+                        once
+                        :data-step-no="1"
+                        :class="{ active: 1 == currStep }"
+                      ></div>
+                    </v-img>
+                  </div>
+                </v-flex>
+                <v-flex md3 xs10 pa-1 align-self-baseline>
+                  <div class="imgDiv">
+                    <v-img
+                      eager
+                      height="90vh"
+                      src="../assets/2.png"
+                      class="zoomImage"
+                    >
+                      <div
+                        class="ab1"
+                        once
+                        :data-step-no="1"
+                        :class="{ active: 1 == currStep }"
+                      ></div>
+                    </v-img>
+                  </div>
+                </v-flex>
+                <v-flex md5 xs10 sm10 align-self-end px-3>
+                  <p class="new">
+                    CDA aims to elevate lives and incorporate beauty in art to
+                    magnify spaces. Our team consists of young, creatively
+                    passionate like-minded individuals who bring in new
+                    perspectives. By drawing inspiration from all corners of the
+                    world and connecting it with modern ideologies, it helps us
+                    put forth a unique and distinctive end product. What sets us
+                    apart from the norm is the human factor- how interacting
+                    with our designs can impact lives. By collaborating with our
+                    clientele, we add a sense of defined lifestyle to our
+                    creations. Melding vision and sensibilities to enhance the
+                    way you experience life.
+                  </p>
+                </v-flex>
+              </v-layout>
+            </div>
+            <div style="width:99vw;height:20vh;padding:10px"></div>
+          </div>
           <div
+            v-else
+            style="min-width:100vw"
             class="fadeClass"
             :data-step-no="1"
             once
             :class="{ active: 1 == currStep }"
           >
-            <v-layout
-              row
-              wrap
-              justify-center
-              style="margin-top:20vh;margin-bottom:2%;min-width:100vw"
-            >
-              <v-flex md1 sm5 xs5 align-self-start>
-                <p
-                  class="about_us"
-                  style="margin-top:20vh;margin-right:-2vw;text-align:right"
-                >
-                  ABOUT US
-                </p></v-flex
+            <div class="about_us_bg">
+              <v-layout
+                row
+                wrap
+                justify-center
+                style="margin-top-md:20vh;margin-bottom:2%;"
               >
-              <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-                <div class="imgDiv">
-                  <v-img
-                    eager
-                    height="60vh"
-                    src="../assets/1.png"
-                    class="zoomImage"
+                <v-flex md1 sm1 xs3 align-self-start>
+                  <p
+                    class="about_us"
+                    style="margin-top-md:20vh;margin-right-md:-2vw;text-align-md:right"
                   >
-                    <div
-                      class="ab1"
-                      once
-                      :data-step-no="1"
-                      :class="{ active: 1 == currStep }"
-                    ></div>
-                  </v-img>
-                </div>
-              </v-flex>
-              <v-flex md3 xs12 pa-1 align-self-baseline>
-                <div class="imgDiv">
-                  <v-img
-                    eager
-                    height="90vh"
-                    src="../assets/2.png"
-                    class="zoomImage"
-                  >
-                    <div
-                      class="ab1"
-                      once
-                      :data-step-no="1"
-                      :class="{ active: 1 == currStep }"
-                    ></div>
-                  </v-img>
-                </div>
-              </v-flex>
-              <v-flex md5 align-self-end px-3>
-                <p class="new">
-                  CDA aims to elevate lives and incorporate beauty in art to
-                  magnify spaces. Our team consists of young, creatively
-                  passionate like-minded individuals who bring in new
-                  perspectives. By drawing inspiration from all corners of the
-                  world and connecting it with modern ideologies, it helps us
-                  put forth a unique and distinctive end product. What sets us
-                  apart from the norm is the human factor- how interacting with
-                  our designs can impact lives. By collaborating with our
-                  clientele, we add a sense of defined lifestyle to our
-                  creations. Melding vision and sensibilities to enhance the way
-                  you experience life.
-                </p>
-              </v-flex>
-            </v-layout>
-          </div>
-          <div style="width:99vw;height:20vh;padding:10px"></div>
-        </div>
-        <div
-          v-else
-          style="min-width:100vw"
-          class="fadeClass"
-          :data-step-no="1"
-          once
-          :class="{ active: 1 == currStep }"
-        >
-          <div class="about_us_bg">
-            <v-layout
-              row
-              wrap
-              justify-center
-              style="margin-top:20vh;margin-bottom:2%;"
-            >
-              <v-flex md1 sm5 xs5 align-self-start>
-                <p
-                  class="about_us"
-                  style="margin-top:20vh;margin-right:-2vw;text-align:right"
+                    ABOUT US
+                  </p></v-flex
                 >
-                  ABOUT US
-                </p></v-flex
-              >
-              <v-flex md3 sm12 xs12 align-self-end style="margin-top:20vh" pa-1>
-                <div class="imgDiv">
-                  <v-img
-                    eager
-                    height="60vh"
-                    src="../assets/1.png"
-                    class="zoomImage"
-                  >
-                    <div
-                      class="ab1"
-                      once
-                      :data-step-no="1"
-                      :class="{ active: 1 == currStep }"
-                    ></div>
-                  </v-img>
-                </div>
-              </v-flex>
-              <v-flex md3 xs12 pa-1 align-self-baseline>
-                <div class="imgDiv">
-                  <v-img
-                    eager
-                    height="90vh"
-                    src="../assets/2.png"
-                    class="zoomImage"
-                  >
-                    <div
-                      once
-                      class="ab1"
-                      :data-step-no="1"
-                      :class="{ active: 1 == currStep }"
-                    ></div>
-                  </v-img>
-                </div>
-              </v-flex>
-              <v-flex md5 align-self-end px-3>
-                <p class="new">
-                  CDA aims to elevate lives and incorporate beauty in art to
-                  magnify spaces. Our team consists of young, creatively
-                  passionate like-minded individuals who bring in new
-                  perspectives. By drawing inspiration from all corners of the
-                  world and connecting it with modern ideologies, it helps us
-                  put forth a unique and distinctive end product. What sets us
-                  apart from the norm is the human factor- how interacting with
-                  our designs can impact lives. By collaborating with our
-                  clientele, we add a sense of defined lifestyle to our
-                  creations. Melding vision and sensibilities to enhance the way
-                  you experience life.
-                </p>
-              </v-flex>
-            </v-layout>
+                <v-flex
+                  md3
+                  sm10
+                  xs10
+                  align-self-end
+                  style="margin-top:20vh"
+                  pa-1
+                >
+                  <div class="imgDiv">
+                    <v-img
+                      eager
+                      height="60vh"
+                      src="../assets/1.png"
+                      class="zoomImage"
+                    >
+                      <div
+                        class="ab1"
+                        once
+                        :data-step-no="1"
+                        :class="{ active: 1 == currStep }"
+                      ></div>
+                    </v-img>
+                  </div>
+                </v-flex>
+                <v-flex md3 xs10 sm10 pa-1 align-self-baseline>
+                  <div class="imgDiv">
+                    <v-img
+                      eager
+                      height="90vh"
+                      src="../assets/2.png"
+                      class="zoomImage"
+                    >
+                      <div
+                        once
+                        class="ab1"
+                        :data-step-no="1"
+                        :class="{ active: 1 == currStep }"
+                      ></div>
+                    </v-img>
+                  </div>
+                </v-flex>
+                <v-flex md5 xs10 sm10 align-self-end px-3>
+                  <p class="new">
+                    CDA aims to elevate lives and incorporate beauty in art to
+                    magnify spaces. Our team consists of young, creatively
+                    passionate like-minded individuals who bring in new
+                    perspectives. By drawing inspiration from all corners of the
+                    world and connecting it with modern ideologies, it helps us
+                    put forth a unique and distinctive end product. What sets us
+                    apart from the norm is the human factor- how interacting
+                    with our designs can impact lives. By collaborating with our
+                    clientele, we add a sense of defined lifestyle to our
+                    creations. Melding vision and sensibilities to enhance the
+                    way you experience life.
+                  </p>
+                </v-flex>
+              </v-layout>
+            </div>
+            <div style="width:99vw;height:20vh;padding:10px"></div>
           </div>
-          <div style="width:99vw;height:20vh;padding:10px"></div>
         </div>
-      </div>
-    </Scrollama>
-  </v-container>
+      </Scrollama>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -216,6 +308,16 @@ export default {
 .fadeClass:hover .img {
   transform: scale(1);
   transition: all 3s;
+}
+.about-mb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  background-color: red;
 }
 
 .fadeClass:hover .zoomImage {

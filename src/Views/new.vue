@@ -3,20 +3,18 @@
     <div v-if="isMobile()" style="height:100vh;width:100vw;overflow:hidden">
       <div class="sub-right">
         <div class="center_r">
-          <p>
             <v-card
               flat
               color="transparent"
-              class="d-flex flex-row"
+              style="margin-top:35vh"
+              class="d-flex"
             >
               <v-img
                 contain
-                height="30%"
-                width="20vw"
+                height="30vh"
                 src="../assets/main.png"
               ></v-img>
             </v-card>
-          </p>
         </div>
       </div>
     </div>
