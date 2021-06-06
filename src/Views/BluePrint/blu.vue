@@ -43,8 +43,39 @@
             </div>
           </div>
 
-          <div class="blue-body" id="design" ref="design">
-            <div class="body">
+          <div
+            class="blue-body"
+            id="design"
+            ref="design"
+            :data-step-no="1"
+            :class="{ active: 1 == currStep }"
+          >
+            <div
+              class="body"
+              v-if="isMobile()"
+              :data-step-no="1"
+              :class="{ active: 1 == currStep }"
+            >
+              <div style="height:22vh;width: 10vw;"></div>
+              <div class="fadeClass" style="height:70vh">
+                <p class="mobLetter">DESIGN</p>
+                <div class="d-flex flex-row justify-left align-center">
+                  <div
+                    id="animated-example"
+                    class="animated bounce"
+                    style="margin-top:-29vh;margin-left:3vw"
+                  >
+                    <v-icon
+                      size="30"
+                      href="#ARCHITECTURE"
+                      v-smooth-scroll="{ duration: 2000 }"
+                      >mdi-chevron-down-circle-outline</v-icon
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body" v-else>
               <div style="height:22vh;width: 10vw;"></div>
               <div class="fadeClass ml-12" style="height:70vh">
                 <div class="back-text">
@@ -61,16 +92,64 @@
                   </div>
                 </div>
               </div>
+              <div class="d-flex flex-row justify-left align-center">
+                <div
+                  id="animated-example"
+                  class="animated bounce"
+                  style="margin-left:3vw"
+                >
+                  <v-icon
+                    size="30"
+                    href="#ARCHITECTURE"
+                    v-smooth-scroll="{ duration: 2000 }"
+                    >mdi-chevron-down-circle-outline</v-icon
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="isMobile()"
+            id="ARCHITECTURE"
+            class="twelve"
+            :data-step-no="1"
+            :class="{ active: 1 == currStep }"
+          >
+            <div style="height: 120vh;padding:5vw;margin-bottom:-19vh">
+              <div class="mt-12">
+                <v-img
+                  height="50vh"
+                  eager
+                  contain
+                  src="../../assets/blueprint/_SDS3203b.png"
+                >
+                  <!-- <div
+                    class="twelve"
+                    :data-step-no="1"
+                    :class="{ active: 1 == currStep }"
+                  ></div> -->
+                </v-img>
+              </div>
+
+              <p class="text001  text-center" style="margin-top:2vh;">
+                "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT, OF
+                FORMS ASSEMBLED IN THE LIGHT"<br />
+                <span>
+                  <p style="margin-top:5px" class="textMini text-right">
+                    -Le Corbusier
+                  </p>
+                </span>
+              </p>
             </div>
             <div class="d-flex flex-row justify-left align-center">
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:3vw"
+                style="margin-left:3vw;margin-top:-13.5vh"
               >
                 <v-icon
                   size="30"
-                  href="#ARCHITECTURE"
+                  href="#act"
                   v-smooth-scroll="{ duration: 2000 }"
                   >mdi-chevron-down-circle-outline</v-icon
                 >
@@ -78,6 +157,7 @@
             </div>
           </div>
           <div
+            v-else
             id="ARCHITECTURE"
             class="twelve"
             :data-step-no="3"
@@ -86,7 +166,7 @@
             <div class="fadeClassNew" style="height: 100vh;padding:5vh">
               <div style="height:10vh;width: 100vw"></div>
               <v-layout row wrap justify-space-around>
-                <v-flex md7 xs12 sm12 align-self-start>
+                <v-flex md7 xs10 sm12 align-self-start>
                   <div>
                     <v-img
                       height="100%"
@@ -102,8 +182,11 @@
                     </v-img>
                   </div>
                 </v-flex>
-                <v-flex md5 align-self-start>
-                  <p class="text001 text-right" style="margin-top:-2vh;">
+                <v-flex md5 xs12 sm10 align-self-start>
+                  <p
+                    class="text001 mt-xs-12 text-right"
+                    style="margin-top:-2vh;"
+                  >
                     "ARCHITECTURE IS THE LEARNED GAME, CORRECT AND MAGNIFICENT,
                     OF FORMS ASSEMBLED IN THE LIGHT"<br />
                     <span>
@@ -132,6 +215,76 @@
           </div>
           <div style="height:10vh;width: 100vw"></div>
           <div
+            v-if="isMobile()"
+            id="act"
+            class="twelve"
+            style="background-color:red;height:100vh"
+            :data-step-no="4"
+            :class="{ active: 4 == currStep }"
+          >
+            <!-- <div style="height:4vh;width: 100vw"></div> -->
+            <div class="fadeClass">
+              <div>
+                <div style="height:10vh;width: 100vw"></div>
+
+                <v-layout row wrap justify-center>
+                  <v-flex md4 xs10 sm10 align-self-end>
+                    <div>
+                      <v-img
+                        eager
+                        contain
+                        height="30vh"
+                        src="../../assets/blueprint/_SDS3006.png"
+                      >
+                        <div
+                          class="twelve"
+                          :data-step-no="4"
+                          :class="{ active: 4 == currStep }"
+                        ></div>
+                      </v-img>
+                    </div>
+                  </v-flex>
+                  <v-flex md5 xs10 sm10 align-self-center>
+                    <div class="mt-5">
+                      <v-img
+                        eager
+                        contain
+                        height="30vh"
+                        src="../../assets/blueprint/_SDS3211.jpeg"
+                      >
+                        <div
+                          class="twelve"
+                          :data-step-no="4"
+                          :class="{ active: 4 == currStep }"
+                        ></div>
+                      </v-img>
+                    </div>
+                  </v-flex>
+                  <p class="text001 mt-12">
+                    "IT'AS ALMOST IMPOSSIBLE TO RECONCILE SELF EXPRESSION WITH
+                    THE CREATIVE ACT" <br /><span class="textMini">
+                      -Charles Eames
+                    </span>
+                  </p>
+                </v-layout>
+                <div
+                  class="d-flex flex-row justify-start align-start"
+                  style="margin-top:1vh;margin-left:3vw"
+                >
+                  <div id="animated-example" class="animated bounce">
+                    <v-icon
+                      href="#act2"
+                      size="30"
+                      v-smooth-scroll="{ duration: 2000 }"
+                      >mdi-chevron-down-circle-outline</v-icon
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-else
             id="act"
             class="twelve"
             :data-step-no="4"
@@ -197,13 +350,51 @@
             </div>
           </div>
           <div
+            v-if="isMobile()"
+            id="act2"
+            class="twelve"
+            :data-step-no="5"
+            :class="{ active: 5 == currStep }"
+          >
+            <div class="fadeClass" style="height: 100vh; width:100vw;">
+              <div class="d-flex flex-column">
+                <div style="margin-left:1vw;margin-top:25vh">
+                  <img style="width:95vw" src="../../assets/blueprint/1.png" />
+                  <div
+                    class="twelve"
+                    :data-step-no="5"
+                    :class="{ active: 5 == currStep }"
+                  ></div>
+                  <p class="textMini2 text-left">
+                    Charles and Ray Eames
+                    <br />
+                    Lounge chair by Herman Miller
+                    <br />
+                    1956
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-row justify-start align-start"
+              style="margin-left:3vw;margin-top:-8vh"
+            >
+              <div id="animated-example" class="animated bounce">
+                <v-icon href="#act-slider" size="30" v-smooth-scroll
+                  >mdi-chevron-down-circle-outline</v-icon
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            v-else
             id="act2"
             style="margin-top:10vh"
             class="twelve"
             :data-step-no="5"
             :class="{ active: 5 == currStep }"
           >
-            <div class="fadeClass" style="height: 100vh">
+            <div class="fadeClass" style="height: 100vh; width:100vw;">
               <div class="d-flex flex-column">
                 <div style="margin-left:10vw">
                   <img style="height:85vh" src="../../assets/blueprint/1.png" />
@@ -235,6 +426,19 @@
           </div>
           <div style="height:10vh;width: 20vw;"></div>
           <div
+            v-if="isMobile()"
+            v-on:mouseover.once="mouseOver"
+            id="act-slider"
+            style="height:100vh;margin-top:10vh"
+            class="twelve"
+            ref="slider1"
+            :data-step-no="5"
+            :class="{ active: 5 == currStep }"
+          >
+            <Slider1Mob />
+          </div>
+          <div
+            v-else
             v-on:mouseover.once="mouseOver"
             id="act-slider"
             style="height:100vh;margin-top:10vh"
@@ -249,7 +453,32 @@
       </section>
     </div>
     <div style="height:10vh;width: 20vw;"></div>
-    <div class="blue-body" id="beaty" ref="beaty">
+    <div
+      class="body"
+      v-if="isMobile()"
+      :data-step-no="1"
+      :class="{ active: 1 == currStep }"
+    >
+      <div style="height:22vh;width: 10vw;"></div>
+      <div class="fadeClass" style="height:70vh">
+        <p class="mobLetter">BEAUTY</p>
+        <div class="d-flex flex-row justify-left align-center">
+          <div
+            id="animated-example"
+            class="animated bounce"
+            style="margin-top:-29vh;margin-left:3vw"
+          >
+            <v-icon
+              size="30"
+              href="#beaty-blue"
+              v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down-circle-outline</v-icon
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blue-body" id="beaty" ref="beaty" v-else>
       <!-- v-on:mouseover.once="mouseOver2" -->
 
       <div class="body">
@@ -285,7 +514,8 @@
       </div>
     </div>
     <div id="beaty-blue">
-      <BeautyBlue />
+      <BeautyBlueMOB v-if="isMobile()" />
+      <BeautyBlue v-else />
     </div>
     <div class="blue-body" id="space" ref="space">
       <!-- v-on:mouseover.once="mouseOver3" -->
@@ -334,8 +564,10 @@ import Scrollama from "vue-scrollama";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
 // import LocomotiveScroll from "locomotive-scroll";
 import Slider1 from ".././Slider1";
+import Slider1Mob from ".././Slider1Mob.vue";
 // import Slider2 from ".././Slider2";
 import BeautyBlue from ".././BeautyBlue";
+import BeautyBlueMOB from ".././BeautyBlueMOB";
 import SpaceBlue from ".././SpaceBlue";
 
 export default {
@@ -344,7 +576,9 @@ export default {
     Scrollama,
     // Slider2,
     BeautyBlue,
+    BeautyBlueMOB,
     Slider1,
+    Slider1Mob,
     SpaceBlue,
   },
   data() {
@@ -520,16 +754,33 @@ export default {
   font-size: 25vw;
   -webkit-font-smoothing: antialiased;
 }
+.mobLetter {
+  margin-top: 15vh;
+  width: 100%;
+  height: 100%;
+  color: #a6a6a6;
+  text-align: center;
+  font-family: "Oranienbaum", serif;
+  font-size: 25vw;
+  -webkit-font-smoothing: antialiased;
+}
 span {
   display: inline-block;
 }
-.body {
-  /* height: 50vh;
+/* .body.active {
+  height: 50vh;
   width: 100vw;
   padding: 0;
-  margin: 0; */
-  /* background-color: black;S */
+  margin: 0;
+  background-color: rgb(30, 189, 25);
 }
+.body {
+  height: 50vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(224, 19, 19);
+} */
 /* .letter.active {
   opacity: 1;
   transform: translateY(0);
@@ -540,7 +791,17 @@ span {
   transform: translateY(0);
   filter: blur(0);
 }
+.letter.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
 .blue-body:hover .letter2 {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.letter2.active {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
