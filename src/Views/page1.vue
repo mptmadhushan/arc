@@ -18,7 +18,7 @@
             >
               <div class="about-mb">
                 <p class="about_us" style="margin-top:5vh;text-align:center">
-                  ABOUT US1
+                  ABOUT US
                 </p>
                 <div class="imgDiv" style="margin-left:3vw">
                   <v-img

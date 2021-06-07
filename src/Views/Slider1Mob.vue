@@ -17,90 +17,81 @@
             :class="{ active: 1 == currStep }"
           >
             <div>
-              <v-row no-gutters style="height:100vh;">
-                <v-col
-                  align-self="center"
-                  style="margin-left:2vw;margin-top:-1%"
-                >
+              <div
+                class="d-flex d-row justify-space-around"
+                style="margin-top:20enjovh"
+              >
+                <div>
+                  <v-img
+                    height="50vh"
+                    src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
+                  >
+                    <!-- <div class="newBox2"></div> -->
+                  </v-img>
+                  <p
+                    class="textMini text-left"
+                    style="margin-top:1%;margin-left:0%"
+                  >
+                    LC4
+                    <br />
+                    Charlotte Perriand
+                    <br />
+                    Cassina 1930
+                  </p>
+                </div>
+                <div>
                   <div>
                     <v-img
-                      height="200px"
-                      src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
+                      height="50vh"
+                      cover
+                      src="../assets/blueprint/GB-in-office--Sowden--1985.jpg"
                     >
-                      <div class="newBox2"></div>
                     </v-img>
-                    <p
-                      class="textMini text-left"
-                      style="margin-top:1%;margin-left:7%"
-                    >
-                      LC4
-                      <br />
-                      Charlotte Perriand
-                      <br />
-                      Cassina 1930
-                    </p>
                   </div>
-                </v-col>
-                <v-col align-self="center" style="margin-left:8vw">
-                  <div class="fadeClass">
-                    <div class="image-box">
-                      <v-img
-                        class="zoom_image"
-                        height="200px"
-                        cover
-                        src="../assets/blueprint/GB-in-office--Sowden--1985.jpg"
-                      >
-                      </v-img>
-                    </div>
-                    <p
-                      class="textMini text-left"
-                      style="margin-left:3vw;margin-top:1%;"
-                    >
-                      Geoffrey Bawa
-                      <br />
-                      Geoffrey Bawa Trust
-                      <br />
-                      circa 1992
-                    </p>
-                  </div> </v-col
-                ><v-col align-self="center" style="margin-left:-12vw">
-                  <div class="fadeClass" style="margin-top:2vh">
-                    <div class="image-box">
-                      <v-img
-                        class="zoom_image"
-                        height="300px"
-                        cover
-                        src="../assets/blueprint/960x0-ConvertImage.jpg"
-                      >
-                      </v-img>
-                    </div>
-                    <p
-                      class="textMini text-left"
-                      style="margin-left:3vw;margin-top:1%;"
-                    >
-                      Louis Ghost Chair
-                      <br />
-                      Philippe Starck
-                      <br />
-                      2002
-                    </p>
-                  </div>
-                  <div
-                    id="animated-example"
-                    class="animated bounce"
-                    style="padding-left:66vw;margin-top:5vh"
+                  <p
+                    class="textMini text-left"
+                    style="margin-left:3vw;margin-top:1%;"
                   >
-                    <v-icon
-                      style="margin-left:5vw"
-                      href="#beaty"
-                      size="30"
-                      dark
-                      v-smooth-scroll="{ duration: 2000 }"
-                      >mdi-chevron-down-circle-outline</v-icon
+                    Geoffrey Bawa
+                    <br />
+                    Geoffrey Bawa Trust
+                    <br />
+                    circa 1992
+                  </p>
+                </div>
+                <div >
+                    <v-img
+                      height="50vh"
+                      cover
+                      src="../assets/blueprint/960x0-ConvertImage.jpg"
                     >
-                  </div>
-                </v-col>
-              </v-row>
+                    </v-img>
+                  <p
+                    class="textMini text-left"
+                    style="margin-left:3vw;margin-top:1%;"
+                  >
+                    Louis Ghost Chair
+                    <br />
+                    Philippe Starck
+                    <br />
+                    2002
+                  </p>
+                </div>
+                <div
+                  id="animated-example"
+                  class="animated bounce"
+                  style="padding-left:66vw;margin-top:5vh"
+                >
+                  <v-icon
+                    style="margin-left:5vw"
+                    href="#beaty"
+                    size="30"
+                    dark
+                    v-smooth-scroll="{ duration: 2000 }"
+                    >mdi-chevron-down-circle-outline</v-icon
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -502,7 +493,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 530vw;
+  width: 500vh;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

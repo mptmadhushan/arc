@@ -218,7 +218,7 @@
             v-if="isMobile()"
             id="act"
             class="twelve"
-            style="background-color:red;height:100vh"
+            style="height:100vh"
             :data-step-no="4"
             :class="{ active: 4 == currStep }"
           >

@@ -2,21 +2,18 @@
   <div>
     <div v-if="isMobile()" style="height:100vh;width:100vw;overflow:hidden">
       <div class="sub-right">
-        <div class="center_r">
-            <v-card
-              flat
-              color="transparent"
-              style="margin-top:35vh"
-              class="d-flex"
-            >
-              <v-img
-                contain
-                height="30vh"
-                src="../assets/main.png"
-              ></v-img>
-            </v-card>
+          <v-card
+            flat
+            color="transparent"
+            style="margin-top:25vh"
+            class="d-flex flex-column mb-6"
+          >
+            <v-img contain height="30vh" src="../assets/main.png"></v-img>
+            <p class="preTitle">
+             Touch To Begin..
+            </p>
+          </v-card>
         </div>
-      </div>
     </div>
     <div v-else style="height:100vh;">
       <div class="outer-wrapper">
@@ -27,7 +24,7 @@
                 <v-card
                   flat
                   color="transparent"
-                  class="d-flex flex-row justify-center align-center"
+                  class="d-flex flex-column justify-center align-center"
                   style="position:relative"
                 >
                   <v-img
@@ -37,7 +34,12 @@
                     width="20vw"
                     style="margin-top:33vh"
                     src="../assets/main.png"
-                  ></v-img>
+                  >
+                  </v-img>
+                  <!-- <p class="preTitle" style="font-size:3vh;margin-top:-55vh">
+                    Click to continue..
+                  </p> -->
+
                   <div class="scroll" v-if="arrow">
                     <v-img
                       contain
@@ -45,7 +47,8 @@
                       width="5vh"
                       eager
                       src="../assets/scrollImage.png"
-                    ></v-img>
+                    >
+                    </v-img>
                   </div>
                 </v-card>
               </p>
@@ -58,6 +61,7 @@
 </template>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 .scroll {
   position: fixed;
   top: 90%;
@@ -76,6 +80,12 @@
 }
 .one {
   background: #292929;
+}
+.preTitle {
+  text-align: center;
+  font-size: 2vh;
+  font-family: "Spectral", serif;
+  color: #adaaaa;
 }
 
 .outer-wrapper {
