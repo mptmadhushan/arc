@@ -49,54 +49,6 @@
               >
             </div>
           </div>
-          <!-- <div>
-            <v-row no-gutters style="height:100vh;">
-              <v-col align-self="center" style="margin-left:2vw;margin-top:-1%">
-                <div>
-                  <v-img
-                    height="85vh"
-                    width="40vw"
-                    src="../assets/blueprint/slider3.jpeg"
-                  >
-                    <div class="newBox2"></div>
-                  </v-img>
-                </div>
-              </v-col>
-              <v-col
-                align-self="center"
-                style="margin-left:5vw;margin-top:12vh"
-              >
-                <div class="fadeClass">
-                  <div class="image-box">
-                    <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/slider32.jpeg"
-                    >
-                    </v-img>
-                  </div>
-                </div> </v-col
-              ><v-col
-                align-self="center"
-                style="margin-left:-3vw;margin-top:12vh"
-              >
-                <div class="fadeClass">
-                  <div class="image-box">
-                    <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/slider33.jpeg"
-                    >
-                    </v-img>
-                  </div>
-                </div>
-              </v-col>
-
-            
-            </v-row>
-          </div> -->
         </div>
       </div>
     </div>

@@ -26,12 +26,12 @@
         <div class="b1"></div>
       </div>
     </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
     <div>
       <v-img
         eager
         height="85vh"
-        style="margin-top:6vh"
+        style="margin-top-md:6vh"
         contain
         data-aos="fade-up"
         data-aos-duration="2000"
@@ -39,11 +39,18 @@
         data-aos-delay="100"
         src="../assets/Bolgoda/_SDS1461.JPG.jpeg"
       ></v-img>
-      <p class="text002 text-center">
+      <p
+        class="text002 text-center"
+        v-if="isMobile()"
+        style="margin-top: -20vh;"
+      >
+        Intimacy and indulgence
+      </p>
+      <p class="text002 text-center" v-else>
         Intimacy and indulgence
       </p>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px" v-if="!isMobile()"></div>
 
     <div v-if="isMobile()" class="text-center">
       <v-layout row wrap justify-center pt-md-12 style="height:70vh">
@@ -90,7 +97,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:35vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
@@ -104,7 +111,15 @@
         height="85vh"
         src="../assets/Bolgoda/_SDS1196.JPG.jpeg"
       ></v-img>
-      <p class="text002 text-center">
+      <p
+        class="text002 text-center"
+        v-if="isMobile()"
+        style="margin-top: -20vh;"
+      >
+        <span class="text005">Harmonious Coexistence</span> <br />
+        The interplay of Sri Lankan pop art and indo-Portuguese furniture.
+      </p>
+      <p class="text002 text-center" v-else>
         <span class="text005">Harmonious Coexistence</span> <br />
         The interplay of Sri Lankan pop art and indo-Portuguese furniture.
       </p>
@@ -125,7 +140,7 @@
         src="../assets/Bolgoda/_SDS1292.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
+    <div  v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -161,7 +176,7 @@
         composition of inside - out.
       </p>
     </div>
-    <div style="width:99vw;height:18vh;padding:10px"></div>
+    <div v-if="!isMobile()"  style="width:99vw;height:18vh;padding:10px"></div>
 
     <div v-if="isMobile()" style="margin-top: 10vh">
       <v-img
@@ -230,7 +245,7 @@
       <!-- </v-layout> -->
     </div>
 
-    <div style="width:99vw;height:35vh;padding:10px"></div>
+    <div v-if="!isMobile()"  style="width:99vw;height:35vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
@@ -249,7 +264,7 @@
         A contemporary twist to a timeless view.
       </p>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
+    <div v-if="!isMobile()"  style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -307,7 +322,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
+    <div v-if="!isMobile()"  style="width:99vw;height:30vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"

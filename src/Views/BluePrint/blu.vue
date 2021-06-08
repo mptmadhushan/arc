@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="blue-bb">
     <div data-scroll-container id="fir">
       <section data-scroll-section>
         <router-link to="/">
@@ -456,6 +456,7 @@
     <div
       class="body"
       v-if="isMobile()"
+      id="beaty"
       :data-step-no="1"
       :class="{ active: 1 == currStep }"
     >
@@ -517,7 +518,33 @@
       <BeautyBlueMOB v-if="isMobile()" />
       <BeautyBlue v-else />
     </div>
-    <div class="blue-body" id="space" ref="space">
+    <div
+      class="body"
+      v-if="isMobile()"
+      id="space"
+      :data-step-no="1"
+      :class="{ active: 1 == currStep }"
+    >
+      <div style="height:22vh;width: 10vw;"></div>
+      <div class="fadeClass" style="height:70vh">
+        <p class="mobLetter">SPACE</p>
+        <div class="d-flex flex-row justify-left align-center">
+          <div
+            id="animated-example"
+            class="animated bounce"
+            style="margin-top:-29vh;margin-left:3vw"
+          >
+            <v-icon
+              size="30"
+              href="#beaty-blue"
+              v-smooth-scroll="{ duration: 2000 }"
+              >mdi-chevron-down-circle-outline</v-icon
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blue-body" id="space" ref="space" v-else>
       <!-- v-on:mouseover.once="mouseOver3" -->
 
       <div class="body">
@@ -553,7 +580,8 @@
       </div>
     </div>
     <div id="space-blue">
-      <SpaceBlue />
+      <SpaceBlue v-if="!isMobile()" />
+      <SpaceBlueMob v-else />
     </div>
   </div>
 </template>
@@ -569,13 +597,15 @@ import Slider1Mob from ".././Slider1Mob.vue";
 import BeautyBlue from ".././BeautyBlue";
 import BeautyBlueMOB from ".././BeautyBlueMOB";
 import SpaceBlue from ".././SpaceBlue";
+import SpaceBlueMob from ".././SpaceBlueMob.vue";
 
 export default {
   name: "App",
   components: {
     Scrollama,
-    // Slider2,
+    // Slider2,SpaceBlueMob
     BeautyBlue,
+    SpaceBlueMob,
     BeautyBlueMOB,
     Slider1,
     Slider1Mob,
@@ -668,6 +698,12 @@ export default {
   50% {
     transform: translateY(-5px);
   }
+}
+.blue-bb {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 .bounce {
   -webkit-animation-name: bounce;

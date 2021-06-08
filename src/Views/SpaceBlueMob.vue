@@ -2,218 +2,159 @@
 */
 <template>
   <div>
-    <div>
-      <div class="body fadeClass">
-        <div style="width:99vw;height:20vh"></div>
+    <div style="margin-top:10vh">
+      <div class="body2 fadeClass">
+        <!-- <div class="back-text">
+          <div class="text-container">
+            <span class="letter2">S</span><span class="letter2">P</span
+            ><span class="letter2">A</span><span class="letter2">C</span
+            ><span class="letter2">E</span><span class="letter2"></span>
+            <span class="letter2">D</span><span class="letter2">S</span>
+            <span class="letter2">P</span><span class="letter2">A</span>
+            <span class="letter2">C</span><span class="letter2">E</span>
+          </div>
+        </div> -->
 
-        <div class="fadeClass">
-          <div class="bg-items" style="margin-left:20vw;margin-top:2vh">
+        <!-- <div style="width:99vw;height:30vh"></div> -->
+        <div style="margin-top:5vh;width:100vw;height:100vh">
+          <div style="height:80vh;margin-top:5vh">
             <v-img
-              class="img-to-ef"
               eager
-              height="49vh"
               contain
-              src="../assets/blueprint/imgspace.jpg"
+              height="90vh"
+              src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
             >
               <!-- <div class="twelve"></div> -->
             </v-img>
           </div>
-          <div style="width:99vw;height:1vh"></div>
+          <!-- <div style="width:99vw;height:13vh"></div> -->
           <div>
-            <P class="textMini text-left" style="margin-left:20vw">
-              Pablo Piccaso<br />Cannes,France<br />1956
+            <P
+              class="textMini text-left"
+              style="margin-left:5vw;margin-top:5vh"
+            >
+              Geoffrey Bawa<br />Lunuganga<br />1948 - onwards
             </P>
+            <div class="d-flex flex-row justify-left align-center">
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="margin-left:3vw;margin-top:-1vh"
+              >
+                <v-icon
+                  size="30"
+                  href="#space-blue1"
+                  v-smooth-scroll="{ duration: 2000 }"
+                  >mdi-chevron-down-circle-outline</v-icon
+                >
+              </div>
+            </div>
+            <div style="width:99vw;height:40vh"></div>
           </div>
-        </div>
-        <div
-          id="animated-example"
-          class="animated bounce"
-          style="margin-left:3vw;margin-top:16vh"
-        >
-          <v-icon href="#bnew" size="30" v-smooth-scroll="{ duration: 2000 }"
-            >mdi-chevron-down-circle-outline</v-icon
-          >
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:30vh"></div>
-    <div class="fadeClass" id="bnew" ref="bnew" style="height:100vh">
-      <!-- <div style="width:99vw;height:30vh"></div> -->
+    <div class="fadeClass" id="space-blue1">
       <div>
-        <v-layout row wrap justify-center>
-          <v-flex md6 xs12 sm12 align-self-end>
-            <div class="image-box">
+        <v-layout row wrap justify-center mt-12>
+          <v-flex md6 xs12 sm12 align-self-center>
+            <div style="padding:4vw">
               <v-img
-                class="zoom_image"
                 eager
-                contain
-                height="90vh"
-                src="../assets/blueprint/_SDS3614.png"
+                height="85vh"
+                src="../assets/blueprint/Space/1280.jpg"
               >
                 <!-- <div class="twelve"></div> -->
               </v-img>
+              <P class="textMini text-left" style="margin-top:1vw;">
+                Ricardo Bofill<br />La Fabrica<br />1973
+              </P>
             </div>
           </v-flex>
-          <v-flex md4 xs12 sm12 align-self-end>
-            <p class="text001 text-center" style="margin-bottom:-5vh">
-              "ENJOYING ART IS A PERSONAL MATTER.<br />
-              IT'S MADE UP BY CONTEMPLATION, SILENCE,<br />
-              ABSTRACTION"<br /><span class="textMini">-Renzo Piano</span>
-            </p>
-            <div class="image-box">
+          <v-flex md4 xs12 sm12 align-self-center>
+            <div>
+              <P
+                class="text001 text-right"
+                style="margin-right:10vh;margin-top:5vh"
+              >
+                "WE BORROW FROM NATURE THE<br />
+                SPACE UPON WHICH WE BUILD"<br />
+                <span class="textMini text-right">
+                  - Tadao Ando
+                </span>
+              </P>
+            </div>
+            <div>
               <v-img
-                class="zoom_image"
                 eager
-                style="margin-right: 5vw"
                 contain
-                height="80vh"
-                src="../assets/blueprint/_SDS2957.jpeg"
+                height="70vh"
+                src="../assets/blueprint/_SDS3496.jpeg"
               >
                 <!-- <div class="twelve"></div> -->
               </v-img>
             </div>
           </v-flex>
         </v-layout>
+      </div>
+      <div class="d-flex flex-row justify-left align-center">
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:3vw;margin-top:0vh"
+          style="margin-left:3vw;margin-top:3vh"
         >
-          <v-icon href="#bnew2" size="30" v-smooth-scroll="{ duration: 2000 }"
+          <v-icon
+            href="#space-blue2"
+            size="30"
+            v-smooth-scroll="{ duration: 2000 }"
             >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
       </div>
     </div>
 
-    <div
-      id="bnew2"
-      style="width:100vw;height:100vh"
-      class="d-flex justify-center align-center"
-    >
-      <p class="text001 text-center" style=" text-transform: uppercase;">
-        "i dont know where my work begins or ends,<br />
-        or where it wants to take me, but i believe<br />
-        that's where things truly belong"<br />
-        <span class="textMini">
-          - Mahen Perera
-        </span>
-      </p>
-    </div>
-    <div
-      id="animated-example"
-      class="animated bounce"
-      style="margin-left:3vw;margin-top:-8vh"
-    >
-      <v-icon href="#bnew3" size="30" v-smooth-scroll="{ duration: 2000 }"
-        >mdi-chevron-down-circle-outline</v-icon
-      >
-    </div>
-    <div class="fadeClass" id="bnew3">
-      <div class="image-box" style="padding-top:8vh;">
+    <div class="fadeClass" id="space-blue2">
+      <div>
         <v-img
-          class="img-to-ef"
-          eager
-          contain
-          height="84vh"
-          src="../assets/blueprint/_SDS3206b.jpeg"
-        >
-          <!-- <div class="twelve"></div> -->
-        </v-img>
-      </div>
-      <div
-        id="animated-example"
-        style="margin-left:3vw;margin-top:0vh"
-        class="animated bounce"
-      >
-        <v-icon href="#bnew4" size="30" v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down-circle-outline</v-icon
-        >
-      </div>
-    </div>
-    <div style="width:99vw;height:30vh"></div>
-    <div class="fadeClass" id="bnew4">
-      <div class="bg-itemsOld" style="padding-top:8vh">
-        <v-img
-          class="img-to-efOld"
-          eager
-          contain
-          height="85vh"
-          src="../assets/_SDS3552.png"
-        >
-          <!-- <div class="twelve"></div> -->
-        </v-img>
-      </div>
-      <div
-        id="animated-example"
-        class="animated bounce"
-        style="margin-left:3vw;margin-top:0vh"
-      >
-        <v-icon href="#bnew5" size="30" v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down-circle-outline</v-icon
-        >
-      </div>
-    </div>
-    <div
-      id="bnew5"
-      style="height:100vh"
-      class="d-flex justify-center align-center"
-    >
-      <p class="text001">
-        "AN EMPTY CANVAS IS FULL"<br />
-        <span class="textMini text-right mt-1">
-          - Robert Rauschenburg
-        </span>
-      </p>
-    </div>
-    <div
-      id="animated-example"
-      style="margin-left:3vw;margin-top:-7.8vh"
-      class="animated bounce"
-    >
-      <v-icon size="30" href="#bnew65" v-smooth-scroll="{ duration: 2000 }"
-        >mdi-chevron-down-circle-outline</v-icon
-      >
-    </div>
-    <div style="height:40vh"></div>
-    <div class="fadeClass" id="bnew65" style="height:100vh">
-      <div class="bg-itemsOld" style="padding-top:5vh">
-        <v-img
-          class="img-to-efOld"
           eager
           contain
           height="90vh"
-          src="../assets/blueprint/Space/museebourdelle.jpg"
+          src="../assets/blueprint/_SDS3571b.jpeg"
         >
           <!-- <div class="twelve"></div> -->
         </v-img>
       </div>
-      <div
-        id="animated-example"
-        style="margin-left:3vw;margin-top:-3vh"
-        class="animated bounce"
-      >
-        <v-icon href="#slider2" size="30" v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down-circle-outline</v-icon
+      <div class="d-flex flex-row justify-left align-center">
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:1vw;margin-top:5vh"
         >
+          <v-icon
+            href="#space-blue4"
+            size="30"
+            v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-down-circle-outline</v-icon
+          >
+        </div>
       </div>
     </div>
-    <div style="width:99vw;height:30vh"></div>
-    <div v-on:mouseover="mouseOver" id="slider2" ref="slider2">
+    <div style="width:99vw;height:25vh"></div>
+    <div v-on:mouseover="mouseOver" ref="space-blue4" id="space-blue4">
       <Slider2 v-if="!isMobile()" />
-      <Slider2Mob v-else />
+      <Slide3Mob v-else />
     </div>
   </div>
 </template>
 
 <script scoped>
 import LocomotiveScroll from "locomotive-scroll";
-import Slider2 from "./Slider2New";
-import Slider2Mob from "./Slider2Mob.vue";
+import Slider2 from "./Slide3New";
+import Slide3Mob from "./Slide3Mob.vue";
 export default {
   components: {
     Slider2,
-    Slider2Mob,
+    Slide3Mob,
   },
   data: () => ({
     open: true,
@@ -264,10 +205,55 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 
+.bg-itemsOld {
+  overflow: hidden;
+  width: 100%;
+}
+.img-to-efOld {
+  transition: all 10s;
+}
+.fadeClass:hover .img-to-efOld {
+  transform: scale(1.1);
+  transition: all 5s ease-in-out;
+}
+.bg-items {
+  max-width: 40vw;
+  display: inline-block;
+  overflow: hidden;
+}
+.bg-items2 {
+  width: 30vw;
+  display: inline-block;
+  overflow: hidden;
+}
+.img-to-ef {
+  display: block;
+  transition: transform 4s; /* smoother zoom */
+}
+.img-to-ef2 {
+  display: block;
+  transition: transform 4s; /* smoother zoom */
+}
+.fadeClass:hover .img-to-ef {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+.fadeClass:hover .img-to-ef2 {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+.bg-item-zoom {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  margin-left: 5vw;
+  width: 70%;
+  height: 100%;
+  transition: all 13s;
+}
 .image-box {
   position: relative;
   margin: auto;
@@ -331,7 +317,7 @@ export default {
 
 .items:hover .twelve {
   height: 10%;
-  transition: all 2s;
+  transition: all 3s;
 }
 
 .textMini {
@@ -351,21 +337,20 @@ export default {
   /* background-color: black;S */
 }
 .back-text {
-  max-height: 50vh;
+  max-height: 52vh;
   /* background-color: red; */
   overflow: hidden;
 }
-
 .text-container {
   margin-top: -15vh;
-  width: 82%;
+  width: 85%;
   height: 100%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
   font-family: "Oranienbaum", serif;
-  font-size: 47vh;
+  font-size: 50vh;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -420,7 +405,8 @@ span {
   transform: translateY(50vh);
   transition-duration: 3.8s;
 }
-.body:hover .letter2 {
+
+.body2:hover .letter2 {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
@@ -496,7 +482,7 @@ span {
 
 .parallax {
   /* The image used */
-  background-image: url("../assets/blueprint/_SDS3206b.jpeg");
+  background-image: url("../assets/blueprint/_SDS3571b.jpeg");
   margin: 10px;
   /* Set a specific height */
   min-height: 100vh;
@@ -508,28 +494,16 @@ span {
   background-size: cover;
 }
 .bg-items {
-  width: 60vw;
-  display: inline-block;
-  overflow: hidden;
-}
-.img-to-ef {
-  display: block;
-  transition: transform 4s; /* smoother zoom */
-}
-.fadeClass:hover .img-to-ef {
-  transform: scale(1.1);
-  transform-origin: 50% 50%;
-}
-.bg-itemsOld {
   overflow: hidden;
   width: 100%;
 }
-.img-to-efOld {
+.img-to-ef {
+  transform: scale(1.5);
   transition: all 10s;
 }
-.fadeClass:hover .img-to-efOld {
-  transform: scale(1.1);
-  transition: all 5s ease-in-out;
+.fadeClass:hover .img-to-ef {
+  transform: scale(1);
+  transition: all 4s ease-in-out;
 }
 .fadeClass:hover .twelve {
   height: 0%;
@@ -894,10 +868,9 @@ h2 span:last-child {
 }
 .text001 {
   text-align: center;
-  font-family: "Roboto", sans-serif;
-
   font-size: 2.5vh;
 
+  font-family: "Roboto", sans-serif;
   color: #a6a6a6;
 }
 .text003 {
@@ -905,6 +878,7 @@ h2 span:last-child {
   padding-left: 2vw;
   font-size: 2vh;
   font-family: "Roboto", sans-serif;
+
   color: #a6a6a6;
 }
 .text002 {
@@ -912,6 +886,7 @@ h2 span:last-child {
   padding: 5vh;
   font-size: 2vh;
   font-family: "Roboto", sans-serif;
+
   color: #a6a6a6;
 }
 .image_slider {

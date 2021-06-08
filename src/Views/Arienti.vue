@@ -37,7 +37,7 @@
         data-aos-easing="linear"
         data-aos-duration="1500"
         style="height:100vh;width:100vw;"
-        class="d-flex flex-column "
+        class="d-flex flex-column"
       >
         <v-img
           eager
@@ -45,8 +45,12 @@
           height="85vh"
           src="../assets/Arienti/_SDS7732.jpeg"
         ></v-img>
-        <p class="text001">
+        <p class="text001" v-if="!isMobile()">
           Eliminating high boundary walls to expose the exceptional facades
+          beyond, now housing one of Colombo's premier fashion brands.
+        </p>
+        <p class="text001" v-else style="margin-top: -25vh">
+          liminating high boundary walls to expose the exceptional facades
           beyond, now housing one of Colombo's premier fashion brands.
         </p>
       </div>
@@ -127,7 +131,10 @@
             src="../assets/Arienti/_SDS7793.jpeg"
           ></v-img>
         </div>
-        <p class="text001">
+        <p class="text001" v-if="!isMobile()">
+          Balancing reflections and artificial light.
+        </p>
+        <p class="text001" v-else style="margin-top: -20vh">
           Balancing reflections and artificial light.
         </p>
       </div>

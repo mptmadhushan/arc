@@ -24,7 +24,7 @@
                 <div>
                   <v-img
                     height="50vh"
-                    src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
+                    src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
                   >
                     <!-- <div class="newBox2"></div> -->
                   </v-img>
@@ -32,11 +32,11 @@
                     class="textMini text-left"
                     style="margin-top:1%;margin-left:0%"
                   >
-                    LC4
+                    Kuzao Shiraga
                     <br />
-                    Charlotte Perriand
+                    Gutai Group
                     <br />
-                    Cassina 1930
+                    1960
                   </p>
                 </div>
                 <div>
@@ -44,38 +44,18 @@
                     <v-img
                       height="50vh"
                       cover
-                      src="../assets/blueprint/GB-in-office--Sowden--1985.jpg"
+                      src="../assets/blueprint/slide.png"
                     >
                     </v-img>
                   </div>
-                  <p
-                    class="textMini text-left"
-                    style="margin-left:3vw;margin-top:1%;"
-                  >
-                    Geoffrey Bawa
-                    <br />
-                    Geoffrey Bawa Trust
-                    <br />
-                    circa 1992
-                  </p>
                 </div>
-                <div >
-                    <v-img
-                      height="50vh"
-                      cover
-                      src="../assets/blueprint/960x0-ConvertImage.jpg"
-                    >
-                    </v-img>
-                  <p
-                    class="textMini text-left"
-                    style="margin-left:3vw;margin-top:1%;"
+                <div>
+                  <v-img
+                    height="50vh"
+                    cover
+                    src="../assets/blueprint/_SDS3367.jpeg"
                   >
-                    Louis Ghost Chair
-                    <br />
-                    Philippe Starck
-                    <br />
-                    2002
-                  </p>
+                  </v-img>
                 </div>
                 <div
                   id="animated-example"
@@ -84,7 +64,7 @@
                 >
                   <v-icon
                     style="margin-left:-5vw"
-                    href="#beaty"
+                    href="#space"
                     size="30"
                     dark
                     v-smooth-scroll="{ duration: 2000 }"

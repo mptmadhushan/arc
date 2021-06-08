@@ -182,7 +182,8 @@
           height="90vh"
           src="../assets/blueprint/Space/museebourdelle.jpg"
         >
-          <div class="twelve"></div>
+          <div v-if="isMobile()"></div>
+          <div v-else class="twelve"></div>
         </v-img>
       </div>
       <div
