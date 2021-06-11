@@ -2,7 +2,9 @@
   <div class="">
     <div v-if="!isMobile()">
       <div class="footer">
-        <p class="email left">info@cda-ca.com</p>
+        <p class="email left">
+          info@cda-ca.com
+        </p>
         <p class="contry">
           Sri Lanka
         </p>
@@ -16,7 +18,9 @@
     </div>
     <div v-else>
       <div class="footer-m">
-        <p class="email-m left">info@cda-ca.com</p>
+        <p class="email-m left" style=" text-decoration: underline;">
+          info@cda-ca.com
+        </p>
         <p class="contry-m">
           Sri Lanka
         </p>
@@ -81,6 +85,7 @@ export default {};
   padding-top: 10vh;
   color: grey;
   font-size: 10vw;
+  text-decoration: underline;
 }
 .address {
   font-family: "Josefin Sans", sans-serif;
@@ -100,7 +105,6 @@ export default {};
 }
 .contry {
   font-family: "Josefin Sans", sans-serif;
-
   margin-left: 15vh;
   padding-top: 10vh;
   color: white;

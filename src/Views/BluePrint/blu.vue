@@ -534,10 +534,7 @@
             class="animated bounce"
             style="margin-top:-29vh;margin-left:3vw"
           >
-            <v-icon
-              size="30"
-              href="#beaty-blue"
-              v-smooth-scroll="{ duration: 2000 }"
+            <v-icon size="30" href="#space" v-smooth-scroll="{ duration: 2000 }"
               >mdi-chevron-down-circle-outline</v-icon
             >
           </div>

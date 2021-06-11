@@ -54,15 +54,15 @@
                 <div
                   id="animated-example"
                   class="animated bounce"
-                  style="padding-left:66vw;margin-top:65vh"
+                  style="margin-top:65vh"
                 >
                   <v-icon
-                    style="margin-left:-5vw"
+                    style="margin-left:-65vw"
                     href="#fir"
                     size="30"
                     dark
                     v-smooth-scroll="{ duration: 2000 }"
-                    >mdi-chevron-down-circle-outline</v-icon
+                    >mdi-chevron-up-circle-outline</v-icon
                   >
                 </div>
               </div>

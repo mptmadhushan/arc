@@ -16,12 +16,12 @@
         </div> -->
 
         <!-- <div style="width:99vw;height:30vh"></div> -->
-        <div style="margin-top:5vh;width:100vw;height:100vh">
-          <div style="height:80vh;margin-top:5vh">
+        <div style="margin-top:5vh;width:100vw;">
+          <div style="margin-top:5vh">
             <v-img
               eager
               contain
-              height="90vh"
+              height="90vw"
               src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
             >
               <!-- <div class="twelve"></div> -->

@@ -77,9 +77,9 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:3vw;margin-top:0vh"
+          style="margin-left:3vw;margin-top:5vh"
         >
-          <v-icon href="#bnew2" size="30" v-smooth-scroll="{ duration: 2000 }"
+          <v-icon href="#bnew3" size="30" v-smooth-scroll="{ duration: 2000 }"
             >mdi-chevron-down-circle-outline</v-icon
           >
         </div>
@@ -105,9 +105,9 @@
       class="animated bounce"
       style="margin-left:3vw;margin-top:-8vh"
     >
-      <v-icon href="#bnew3" size="30" v-smooth-scroll="{ duration: 2000 }"
+      <!-- <v-icon href="#bnew3" size="30" v-smooth-scroll="{ duration: 2000 }"
         >mdi-chevron-down-circle-outline</v-icon
-      >
+      > -->
     </div>
     <div class="fadeClass" id="bnew3">
       <div class="image-box" style="padding-top:8vh;">
@@ -115,7 +115,7 @@
           class="img-to-ef"
           eager
           contain
-          height="84vh"
+          width="90vw"
           src="../assets/blueprint/_SDS3206b.jpeg"
         >
           <!-- <div class="twelve"></div> -->
@@ -123,31 +123,8 @@
       </div>
       <div
         id="animated-example"
-        style="margin-left:3vw;margin-top:0vh"
+        style="margin-left:3vw;margin-top:10vh"
         class="animated bounce"
-      >
-        <v-icon href="#bnew4" size="30" v-smooth-scroll="{ duration: 2000 }"
-          >mdi-chevron-down-circle-outline</v-icon
-        >
-      </div>
-    </div>
-    <div style="width:99vw;height:30vh"></div>
-    <div class="fadeClass" id="bnew4">
-      <div class="bg-itemsOld" style="padding-top:8vh">
-        <v-img
-          class="img-to-efOld"
-          eager
-          contain
-          height="85vh"
-          src="../assets/_SDS3552.png"
-        >
-          <!-- <div class="twelve"></div> -->
-        </v-img>
-      </div>
-      <div
-        id="animated-example"
-        class="animated bounce"
-        style="margin-left:3vw;margin-top:0vh"
       >
         <v-icon href="#bnew5" size="30" v-smooth-scroll="{ duration: 2000 }"
           >mdi-chevron-down-circle-outline</v-icon
@@ -156,7 +133,7 @@
     </div>
     <div
       id="bnew5"
-      style="height:100vh"
+      style="height:50vh"
       class="d-flex justify-center align-center"
     >
       <p class="text001">
@@ -175,7 +152,6 @@
         >mdi-chevron-down-circle-outline</v-icon
       >
     </div>
-    <div style="height:40vh"></div>
     <div class="fadeClass" id="bnew65" style="height:100vh">
       <div class="bg-itemsOld" style="padding-top:5vh">
         <v-img
