@@ -4,7 +4,7 @@
       <div class="wrapper">
         <div class="slide one">
           <div class="slider-row">
-            <div class="fadeClass" >
+            <div class="fadeClass">
               <v-img
                 height="85vh"
                 width="35vw"
@@ -28,6 +28,7 @@
                 <v-img
                   class="zoom_image"
                   height="100%"
+                  width="35vw"
                   cover
                   src="../assets/blueprint/slide.png"
                 >
@@ -39,6 +40,7 @@
                 <v-img
                   class="zoom_image"
                   height="100%"
+                  width="35vw"
                   cover
                   src="../assets/blueprint/_SDS3367.jpeg"
                 >
@@ -60,60 +62,6 @@
               >
             </div>
           </div>
-
-          <!-- <div>
-            <v-row no-gutters style="height:100vh;">
-              <v-col align-self="center" style="margin-left:2vw;margin-top:5vh">
-              </v-col>
-              <v-col
-                align-self="center"
-                style="margin-left:-7vw;margin-top:10vh"
-              >
-                <div class="fadeClass">
-                  <div class="image-box">
-                    <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/slide.png"
-                    >
-                    </v-img>
-                  </div>
-                </div> </v-col
-              ><v-col
-                align-self="center"
-                style="margin-left:-12vw;margin-top:10vh"
-              >
-                <div class="fadeClass">
-                  <div class="image-box">
-                    <v-img
-                      class="zoom_image"
-                      height="100%"
-                      cover
-                      src="../assets/blueprint/_SDS3367.jpeg"
-                    >
-                    </v-img>
-                  </div>
-                  <div
-                    id="animated-example"
-                    class="animated bounce"
-                    style="padding-left:66vw;margin-top:5vh"
-                  >
-                    <v-icon
-                      style="margin-left:5vw"
-                      href="#beaty"
-                      size="30"
-                      dark
-                      v-smooth-scroll="{ duration: 2000 }"
-                      >mdi-chevron-down-circle-outline</v-icon
-                    >
-                  </div>
-                </div>
-              </v-col>
-
-            
-            </v-row>
-          </div> -->
         </div>
       </div>
     </div>
@@ -139,7 +87,7 @@ export default {
 
 <style scoped>
 .slider-row {
-  margin-top: 15vh;
+  margin-top: 12vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -267,7 +215,7 @@ html {
 }
 .outer-wrapper:hover .newBox2 {
   width: 0%;
-  background: #282729;
+  background: #a3a3a3;
 }
 /* .b1sli:hover .b1sli {
   transform: scale(1.1);
@@ -488,26 +436,6 @@ h2 span:last-child {
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
-}
-
 .slide {
   width: 100%;
   height: 100vh;
@@ -515,9 +443,11 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 130vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  /* transform: rotate(90deg) translateY(-100vh); */
+  /* transform-origin: top left; */
 }
 .one {
   background: #ffffff;
@@ -531,18 +461,18 @@ h2 span:last-child {
   transition: 4s ease;
 }
 .outer-wrapper:hover .one {
-  background-color: #282729;
+  background-color: #a3a3a3;
   opacity: 1;
   /* width: 100%; */
-  padding-left: 10px;
+  padding-left: 4px;
 }
 .outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  /* transform: rotate(-90deg) translateX(-100vh); */
+  /* transform-origin: top left; */
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
   scroll-behavior: smooth;
   position: absolute;
   scrollbar-width: none;

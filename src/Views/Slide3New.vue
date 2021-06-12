@@ -7,7 +7,7 @@
             <div class="fadeClass">
               <v-img
                 height="85vh"
-                width="40vw"
+                max-width="30vw"
                 src="../assets/blueprint/slider3.jpeg"
               >
                 <div class="newBox2"></div>
@@ -18,6 +18,7 @@
                 <v-img
                   class="zoom_image"
                   height="100%"
+                  width="30vw"
                   cover
                   src="../assets/blueprint/slider32.jpeg"
                 >
@@ -29,6 +30,7 @@
                 <v-img
                   class="zoom_image"
                   height="100%"
+                  width="30vw"
                   cover
                   src="../assets/blueprint/slider33.jpeg"
                 >
@@ -92,7 +94,7 @@ export default {
   display: inline-block;
   overflow: hidden;
   height: 95vh;
-  width: 35vw;
+  width: 30vw;
   margin-top: -4%;
 }
 .image-box {
@@ -202,7 +204,7 @@ html {
 }
 .outer-wrapper:hover .newBox2 {
   width: 0%;
-  background: #282729;
+  background: #a3a3a3;
 }
 /* .b1sli:hover .b1sli {
   transform: scale(1.1);
@@ -450,7 +452,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 160vw;
+  width: 100vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -466,7 +468,7 @@ h2 span:last-child {
   transition: 4s ease;
 }
 .outer-wrapper:hover .one {
-  background-color: #282729;
+  background-color: #a3a3a3;
   opacity: 1;
   /* width: 100%; */
   padding-left: 10px;

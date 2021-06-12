@@ -19,7 +19,11 @@
       <div class="sub-left" :class="isloaded ? 'sub-left' : 'sub-left-load'">
         <div class="center">
           <p>
-            <v-card flat color="transparent" style="opacity:0.3">
+            <v-card
+              flat
+              color="transparent"
+              style="opacity:0.3;padding-left:2vw"
+            >
               <v-img
                 @click="hello2()"
                 height="15vh"
@@ -38,7 +42,7 @@
       <div class="sub-right" :class="isloaded ? 'sub-left' : 'sub-left-load'">
         <div class="center_r">
           <p>
-            <v-card flat color="transparent">
+            <v-card flat color="transparent" style="padding-right:2vw">
               <v-img
                 @click="hello()"
                 height="15vh"
@@ -47,6 +51,7 @@
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
+              <p class="project-t">PROJECT</p>
             </v-card>
           </p>
         </div>
@@ -191,6 +196,13 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.project-t {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5vh;
+  margin-top: -3vh;
+}
 .bg:hover .leftArr {
   animation-delay: 3s;
   margin-left: -10vw;

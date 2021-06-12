@@ -1,3 +1,5 @@
+/* eslint-disable vue/no-parsing-error */ /* eslint-disable vue/no-parsing-error
+*/
 <template>
   <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
     <Scrollama
@@ -25,20 +27,31 @@
                   <div>
                     <v-img
                       height="70vh"
+                      cover
                       src="../assets/blueprint/2bb9362b-2ac0-462f-928a-5a9c3c1c5025_1-ConvertImage (1).jpg"
                     >
                       <div class="newBox2"></div>
                     </v-img>
-                    <p
-                      class="textMini text-left"
-                      style="margin-top:1%;margin-left:7%"
-                    >
-                      LC4
-                      <br />
-                      Charlotte Perriand
-                      <br />
-                      Cassina 1930
-                    </p>
+                    <div class="d-flex d-row justify-space-between">
+                      <p
+                        class="textMini text-left"
+                        style="margin-top:1%;margin-left:7%;min-width:10vw"
+                      >
+                        LC4
+                        <br />
+                        Charlotte Perriand
+                        <br />
+                        Cassina 1930
+                      </p>
+                      <div
+                        class="btn-group"
+                        style="margin-left:10vw;padding-top:2vh"
+                      >
+                        <v-icon dark @click="scroll_right"
+                          >mdi-arrow-right</v-icon
+                        >
+                      </div>
+                    </div>
                   </div>
                 </v-col>
                 <v-col align-self="center" style="margin-left:8vw">
@@ -52,16 +65,26 @@
                       >
                       </v-img>
                     </div>
-                    <p
-                      class="textMini text-left"
-                      style="margin-left:3vw;margin-top:1%;"
-                    >
-                      Geoffrey Bawa
-                      <br />
-                      Geoffrey Bawa Trust
-                      <br />
-                      circa 1992
-                    </p>
+                    <div class="d-flex d-row justify-space-between">
+                      <p
+                        class="textMini text-left"
+                        style="margin-left:3vw;margin-top:1%;"
+                      >
+                        Geoffrey Bawa
+                        <br />
+                        Geoffrey Bawa Trust
+                        <br />
+                        circa 1992
+                      </p>
+                      <div
+                        class="btn-group"
+                        style="margin-right:3vw;padding-top:2vh"
+                      >
+                        <v-icon dark @click="scroll_right"
+                          >mdi-arrow-right</v-icon
+                        >
+                      </div>
+                    </div>
                   </div> </v-col
                 ><v-col align-self="center" style="margin-left:-12vw">
                   <div class="fadeClass" style="margin-top:2vh">
@@ -88,7 +111,7 @@
                   <div
                     id="animated-example"
                     class="animated bounce"
-                   style="padding-left:66vw;margin-top:5vh"
+                    style="padding-left:60vw;margin-top:5vh"
                   >
                     <v-icon
                       style="margin-left:5vw"
@@ -124,6 +147,14 @@ export default {
     // document.documentElement.style.overflow = "hidden";
   },
   methods: {
+    scroll_left() {
+      let content = document.querySelector(".outer-wrapper");
+      content.scrollLeft -= 50;
+    },
+    scroll_right() {
+      let content = document.querySelector(".outer-wrapper");
+      content.scrollTop += 1000;
+    },
     mouseOver: function() {
       console.log("flag ");
       // document.documentElement.style.overflow = "hidden";
@@ -254,7 +285,7 @@ html {
 }
 .outer-wrapper:hover .newBox2 {
   width: 0%;
-  background: #282729;
+  background: #a3a3a3;
 }
 /* .b1sli:hover .b1sli {
   transform: scale(1.1);
@@ -502,7 +533,7 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 230vw;
+  width: 210vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -519,7 +550,7 @@ h2 span:last-child {
   transition: 4s ease;
 }
 .outer-wrapper:hover .one {
-  background-color: #282729;
+  background-color: #a3a3a3;
   opacity: 1;
   /* width: 100%; */
   padding-left: 10px;
@@ -537,7 +568,7 @@ h2 span:last-child {
   -ms-overflow-style: none;
 }
 .one.active {
-  background-color: #282729;
+  background-color: #fff;
   padding-left: 10px;
 }
 ::-webkit-scrollbar {

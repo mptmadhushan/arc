@@ -1,11 +1,12 @@
 <template>
   <div data-scroll-container>
-    <audio
+    <!-- <audio
+      ref="myAudio"
       loop
       allow="autoplay;fullscreen"
       id="my_audio"
       src="../assets/music.mp3"
-    ></audio>
+    ></audio> -->
 
     <Blue />
     <!-- <BeautyBlue />
@@ -14,22 +15,12 @@
 </template>
 
 <script>
-// import LocomotiveScroll from "locomotive-scroll";
-
 import Blue from "./../Views/BluePrint/blu";
-// import BeautyBlue from "./BeautyBlue";
-// import SpaceBlue from "./SpaceBlue";
-// import HorizontalScroll from "vue-horizontal-scroll";
-import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
-// import VueScrollSnap from "vue-scroll-snap";
 
+import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
 export default {
   components: {
     Blue,
-    // BeautyBlue,
-    // SpaceBlue,
-    // VueScrollSnap,
-    // HorizontalScroll,
   },
 
   data: () => ({
@@ -39,8 +30,6 @@ export default {
   updated: function() {
     this.$nextTick(function() {
       console.log("hello");
-      // Code that will run only after the
-      // entire view has been re-rendered
     });
   },
   methods: {
@@ -140,11 +129,6 @@ export default {
     },
   },
   mounted() {
-    // (this.scroll = new LocomotiveScroll({
-    //   el: document.querySelector("[data-scroll-container]"),
-    //   smooth: true,
-    //   // getSpeed: true,
-    // })),
     localStorage.setItem("isloaded", false);
     console.log(this.$refs);
     this.$nextTick(function() {

@@ -1,5 +1,12 @@
 <template>
   <div class="blue-bb">
+    <audio
+      ref="myAudio"
+      loop
+      allow="autoplay;fullscreen"
+      id="my_audio"
+      src="../../assets/music.mp3"
+    ></audio>
     <div data-scroll-container id="fir">
       <section data-scroll-section>
         <router-link to="/">
@@ -26,10 +33,14 @@
               <span class="text1s"> A MOMENT</span>
             </p>
             <div
-              class="d-flex flex-row justify-left align-center"
-              style="margin-top:41vh;margin-left:3vw"
+              class="d-flex flex-row justify-space-between align-center"
+              style="margin-top:41vh;width:100vw"
             >
-              <div id="animated-example" class="animated bounce">
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="margin-left:3vw"
+              >
                 <p style="width:10vw" class="textMini-c">
                   click to start
                 </p>
@@ -38,6 +49,18 @@
                   href="#design"
                   v-smooth-scroll="{ duration: 2000 }"
                   >mdi-chevron-down-circle-outline</v-icon
+                >
+              </div>
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="margin-right:3vw;padding-top:5vh"
+              >
+                <v-icon v-if="!isMuted" @click="audioMute" size="30"
+                  >mdi-volume-mute</v-icon
+                >
+                <v-icon v-else @click="audioMuteOff" size="30"
+                  >mdi-volume-high</v-icon
                 >
               </div>
             </div>
@@ -611,17 +634,13 @@ export default {
   data() {
     return {
       currStep: null,
+      isMuted: false,
     };
   },
   mounted() {
-    // this.lmS = new LocomotiveScroll({
-    //   el: document.querySelector("[data-scroll-container]"),
-    //   smooth: true,
-    // });
-    // eslint-disable-next-line no-undef
-    // imagesLoaded("[data-scroll-container]", () => {
-    //   this.lmS.update();
-    // });
+    document.getElementById("my_audio").muted = false;
+    document.getElementById("my_audio").play();
+    document.getElementById("my_audio").loop = true;
   },
   methods: {
     stepEnterHandler({ element, index, direction }) {
@@ -630,6 +649,18 @@ export default {
     },
     heyl() {
       console.log("helasd 😷helasd");
+    },
+    audioMute() {
+      // alert("jll");
+      this.audioPlayer = this.$refs.myAudio;
+      document.getElementById("my_audio").muted = true;
+      this.isMuted = true;
+    },
+    audioMuteOff() {
+      // alert("jll");
+      this.audioPlayer = this.$refs.myAudio;
+      document.getElementById("my_audio").muted = false;
+      this.isMuted = false;
     },
     mouseOver: function() {
       // console.log("😎", val);
