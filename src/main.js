@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import Carousel3d from "vue-carousel-3d";
 import VueSlickCarousel from "vue-slick-carousel";
 import VueAnime from "vue-animejs";
-import axios from 'axios'
+import axios from "axios";
 Vue.use(VueAnime);
 
 Vue.component("ShapesPop", require("./components/ShapesPop.vue").default);
@@ -22,7 +22,7 @@ Vue.use(VueSmoothScroll, {
 });
 Vue.component("manage-posts", function(resolve) {
   axios.get("../src/hello.html").then((response) => {
-    console.log(response.data)
+    console.log(response.data);
     resolve({ template: response.data });
   });
 });
@@ -73,6 +73,6 @@ new Vue({
     AOS.init();
   },
   vuetify,
-  render: (h) => h(App),
   router: router,
+  render: (h) => h(App),
 }).$mount("#app");
