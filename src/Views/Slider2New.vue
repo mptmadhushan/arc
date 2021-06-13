@@ -4,10 +4,11 @@
       <div class="wrapper">
         <div class="slide one">
           <div class="slider-row">
-            <div class="fadeClass">
+            <div class="fadeClass" style="margin-left:-3vw">
               <v-img
                 height="85vh"
-                width="35vw"
+                cover
+                width="30vw"
                 src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
               >
                 <div class="newBox2"></div>
@@ -28,7 +29,7 @@
                 <v-img
                   class="zoom_image"
                   height="100%"
-                  width="35vw"
+                  width="30vw"
                   cover
                   src="../assets/blueprint/slide.png"
                 >
@@ -40,7 +41,7 @@
                 <v-img
                   class="zoom_image"
                   height="100%"
-                  width="35vw"
+                  width="30vw"
                   cover
                   src="../assets/blueprint/_SDS3367.jpeg"
                 >
@@ -175,7 +176,7 @@ html {
 }
 .newBox2 {
   background: rgb(255, 255, 255);
-  width: 20%;
+  width: 10%;
   height: 100%;
   transition: 4s ease;
   padding-right: 100px;

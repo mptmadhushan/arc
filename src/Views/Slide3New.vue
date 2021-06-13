@@ -6,6 +6,7 @@
           <div class="slider-row">
             <div class="fadeClass">
               <v-img
+                style="margin-left:-3vw"
                 height="85vh"
                 max-width="30vw"
                 src="../assets/blueprint/slider3.jpeg"
