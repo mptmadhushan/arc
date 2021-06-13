@@ -51,7 +51,7 @@
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
-              <p class="project-t">PROJECT</p>
+              <p class="project-t" style="padding-right:3.5vw">PROJECT</p>
             </v-card>
           </p>
         </div>
@@ -202,6 +202,7 @@ export default {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5vh;
   margin-top: -3vh;
+  text-align: left;
 }
 .bg:hover .leftArr {
   animation-delay: 3s;

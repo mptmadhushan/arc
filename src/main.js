@@ -10,7 +10,7 @@ import VueSlickCarousel from "vue-slick-carousel";
 import VueAnime from "vue-animejs";
 import axios from "axios";
 Vue.use(VueAnime);
-
+// import store from "../store";
 Vue.component("ShapesPop", require("./components/ShapesPop.vue").default);
 import VScrollToTop from "v-scroll-to-top";
 import VScrollLock from "v-scroll-lock";
@@ -49,6 +49,7 @@ Vue.use(Carousel3d);
 Vue.use(VueSlickCarousel);
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
+
 const router = new VueRouter({
   routes: Routes,
 
@@ -71,7 +72,9 @@ new Vue({
     });
 
     AOS.init();
+    AOS.refresh();
   },
+  // store,
   vuetify,
   router: router,
   render: (h) => h(App),

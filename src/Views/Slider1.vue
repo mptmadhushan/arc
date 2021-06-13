@@ -48,7 +48,7 @@
                         style="margin-left:10vw;padding-top:2vh"
                       >
                         <v-icon dark @click="scroll_right"
-                          >mdi-arrow-right</v-icon
+                          >mdi-arrow-right-circle-outline</v-icon
                         >
                       </div>
                     </div>
@@ -81,7 +81,7 @@
                         style="margin-right:3vw;padding-top:2vh"
                       >
                         <v-icon dark @click="scroll_right"
-                          >mdi-arrow-right</v-icon
+                          >mdi-arrow-right-circle-outline</v-icon
                         >
                       </div>
                     </div>

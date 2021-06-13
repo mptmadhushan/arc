@@ -20,7 +20,12 @@ export default {
   methods: {},
   name: "App",
   mounted() {
+    // window.onbeforeunload = function() {
+    //   var storage = window.localStorage;
+    //   storage.clear();
+    // };
     window.onbeforeunload = function() {
+      console.log("hello");
       var storage = window.localStorage;
       storage.clear();
     };

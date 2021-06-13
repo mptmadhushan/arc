@@ -49,7 +49,7 @@ export default {};
 }
 
 .email:hover {
-  background-size: 31% 0.1em;
+  background-size: 25.4% 0.1em;
 }
 
 /* Variations */

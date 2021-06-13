@@ -124,6 +124,7 @@
             ><v-card
               @mouseover="hover3 = true"
               @mouseleave="hover3 = false"
+              @click="clickedCard(3)"
               class="pa-2"
               flat
             >
@@ -262,6 +263,16 @@
 export default {
   mounted() {
     localStorage.setItem("isloaded", false);
+    document.cookie = "username=John Doe";
+    // const hey = localStorage.getItem("1");
+  },
+  methods: {
+    clickedCard() {
+      alert("hhh");
+      // const hey = val;
+      // localStorage.setItem(hey, true);
+      this.$store.dispatch("removeTv");
+    },
   },
   data: () => ({
     hover: false,
@@ -278,6 +289,11 @@ export default {
     otherImage:
       "https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_960_720.jpg",
   }),
+  computed: {
+    totalTvCount() {
+      return this.$store.state.totalTvCount;
+    },
+  },
   watch: {
     $route(to, from) {
       // react to route changes...
@@ -325,11 +341,19 @@ export default {
   background-size: 100% 100%;
   background-image: url("../assets/cir.png");
 }
+.cir.ac {
+  height: 20vh;
+  width: 20vh;
+  opacity: 0.4;
+  padding: -10vh;
+  background-size: 100% 100%;
+  background-image: url("../assets/cir.png");
+}
 .cir:hover {
   height: 20vh;
   width: 20vh;
   transition: 2s ease;
-  opacity: 0.3;
+  opacity: 1;
   background-size: 100% 100%;
   background-image: url("../assets/cirHover.png");
 }
@@ -340,12 +364,18 @@ export default {
   opacity: 0.4;
   background-image: url("../assets/sqHover.png");
 }
+.sq.ac {
+  height: 20vh;
+  width: 20vh;
+  background-size: 100% 100%;
+  opacity: 1;
+  background-image: url("../assets/sqHover.png");
+}
 .sq:hover {
   height: 20vh;
   width: 20vh;
   opacity: 1;
   transition: 1s ease;
-
   background-size: 100% 100%;
   background-image: url("../assets/sq.png");
 }
@@ -353,6 +383,13 @@ export default {
   height: 20vh;
   width: 20vh;
   opacity: 0.4;
+  background-size: 100% 100%;
+  background-image: url("../assets/triHover.png");
+}
+.tri.ac {
+  height: 20vh;
+  width: 20vh;
+  opacity: 1;
   background-size: 100% 100%;
   background-image: url("../assets/triHover.png");
 }
