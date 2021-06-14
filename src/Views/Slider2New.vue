@@ -4,10 +4,10 @@
       <div class="wrapper">
         <div class="slide one">
           <div class="slider-row">
-            <div class="fadeClass" style="margin-left:-3vw">
+            <div class="fadeClass ml-12" >
               <v-img
                 height="85vh"
-                cover
+                fill
                 width="30vw"
                 src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
               >
@@ -15,7 +15,6 @@
               </v-img>
               <p
                 class="textMini text-left"
-                style="margin-top:1%;margin-left:6vw"
               >
                 Kuzao Shiraga
                 <br />
@@ -24,13 +23,13 @@
                 1960
               </p>
             </div>
-            <div class="fadeClass">
+            <div class="fadeClass mr-3">
               <div class="image-box">
                 <v-img
                   class="zoom_image"
                   height="100%"
                   width="30vw"
-                  cover
+                  fill
                   src="../assets/blueprint/slide.png"
                 >
                 </v-img>
@@ -42,7 +41,7 @@
                   class="zoom_image"
                   height="100%"
                   width="30vw"
-                  cover
+                  fill
                   src="../assets/blueprint/_SDS3367.jpeg"
                 >
                 </v-img>
@@ -113,7 +112,7 @@ export default {
   position: relative;
   margin: auto;
   overflow: hidden;
-  width: 90%;
+  width: 95%;
   height: 90%;
 }
 .image-box img {
@@ -176,10 +175,9 @@ html {
 }
 .newBox2 {
   background: rgb(255, 255, 255);
-  width: 10%;
+  width: 100%;
   height: 100%;
   transition: 4s ease;
-  padding-right: 100px;
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {

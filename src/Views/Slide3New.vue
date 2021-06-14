@@ -6,21 +6,21 @@
           <div class="slider-row">
             <div class="fadeClass">
               <v-img
-                style="margin-left:-3vw"
                 height="85vh"
                 max-width="30vw"
+                fill
                 src="../assets/blueprint/slider3.jpeg"
               >
                 <div class="newBox2"></div>
               </v-img>
             </div>
-            <div class="fadeClass">
+            <div class="fadeClass ml-4">
               <div class="image-box">
                 <v-img
                   class="zoom_image"
                   height="100%"
                   width="30vw"
-                  cover
+                  fill
                   src="../assets/blueprint/slider32.jpeg"
                 >
                 </v-img>
@@ -32,7 +32,7 @@
                   class="zoom_image"
                   height="100%"
                   width="30vw"
-                  cover
+                  fill
                   src="../assets/blueprint/slider33.jpeg"
                 >
                 </v-img>
@@ -41,14 +41,14 @@
             <div
               id="animated-example"
               class="animated bounce"
-              style="margin-left:-5vw;margin-top:70vh"
+              style="margin-left:-3vw;margin-top:71vh"
             >
               <v-icon
-                href="#fir"
+                href="#last"
                 size="30"
                 dark
                 v-smooth-scroll="{ duration: 3000 }"
-                >mdi-chevron-up-circle-outline</v-icon
+                >mdi-chevron-down-circle-outline</v-icon
               >
             </div>
           </div>
@@ -102,7 +102,7 @@ export default {
   position: relative;
   margin: auto;
   overflow: hidden;
-  width: 90%;
+  width: 95%;
   height: 90%;
 }
 .image-box img {
@@ -164,11 +164,11 @@ html {
   -webkit-animation-fill-mode: backwards;
 }
 .newBox2 {
-  background: rgb(255, 255, 255);
-  width: 20%;
-  height: 100%;
+  background: rgb(190, 34, 34);
+  width: 100%;
+  max-height: 100%;
   transition: 4s ease;
-  padding-right: 100px;
+  /* padding-right: 100px; */
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {

@@ -603,6 +603,44 @@
       <SpaceBlue v-if="!isMobile()" />
       <SpaceBlueMob v-else />
     </div>
+    <div class="last">
+      <p
+        class="text1st text-center"
+        style="padding-top:45vh;margin-bottom:11vh"
+      >
+        A MOMENT<br />
+        <span class="text1s"> PASSEED</span>
+      </p>
+      <div
+        class="d-flex flex-row justify-space-between align-center"
+        style="margin-top:40vh;width:100vw"
+      >
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-left:3vw"
+        >
+          <!-- <p style="width:10vw" class="textMini-c">
+            click to start
+          </p> -->
+          <v-icon size="30" href="#fir" v-smooth-scroll="{ duration: 2000 }"
+            >mdi-chevron-up-circle-outline</v-icon
+          >
+        </div>
+        <div
+          id="animated-example"
+          class="animated bounce"
+          style="margin-right:3vw;padding-top:5vh"
+        >
+          <!-- <v-icon v-if="!isMuted" @click="audioMute" size="30"
+            >mdi-volume-mute</v-icon
+          >
+          <v-icon v-else @click="audioMuteOff" size="30"
+            >mdi-volume-high</v-icon
+          > -->
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
