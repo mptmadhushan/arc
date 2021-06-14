@@ -51,11 +51,7 @@
                   >mdi-chevron-down-circle-outline</v-icon
                 >
               </div>
-              <div
-                id="animated-example"
-                class="animated bounce"
-                style="margin-right:3vw;padding-top:5vh"
-              >
+              <div id="animated-example" class="suspension">
                 <v-icon v-if="!isMuted" @click="audioMute" size="30"
                   >mdi-volume-mute</v-icon
                 >
@@ -603,7 +599,7 @@
       <SpaceBlue v-if="!isMobile()" />
       <SpaceBlueMob v-else />
     </div>
-    <div class="last">
+    <div class="last" id="last">
       <p
         class="text1st text-center"
         style="padding-top:45vh;margin-bottom:11vh"
@@ -764,6 +760,14 @@ export default {
   50% {
     transform: translateY(-5px);
   }
+}
+.suspension {
+  margin-top: 81vh;
+  margin-left: 89vw;
+  z-index: 99999;
+  position: fixed;
+  border-top: 1px solid #eee;
+  width: calc(100% - 248px);
 }
 .blue-bb {
   margin: 0;

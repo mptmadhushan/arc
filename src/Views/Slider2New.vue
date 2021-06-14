@@ -4,7 +4,7 @@
       <div class="wrapper">
         <div class="slide one">
           <div class="slider-row">
-            <div class="fadeClass ml-12" >
+            <div class="fadeClass ml-5">
               <v-img
                 height="85vh"
                 fill
@@ -13,9 +13,7 @@
               >
                 <div class="newBox2"></div>
               </v-img>
-              <p
-                class="textMini text-left"
-              >
+              <p class="textMini text-left">
                 Kuzao Shiraga
                 <br />
                 Gutai Group
@@ -23,7 +21,7 @@
                 1960
               </p>
             </div>
-            <div class="fadeClass mr-3">
+            <div class="fadeClass mr-5">
               <div class="image-box">
                 <v-img
                   class="zoom_image"
@@ -46,20 +44,20 @@
                 >
                 </v-img>
               </div>
-            </div>
-            <div
-              id="animated-example"
-              class="animated bounce"
-              style="margin-left:-5vw;margin-top:70vh"
-            >
-              <v-icon
-                style="margin-left:5vw"
-                href="#space"
-                size="30"
-                dark
-                v-smooth-scroll="{ duration: 2000 }"
-                >mdi-chevron-down-circle-outline</v-icon
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="margin-left:20vw;margin-top:1vh"
               >
+                <v-icon
+                  style="margin-left:5vw"
+                  href="#space"
+                  size="30"
+                  dark
+                  v-smooth-scroll="{ duration: 2000 }"
+                  >mdi-chevron-down-circle-outline</v-icon
+                >
+              </div>
             </div>
           </div>
         </div>

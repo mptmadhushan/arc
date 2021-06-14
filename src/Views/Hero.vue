@@ -51,7 +51,12 @@
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
-              <p class="project-t" style="padding-right:3.5vw">PROJECT</p>
+              <p
+                class="project-t text-center" 
+                style="width:15vw;"
+              >
+                PROJECTS
+              </p>
             </v-card>
           </p>
         </div>

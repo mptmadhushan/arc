@@ -1,12 +1,12 @@
 <template>
   <div data-scroll-container>
-    <!-- <audio
+    <audio
       ref="myAudio"
       loop
       allow="autoplay;fullscreen"
       id="my_audio"
       src="../assets/music.mp3"
-    ></audio> -->
+    ></audio>
 
     <Blue />
     <!-- <BeautyBlue />
@@ -25,6 +25,7 @@ export default {
 
   data: () => ({
     offsetTop: 0,
+     isMuted: false,
     bgColor: "",
   }),
   updated: function() {
@@ -33,6 +34,18 @@ export default {
     });
   },
   methods: {
+    audioMute() {
+      // alert("jll");
+      this.audioPlayer = this.$refs.myAudio;
+      document.getElementById("my_audio").muted = true;
+      this.isMuted = true;
+    },
+    audioMuteOff() {
+      // alert("jll");
+      this.audioPlayer = this.$refs.myAudio;
+      document.getElementById("my_audio").muted = false;
+      this.isMuted = false;
+    },
     test() {
       alert("test");
     },
@@ -143,6 +156,14 @@ export default {
 </script>
 
 <style scoped>
+.soundBtn {
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  width: 10%;
+  height: 10vh;
+  background-color: red;
+}
 .newBox {
   background: rgb(255, 255, 255);
   width: 100%;

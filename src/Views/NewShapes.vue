@@ -96,20 +96,18 @@
         >
           <v-card class="d-flex justify-center " flat>
             <v-card
-              class="pa-2 "
+              class="pa-2"
               flat
-              @mouseover="hover = true"
-              @mouseleave="hover = false"
+              @mouseover="hover4 = true"
+              @mouseleave="hover4 = false"
             >
-              <a href="/ChitraLane" tag="div">
-                <v-row align="center" justify="center">
-                  <v-col>
-                    <!-- <p class="project1B">lorema asdasd asd</p> -->
-                    <div class="sq"></div>
-                  </v-col>
-                </v-row>
-              </a> </v-card
-            ><v-card
+              <a href="/DamindraHouse" tag="div">
+                <v-card flat>
+                  <div class="cir"></div>
+                </v-card>
+              </a>
+            </v-card>
+            <v-card
               @mouseover="hover2 = true"
               @mouseleave="hover2 = false"
               class="pa-2"
@@ -120,15 +118,15 @@
                   <div class="tri"></div>
                   <!-- <v-img height="20vh" width="20vh" src="../assets/tri.png"></v-img> -->
                 </v-card>
-              </a> </v-card
-            ><v-card
-              @mouseover="hover3 = true"
-              @mouseleave="hover3 = false"
-              @click="clickedCard(3)"
+              </a>
+            </v-card>
+            <v-card
+              @mouseover="hover8 = true"
+              @mouseleave="hover8 = false"
               class="pa-2"
               flat
             >
-              <a href="/Bolgoda" tag="div">
+              <a href="/Hanthana" tag="div">
                 <v-card flat>
                   <div class="cir"></div>
                 </v-card>
@@ -138,12 +136,13 @@
 
           <v-card class="d-flex justify-center" flat>
             <v-card
+              @mouseover="hover3 = true"
+              @mouseleave="hover3 = false"
+              @click="clickedCard(3)"
               class="pa-2"
               flat
-              @mouseover="hover4 = true"
-              @mouseleave="hover4 = false"
             >
-              <a href="/DamindraHouse" tag="div">
+              <a href="/Bolgoda" tag="div">
                 <v-card flat>
                   <div class="cir"></div>
                 </v-card>
@@ -159,8 +158,9 @@
                 <v-card flat>
                   <div class="sq"></div>
                 </v-card>
-              </a> </v-card
-            ><v-card
+              </a>
+            </v-card>
+            <v-card
               class="pa-2"
               flat
               @mouseover="hover6 = true"
@@ -185,17 +185,22 @@
                 <v-card flat>
                   <div class="tri"></div>
                 </v-card>
-              </a> </v-card
-            ><v-card
-              @mouseover="hover8 = true"
-              @mouseleave="hover8 = false"
-              class="pa-2"
+              </a>
+            </v-card>
+
+            <v-card
+              class="pa-2 "
               flat
+              @mouseover="hover = true"
+              @mouseleave="hover = false"
             >
-              <a href="/Hanthana" tag="div">
-                <v-card flat>
-                  <div class="cir"></div>
-                </v-card>
+              <a href="/ChitraLane" tag="div">
+                <v-row align="center" justify="center">
+                  <v-col>
+                    <!-- <p class="project1B">lorema asdasd asd</p> -->
+                    <div class="sq"></div>
+                  </v-col>
+                </v-row>
               </a> </v-card
             ><v-card
               @mouseover="hover9 = true"

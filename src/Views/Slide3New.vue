@@ -37,19 +37,19 @@
                 >
                 </v-img>
               </div>
-            </div>
-            <div
-              id="animated-example"
-              class="animated bounce"
-              style="margin-left:-3vw;margin-top:71vh"
-            >
-              <v-icon
-                href="#last"
-                size="30"
-                dark
-                v-smooth-scroll="{ duration: 3000 }"
-                >mdi-chevron-down-circle-outline</v-icon
+              <div
+                id="animated-example"
+                class="animated bounce"
+                style="padding-left:25vw;margin-top:1vh"
               >
+                <v-icon
+                  href="#last"
+                  size="30"
+                  dark
+                  v-smooth-scroll="{ duration: 3000 }"
+                  >mdi-chevron-down-circle-outline</v-icon
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default {
 
 <style scoped>
 .slider-row {
-  margin-top: 17vh;
+  margin-top: 15vh;
   display: flex;
   justify-content: space-around;
   align-items: center;

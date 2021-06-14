@@ -54,7 +54,7 @@
                     </div>
                   </div>
                 </v-col>
-                <v-col align-self="center" style="margin-left:8vw">
+                <v-col align-self="center" style="margin-left:5vw">
                   <div class="fadeClass">
                     <div class="image-box">
                       <v-img
@@ -86,7 +86,7 @@
                       </div>
                     </div>
                   </div> </v-col
-                ><v-col align-self="center" style="margin-left:-12vw">
+                ><v-col align-self="center" style="margin-left:-9vw">
                   <div class="fadeClass" style="margin-top:2vh">
                     <div class="image-box">
                       <v-img
@@ -111,7 +111,7 @@
                   <div
                     id="animated-example"
                     class="animated bounce"
-                    style="padding-left:60vw;margin-top:5vh"
+                    style="padding-left:50vw;margin-top:5vh"
                   >
                     <v-icon
                       style="margin-left:5vw"
