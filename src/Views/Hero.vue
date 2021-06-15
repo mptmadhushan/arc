@@ -51,7 +51,7 @@
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
-              <p class="project-t mr-6">
+              <p class="project-t mr-7">
                 PROJECTS
               </p>
             </v-card>

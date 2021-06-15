@@ -4,7 +4,7 @@
       <div class="wrapper">
         <div class="slide one">
           <div class="slider-row">
-            <div class="fadeClass ml-5">
+            <div class="fadeClass">
               <v-img
                 height="85vh"
                 fill
@@ -21,7 +21,7 @@
                 1960
               </p>
             </div>
-            <div class="fadeClass mr-5">
+            <div class="fadeClass">
               <div class="image-box">
                 <v-img
                   class="zoom_image"
@@ -33,7 +33,7 @@
                 </v-img>
               </div>
             </div>
-            <div class="fadeClass">
+            <div class="fadeClass mr-2">
               <div class="image-box">
                 <v-img
                   class="zoom_image"
@@ -47,7 +47,7 @@
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:20vw;margin-top:1vh"
+                style="margin-left:15vw;margin-top:1vh"
               >
                 <v-icon
                   style="margin-left:5vw"
@@ -85,7 +85,8 @@ export default {
 
 <style scoped>
 .slider-row {
-  margin-top: 12vh;
+  width: 100vw;
+  margin-top: 7vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -103,14 +104,12 @@ export default {
   display: inline-block;
   overflow: hidden;
   height: 95vh;
-  width: 35vw;
-  margin-top: -4%;
 }
 .image-box {
   position: relative;
   margin: auto;
   overflow: hidden;
-  width: 95%;
+  width: 100%;
   height: 90%;
 }
 .image-box img {

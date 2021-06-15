@@ -7,14 +7,14 @@
             <div class="fadeClass">
               <v-img
                 height="85vh"
-                max-width="30vw"
                 fill
+                width="30vw"
                 src="../assets/blueprint/slider3.jpeg"
               >
                 <div class="newBox2"></div>
               </v-img>
             </div>
-            <div class="fadeClass ml-4">
+            <div class="fadeClass">
               <div class="image-box">
                 <v-img
                   class="zoom_image"
@@ -26,7 +26,7 @@
                 </v-img>
               </div>
             </div>
-            <div class="fadeClass">
+            <div class="fadeClass mr-2">
               <div class="image-box">
                 <v-img
                   class="zoom_image"
@@ -40,13 +40,14 @@
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="padding-left:25vw;margin-top:1vh"
+                style="margin-left:15vw;margin-top:1vh"
               >
                 <v-icon
+                  style="margin-left:5vw"
                   href="#last"
                   size="30"
                   dark
-                  v-smooth-scroll="{ duration: 3000 }"
+                  v-smooth-scroll="{ duration: 2000 }"
                   >mdi-chevron-down-circle-outline</v-icon
                 >
               </div>
@@ -77,7 +78,8 @@ export default {
 
 <style scoped>
 .slider-row {
-  margin-top: 15vh;
+  width: 100vw;
+  margin-top: 7vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,14 +97,12 @@ export default {
   display: inline-block;
   overflow: hidden;
   height: 95vh;
-  width: 30vw;
-  margin-top: -4%;
 }
 .image-box {
   position: relative;
   margin: auto;
   overflow: hidden;
-  width: 95%;
+  width: 100%;
   height: 90%;
 }
 .image-box img {
@@ -164,11 +164,10 @@ html {
   -webkit-animation-fill-mode: backwards;
 }
 .newBox2 {
-  background: rgb(190, 34, 34);
+  background: rgb(255, 255, 255);
   width: 100%;
-  max-height: 100%;
+  height: 100%;
   transition: 4s ease;
-  /* padding-right: 100px; */
   -webkit-animation-fill-mode: backwards;
 }
 .beb:hover .newBox {
@@ -426,26 +425,6 @@ h2 span:last-child {
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
-}
-
 .slide {
   width: 100%;
   height: 100vh;
@@ -454,8 +433,10 @@ h2 span:last-child {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
+  justify-content: space-around;
+  align-items: center;
+  /* transform: rotate(90deg) translateY(-100vh); */
+  /* transform-origin: top left; */
 }
 .one {
   background: #ffffff;
@@ -472,15 +453,15 @@ h2 span:last-child {
   background-color: #a3a3a3;
   opacity: 1;
   /* width: 100%; */
-  padding-left: 10px;
+  padding-left: 4px;
 }
 .outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  /* transform: rotate(-90deg) translateX(-100vh); */
+  /* transform-origin: top left; */
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
   scroll-behavior: smooth;
   position: absolute;
   scrollbar-width: none;

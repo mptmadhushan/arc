@@ -762,7 +762,7 @@ export default {
   }
 }
 .suspension {
-  margin-top: 81vh;
+  margin-top: 83.5vh;
   margin-left: 89vw;
   z-index: 99999;
   position: fixed;

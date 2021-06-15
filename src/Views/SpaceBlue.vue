@@ -32,7 +32,7 @@
           <div>
             <P
               class="textMini text-left"
-              style="margin-left:5vw;margin-top:5vh"
+              style="margin-left:5vw;margin-top:2.5vh"
             >
               Geoffrey Bawa<br />Lunuganga<br />1948 - onwards
             </P>
@@ -59,7 +59,7 @@
       <div>
         <div style="width:99vw;height:1vh"></div>
 
-        <v-layout row wrap justify-center mt-12>
+        <v-layout row wrap justify-center mt-4>
           <v-flex md6 xs12 sm12 align-self-center>
             <div style="width:60%;margin-left:10vw;">
               <v-img
