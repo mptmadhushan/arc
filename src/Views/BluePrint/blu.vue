@@ -766,7 +766,6 @@ export default {
   margin-left: 89vw;
   z-index: 99999;
   position: fixed;
-  border-top: 1px solid #eee;
   width: calc(100% - 248px);
 }
 .blue-bb {

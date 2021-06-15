@@ -138,7 +138,6 @@
             <v-card
               @mouseover="hover3 = true"
               @mouseleave="hover3 = false"
-              @click="clickedCard(3)"
               class="pa-2"
               flat
             >

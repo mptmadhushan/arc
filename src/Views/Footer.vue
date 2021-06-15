@@ -49,7 +49,7 @@ export default {};
 }
 
 .email:hover {
-  background-size: 27.3% 0.1em;
+  background-size: 31% 0.1em;
 }
 
 /* Variations */
@@ -65,7 +65,7 @@ export default {};
   margin-left: 14vh;
   padding-top: 20vh;
   color: grey;
-  font-size: 6vh;
+  font-size: 4vw;
 }
 .email-m:hover {
   background-size: 51% 0.1em;
