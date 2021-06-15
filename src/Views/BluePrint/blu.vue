@@ -605,7 +605,7 @@
         style="padding-top:45vh;margin-bottom:11vh"
       >
         A MOMENT<br />
-        <span class="text1s"> PASSEED</span>
+        <span class="text1s mt-5"> PASSED</span>
       </p>
       <div
         class="d-flex flex-row justify-space-between align-center"

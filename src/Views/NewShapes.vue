@@ -103,7 +103,7 @@
             >
               <a href="/DamindraHouse" tag="div">
                 <v-card flat>
-                  <div class="cir"></div>
+                  <div class="sq"></div>
                 </v-card>
               </a>
             </v-card>
@@ -197,7 +197,7 @@
                 <v-row align="center" justify="center">
                   <v-col>
                     <!-- <p class="project1B">lorema asdasd asd</p> -->
-                    <div class="sq"></div>
+                    <div class="cir"></div>
                   </v-col>
                 </v-row>
               </a> </v-card

@@ -18,7 +18,7 @@
     </div>
     <div v-else>
       <div class="footer-m">
-        <p class="email-m left" style=" text-decoration: underline;">
+        <p class="email-m left">
           info@cda-ca.com
         </p>
         <p class="contry-m">
@@ -68,7 +68,7 @@ export default {};
   font-size: 4vw;
 }
 .email-m:hover {
-  background-size: 51% 0.1em;
+  background-size: 1% 0.1em;
 }
 
 /* Variations */
