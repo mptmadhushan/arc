@@ -126,7 +126,7 @@ export default {};
   height: 70vh;
   width: 100%;
   background-color: black;
-  /* background-position: center; */
+  /* background-position: center; --> */
   /* background-size: cover;
   background-repeat: no-repeat; */
   /* background-image: url("../assets/footer.jpg"); */
