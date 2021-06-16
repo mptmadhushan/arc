@@ -2,33 +2,19 @@
 */
 <template>
   <div>
-    <div style="margin-top:10vh">
+    <div>
       <div class="body2 fadeClass">
-        <!-- <div class="back-text">
-          <div class="text-container">
-            <span class="letter2">S</span><span class="letter2">P</span
-            ><span class="letter2">A</span><span class="letter2">C</span
-            ><span class="letter2">E</span><span class="letter2"></span>
-            <span class="letter2">D</span><span class="letter2">S</span>
-            <span class="letter2">P</span><span class="letter2">A</span>
-            <span class="letter2">C</span><span class="letter2">E</span>
-          </div>
-        </div> -->
-
-        <!-- <div style="width:99vw;height:30vh"></div> -->
-        <div style="margin-top:5vh;width:100vw;height:100vh">
-          <div class="bg-item-zoom" style="height:80vh;margin-top:5vh">
+        <div style="width:100vw;padding-top:5vh">
+          <div class="bg-item-zoom">
             <v-img
               class="img-to-ef"
               eager
               contain
-              height="90vh"
+              height="80vh"
               src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
             >
-              <div class="twelve"></div>
             </v-img>
           </div>
-          <!-- <div style="width:99vw;height:13vh"></div> -->
           <div>
             <P
               class="textMini text-left"
@@ -245,16 +231,16 @@ export default {
 }
 .img-to-ef {
   display: block;
-  transition: transform 4s; /* smoother zoom */
+  transition: transform 6s; /* smoother zoom */
 }
 .img-to-ef2 {
   display: block;
   transition: transform 4s; /* smoother zoom */
 }
-.fadeClass:hover .img-to-ef {
+/* .fadeClass:hover .img-to-ef {
   transform: scale(1.1);
   transform-origin: 50% 50%;
-}
+} */
 .fadeClass:hover .img-to-ef2 {
   transform: scale(1.1);
   transform-origin: 50% 50%;
@@ -263,9 +249,10 @@ export default {
   position: relative;
   text-align: left;
   overflow: hidden;
+  max-height: 80vh;
+  overflow: hidden;
   margin-left: 5vw;
   width: 70%;
-  height: 100%;
   transition: all 13s;
 }
 .image-box {
@@ -512,12 +499,12 @@ span {
   width: 100%;
 }
 .img-to-ef {
-  transform: scale(1.5);
+  transform: scale(0.9);
   transition: all 10s;
 }
 .fadeClass:hover .img-to-ef {
-  transform: scale(1);
-  transition: all 4s ease-in-out;
+  transform: scale(1.1);
+  transition: all 12s linear;
 }
 .fadeClass:hover .twelve {
   height: 0%;
