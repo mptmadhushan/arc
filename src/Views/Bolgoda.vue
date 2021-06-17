@@ -42,7 +42,7 @@
       <p
         class="text002 text-center"
         v-if="isMobile()"
-        style="margin-top: -20vh;"
+        style="margin-top: -23vh;"
       >
         Intimacy and indulgence
       </p>
@@ -50,7 +50,7 @@
         Intimacy and indulgence
       </p>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px" v-if="!isMobile()"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div v-if="isMobile()" class="text-center">
       <v-layout row wrap justify-center pt-md-12 style="height:70vh">
@@ -124,7 +124,7 @@
         The interplay of Sri Lankan pop art and indo-Portuguese furniture.
       </p>
     </div>
-    <div style="width:99vw;height:23vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:23vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
@@ -140,7 +140,8 @@
         src="../assets/Bolgoda/_SDS1292.JPG.jpeg"
       ></v-img>
     </div>
-    <div  v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:8vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -176,9 +177,9 @@
         composition of inside - out.
       </p>
     </div>
-    <div v-if="!isMobile()"  style="width:99vw;height:18vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:18vh;padding:10px"></div>
 
-    <div v-if="isMobile()" style="margin-top: 10vh">
+    <div v-if="isMobile()" style="margin-top: -5vh">
       <v-img
         eager
         height="80vh"
@@ -199,7 +200,8 @@
         src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="width:99vw;height:40vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:40vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:30vh;padding:10px"></div>
     <div
       data-aos="fade-up"
       data-aos-duration="2500"
@@ -245,7 +247,8 @@
       <!-- </v-layout> -->
     </div>
 
-    <div v-if="!isMobile()"  style="width:99vw;height:35vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:15vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
@@ -254,17 +257,32 @@
       data-aos-duration="2400"
     >
       <v-img
+        v-if="!isMobile()"
         eager
         style="margin-top:6vh"
         height="85vh"
         contain
         src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
+      ></v-img
+      ><v-img
+        v-else
+        eager
+        height="65vh"
+        contain
+        src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
       ></v-img>
-      <p class="text002 text-center">
+      <p
+        v-if="isMobile()"
+        style="margin-top:-13vh"
+        class="text002 text-center"
+      >
+        A contemporary twist to a timeless view.
+      </p>
+      <p v-else class="text002 text-center">
         A contemporary twist to a timeless view.
       </p>
     </div>
-    <div v-if="!isMobile()"  style="width:99vw;height:25vh;padding:10px"></div>
+    <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -322,7 +340,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div v-if="!isMobile()"  style="width:99vw;height:30vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"

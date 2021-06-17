@@ -171,7 +171,6 @@
       data-aos-duration="1500"
     >
       <div style="width:99vw;height:35vh;padding:10px"></div>
-      <div style="width:99vw;height:35vh;padding:10px"></div>
       <vue-flux :options="options" :images="images" :transitions="transitions">
         <template v-slot:preloader>
           <flux-preloader height="40vh" />
@@ -281,9 +280,35 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:32vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:32vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:6vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
+      <div style="width:99vw;height:16vh;padding:10px"></div>
+
+      <v-img
+        eager
+        contain
+        width="100vw"
+        src="../assets/hanthana/slide2.jpeg"
+      ></v-img>
+      <p class="newText2 text-center" style="padding-inline:15vw">
+        Bandu Manamperi's take on the surrounding vista of mountains from
+        Hanthana itself, creating a contemporary stage for his work within the
+        context of a dramatic lounge to wind down after a journey
+      </p>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img
         eager
         contain
@@ -296,7 +321,7 @@
         context of a dramatic lounge to wind down after a journey
       </p>
     </div>
-    <div style="width:99vw;height:32vh;padding:10px"></div>
+    <div style="width:99vw;height:30vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
       <v-img
@@ -373,7 +398,8 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:31vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:31vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:31vh;padding:10px"></div>
     <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
       <v-img
         eager
@@ -382,8 +408,13 @@
         src="../assets/hanthana/_SDS1888.JPG.jpeg"
       ></v-img>
     </div>
-    <div style="width:99vw;height:35vh;padding:10px"></div>
-    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+    <div v-if="!isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
+    <div
+      v-if="!isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="10"
+      data-aos-duration="1500"
+    >
       <v-img
         eager
         height="90vh"
@@ -394,7 +425,20 @@
         Timeless Materiality. Gentle contemporary with textured warmth
       </p>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
+    <div v-else data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+      <div style="width:99vw;height:30vh;padding:10px"></div>
+
+      <v-img
+        eager
+        width="100vw"
+        contain
+        src="../assets/hanthana/slide6.jpg"
+      ></v-img>
+      <p class="newText2 text-center">
+        Timeless Materiality. Gentle contemporary with textured warmth
+      </p>
+    </div>
+    <div v-if="!isMobile()" style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -403,6 +447,8 @@
       style="margin-top:-20vh;"
       data-aos-duration="1500"
     >
+      <div style="width:99vw;height:20vh;padding:10px"></div>
+
       <v-img
         eager
         height="90vh"

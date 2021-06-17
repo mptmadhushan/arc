@@ -30,8 +30,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:26vh;padding:10px"></div>
-
+    <div v-if="!isMobile()" style="width:99vw;height:26vh;padding:10px"></div>
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
         eager
@@ -40,12 +39,17 @@
         height="85vh"
         src="../assets/Damindra_House/_SDS7604.JPG.jpg"
       ></v-img>
-      <p class="text002 text-center">
+      <p v-if="isMobile()" style="margin-top:-20vh" class="text002 text-center">
+        <span class="text005"> Hidden Expression</span> <br />Communication
+        between material and form
+      </p>
+      <p v-else class="text002 text-center">
         <span class="text005"> Hidden Expression</span> <br />Communication
         between material and form
       </p>
     </div>
-    <div style="width:99vw;height:25vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:25vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:25vh;padding:10px"></div>
 
     <div
       v-if="isMobile()"
@@ -96,7 +100,8 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:28vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:28vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:12vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
       <v-img
@@ -105,7 +110,10 @@
         height="85vh"
         src="../assets/Damindra_House/_SDS7591.JPG.jpg"
       ></v-img>
-      <p class="text002 text-center">
+      <p v-if="isMobile()" style="margin-top:-23vh" class="text002 text-center">
+        Interiors of contemporary character and charm
+      </p>
+      <p v-else class="text002 text-center">
         Interiors of contemporary character and charm
       </p>
     </div>
@@ -160,9 +168,26 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:20vh;padding:10px"></div>
 
+    <div style="width:99vw;height:20vh;padding:10px"></div>
     <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="400"
+      data-aos-duration="2500"
+    >
+      <div  style="height:70vh;width:100vw; margin-top:10vh">
+        <vue-flux
+          :options="options"
+          :images="images2mob"
+          :transitions="transitions"
+        >
+        </vue-flux>
+      </div>
+    </div>
+    <div
+      v-else
       class="lastS pt-5"
       data-aos="fade-up"
       data-aos-easing="linear"
@@ -171,7 +196,7 @@
     >
       <div style="height:90vh;width:90vw;">
         <vue-flux
-          :options="options"
+          :options="options2"
           :images="images2"
           :transitions="transitions"
         >
@@ -220,13 +245,27 @@ export default {
       height: "10vh",
       lazyLoadAfter: 3,
     },
+    options2: {
+      allowFullscreen: false,
+      allowToSkipTransition: true,
+      autohideTime: 10000,
+      autoplay: true,
+      bindKeys: false,
+      delay: 3000,
+      enableGestures: false,
+      infinite: true,
+      lazyLoad: true,
+      height: "100vh",
+      lazyLoadAfter: 3,
+    },
     images: [
       require("../assets/Damindra_House/_SDS7622.JPG.jpg"),
       require("../assets/Damindra_House/_SDS7572.JPG.jpg"),
     ],
-    images2: [
-      require("../assets/dami1.png"),
-      require("../assets/dami2.png"),
+    images2: [require("../assets/dami1.png"), require("../assets/dami2.png")],
+    images2mob: [
+      require("../assets/dami1mob.png"),
+      require("../assets/dami2mob.png"),
     ],
     transitions: ["fade"],
     timer: null,

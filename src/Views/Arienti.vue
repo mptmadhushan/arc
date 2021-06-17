@@ -28,9 +28,32 @@
       </p>
     </div>
 
-    <div style="width:99vw;height:15vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:15vh;padding:10px"></div>
 
-    <div id="1">
+    <div id="1" v-if="isMobile()">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        style="height:80vh;width:100vw;"
+        class="d-flex flex-column"
+      >
+        <v-img
+          style="margin-top:-30vh"
+          eager
+          contain
+          width="100vw"
+          src="../assets/Arienti/_SDS7732.jpeg"
+        ></v-img>
+
+        <p class="text001" style="margin-top: -55vh">
+          Eliminating high boundary walls to expose the exceptional facades
+          beyond, now housing one of Colombo's premier fashion brands.
+        </p>
+      </div>
+    </div>
+    <div id="1" v-else>
       <div
         data-aos="fade-up"
         data-aos-delay="100"
@@ -45,18 +68,16 @@
           height="85vh"
           src="../assets/Arienti/_SDS7732.jpeg"
         ></v-img>
-        <p class="text001" v-if="!isMobile()">
+
+        <p class="text001">
           Eliminating high boundary walls to expose the exceptional facades
-          beyond, now housing one of Colombo's premier fashion brands.
-        </p>
-        <p class="text001" v-else style="margin-top: -25vh">
-          liminating high boundary walls to expose the exceptional facades
           beyond, now housing one of Colombo's premier fashion brands.
         </p>
       </div>
     </div>
 
-    <div style="width:99vw;height:15vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:15vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:5vh;padding:10px"></div>
 
     <div
       id="2"
@@ -112,9 +133,33 @@
       </div>
     </div>
 
-    <div style="width:99vw;height:10vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:10vh;padding:10px"></div>
 
     <div
+      v-if="isMobile()"
+      id="3"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      <div style="height:70vh;width:100vw;" class="d-flex flex-column ">
+        <div>
+          <v-img
+            width="100vw"
+            contain
+            eager
+            src="../assets/Arienti/_SDS7793.jpeg"
+          ></v-img>
+        </div>
+
+        <p class="text001" style="margin-top: 2vh">
+          Balancing reflections and artificial light.
+        </p>
+      </div>
+    </div>
+    <div
+      v-else
       id="3"
       data-aos="fade-up"
       data-aos-delay="100"

@@ -30,7 +30,15 @@
             <div class="b1"></div>
           </div>
         </v-flex>
-        <div>
+        <div v-if="isMobile()">
+          <p class="text002 text-center" style="margin-top:-22vh">
+            Architecture should speak of its time and place but yearn for
+            timelessness
+            <br />
+            <span class="text009 text-center">Frank Gehry</span>
+          </p>
+        </div>
+        <div v-else>
           <p class="text002 text-center">
             Architecture should speak of its time and place but yearn for
             timelessness
@@ -40,7 +48,8 @@
         </div>
       </v-layout>
     </div>
-    <div style="width:99vw;height:27vh;padding:10px"></div>
+    <div v-if="isMobile()" style="width:99vw;height:17vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:27vh;padding:10px"></div>
 
     <div class="text-center" style="margin-top: 10vh;">
       <v-layout row wrap justify-center>
@@ -65,7 +74,7 @@
 
     <div>
       <v-layout row wrap>
-        <v-flex md10 pl-4>
+        <v-flex md10 pl-md-4>
           <v-img
             eager
             contain
@@ -85,7 +94,8 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:35vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:5vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
@@ -101,7 +111,7 @@
       ></v-img>
     </div>
 
-    <div v-if="isMobile()">
+    <div v-if="isMobile()" style="margin-top:10vh">
       <v-img eager contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
     </div>
     <div

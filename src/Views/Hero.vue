@@ -61,24 +61,9 @@
     </div>
 
     <div class="clear-both"></div>
-    <!-- <p style="font-size:200px" v-if="arrowa"></p> -->
     <div>
-      <!-- <v-img
-        contain
-        height="10vh"
-        width="5vh"
-        eager
-        src="../assets/whiteArrow.png"
-      ></v-img> -->
       <v-layout row wrap justify-space-between style="margin-top:-6vh">
-        <v-flex md2 class="leftArr">
-          <!-- <v-img
-            contain
-            height="100%"
-            eager
-            src="../assets/transparent-brush-arrow-5e332a3c82c7f2.0719248015804114525357 left.png"
-          ></v-img> -->
-        </v-flex>
+        <v-flex md2 class="leftArr"> </v-flex>
         <v-flex md2 style="margin-top:2vh">
           <v-img
             contain
@@ -87,14 +72,7 @@
             src="../assets/whiteArrow.png"
           ></v-img>
         </v-flex>
-        <v-flex md2 class="rightArr">
-          <!-- <v-img
-            contain
-            height="100%"
-            eager
-            src="../assets/transparent-brush-arrow-5e332a3c82c7f2.0719248015804114525357.png"
-          ></v-img> -->
-        </v-flex>
+        <v-flex md2 class="rightArr"> </v-flex>
       </v-layout>
     </div>
   </div>

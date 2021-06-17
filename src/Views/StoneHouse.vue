@@ -60,6 +60,7 @@
     </div>
     <div
       v-if="isMobile()"
+      style="margin-top:10vh"
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="2500"
@@ -99,7 +100,7 @@
       ></v-img>
       <p class="text002 text-center">
         <span class="text007 text-center">Silence</span>
-
+        <br />
         Nature through the existing architectural frame.
       </p>
     </div>
@@ -143,7 +144,7 @@
       data-aos-easing="linear"
       data-aos-delay="400"
       data-aos-duration="2500"
-      style="height:100vh"
+      style="height:100vh;margin-top:8vh"
       v-if="isMobile()"
     >
       <div>
@@ -187,13 +188,7 @@
         </p>
       </div>
     </div>
-    <div
-      v-if="isMobile()"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="400"
-      data-aos-duration="1500"
-    >
+    <div style="margin-top:-20vh" v-if="isMobile()">
       <v-img
         eager
         contain
@@ -382,7 +377,7 @@
       data-aos-delay="400"
       data-aos-duration="2500"
     >
-      <div style="width:99vw;height:30vh;padding:10px"></div>
+      <div style="width:99vw;height:35vh;padding:10px"></div>
 
       <v-img
         eager

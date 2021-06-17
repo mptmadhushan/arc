@@ -31,37 +31,14 @@
             <div class="b1"></div>
           </div>
         </v-flex>
-        <v-flex md10 xs12 sm12 justify-center>
-          <!-- <p class="text001">
-            A classic modern structure melding with carefully paired plants
-            makes for an, elegant outlook.
-          </p> -->
-        </v-flex>
+        <v-flex md10 xs12 sm12 justify-center> </v-flex>
       </v-layout>
     </div>
-    <!-- <div style="width:99vw;height:28vh;padding:10px"></div> -->
 
-    <!-- <div
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="100"
-      data-aos-duration="1500"
-    >
-      <v-img eager
-        height="85vh"
-        contain
-        style="margin-top:3vh"
-        src="../assets/Dinali_House/_SDS2866.JPG.jpg"
-      ></v-img>
-      <p class="text001">
-        The natural light entering the room adds to the beautiful ambiance
-        created through the precise placement of art and furniture.
-      </p>
-    </div> -->
     <div style="width:99vw;height:19vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
-      <div v-if="isMobile()">
+      <div v-if="isMobile()" style="margin-top:10vh">
         <vue-flux
           :options="options"
           :images="images"
@@ -91,6 +68,7 @@
       </div>
     </div>
     <div style="width:99vw;height:15vh;padding:10px"></div>
+    <div v-if="isMobile()" style="width:99vw;height:10vh;padding:10px"></div>
 
     <div
       data-aos="fade-up"
@@ -140,14 +118,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="box stack-top d-none d-lg-block">
-        <div class="container_l">
-          <div class="sub-left"></div>
-        </div>
-        <div class="container_l">
-          <div class="sub-right"></div>
-        </div>
-      </div> -->
     </div>
 
     <div
@@ -166,7 +136,11 @@
             contain
             src="../assets/Dinali_House/_SDS2888.JPG.jpg"
           ></v-img>
-          <p class="text002">
+          <p v-if="isMobile()" class="text002">
+            Work by Sujith Rathnakaye and Laki Senanayake complement this
+            intimate space
+          </p>
+          <p v-else class="text002">
             Work by Sujith Rathnakaye and Laki<br />
             Senanayake complement this intimate <br />space
           </p>
@@ -174,8 +148,7 @@
       </v-layout>
     </div>
     <div v-else class="text-center">
-      <div style="width:99vw;height:29vh;padding:10px"></div>
-
+      <div v-if="!isMobile()" style="width:99vw;height:29vh;padding:10px"></div>
       <v-layout
         row
         wrap
@@ -210,7 +183,38 @@
       </v-layout>
     </div>
 
-    <div class="text-center">
+    <div v-if="isMobile()" class="text-center">
+      <div style="width:99vw;height:15vh;padding:10px"></div>
+      <v-layout row wrap justify-space-around pt-md-12>
+        <v-flex
+          pa-1
+          xs12
+          sm12
+          justify-center
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <v-img
+            eager
+            contain
+            src="../assets/Dinali_House/_SDS2881.JPG.jpg"
+          ></v-img>
+        </v-flex>
+        <v-flex
+          md3
+          pa-1
+          align-self-center
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1500"
+        >
+          <p class="text002">
+            Timeless Modernity
+          </p>
+        </v-flex>
+      </v-layout>
+    </div>
+    <div v-else class="text-center">
       <div style="width:99vw;height:25vh;padding:10px"></div>
       <v-layout row wrap justify-space-around pt-md-12>
         <v-flex
@@ -241,9 +245,30 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="width:99vw;height:30vh;padding:10px"></div>
+    <div v-if="!isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
 
     <div
+      v-if="isMobile()"
+      style="height: 100vh"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="2000"
+    >
+      <div style="width:99vw;height:30vh;padding:10px"></div>
+
+      <v-img
+        eager
+        width="100vw"
+        contain
+        src="../assets/Dinali_House/_SDS2903.JPG.jpg"
+      ></v-img>
+
+      <p class="text002 text-center" style="margin-top:">
+        Hidden oasis of calm
+      </p>
+    </div>
+    <div
+      v-else
       style="margin-top:5vh"
       data-aos="fade-up"
       data-aos-delay="300"
@@ -256,6 +281,7 @@
         style="margin-left: 5vw;margin-right: 5vw"
         src="../assets/Dinali_House/_SDS2903.JPG.jpg"
       ></v-img>
+
       <p class="text002 text-center">
         Hidden oasis of calm
       </p>
