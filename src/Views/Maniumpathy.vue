@@ -11,7 +11,14 @@
       <!-- <ShapesPop /> -->
     </div>
     <div class="text-center">
-      <v-layout row wrap justify-center pa-3 style="height:90vh">
+      <v-layout
+        v-if="isMobile()"
+        row
+        wrap
+        justify-center
+        pa-3
+        style="height:50vh"
+      >
         <v-flex
           md12
           align-self-center
@@ -27,7 +34,27 @@
           >
             <div class="b1"></div>
           </div>
-
+          <p class="newText2 text-center" style="margin-top: -20vh">
+            Universal Elevation
+          </p>
+        </v-flex>
+      </v-layout>
+      <v-layout v-else row wrap justify-center pa-3 style="height:90vh">
+        <v-flex
+          md12
+          align-self-center
+          data-aos="fade-up"
+          data-aos-delay="10"
+          data-aos-duration="1500"
+        >
+          <div
+            class="b1con"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+            data-aos-duration="2000"
+          >
+            <div class="b1"></div>
+          </div>
           <p class="newText2 text-center">
             Universal Elevation
           </p>
@@ -37,6 +64,8 @@
     <div style="width:99vw;height:30vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2400">
+      <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
+
       <v-img
         eager
         height="85vh"
@@ -239,7 +268,8 @@
         </div>
       </div>
     </div>
-    <div style="width:99vw;height:31vh;padding:10px"></div>
+    <div v-if="isMobile()" style="width:99vw;height:5vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:31vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
       <v-img
@@ -248,12 +278,21 @@
         height="85vh"
         src="../assets/Maniumpathy/_SDS2577.png"
       ></v-img>
-      <p class="newText2 text-center">
+      <p
+        class="newText2 text-center"
+        v-if="isMobile()"
+        style="margin-top:-20vh"
+      >
+        <span class="text007"> Indo-portugese and contemporary.</span><br />
+        Thoughtfully considered and diligently placed
+      </p>
+      <p class="newText2 text-center" v-else>
         <span class="text007"> Indo-portugese and contemporary.</span><br />
         Thoughtfully considered and diligently placed
       </p>
     </div>
-    <div style="width:99vw;height:31vh;padding:10px"></div>
+    <div v-if="isMobile()" style="width:99vw;height:11vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:31vh;padding:10px"></div>
 
     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
       <v-img
@@ -271,7 +310,7 @@
       data-aos-duration="2500"
     >
       <v-img eager contain src="../assets/Maniumpathy/_SDS2557.png"></v-img>
-      <div style="margin-top: 10vh">
+      <div style="margin-top: 40vh">
         <v-img eager contain src="../assets/Maniumpathy/_SDS2545.jpeg"></v-img>
       </div>
     </div>
@@ -323,7 +362,7 @@
       data-aos="fade-up"
       data-aos-duration="2500"
     >
-      <div v-if="isMobile()" style="width:99vw;height:10vh;padding:10px"></div>
+      <div v-if="isMobile()" style="width:99vw;height:17vh;padding:10px"></div>
 
       <vue-flux :options="options" :images="images4" :transitions="transitions">
         <template v-slot:preloader>
@@ -352,7 +391,8 @@
       </p>
     </div>
 
-    <div style="width:99vw;height:19vh;padding:10px"></div>
+    <div v-if="isMobile()" style="width:99vw;height:25vh;padding:10px"></div>
+    <div v-else style="width:99vw;height:19vh;padding:10px"></div>
 
     <div data-aos="fade-down" data-aos-delay="300" data-aos-duration="2500">
       <v-img
@@ -519,6 +559,8 @@
       data-aos-duration="2500"
     >
       <v-img eager contain src="../assets/Maniumpathy/_SDS2457-2.png"></v-img>
+      <div v-if="isMobile()" style="width:99vw;height:22vh;padding:10px"></div>
+   
     </div>
     <div
       v-else
