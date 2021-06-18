@@ -1,12 +1,17 @@
 <template>
-  <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
+  <div
+    style="height:100vh;width:100vw; overflow: hidden;"
+    class="first-slide"
+    ref="slider1"
+    id="viewElement"
+  >
     <Scrollama
       :offset="0.5"
       @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
       @step-exit="({ element }) => (currStep = element.dataset.stepNo)"
     >
       <div
-        class="outer-wrapper"
+        class="outer-wrapper-sli3"
         :data-step-no="1"
         :class="{ active: 1 == currStep }"
       >
@@ -19,51 +24,65 @@
             <div>
               <div
                 class="d-flex d-row justify-space-around"
-                style="margin-top:10vh"
+                style="margin-top: 5vh;overflow: hidden;width:500vw"
               >
-                <div>
+                <div class="ml-10">
                   <v-img
-                    contain
-                    eager
                     height="80vh"
+                    width="150vw"
                     src="../assets/blueprint/slider3.jpeg"
                   >
                     <!-- <div class="newBox2"></div> -->
                   </v-img>
+
+                  <div
+                    class="btn-group"
+                    style="margin-left:0vw;padding-top:9vh"
+                  >
+                    <v-icon dark @click="scroll_right()"
+                      >mdi-arrow-right-circle-outline</v-icon
+                    >
+                  </div>
                 </div>
                 <div>
                   <div>
                     <v-img
+                      width="150vw"
                       height="80vh"
-                      contain
-                      eager
                       src="../assets/blueprint/slider32.jpeg"
                     >
                     </v-img>
+                  </div>
+                  <div
+                    class="btn-group"
+                    style="margin-left:0vw;padding-top:9vh"
+                  >
+                    <v-icon dark @click="scroll_right"
+                      >mdi-arrow-right-circle-outline</v-icon
+                    >
                   </div>
                 </div>
                 <div>
                   <v-img
                     height="80vh"
-                    contain
-                    eager
+                    width="150vw"
                     src="../assets/blueprint/slider33.jpeg"
                   >
                   </v-img>
-                </div>
-                <div
-                  id="animated-example"
-                  class="animated bounce"
-                  style="margin-top:65vh"
-                >
-                  <v-icon
-                    style="margin-left:-65vw"
-                    href="#fir"
-                    size="30"
-                    dark
-                    v-smooth-scroll="{ duration: 2000 }"
-                    >mdi-chevron-up-circle-outline</v-icon
+
+                  <div
+                    id="animated-example"
+                    class="animated bounce"
+                    style="padding-left:136vw;margin-top:5vh"
                   >
+                    <v-icon
+                      style="margin-left:-5vw"
+                      href="#last"
+                      dark
+                      v-smooth-scroll="{ duration: 2000 }"
+                      >mdi-chevron-down-circle-outline</v-icon
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -89,10 +108,18 @@ export default {
     // document.documentElement.style.overflow = "hidden";
   },
   methods: {
-    mouseOver: function() {
-      console.log("flag ");
-      // document.documentElement.style.overflow = "hidden";
+    scroll_left() {
+      let content = document.querySelector(".outer-wrapper-sli3");
+      content.scrollLeft -= 50;
     },
+    scroll_right() {
+      let content = document.querySelector(".outer-wrapper-sli3");
+      content.scrollTop += 650;
+    },
+    // mouseOver: function() {
+    //   console.log("flag ");
+    //   // document.documentElement.style.overflow = "hidden";
+    // },
   },
 };
 </script>
@@ -217,7 +244,7 @@ html {
   background-repeat: no-repeat;
   height: 100vh;
 }
-.outer-wrapper:hover .newBox2 {
+.outer-wrapper-sli3:hover .newBox2 {
   width: 0%;
   background: #282729;
 }
@@ -225,11 +252,11 @@ html {
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .b2sli{
+.outer-wrapper-sli3:hover .b2sli{
   transform: scale(1.1);
   transition: all 3s ease;
 }
-.outer-wrapper:hover .b3sli{
+.outer-wrapper-sli3:hover .b3sli{
   transform: scale(0.9);
   transition: all 3s ease;
 } */
@@ -467,14 +494,14 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 500vh;
+  width: 400vh;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 .one {
   background: #ffffff;
   height: 100vh;
-  padding-left: 60vw;
+  padding-left: 20vw;
   animation-fill-mode: forwards;
   transition: 4s ease;
 }
@@ -483,13 +510,14 @@ h2 span:last-child {
   height: 100vh;
   transition: 4s ease;
 }
-.outer-wrapper:hover .one {
-  background-color: #282729;
+.outer-wrapper-sli3:hover .one {
+  background-color: #a3a3a3;
   opacity: 1;
   /* width: 100%; */
-  padding-left: 10px;
+  margin-left: -30vw;
+  overflow: hidden;
 }
-.outer-wrapper {
+.outer-wrapper-sli3 {
   width: 100vh;
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
@@ -502,8 +530,9 @@ h2 span:last-child {
   -ms-overflow-style: none;
 }
 .one.active {
-  background-color: #282729;
-  padding-left: 10px;
+  background-color: #a3a3a3;
+  margin-left: -30vw;
+  overflow: hidden;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -530,6 +559,6 @@ h2 span:last-child {
   display: flex;
   overflow-x: auto;
   height: 100vh;
-  background-color: #292929;
+  background-color: #a3a3a3;
 }
 </style>

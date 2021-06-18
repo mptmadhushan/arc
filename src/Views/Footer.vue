@@ -26,9 +26,9 @@
         </p>
         <p class="address-m">
           27/5 Sucharithodaya Road,<br />
-          Pamanuwa, <br />Maharagama, <br />
+          Pamanuwa, <br />Maharagama, 10230 <br />
           Sri Lanka<br />
-          (011) 341 6100
+          (+94) 113416100
         </p>
       </div>
     </div>

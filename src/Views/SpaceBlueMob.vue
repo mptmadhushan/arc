@@ -4,34 +4,21 @@
   <div>
     <div style="margin-top:10vh">
       <div class="body2 fadeClass">
-        <!-- <div class="back-text">
-          <div class="text-container">
-            <span class="letter2">S</span><span class="letter2">P</span
-            ><span class="letter2">A</span><span class="letter2">C</span
-            ><span class="letter2">E</span><span class="letter2"></span>
-            <span class="letter2">D</span><span class="letter2">S</span>
-            <span class="letter2">P</span><span class="letter2">A</span>
-            <span class="letter2">C</span><span class="letter2">E</span>
-          </div>
-        </div> -->
-
-        <!-- <div style="width:99vw;height:30vh"></div> -->
+        <div style="width:99vw;height:14vh"></div>
         <div style="margin-top:5vh;width:100vw;">
-          <div style="margin-top:5vh">
+          <div style="margin-top:0vh">
             <v-img
               eager
               contain
               height="90vw"
               src="../assets/blueprint/Space/SL_Bawa_Lunuganga_DS_080307_0088.jpg"
             >
-              <!-- <div class="twelve"></div> -->
             </v-img>
           </div>
-          <!-- <div style="width:99vw;height:13vh"></div> -->
           <div>
             <P
               class="textMini text-left"
-              style="margin-left:5vw;margin-top:5vh"
+              style="margin-left:5vw;margin-top:-5vh"
             >
               Geoffrey Bawa<br />Lunuganga<br />1948 - onwards
             </P>
@@ -39,7 +26,7 @@
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:3vw;margin-top:-1vh"
+                style="margin-left:3vw;margin-top:20vh"
               >
                 <v-icon
                   size="30"
@@ -75,7 +62,7 @@
             <div>
               <P
                 class="text001 text-right"
-                style="margin-right:10vh;margin-top:5vh"
+                style="margin-right:10vh;margin-top:-4vh"
               >
                 "WE BORROW FROM NATURE THE<br />
                 SPACE UPON WHICH WE BUILD"<br />
@@ -112,13 +99,14 @@
         </div>
       </div>
     </div>
+    <div style="width:99vw;height:20vh"></div>
 
     <div class="fadeClass" id="space-blue2">
       <div>
         <v-img
           eager
           contain
-          height="90vh"
+          height="95vh"
           src="../assets/blueprint/_SDS3571b.jpeg"
         >
           <!-- <div class="twelve"></div> -->
@@ -128,7 +116,7 @@
         <div
           id="animated-example"
           class="animated bounce"
-          style="margin-left:1vw;margin-top:5vh"
+          style="margin-left:1vw;margin-top:-2vh"
         >
           <v-icon
             href="#space-blue4"

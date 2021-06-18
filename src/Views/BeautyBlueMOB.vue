@@ -109,8 +109,8 @@
         >mdi-chevron-down-circle-outline</v-icon
       > -->
     </div>
-    <div class="fadeClass" id="bnew3">
-      <div class="image-box" style="padding-top:8vh;">
+    <div class="fadeClass" id="bnew3" style="height:100vh">
+      <div class="image-box" style="padding-top:28vh;">
         <v-img
           class="img-to-ef"
           eager
@@ -118,12 +118,11 @@
           width="90vw"
           src="../assets/blueprint/_SDS3206b.jpeg"
         >
-          <!-- <div class="twelve"></div> -->
         </v-img>
       </div>
       <div
         id="animated-example"
-        style="margin-left:3vw;margin-top:10vh"
+        style="margin-left:3vw;margin-top:0vh"
         class="animated bounce"
       >
         <v-icon href="#bnew5" size="30" v-smooth-scroll="{ duration: 2000 }"
@@ -133,7 +132,7 @@
     </div>
     <div
       id="bnew5"
-      style="height:50vh"
+      style="height:100vh"
       class="d-flex justify-center align-center"
     >
       <p class="text001">
@@ -175,20 +174,16 @@
       </div>
     </div>
     <div style="width:99vw;height:30vh"></div>
-    <div v-on:mouseover="mouseOver" id="slider2" ref="slider2">
-      <Slider2 v-if="!isMobile()" />
-      <Slider2Mob v-else />
-    </div>
+
+    <Slider2Mob id="slider2" ref="slider2"/>
   </div>
 </template>
 
 <script scoped>
 import LocomotiveScroll from "locomotive-scroll";
-import Slider2 from "./Slider2New";
 import Slider2Mob from "./Slider2Mob.vue";
 export default {
   components: {
-    Slider2,
     Slider2Mob,
   },
   data: () => ({
@@ -225,6 +220,14 @@ export default {
   methods: {
     heyl() {
       console.log("helasd 😷helasd");
+    },
+    scroll_left() {
+      let content = document.querySelector(".outer-wrapper");
+      content.scrollLeft -= 50;
+    },
+    scroll_right() {
+      let content = document.querySelector(".outer-wrapper");
+      content.scrollTop += 700;
     },
     mouseOver: function() {
       console.log("flag ");

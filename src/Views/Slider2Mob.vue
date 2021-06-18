@@ -1,5 +1,10 @@
 <template>
-  <div style="height:100vh" class="first-slide" ref="slider1" id="viewElement">
+  <div
+    style="height:100vh;width:100vw; overflow: hidden;"
+    class="first-slide"
+    ref="slider1"
+    id="viewElement"
+  >
     <Scrollama
       :offset="0.5"
       @step-enter="({ element }) => (currStep = element.dataset.stepNo)"
@@ -19,11 +24,12 @@
             <div>
               <div
                 class="d-flex d-row justify-space-around"
-                style="margin-top:20vh"
+                style="margin-top: 5vh;overflow: hidden;width:500vw"
               >
-                <div>
+                <div class="ml-10">
                   <v-img
-                    height="50vh"
+                    height="80vh"
+                    width="150vw"
                     src="../assets/blueprint/Space/02iht-reyburn02A-articleLarge.jpg"
                   >
                     <!-- <div class="newBox2"></div> -->
@@ -38,38 +44,51 @@
                     <br />
                     1960
                   </p>
+                  <div class="btn-group" style="margin-left:0vw;">
+                    <v-icon dark @click="scroll_right()"
+                      >mdi-arrow-right-circle-outline</v-icon
+                    >
+                  </div>
                 </div>
                 <div>
                   <div>
                     <v-img
-                      height="50vh"
-                      cover
+                      width="150vw"
+                      height="80vh"
                       src="../assets/blueprint/slide.png"
                     >
                     </v-img>
                   </div>
+                  <div
+                    class="btn-group"
+                    style="margin-left:0vw;padding-top:9vh"
+                  >
+                    <v-icon dark @click="scroll_right"
+                      >mdi-arrow-right-circle-outline</v-icon
+                    >
+                  </div>
                 </div>
                 <div>
                   <v-img
-                    height="50vh"
-                    cover
+                    height="80vh"
+                    width="150vw"
                     src="../assets/blueprint/_SDS3367.jpeg"
                   >
                   </v-img>
-                </div>
-                <div
-                  id="animated-example"
-                  class="animated bounce"
-                  style="padding-left:66vw;margin-top:65vh"
-                >
-                  <v-icon
-                    style="margin-left:-5vw"
-                    href="#space"
-                    size="30"
-                    dark
-                    v-smooth-scroll="{ duration: 2000 }"
-                    >mdi-chevron-down-circle-outline</v-icon
+
+                  <div
+                    id="animated-example"
+                    class="animated bounce"
+                    style="padding-left:136vw;margin-top:5vh"
                   >
+                    <v-icon
+                      style="margin-left:-5vw"
+                      href="#space"
+                      dark
+                      v-smooth-scroll="{ duration: 2000 }"
+                      >mdi-chevron-down-circle-outline</v-icon
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -95,10 +114,18 @@ export default {
     // document.documentElement.style.overflow = "hidden";
   },
   methods: {
-    mouseOver: function() {
-      console.log("flag ");
-      // document.documentElement.style.overflow = "hidden";
+    scroll_left() {
+      let content = document.querySelector(".outer-wrapper");
+      content.scrollLeft -= 50;
     },
+    scroll_right() {
+      let content = document.querySelector(".outer-wrapper");
+      content.scrollTop += 650;
+    },
+    // mouseOver: function() {
+    //   console.log("flag ");
+    //   // document.documentElement.style.overflow = "hidden";
+    // },
   },
 };
 </script>
@@ -473,14 +500,14 @@ h2 span:last-child {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 500vh;
+  width: 400vh;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 .one {
   background: #ffffff;
   height: 100vh;
-  padding-left: 60vw;
+  padding-left: 20vw;
   animation-fill-mode: forwards;
   transition: 4s ease;
 }
@@ -490,10 +517,11 @@ h2 span:last-child {
   transition: 4s ease;
 }
 .outer-wrapper:hover .one {
-  background-color: #282729;
+  background-color: #a3a3a3;
   opacity: 1;
   /* width: 100%; */
-  padding-left: 10px;
+  margin-left: -30vw;
+  overflow: hidden;
 }
 .outer-wrapper {
   width: 100vh;
@@ -508,8 +536,9 @@ h2 span:last-child {
   -ms-overflow-style: none;
 }
 .one.active {
-  background-color: #282729;
-  padding-left: 10px;
+  background-color: #a3a3a3;
+  margin-left: -30vw;
+  overflow: hidden;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -536,6 +565,6 @@ h2 span:last-child {
   display: flex;
   overflow-x: auto;
   height: 100vh;
-  background-color: #292929;
+  background-color: #a3a3a3;
 }
 </style>

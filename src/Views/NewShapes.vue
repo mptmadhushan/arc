@@ -12,7 +12,7 @@
       <v-card flat style="margin-top: 15vh">
         <v-layout row wrap justify-space-around>
           <v-flex md12 xs4 sm6 class="project1H">
-            <a href="/ChitraLane" class="nav-link">
+            <a href="/DamindraHouse" class="nav-link">
               <v-row align="center" justify="center">
                 <v-col>
                   <div class="sq"></div>
@@ -28,7 +28,7 @@
             </a>
           </v-flex>
           <v-flex md2 xs4 sm6>
-            <a href="/Bolgoda" tag="div">
+            <a href="/Hanthana" tag="div">
               <v-card flat>
                 <div class="cir"></div>
               </v-card>
@@ -37,7 +37,7 @@
         </v-layout>
         <v-layout row wrap justify-center>
           <v-flex md2 xs4 sm12>
-            <a href="/DamindraHouse" tag="div">
+            <a href="/Bolgoda" tag="div">
               <v-card flat>
                 <div class="cir"></div>
               </v-card>
@@ -67,7 +67,7 @@
             </a>
           </v-flex>
           <v-flex md2 xs4 sm12>
-            <a href="/Hanthana" tag="div">
+            <a href="/ChitraLane" tag="div">
               <v-card flat>
                 <div class="cir"></div>
               </v-card>
