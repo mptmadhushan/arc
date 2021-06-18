@@ -11,19 +11,19 @@
 
 <script>
 export default {
-  metaInfo() {
-    return {
-      title: "test meta data with vue",
-      meta: [
-        {
-          vmid: "description",
-          name: "description",
-          content:
-            "hello world, this is an example of adding a description with vueMeta",
-        },
-      ],
-    };
-  },
+  // metaInfo() {
+  //   return {
+  //     title: "test meta data with vue",
+  //     meta: [
+  //       {
+  //         vmid: "description",
+  //         name: "description",
+  //         content:
+  //           "hello world, this is an example of adding a description with vueMeta",
+  //       },
+  //     ],
+  //   };
+  // },
   created: function() {
     this.globalVar = "It's will change global var";
   },
