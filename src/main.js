@@ -9,6 +9,8 @@ import Carousel3d from "vue-carousel-3d";
 import VueSlickCarousel from "vue-slick-carousel";
 import VueAnime from "vue-animejs";
 import axios from "axios";
+import VueMeta from "vue-meta";
+Vue.use(VueMeta);
 Vue.use(VueAnime);
 // import store from "../store";
 Vue.component("ShapesPop", require("./components/ShapesPop.vue").default);

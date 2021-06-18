@@ -26,6 +26,7 @@
     "vue-carousel-3d": "^1.0.1",
     "vue-flux": "^6.4.0",
     "vue-horizontal-scroll": "^0.2.4",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.5.1",
     "vue-scroll-snap": "^0.1.10",
     "vue-scrollama": "^2.0.6",
