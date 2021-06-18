@@ -24,6 +24,12 @@ export default {
   //     ],
   //   };
   // },
+  metaInfo: function() {
+    return {
+      title: "My page meta title",
+      meta: [{ name: "description", content: "My page meta description" }],
+    };
+  },
   created: function() {
     this.globalVar = "It's will change global var";
   },
