@@ -113,6 +113,10 @@
 
     <div v-if="isMobile()" style="margin-top:10vh">
       <v-img eager contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
+      <p class="text002 text-left">
+        Simplicity is the ultimate sophisticattion<br />
+        <span class="text009 text-left">Leonardo Da Vinci</span>
+      </p>
     </div>
     <div
       v-else

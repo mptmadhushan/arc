@@ -271,11 +271,7 @@
         contain
         src="../assets/Bolgoda/_SDS1404-HDR.JPG.jpeg"
       ></v-img>
-      <p
-        v-if="isMobile()"
-        style="margin-top:-13vh"
-        class="text002 text-center"
-      >
+      <p v-if="isMobile()" style="margin-top:-13vh" class="text002 text-center">
         A contemporary twist to a timeless view.
       </p>
       <p v-else class="text002 text-center">
@@ -298,9 +294,9 @@
             src="../assets/Bolgoda/_SDS1360.JPG.jpeg"
           ></v-img>
           <p class="text002 text-center">
-            Old woo to accentuate the seamless interaction of indoors and
-            outdoors. A space that can function independently from the pool and
-            lake beyond
+            <span class="text005"> Monastic Calm </span><br />
+            Blurring the boundaries between<br />
+            inside and outside
           </p>
         </v-flex>
       </v-layout>

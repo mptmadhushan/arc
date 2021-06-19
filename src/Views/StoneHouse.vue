@@ -65,7 +65,7 @@
       data-aos-delay="300"
       data-aos-duration="2500"
     >
-      <v-img eager contain src="../assets/chamika_house/_SDS2989.jpg"></v-img>
+      <v-img eager contain  src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"></v-img>
       <p class="text002 text-center">
         Revitalization of an icon.
       </p>
