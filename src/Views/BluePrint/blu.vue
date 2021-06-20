@@ -622,7 +622,7 @@
           <!-- <p style="width:10vw" class="textMini-c">
             click to start
           </p> -->
-          <v-icon size="30" href="#fir" v-smooth-scroll="{ duration: 2000 }"
+          <v-icon size="30" href="#fir" v-smooth-scroll="{ duration: 6000 }"
             >mdi-chevron-up-circle-outline</v-icon
           >
         </div>

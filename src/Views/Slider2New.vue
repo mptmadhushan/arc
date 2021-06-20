@@ -47,7 +47,7 @@
               <div
                 id="animated-example"
                 class="animated bounce"
-                style="margin-left:15vw;margin-top:10vh"
+                style="margin-left:20vw;margin-top:2vh"
               >
                 <v-icon
                   style="margin-left:5vw"
