@@ -35,7 +35,7 @@ export default {
                 {name: 'robots', content: 'index,follow'}
             ]
         }
-    }
+    },
   // metaInfo: function() {
   //   return {
   //     title: "My page meta title",
