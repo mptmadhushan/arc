@@ -17,7 +17,7 @@
 
     <div class="container_l">
       <div class="sub-left" :class="isloaded ? 'sub-left' : 'sub-left-load'">
-        <div class="center">
+        <div class="center" v-if="!isMobile()">
           <p>
             <v-card
               flat
