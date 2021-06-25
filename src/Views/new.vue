@@ -148,7 +148,7 @@ body {
   height: 100vh;
   width: 100vw;
   opacity: 1;
-  transition: 0.9s linear;
+  /* transition: 0.9s linear; */
   background-image: linear-gradient(to left, white, black);
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 3000ms;

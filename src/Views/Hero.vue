@@ -17,7 +17,7 @@
 
     <div class="container_l">
       <div class="sub-left" :class="isloaded ? 'sub-left' : 'sub-left-load'">
-        <div class="center" v-if="!isMobile()">
+        <div class="center">
           <p>
             <v-card
               flat
@@ -25,6 +25,7 @@
               style="opacity:0.3;padding-left:2vw"
             >
               <v-img
+                v-if="!isMobile()"
                 @click="hello2()"
                 height="15vh"
                 style="margin-right:-5vw"
