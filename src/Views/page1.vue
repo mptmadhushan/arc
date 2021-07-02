@@ -17,40 +17,42 @@
               :class="{ active: 1 == currStep }"
             >
               <div class="about-mb">
-                <p class="about_us" style="margin-top:5vh;text-align:center">
-                  ABOUT US
-                </p>
                 <div class="imgDiv" style="margin-left:3vw">
-                  <v-img
-                    eager
-                    width="80vw"
-                    src="../assets/1.png"
-                    class="zoomImage"
+                  <div
+                    style="align-items: flex-end;display:flex;flex-direction:row;justify-content:space-around"
                   >
-                    <div
-                      class="ab1"
-                      once
-                      :data-step-no="1"
-                      :class="{ active: 1 == currStep }"
-                    ></div>
-                  </v-img>
+                    <div>
+                      <p
+                        class="about_us"
+                        style="padding-bottom:5vh;text-align:start"
+                      >
+                        ABOUT US
+                      </p>
+                      <v-img
+                        eager
+                        contain
+                        max-width="30vw"
+                        src="../assets/1.png"
+                      >
+                        <div
+                          class="ab1"
+                          once
+                          :data-step-no="1"
+                          :class="{ active: 1 == currStep }"
+                        ></div>
+                      </v-img>
+                    </div>
+                    <v-img eager contain max-width="40vw" src="../assets/2.png">
+                      <div
+                        class="ab1"
+                        once
+                        :data-step-no="1"
+                        :class="{ active: 1 == currStep }"
+                      ></div>
+                    </v-img>
+                  </div>
                 </div>
-                <div class="imgDiv mt-12" style="margin-left:3vw">
-                  <v-img
-                    eager
-                    width="80vw"
-                    src="../assets/2.png"
-                    class="zoomImage"
-                  >
-                    <div
-                      class="ab1"
-                      once
-                      :data-step-no="1"
-                      :class="{ active: 1 == currStep }"
-                    ></div>
-                  </v-img>
-                </div>
-                <p class="new">
+                <p class="new" style="font-size:12px">
                   CDA aims to elevate lives and incorporate beauty in art to
                   magnify spaces. Our team consists of young, creatively
                   passionate like-minded individuals who bring in new
@@ -65,7 +67,8 @@
                 </p>
               </div>
             </div>
-            <div style="width:99vw;height:20vh;padding:10px"></div>
+            <div v-if="!isMobile()" style="width:99vw;height:20vh;padding:10px"></div>
+            <div v-if="isMobile()" style="width:99vw;height:10vh;padding:10px"></div>
           </div>
         </div>
       </Scrollama>

@@ -204,7 +204,7 @@ export default {
   color: black;
 }
 .b1con {
-  /* background-color: blueviolet; */
+/* background-color: blueviolet; */
   background-image: url("../assets/chamika_house/_SDS3079-HDR_1.jpg");
   /* background-size: 100% 100%;
   object-fit: fill; */

@@ -4,7 +4,7 @@
       <transition name="fade">
         <router-view> </router-view>
       </transition>
-      <!-- <v-scroll-to-top></v-scroll-to-top> -->
+      <v-scroll-to-top v-if="isMobile()"></v-scroll-to-top>
     </v-main>
   </v-app>
 </template>

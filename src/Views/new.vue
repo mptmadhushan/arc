@@ -2,18 +2,18 @@
   <div>
     <div v-if="isMobile()" style="height:100vh;width:100vw;overflow:hidden">
       <div class="sub-right">
-          <v-card
-            flat
-            color="transparent"
-            style="margin-top:25vh"
-            class="d-flex flex-column mb-6"
-          >
-            <v-img contain height="30vh" src="../assets/main.png"></v-img>
-            <p class="preTitle">
-             Touch To Begin..
-            </p>
-          </v-card>
-        </div>
+        <v-card
+          flat
+          color="transparent"
+          style="margin-top:25vh"
+          class="d-flex flex-column mb-6"
+        >
+          <v-img contain height="30vh" src="../assets/main.png"></v-img>
+          <p class="preTitle">
+            Touch To Begin..
+          </p>
+        </v-card>
+      </div>
     </div>
     <div v-else style="height:100vh;">
       <div class="outer-wrapper">

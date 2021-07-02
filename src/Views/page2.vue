@@ -1,7 +1,36 @@
 <template>
   <div class="fadeClass" style="margin-top:5vh;margin-bottom:10vh">
+    <div
+      v-if="isMobile()"
+      style="display:flex;flex-direction:column;justify-content:center;width:100vw;align-items: center;align-content: center"
+      class="fadeClassHover"
+    >
+      <div class="image-box text-center" style="padding-left:25vw">
+        <v-img src="../assets/12.png" contain width="50vw" />
+      </div>
+      <div>
+        <p class="pa-2 new" style="font-size:12px">
+          Chamika De Alwis began his architectural career at MICD Associates and
+          continues to practice at the firm as a Senior Associate. In 2016 he
+          embarked on his own practice as the Principal Architect of C Atelier
+          Consultants and CDA Associates. He has worked on numerous
+          architectural and restoration projects of which one was the recipient
+          of the Conde Nast Johansens award for excellence in 2020 – 21. He has
+          also been involved in several curatorial projects in Sri Lanka
+          including the exhibitions Second Skin in March 2017 and Revive;
+          Ethical Use of Material in June 2017 in collaboration with the Colombo
+          Fashion Week. In 2019 he also curated One Won in collaboration with
+          the University of the Visual and Performing Arts, Colombo in the
+          aftermath of the Easter Attacks in Sri Lanka He is a Trustee of the
+          Geoffrey Bawa Trust and the Lunuganga Trust.
+        </p>
+      </div>
+      <div style="min-width:100%;height:1px;background-color:black;" class="my-5"></div>
+      <v-btn class="ma-2" outlined color="black" to="/projects">Projects</v-btn>
+    </div>
     <v-layout
       row
+      v-else
       wrap
       justify-space-around
       style="height:100%;margin-bottom:5vh;"

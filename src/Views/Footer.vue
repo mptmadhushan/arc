@@ -18,18 +18,22 @@
     </div>
     <div v-else>
       <div class="footer-m">
-        <p class="email-m left">
-          info@cda-ca.com
-        </p>
-        <p class="contry-m">
-          Sri Lanka
-        </p>
-        <p class="address-m">
-          27/5 Sucharithodaya Road,<br />
-          Pamanuwa, <br />Maharagama, 10230 <br />
-          Sri Lanka<br />
-          (+94) 113416100
-        </p>
+        <div style="padding-top:20%;width:100%;min-height:100%">
+          <div
+            style="display:flex;flex-direction:row;justify-content:space-around;align-items:center"
+          >
+            <p class="text00f2">Facebook</p>
+            <p class="text00f2">|</p>
+            <p class="text00f2">Instagram</p>
+          </div>
+          <p class="text00f1 mt-7">Telephone : +94 777 613 553</p>
+          <p class="text00f1" style="margin-top:-5%">
+            Email : chamika@cda-ca.com
+          </p>
+          <p class="text00f3 mt-12">
+            27/5 Sucharithodaya Road, Pamanuwa, Maharagama, 10230 Sri Lanka.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -41,6 +45,24 @@ export default {};
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+.text00f1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 25vw;
+  color: rgb(53, 52, 52);
+  font-size: 2vh;
+}
+.text00f2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(53, 52, 52);
+  font-size: 3vh;
+}
+.text00f3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(53, 52, 52);
+  font-size: 3vw;
+  text-align: center;
+}
 .email {
   text-decoration: none;
   background: linear-gradient(currentColor, currentColor) bottom / 0 0.1em
@@ -132,9 +154,10 @@ export default {};
   /* background-image: url("../assets/footer.jpg"); */
 }
 .footer-m {
-  height: 60vh;
+  display: flex;
+  height: 40vh;
   width: 100%;
-  background-color: black;
+  background-color: rgb(172, 172, 172);
   /* background-position: center; */
   /* background-size: cover;
   background-repeat: no-repeat; */

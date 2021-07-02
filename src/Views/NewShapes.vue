@@ -1,87 +1,79 @@
 <template>
-  <v-container fluid style="height:100vh">
-    <router-link to="/">
+  <v-container fluid :class="isMobile() ? 'mobBack' : 'deskBack'">
+    <router-link to="/" v-if="!isMobile()">
       <img
-        style=" opacity: 0.5;margin-inline:2px"
+        style=" opacity: 0.5;margin-inline:2px;tint-colot:red"
         height="20vh"
         src="../assets/backArrow.png"
       />
     </router-link>
 
     <div v-if="isMobile()">
-      <v-card flat style="margin-top: 15vh">
-        <v-layout row wrap justify-space-around>
-          <v-flex md12 xs4 sm6 class="project1H">
-            <a href="/DamindraHouse" class="nav-link">
-              <v-row align="center" justify="center">
-                <v-col>
-                  <div class="sq"></div>
-                </v-col>
-              </v-row>
-            </a>
-          </v-flex>
-          <v-flex md2 xs4 sm6>
-            <a href="/Arienti" tag="div">
-              <v-card flat>
-                <div class="tri"></div>
-              </v-card>
-            </a>
-          </v-flex>
-          <v-flex md2 xs4 sm6>
-            <a href="/Hanthana" tag="div">
-              <v-card flat>
-                <div class="cir"></div>
-              </v-card>
-            </a>
-          </v-flex>
-        </v-layout>
-        <v-layout row wrap justify-center>
-          <v-flex md2 xs4 sm12>
-            <a href="/Bolgoda" tag="div">
-              <v-card flat>
-                <div class="cir"></div>
-              </v-card>
-            </a>
-          </v-flex>
-          <v-flex md2 xs4 sm12>
-            <a href="/DinaliHouse" tag="div">
-              <v-card flat>
-                <div class="sq"></div>
-              </v-card>
-            </a>
-          </v-flex>
-
-          <v-flex md2 xs4 sm12>
-            <a href="/ChamikaHouse" tag="div">
-              <v-card flat>
-                <div class="tri"></div>
-              </v-card>
-            </a>
-          </v-flex> </v-layout
-        ><v-layout row wrap justify-center>
-          <v-flex md2 xs4 sm12>
-            <a href="/StoneHouse" tag="div">
-              <v-card flat>
-                <div class="tri"></div>
-              </v-card>
-            </a>
-          </v-flex>
-          <v-flex md2 xs4 sm12>
-            <a href="/ChitraLane" tag="div">
-              <v-card flat>
-                <div class="cir"></div>
-              </v-card>
-            </a>
-          </v-flex>
-          <v-flex md2 xs4 sm12>
-            <a href="/maniumpathy" tag="div">
-              <v-card flat>
-                <div class="sq"></div>
-              </v-card>
-            </a>
-          </v-flex>
-        </v-layout>
+      <router-link to="/">
+        <img
+          style=" opacity: 0.5;margin-inline:2px;tint-colot:red;-webkit-filter: invert(1);
+   filter: invert(1);"
+          height="20vh"
+          src="../assets/backArrow.png"
+        />
+      </router-link>
+      <v-card flat color="transparent">
+        <div
+          style="display:flex;flex-direction:row; justify-content:center;align-content:center"
+        >
+          <a href="/DamindraHouse" class="nav-link pa-2">
+            <div class="dami"></div>
+          </a>
+          <a href="/Arienti" tag="div" class=" pa-2">
+            <div class="ari"></div>
+          </a>
+          <a href="/Hanthana" tag="div" class=" pa-2">
+            <div class="Hanthana"></div>
+          </a>
+        </div>
+        <div
+          style="display:flex;flex-direction:row; justify-content:center;align-content:center"
+        >
+          <a href="/Bolgoda" tag="div" class=" pa-2">
+            <div class="Bolgoda"></div>
+          </a>
+          <a href="/DinaliHouse" tag="div" class=" pa-2">
+            <div class="DinaliHouse"></div>
+          </a>
+          <a href="/ChamikaHouse" tag="div" class=" pa-2">
+            <div class="ChamikaHouse"></div>
+          </a>
+        </div>
+        <div
+          style="display:flex;flex-direction:row; justify-content:center;align-content:center"
+        >
+          <a href="/StoneHouse" tag="div" class=" pa-2">
+            <div class="StoneHouse"></div>
+          </a>
+          <a href="/ChitraLane" tag="div" class=" pa-2">
+            <div class="ChitraLane"></div>
+          </a>
+          <a href="/maniumpathy" tag="div" class=" pa-2">
+            <div class="maniumpathy"></div>
+          </a>
+        </div>
       </v-card>
+      <div style="margin-top:30%;width:100%;min-height:100%">
+        <div
+          style="display:flex;flex-direction:row;justify-content:space-around;align-items:center"
+        >
+          <p class="text00f2">Facebook</p>
+          <p class="text00f2">|</p>
+          <p class="text00f2">Instagram</p>
+        </div>
+        <p class="text00f1">Telephone : +94 777 613 553</p>
+        <p class="text00f1" style="margin-top:-5%">
+          Email : chamika@cda-ca.com
+        </p>
+        <p class="text00f3">
+          27/5 Sucharithodaya Road, Pamanuwa, Maharagama, 10230 Sri Lanka.
+        </p>
+      </div>
     </div>
     <div
       v-else
@@ -310,6 +302,153 @@ export default {
 </script>
 
 <style scoped>
+.text00f1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 25vw;
+  color: white;
+  font-size: 2vh;
+}
+.text00f2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 3vh;
+}
+.text00f3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+}
+.mobBack {
+  background-color: rgb(15, 14, 14);
+  height: 100vh;
+  width: 100vw;
+}
+.deskBack {
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+}
+.maniumpathy {
+  height: 25vw;
+  width: 25vw;
+  /* background-size: 100% 100%; */
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../assets/Maniumpathy/1.png");
+}
+.ChitraLane {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Chitra_Lane/_SDS3756.JPG.jpg");
+}
+.StoneHouse {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Stone_House/Stone House_DSC5533.JPG.jpg");
+}
+.ChamikaHouse {
+  height: 25vw;
+  width: 25vw;
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../assets/chamika_house/_SDS3079-HDR_1.jpg");
+}
+.DinaliHouse {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Dinali_House/_SDS2871.JPG.jpg");
+}
+.Bolgoda {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Bolgoda/_SDS1498.JPG.jpeg");
+}
+.ari {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Arienti/_SDS7737.jpeg");
+}
+.dami {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Damindra_House/_SDS7569.JPG.jpg");
+}
+.Hanthana {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/hanthana/1st.jpeg");
+}
+.ari {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Arienti/_SDS7737.jpeg");
+}
+.dami {
+  height: 25vw;
+  width: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url("../assets/Damindra_House/_SDS7569.JPG.jpg");
+}
+.Hanthana {
+  height: 25vw;
+  filter: grayscale(100%);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 25vw;
+  background-size: 100% 100%;
+  background-image: url("../assets/hanthana/1st.jpeg");
+}
 .textProHead {
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
