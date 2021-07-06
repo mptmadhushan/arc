@@ -18,15 +18,19 @@
     </div>
     <div v-else>
       <div class="footer-m">
-        <div style="padding-top:20%;width:100%;min-height:100%">
+        <div style="padding-top:15%;width:100%;min-height:100%">
           <div
             style="display:flex;flex-direction:row;justify-content:space-around;align-items:center"
           >
-            <p class="text00f2">Facebook</p>
+            <v-btn class="ma-2" outlined color="black" to="/projects"
+              >Projects</v-btn
+            >
+
+            <!-- <p class="text00f2">Facebook</p>
             <p class="text00f2">|</p>
-            <p class="text00f2">Instagram</p>
+            <p class="text00f2">Instagram</p> -->
           </div>
-          <p class="text00f1 mt-7">Telephone : +94 777 613 553</p>
+          <p class="text00f1 mt-12">Telephone : +94 777 613 553</p>
           <p class="text00f1" style="margin-top:-5%">
             Email : chamika@cda-ca.com
           </p>

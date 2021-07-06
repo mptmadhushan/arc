@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <div class="text-center">
+    <!-- <div class="text-center">
       <v-dialog
         v-model="dialog"
         persistent
@@ -23,7 +23,7 @@
           </v-card-text>
         </v-card>
       </v-dialog>
-    </div>
+    </div> -->
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -65,7 +65,11 @@
       data-aos-delay="300"
       data-aos-duration="2500"
     >
-      <v-img eager contain  src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"></v-img>
+      <v-img
+        eager
+        contain
+        src="../assets/Stone_House/Stone House_DSC5504.JPG.jpg"
+      ></v-img>
       <p class="text002 text-center">
         Revitalization of an icon.
       </p>
@@ -281,7 +285,14 @@
               </figure>
             </slide>
           </carousel-3d>
-          <div style="margin-inline: 20%">
+          <div style="margin-inline: 2%" v-if="isMobile()">
+            <p class="text002 text-center">
+              Tea stained rice paper and gold leaf <br />Thisath Thoradeniya and
+              Pala Pothupitiya encapsulating each room<br />
+              with their materiality
+            </p>
+          </div>
+          <div style="margin-inline: 20%" v-else>
             <p class="text002 text-center">
               Tea stained rice paper and gold leaf <br />Thisath Thoradeniya and
               Pala Pothupitiya encapsulating each room<br />

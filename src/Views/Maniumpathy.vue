@@ -109,7 +109,7 @@
       <div v-if="isMobile()" style="width:99vw;height:35vh;padding:10px"></div>
 
       <v-img eager contain src="../assets/Maniumpathy/_SDS2472.png"></v-img>
-      <p class="newText2 text-right">
+      <p class="newText2 text-center">
         <span class="text007">Understated Refinement </span><br />
         Singularity relative to its surroundings.
       </p>

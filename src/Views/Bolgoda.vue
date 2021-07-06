@@ -56,7 +56,7 @@
       <v-layout row wrap justify-center pt-md-12 style="height:70vh">
         <v-flex md7 xs12 sm12 align-self-center>
           <v-img eager src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
-          <p class="text002">
+          <p class="text002 text-center">
             A play on Sri Lankan traditional art through a tapestry by Ena De
             Silva (A Tree Of Life)
           </p>
@@ -153,7 +153,7 @@
     >
       <vue-flux :options="options" :images="images" :transitions="transitions">
       </vue-flux>
-      <p class="text002">
+      <p class="text002 text-center">
         "We wanted the art to speak for the house. To create an environment
         where that harmony could be understood throughout the home."
         <br />A Bandu Manamperi study of Life on Bolgoda Lake, extending the

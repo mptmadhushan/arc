@@ -17,7 +17,7 @@
               :class="{ active: 1 == currStep }"
             >
               <div class="about-mb">
-                <div class="imgDiv" style="margin-left:3vw">
+                <div class="imgDiv mb-12">
                   <div
                     style="align-items: flex-end;display:flex;flex-direction:row;justify-content:space-around"
                   >
@@ -31,7 +31,7 @@
                       <v-img
                         eager
                         contain
-                        max-width="30vw"
+                        max-width="40vw"
                         src="../assets/1.png"
                       >
                         <div
@@ -42,7 +42,7 @@
                         ></div>
                       </v-img>
                     </div>
-                    <v-img eager contain max-width="40vw" src="../assets/2.png">
+                    <v-img eager contain max-width="50vw" src="../assets/2.png">
                       <div
                         class="ab1"
                         once
@@ -52,7 +52,7 @@
                     </v-img>
                   </div>
                 </div>
-                <p class="new" style="font-size:12px">
+                <p class="new mt-12 pa-2" style="font-size:12px">
                   CDA aims to elevate lives and incorporate beauty in art to
                   magnify spaces. Our team consists of young, creatively
                   passionate like-minded individuals who bring in new

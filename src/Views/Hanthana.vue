@@ -297,7 +297,7 @@
         width="100vw"
         src="../assets/hanthana/slide2.jpeg"
       ></v-img>
-      <p class="newText2 text-center" style="padding-inline:15vw">
+      <p class="newText2 text-center" style="padding-inline:5vw">
         Bandu Manamperi's take on the surrounding vista of mountains from
         Hanthana itself, creating a contemporary stage for his work within the
         context of a dramatic lounge to wind down after a journey

@@ -109,7 +109,14 @@
               </figure>
             </slide>
           </carousel-3d>
-          <div style="margin-inline: 20%">
+          <div style="margin-inline: 2%" v-if="isMobile()">
+            <p class="text002 text-center">
+              <span class="text005">Purity and Refinement </span><br />
+              Sculptural mix of carefully curated contemporary and antique by
+              Laki Senanayake and Kingsley Goonatilake
+            </p>
+          </div>
+          <div style="margin-inline: 20%" v-else>
             <p class="text002 text-center">
               <span class="text005">Purity and Refinement </span><br />
               Sculptural mix of carefully curated contemporary and antique by
@@ -136,11 +143,11 @@
             contain
             src="../assets/Dinali_House/_SDS2888.JPG.jpg"
           ></v-img>
-          <p v-if="isMobile()" class="text002">
+          <p v-if="isMobile()" class="text002 text-center">
             Work by Sujith Rathnakaye and Laki Senanayake complement this
             intimate space
           </p>
-          <p v-else class="text002">
+          <p v-else class="text002 text-center">
             Work by Sujith Rathnakaye and Laki<br />
             Senanayake complement this intimate <br />space
           </p>
@@ -208,7 +215,7 @@
           data-aos-delay="100"
           data-aos-duration="1500"
         >
-          <p class="text002">
+          <p class="text002 text-center">
             Timeless Modernity
           </p>
         </v-flex>

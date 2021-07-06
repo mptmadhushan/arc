@@ -67,7 +67,11 @@
     >
       <v-layout row wrap justify-center pt-md-12>
         <v-flex md4 align-self-center>
-          <p class="text002">
+          <p class="text002 text-center" v-if="isMobile()">
+            <span class="text005">The Trellis</span><br />Brutalist harmony in
+            Contemporary lines
+          </p>
+          <p class="text002" v-else>
             <span class="text005">The Trellis</span><br />Brutalist harmony in
             Contemporary lines
           </p>
@@ -139,7 +143,10 @@
         data-aos-duration="1500"
       >
         <v-flex md4 xs12 sm12 align-self-center justify-end>
-          <p class="text003">
+          <p class="text003 text-center" v-if="isMobile()">
+            Narrowness
+          </p>
+          <p class="text003" v-else>
             Narrowness
           </p>
         </v-flex>

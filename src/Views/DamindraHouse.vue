@@ -128,8 +128,8 @@
             height="100%"
             src="../assets/Damindra_House/_SDS7595.JPG.jpg"
           ></v-img>
-          <p class="text002 ">
-            <span class="text005">Harmony </span>
+          <p class="text002 text-center">
+            <span class="text005 text-center">Harmony </span>
             <br />
             Between architecture and the elements
           </p>
@@ -177,7 +177,7 @@
       data-aos-delay="400"
       data-aos-duration="2500"
     >
-      <div  style="height:70vh;width:100vw; margin-top:10vh">
+      <div style="height:70vh;width:100vw; margin-top:10vh">
         <vue-flux
           :options="options"
           :images="images2mob"

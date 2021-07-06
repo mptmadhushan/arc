@@ -85,7 +85,13 @@
             data-aos-duration="1500"
           ></v-img>
         </v-flex>
-        <v-flex md2 align-self-center>
+        <v-flex md2 align-self-center v-if="isMobile()">
+          <p class="text002 text-center ">
+            God is in the details
+            <br />
+            <span class="text009 text-center"> Mies Van Der Rohe</span>
+          </p> </v-flex
+        ><v-flex md2 align-self-center v-else>
           <p class="text002 text-right">
             God is in the details
             <br />
@@ -113,9 +119,9 @@
 
     <div v-if="isMobile()" style="margin-top:10vh">
       <v-img eager contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
-      <p class="text002 text-left">
+      <p class="text002 text-center">
         Simplicity is the ultimate sophisticattion<br />
-        <span class="text009 text-left">Leonardo Da Vinci</span>
+        <span class="text009 text-center">Leonardo Da Vinci</span>
       </p>
     </div>
     <div
@@ -204,7 +210,7 @@ export default {
   color: black;
 }
 .b1con {
-/* background-color: blueviolet; */
+  /* background-color: blueviolet; */
   background-image: url("../assets/chamika_house/_SDS3079-HDR_1.jpg");
   /* background-size: 100% 100%;
   object-fit: fill; */

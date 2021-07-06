@@ -5,11 +5,11 @@
       style="display:flex;flex-direction:column;justify-content:center;width:100vw;align-items: center;align-content: center"
       class="fadeClassHover"
     >
-      <div class="image-box text-center" style="padding-left:25vw">
-        <v-img src="../assets/12.png" contain width="50vw" />
+      <div class="image-box text-center" style="padding-left:5vw">
+        <v-img src="../assets/12.png" contain width="90vw" />
       </div>
-      <div>
-        <p class="pa-2 new" style="font-size:12px">
+      <div class="mt-12">
+        <p class="pa-2 new mt-12 text-center" style="font-size:12px">
           Chamika De Alwis began his architectural career at MICD Associates and
           continues to practice at the firm as a Senior Associate. In 2016 he
           embarked on his own practice as the Principal Architect of C Atelier
@@ -25,8 +25,7 @@
           Geoffrey Bawa Trust and the Lunuganga Trust.
         </p>
       </div>
-      <div style="min-width:100%;height:1px;background-color:black;" class="my-5"></div>
-      <v-btn class="ma-2" outlined color="black" to="/projects">Projects</v-btn>
+      <!-- <div style="min-width:100%;height:1px;background-color:black;" class="my-5"></div> -->
     </div>
     <v-layout
       row
