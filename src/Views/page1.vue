@@ -17,7 +17,7 @@
               :class="{ active: 1 == currStep }"
             >
               <div class="about-mb">
-                <div class="imgDiv mb-12">
+                <div class="imgDiv">
                   <div
                     style="align-items: flex-end;display:flex;flex-direction:row;justify-content:space-around"
                   >
