@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -10,7 +12,7 @@
       </router-link>
     </div>
     <div class="text-center">
-      <v-layout row wrap justify-center pa-3>
+      <v-layout row wrap justify-center>
         <v-flex
           md12
           align-self-center
@@ -25,14 +27,14 @@
     </div>
     <div
       v-if="isMobile()"
-      style="margin-top: 20vh"
+      style="margin-top: 20vh;margin-left:-13px;"
       data-aos="fade-up"
       data-aos-delay="300"
       data-aos-duration="1500"
     >
-      <v-img eager contain src="../assets/hanthana/2.jpeg"></v-img>
+      <v-img eager min-width="105vw" src="../assets/hanthana/2.jpeg"></v-img>
       <p class="newText2 text-center">
-        <span class="text002"> Prelude </span><br />
+        <span class="text002">Prelude </span><br />
         A journey forthcoming
       </p>
     </div>
@@ -323,7 +325,27 @@
     </div>
     <div style="width:99vw;height:30vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
+      <v-img
+        eager
+        height="85vh"
+        contain
+        min-width="104vw"
+        style="margin-left:-20px"
+        src="../assets/hanthana/8.jpeg"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1500"
+    >
       <v-img
         eager
         height="85vh"
@@ -400,10 +422,25 @@
     </div>
     <div v-if="!isMobile()" style="width:99vw;height:31vh;padding:10px"></div>
     <div v-else style="width:99vw;height:31vh;padding:10px"></div>
-    <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+    <div
+      v-if="!isMobile()"
+      data-aos="fade-up"
+      data-aos-delay="10"
+      data-aos-duration="1500"
+    >
       <v-img
         eager
         height="90vh"
+        contain
+        src="../assets/hanthana/_SDS1888.JPG.jpeg"
+      ></v-img>
+    </div>
+    <div v-else data-aos="fade-up" data-aos-delay="10" data-aos-duration="1500">
+      <v-img
+        eager
+        height="90vh"
+        min-width="104vw"
+        style="margin-left:-13px"
         contain
         src="../assets/hanthana/_SDS1888.JPG.jpeg"
       ></v-img>

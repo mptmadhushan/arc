@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -11,6 +13,7 @@
       <!-- <ShapesPop /> -->
     </div>
     <div
+      v-if="isMobile()"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-delay="100"
@@ -24,6 +27,23 @@
         data-aos-duration="2000"
       >
         <div class="b1"></div>
+      </div>
+    </div>
+    <div
+      v-else
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+    >
+      <div
+        class="b1con-d"
+        data-aos-easing="linear"
+        data-aos-delay="100"
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+      >
+        <div class="b1-d"></div>
       </div>
     </div>
     <div v-if="!isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
@@ -53,7 +73,7 @@
     <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div v-if="isMobile()" class="text-center">
-      <v-layout row wrap justify-center pt-md-12 style="height:70vh">
+      <v-layout row wrap justify-center pt-md-12 px-3 style="height:70vh">
         <v-flex md7 xs12 sm12 align-self-center>
           <v-img eager src="../assets/Bolgoda/_SDS1459.JPG.jpeg"></v-img>
           <p class="text002 text-center">
@@ -182,6 +202,8 @@
     <div v-if="isMobile()" style="margin-top: -5vh">
       <v-img
         eager
+        min-width="110vw"
+        style="margin-left:-20px"
         height="80vh"
         src="../assets/Bolgoda/_SDS1452.JPG.jpeg"
       ></v-img>
@@ -425,14 +447,36 @@ export default {
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Bolgoda/_SDS1498.JPG.jpeg");
-  /* background-size: 100% 100%;
-  object-fit: fill; */
+  background-size: 100% 100%;
+  /*  object-fit: fill; */
+  background-position: center;
+  margin-left: -20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 110vw;
+}
+.b1con-d {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/Bolgoda/_SDS1498.JPG.jpeg");
+  background-size: 100% 100%;
+  /*  object-fit: fill; */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   height: 90vh;
 }
 .b1 {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  min-width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
+.b1-d {
   background-color: #fff;
   transform: scaleY(0);
   transform-origin: top;

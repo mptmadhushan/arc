@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div class="d-flex justify-space-between mb-6" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -65,12 +67,12 @@
 
     <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2400">
       <div v-if="isMobile()" style="width:99vw;height:30vh;padding:10px"></div>
-
       <v-img
         eager
         height="85vh"
         contain
-        style="margin-bottom:5vh"
+        min-width="105vw"
+        style="margin-bottom:5vh;margin-left:-20px"
         src="../assets/Maniumpathy/SDS2436.png"
       ></v-img>
     </div>
@@ -195,6 +197,8 @@
       <v-img
         eager
         contain
+        min-width="105vw"
+        style="margin-left:-20px"
         src="../assets/Maniumpathy/_SDS2554.JPG.jpeg"
       ></v-img>
       <p class="newText2 text-center">
@@ -394,7 +398,27 @@
     <div v-if="isMobile()" style="width:99vw;height:25vh;padding:10px"></div>
     <div v-else style="width:99vw;height:19vh;padding:10px"></div>
 
-    <div data-aos="fade-down" data-aos-delay="300" data-aos-duration="2500">
+    <div
+      v-if="isMobile()"
+      data-aos="fade-down"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+    >
+      <v-img
+        eager
+        height="86vh"
+        min-width="105vw"
+        style="margin-left: -20px"
+        contain
+        src="../assets/Maniumpathy/_SDS2607.png"
+      ></v-img>
+    </div>
+    <div
+      v-else
+      data-aos="fade-down"
+      data-aos-delay="300"
+      data-aos-duration="2500"
+    >
       <v-img
         eager
         height="86vh"
@@ -560,7 +584,6 @@
     >
       <v-img eager contain src="../assets/Maniumpathy/_SDS2457-2.png"></v-img>
       <div v-if="isMobile()" style="width:99vw;height:22vh;padding:10px"></div>
-   
     </div>
     <div
       v-else

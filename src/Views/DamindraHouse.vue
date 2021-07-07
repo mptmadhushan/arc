@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -8,7 +10,6 @@
           src="../assets/backArrow.png"
         />
       </router-link>
-      <!-- <ShapesPop /> -->
     </div>
     <div class="text-center">
       <v-layout row wrap justify-center>
@@ -31,7 +32,12 @@
       </v-layout>
     </div>
     <div v-if="!isMobile()" style="width:99vw;height:26vh;padding:10px"></div>
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="2500"
+      class="px-3"
+    >
       <v-img
         eager
         contain
@@ -103,7 +109,12 @@
     <div v-if="!isMobile()" style="width:99vw;height:28vh;padding:10px"></div>
     <div v-else style="width:99vw;height:12vh;padding:10px"></div>
 
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="2500"
+      class="px-3"
+    >
       <v-img
         eager
         contain
@@ -120,7 +131,7 @@
     <div style="width:99vw;height:25vh;padding:10px"></div>
 
     <div v-if="isMobile()" class="text-center">
-      <v-layout row wrap justify-space-around>
+      <v-layout row wrap justify-space-around class="px-3">
         <v-flex md7 xs12 sm12 align-self-center mt-12>
           <v-img
             eager
@@ -316,7 +327,8 @@ export default {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 92vh;
+  height: 90vh;
+  /* margin-top: -2vh; */
 }
 .b1 {
   background-color: #fff;

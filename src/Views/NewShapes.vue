@@ -335,7 +335,7 @@ export default {
   width: 100vw;
 }
 .deskBack {
-  background-color: blue;
+  /* background-color: blue; */
   height: 100vh;
   width: 100vw;
 }

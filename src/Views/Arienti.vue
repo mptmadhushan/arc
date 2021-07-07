@@ -1,5 +1,7 @@
 <template>
   <div>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div
       data-aos-delay="100"
       data-aos="fade-up"
@@ -37,7 +39,7 @@
         data-aos-easing="linear"
         data-aos-duration="1500"
         style="height:80vh;width:100vw;"
-        class="d-flex flex-column"
+        class="d-flex flex-column px-3"
       >
         <v-img
           style="margin-top:-30vh"
@@ -86,7 +88,7 @@
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <div style="height:100vh;width:100vw;" class="d-flex flex-column ">
+      <div style="height:100vh;width:100vw;" class="d-flex flex-column px-3">
         <div style="width:99vw;height:15vh;padding:10px"></div>
 
         <carousel-3d
@@ -143,7 +145,7 @@
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <div style="height:70vh;width:100vw;" class="d-flex flex-column ">
+      <div style="height:70vh;width:100vw;" class="d-flex flex-column px-3">
         <div>
           <v-img
             width="100vw"

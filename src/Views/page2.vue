@@ -8,7 +8,7 @@
       <div class="image-box text-center" style="padding-left:5vw">
         <v-img src="../assets/12.png" contain width="90vw" />
       </div>
-      <div class="mt-12">
+      <div>
         <p class="pa-2 new mt-12 text-center" style="font-size:12px">
           Chamika De Alwis began his architectural career at MICD Associates and
           continues to practice at the firm as a Senior Associate. In 2016 he

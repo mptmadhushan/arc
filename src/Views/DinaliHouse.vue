@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -11,7 +13,7 @@
       <!-- <ShapesPop /> -->
     </div>
 
-    <div class="text-center">
+    <div class="text-center" v-if="isMobile()">
       <v-layout
         row
         wrap
@@ -29,6 +31,29 @@
             data-aos-duration="2000"
           >
             <div class="b1"></div>
+          </div>
+        </v-flex>
+        <v-flex md10 xs12 sm12 justify-center> </v-flex>
+      </v-layout>
+    </div>
+    <div class="text-center" v-else>
+      <v-layout
+        row
+        wrap
+        justify-center
+        pa-3
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+      >
+        <v-flex md10 xs12 sm12 align-self-center>
+          <div
+            class="b1con-d"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+            data-aos-duration="2000"
+          >
+            <div class="b1-d"></div>
           </div>
         </v-flex>
         <v-flex md10 xs12 sm12 justify-center> </v-flex>
@@ -129,7 +154,7 @@
 
     <div
       v-if="isMobile()"
-      class="text-center"
+      class="text-center px-3"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-delay="100"
@@ -140,6 +165,7 @@
         <v-flex md7 align-self-center>
           <v-img
             eager
+            px-3
             contain
             src="../assets/Dinali_House/_SDS2888.JPG.jpg"
           ></v-img>
@@ -192,7 +218,7 @@
 
     <div v-if="isMobile()" class="text-center">
       <div style="width:99vw;height:15vh;padding:10px"></div>
-      <v-layout row wrap justify-space-around pt-md-12>
+      <v-layout row wrap justify-space-around pt-md-12 px-3>
         <v-flex
           pa-1
           xs12
@@ -348,6 +374,26 @@ export default {
   font-family: "Josefin Sans", sans-serif;
   color: #11111193;
 }
+.b1con-d {
+  /* background-color: blueviolet; */
+  background-image: url("../assets/Dinali_House/_SDS2871.JPG.jpg");
+  /* background-size: 100% 100%;
+  object-fit: fill; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+.b1-d {
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 100%;
+  width: 100%;
+  /* transition: transform 0.5s ease-in-out;
+  animation: mymove 5s infinite; */
+  animation: slideInFromLeft 1.5s ease-in;
+}
 .b1con {
   /* background-color: blueviolet; */
   background-image: url("../assets/Dinali_House/_SDS2871.JPG.jpg");
@@ -357,6 +403,8 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   height: 90vh;
+  width: 110vw;
+  margin-left: -20px;
 }
 .b1 {
   background-color: #fff;

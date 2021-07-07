@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div class="text-center">
       <v-dialog
         v-model="dialog"
@@ -80,6 +82,7 @@
           <v-img
             eager
             height="80vh"
+            class="px-3"
             src="../assets/Chitra_Lane/_SDS3762-HDR.JPG.jpg"
           ></v-img>
         </v-flex>
@@ -123,6 +126,7 @@
           <v-img
             height="100%"
             contain
+            class="px-3"
             eager
             src="../assets/Chitra_Lane/_SDS3752.JPG.jpg"
           ></v-img>

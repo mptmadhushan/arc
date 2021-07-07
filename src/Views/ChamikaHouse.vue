@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <v-scroll-to-top></v-scroll-to-top>
+
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
         <img
@@ -10,7 +12,7 @@
       </router-link>
       <!-- <ShapesPop /> -->
     </div>
-    <div class="text-center">
+    <div class="text-center px-3">
       <v-layout row wrap justify-center>
         <v-flex
           md12
@@ -74,7 +76,7 @@
 
     <div>
       <v-layout row wrap>
-        <v-flex md10 pl-md-4>
+        <v-flex md10 pl-md-4 px-3>
           <v-img
             eager
             contain
@@ -118,7 +120,7 @@
     </div>
 
     <div v-if="isMobile()" style="margin-top:10vh">
-      <v-img eager contain src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
+      <v-img eager contain min-width="104vw" style="margin-left:-20px" src="../assets/chamika_house/_SDS3393b.jpg"></v-img>
       <p class="text002 text-center">
         Simplicity is the ultimate sophisticattion<br />
         <span class="text009 text-center">Leonardo Da Vinci</span>
