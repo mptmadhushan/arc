@@ -1,6 +1,5 @@
 <template>
   <v-container fluid>
-    <v-scroll-to-top></v-scroll-to-top>
 
     <div class="text-center">
       <v-dialog
@@ -287,6 +286,8 @@
     >
       <v-icon>keyboard_arrow_up</v-icon>
     </v-btn>
+    <v-scroll-to-top></v-scroll-to-top>
+
   </v-container>
 </template>
 

@@ -600,6 +600,7 @@
         src="../assets/Maniumpathy/_SDS2457-2.png"
       ></v-img>
     </div>
+    <v-scroll-to-top></v-scroll-to-top>
   </v-container>
 </template>
 

@@ -44,6 +44,14 @@ Vue.mixin({
         return false;
       }
     },
+    isBlue() {
+      // eslint-disable-next-line no-constant-condition
+      if (1 != 2) {
+        return true;
+      } else {
+        return false;
+      }
+    },
   },
 });
 

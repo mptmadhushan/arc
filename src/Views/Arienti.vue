@@ -1,7 +1,5 @@
 <template>
   <div>
-    <v-scroll-to-top></v-scroll-to-top>
-
     <div
       data-aos-delay="100"
       data-aos="fade-up"
@@ -186,6 +184,7 @@
         </p>
       </div>
     </div>
+    <v-scroll-to-top></v-scroll-to-top>
   </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <v-container fluid>
-    <v-scroll-to-top></v-scroll-to-top>
 
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
@@ -319,6 +318,7 @@
         Hidden oasis of calm
       </p>
     </div>
+    <v-scroll-to-top></v-scroll-to-top>
   </v-container>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <v-container fluid>
-    <v-scroll-to-top></v-scroll-to-top>
 
     <div class="d-flex justify-space-between" style="margin-top:1vh">
       <router-link to="/projects">
@@ -390,6 +389,8 @@
         src="../assets/Bolgoda/_SDS1502.JPG.jpeg"
       ></v-img>
     </div>
+    <v-scroll-to-top></v-scroll-to-top>
+
   </v-container>
 </template>
 
