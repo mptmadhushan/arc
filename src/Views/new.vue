@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div v-if="isMobile()" style="height:100vh;width:100vw;overflow:hidden">
+    <div
+      v-if="isMobile()"
+      style="height:100vh;width:100vw;overflow:hidden;"
+    >
       <div class="sub-right">
         <v-card
           flat
@@ -145,6 +148,8 @@ body {
 }
 .sub-right {
   float: right;
+  /* z-index: 999; */
+  position: relative;
   height: 100vh;
   width: 100vw;
   opacity: 1;

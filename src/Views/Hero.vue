@@ -1,5 +1,5 @@
 <template>
-  <div class="bg">
+  <div :class="!isMobile() ? 'bg' : 'bg-m'">
     <div v-if="isMobile()" @click="this.handleScroll">
       <div v-if="loaded" onscroll="hey()">
         <transition name="fade" id="content">
@@ -15,7 +15,33 @@
       </div>
     </div>
 
-    <div class="container_l">
+    <div class="container_l" v-if="isMobile()">
+      <div
+        class="sub-left-m"
+        :class="isloaded ? 'sub-left-m' : 'sub-left-load-m'"
+      >
+        <div class="center-m">
+          <p>
+            <v-card
+              flat
+              color="transparent"
+              style="opacity:0.3;padding-left:2vw"
+            >
+              <v-img
+                v-if="!isMobile()"
+                @click="hello2()"
+                height="15vh"
+                style="margin-right:-5vw"
+                width="15vw"
+                contain
+                src="../assets/white-logo.png"
+              ></v-img>
+            </v-card>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container_l" v-else>
       <div class="sub-left" :class="isloaded ? 'sub-left' : 'sub-left-load'">
         <div class="center">
           <p>
@@ -39,7 +65,36 @@
       </div>
     </div>
 
-    <div class="container_l">
+    <div class="container_l" v-if="isMobile()">
+      <div
+        class="sub-right-m"
+        :class="isloaded ? 'sub-left-m' : 'sub-left-load-m'"
+      >
+        <div class="center_r-m">
+          <p>
+            <v-card
+              flat
+              color="transparent"
+              style="padding-right:2vw"
+              @click="hello()"
+            >
+              <v-img
+                @click="hello()"
+                height="15vh"
+                style="margin-right:-5vw"
+                width="15vw"
+                contain
+                src="../assets/logoTitle.png"
+              ></v-img>
+              <p class="project-t ">
+                PROJECTS
+              </p>
+            </v-card>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container_l" v-else>
       <div class="sub-right" :class="isloaded ? 'sub-left' : 'sub-left-load'">
         <div class="center_r">
           <p>
@@ -62,7 +117,10 @@
     </div>
 
     <div class="clear-both"></div>
-    <div>
+    <div v-if="isMobile()" class="white-bg">
+      <v-img contain height="20px" eager></v-img>
+    </div>
+    <div v-else>
       <v-layout row wrap justify-space-between style="margin-top:-6vh">
         <v-flex md2 class="leftArr"> </v-flex>
         <v-flex md2 style="margin-top:2vh">
@@ -291,6 +349,22 @@ body {
 .overlay:hover .overlay_text {
   opacity: 0;
 }
+.sub-left-m {
+  float: left;
+  height: 50vh;
+  width: 29%;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s ease;
+  background-image: linear-gradient(
+    to right,
+    black,
+    rgba(0, 0, 0, 0.774),
+    transparent
+  );
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1300ms;
+}
 .sub-left {
   float: left;
   height: 100vh;
@@ -310,6 +384,25 @@ body {
 .sub-left-load {
   float: left;
   height: 100vh;
+  width: 29%;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s ease;
+  background-image: linear-gradient(
+    to right,
+    black,
+    rgba(0, 0, 0, 0.774),
+    transparent
+  );
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1300ms;
+  -webkit-animation: fadein 3s ease-in-out 2;
+  -moz-animation: fadein 3s ease-in-out 2;
+  animation: fadein 3s ease-in-out 2;
+}
+.sub-left-load-m {
+  float: left;
+  height: 50vh;
   width: 29%;
   align-items: center;
   opacity: 0;
@@ -376,9 +469,42 @@ body {
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 3000ms;
 }
+.sub-right-m {
+  float: right;
+  height: 50vh;
+  width: 29%;
+  opacity: 0;
+  transition: 0.6s ease;
+  background-image: linear-gradient(
+    to left,
+    white,
+    rgba(255, 255, 255, 0.678),
+    transparent
+  );
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 3000ms;
+}
 .sub-right-load {
   float: right;
   height: 100vh;
+  width: 29%;
+  opacity: 0;
+  transition: 0.6s ease;
+  background-image: linear-gradient(
+    to left,
+    white,
+    rgba(255, 255, 255, 0.678),
+    transparent
+  );
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 3000ms;
+  -webkit-animation: fadein 4s ease-in-out 2;
+  -moz-animation: fadein 4s ease-in-out 2;
+  animation: fadein 4s ease-in-out 2;
+}
+.sub-right-load-m {
+  float: right;
+  height: 50vh;
   width: 29%;
   opacity: 0;
   transition: 0.6s ease;
@@ -403,6 +529,11 @@ body {
   height: 100vh;
   text-align: left;
 }
+.center-m {
+  line-height: 100vh;
+  height: 50vh;
+  text-align: left;
+}
 
 .center p {
   line-height: 1.5;
@@ -413,6 +544,11 @@ body {
 .center_r {
   line-height: 100vh;
   height: 100vh;
+  text-align: right;
+}
+.center_r-m {
+  line-height: 100vh;
+  height: 50vh;
   text-align: right;
 }
 
@@ -442,6 +578,25 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
   /* color: "red"; */
+  background-image: url("../assets/2.0home page.png");
+  animation: fadeIn ease 20s;
+  -webkit-animation: fadeIn ease 20s;
+  -moz-animation: fadeIn ease 20s;
+  -o-animation: fadeIn ease 20s;
+  -ms-animation: fadeIn ease 20s;
+}
+.white-bg {
+  background-image: linear-gradient(to top, #fff, #fff, transparent);
+  height: 10vh;
+  margin-top: -10vh;
+  width: 100vw;
+}
+.bg-m {
+  width: 100vw;
+  background-size: 100% 100%;
+  height: 50vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   background-image: url("../assets/2.0home page.png");
   animation: fadeIn ease 20s;
   -webkit-animation: fadeIn ease 20s;

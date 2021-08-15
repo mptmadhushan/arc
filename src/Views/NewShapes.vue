@@ -11,8 +11,7 @@
     <div v-if="isMobile()">
       <router-link to="/">
         <img
-          style=" opacity: 0.5;margin-inline:2px;tint-colot:red;-webkit-filter: invert(1);
-   filter: invert(1);"
+          style="margin-inline:2px;opacity: 0.5"
           height="20vh"
           src="../assets/backArrow.png"
         />
@@ -22,40 +21,49 @@
           <div
             style="display:flex;flex-direction:row; justify-content:center;align-content:center"
           >
-            <a href="/DamindraHouse" class="nav-link pa-2">
-              <div class="dami"></div>
+            <a href="/DamindraHouse" class="nav-link">
+              <!-- <div class="dami"></div> -->
+              <div class="sq"></div>
             </a>
-            <a href="/Arienti" tag="div" class=" pa-2">
-              <div class="ari"></div>  
+            <a href="/Arienti" tag="div" class="">
+              <!-- <div class="ari"></div> -->
+              <div class="tri"></div>
             </a>
-            <a href="/Hanthana" tag="div" class=" pa-2">
-              <div class="Hanthana"></div>
-            </a>
-          </div>
-          <div
-            style="display:flex;flex-direction:row; justify-content:center;align-content:center"
-          >
-            <a href="/Bolgoda" tag="div" class=" pa-2">
-              <div class="Bolgoda"></div>
-            </a>
-            <a href="/DinaliHouse" tag="div" class=" pa-2">
-              <div class="DinaliHouse"></div>
-            </a>
-            <a href="/ChamikaHouse" tag="div" class=" pa-2">
-              <div class="ChamikaHouse"></div>
+            <a href="/Hanthana" tag="div" class=" ">
+              <!-- <div class="Hanthana"></div> -->
+              <div class="cir"></div>
             </a>
           </div>
           <div
             style="display:flex;flex-direction:row; justify-content:center;align-content:center"
           >
-            <a href="/StoneHouse" tag="div" class=" pa-2">
-              <div class="StoneHouse"></div>
+            <a href="/Bolgoda" tag="div">
+              <!-- <div class="Bolgoda"></div> -->
+              <div class="cir"></div>
+            </a>
+            <a href="/DinaliHouse" tag="div">
+              <!-- <div class="DinaliHouse"></div> -->
+              <div class="sq"></div>
+            </a>
+            <a href="/ChamikaHouse" tag="div">
+              <!-- <div class="ChamikaHouse"></div> -->
+              <div class="tri"></div>
+            </a>
+          </div>
+          <div
+            style="display:flex;flex-direction:row; justify-content:center;align-content:center"
+          >
+            <a href="/StoneHouse" tag="div">
+              <!-- <div class="StoneHouse"></div> -->
+              <div class="tri"></div>
             </a>
             <a href="/ChitraLane" tag="div" class=" pa-2">
-              <div class="ChitraLane"></div>
+              <!-- <div class="ChitraLane"></div> -->
+              <div class="cir"></div>
             </a>
             <a href="/maniumpathy" tag="div" class=" pa-2">
-              <div class="maniumpathy"></div>
+              <!-- <div class="maniumpathy"></div> -->
+              <div class="sq"></div>
             </a>
           </div>
         </v-card>
@@ -330,7 +338,7 @@ export default {
   text-align: center;
 }
 .mobBack {
-  background-color: rgb(15, 14, 14);
+  /* background-color: rgb(15, 14, 14); */
   height: 100vh;
   width: 100vw;
 }
