@@ -86,9 +86,9 @@
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
-              <p class="project-t ">
+              <!-- <p class="project-t ">
                 PROJECTS
-              </p>
+              </p> -->
             </v-card>
           </p>
         </div>
@@ -593,16 +593,17 @@ body {
 }
 .bg-m {
   width: 100vw;
-  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 50vh;
   scrollbar-width: none;
-  -ms-overflow-style: none;
   background-image: url("../assets/2.0home page.png");
-  animation: fadeIn ease 20s;
-  -webkit-animation: fadeIn ease 20s;
-  -moz-animation: fadeIn ease 20s;
-  -o-animation: fadeIn ease 20s;
-  -ms-animation: fadeIn ease 20s;
+  /* animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s; */
 }
 .bg::-webkit-scrollbar {
   display: none;

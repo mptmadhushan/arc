@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <div
-      v-if="isMobile()"
-      style="height:100vh;width:100vw;overflow:hidden;"
-    >
+  <div class="toptop">
+    <div v-if="isMobile()" style="height:100vh;width:100vw;overflow:hidden;">
       <div class="sub-right">
         <v-card
           flat
@@ -39,10 +36,6 @@
                     src="../assets/main.png"
                   >
                   </v-img>
-                  <!-- <p class="preTitle" style="font-size:3vh;margin-top:-55vh">
-                    Click to continue..
-                  </p> -->
-
                   <div class="scroll" v-if="arrow">
                     <v-img
                       contain
@@ -69,6 +62,10 @@
   position: fixed;
   top: 90%;
   left: 49%;
+}
+.toptop {
+  position: fixed;
+  z-index: 999;
 }
 .slide {
   width: 100%;
@@ -144,7 +141,7 @@ body {
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(100px);
-  opacity: 0;
+  opacity: 1;
 }
 .sub-right {
   float: right;

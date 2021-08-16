@@ -2,13 +2,13 @@
   <div class="aaa">
     <div>
       <div class="hero" ref="hero"><hero /></div>
-      <div>
+      <div v-if="show">
         <page1 />
       </div>
-      <div>
+      <div v-if="show">
         <page2 />
       </div>
-      <div>
+      <div v-if="show">
         <Footer />
       </div>
     </div>
@@ -35,12 +35,19 @@ export default {
       console.log(from);
     },
   },
-
+  data: () => ({
+    show: false,
+  }),
   mounted() {
     // document.addEventListener("wheel", this.helb);
     this.hell();
+    this.show = true;
+    console.log("shoe", this.show);
 
     document.addEventListener("focusin", this.focusChanged);
+    // setTimeout(function() {
+    //   console.log("shoe", this.show);
+    // }, 2000);
   },
 
   methods: {

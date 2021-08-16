@@ -23,15 +23,15 @@
           >
             <a href="/DamindraHouse" class="nav-link">
               <!-- <div class="dami"></div> -->
-              <div class="sq"></div>
+              <div class="sq-m"></div>
             </a>
             <a href="/Arienti" tag="div" class="">
               <!-- <div class="ari"></div> -->
-              <div class="tri"></div>
+              <div class="tri-m"></div>
             </a>
             <a href="/Hanthana" tag="div" class=" ">
               <!-- <div class="Hanthana"></div> -->
-              <div class="cir"></div>
+              <div class="cir-m"></div>
             </a>
           </div>
           <div
@@ -39,15 +39,15 @@
           >
             <a href="/Bolgoda" tag="div">
               <!-- <div class="Bolgoda"></div> -->
-              <div class="cir"></div>
+              <div class="cir-m"></div>
             </a>
             <a href="/DinaliHouse" tag="div">
               <!-- <div class="DinaliHouse"></div> -->
-              <div class="sq"></div>
+              <div class="sq-m"></div>
             </a>
             <a href="/ChamikaHouse" tag="div">
               <!-- <div class="ChamikaHouse"></div> -->
-              <div class="tri"></div>
+              <div class="tri-m"></div>
             </a>
           </div>
           <div
@@ -55,15 +55,15 @@
           >
             <a href="/StoneHouse" tag="div">
               <!-- <div class="StoneHouse"></div> -->
-              <div class="tri"></div>
+              <div class="tri-m"></div>
             </a>
-            <a href="/ChitraLane" tag="div" class=" pa-2">
+            <a href="/ChitraLane" tag="div" class="">
               <!-- <div class="ChitraLane"></div> -->
-              <div class="cir"></div>
+              <div class="cir-m"></div>
             </a>
-            <a href="/maniumpathy" tag="div" class=" pa-2">
+            <a href="/maniumpathy" tag="div" class="">
               <!-- <div class="maniumpathy"></div> -->
-              <div class="sq"></div>
+              <div class="sq-m"></div>
             </a>
           </div>
         </v-card>
@@ -313,7 +313,9 @@ export default {
 
 <style scoped>
 .mobBackCards {
-  width: 95vw;
+  width: 100vw;
+  /* margin-left: 10vw;
+  padding-right: 10vw; */
   height: 90vh;
   display: flex;
   align-items: center;
@@ -341,6 +343,7 @@ export default {
   /* background-color: rgb(15, 14, 14); */
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 .deskBack {
   /* background-color: blue; */
@@ -493,6 +496,14 @@ export default {
   background-size: 100% 100%;
   background-image: url("../assets/cir.png");
 }
+.cir-m {
+  height: 15vh;
+  width: 15vh;
+  opacity: 0.7;
+  padding: -10vh;
+  background-size: 100% 100%;
+  background-image: url("../assets/cir.png");
+}
 .cir.ac {
   height: 20vh;
   width: 20vh;
@@ -516,6 +527,13 @@ export default {
   opacity: 0.4;
   background-image: url("../assets/sqHover.png");
 }
+.sq-m {
+  height: 15vh;
+  width: 15vh;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  background-image: url("../assets/sqHover.png");
+}
 .sq.ac {
   height: 20vh;
   width: 20vh;
@@ -535,6 +553,13 @@ export default {
   height: 20vh;
   width: 20vh;
   opacity: 0.4;
+  background-size: 100% 100%;
+  background-image: url("../assets/triHover.png");
+}
+.tri-m {
+  height: 15vh;
+  width: 15vh;
+  opacity: 0.7;
   background-size: 100% 100%;
   background-image: url("../assets/triHover.png");
 }
