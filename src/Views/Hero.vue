@@ -167,7 +167,9 @@ export default {
   },
   mounted() {
     console.log("😃🇻🇮", this.isloaded, "hey", this.hey);
-    document.documentElement.style.overflow = "hidden";
+    if (!this.isMobile()) {
+      document.documentElement.style.overflow = "hidden";
+    }
     this.hey = localStorage.getItem("isloaded");
     console.log("hello", this.hey);
     if (this.hey == "false") {
@@ -351,7 +353,7 @@ body {
 }
 .sub-left-m {
   float: left;
-  height: 50vh;
+  height: 40vh;
   width: 29%;
   align-items: center;
   opacity: 0;
@@ -402,7 +404,7 @@ body {
 }
 .sub-left-load-m {
   float: left;
-  height: 50vh;
+  height: 40vh;
   width: 29%;
   align-items: center;
   opacity: 0;
@@ -471,7 +473,7 @@ body {
 }
 .sub-right-m {
   float: right;
-  height: 50vh;
+  height: 40vh;
   width: 29%;
   opacity: 0;
   transition: 0.6s ease;
@@ -504,7 +506,7 @@ body {
 }
 .sub-right-load-m {
   float: right;
-  height: 50vh;
+  height: 40vh;
   width: 29%;
   opacity: 0;
   transition: 0.6s ease;
@@ -531,7 +533,7 @@ body {
 }
 .center-m {
   line-height: 100vh;
-  height: 50vh;
+  height: 40vh;
   text-align: left;
 }
 
@@ -548,7 +550,7 @@ body {
 }
 .center_r-m {
   line-height: 100vh;
-  height: 50vh;
+  height: 40vh;
   text-align: right;
 }
 
@@ -588,7 +590,6 @@ body {
 .white-bg {
   background-image: linear-gradient(to top, #fff, #fff, transparent);
   height: 10vh;
-  margin-top: -10vh;
   width: 100vw;
 }
 .bg-m {

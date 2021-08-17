@@ -497,8 +497,8 @@ export default {
   background-image: url("../assets/cir.png");
 }
 .cir-m {
-  height: 15vh;
-  width: 15vh;
+  height: 10vh;
+  width: 10vh;
   opacity: 0.7;
   padding: -10vh;
   background-size: 100% 100%;
@@ -528,8 +528,8 @@ export default {
   background-image: url("../assets/sqHover.png");
 }
 .sq-m {
-  height: 15vh;
-  width: 15vh;
+  height: 10vh;
+  width: 10vh;
   background-size: 100% 100%;
   opacity: 0.7;
   background-image: url("../assets/sqHover.png");
@@ -557,8 +557,8 @@ export default {
   background-image: url("../assets/triHover.png");
 }
 .tri-m {
-  height: 15vh;
-  width: 15vh;
+  height: 10vh;
+  width: 10vh;
   opacity: 0.7;
   background-size: 100% 100%;
   background-image: url("../assets/triHover.png");
