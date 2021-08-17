@@ -18,7 +18,6 @@
     <div class="container_l" v-if="isMobile()">
       <div
         class="sub-left-m"
-        :class="isloaded ? 'sub-left-m' : 'sub-left-load-m'"
       >
         <div class="center-m">
           <p>
@@ -68,7 +67,6 @@
     <div class="container_l" v-if="isMobile()">
       <div
         class="sub-right-m"
-        :class="isloaded ? 'sub-left-m' : 'sub-left-load-m'"
       >
         <div class="center_r-m">
           <p>
@@ -86,9 +84,6 @@
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
-              <!-- <p class="project-t ">
-                PROJECTS
-              </p> -->
             </v-card>
           </p>
         </div>
@@ -358,12 +353,12 @@ body {
   align-items: center;
   opacity: 0;
   transition: 0.6s ease;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     black,
     rgba(0, 0, 0, 0.774),
     transparent
-  );
+  ); */
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 1300ms;
 }
@@ -477,12 +472,12 @@ body {
   width: 29%;
   opacity: 0;
   transition: 0.6s ease;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to left,
     white,
     rgba(255, 255, 255, 0.678),
     transparent
-  );
+  ); */
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 3000ms;
 }
