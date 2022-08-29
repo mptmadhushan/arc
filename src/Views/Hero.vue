@@ -16,21 +16,15 @@
     </div>
 
     <div class="container_l" v-if="isMobile()">
-      <div
-        class="sub-left-m"
-      >
+      <div class="sub-left-m">
         <div class="center-m">
           <p>
-            <v-card
-              flat
-              color="transparent"
-              style="opacity:0.3;padding-left:2vw"
-            >
+            <v-card flat color="transparent" style="padding-left: 2vw">
               <v-img
-                v-if="!isMobile()"
+                v-if="isMobile()"
                 @click="hello2()"
                 height="15vh"
-                style="margin-right:-5vw"
+                style="margin-right: -5vw;margin-top:10vh"
                 width="15vw"
                 contain
                 src="../assets/white-logo.png"
@@ -47,13 +41,13 @@
             <v-card
               flat
               color="transparent"
-              style="opacity:0.3;padding-left:2vw"
+              style="opacity: 0.3; padding-left: 2vw"
             >
               <v-img
                 v-if="!isMobile()"
                 @click="hello2()"
                 height="15vh"
-                style="margin-right:-5vw"
+                style="margin-right: -5vw;"
                 width="15vw"
                 contain
                 src="../assets/white-logo.png"
@@ -65,24 +59,22 @@
     </div>
 
     <div class="container_l" v-if="isMobile()">
-      <div
-        class="sub-right-m"
-      >
+      <div class="sub-right-m">
         <div class="center_r-m">
           <p>
             <v-card
               flat
               color="transparent"
-              style="padding-right:2vw"
+              style="padding-right: 2vw"
               @click="hello()"
             >
               <v-img
                 @click="hello()"
                 height="15vh"
-                style="margin-right:-5vw"
+                style="margin-left: 10vw; margin-top: 10vh"
                 width="15vw"
                 contain
-                src="../assets/logoTitle.png"
+                src="../assets/main.png"
               ></v-img>
             </v-card>
           </p>
@@ -93,18 +85,16 @@
       <div class="sub-right" :class="isloaded ? 'sub-left' : 'sub-left-load'">
         <div class="center_r">
           <p>
-            <v-card flat color="transparent" style="padding-right:2vw">
+            <v-card flat color="transparent" style="padding-right: 2vw">
               <v-img
                 @click="hello()"
                 height="15vh"
-                style="margin-right:-5vw"
+                style="margin-right: -5vw"
                 width="15vw"
                 contain
                 src="../assets/logoTitle.png"
               ></v-img>
-              <p class="project-t ">
-                PROJECTS
-              </p>
+              <p class="project-t">PROJECTS</p>
             </v-card>
           </p>
         </div>
@@ -116,9 +106,9 @@
       <v-img contain height="20px" eager></v-img>
     </div>
     <div v-else>
-      <v-layout row wrap justify-space-between style="margin-top:-6vh">
+      <v-layout row wrap justify-space-between style="margin-top: -6vh">
         <v-flex md2 class="leftArr"> </v-flex>
-        <v-flex md2 style="margin-top:2vh">
+        <v-flex md2 style="margin-top: 2vh">
           <v-img
             contain
             height="20px"
@@ -142,7 +132,7 @@ export default {
       localStorage.name = newName;
       console.log("hello", name);
     },
-    isIntersectingElement: function(value) {
+    isIntersectingElement: function (value) {
       this.$emit("on-intersection-element", value);
     },
   },
@@ -201,7 +191,7 @@ export default {
 
     handleScroll() {
       this.methodNnew;
-      setTimeout(function() {
+      setTimeout(function () {
         document.documentElement.style.overflow = "auto";
       }, 1500);
 
@@ -351,7 +341,7 @@ body {
   height: 40vh;
   width: 29%;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   transition: 0.6s ease;
   /* background-image: linear-gradient(
     to right,
@@ -470,7 +460,7 @@ body {
   float: right;
   height: 40vh;
   width: 29%;
-  opacity: 0;
+  opacity: 1;
   transition: 0.6s ease;
   /* background-image: linear-gradient(
     to left,
@@ -584,7 +574,7 @@ body {
 }
 .white-bg {
   background-image: linear-gradient(to top, #fff, #fff, transparent);
-  height: 10vh;
+  height: 13vh;
   width: 100vw;
 }
 .bg-m {
